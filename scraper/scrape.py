@@ -229,26 +229,52 @@ def scrape_faculty_from_page(url, dept_name):
 def scrape_profile_for_pubmed_string(profile_url):
     """
     Try to extract a curated PubMed search string from a faculty profile page.
-    Many UNC profiles list something like 'Search PubMed using Doe JA as search criteria'.
+    Handles several formats found on UNC SOM profiles:
+      - "Search PubMed using Doe JA as search criteria"
+      - "publications on PubMed (*Lee, CN)"
+      - PubMed URL with ?term=Lee%2C+CN
     """
     if not profile_url:
         return None
     html = fetch_url(profile_url)
     if not html:
         return None
-    # Pattern: "using [search string] as search criteria" or "PubMed" near initials
+
+    # Pattern 1: "using [search string] as search criteria"
     match = re.search(
         r"(?:search\s+(?:for\s+)?publications?\s+on\s+pubmed\s+using\s+|"
-        r"pubmed\s+using\s+)([A-Za-z ,]+?)(?:\s+as\s+search\s+criteria|"
+        r"pubmed\s+using\s+)([A-Za-z ,*]+?)(?:\s+as\s+search\s+criteria|"
         r"\s+as\s+search|\s*\n)",
         html, re.IGNORECASE
     )
     if match:
-        hint = match.group(1).strip()
-        hint = re.sub(r',\s*', ' ', hint).strip()
+        hint = match.group(1).strip().lstrip("*").strip()
+        hint = re.sub(r",\s*", " ", hint).strip()
         return hint
 
-    # Also look for ORCID
+    # Pattern 2: parenthetical like "on PubMed (*Lee, CN)" or "(Lee CN)"
+    match = re.search(
+        r"pubmed[^(]*\(\*?([A-Za-z]+,?\s+[A-Za-z]+)\)",
+        html, re.IGNORECASE
+    )
+    if match:
+        hint = match.group(1).strip().lstrip("*").strip()
+        hint = re.sub(r",\s*", " ", hint).strip()
+        return hint
+
+    # Pattern 3: PubMed URL with term parameter e.g. ?term=Lee%2C+CN
+    match = re.search(
+        r"pubmed\.ncbi\.nlm\.nih\.gov/[^'\"]*[?&]term=([^'\"&)\s]+)",
+        html, re.IGNORECASE
+    )
+    if match:
+        raw = urllib.parse.unquote_plus(match.group(1))
+        # Only use if it looks like an author string (short, no complex query syntax)
+        if len(raw) < 30 and "[" not in raw:
+            hint = re.sub(r",\s*", " ", raw).strip()
+            return hint
+
+    # Pattern 4: ORCID
     orcid_match = re.search(
         r"orcid\.org/(\d{4}-\d{4}-\d{4}-\d{3}[\dX])",
         html, re.IGNORECASE
