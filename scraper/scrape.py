@@ -244,7 +244,9 @@ def scrape_profile_for_pubmed_string(profile_url):
         html, re.IGNORECASE
     )
     if match:
-        return match.group(1).strip()
+        hint = match.group(1).strip()
+        hint = re.sub(r',\s*', ' ', hint).strip()
+        return hint
 
     # Also look for ORCID
     orcid_match = re.search(
@@ -265,13 +267,34 @@ PUBMED_BASE = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
 PUBMED_EMAIL = "jgbresearch@unc.edu"  # NCBI requests a contact email
 
 
+def clean_name_for_pubmed(name):
+    """
+    Strip credentials, nicknames, punctuation from a raw scraped name
+    before building a PubMed search string.
+    E.g. 'Adeyemi "Yemi" Ogunleye' -> 'Adeyemi Ogunleye'
+         'Delora Mount, FAAP'       -> 'Delora Mount'
+         'Katherine Rodby'          -> 'Katherine Rodby'
+    """
+    # Remove anything in quotes (nicknames)
+    name = re.sub(r'["\u201c\u201d][^"]*["\u201c\u201d]', '', name)
+    # Strip degree/credential suffixes (comma-separated at end)
+    name = DEGREE_SUFFIXES.sub("", name)
+    # Remove stray punctuation
+    name = re.sub(r',.*$', '', name)
+    name = re.sub(r'[;"]', '', name)
+    # Collapse whitespace
+    name = re.sub(r'\s+', ' ', name).strip()
+    return name
+
+
 def build_pubmed_search_string(name):
     """Convert 'First Middle Last' -> 'Last FM' author search string."""
-    parts = name.strip().split()
+    name = clean_name_for_pubmed(name)
+    parts = [p for p in name.strip().split() if p]
     if not parts:
         return name
     last = parts[-1]
-    initials = "".join(p[0] for p in parts[:-1] if p)
+    initials = "".join(p[0] for p in parts[:-1] if p and p[0].isalpha())
     return f"{last} {initials}"
 
 
