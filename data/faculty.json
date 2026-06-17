@@ -1,6 +1,2081 @@
 {
-  "generated_at": "2026-06-17T13:14:57.998501Z",
-  "total_faculty": 0,
-  "departments": [],
-  "faculty": []
+  "generated_at": "2026-06-17T13:24:26.251778Z",
+  "total_faculty": 91,
+  "departments": [
+    "Family Medicine"
+  ],
+  "faculty": [
+    {
+      "name": "Nailah Ada, CAQ, FAAFP",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/nailah-adams-md-ms-caqsm/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Ada Nailah",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Christine A. Ada",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/christine-adams-md-ms-2/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Ada Christine",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Rana Alkhaldi",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/rana-alkhaldi-md-2/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Alkhaldi Rana",
+      "pubmed_count": 1,
+      "publications": [
+        {
+          "pmid": "40961304",
+          "title": "Cardiac Rehabilitation: Indications, Benefits, and New Approaches.",
+          "journal": "Am Fam Physician",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Gary Asher",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/gary-asher-md-mph/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Asher Gary",
+      "pubmed_count": 1,
+      "publications": [
+        {
+          "pmid": "31638723",
+          "title": "Defining treatment-resistant depression.",
+          "journal": "Depress Anxiety",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Evan Ashkin",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/evan-ashkin-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Ashkin Evan",
+      "pubmed_count": 3,
+      "publications": [
+        {
+          "pmid": "38467006",
+          "title": "Ten-Year Outcomes: Community Health Center/Academic Medicine Partnership for Rural Family Medicine Training.",
+          "journal": "Fam Med",
+          "year": "2024"
+        },
+        {
+          "pmid": "33583610",
+          "title": "The Transitions Clinic Network: Post Incarceration Addiction Treatment, Healthcare, and Social Support (TCN-PATHS): A hybrid type-1 effectiveness trial of enhanced primary care to improve opioid use disorder treatment outcomes following release from jail.",
+          "journal": "J Subst Abuse Treat",
+          "year": "2021"
+        },
+        {
+          "pmid": "31685578",
+          "title": "Spotlight on the Safety Net: Connecting People Released from Incarceration to Essential Health Services: The North Carolina Formerly Incarcerated Transition (FIT) Program.",
+          "journal": "N C Med J",
+          "year": "2019"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Shannon Aymes",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/shannon-aymes-md-mph/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Aymes Shannon",
+      "pubmed_count": 4,
+      "publications": [
+        {
+          "pmid": "41580520",
+          "title": "Undiagnosed and uncontrolled hypertension at a federally qualified health center.",
+          "journal": "J Hum Hypertens",
+          "year": "2026"
+        },
+        {
+          "pmid": "41406195",
+          "title": "Incidence of Elevated Inpatient Blood Pressure and Hypertensive Emergencies.",
+          "journal": "Hypertension",
+          "year": "2026"
+        },
+        {
+          "pmid": "40613803",
+          "title": "Epidemiology of Postural Orthostatic Tachycardia Syndrome.",
+          "journal": "Mayo Clin Proc",
+          "year": "2025"
+        },
+        {
+          "pmid": "36378203",
+          "title": "Screening for Obstructive Sleep Apnea in Adults: Updated Evidence Report and Systematic Review for the US Preventive Services Task Force.",
+          "journal": "JAMA",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Michael Baca-Atlas",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/micheal-baca-atlas-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Baca-Atlas Michael",
+      "pubmed_count": 4,
+      "publications": [
+        {
+          "pmid": "41617406",
+          "title": "Do No Harm? Rethinking Urine Drug Screens in Treatment of Opioid Use Disorder.",
+          "journal": "J Am Board Fam Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "41060202",
+          "title": "Implementing a Social Work-Led Hepatitis C Treatment Model for Individuals with Substance Use Disorders in Primary Care.",
+          "journal": "J Evid Based Soc Work (2019)",
+          "year": "2026"
+        },
+        {
+          "pmid": "37725454",
+          "title": "Antibiotics for Acute Uncomplicated Diverticulitis.",
+          "journal": "Am Fam Physician",
+          "year": "2023"
+        },
+        {
+          "pmid": "30364778",
+          "title": "Generalized bullous fixed-drug eruption secondary to the influenza vaccine.",
+          "journal": "JAAD Case Rep",
+          "year": "2018"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Kathleen Barnhouse",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/kathleen-barnhouse-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Barnhouse Kathleen",
+      "pubmed_count": 1,
+      "publications": [
+        {
+          "pmid": "41555883",
+          "title": "Impact of Commercial Third-Party Resource Integration on Preclinical Student Resource Use, Preferences, and Exam Performance.",
+          "journal": "Med Sci Educ",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Amir H. Barzin",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/amir-h-barzin-do-ms/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Barzin Amir",
+      "pubmed_count": 11,
+      "publications": [
+        {
+          "pmid": "42014959",
+          "title": "Telepsychiatry in a Rural Inpatient Psychiatric Hospital: A Model for Expanding Access to High-Quality Care.",
+          "journal": "Psychiatr Serv",
+          "year": "2026"
+        },
+        {
+          "pmid": "41118188",
+          "title": "Heart Failure With Preserved Ejection Fraction.",
+          "journal": "Am Fam Physician",
+          "year": "2025"
+        },
+        {
+          "pmid": "38269836",
+          "title": "Factors Affecting Family Caregivers' Satisfaction During Virtual Care Visits.",
+          "journal": "Stud Health Technol Inform",
+          "year": "2024"
+        },
+        {
+          "pmid": "37869842",
+          "title": "Utilization and Satisfaction of an On-Demand Telemedicine Service in Urban and Rural Communities.",
+          "journal": "Stud Health Technol Inform",
+          "year": "2023"
+        },
+        {
+          "pmid": "37387100",
+          "title": "Factors Associated with Incomplete Telemedicine Visits at an Virtual Urgent Care Center.",
+          "journal": "Stud Health Technol Inform",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Sylvia Becker-Dreps",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/sylvia-becker-dreps-md-mph-2/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Becker-Dreps Sylvia",
+      "pubmed_count": 65,
+      "publications": [
+        {
+          "pmid": "42139304",
+          "title": "Natural history and impact of Giardia lamblia on child growth attainment and associated pathway-specific biomarkers in a Nicaraguan birth cohort.",
+          "journal": "PLoS Negl Trop Dis",
+          "year": "2026"
+        },
+        {
+          "pmid": "41292641",
+          "title": "Natural history and impact of Giardia lamblia on child growth attainment and associated pathway-specific biomarkers in a Nicaraguan birth cohort.",
+          "journal": "medRxiv",
+          "year": "2025"
+        },
+        {
+          "pmid": "41130215",
+          "title": "Association Between Biomarkers of Environmental Enteric Dysfunction and Linear Growth and Neurodevelopment in Guatemalan Infants.",
+          "journal": "Am J Trop Med Hyg",
+          "year": "2025"
+        },
+        {
+          "pmid": "41082726",
+          "title": "Effectiveness of Recombinant Herpes Zoster Vaccine in the U.S. Medicare Population, 2018 to 2019, by Immunocompetence and Prior Receipt of Live Zoster Vaccine.",
+          "journal": "Ann Intern Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "40682606",
+          "title": "Social, Demographic and Health Risk Factors for Head Growth in Infants in Rural Guatemala: A Prospective Cohort Study.",
+          "journal": "Matern Child Health J",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Victoria L. Boggiano",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/victoria-l-boggiano-md-mph/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Boggiano Victoria",
+      "pubmed_count": 3,
+      "publications": [
+        {
+          "pmid": "41855299",
+          "title": "Twelve Tips for Teaching and Practicing Patient-Centered Time Management.",
+          "journal": "Fam Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "41049990",
+          "title": "Just-in-Time: Statewide Preceptor Development Through Brief Asynchronous Modules.",
+          "journal": "Cureus",
+          "year": "2025"
+        },
+        {
+          "pmid": "33219079",
+          "title": "The Impact on Future Prescribing Patterns of Opioid Use Disorder (OUD) Education and Waiver Provision During Residency.",
+          "journal": "J Am Board Fam Med",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Kelly Bossenbroek Fedoriw",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/kelly-bossenbroek-fedoriw-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Fedoriw Kelly",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Crister Brady",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/crister-brady-md-mph/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Brady Crister",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Erik Butler",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/erik-butler-do/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Butler Erik",
+      "pubmed_count": 5,
+      "publications": [
+        {
+          "pmid": "37843947",
+          "title": "Nontraumatic Subarachnoid Hemorrhage and Ruptured Intracranial Aneurysm: Recognition and Evaluation.",
+          "journal": "Am Fam Physician",
+          "year": "2023"
+        },
+        {
+          "pmid": "35349683",
+          "title": "Enriched Marine Oil Supplement Increases Specific Plasma Specialized Pro-Resolving Mediators in Adults with Obesity.",
+          "journal": "J Nutr",
+          "year": "2022"
+        },
+        {
+          "pmid": "33630555",
+          "title": "Structural MRI for the Early Diagnosis of Alzheimer Disease in Patients with MCI.",
+          "journal": "Am Fam Physician",
+          "year": "2021"
+        },
+        {
+          "pmid": "31725137",
+          "title": "PURL: Best timing for measuring orthostatic vital signs?",
+          "journal": "J Fam Pract",
+          "year": "2019"
+        },
+        {
+          "pmid": "29435954",
+          "title": "Large-scale Exploration of Neuronal Morphologies Using Deep Learning and Augmented Reality.",
+          "journal": "Neuroinformatics",
+          "year": "2018"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Justin Byron",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/justin-byron-phd-mhs/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Byron Justin",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Audrea Caesar, CHES, SHRM-SCP",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/audrea-caesar-phd-msph-ches-shrm-scp/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Caesar Audrea",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Martha Carlough",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/martha-carlough-md-mph/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Carlough Martha",
+      "pubmed_count": 3,
+      "publications": [
+        {
+          "pmid": "34715843",
+          "title": "Students with global experiences during medical school are more likely to work in settings that focus on the underserved: an observational study from a public U.S. institution.",
+          "journal": "BMC Med Educ",
+          "year": "2021"
+        },
+        {
+          "pmid": "33537790",
+          "title": "Maternity Units in Rural Hospitals in North Carolina: Successful Models for Staffing and Structure.",
+          "journal": "South Med J",
+          "year": "2021"
+        },
+        {
+          "pmid": "30185161",
+          "title": "Provider and client perspectives on maternity care in Namibia: results from two cross-sectional studies.",
+          "journal": "BMC Pregnancy Childbirth",
+          "year": "2018"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Maria Gabriela Castro",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/maria-gaby-castro-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Castro Maria",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Wunian Chen, O, LAC",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/wunian-chen-md-omd-lac/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Chen Wunian",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Ellen Chetwynd, IBCLC",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/ellen-chetwynd-phd-mph-ibclc/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Chetwynd Ellen",
+      "pubmed_count": 29,
+      "publications": [
+        {
+          "pmid": "41723584",
+          "title": "The Journal of Human Lactation at 40 and Reflections on Transitions in Leadership.",
+          "journal": "J Hum Lact",
+          "year": "2026"
+        },
+        {
+          "pmid": "41595896",
+          "title": "Bridging the Gap: A Mixed-Methods Evaluation of a New Rural Maternity Care Center Amid Nationwide Closures.",
+          "journal": "Int J Environ Res Public Health",
+          "year": "2026"
+        },
+        {
+          "pmid": "41137555",
+          "title": "The 4-Year Question: Optics, Ethical Clarity, and the Future of Lactation Research in Times of Upheaval.",
+          "journal": "J Hum Lact",
+          "year": "2025"
+        },
+        {
+          "pmid": "41055386",
+          "title": "About Research - Writing Case Studies for the Journal of Human Lactation: A Step-by-Step Guide for Lactation Support Providers.",
+          "journal": "J Hum Lact",
+          "year": "2025"
+        },
+        {
+          "pmid": "40574494",
+          "title": "From Censorship to Conversation: Agnotology, Market Influence, and the Ethics of Breastfeeding Research.",
+          "journal": "J Hum Lact",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Timothy Daaleman",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/timothy-daaleman/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Daaleman Timothy",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Kristen Dodenhoff",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/kristen-dodenhoff-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Dodenhoff Kristen",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Katrina Donahue",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/katrina-donahue-md-mph/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Donahue Katrina",
+      "pubmed_count": 13,
+      "publications": [
+        {
+          "pmid": "33528542",
+          "title": "Screening for Asymptomatic Carotid Artery Stenosis: US Preventive Services Task Force Recommendation Statement.",
+          "journal": "JAMA",
+          "year": "2021"
+        },
+        {
+          "pmid": "33464343",
+          "title": "Interventions for Tobacco Smoking Cessation in Adults, Including Pregnant Persons: US Preventive Services Task Force Recommendation Statement.",
+          "journal": "JAMA",
+          "year": "2021"
+        },
+        {
+          "pmid": "33320230",
+          "title": "Screening for Hepatitis B Virus Infection in Adolescents and Adults: US Preventive Services Task Force Recommendation Statement.",
+          "journal": "JAMA",
+          "year": "2020"
+        },
+        {
+          "pmid": "33231670",
+          "title": "Behavioral Counseling Interventions to Promote a Healthy Diet and Physical Activity for Cardiovascular Disease Prevention in Adults With Cardiovascular Risk Factors: US Preventive Services Task Force Recommendation Statement.",
+          "journal": "JAMA",
+          "year": "2020"
+        },
+        {
+          "pmid": "33170248",
+          "title": "Screening for High Blood Pressure in Children and Adolescents: US Preventive Services Task Force Recommendation Statement.",
+          "journal": "JAMA",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "John Doughton",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/john-doughton-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Doughton John",
+      "pubmed_count": 3,
+      "publications": [
+        {
+          "pmid": "41698782",
+          "title": "Validation of Family Medicine Point-of-Care Ultrasound Screening (POCUS) for Abdominal Aortic Aneurysm.",
+          "journal": "J Am Board Fam Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "34594147",
+          "title": "Creating an Ultrasound Scholarly Concentration Program for Medical Students.",
+          "journal": "Adv Med Educ Pract",
+          "year": "2021"
+        },
+        {
+          "pmid": "34167993",
+          "title": "Saccular aneurysm of the iliofemoral vein: an uncommon mimic of an occult inguinal hernia.",
+          "journal": "BMJ Case Rep",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Molly Duffy",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/molly-duffy-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Duffy Molly",
+      "pubmed_count": 2,
+      "publications": [
+        {
+          "pmid": "41698782",
+          "title": "Validation of Family Medicine Point-of-Care Ultrasound Screening (POCUS) for Abdominal Aortic Aneurysm.",
+          "journal": "J Am Board Fam Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "37516512",
+          "title": "Functional Gastrointestinal Disorders.",
+          "journal": "Prim Care",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Chineme Enyioha",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/chineme-enyioha-md-mph/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Enyioha Chineme",
+      "pubmed_count": 21,
+      "publications": [
+        {
+          "pmid": "41824745",
+          "title": "Features of mHealth Apps for Tobacco Cessation Important to Black Adults: Discrete Choice Experiment.",
+          "journal": "JMIR Form Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "41650169",
+          "title": "Features of Mobile Health Apps for Tobacco Cessation That Appeal to Black Adults Who Use Tobacco Products: Focus Group Study.",
+          "journal": "JMIR Mhealth Uhealth",
+          "year": "2026"
+        },
+        {
+          "pmid": "41446400",
+          "title": "NC CLASP: the structure and reach of a statewide antibiotic stewardship education program.",
+          "journal": "Antimicrob Steward Healthc Epidemiol",
+          "year": "2025"
+        },
+        {
+          "pmid": "40898158",
+          "title": "Better health and less stress: an elicitation survey on quitting little cigars and cigarillos by young adults.",
+          "journal": "BMC Public Health",
+          "year": "2025"
+        },
+        {
+          "pmid": "40815515",
+          "title": "Little Cigar and Cigarillo Graphic Health Warnings and Quitting Behaviors: A Randomized Clinical Trial.",
+          "journal": "JAMA Netw Open",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Narges Farahi",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/narges-farahi-md-2/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Farahi Narges",
+      "pubmed_count": 11,
+      "publications": [
+        {
+          "pmid": "41210477",
+          "title": "\"Making our voices count\": patient action groups as a strategy to engage people with lived experience in implementation of an intervention for hypertensive disorders of pregnancy.",
+          "journal": "Front Health Serv",
+          "year": "2025"
+        },
+        {
+          "pmid": "39789591",
+          "title": "Understanding barriers and facilitators to implementation of a patient safety bundle for pregnancy-related severe hypertension in 3 North Carolina outpatient clinics: a qualitative study.",
+          "journal": "Implement Sci Commun",
+          "year": "2025"
+        },
+        {
+          "pmid": "39350133",
+          "title": "Community-engaged implementation of a safety bundle for pregnancy-related severe hypertension in the outpatient setting: protocol for a type 3 hybrid study with a multiple baseline design.",
+          "journal": "BMC Health Serv Res",
+          "year": "2024"
+        },
+        {
+          "pmid": "38574215",
+          "title": "Hypertensive Disorders of Pregnancy.",
+          "journal": "Am Fam Physician",
+          "year": "2024"
+        },
+        {
+          "pmid": "35262055",
+          "title": "Correlates of Receiving Guideline-Concordant Postpartum Health Services in the Community Health Center Setting.",
+          "journal": "Womens Health Rep (New Rochelle)",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Erin Fraher",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/erin-fraher-ph-d/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_hint": "Fraher EP OR Fraher E",
+      "pubmed_search": "Fraher EP OR Fraher E",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Adam Goldstein",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/adam-goldstein-md-mph-2/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Goldstein Adam",
+      "pubmed_count": 4,
+      "publications": [
+        {
+          "pmid": "41758105",
+          "title": "ACR Appropriateness Criteria&#xae; Preprocedural Chest or Cardiac Imaging for Cardiothoracic Surgery.",
+          "journal": "J Am Coll Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40523793",
+          "title": "Campaign messages to support pictorial health warning labels for little cigars and cigarillos: an online survey-based experiment.",
+          "journal": "BMJ Open",
+          "year": "2025"
+        },
+        {
+          "pmid": "35988307",
+          "title": "Systematic review of smoking relapse rates among cancer survivors who quit at the time of cancer diagnosis.",
+          "journal": "Cancer Epidemiol",
+          "year": "2022"
+        },
+        {
+          "pmid": "29251289",
+          "title": "Smoking Prevalence and Management Among Cancer Survivors&#x2029;.",
+          "journal": "Oncol Nurs Forum",
+          "year": "2018"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Ami Goldstein, F",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/ami-goldstein-cnm-fnp/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Goldstein Ami",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Margaret Gourlay",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/margaret-gourlay-md-mph-2/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Gourlay Margaret",
+      "pubmed_count": 2,
+      "publications": [
+        {
+          "pmid": "35797207",
+          "title": "Reducing Misperceptions About Very Low Nicotine Content Cigarettes: Insights From Adults Who Smoke.",
+          "journal": "Nicotine Tob Res",
+          "year": "2022"
+        },
+        {
+          "pmid": "29677308",
+          "title": "Vitamin D, Calcium, or Combined Supplementation for the Primary Prevention of Fractures in Community-Dwelling Adults: Evidence Report and Systematic Review for the US Preventive Services Task Force.",
+          "journal": "JAMA",
+          "year": "2018"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Mark Gwynne",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/mark-gwynne-do/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Gwynne Mark",
+      "pubmed_count": 3,
+      "publications": [
+        {
+          "pmid": "32178259",
+          "title": "Advancing Pharmacy Practice through an Innovative Ambulatory Care Transitions Program at an Academic Medical Center.",
+          "journal": "Pharmacy (Basel)",
+          "year": "2020"
+        },
+        {
+          "pmid": "29944621",
+          "title": "Implementing Lean in Academic Primary Care.",
+          "journal": "Qual Manag Health Care",
+          "year": "2018"
+        },
+        {
+          "pmid": "29439095",
+          "title": "Post-Hospital Discharge Care: A Retrospective Cohort Study Exploring the Value of Pharmacist-Enhanced Care and Describing Medication-Related Problems.",
+          "journal": "N C Med J",
+          "year": "2018"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Karen Halpert",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/karen-halpert-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Halpert Karen",
+      "pubmed_count": 3,
+      "publications": [
+        {
+          "pmid": "40902738",
+          "title": "Health System Intervention to Innovate and Improve Advance Care Planning for Older Adults.",
+          "journal": "J Pain Symptom Manage",
+          "year": "2025"
+        },
+        {
+          "pmid": "39888357",
+          "title": "Exertional Leg Weakness in a Female Zumba Instructor.",
+          "journal": "Curr Sports Med Rep",
+          "year": "2025"
+        },
+        {
+          "pmid": "32159832",
+          "title": "Advanced Geriatrics Evaluation Skills.",
+          "journal": "Fam Med",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Andrew Hannapel",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/andrew-hannapel-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Hannapel Andrew",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Emily M. Hawes",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/emily-m-hawes-pharmd-bcps-cpp/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Hawes Emily",
+      "pubmed_count": 3,
+      "publications": [
+        {
+          "pmid": "41000585",
+          "title": "Five-Year Procedure Volume Outcomes From a Dedicated Obstetrics and Gynecology Rural-Track Residency.",
+          "journal": "O G Open",
+          "year": "2024"
+        },
+        {
+          "pmid": "38412480",
+          "title": "Lessons Learned From State-Based Efforts to Leverage Medicaid Funds for Graduate Medical Education.",
+          "journal": "Acad Med",
+          "year": "2024"
+        },
+        {
+          "pmid": "35731585",
+          "title": "Improving the Health of Rural Communities Through Academic-Community Partnerships and Interprofessional Health Care and Training Models.",
+          "journal": "Acad Med",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Margaret Helton",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/margaret-helton-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Helton Margaret",
+      "pubmed_count": 4,
+      "publications": [
+        {
+          "pmid": "41595896",
+          "title": "Bridging the Gap: A Mixed-Methods Evaluation of a New Rural Maternity Care Center Amid Nationwide Closures.",
+          "journal": "Int J Environ Res Public Health",
+          "year": "2026"
+        },
+        {
+          "pmid": "40127948",
+          "title": "Family Medicine's Role in Generating Evidence to Inform Primary Care Payment Reform and New Care Delivery Models.",
+          "journal": "J Am Board Fam Med",
+          "year": "2024"
+        },
+        {
+          "pmid": "32159832",
+          "title": "Advanced Geriatrics Evaluation Skills.",
+          "journal": "Fam Med",
+          "year": "2020"
+        },
+        {
+          "pmid": "30932448",
+          "title": "Abnormal Uterine Bleeding in Premenopausal Women.",
+          "journal": "Am Fam Physician",
+          "year": "2019"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Laura Hester",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/laura-hester-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Hester Laura",
+      "pubmed_count": 1,
+      "publications": [
+        {
+          "pmid": "41645621",
+          "title": "Quantitative bias analyses to address measurement error in time-to-event endpoints.",
+          "journal": "Am J Epidemiol",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Laura House",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/laura-house-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "House Laura",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Rachel Hughes",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/rachel-hughes-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Hughes Rachel",
+      "pubmed_count": 2,
+      "publications": [
+        {
+          "pmid": "36689967",
+          "title": "Tonsillitis and Tonsilloliths: Diagnosis and Management.",
+          "journal": "Am Fam Physician",
+          "year": "2023"
+        },
+        {
+          "pmid": "35584858",
+          "title": "Diffuse lymphadenopathy and fever without a rash: an atypical presentation of secondary syphilis.",
+          "journal": "BMJ Case Rep",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Dana Iglesias",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/dana-iglesias-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Iglesias Dana",
+      "pubmed_count": 1,
+      "publications": [
+        {
+          "pmid": "41595896",
+          "title": "Bridging the Gap: A Mixed-Methods Evaluation of a New Rural Maternity Care Center Amid Nationwide Closures.",
+          "journal": "Int J Environ Res Public Health",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Landon Irvin",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/landon-irvin-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Irvin Landon",
+      "pubmed_count": 1,
+      "publications": [
+        {
+          "pmid": "41533410",
+          "title": "Heel Pain: Diagnosis and Management.",
+          "journal": "Am Fam Physician",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "LeRon Jackson",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/leron-jackson-md-mph/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Jackson LeRon",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Shawn Kane, FAAFP",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/shawn-kane-md-faafp-facsm/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Kane Shawn",
+      "pubmed_count": 4,
+      "publications": [
+        {
+          "pmid": "40194257",
+          "title": "American Academy of Orthopaedic Surgeons Appropriate Use Criteria: Case Study on Return to Play to Pre-injury Level Following Anterior Cruciate Ligament Injury.",
+          "journal": "J Am Acad Orthop Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "35349683",
+          "title": "Enriched Marine Oil Supplement Increases Specific Plasma Specialized Pro-Resolving Mediators in Adults with Obesity.",
+          "journal": "J Nutr",
+          "year": "2022"
+        },
+        {
+          "pmid": "33655999",
+          "title": "Clinical Practice Guidelines for Exertional Rhabdomyolysis: A Military Medicine Perspective.",
+          "journal": "Curr Sports Med Rep",
+          "year": "2021"
+        },
+        {
+          "pmid": "30730386",
+          "title": "American Medical Society for Sports Medicine Position Statement on Concussion in Sport.",
+          "journal": "Clin J Sport Med",
+          "year": "2019"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Ben Kaplan",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/ben-kaplan-md-mph-2/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Kaplan Ben",
+      "pubmed_count": 1,
+      "publications": [
+        {
+          "pmid": "33431398",
+          "title": "Access, Equity, and Neutral Space: Telehealth Beyond the Pandemic.",
+          "journal": "Ann Fam Med",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Amber Komorian",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/amber-komorian-md-mph/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Komorian Amber",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Tommy Koonce",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/thomas-koonce-md-mph/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Koonce Tommy",
+      "pubmed_count": 1,
+      "publications": [
+        {
+          "pmid": "32520379",
+          "title": "Improving Patient Care Through Workspace Renovation and Redesign: A Lean Approach.",
+          "journal": "Fam Med",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Sarah Kowitt",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/sarah-kowitt-phd-mph-2/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Kowitt Sarah",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Rita Lahlou",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/rita-lahlou-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Lahlou Rita",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Yee Lam",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/lam-yee/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Lam Yee",
+      "pubmed_count": 4,
+      "publications": [
+        {
+          "pmid": "38678447",
+          "title": "Academic performance of students in an accelerated medical pathway.",
+          "journal": "Med Educ Online",
+          "year": "2024"
+        },
+        {
+          "pmid": "40317934",
+          "title": "Integrating Learners Into Telemedicine Encounters.",
+          "journal": "Acad Med",
+          "year": "2023"
+        },
+        {
+          "pmid": "36464248",
+          "title": "Teaching social determinants through geographic information system mapping.",
+          "journal": "Clin Teach",
+          "year": "2023"
+        },
+        {
+          "pmid": "34818149",
+          "title": "Tips and tools to help refine your approach to chest pain.",
+          "journal": "J Fam Pract",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Justin Lee, CAQ, FAAFP",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/justin-lee-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Lee Justin",
+      "pubmed_count": 5,
+      "publications": [
+        {
+          "pmid": "41779388",
+          "title": "Spectrum of Primary Aldosteronism and Risk of Cardiovascular Outcomes: The Atherosclerosis Risk in Communities Study.",
+          "journal": "JAMA Cardiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "39888357",
+          "title": "Exertional Leg Weakness in a Female Zumba Instructor.",
+          "journal": "Curr Sports Med Rep",
+          "year": "2025"
+        },
+        {
+          "pmid": "37036458",
+          "title": "Atypical Presentation of Left Knee Swelling in a Recreational Rock-Climbing Athlete.",
+          "journal": "Curr Sports Med Rep",
+          "year": "2023"
+        },
+        {
+          "pmid": "33947773",
+          "title": "Prevalent, protective, and convergent IgG recognition of SARS-CoV-2 non-RBD spike epitopes.",
+          "journal": "Science",
+          "year": "2021"
+        },
+        {
+          "pmid": "33252906",
+          "title": "Shoulder Pain and Stiffness with Abnormal Imaging Findings.",
+          "journal": "Am Fam Physician",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Brianna Lombardi, MSW",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/brianna-lombardi-phd-msw/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Lombardi Brianna",
+      "pubmed_count": 24,
+      "publications": [
+        {
+          "pmid": "42258232",
+          "title": "How many behavioral health consultants do we need? Behavioral health consultant staffing ratios within primary care behavioral health.",
+          "journal": "Fam Syst Health",
+          "year": "2026"
+        },
+        {
+          "pmid": "41804081",
+          "title": "Unpacking the Primary Care Clinician Index: Understanding How Changes in Population and Workforce Supply Affect Access to Primary Care in North Carolina.",
+          "journal": "N C Med J",
+          "year": "2025"
+        },
+        {
+          "pmid": "41767465",
+          "title": "State laws that address workplace violence in health care settings.",
+          "journal": "Health Aff Sch",
+          "year": "2026"
+        },
+        {
+          "pmid": "41331832",
+          "title": "Changes in the Proportion of Office-Based Child and Adolescent Physician Visits Addressing Mental Health, 2005-2019.",
+          "journal": "Psychiatr Serv",
+          "year": "2026"
+        },
+        {
+          "pmid": "40465665",
+          "title": "Toward a Better Understanding of Primary Care Physician Career Typologies.",
+          "journal": "Med Care",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jennifer Martini",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/jennifer-martini-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Martini Jennifer",
+      "pubmed_count": 2,
+      "publications": [
+        {
+          "pmid": "35303307",
+          "title": "Dramatic Irony.",
+          "journal": "Fam Med",
+          "year": "2022"
+        },
+        {
+          "pmid": "30870538",
+          "title": "How do these 3 diabetes agents compare in reducing mortality?",
+          "journal": "J Fam Pract",
+          "year": "2019"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Morgan McEache",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/morgan-mceachern-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "McEache Morgan",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Gregory Metzger",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/gregory-metzger-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Metzger Gregory",
+      "pubmed_count": 1,
+      "publications": [
+        {
+          "pmid": "34167993",
+          "title": "Saccular aneurysm of the iliofemoral vein: an uncommon mimic of an occult inguinal hernia.",
+          "journal": "BMJ Case Rep",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jonathan Mitchell",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/jonathan-jon-mitchell-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Mitchell Jonathan",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Modjulie Moore",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/modjulie-moore-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Moore Modjulie",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Richa (Rick) Moore, AAHIVS",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/richard-rick-moore-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Moore Richa",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Anne Mounsey",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/anne-mounsey-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Mounsey Anne",
+      "pubmed_count": 26,
+      "publications": [
+        {
+          "pmid": "42101602",
+          "title": "Beta Blockers to Improve Post-MI Outcomes in Patients Without HF.",
+          "journal": "Am Fam Physician",
+          "year": "2026"
+        },
+        {
+          "pmid": "40834371",
+          "title": "Hyperthyroidism: Diagnosis and Treatment.",
+          "journal": "Am Fam Physician",
+          "year": "2025"
+        },
+        {
+          "pmid": "40106286",
+          "title": "High-Flow Nasal Cannula Therapy for Infants With Bronchiolitis.",
+          "journal": "Am Fam Physician",
+          "year": "2025"
+        },
+        {
+          "pmid": "38905559",
+          "title": "Bempedoic Acid for the Prevention of Cardiovascular Disease.",
+          "journal": "Am Fam Physician",
+          "year": "2024"
+        },
+        {
+          "pmid": "37725454",
+          "title": "Antibiotics for Acute Uncomplicated Diverticulitis.",
+          "journal": "Am Fam Physician",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Linda Myerholtz",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/linda-myerholtz-phd/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Myerholtz Linda",
+      "pubmed_count": 16,
+      "publications": [
+        {
+          "pmid": "37042821",
+          "title": "Take a Deep Breath.",
+          "journal": "Fam Med",
+          "year": "2023"
+        },
+        {
+          "pmid": "36787522",
+          "title": "Time to Act: Destigmatizing Mental Health Care for Health Care Professionals.",
+          "journal": "Fam Med",
+          "year": "2023"
+        },
+        {
+          "pmid": "36508623",
+          "title": "Interprofessional team based learning to enhance behavioral health care for Latinx patients: Results of a teleconsultation program.",
+          "journal": "Fam Syst Health",
+          "year": "2022"
+        },
+        {
+          "pmid": "36347250",
+          "title": "Making Meaning From Difficult Events.",
+          "journal": "Fam Med",
+          "year": "2022"
+        },
+        {
+          "pmid": "36098703",
+          "title": "The Supreme Court of the United States, Disability Rights, and Implications for Mental Health Parity.",
+          "journal": "Fam Med",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Palee Myrex",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/palee-myrex-md-2/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Myrex Palee",
+      "pubmed_count": 2,
+      "publications": [
+        {
+          "pmid": "39556628",
+          "title": "Common Tongue Conditions in Primary Care.",
+          "journal": "Am Fam Physician",
+          "year": "2024"
+        },
+        {
+          "pmid": "36689967",
+          "title": "Tonsillitis and Tonsilloliths: Diagnosis and Management.",
+          "journal": "Am Fam Physician",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Noa Nessim",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/noa-nessim-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Nessim Noa",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Dana Neutze, MSCP",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/dana-neutze-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Neutze Dana",
+      "pubmed_count": 6,
+      "publications": [
+        {
+          "pmid": "39532338",
+          "title": "Alcoholic ketoacidosis: confused diagnosis.",
+          "journal": "BMJ Case Rep",
+          "year": "2024"
+        },
+        {
+          "pmid": "33970470",
+          "title": "The Practice Is the Curriculum.",
+          "journal": "Fam Med",
+          "year": "2021"
+        },
+        {
+          "pmid": "33074038",
+          "title": "The Evolving Role of Medical Assistants in Primary Care Practice: Divergent and Concordant Perspectives from MAs and Family Physicians.",
+          "journal": "Med Care Res Rev",
+          "year": "2021"
+        },
+        {
+          "pmid": "32520379",
+          "title": "Improving Patient Care Through Workspace Renovation and Redesign: A Lean Approach.",
+          "journal": "Fam Med",
+          "year": "2020"
+        },
+        {
+          "pmid": "32430374",
+          "title": "The Financial Cost of Medical Assistant Turnover in an Academic Family Medicine Center.",
+          "journal": "J Am Board Fam Med",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Helen Newton",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/helen-newton-phd-mph/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Newton Helen",
+      "pubmed_count": 13,
+      "publications": [
+        {
+          "pmid": "42147174",
+          "title": "Helping Peer Specialists Succeed: Lessons from a Statewide Training Program.",
+          "journal": "Res Sq",
+          "year": "2026"
+        },
+        {
+          "pmid": "41361428",
+          "title": "Mobile crisis effectiveness: a systematic review and associated functions and forms framework.",
+          "journal": "BMC Health Serv Res",
+          "year": "2025"
+        },
+        {
+          "pmid": "40893069",
+          "title": "Medicaid: Increased Patient Access To MOUD In Residential Treatment Associated With Facility Openings And Closures, 2012-22.",
+          "journal": "Health Aff (Millwood)",
+          "year": "2025"
+        },
+        {
+          "pmid": "40529265",
+          "title": "Evaluating Teaching Health Center Planning and Development: Unlocking and Sustaining the Full Potential of the Teaching Health Center Program.",
+          "journal": "J Grad Med Educ",
+          "year": "2025"
+        },
+        {
+          "pmid": "40447109",
+          "title": "Characteristics of substance use disorder and mental health disorder treatment facilities with perinatal programs.",
+          "journal": "J Subst Use Addict Treat",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Cristen Page",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/cristen-page-md-mph/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Page Cristen",
+      "pubmed_count": 6,
+      "publications": [
+        {
+          "pmid": "38051204",
+          "title": "Pharmacists Colocated With Primary Care Physicians: Understanding Delivery of Interprofessional Primary Care.",
+          "journal": "Med Care",
+          "year": "2024"
+        },
+        {
+          "pmid": "33537790",
+          "title": "Maternity Units in Rural Hospitals in North Carolina: Successful Models for Staffing and Structure.",
+          "journal": "South Med J",
+          "year": "2021"
+        },
+        {
+          "pmid": "32994333",
+          "title": "SARS-CoV-2 Seroprevalence among a Southern U.S. Population Indicates Limited Asymptomatic Spread under Physical Distancing Measures.",
+          "journal": "mBio",
+          "year": "2020"
+        },
+        {
+          "pmid": "32267521",
+          "title": "Utilizing the F3App to Capture Learner Feedback About Faculty Teaching.",
+          "journal": "Fam Med",
+          "year": "2020"
+        },
+        {
+          "pmid": "31914183",
+          "title": "Content Analysis of Family Medicine Resident Peer Observations.",
+          "journal": "Fam Med",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Donald Pathman",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/donald-pathman/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Pathman Donald",
+      "pubmed_count": 1,
+      "publications": [
+        {
+          "pmid": "31642922",
+          "title": "Are Bias, Harassment, and Discrimination by Physician-Peers a Reason Why Some Physicians Leave Rural Communities?",
+          "journal": "JAMA Netw Open",
+          "year": "2019"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Ryan Paulus",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/ryan-paulus-do/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Paulus Ryan",
+      "pubmed_count": 11,
+      "publications": [
+        {
+          "pmid": "42101602",
+          "title": "Beta Blockers to Improve Post-MI Outcomes in Patients Without HF.",
+          "journal": "Am Fam Physician",
+          "year": "2026"
+        },
+        {
+          "pmid": "41698782",
+          "title": "Validation of Family Medicine Point-of-Care Ultrasound Screening (POCUS) for Abdominal Aortic Aneurysm.",
+          "journal": "J Am Board Fam Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "41593017",
+          "title": "Beyond the Stethoscope: Point-of-Care Ultrasound (POCUS) as the New Norm in Family Medicine.",
+          "journal": "J Am Board Fam Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "41134933",
+          "title": "The Roles and Responsibilities of a Family Medicine Point-of-Care Ultrasound Champion.",
+          "journal": "Fam Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "40834371",
+          "title": "Hyperthyroidism: Diagnosis and Treatment.",
+          "journal": "Am Fam Physician",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jake Perrin, MA",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/jake-perrin-md-ma-2/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Perrin Jake",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Erica Pettigrew",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/erica-pettigrew-md-jd-mph/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Pettigrew Erica",
+      "pubmed_count": 3,
+      "publications": [
+        {
+          "pmid": "34538288",
+          "title": "A guide to implementing COVID-19 vaccine as a condition of employment in healthcare facilities.",
+          "journal": "Infect Control Hosp Epidemiol",
+          "year": "2022"
+        },
+        {
+          "pmid": "34253266",
+          "title": "Multisociety statement on coronavirus disease 2019 (COVID-19) vaccination as a condition of employment for healthcare personnel.",
+          "journal": "Infect Control Hosp Epidemiol",
+          "year": "2022"
+        },
+        {
+          "pmid": "33397754",
+          "title": "COVID-19: A Mirror to Our Flaws.",
+          "journal": "N C Med J",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Debbie Phipps",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/debbie-phipps-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Phipps Debbie",
+      "pubmed_count": 1,
+      "publications": [
+        {
+          "pmid": "35489788",
+          "title": "Uterine Artery Embolization for Symptomatic Adenomyosis: Proceedings from a Society of Interventional Radiology Foundation Research Consensus Panel.",
+          "journal": "J Vasc Interv Radiol",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Taylor Pierce",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/taylor-pierce-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Pierce Taylor",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Leah Ranney, MA",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/leah-ranney/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Ranney Leah",
+      "pubmed_count": 4,
+      "publications": [
+        {
+          "pmid": "31890469",
+          "title": "Youth source of acquisition for E-Cigarettes.",
+          "journal": "Prev Med Rep",
+          "year": "2019"
+        },
+        {
+          "pmid": "31579310",
+          "title": "Willingness-to-try various tobacco cessation methods among US adult cigarette smokers.",
+          "journal": "Tob Prev Cessat",
+          "year": "2019"
+        },
+        {
+          "pmid": "31132095",
+          "title": "Optimizing Warnings on E-Cigarette Advertisements.",
+          "journal": "Nicotine Tob Res",
+          "year": "2020"
+        },
+        {
+          "pmid": "28770359",
+          "title": "Evaluation of Community-Based Cessation Programs: How Do Smokers with Behavioral Health Conditions Fare?",
+          "journal": "Community Ment Health J",
+          "year": "2018"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Brian Rayala",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/brian-rayala-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Rayala Brian",
+      "pubmed_count": 3,
+      "publications": [
+        {
+          "pmid": "38286581",
+          "title": "Pleural and pericardial effusions with fever and altered mental status: an atypical presentation of bartonellosis.",
+          "journal": "BMJ Case Rep",
+          "year": "2024"
+        },
+        {
+          "pmid": "34752273",
+          "title": "Outpatient Vasectomy: Safe, Reliable, and Cost-effective.",
+          "journal": "Prim Care",
+          "year": "2021"
+        },
+        {
+          "pmid": "34752272",
+          "title": "Neonatal Circumcision.",
+          "journal": "Prim Care",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Vinay Reddy",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/vinay-reddy-md-mph/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Reddy Vinay",
+      "pubmed_count": 1,
+      "publications": [
+        {
+          "pmid": "37339492",
+          "title": "Is there benefit to adding ezetimibe to a statin for the secondary prevention of CVD?",
+          "journal": "J Fam Pract",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Ashley Rietz",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/ashley-rietz-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Rietz Ashley",
+      "pubmed_count": 1,
+      "publications": [
+        {
+          "pmid": "31939638",
+          "title": "Functional Dyspepsia: Evaluation and Management.",
+          "journal": "Am Fam Physician",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Olivia Ritchie",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/olivia-ritchie-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Ritchie Olivia",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Caroline Roberts",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/caroline-roberts-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Roberts Caroline",
+      "pubmed_count": 7,
+      "publications": [
+        {
+          "pmid": "40625988",
+          "title": "When Accelerated MD Program Is Not the Right Path: The Why and How to Support Accelerated Learners in the Transition to the 4-Year Program.",
+          "journal": "Med Sci Educ",
+          "year": "2025"
+        },
+        {
+          "pmid": "40386473",
+          "title": "Training More Physicians for Medically Underserved Communities: The Power of Regional Medical Education Collaboratives Across the Training Continuum.",
+          "journal": "J Grad Med Educ",
+          "year": "2025"
+        },
+        {
+          "pmid": "38467006",
+          "title": "Ten-Year Outcomes: Community Health Center/Academic Medicine Partnership for Rural Family Medicine Training.",
+          "journal": "Fam Med",
+          "year": "2024"
+        },
+        {
+          "pmid": "36508623",
+          "title": "Interprofessional team based learning to enhance behavioral health care for Latinx patients: Results of a teleconsultation program.",
+          "journal": "Fam Syst Health",
+          "year": "2022"
+        },
+        {
+          "pmid": "35029929",
+          "title": "Secondary Prevention of Ischemic Stroke: Updated Guidelines From AHA/ASA.",
+          "journal": "Am Fam Physician",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Michael Ropero",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/michael-ropero-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Ropero Michael",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Wes Roten",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/wes-roten-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Roten Wes",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Jesus Ruiz",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/jesus-ruiz-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Ruiz Jesus",
+      "pubmed_count": 8,
+      "publications": [
+        {
+          "pmid": "42099299",
+          "title": "Chronic Lower Lip Swelling due to Granulomatous Cheilitis.",
+          "journal": "Clin Case Rep",
+          "year": "2026"
+        },
+        {
+          "pmid": "42081134",
+          "title": "The Persistent Health Care Gap for Undocumented Children.",
+          "journal": "J Immigr Minor Health",
+          "year": "2026"
+        },
+        {
+          "pmid": "41964196",
+          "title": "Access Is Not Utilization: Why Sustainable Rural Maternity Care Requires Investment in Women's Trust, Continuity, and Workforce Stability.",
+          "journal": "J Prim Care Community Health",
+          "year": "2026"
+        },
+        {
+          "pmid": "41641739",
+          "title": "The Postpartum Coverage Gap for Undocumented Immigrant Women.",
+          "journal": "J Womens Health (Larchmt)",
+          "year": "2026"
+        },
+        {
+          "pmid": "38645601",
+          "title": "Arrest of labor secondary to large uterine fibroid.",
+          "journal": "Clin Case Rep",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Eric Sasine",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/eric-sasine-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Sasine Eric",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Philip Sloane",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/philip-sloane/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Sloane Philip",
+      "pubmed_count": 4,
+      "publications": [
+        {
+          "pmid": "40645236",
+          "title": "Mouth Care Without a Battle: Change in Assisted Living Staff Self-Efficacy and Attitudes.",
+          "journal": "J Am Med Dir Assoc",
+          "year": "2025"
+        },
+        {
+          "pmid": "36853405",
+          "title": "Duration of Residence and Hypertension in Black Foreign-Born Residents: NHIS, 2004-2017.",
+          "journal": "J Racial Ethn Health Disparities",
+          "year": "2024"
+        },
+        {
+          "pmid": "36795630",
+          "title": "2022 NASEM Quality of Nursing Home Report: Moving Recommendations to Action.",
+          "journal": "J Am Geriatr Soc",
+          "year": "2023"
+        },
+        {
+          "pmid": "34125222",
+          "title": "Estimation of Excess Mortality Rates Among US Assisted Living Residents During the COVID-19 Pandemic.",
+          "journal": "JAMA Netw Open",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Kelly Lacy Smith",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/kelly-lacy-smith-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Smith Kelly",
+      "pubmed_count": 2,
+      "publications": [
+        {
+          "pmid": "41931155",
+          "title": "Scaling what works: a collaborative capacity-building program tailored to optimize resources and scale evidence-based interventions for cancer prevention and control.",
+          "journal": "Cancer Causes Control",
+          "year": "2026"
+        },
+        {
+          "pmid": "40463102",
+          "title": "Phylogeny-driven design of broadly protective sarbecovirus receptor-binding domain nanoparticle vaccines.",
+          "journal": "bioRxiv",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Patrick Carlsen Smith",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/patrick-carlsen-smith-md-mph/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Smith Patrick",
+      "pubmed_count": 7,
+      "publications": [
+        {
+          "pmid": "41935221",
+          "title": "Impact of donor age on cognitive recovery in allogenic hematopoietic stem cell transplant patients with mild cognitive impairment.",
+          "journal": "Bone Marrow Transplant",
+          "year": "2026"
+        },
+        {
+          "pmid": "41915019",
+          "title": "Clinical predictors of resilience following total knee arthroplasty: the PRIME-KNEE study.",
+          "journal": "J Gerontol A Biol Sci Med Sci",
+          "year": "2026"
+        },
+        {
+          "pmid": "41548963",
+          "title": "Considerations for Endpoints in Lung Transplant Clinical Trials: Perspective on the ISHLT Consensus Statement.",
+          "journal": "J Heart Lung Transplant",
+          "year": "2026"
+        },
+        {
+          "pmid": "41400593",
+          "title": "Considerations for Endpoints in Lung Transplant Clinical Trials: An ISHLT Consensus Statement.",
+          "journal": "J Heart Lung Transplant",
+          "year": "2026"
+        },
+        {
+          "pmid": "35595226",
+          "title": "Geriatric Assessment Reveals Actionable Impairments in Hematopoietic Stem Cell Transplantation Candidates Age 18 to 80 Years.",
+          "journal": "Transplant Cell Ther",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Liza Straub",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/liza-straub-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Straub Liza",
+      "pubmed_count": 3,
+      "publications": [
+        {
+          "pmid": "41698782",
+          "title": "Validation of Family Medicine Point-of-Care Ultrasound Screening (POCUS) for Abdominal Aortic Aneurysm.",
+          "journal": "J Am Board Fam Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "39556628",
+          "title": "Common Tongue Conditions in Primary Care.",
+          "journal": "Am Fam Physician",
+          "year": "2024"
+        },
+        {
+          "pmid": "33929166",
+          "title": "FM/a Blood Test for Diagnosis of Fibromyalgia.",
+          "journal": "Am Fam Physician",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Maria Thekkekandam",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/maria-thekkekandam-md-mph/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Thekkekandam Maria",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Leah Topper",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/leah-topper-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Topper Leah",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Sapna Varkey, M",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/sapna-varkey-phd-mpa/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Varkey Sapna",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Nadja Vielot",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/nadja-vielot/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Vielot Nadja",
+      "pubmed_count": 3,
+      "publications": [
+        {
+          "pmid": "36778244",
+          "title": "Acceptability and readiness to promote human papillomavirus vaccination at ages 9-10 years:&#xa0; A pilot study among rural North Carolina clinics.",
+          "journal": "Res Sq",
+          "year": "2023"
+        },
+        {
+          "pmid": "36146859",
+          "title": "Norovirus Infection in Young Nicaraguan Children Induces Durable and Genotype-Specific Antibody Immunity.",
+          "journal": "Viruses",
+          "year": "2022"
+        },
+        {
+          "pmid": "34129046",
+          "title": "Secretor Status Strongly Influences the Incidence of Symptomatic Norovirus Infection in a Genotype-Dependent Manner in a Nicaraguan Birth Cohort.",
+          "journal": "J Infect Dis",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Rupal Yu",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/rupal-yu-md-mph/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Yu Rupal",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Matt Zeitler",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/matt-zeitler-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Zeitler Matt",
+      "pubmed_count": 0,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Adam Zolotor",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/adam-zolotor/",
+      "department": "Family Medicine",
+      "role": "",
+      "pubmed_search": "Zolotor Adam",
+      "pubmed_count": 4,
+      "publications": [
+        {
+          "pmid": "35504716",
+          "title": "The Path to Insuring All North Carolinians: An Interview with Senator Joyce Krawiec.",
+          "journal": "N C Med J",
+          "year": "2022"
+        },
+        {
+          "pmid": "35362065",
+          "title": "Addressing Adverse Childhood Experiences in Primary Care: Challenges and Considerations.",
+          "journal": "Pediatrics",
+          "year": "2022"
+        },
+        {
+          "pmid": "34230171",
+          "title": "Exploring Clusters of Risk and Association With Child Maltreatment in North Carolina Counties.",
+          "journal": "N C Med J",
+          "year": "2021"
+        },
+        {
+          "pmid": "30573150",
+          "title": "The Role of Emotional Abuse in Youth Smoking.",
+          "journal": "Am J Prev Med",
+          "year": "2019"
+        }
+      ],
+      "nih_grants": []
+    }
+  ]
 }
