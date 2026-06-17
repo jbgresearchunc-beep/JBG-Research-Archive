@@ -314,14 +314,13 @@ def clean_name_for_pubmed(name):
 
 
 def build_pubmed_search_string(name):
-    """Convert 'First Middle Last' -> 'Last FM' author search string."""
-    name = clean_name_for_pubmed(name)
-    parts = [p for p in name.strip().split() if p]
-    if not parts:
-        return name
-    last = parts[-1]
-    initials = "".join(p[0] for p in parts[:-1] if p and p[0].isalpha())
-    return f"{last} {initials}"
+    """
+    Build a PubMed author search string from a faculty name.
+    Uses full name (e.g. 'Jennifer Carr') rather than initials ('Carr JC')
+    for better disambiguation. PubMed has supported full-name author
+    search since 2013.
+    """
+    return clean_name_for_pubmed(name)
 
 
 def pubmed_search(search_term, affiliation="University of North Carolina", max_results=5):
@@ -514,29 +513,35 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
     name = faculty_member["name"]
 
     if pubmed_string and pubmed_string.startswith("ORCID:"):
+        # ORCID is always most accurate
         search_term = pubmed_string
     elif pubmed_string:
-        search_term = pubmed_string
+        # Decide whether to keep the profile hint or use full name instead.
+        # Keep hints that are wildcarded (e.g. 'Ogunleye AA*') — these are curated
+        # and more specific than a plain full name search.
+        # Replace hints that look like 'Lastname I' or 'Lastname FI' (initials format)
+        # with full name since full name is less ambiguous in modern PubMed.
+        hint_clean = pubmed_string.replace("*", "").strip()
+        hint_parts = hint_clean.split()
+        # Initials format: second+ tokens are all 1-2 uppercase chars (e.g. 'Carr JC', 'Lee CN')
+        is_initials_format = (
+            len(hint_parts) >= 2 and
+            all(len(p) <= 2 for p in hint_parts[1:])
+        )
+        if "*" in pubmed_string and not is_initials_format:
+            # Wildcarded non-initials hint — keep it (e.g. 'Ogunleye AA*')
+            search_term = pubmed_string
+        elif is_initials_format:
+            # Plain initials — replace with full name
+            search_term = build_pubmed_search_string(name)
+            print(f"    Overriding initials hint '{pubmed_string}' with full name '{search_term}'")
+        else:
+            search_term = pubmed_string
     else:
         search_term = build_pubmed_search_string(name)
 
     print(f"    PubMed: {name} → '{search_term}'")
     result = pubmed_search(search_term, max_results=15)
-
-    # If result count is very high (>20), the search string is too ambiguous.
-    # Try a more specific search using full first name instead of initials.
-    if result["count"] > 20 and not search_term.startswith("ORCID:"):
-        clean = clean_name_for_pubmed(name)
-        parts = [p for p in clean.split() if p]
-        if len(parts) >= 2:
-            full_first = parts[0]
-            last = parts[-1]
-            specific_term = f"{last} {full_first}"
-            specific_result = pubmed_search(specific_term, max_results=15)
-            if 0 < specific_result["count"] <= result["count"]:
-                print(f"    Refining: '{search_term}' ({result['count']} results) → '{specific_term}' ({specific_result['count']} results)")
-                search_term = specific_term
-                result = specific_result
 
     pubs = []
     if result["ids"]:
