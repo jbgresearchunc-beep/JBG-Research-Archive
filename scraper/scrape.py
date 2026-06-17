@@ -333,11 +333,99 @@ def pubmed_search(search_term, affiliation="University of North Carolina", max_r
         return {"count": 0, "ids": []}
 
 
-def pubmed_fetch_summaries(pmids):
-    """Fetch article summaries for a list of PMIDs."""
+UNC_AFFILIATION_TERMS = [
+    "north carolina", "unc", "chapel hill", "lineberger"
+]
+
+
+def affiliation_is_unc(aff_string):
+    """Return True if the affiliation string mentions UNC."""
+    aff_lower = aff_string.lower()
+    return any(t in aff_lower for t in UNC_AFFILIATION_TERMS)
+
+
+def pubmed_fetch_summaries(pmids, verify_affiliation=True):
+    """
+    Fetch article details for a list of PMIDs.
+    Uses efetch (XML) to get affiliation data, then filters to only
+    papers where at least one author is affiliated with UNC.
+    Falls back to esummary if efetch fails.
+    """
     if not pmids:
         return []
 
+    # Use efetch XML to get affiliation info
+    params = urllib.parse.urlencode({
+        "db": "pubmed",
+        "id": ",".join(pmids),
+        "retmode": "xml",
+        "rettype": "abstract",
+        "tool": "unc-research-explorer",
+        "email": PUBMED_EMAIL,
+    })
+    url = PUBMED_BASE + "efetch.fcgi?" + params
+
+    try:
+        with urllib.request.urlopen(url, timeout=15) as resp:
+            xml_data = resp.read().decode("utf-8", errors="replace")
+    except Exception as e:
+        print(f"    PubMed efetch error: {e}, falling back to esummary")
+        return pubmed_fetch_summaries_fallback(pmids)
+
+    # Parse XML manually (avoid external deps)
+    pubs = []
+    # Split into individual articles
+    articles = re.split(r"<PubmedArticle>", xml_data)[1:]
+    for article_xml in articles:
+        # Extract PMID
+        pmid_match = re.search(r"<PMID[^>]*>(\d+)</PMID>", article_xml)
+        if not pmid_match:
+            continue
+        pmid = pmid_match.group(1)
+
+        # Extract title
+        title_match = re.search(r"<ArticleTitle[^>]*>(.*?)</ArticleTitle>",
+                                article_xml, re.DOTALL)
+        title = ""
+        if title_match:
+            title = re.sub(r"<[^>]+>", "", title_match.group(1)).strip()
+
+        # Extract journal
+        journal_match = re.search(r"<ISOAbbreviation>(.*?)</ISOAbbreviation>",
+                                  article_xml)
+        if not journal_match:
+            journal_match = re.search(r"<Title>(.*?)</Title>", article_xml)
+        journal = journal_match.group(1).strip() if journal_match else ""
+
+        # Extract year
+        year_match = re.search(r"<PubDate>.*?<Year>(\d{4})</Year>.*?</PubDate>",
+                               article_xml, re.DOTALL)
+        if not year_match:
+            year_match = re.search(r"<Year>(\d{4})</Year>", article_xml)
+        year = year_match.group(1) if year_match else ""
+
+        # Extract all affiliations
+        affiliations = re.findall(r"<Affiliation>(.*?)</Affiliation>", article_xml)
+        aff_text = " ".join(affiliations)
+
+        # Filter: skip if no UNC affiliation found
+        if verify_affiliation and affiliations and not affiliation_is_unc(aff_text):
+            print(f"      Skipping PMID {pmid} — no UNC affiliation found")
+            continue
+
+        if title:
+            pubs.append({
+                "pmid": pmid,
+                "title": title,
+                "journal": journal,
+                "year": year,
+            })
+
+    return pubs
+
+
+def pubmed_fetch_summaries_fallback(pmids):
+    """Fallback using esummary (no affiliation filtering)."""
     params = urllib.parse.urlencode({
         "db": "pubmed",
         "id": ",".join(pmids),
@@ -346,7 +434,6 @@ def pubmed_fetch_summaries(pmids):
         "email": PUBMED_EMAIL,
     })
     url = PUBMED_BASE + "esummary.fcgi?" + params
-
     try:
         with urllib.request.urlopen(url, timeout=10) as resp:
             data = json.loads(resp.read())
@@ -365,7 +452,7 @@ def pubmed_fetch_summaries(pmids):
             })
         return pubs
     except Exception as e:
-        print(f"    PubMed fetch error: {e}")
+        print(f"    PubMed esummary fallback error: {e}")
         return []
 
 
@@ -383,11 +470,12 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
         search_term = build_pubmed_search_string(name)
 
     print(f"    PubMed: {name} → '{search_term}'")
-    result = pubmed_search(search_term)
+    result = pubmed_search(search_term, max_results=15)
 
     pubs = []
     if result["ids"]:
-        pubs = pubmed_fetch_summaries(result["ids"][:5])
+        candidates = pubmed_fetch_summaries(result["ids"][:15])
+        pubs = candidates[:5]  # keep top 5 after affiliation filtering
 
     faculty_member["pubmed_search"] = search_term
     faculty_member["pubmed_count"] = result["count"]
