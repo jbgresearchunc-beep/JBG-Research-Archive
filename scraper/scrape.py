@@ -152,6 +152,10 @@ def looks_like_name(text):
 def extract_name(raw_text):
     """Clean raw link text into a canonical name."""
     text = raw_text.strip()
+    # Remove parenthetical nicknames e.g. (Yemi)
+    text = re.sub(r"\([^)]*\)", "", text)
+    # Remove quoted nicknames e.g. "Yemi"
+    text = re.sub(r'["\'\u201c\u201d][^"\'\u201c\u201d]*["\'\u201c\u201d]', "", text)
     text = DEGREE_SUFFIXES.sub("", text).strip().rstrip(",").strip()
     text = TITLE_PREFIXES.sub("", text).strip()
     # Collapse whitespace
@@ -269,8 +273,10 @@ def scrape_profile_for_pubmed_string(profile_url):
     )
     if match:
         raw = urllib.parse.unquote_plus(match.group(1))
-        # Only use if it looks like an author string (short, no complex query syntax)
-        if len(raw) < 30 and "[" not in raw:
+        # Only use if it looks like a clean author string:
+        # short, no brackets, no hyphens (URL slugs have hyphens), only letters/spaces/commas
+        if (len(raw) < 30 and "[" not in raw and "-" not in raw
+                and re.match(r"^[A-Za-z ,.*]+$", raw)):
             hint = re.sub(r",\s*", " ", raw).strip()
             return hint
 
@@ -438,39 +444,48 @@ def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term=""):
             year_match = re.search(r"<Year>(\d{4})</Year>", article_xml)
         year = year_match.group(1) if year_match else ""
 
-        # Extract per-author affiliation blocks to check the TARGET author specifically
-        # PubMed XML: <Author><LastName>Carr</LastName>...<AffiliationInfo><Affiliation>UNC...</Affiliation></AffiliationInfo></Author>
-        author_blocks = re.findall(r"<Author[^>]*>(.*?)</Author>", article_xml, re.DOTALL)
+        # In PubMed XML, affiliations are stored in two places:
+        # 1. <AffiliationInfo> inside <Author> blocks (per-author, newer articles)
+        # 2. <Affiliation> directly in <AuthorList> (older articles, article-level)
+        # We check both and require the TARGET author's last name to appear
+        # in a UNC-affiliated author block where possible.
 
-        if verify_affiliation and author_blocks:
-            # Build a map of last name initial -> affiliations for that author
+        if verify_affiliation:
+            # Collect all author blocks with their affiliations
+            author_blocks = re.findall(r"<Author[^>]*>(.*?)</Author>", article_xml, re.DOTALL)
+            # Also collect all affiliations at article level as fallback
+            all_affiliations = re.findall(r"<Affiliation>(.*?)</Affiliation>", article_xml)
+            all_aff_text = " ".join(all_affiliations)
+
+            target_last = search_term.split()[0].lower() if search_term else ""
             target_has_unc = False
-            any_has_unc = False
+            any_has_unc = affiliation_is_unc(all_aff_text)
 
             for block in author_blocks:
                 last_match = re.search(r"<LastName>(.*?)</LastName>", block)
-                fore_match = re.search(r"<ForeName>(.*?)</ForeName>", block)
-                init_match = re.search(r"<Initials>(.*?)</Initials>", block)
-                author_affs = re.findall(r"<Affiliation>(.*?)</Affiliation>", block)
-                author_aff_text = " ".join(author_affs)
+                # Per-author affiliations are in <AffiliationInfo><Identifier>
+                # or directly as <Affiliation> inside the author block
+                block_affs = re.findall(r"<Affiliation>(.*?)</Affiliation>", block)
+                block_aff_text = " ".join(block_affs)
 
-                if affiliation_is_unc(author_aff_text):
-                    any_has_unc = True
-                    # Check if this is the target author
-                    if last_match and init_match:
-                        last = last_match.group(1).strip()
-                        inits = init_match.group(1).strip()
-                        # Match against search_term loosely (last name must match)
-                        if search_term and last.lower() in search_term.lower():
+                if last_match:
+                    last = last_match.group(1).strip().lower()
+                    if last == target_last:
+                        # This is our target author — check their affiliation
+                        if block_affs and affiliation_is_unc(block_aff_text):
+                            target_has_unc = True
+                        elif not block_affs and any_has_unc:
+                            # No per-author affiliation stored; article has UNC somewhere
+                            # and this is our target author — accept it
                             target_has_unc = True
 
-            # Prefer target-author UNC match; fall back to any-author UNC match
-            if not target_has_unc and not any_has_unc:
-                print(f"      Skipping PMID {pmid} — no UNC affiliation found")
+            if not any_has_unc:
+                print(f"      Skipping PMID {pmid} — no UNC affiliation in article")
                 continue
-            elif not target_has_unc and any_has_unc:
-                # Co-author is at UNC but not the target — borderline, keep but flag
-                print(f"      PMID {pmid} — co-author at UNC (not target author)")
+            # If we have per-author data and target isn't at UNC, skip
+            if author_blocks and not target_has_unc and any_has_unc:
+                print(f"      PMID {pmid} — UNC affiliation found but not for target author ({target_last})")
+                continue
 
         if title:
             pubs.append({
@@ -484,7 +499,7 @@ def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term=""):
 
 
 def pubmed_fetch_summaries_fallback(pmids):
-    """Fallback using esummary (no affiliation filtering)."""
+    """Fallback using esummary — basic affiliation check via affiliationlist field."""
     params = urllib.parse.urlencode({
         "db": "pubmed",
         "id": ",".join(pmids),
@@ -501,6 +516,11 @@ def pubmed_fetch_summaries_fallback(pmids):
         for pmid in pmids:
             art = results.get(pmid, {})
             if not art or art.get("error"):
+                continue
+            # esummary includes affiliationlist in some records — check it
+            aff_list = art.get("affiliationlist", [])
+            aff_text = " ".join(a.get("affiliation", "") for a in aff_list)
+            if aff_list and not affiliation_is_unc(aff_text):
                 continue
             title = re.sub(r"<[^>]+>", "", art.get("title", "")).strip()
             pubs.append({
@@ -538,8 +558,9 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
             all(len(p) <= 2 for p in hint_parts[1:])
         )
         if "*" in pubmed_string and not is_initials_format:
-            # Wildcarded non-initials hint — keep it (e.g. 'Ogunleye AA*')
-            search_term = pubmed_string
+            # Wildcarded hint — strip the * before querying since PubMed
+            # doesn't support wildcards inside quoted author strings
+            search_term = pubmed_string.replace("*", "").strip()
         elif is_initials_format:
             # Plain initials — replace with full name
             search_term = build_pubmed_search_string(name)
@@ -558,7 +579,8 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
         pubs = candidates[:5]  # keep top 5 after affiliation filtering
 
     faculty_member["pubmed_search"] = search_term
-    faculty_member["pubmed_count"] = result["count"]
+    faculty_member["pubmed_count"] = result["count"]  # raw search count
+    faculty_member["pubmed_verified"] = len(pubs)     # UNC-verified count
     faculty_member["publications"] = pubs
 
     # Rate limiting — NCBI allows 3 req/sec without API key
@@ -572,7 +594,8 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
 
 def fetch_nih_grants(name):
     """Query NIH RePORTER for active grants by PI name at UNC."""
-    parts = name.strip().split()
+    clean = clean_name_for_pubmed(name)
+    parts = clean.strip().split()
     if len(parts) < 2:
         return []
     last = parts[-1]
