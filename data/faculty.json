@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T01:42:07.115389Z",
+  "generated_at": "2026-06-17T01:47:06.773360Z",
   "total_faculty": 8,
   "departments": [
     "Surgery \u2014 Plastic & Reconstructive Surgery"
@@ -10,7 +10,8 @@
       "profile_url": "https://www.med.unc.edu/surgery/plastic/people/kevin-calder-md/",
       "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
       "role": "",
-      "pubmed_search": "Calder K",
+      "pubmed_hint": "calder kevin",
+      "pubmed_search": "calder kevin",
       "pubmed_count": 2,
       "publications": [
         {
@@ -158,37 +159,38 @@
       "profile_url": "https://www.med.unc.edu/surgery/plastic/people/clara-lee-md-mpp-facs/",
       "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
       "role": "",
-      "pubmed_search": "Lee C",
-      "pubmed_count": 93,
+      "pubmed_hint": "Lee CN",
+      "pubmed_search": "Lee CN",
+      "pubmed_count": 19,
       "publications": [
         {
-          "pmid": "42228313",
-          "title": "Building the Oncology Workforce: A Qualitative Evaluation of an Inter-Institutional Cancer Research Internship for Underrepresented Undergraduate Students.",
-          "journal": "J Cancer Educ",
+          "pmid": "42065932",
+          "title": "Evaluating Whether Icons and Visual Elements Help or Hinder Understanding of Key Information for Research Studies: Results From a Randomized Trial.",
+          "journal": "Health Lit Res Pract",
           "year": "2026"
         },
         {
-          "pmid": "42080043",
-          "title": "Enhanced intraparietal phase-lag synchronization in the high-gamma band during retention of visuospatial working memory.",
-          "journal": "Biomed Eng Lett",
+          "pmid": "42012737",
+          "title": "Shared Decision-Making in IPMN of the Pancreas: A Framework for Surgical Decisions Under Uncertainty.",
+          "journal": "Ann Surg Oncol",
           "year": "2026"
         },
         {
-          "pmid": "41915024",
-          "title": "Building HOPE: operationalizing hybrid decentralized oncology clinical trials with community providers beyond traditional healthcare system networks.",
-          "journal": "Oncologist",
+          "pmid": "41991888",
+          "title": "Attitudes and Perspectives on Shared Decision Making Among Breast Surgical Oncologists: A Qualitative Study.",
+          "journal": "Ann Surg Oncol",
           "year": "2026"
         },
         {
-          "pmid": "41911514",
-          "title": "Clinicogenomic Characteristics and Treatment Outcomes of Patients With Advanced ALK-Rearranged Squamous and Adenosquamous Non-Small Cell Lung Cancers.",
-          "journal": "JCO Precis Oncol",
+          "pmid": "41986795",
+          "title": "ASO Visual Abstract: Attitudes and Perspectives on Shared Decision-Making Among Breast Surgical Oncologists-A Qualitative Study.",
+          "journal": "Ann Surg Oncol",
           "year": "2026"
         },
         {
-          "pmid": "41884425",
-          "title": "Serologic Evidence of Hemorrhagic Fever Virus Spillover in Rural Liberia.",
-          "journal": "Open Forum Infect Dis",
+          "pmid": "41687092",
+          "title": "Correction: Social Media as a Platform for Cancer Care Decision-Making Among Women: Internet Survey-Based Study on Trust, Engagement, and Preferences.",
+          "journal": "JMIR Cancer",
           "year": "2026"
         }
       ],
@@ -209,38 +211,39 @@
       "profile_url": "https://www.med.unc.edu/surgery/plastic/people/adeyemi-yemi-ogunleye-md-sm/",
       "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
       "role": "",
-      "pubmed_search": "Ogunleye A",
-      "pubmed_count": 6,
+      "pubmed_hint": "Ogunleye AA*",
+      "pubmed_search": "Ogunleye AA*",
+      "pubmed_count": 16,
       "publications": [
         {
-          "pmid": "41418049",
-          "title": "Evaluating the Performance of Different Pedicles in Reduction Mammoplasty: A Comparative Analysis.",
-          "journal": "Ann Plast Surg",
-          "year": "2026"
-        },
-        {
-          "pmid": "40967193",
-          "title": "Lower extremity lymphedema after pelvic nodal dissection for urologic cancers is associated with metastatic recurrence.",
-          "journal": "Can Urol Assoc J",
+          "pmid": "41344342",
+          "title": "Drain Use and Complications After Breast Reduction in A Five-Academic-Institution Cohort.",
+          "journal": "Plast Reconstr Surg",
           "year": "2025"
         },
         {
-          "pmid": "40395087",
-          "title": "May-Thurner syndrome diagnosis and management with concurrent lymphedema.",
-          "journal": "Phlebology",
-          "year": "2026"
+          "pmid": "41145120",
+          "title": "Local Capacity Building, Constraints, and Microsurgical Reconstruction in a Low-Resource Country: A Cross-sectional Study of Surgeons.",
+          "journal": "J Reconstr Microsurg",
+          "year": "2025"
         },
         {
-          "pmid": "36389611",
-          "title": "Low Baseline Expression of Fibrotic Genes in an Ex Vivo Human Skin Model is a Potential Indicator of Excessive Skin Scarring.",
-          "journal": "Plast Reconstr Surg Glob Open",
-          "year": "2022"
+          "pmid": "39969892",
+          "title": "Using Pooled Registry Data to Assess Complication Risk by Breast Implant Type.",
+          "journal": "JAMA Surg",
+          "year": "2025"
         },
         {
-          "pmid": "33640015",
-          "title": "Elucidating the cellular mechanism for E2-induced dermal fibrosis.",
-          "journal": "Arthritis Res Ther",
-          "year": "2021"
+          "pmid": "39550629",
+          "title": "Patient-reported persistent lymphedema and peripheral neuropathy among long-term breast cancer survivors in the&#xa0;Carolina Breast Cancer Study.",
+          "journal": "Cancer",
+          "year": "2025"
+        },
+        {
+          "pmid": "38175324",
+          "title": "Lymphedema self-assessment among endometrial cancer survivors.",
+          "journal": "Cancer Causes Control",
+          "year": "2024"
         }
       ],
       "nih_grants": []
