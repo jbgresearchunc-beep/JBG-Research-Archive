@@ -523,6 +523,21 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
     print(f"    PubMed: {name} → '{search_term}'")
     result = pubmed_search(search_term, max_results=15)
 
+    # If result count is very high (>20), the search string is too ambiguous.
+    # Try a more specific search using full first name instead of initials.
+    if result["count"] > 20 and not search_term.startswith("ORCID:"):
+        clean = clean_name_for_pubmed(name)
+        parts = [p for p in clean.split() if p]
+        if len(parts) >= 2:
+            full_first = parts[0]
+            last = parts[-1]
+            specific_term = f"{last} {full_first}"
+            specific_result = pubmed_search(specific_term, max_results=15)
+            if 0 < specific_result["count"] <= result["count"]:
+                print(f"    Refining: '{search_term}' ({result['count']} results) → '{specific_term}' ({specific_result['count']} results)")
+                search_term = specific_term
+                result = specific_result
+
     pubs = []
     if result["ids"]:
         candidates = pubmed_fetch_summaries(result["ids"][:15], search_term=search_term)
