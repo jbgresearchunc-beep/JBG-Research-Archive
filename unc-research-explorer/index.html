@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNC SOM Research Explorer</title>
+  <style>
+    :root {
+      --carolina-blue: #4b9bd3;
+      --navy: #13294b;
+      --bg: #f7f8fa;
+      --surface: #ffffff;
+      --border: #e2e5ea;
+      --text: #1a1d23;
+      --muted: #6b7280;
+      --accent-blue-bg: #e8f2fb;
+      --accent-blue-text: #1a5fa8;
+      --accent-green-bg: #e6f4ea;
+      --accent-green-text: #1a6e35;
+      --accent-amber-bg: #fef3e2;
+      --accent-amber-text: #92580a;
+      --radius: 10px;
+      --radius-sm: 6px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 1.25rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    header .logo {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+    header .logo span { color: var(--carolina-blue); }
+    header .subtitle {
+      font-size: 0.8rem;
+      opacity: 0.65;
+      margin-top: 1px;
+    }
+    header .spacer { flex: 1; }
+    header .updated {
+      font-size: 0.75rem;
+      opacity: 0.5;
+      text-align: right;
+    }
+
+    /* Controls */
+    .controls-bar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .search-wrap {
+      position: relative;
+      flex: 1;
+      min-width: 220px;
+    }
+    .search-wrap svg {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      pointer-events: none;
+    }
+    .search-wrap input {
+      width: 100%;
+      padding: 0.5rem 0.75rem 0.5rem 2.25rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      outline: none;
+      background: var(--bg);
+    }
+    .search-wrap input:focus {
+      border-color: var(--carolina-blue);
+      background: white;
+    }
+    select {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      background: var(--bg);
+      color: var(--text);
+      cursor: pointer;
+      outline: none;
+    }
+    select:focus { border-color: var(--carolina-blue); }
+    .count-label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    /* Layout */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem 3rem;
+    }
+
+    /* Faculty grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1rem;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.1rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      transition: box-shadow 0.15s;
+    }
+    .card:hover {
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+    .avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--accent-blue-bg);
+      color: var(--accent-blue-text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+    .card-name {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.3;
+    }
+    .card-name a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .card-name a:hover { color: var(--carolina-blue); }
+    .card-meta {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    /* Badges */
+    .badges { display: flex; flex-wrap: wrap; gap: 5px; }
+    .badge {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 99px;
+    }
+    .badge-dept {
+      background: #f0f1f3;
+      color: #4b5563;
+    }
+    .badge-pubmed {
+      background: var(--accent-blue-bg);
+      color: var(--accent-blue-text);
+    }
+    .badge-nih {
+      background: var(--accent-green-bg);
+      color: var(--accent-green-text);
+    }
+
+    /* Publications */
+    .pubs-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .pubs-list { list-style: none; }
+    .pub {
+      padding: 5px 0;
+      border-top: 1px solid var(--border);
+    }
+    .pub:first-child { border-top: none; }
+    .pub-title {
+      font-size: 0.8rem;
+      line-height: 1.4;
+    }
+    .pub-title a {
+      color: var(--text);
+      text-decoration: none;
+    }
+    .pub-title a:hover { color: var(--carolina-blue); }
+    .pub-journal {
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-top: 1px;
+    }
+    .no-pubs {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    /* NIH grants */
+    .grants-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .grant {
+      font-size: 0.78rem;
+      padding: 4px 8px;
+      background: var(--accent-green-bg);
+      border-radius: var(--radius-sm);
+      color: var(--accent-green-text);
+      margin-bottom: 4px;
+      line-height: 1.35;
+    }
+    .grant-year {
+      font-size: 0.7rem;
+      opacity: 0.7;
+      margin-top: 1px;
+    }
+
+    /* Empty state */
+    .empty {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 4rem 2rem;
+      color: var(--muted);
+    }
+    .empty h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text); }
+
+    /* Loading */
+    .loading-msg {
+      text-align: center;
+      padding: 4rem 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--carolina-blue); }
+
+    @media (max-width: 600px) {
+      header, .controls-bar, main { padding-left: 1rem; padding-right: 1rem; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <div class="logo"><span>UNC</span> SOM Research Explorer</div>
+    <div class="subtitle">JGB Research Society · UNC School of Medicine</div>
+  </div>
+  <div class="spacer"></div>
+  <div class="updated" id="updatedLabel"></div>
+</header>
+
+<div class="controls-bar">
+  <div class="search-wrap">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+    </svg>
+    <input id="searchInput" type="text" placeholder="Search by name, topic, or keyword..." oninput="applyFilters()">
+  </div>
+  <select id="deptFilter" onchange="applyFilters()">
+    <option value="">All departments</option>
+  </select>
+  <select id="sortBy" onchange="applyFilters()">
+    <option value="name">Sort: Name A–Z</option>
+    <option value="pubs">Sort: Most publications</option>
+  </select>
+  <span class="count-label" id="countLabel"></span>
+</div>
+
+<main>
+  <div class="loading-msg" id="loadingMsg">Loading faculty data...</div>
+  <div class="grid" id="grid" style="display:none"></div>
+</main>
+
+<footer>
+  Data sourced from <a href="https://pubmed.ncbi.nlm.nih.gov" target="_blank">PubMed</a> and
+  <a href="https://reporter.nih.gov" target="_blank">NIH RePORTER</a>.
+  Faculty lists scraped from UNC SOM department pages.
+  Updated weekly · Built by JGB Research Society ·
+  <a href="https://github.com/YOUR-ORG/unc-research-explorer" target="_blank">GitHub</a>
+</footer>
+
+<script>
+let ALL_FACULTY = [];
+let VISIBLE_FACULTY = [];
+
+function initials(name) {
+  const parts = name.trim().split(/\s+/);
+  if (parts.length < 2) return name.slice(0, 2).toUpperCase();
+  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+}
+
+function escapeHtml(s) {
+  return (s || "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+}
+
+function renderCard(f) {
+  const init = initials(f.name);
+  const pubs = (f.publications || []).slice(0, 4);
+  const grants = (f.nih_grants || []).slice(0, 2);
+  const deptShort = f.department.split("—").pop().trim();
+
+  const pubBadge = f.pubmed_count > 0
+    ? `<span class="badge badge-pubmed">📄 ${f.pubmed_count} on PubMed</span>`
+    : "";
+  const nihBadge = grants.length > 0
+    ? `<span class="badge badge-nih">🏛 NIH funded</span>`
+    : "";
+
+  const nameLink = f.profile_url
+    ? `<a href="${escapeHtml(f.profile_url)}" target="_blank">${escapeHtml(f.name)}</a>`
+    : escapeHtml(f.name);
+
+  let pubsHtml = "";
+  if (pubs.length > 0) {
+    pubsHtml = `
+      <div>
+        <div class="pubs-label">Recent publications</div>
+        <ul class="pubs-list">
+          ${pubs.map(p => `
+            <li class="pub">
+              <div class="pub-title">
+                <a href="https://pubmed.ncbi.nlm.nih.gov/${escapeHtml(p.pmid)}/" target="_blank">
+                  ${escapeHtml(p.title)}
+                </a>
+              </div>
+              <div class="pub-journal">${escapeHtml(p.journal)}${p.year ? " · " + p.year : ""}</div>
+            </li>`).join("")}
+        </ul>
+      </div>`;
+  } else {
+    pubsHtml = `<div class="no-pubs">No indexed publications found via PubMed</div>`;
+  }
+
+  let grantsHtml = "";
+  if (grants.length > 0) {
+    grantsHtml = `
+      <div>
+        <div class="grants-label">Active NIH grants</div>
+        ${grants.map(g => `
+          <div class="grant">
+            ${escapeHtml(g.title)}
+            ${g.fiscal_year ? `<div class="grant-year">FY${g.fiscal_year}</div>` : ""}
+          </div>`).join("")}
+      </div>`;
+  }
+
+  return `
+    <div class="card" data-dept="${escapeHtml(f.department)}" data-name="${escapeHtml(f.name)}">
+      <div class="card-header">
+        <div class="avatar">${init}</div>
+        <div>
+          <div class="card-name">${nameLink}</div>
+          <div class="card-meta">${escapeHtml(deptShort)}${f.role ? " · " + escapeHtml(f.role) : ""}</div>
+        </div>
+      </div>
+      <div class="badges">
+        <span class="badge badge-dept">${escapeHtml(f.department)}</span>
+        ${pubBadge}${nihBadge}
+      </div>
+      ${pubsHtml}
+      ${grantsHtml}
+    </div>`;
+}
+
+function applyFilters() {
+  const query = document.getElementById("searchInput").value.toLowerCase().trim();
+  const dept = document.getElementById("deptFilter").value;
+  const sort = document.getElementById("sortBy").value;
+
+  let filtered = ALL_FACULTY.filter(f => {
+    if (dept && f.department !== dept) return false;
+    if (!query) return true;
+    const haystack = [
+      f.name,
+      f.department,
+      f.role,
+      (f.publications || []).map(p => p.title + " " + p.journal).join(" "),
+      (f.nih_grants || []).map(g => g.title).join(" "),
+    ].join(" ").toLowerCase();
+    return haystack.includes(query);
+  });
+
+  if (sort === "pubs") {
+    filtered.sort((a, b) => (b.pubmed_count || 0) - (a.pubmed_count || 0));
+  } else {
+    filtered.sort((a, b) => a.name.localeCompare(b.name));
+  }
+
+  VISIBLE_FACULTY = filtered;
+  const grid = document.getElementById("grid");
+  document.getElementById("countLabel").textContent =
+    `${filtered.length} of ${ALL_FACULTY.length} faculty`;
+
+  if (filtered.length === 0) {
+    grid.innerHTML = `
+      <div class="empty">
+        <h3>No results</h3>
+        <p>Try a different name, keyword, or department filter.</p>
+      </div>`;
+  } else {
+    grid.innerHTML = filtered.map(renderCard).join("");
+  }
+}
+
+async function init() {
+  try {
+    const resp = await fetch("data/faculty.json");
+    if (!resp.ok) throw new Error("Could not load faculty data");
+    const data = await resp.json();
+
+    ALL_FACULTY = data.faculty || [];
+
+    // Populate department filter
+    const depts = [...new Set(ALL_FACULTY.map(f => f.department))].sort();
+    const sel = document.getElementById("deptFilter");
+    depts.forEach(d => {
+      const opt = document.createElement("option");
+      opt.value = d;
+      opt.textContent = d;
+      sel.appendChild(opt);
+    });
+
+    // Updated label
+    if (data.generated_at) {
+      const d = new Date(data.generated_at);
+      document.getElementById("updatedLabel").textContent =
+        "Data updated " + d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    }
+
+    document.getElementById("loadingMsg").style.display = "none";
+    document.getElementById("grid").style.display = "grid";
+    applyFilters();
+
+  } catch (e) {
+    document.getElementById("loadingMsg").innerHTML =
+      `<strong>Could not load faculty data.</strong><br>
+      If running locally, serve this folder with a local server (e.g. <code>python3 -m http.server</code>).<br>
+      Error: ${e.message}`;
+  }
+}
+
+init();
+</script>
+</body>
+</html>

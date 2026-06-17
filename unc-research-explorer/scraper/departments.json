@@ -1,0 +1,184 @@
+{
+  "departments": [
+    {
+      "name": "Medicine — Cardiology",
+      "short": "Medicine",
+      "url": "https://www.med.unc.edu/medicine/cardiology/faculty/"
+    },
+    {
+      "name": "Medicine — Endocrinology & Metabolism",
+      "short": "Medicine",
+      "url": "https://www.med.unc.edu/medicine/endocrinology/faculty/"
+    },
+    {
+      "name": "Medicine — Gastroenterology & Hepatology",
+      "short": "Medicine",
+      "url": "https://www.med.unc.edu/medicine/gi/division/all-faculty-profiles/"
+    },
+    {
+      "name": "Medicine — General Medicine & Clinical Epidemiology",
+      "short": "Medicine",
+      "url": "https://www.med.unc.edu/medicine/im/division/all-faculty-profiles/"
+    },
+    {
+      "name": "Medicine — Geriatric Medicine",
+      "short": "Medicine",
+      "url": "https://www.med.unc.edu/medicine/geriatrics/faculty/"
+    },
+    {
+      "name": "Medicine — Hematology",
+      "short": "Medicine",
+      "url": "https://www.med.unc.edu/medicine/hematology/faculty/"
+    },
+    {
+      "name": "Medicine — Hospital Medicine",
+      "short": "Medicine",
+      "url": "https://www.med.unc.edu/medicine/hospitalmedicine/faculty/"
+    },
+    {
+      "name": "Medicine — Infectious Diseases",
+      "short": "Medicine",
+      "url": "https://www.med.unc.edu/medicine/infdis/faculty/"
+    },
+    {
+      "name": "Medicine — Nephrology & Hypertension",
+      "short": "Medicine",
+      "url": "https://www.med.unc.edu/medicine/nephrology/faculty/"
+    },
+    {
+      "name": "Medicine — Oncology",
+      "short": "Medicine",
+      "url": "https://www.med.unc.edu/medicine/oncology/faculty/"
+    },
+    {
+      "name": "Medicine — Pulmonary Diseases & Critical Care",
+      "short": "Medicine",
+      "url": "https://www.med.unc.edu/medicine/pulmonary/faculty/"
+    },
+    {
+      "name": "Medicine — Rheumatology, Allergy & Immunology",
+      "short": "Medicine",
+      "url": "https://www.med.unc.edu/medicine/rheumatology-allergy-immunology/faculty/"
+    },
+    {
+      "name": "Pediatrics",
+      "short": "Pediatrics",
+      "url": "https://www.med.unc.edu/pediatrics/directory/faculty/"
+    },
+    {
+      "name": "Surgery — General Surgery",
+      "short": "Surgery",
+      "url": "https://www.med.unc.edu/surgery/our-team/faculty/"
+    },
+    {
+      "name": "Surgery — Plastic & Reconstructive Surgery",
+      "short": "Surgery",
+      "url": "https://www.med.unc.edu/surgery/plastic/ourteam/faculty/"
+    },
+    {
+      "name": "Psychiatry",
+      "short": "Psychiatry",
+      "url": "https://www.med.unc.edu/psych/directory/faculty/"
+    },
+    {
+      "name": "Neurology",
+      "short": "Neurology",
+      "url": "https://www.med.unc.edu/neurology/directory/faculty/"
+    },
+    {
+      "name": "Neurosurgery",
+      "short": "Neurosurgery",
+      "url": "https://www.med.unc.edu/neurosurgery/directory/faculty/"
+    },
+    {
+      "name": "Obstetrics & Gynecology",
+      "short": "OB/GYN",
+      "url": "https://www.med.unc.edu/obgyn/directory/faculty/"
+    },
+    {
+      "name": "Pathology & Laboratory Medicine",
+      "short": "Pathology",
+      "url": "https://www.med.unc.edu/pathology/directory/faculty/"
+    },
+    {
+      "name": "Radiology",
+      "short": "Radiology",
+      "url": "https://www.med.unc.edu/radiology/directory/faculty/"
+    },
+    {
+      "name": "Radiation Oncology",
+      "short": "Rad Oncology",
+      "url": "https://www.med.unc.edu/radonc/directory/faculty/"
+    },
+    {
+      "name": "Anesthesiology",
+      "short": "Anesthesiology",
+      "url": "https://www.med.unc.edu/anesthesiology/directory/faculty/"
+    },
+    {
+      "name": "Dermatology",
+      "short": "Dermatology",
+      "url": "https://www.med.unc.edu/derm/directory/faculty/"
+    },
+    {
+      "name": "Emergency Medicine",
+      "short": "Emergency Med",
+      "url": "https://www.med.unc.edu/emergmed/directory/faculty/"
+    },
+    {
+      "name": "Family Medicine",
+      "short": "Family Med",
+      "url": "https://www.med.unc.edu/fammed/directory/faculty/"
+    },
+    {
+      "name": "Orthopaedics",
+      "short": "Orthopaedics",
+      "url": "https://www.med.unc.edu/ortho/directory/faculty/"
+    },
+    {
+      "name": "Otolaryngology / Head & Neck Surgery",
+      "short": "ENT",
+      "url": "https://www.med.unc.edu/ent/directory/faculty/"
+    },
+    {
+      "name": "Ophthalmology",
+      "short": "Ophthalmology",
+      "url": "https://www.med.unc.edu/ophth/directory/faculty/"
+    },
+    {
+      "name": "Urology",
+      "short": "Urology",
+      "url": "https://www.med.unc.edu/urology/directory/faculty/"
+    },
+    {
+      "name": "Physical Medicine & Rehabilitation",
+      "short": "PM&R",
+      "url": "https://www.med.unc.edu/phyrehab/directory/faculty/"
+    },
+    {
+      "name": "Biochemistry & Biophysics",
+      "short": "Basic Science",
+      "url": "https://www.med.unc.edu/biochem/directory/faculty/"
+    },
+    {
+      "name": "Cell Biology & Physiology",
+      "short": "Basic Science",
+      "url": "https://www.med.unc.edu/cellbiophysio/directory/faculty/"
+    },
+    {
+      "name": "Genetics",
+      "short": "Basic Science",
+      "url": "https://www.med.unc.edu/genetics/directory/faculty/"
+    },
+    {
+      "name": "Microbiology & Immunology",
+      "short": "Basic Science",
+      "url": "https://www.med.unc.edu/microimm/directory/faculty/"
+    },
+    {
+      "name": "Pharmacology",
+      "short": "Basic Science",
+      "url": "https://www.med.unc.edu/pharm/directory/faculty/"
+    }
+  ]
+}
