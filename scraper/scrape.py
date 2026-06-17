@@ -316,11 +316,20 @@ def clean_name_for_pubmed(name):
 def build_pubmed_search_string(name):
     """
     Build a PubMed author search string from a faculty name.
-    Uses full name (e.g. 'Jennifer Carr') rather than initials ('Carr JC')
-    for better disambiguation. PubMed has supported full-name author
-    search since 2013.
+    PubMed's author index stores names as 'Lastname Firstname' so we
+    reorder accordingly. E.g. 'Jennifer C. Carr' -> 'Carr Jennifer'
+    This is more specific than initials ('Carr JC') while still matching
+    how PubMed indexes author names internally.
     """
-    return clean_name_for_pubmed(name)
+    clean = clean_name_for_pubmed(name)
+    parts = [p for p in clean.split() if p]
+    if len(parts) < 2:
+        return clean
+    last = parts[-1]
+    # Use first name only (not middle) for the search — avoids issues with
+    # middle name variants and is specific enough with last name
+    first = parts[0]
+    return f"{last} {first}"
 
 
 def pubmed_search(search_term, affiliation="University of North Carolina", max_results=5):
