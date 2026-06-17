@@ -103,11 +103,14 @@ def fetch_url(url, retries=3, delay=1.5):
 # ---------------------------------------------------------------------------
 
 # Titles/credentials to strip when detecting if a link is a faculty name
+# Credential suffix pattern — uses negative lookbehind to avoid matching
+# mid-word (e.g. "MS" in "Adams"). Comma-separated creds are also handled
+# by clean_name_for_pubmed which strips everything after the first comma.
 DEGREE_SUFFIXES = re.compile(
-    r",?\s*(MD|PhD|DO|MS|MPH|MBA|FACS|FACP|FAAN|RN|NP|PA|PA-C|"
+    r"(?<![A-Za-z])(MD|PhD|DO|MPH|MBA|FACS|FACP|FAAN|RN|NP|PA-C|"
     r"PharmD|DDS|DVM|DrPH|ScD|JD|MBBS|BMBS|MHS|MHA|MSCR|MSPH|"
-    r"FRCSC|FACOG|FAAD|FACR|FACEP|FAHA|FHRS|SM|MPP|BSN|ARNP|CNM|"
-    r"RD|BCPS|BCGP|CPP|BCNP|ABR|FACR|FASN|FANA|FASGE|FRCR|FACG|"
+    r"FRCSC|FACOG|FAAD|FACR|FACEP|FAHA|FHRS|MPP|BSN|ARNP|CNM|"
+    r"RD|BCPS|BCGP|CPP|BCNP|ABR|FASN|FANA|FASGE|FRCR|FACG|"
     r"AGAF|FATA|FAC[A-Z]+|Jr\.|Sr\.|II|III|IV)\b",
     re.IGNORECASE
 )
@@ -266,19 +269,44 @@ def scrape_profile_for_pubmed_string(profile_url):
         hint = re.sub(r",\s*", " ", hint).strip()
         return hint
 
-    # Pattern 3: PubMed URL with term parameter e.g. ?term=Lee%2C+CN
-    match = re.search(
-        r"pubmed\.ncbi\.nlm\.nih\.gov/[^'\"]*[?&]term=([^'\"&)\s]+)",
+    # Pattern 3: PubMed URL — extract and parse the term parameter
+    # Handles:
+    #   ?term=Stouffer+GA
+    #   ?term=Stouffer+GA[Author]
+    #   ?term=Stouffer+GA[Author]+AND+UNC[Affiliation]
+    pubmed_url_match = re.search(
+        r"pubmed\.ncbi\.nlm\.nih\.gov/\S*[?&]term=(\S+)",
         html, re.IGNORECASE
     )
-    if match:
-        raw = urllib.parse.unquote_plus(match.group(1))
-        # Only use if it looks like a clean author string:
-        # short, no brackets, no hyphens (URL slugs have hyphens), only letters/spaces/commas
-        if (len(raw) < 30 and "[" not in raw and "-" not in raw
-                and re.match(r"^[A-Za-z ,.*]+$", raw)):
-            hint = re.sub(r",\s*", " ", raw).strip()
-            return hint
+    if pubmed_url_match:
+        raw = urllib.parse.unquote_plus(pubmed_url_match.group(1))
+        raw = raw.strip('"\' <>)&')
+        author_term = None
+
+        # Sub-pattern A: extract [Author] or [au] tagged token
+        # e.g. 'Stouffer GA[Author]' or '"Stouffer GA"[Author]'
+        author_match = re.search(
+            r"[\x22\x27]?([A-Za-z][A-Za-z\s\.\-*,]{1,40})[\x22\x27]?\[(?:Author|au)\]",
+            raw, re.IGNORECASE
+        )
+        if author_match:
+            author_term = author_match.group(1).strip()
+            # strip surrounding quotes
+            author_term = author_term.strip(chr(34)).strip(chr(39)).strip()
+
+        # Sub-pattern B: simple short string, no operators or field tags
+        elif (len(raw) <= 40
+              and "AND" not in raw.upper()
+              and "[" not in raw
+              and "-" not in raw
+              and re.match(r"^[A-Za-z ,.*+]+$", raw)):
+            author_term = raw.replace("+", " ").strip()
+
+        if author_term:
+            author_term = re.sub(r",\s*", " ", author_term)
+            author_term = re.sub(r"\s+", " ", author_term).strip()
+            if not HINT_GARBAGE_WORDS.search(author_term) and len(author_term) >= 3:
+                return author_term
 
     # Pattern 4: ORCID
     orcid_match = re.search(
@@ -345,7 +373,9 @@ def pubmed_search(search_term, affiliation="University of North Carolina", max_r
     """
     if search_term.startswith("ORCID:"):
         orcid = search_term.replace("ORCID:", "")
-        query = f"{orcid}[auid]"
+        # Include affiliation even for ORCID to avoid false positives from
+        # faculty who recently joined UNC with prior publications elsewhere
+        query = f'{orcid}[auid] AND "{affiliation}"[Affiliation] AND ("2018"[PDAT] : "2026"[PDAT])'
     else:
         query = f'"{search_term}"[Author] AND "{affiliation}"[Affiliation] AND ("2018"[PDAT] : "2026"[PDAT])'
 
@@ -535,43 +565,126 @@ def pubmed_fetch_summaries_fallback(pmids):
         return []
 
 
+HINT_GARBAGE_WORDS = re.compile(
+    r"\b(including|biventricular|pacemaker|device|therapy|treatment|"
+    r"surgery|medicine|health|care|service|program|department|division|"
+    r"center|clinic|hospital|research|education|training)\b",
+    re.IGNORECASE
+)
+
+
+def sanitize_hint(hint, faculty_name):
+    """
+    Validate and normalize a profile-scraped PubMed hint.
+    Returns a clean search term or None if the hint is unusable.
+    """
+    if not hint:
+        return None
+
+    # ORCID — always valid
+    if hint.startswith("ORCID:"):
+        return hint
+
+    hint_clean = hint.replace("*", "").strip()
+
+    # Reject if contains non-name words (scraped from clinical description)
+    if HINT_GARBAGE_WORDS.search(hint_clean):
+        print(f"    Rejecting garbage hint '{hint}'")
+        return None
+
+    # Reject if contains digits
+    if re.search(r"\d", hint_clean):
+        print(f"    Rejecting hint with digits '{hint}'")
+        return None
+
+    # Reject if too long to be an author string
+    if len(hint_clean) > 40:
+        print(f"    Rejecting overly long hint '{hint}'")
+        return None
+
+    hint_parts = hint_clean.split()
+    if not hint_parts:
+        return None
+
+    # Detect initials format: second+ tokens all ≤2 chars (e.g. 'Carr JC', 'Lee CN')
+    is_initials_format = (
+        len(hint_parts) >= 2 and
+        all(len(p) <= 2 for p in hint_parts[1:])
+    )
+
+    # Detect natural-order full name (e.g. 'Anil K. Gehi', 'sameer prasada')
+    # Signal: first token matches faculty first name, last token matches faculty last name
+    clean_faculty = clean_name_for_pubmed(faculty_name)
+    faculty_parts = clean_faculty.split()
+    faculty_first = faculty_parts[0].lower() if faculty_parts else ""
+    faculty_last = faculty_parts[-1].lower() if faculty_parts else ""
+    hint_first = hint_parts[0].lower().rstrip(".")
+    hint_last = hint_parts[-1].lower().rstrip(".")
+
+    # All faculty name parts (lowercased, no punctuation) for matching
+    faculty_all_parts = set(p.lower().rstrip(".") for p in faculty_parts)
+
+    # Detect reversed order: hint starts with any part of faculty last name
+    # e.g. 'nichols timothy', 'Lawrence Klein J' (middle name as first word)
+    is_reversed = (
+        len(hint_parts) >= 2 and
+        (hint_first == faculty_last or
+         (hint_first in faculty_all_parts and hint_first != faculty_first))
+    )
+
+    # Detect natural-order full name (first name first)
+    # e.g. 'Anil K. Gehi', 'sameer prasada'
+    is_natural_order = (
+        len(hint_parts) >= 2 and
+        hint_first == faculty_first and
+        not is_reversed
+    )
+
+    if "*" in hint and not is_initials_format:
+        # Curated wildcard — just strip the *
+        return hint_clean
+    elif is_initials_format or is_natural_order or is_reversed:
+        # Any of these — convert to canonical Lastname Firstname
+        return build_pubmed_search_string(faculty_name)
+    else:
+        # Unknown format — use as-is but log it
+        return hint_clean
+
+
 def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
     """
     Given a faculty dict, query PubMed and attach publication data.
     """
     name = faculty_member["name"]
 
-    if pubmed_string and pubmed_string.startswith("ORCID:"):
-        # ORCID is always most accurate
-        search_term = pubmed_string
-    elif pubmed_string:
-        # Decide whether to keep the profile hint or use full name instead.
-        # Keep hints that are wildcarded (e.g. 'Ogunleye AA*') — these are curated
-        # and more specific than a plain full name search.
-        # Replace hints that look like 'Lastname I' or 'Lastname FI' (initials format)
-        # with full name since full name is less ambiguous in modern PubMed.
-        hint_clean = pubmed_string.replace("*", "").strip()
-        hint_parts = hint_clean.split()
-        # Initials format: second+ tokens are all 1-2 uppercase chars (e.g. 'Carr JC', 'Lee CN')
-        is_initials_format = (
-            len(hint_parts) >= 2 and
-            all(len(p) <= 2 for p in hint_parts[1:])
-        )
-        if "*" in pubmed_string and not is_initials_format:
-            # Wildcarded hint — strip the * before querying since PubMed
-            # doesn't support wildcards inside quoted author strings
-            search_term = pubmed_string.replace("*", "").strip()
-        elif is_initials_format:
-            # Plain initials — replace with full name
-            search_term = build_pubmed_search_string(name)
-            print(f"    Overriding initials hint '{pubmed_string}' with full name '{search_term}'")
-        else:
-            search_term = pubmed_string
+    clean_hint = sanitize_hint(pubmed_string, name)
+    if clean_hint and clean_hint.startswith("ORCID:"):
+        search_term = clean_hint
+    elif clean_hint:
+        if clean_hint != build_pubmed_search_string(name):
+            print(f"    Using hint '{clean_hint}' for {name}")
+        search_term = clean_hint
     else:
         search_term = build_pubmed_search_string(name)
 
     print(f"    PubMed: {name} → '{search_term}'")
     result = pubmed_search(search_term, max_results=15)
+
+    # If full-name search returns nothing, fall back to initials format
+    # e.g. 'Knoll Gregory' → 0 results → try 'Knoll GM'
+    if result["count"] == 0 and not search_term.startswith("ORCID:"):
+        clean = clean_name_for_pubmed(name)
+        parts = [p for p in clean.split() if p]
+        if len(parts) >= 2:
+            last = parts[-1]
+            initials = "".join(p[0] for p in parts[:-1] if p and p[0].isalpha())
+            fallback_term = f"{last} {initials}"
+            if fallback_term != search_term:
+                fallback_result = pubmed_search(fallback_term, max_results=15)
+                if fallback_result["count"] > 0:
+                    print(f"    Fallback: '{search_term}' → '{fallback_term}' ({fallback_result['count']} results)")
+                    search_term = fallback_term
+                    result = fallback_result
 
     pubs = []
     if result["ids"]:
