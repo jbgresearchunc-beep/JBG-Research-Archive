@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-17T14:47:42.765342Z",
-  "total_faculty": 47,
+  "generated_at": "2026-06-17T15:01:51.004530Z",
+  "total_faculty": 43,
   "departments": [
     "Medicine \u2014 Cardiology"
   ],
@@ -10,7 +10,6 @@
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/rick-stouffer/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_hint": "Stouffer GA",
       "pubmed_search": "Stouffer George",
       "pubmed_count": 0,
       "pubmed_verified": 0,
@@ -22,7 +21,6 @@
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/essraa-bayoumi-md/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_hint": "Bayoumi EM",
       "pubmed_search": "Bayoumi Essraa",
       "pubmed_count": 0,
       "pubmed_verified": 0,
@@ -30,11 +28,10 @@
       "nih_grants": []
     },
     {
-      "name": "Matthew A. Cavender",
+      "name": "Matthew A. Cavender, ,",
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/matthew-cavender/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_hint": "cavender ma",
       "pubmed_search": "Cavender Matthew",
       "pubmed_count": 2,
       "pubmed_verified": 2,
@@ -55,11 +52,10 @@
       "nih_grants": []
     },
     {
-      "name": "Patricia Pat-Yue Chang",
+      "name": "Patricia Pat-Yue Chang,",
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/patricia-chang/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_hint": "Chang PP",
       "pubmed_search": "Chang Patricia",
       "pubmed_count": 6,
       "pubmed_verified": 5,
@@ -102,31 +98,60 @@
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/anil-k-gehi-md/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_hint": "Anil K. Gehi",
-      "pubmed_search": "Anil K. Gehi",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "publications": [],
+      "pubmed_search": "Gehi Anil",
+      "pubmed_count": 16,
+      "pubmed_verified": 5,
+      "publications": [
+        {
+          "pmid": "41399462",
+          "title": "Trends and Predictors of Emergency Department Outcomes in Atrial Fibrillation: A Statewide Analysis from North Carolina-2016 to 2023.",
+          "journal": "J Am Coll Emerg Physicians Open",
+          "year": "2026"
+        },
+        {
+          "pmid": "39011944",
+          "title": "Wearable Devices, Health Care Use, and Psychological Well-Being in Patients With Atrial Fibrillation.",
+          "journal": "J Am Heart Assoc",
+          "year": "2024"
+        },
+        {
+          "pmid": "37999668",
+          "title": "A Patient-Centered Intervention Reduces&#xa0;Disparities in Remote Monitoring in Patients With Implanted&#xa0;Cardiac Devices.",
+          "journal": "JACC Clin Electrophysiol",
+          "year": "2024"
+        },
+        {
+          "pmid": "36281351",
+          "title": "Patient Perspectives on Performance of a Smartphone App for Atrial FibrillationSelf-Management.",
+          "journal": "Patient Prefer Adherence",
+          "year": "2022"
+        },
+        {
+          "pmid": "35808944",
+          "title": "Leveraging a Previously Published Population Pharmacokinetic Model to Predict Rivaroxaban Exposure in Real-World Patients.",
+          "journal": "J Clin Pharmacol",
+          "year": "2022"
+        }
+      ],
       "nih_grants": []
     },
     {
-      "name": "Susan C. Gilchrist",
+      "name": "Susan C. Gilchrist, , MS",
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/susan-c-gilchrist-md-ms/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
       "pubmed_hint": "ORCID:0000-0001-9624-0292",
       "pubmed_search": "ORCID:0000-0001-9624-0292",
-      "pubmed_count": 3,
+      "pubmed_count": 1,
       "pubmed_verified": 0,
       "publications": [],
       "nih_grants": []
     },
     {
-      "name": "Charles Hicks",
+      "name": "Charles Hicks,",
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/charles-hicks/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_hint": "Hicks CH",
       "pubmed_search": "Hicks Charles",
       "pubmed_count": 2,
       "pubmed_verified": 2,
@@ -151,6 +176,7 @@
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/alan-lee-hinderliter-md/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
+      "pubmed_hint": "Hinderliter A",
       "pubmed_search": "Hinderliter Alan",
       "pubmed_count": 21,
       "pubmed_verified": 5,
@@ -193,8 +219,8 @@
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/adam-moskowitz/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_search": "Moskowitz Adam",
-      "pubmed_count": 0,
+      "pubmed_search": "Moskowitz A",
+      "pubmed_count": 2,
       "pubmed_verified": 0,
       "publications": [],
       "nih_grants": []
@@ -204,28 +230,15 @@
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/tim-nichols/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_hint": "nichols timothy",
-      "pubmed_search": "nichols timothy",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Joseph S. Rossi, MSCI, FSCAI",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/joe-rossi/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "pubmed_hint": "Rossi JS",
-      "pubmed_search": "Rossi Joseph",
+      "pubmed_search": "Nichols Tim",
       "pubmed_count": 1,
       "pubmed_verified": 1,
       "publications": [
         {
-          "pmid": "33755210",
-          "title": "Coronary revascularization outcomes in relation to skilled nursing facility use following hospital discharge.",
-          "journal": "Clin Cardiol",
-          "year": "2021"
+          "pmid": "38479150",
+          "title": "Shear shock wave injury in vivo: High frame-rate ultrasound observation and histological assessment.",
+          "journal": "J Biomech",
+          "year": "2024"
         }
       ],
       "nih_grants": []
@@ -267,41 +280,52 @@
       "nih_grants": []
     },
     {
-      "name": "Kevin A. Friede, FSCAI",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kevin-a-friede-md/",
+      "name": "Anthony J. Mazzella, ,",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/anthony-mazzella/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_hint": "Friede K",
-      "pubmed_search": "Friede Kevin",
-      "pubmed_count": 1,
-      "pubmed_verified": 1,
+      "pubmed_search": "Mazzella AJ",
+      "pubmed_count": 29,
+      "pubmed_verified": 5,
       "publications": [
         {
-          "pmid": "38319468",
-          "title": "The Case Continues to Build: More Data that Intracoronary Thrombolysis Is Safe and Effective in STEMI.",
-          "journal": "Cardiovasc Drugs Ther",
-          "year": "2024"
+          "pmid": "41954555",
+          "title": "Pulse Self-Exam for Atrial Fibrillation Screening: A Randomized Controlled Trial.",
+          "journal": "JACC Clin Electrophysiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41631745",
+          "title": "Assessing Potential Benefit of Stroke Prophylaxis Therapy in Atrial Fibrillation and Atrial Flutter Using a Novel Competing Risk Scoring Tool.",
+          "journal": "J Am Heart Assoc",
+          "year": "2026"
+        },
+        {
+          "pmid": "40850588",
+          "title": "Differences in stroke risk among patients with atrial fibrillation and heart failure subtypes.",
+          "journal": "Heart Rhythm",
+          "year": "2026"
+        },
+        {
+          "pmid": "40543857",
+          "title": "Determining the optimal age cutoff to investigate for cardiac sarcoidosis in patients with complete heart block.",
+          "journal": "Heart Rhythm",
+          "year": "2026"
+        },
+        {
+          "pmid": "39968777",
+          "title": "Atrial Fibrillation Treatment Pathway in the Emergency Department Reduces Median 30-Day Health Service Charges.",
+          "journal": "J Am Heart Assoc",
+          "year": "2025"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Anthony J. Mazzella",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/anthony-mazzella/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "pubmed_search": "Mazzella Anthony",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Joseph A. Sivak",
+      "name": "Joseph A. Sivak,",
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/joseph-a-sivak-md-facc/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_hint": "Sivak JA",
       "pubmed_search": "Sivak Joseph",
       "pubmed_count": 3,
       "pubmed_verified": 3,
@@ -343,7 +367,6 @@
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/cody-deen/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_hint": "Deen C",
       "pubmed_search": "Deen Cody",
       "pubmed_count": 1,
       "pubmed_verified": 1,
@@ -358,11 +381,10 @@
       "nih_grants": []
     },
     {
-      "name": "Casey Gazda",
+      "name": "Casey Gazda,",
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/casey-adams/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_hint": "Gazda C",
       "pubmed_search": "Gazda Casey",
       "pubmed_count": 4,
       "pubmed_verified": 4,
@@ -413,7 +435,7 @@
       "nih_grants": []
     },
     {
-      "name": "S. Peter Sheng",
+      "name": "S. Peter Sheng,",
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/s-peter-sheng-md-mph/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
@@ -431,11 +453,10 @@
       "nih_grants": []
     },
     {
-      "name": "Ross Joseph Simpson, Jr.",
+      "name": "Ross Joseph Simpson, Jr.,",
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/ross-simpson/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_hint": "Simpson RJ Jr",
       "pubmed_search": "Simpson Ross",
       "pubmed_count": 2,
       "pubmed_verified": 2,
@@ -478,7 +499,6 @@
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/robert-c-wirka-md/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_hint": "Wirka RC",
       "pubmed_search": "Wirka Robert",
       "pubmed_count": 7,
       "pubmed_verified": 5,
@@ -522,10 +542,23 @@
       "department": "Medicine \u2014 Cardiology",
       "role": "",
       "pubmed_hint": "including biventricular",
-      "pubmed_search": "including biventricular",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "publications": [],
+      "pubmed_search": "Baker Matthew",
+      "pubmed_count": 3,
+      "pubmed_verified": 2,
+      "publications": [
+        {
+          "pmid": "39321401",
+          "title": "Gene-Specific Effects on Brain Volume and Cognition of TMEM106B in Frontotemporal Lobar Degeneration.",
+          "journal": "Neurology",
+          "year": "2024"
+        },
+        {
+          "pmid": "30562101",
+          "title": "Atrial Fibrillation Thermographic and Endoscopic Monitoring of Patients: Safety Algorithm for the Esophagus: AF TEMP-SAFE Study.",
+          "journal": "Circ Arrhythm Electrophysiol",
+          "year": "2018"
+        }
+      ],
       "nih_grants": []
     },
     {
@@ -534,10 +567,17 @@
       "department": "Medicine \u2014 Cardiology",
       "role": "",
       "pubmed_hint": "including biventricular",
-      "pubmed_search": "including biventricular",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "publications": [],
+      "pubmed_search": "Kumar Prabhat",
+      "pubmed_count": 2,
+      "pubmed_verified": 1,
+      "publications": [
+        {
+          "pmid": "31487007",
+          "title": "Approach to Management of Premature Ventricular Contractions.",
+          "journal": "Curr Treat Options Cardiovasc Med",
+          "year": "2019"
+        }
+      ],
       "nih_grants": []
     },
     {
@@ -587,7 +627,6 @@
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/faisal-f-syed-m-b-ch-b/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_hint": "Syed FF",
       "pubmed_search": "Syed Faisal",
       "pubmed_count": 1,
       "pubmed_verified": 1,
@@ -602,7 +641,7 @@
       "nih_grants": []
     },
     {
-      "name": "Carlos A. Espinoza",
+      "name": "Carlos A. Espinoza,",
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/carlos-a-espinoza-md/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
@@ -617,15 +656,39 @@
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/jeffrey-lawrence-klein/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_hint": "Lawrence Klein J",
-      "pubmed_search": "Lawrence Klein J",
-      "pubmed_count": 1,
-      "pubmed_verified": 0,
-      "publications": [],
+      "pubmed_search": "Klein JL",
+      "pubmed_count": 5,
+      "pubmed_verified": 4,
+      "publications": [
+        {
+          "pmid": "35860774",
+          "title": "Cardiac lymphoma presenting as bradyarrhythmia.",
+          "journal": "HeartRhythm Case Rep",
+          "year": "2022"
+        },
+        {
+          "pmid": "34419565",
+          "title": "Coronary Artery Calcifications and Cardiac Risk After Radiation Therapy for Stage III Lung Cancer.",
+          "journal": "Int J Radiat Oncol Biol Phys",
+          "year": "2022"
+        },
+        {
+          "pmid": "30209754",
+          "title": "Diagnostic performance of an artificial intelligence-driven cardiac-structured reporting system for myocardial perfusion SPECT imaging.",
+          "journal": "J Nucl Cardiol",
+          "year": "2020"
+        },
+        {
+          "pmid": "29370468",
+          "title": "Association of ambulatory blood pressure variability with coronary artery calcium.",
+          "journal": "J Clin Hypertens (Greenwich)",
+          "year": "2018"
+        }
+      ],
       "nih_grants": []
     },
     {
-      "name": "Peter Mason",
+      "name": "Peter Mason,",
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/peter-mason-md-mph/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
@@ -658,19 +721,30 @@
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sameer-prasada-md/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_hint": "sameer prasada",
-      "pubmed_search": "sameer prasada",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "publications": [],
+      "pubmed_search": "Prasada Sameer",
+      "pubmed_count": 2,
+      "pubmed_verified": 2,
+      "publications": [
+        {
+          "pmid": "41209121",
+          "title": "Interpretation of Discordance Between Non-Hyperemic Pressure Ratios and Fractional Flow Reserve: Potential Mechanisms and Clinical Implications.",
+          "journal": "Rev Cardiovasc Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "38761963",
+          "title": "Atherectomy and Peri-Procedural Myocardial Injury-When Does It Matter?",
+          "journal": "Am J Cardiol",
+          "year": "2024"
+        }
+      ],
       "nih_grants": []
     },
     {
-      "name": "Sudhir Prasada",
+      "name": "Sudhir Prasada,",
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sudhir-prasada-md-facc/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_hint": "Prasada S",
       "pubmed_search": "Prasada Sudhir",
       "pubmed_count": 2,
       "pubmed_verified": 2,
@@ -695,7 +769,6 @@
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/michael-yeung-md/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_hint": "Yeung M",
       "pubmed_search": "Yeung Michael",
       "pubmed_count": 19,
       "pubmed_verified": 5,
@@ -734,57 +807,45 @@
       "nih_grants": []
     },
     {
-      "name": "Ruihai Zhou, MSc, RPVI",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/ruihai-zhou-md-msc-facc-rpvi/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "pubmed_hint": "Zhou R",
-      "pubmed_search": "Zhou Ruihai",
-      "pubmed_count": 15,
-      "pubmed_verified": 5,
-      "publications": [
-        {
-          "pmid": "42106324",
-          "title": "Multi-omics integration predicts the incidence of 17 diseases in the UK Biobank.",
-          "journal": "Nat Commun",
-          "year": "2026"
-        },
-        {
-          "pmid": "40799968",
-          "title": "Multi-omics integration predicts 17 disease incidences in the UK Biobank.",
-          "journal": "medRxiv",
-          "year": "2025"
-        },
-        {
-          "pmid": "40615192",
-          "title": "Raising Awareness of ST-Segment Elevation Myocardial Infarction Triggered by Intravenous Regadenoson for Cardiac Stress Testing.",
-          "journal": "JACC Case Rep",
-          "year": "2025"
-        },
-        {
-          "pmid": "38385918",
-          "title": "A Phantom Echocardiographic Figure-of-Eight Image From Disc-Structured Occluder Can Be Artifactual and Truly Ominous.",
-          "journal": "JACC Cardiovasc Interv",
-          "year": "2024"
-        },
-        {
-          "pmid": "37902766",
-          "title": "Further Analysis Needed of Migrating Localized ST-Segment Elevation or Was It Lead Reversal?-Reply.",
-          "journal": "JAMA Intern Med",
-          "year": "2023"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Kirkwood Ada",
+      "name": "Kirkwood Adams",
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kirkwood-adams/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_search": "Ada Kirkwood",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "publications": [],
+      "pubmed_search": "Adams Kirkwood",
+      "pubmed_count": 10,
+      "pubmed_verified": 5,
+      "publications": [
+        {
+          "pmid": "38569758",
+          "title": "Efficacy and Safety of Dapagliflozin in Patients With Acute Heart&#xa0;Failure.",
+          "journal": "J Am Coll Cardiol",
+          "year": "2024"
+        },
+        {
+          "pmid": "37725680",
+          "title": "Common Variants on FGD5 Increase Hazard of Mortality or Rehospitalization in Patients With Heart Failure From the ASCEND-HF Trial.",
+          "journal": "Circ Heart Fail",
+          "year": "2023"
+        },
+        {
+          "pmid": "36644876",
+          "title": "Use of patient-reported outcomes in heart failure: from clinical trials to routine practice.",
+          "journal": "Eur J Heart Fail",
+          "year": "2023"
+        },
+        {
+          "pmid": "35490873",
+          "title": "Assessing race and ethnicity differences in outcomes based on GDMT and target NT-proBNP in patients with heart failure with reduced ejection fraction: An analysis of the GUIDE-IT study.",
+          "journal": "Prog Cardiovasc Dis",
+          "year": "2022"
+        },
+        {
+          "pmid": "34784657",
+          "title": "The influence of comorbidities on achieving an N-terminal pro-b-type natriuretic peptide target: a secondary analysis of the GUIDE-IT trial.",
+          "journal": "ESC Heart Fail",
+          "year": "2022"
+        }
+      ],
       "nih_grants": []
     },
     {
@@ -835,17 +896,6 @@
       "nih_grants": []
     },
     {
-      "name": "Gordon R. Reeves, MPT, FHFSA",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/gordon-r-reeves-md-mpt/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "pubmed_search": "Reeves Gordon",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
       "name": "Mason Sanders",
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/mason-sanders-md__trashed/",
       "department": "Medicine \u2014 Cardiology",
@@ -876,7 +926,7 @@
       "nih_grants": []
     },
     {
-      "name": "Jenna N. Skowronski",
+      "name": "Jenna N. Skowronski,",
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/jenna-n-skowronski-md/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
@@ -918,11 +968,10 @@
       "nih_grants": []
     },
     {
-      "name": "Elizabeth Volz",
+      "name": "Elizabeth Volz,",
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/elizabeth-volz-md-facc/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_hint": "Volz EM",
       "pubmed_search": "Volz Elizabeth",
       "pubmed_count": 4,
       "pubmed_verified": 4,
@@ -981,8 +1030,8 @@
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/elias-wen/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "pubmed_search": "Wen Elias",
-      "pubmed_count": 0,
+      "pubmed_search": "Wen E",
+      "pubmed_count": 2,
       "pubmed_verified": 0,
       "publications": [],
       "nih_grants": []
