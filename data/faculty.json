@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T01:59:57.228435Z",
+  "generated_at": "2026-06-17T02:04:04.244941Z",
   "total_faculty": 8,
   "departments": [
     "Surgery \u2014 Plastic & Reconstructive Surgery"
@@ -35,9 +35,22 @@
       "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
       "role": "",
       "pubmed_hint": "Carr JC",
-      "pubmed_search": "Jennifer C. Carr",
-      "pubmed_count": 0,
-      "publications": [],
+      "pubmed_search": "Carr Jennifer",
+      "pubmed_count": 2,
+      "publications": [
+        {
+          "pmid": "40933363",
+          "title": "Thoracic Outlet Syndrome After Implant-based Breast Reconstruction.",
+          "journal": "Plast Surg (Oakv)",
+          "year": "2025"
+        },
+        {
+          "pmid": "34920164",
+          "title": "Dosimetric and Clinical Factors Associated With Breast Reconstruction Complications in Patients Receiving Postmastectomy Radiation.",
+          "journal": "Pract Radiat Oncol",
+          "year": "2022"
+        }
+      ],
       "nih_grants": []
     },
     {
@@ -46,9 +59,40 @@
       "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
       "role": "",
       "pubmed_hint": "damitz l",
-      "pubmed_search": "Lynn Damitz",
-      "pubmed_count": 0,
-      "publications": [],
+      "pubmed_search": "Damitz Lynn",
+      "pubmed_count": 5,
+      "publications": [
+        {
+          "pmid": "40865729",
+          "title": "Establishment of standardized definitions and a core set of outcome characteristics following hidradenitis suppurativa surgery developed by an expert Delphi consensus.",
+          "journal": "J Am Acad Dermatol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39526808",
+          "title": "Challenges in Radial Forearm Free Flap Surgery: A Comprehensive Case Analysis of Septic Complications at the Donor Site.",
+          "journal": "Ann Plast Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "38911577",
+          "title": "Unveiling the Potential of AI in Plastic Surgery Education: A Comparative Study of Leading AI Platforms' Performance on In-training Examinations.",
+          "journal": "Plast Reconstr Surg Glob Open",
+          "year": "2024"
+        },
+        {
+          "pmid": "33625520",
+          "title": "A Review of Reconstruction for Vulvar Cancer Surgery.",
+          "journal": "Obstet Gynecol Surv",
+          "year": "2021"
+        },
+        {
+          "pmid": "32794545",
+          "title": "Aesthetic Surgery in Plastic Surgery Academia.",
+          "journal": "Aesthet Surg J",
+          "year": "2021"
+        }
+      ],
       "nih_grants": []
     },
     {
@@ -56,7 +100,7 @@
       "profile_url": "https://www.med.unc.edu/surgery/plastic/people/gregory-m-knoll-md/",
       "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
       "role": "",
-      "pubmed_search": "Gregory M. Knoll",
+      "pubmed_search": "Knoll Gregory",
       "pubmed_count": 0,
       "publications": [],
       "nih_grants": []
@@ -67,9 +111,40 @@
       "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
       "role": "",
       "pubmed_hint": "Lee CN",
-      "pubmed_search": "Clara Lee",
-      "pubmed_count": 0,
-      "publications": [],
+      "pubmed_search": "Lee Clara",
+      "pubmed_count": 9,
+      "publications": [
+        {
+          "pmid": "41043297",
+          "title": "Evaluation of visual displays to share expected quality of life changes with patients with breast cancer.",
+          "journal": "Surgery",
+          "year": "2025"
+        },
+        {
+          "pmid": "40971480",
+          "title": "Who's Deciding? A Study of Patient-Surgeon Discussions About Contralateral Prophylactic Mastectomy.",
+          "journal": "Am Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "39790474",
+          "title": "Qualitative assessment of proposed visual key information pages for informed consent.",
+          "journal": "J Clin Transl Sci",
+          "year": "2024"
+        },
+        {
+          "pmid": "39500006",
+          "title": "Access to results of patient reported outcome surveys did not improve longitudinal patient reported outcomes in breast cancer patients in a randomized controlled trial.",
+          "journal": "Am J Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "39026138",
+          "title": "Longitudinal Trends in Patient-Reported Outcomes in the First Year After Lumpectomy Versus Mastectomy.",
+          "journal": "Ann Surg Oncol",
+          "year": "2024"
+        }
+      ],
       "nih_grants": []
     },
     {
@@ -77,7 +152,7 @@
       "profile_url": "https://www.med.unc.edu/surgery/plastic/people/delora-mount-md-facs-faap/",
       "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
       "role": "",
-      "pubmed_search": "Delora Mount",
+      "pubmed_search": "Mount Delora",
       "pubmed_count": 0,
       "publications": [],
       "nih_grants": []
@@ -88,9 +163,40 @@
       "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
       "role": "",
       "pubmed_hint": "Ogunleye AA*",
-      "pubmed_search": "Adeyemi Ogunleye",
-      "pubmed_count": 0,
-      "publications": [],
+      "pubmed_search": "Ogunleye Adeyemi",
+      "pubmed_count": 6,
+      "publications": [
+        {
+          "pmid": "41418049",
+          "title": "Evaluating the Performance of Different Pedicles in Reduction Mammoplasty: A Comparative Analysis.",
+          "journal": "Ann Plast Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "40967193",
+          "title": "Lower extremity lymphedema after pelvic nodal dissection for urologic cancers is associated with metastatic recurrence.",
+          "journal": "Can Urol Assoc J",
+          "year": "2025"
+        },
+        {
+          "pmid": "40395087",
+          "title": "May-Thurner syndrome diagnosis and management with concurrent lymphedema.",
+          "journal": "Phlebology",
+          "year": "2026"
+        },
+        {
+          "pmid": "36389611",
+          "title": "Low Baseline Expression of Fibrotic Genes in an Ex Vivo Human Skin Model is a Potential Indicator of Excessive Skin Scarring.",
+          "journal": "Plast Reconstr Surg Glob Open",
+          "year": "2022"
+        },
+        {
+          "pmid": "33640015",
+          "title": "Elucidating the cellular mechanism for E2-induced dermal fibrosis.",
+          "journal": "Arthritis Res Ther",
+          "year": "2021"
+        }
+      ],
       "nih_grants": []
     },
     {
@@ -99,9 +205,16 @@
       "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
       "role": "",
       "pubmed_hint": "Rodby KA",
-      "pubmed_search": "Katherine Rodby",
-      "pubmed_count": 0,
-      "publications": [],
+      "pubmed_search": "Rodby Katherine",
+      "pubmed_count": 1,
+      "publications": [
+        {
+          "pmid": "39914237",
+          "title": "Reduction mammoplasty after abdominally-based free flap breast reconstruction: Indications, techniques, and outcomes.",
+          "journal": "J Plast Reconstr Aesthet Surg",
+          "year": "2025"
+        }
+      ],
       "nih_grants": []
     }
   ]
