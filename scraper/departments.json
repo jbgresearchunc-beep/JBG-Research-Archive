@@ -3,12 +3,12 @@
     {
       "name": "Medicine — Cardiology",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/cardiology/faculty/"
+      "url": "https://www.med.unc.edu/medicine/cardiology/our-team/"
     },
     {
       "name": "Medicine — Endocrinology & Metabolism",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/endocrinology/faculty/"
+      "url": "https://www.med.unc.edu/medicine/endocrinology/our-team/"
     },
     {
       "name": "Medicine — Gastroenterology & Hepatology",
@@ -28,7 +28,7 @@
     {
       "name": "Medicine — Hematology",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/hematology/faculty/"
+      "url": "https://www.med.unc.edu/medicine/hematology/our-team/"
     },
     {
       "name": "Medicine — Hospital Medicine",
@@ -43,7 +43,7 @@
     {
       "name": "Medicine — Nephrology & Hypertension",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/nephrology/faculty/"
+      "url": "https://www.med.unc.edu/medicine/nephrology/our-team/"
     },
     {
       "name": "Medicine — Oncology",
@@ -53,7 +53,7 @@
     {
       "name": "Medicine — Pulmonary Diseases & Critical Care",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/pulmonary/faculty/"
+      "url": "https://www.med.unc.edu/medicine/pulmonary/our-team/"
     },
     {
       "name": "Medicine — Rheumatology, Allergy & Immunology",
@@ -83,17 +83,17 @@
     {
       "name": "Neurology",
       "short": "Neurology",
-      "url": "https://www.med.unc.edu/neurology/directory/faculty/"
+      "url": "https://www.med.unc.edu/neurology/about-us/faculty-by-division/"
     },
     {
       "name": "Neurosurgery",
       "short": "Neurosurgery",
-      "url": "https://www.med.unc.edu/neurosurgery/directory/faculty/"
+      "url": "https://www.med.unc.edu/neurosurgery/physicians/"
     },
     {
       "name": "Obstetrics & Gynecology",
       "short": "OB/GYN",
-      "url": "https://www.med.unc.edu/obgyn/directory/faculty/"
+      "url": "https://www.med.unc.edu/obgyn/department-directory/clinical-faculty-and-providers/"
     },
     {
       "name": "Pathology & Laboratory Medicine",
@@ -103,52 +103,52 @@
     {
       "name": "Radiology",
       "short": "Radiology",
-      "url": "https://www.med.unc.edu/radiology/directory/faculty/"
+      "url": "https://www.med.unc.edu/radiology/about/our-people/faculty/"
     },
     {
       "name": "Radiation Oncology",
       "short": "Rad Oncology",
-      "url": "https://www.med.unc.edu/radonc/directory/faculty/"
+      "url": "https://www.med.unc.edu/radonc/about/for-professionals-2/"
     },
     {
       "name": "Anesthesiology",
       "short": "Anesthesiology",
-      "url": "https://www.med.unc.edu/anesthesiology/directory/faculty/"
+      "url": "https://www.med.unc.edu/anesthesiology/our-department/faculty-directory-2/"
     },
     {
       "name": "Dermatology",
       "short": "Dermatology",
-      "url": "https://www.med.unc.edu/derm/directory/faculty/"
+      "url": "https://www.med.unc.edu/derm/the-department/our-people/"
     },
     {
       "name": "Emergency Medicine",
       "short": "Emergency Med",
-      "url": "https://www.med.unc.edu/emergmed/directory/faculty/"
+      "url": "https://www.med.unc.edu/emergmed/about-us/faculty/"
     },
     {
       "name": "Family Medicine",
       "short": "Family Med",
-      "url": "https://www.med.unc.edu/fammed/directory/faculty/"
+      "url": "https://www.med.unc.edu/fammed/about-us/find-a-doctor/faculty/"
     },
     {
       "name": "Orthopaedics",
       "short": "Orthopaedics",
-      "url": "https://www.med.unc.edu/ortho/directory/faculty/"
+      "url": "https://www.med.unc.edu/ortho/about-us/faculty/"
     },
     {
       "name": "Otolaryngology / Head & Neck Surgery",
       "short": "ENT",
-      "url": "https://www.med.unc.edu/ent/directory/faculty/"
+      "url": "https://www.med.unc.edu/ent/about-us/clinical-faculty/"
     },
     {
       "name": "Ophthalmology",
       "short": "Ophthalmology",
-      "url": "https://www.med.unc.edu/ophth/directory/faculty/"
+      "url": "https://www.med.unc.edu/ophth/meet-our-faculty-2/clinician-bios/"
     },
     {
       "name": "Urology",
       "short": "Urology",
-      "url": "https://www.med.unc.edu/urology/directory/faculty/"
+      "url": "https://www.med.unc.edu/urology/about-us/faculty/"
     },
     {
       "name": "Physical Medicine & Rehabilitation",
