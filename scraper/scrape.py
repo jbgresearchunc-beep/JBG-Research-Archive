@@ -709,8 +709,8 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
     print(f"    PubMed: {name} → '{search_term}'")
     result = pubmed_search(search_term, max_results=15)
 
-    # If full-name search returns nothing, fall back to initials format
-    # e.g. 'Knoll Gregory' → 0 results → try 'Knoll GM'
+    # If full-name search returns nothing, try progressively broader fallbacks.
+    # PubMed indexes authors as 'Lastname FI' or 'Lastname FirstI' — not full first name.
     if result["count"] == 0 and not search_term.startswith("ORCID:"):
         clean = clean_name_for_pubmed(name)
         parts = [p for p in clean.split() if p]
@@ -724,6 +724,22 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
                     print(f"    Fallback: '{search_term}' → '{fallback_term}' ({fallback_result['count']} results)")
                     search_term = fallback_term
                     result = fallback_result
+
+    # If STILL 0 results, the MyNCBI hint may be "Lastname Firstname" but PubMed
+    # indexes the person under initials only (e.g. "Hanks Brent" → try "Hanks B")
+    # Also covers cases where affiliation string is slightly off — retry with
+    # the initials form derived from the hint itself
+    if result["count"] == 0 and not search_term.startswith("ORCID:"):
+        hint_parts = [p for p in search_term.split() if p]
+        if len(hint_parts) == 2:
+            hint_initial = hint_parts[1][0]  # first letter of first name in hint
+            alt_term = f"{hint_parts[0]} {hint_initial}"
+            if alt_term != search_term:
+                alt_result = pubmed_search(alt_term, max_results=15)
+                if alt_result["count"] > 0:
+                    print(f"    Fallback (hint initial): '{search_term}' → '{alt_term}' ({alt_result['count']} results)")
+                    search_term = alt_term
+                    result = alt_result
 
     pubs = []
     if result["ids"]:
