@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T22:14:31.316006Z",
+  "generated_at": "2026-06-18T22:25:19.426133Z",
   "total_faculty": 49,
   "departments": [
     "Medicine \u2014 Oncology",
@@ -53,7 +53,7 @@
       "nih_grants": []
     },
     {
-      "name": "Hanna K. Sanoff,",
+      "name": "Hanna K. Sanoff",
       "profile_url": "https://www.med.unc.edu/medicine/oncology/people/hanna-k-sanoff-md-mph/",
       "department": "Medicine \u2014 Oncology",
       "role": "",
@@ -322,7 +322,7 @@
       "nih_grants": []
     },
     {
-      "name": "Emily Ray,",
+      "name": "Emily Ray",
       "profile_url": "https://www.med.unc.edu/medicine/oncology/people/emily-ray-md-mph/",
       "department": "Medicine \u2014 Oncology",
       "role": "",
@@ -356,7 +356,7 @@
       "nih_grants": []
     },
     {
-      "name": "Katherine E. Reeder-Hayes, ,",
+      "name": "Katherine E. Reeder-Hayes",
       "profile_url": "https://www.med.unc.edu/medicine/oncology/people/katherine-reeder-hayes/",
       "department": "Medicine \u2014 Oncology",
       "role": "",
@@ -424,7 +424,7 @@
       "nih_grants": []
     },
     {
-      "name": "Brent Hanks,",
+      "name": "Brent Hanks",
       "profile_url": "https://www.med.unc.edu/medicine/oncology/people/brent-hanks-md-phd/",
       "department": "Medicine \u2014 Oncology",
       "role": "",
@@ -432,11 +432,24 @@
         "Medicine \u2014 Oncology"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/brent.hanks.1/bibliography/public",
+      "pubmed_recent_recruit": true,
       "pubmed_search": "Hanks B",
       "pubmed_count": 3,
-      "pubmed_verified": 1,
+      "pubmed_verified": 3,
       "pubmed_ambiguous": false,
       "publications": [
+        {
+          "pmid": "39729355",
+          "title": "Assembly of Pyrenes through a Quadruple Photochemical Cascade: Blocking Groups Allow Diversion from the Double Mallory Path to Photocyclization at the Bay Region.",
+          "journal": "J Am Chem Soc",
+          "year": "2025"
+        },
+        {
+          "pmid": "31488661",
+          "title": "The formation of human populations in South and Central Asia.",
+          "journal": "Science",
+          "year": "2019"
+        },
         {
           "pmid": "30694757",
           "title": "The Emerging Role of Surgery for Patients With Advanced Melanoma Treated With Immunotherapy.",
@@ -447,7 +460,7 @@
       "nih_grants": []
     },
     {
-      "name": "Michael D. Iglesia,",
+      "name": "Michael D. Iglesia",
       "profile_url": "https://www.med.unc.edu/medicine/oncology/people/michael-d-iglesia-md-phd/",
       "department": "Medicine \u2014 Oncology",
       "role": "",
@@ -463,7 +476,7 @@
       "nih_grants": []
     },
     {
-      "name": "Jingquan Jia,",
+      "name": "Jingquan Jia",
       "profile_url": "https://www.med.unc.edu/medicine/oncology/people/jingquan-caron-jia-md-phd/",
       "department": "Medicine \u2014 Oncology",
       "role": "",
@@ -629,7 +642,7 @@
       "nih_grants": []
     },
     {
-      "name": "Jeffrey S. Damrauer .",
+      "name": "Jeffrey S. Damrauer",
       "profile_url": "https://www.med.unc.edu/medicine/oncology/people/jeffrey-s-damrauer-ph-d/",
       "department": "Medicine \u2014 Oncology",
       "role": "",
@@ -675,7 +688,7 @@
       "nih_grants": []
     },
     {
-      "name": "Catherine Fahey,",
+      "name": "Catherine Fahey",
       "profile_url": "https://www.med.unc.edu/medicine/oncology/people/catherine-fahey-md-phd/",
       "department": "Medicine \u2014 Oncology",
       "role": "",
@@ -744,7 +757,7 @@
       "nih_grants": []
     },
     {
-      "name": "Brian C. Miller,",
+      "name": "Brian C. Miller",
       "profile_url": "https://www.med.unc.edu/medicine/oncology/people/brian-c-miller-md-phd/",
       "department": "Medicine \u2014 Oncology",
       "role": "",
@@ -790,7 +803,7 @@
       "nih_grants": []
     },
     {
-      "name": "Tracy L. Rose,",
+      "name": "Tracy L. Rose",
       "profile_url": "https://www.med.unc.edu/medicine/oncology/people/tracy-rose/",
       "department": "Medicine \u2014 Oncology",
       "role": "",
@@ -836,7 +849,7 @@
       "nih_grants": []
     },
     {
-      "name": "Young Whang,",
+      "name": "Young Whang",
       "profile_url": "https://www.med.unc.edu/medicine/oncology/people/young-whang/",
       "department": "Medicine \u2014 Oncology",
       "role": "",
@@ -929,7 +942,7 @@
       "nih_grants": []
     },
     {
-      "name": "Shetal Patel,",
+      "name": "Shetal Patel",
       "profile_url": "https://www.med.unc.edu/medicine/oncology/people/shetal-patel-md/",
       "department": "Medicine \u2014 Oncology",
       "role": "",
@@ -975,7 +988,7 @@
       "nih_grants": []
     },
     {
-      "name": "Siddharth Sheth,",
+      "name": "Siddharth Sheth",
       "profile_url": "https://www.med.unc.edu/medicine/oncology/people/siddharth-sheth-do/",
       "department": "Medicine \u2014 Oncology",
       "role": "",
@@ -1105,7 +1118,7 @@
       "nih_grants": []
     },
     {
-      "name": "Jacob Stein,",
+      "name": "Jacob Stein",
       "profile_url": "https://www.med.unc.edu/medicine/oncology/people/jacob-stein-md-mph/",
       "department": "Medicine \u2014 Oncology",
       "role": "",
@@ -1532,7 +1545,7 @@
       "nih_grants": []
     },
     {
-      "name": "May Lim,",
+      "name": "May Lim",
       "profile_url": "https://www.med.unc.edu/radonc/directory/may-lim-md-mph/",
       "department": "Radiation Oncology",
       "role": "",
