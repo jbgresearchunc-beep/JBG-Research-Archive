@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T22:06:17.152697Z",
+  "generated_at": "2026-06-18T22:14:31.316006Z",
   "total_faculty": 49,
   "departments": [
     "Medicine \u2014 Oncology",
@@ -434,9 +434,16 @@
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/brent.hanks.1/bibliography/public",
       "pubmed_search": "Hanks B",
       "pubmed_count": 3,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
-      "publications": [],
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "30694757",
+          "title": "The Emerging Role of Surgery for Patients With Advanced Melanoma Treated With Immunotherapy.",
+          "journal": "J Surg Res",
+          "year": "2019"
+        }
+      ],
       "nih_grants": []
     },
     {
@@ -1091,29 +1098,10 @@
         "Medicine \u2014 Oncology"
       ],
       "pubmed_search": "Cervantes Elizabeth",
-      "pubmed_count": 3,
-      "pubmed_verified": 3,
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41072584",
-          "title": "Distinctive genomic features of hydroa vacciniforme lymphoproliferative disorder in Latin American patients: A multicenter multi-omics study.",
-          "journal": "J Am Acad Dermatol",
-          "year": "2026"
-        },
-        {
-          "pmid": "40679433",
-          "title": "Adverse neonatal outcomes are associated with a sex-specific placental inflammatory profile\u2020.",
-          "journal": "Biol Reprod",
-          "year": "2025"
-        },
-        {
-          "pmid": "37720015",
-          "title": "The canonical HPA axis facilitates and maintains light adaptive behavior.",
-          "journal": "Res Sq",
-          "year": "2023"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
