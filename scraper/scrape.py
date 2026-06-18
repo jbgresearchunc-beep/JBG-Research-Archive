@@ -938,27 +938,32 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
         pubs = candidates[:5]
 
         # ----------------------------------------------------------------
-        # Computed Authors upgrade: once we have a seed PMID we know belongs
-        # to this author, use NCBI's ML disambiguation API to get their
-        # FULL publication list — not just what matched our name search.
-        # This gives correct counts and catches recently-renamed/affiliated papers.
+        # Computed Authors upgrade: once we have a UNC-verified seed PMID,
+        # use NCBI's ML disambiguation API to get the full publication list.
+        # IMPORTANT: only seed with a UNC-verified paper — if the seed is wrong,
+        # Computed Authors will return an entirely wrong author cluster.
+        # Skip for recent recruits (unverified seeds) and ORCID searches.
         # ----------------------------------------------------------------
-        if pubs and not search_term.startswith("ORCID:"):
-            seed_pmid = pubs[0]["pmid"]
+        verified_pubs = [p for p in pubs if p]  # pubs already filtered by UNC affil (unless recent_recruit)
+        if verified_pubs and not recent_recruit and not search_term.startswith("ORCID:"):
+            seed_pmid = verified_pubs[0]["pmid"]
             print(f"    Computed Authors: seeding with PMID {seed_pmid}")
             ca_pmids, ca_count = fetch_pmids_via_computed_authors(name, seed_pmid=seed_pmid)
             if ca_count > 0:
                 print(f"    Computed Authors: found {ca_count} total PMIDs for this author")
-                # Fetch summaries from the most recent CA pmids
-                ca_candidates = pubmed_fetch_summaries(
-                    ca_pmids[:20],
-                    search_term=search_term,
-                    verify_affiliation=False  # CA already disambiguated — trust it
-                )
-                if ca_candidates:
-                    pubs = ca_candidates[:5]
-                    faculty_member["pubmed_count"] = ca_count
-                    faculty_member["pubmed_search"] = f"ComputedAuthors:{search_term}"
+                # Sanity check: reject obviously wrong clusters (>500 PMIDs suggests wrong person)
+                if ca_count > 500:
+                    print(f"    Computed Authors: cluster too large ({ca_count}), skipping")
+                else:
+                    ca_candidates = pubmed_fetch_summaries(
+                        ca_pmids[:20],
+                        search_term=search_term,
+                        verify_affiliation=False  # CA already disambiguated — trust it
+                    )
+                    if ca_candidates:
+                        pubs = ca_candidates[:5]
+                        faculty_member["pubmed_count"] = ca_count
+                        faculty_member["pubmed_search"] = f"ComputedAuthors:{search_term}"
 
     faculty_member["pubmed_search"] = faculty_member.get("pubmed_search") or search_term
     faculty_member["pubmed_count"] = faculty_member.get("pubmed_count") or result["count"]
