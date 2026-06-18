@@ -445,11 +445,12 @@ def pubmed_search(search_term, affiliation="University of North Carolina", max_r
     """
     if search_term.startswith("ORCID:"):
         orcid = search_term.replace("ORCID:", "")
-        # Include affiliation even for ORCID to avoid false positives from
-        # faculty who recently joined UNC with prior publications elsewhere
         query = f'{orcid}[auid] AND "{affiliation}"[Affiliation] AND ("2018"[PDAT] : "2026"[PDAT])'
-    else:
+    elif affiliation:
         query = f'"{search_term}"[Author] AND "{affiliation}"[Affiliation] AND ("2018"[PDAT] : "2026"[PDAT])'
+    else:
+        # No affiliation filter — used as last resort for recently recruited faculty
+        query = f'"{search_term}"[Author] AND ("2018"[PDAT] : "2026"[PDAT])'
 
     params = urllib.parse.urlencode({
         "db": "pubmed",
@@ -808,6 +809,24 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
                     print(f"    Fallback (hint initial): '{search_term}' → '{alt_term}' ({alt_result['count']} results)")
                     search_term = alt_term
                     result = alt_result
+
+    # Final fallback: drop the UNC affiliation filter entirely.
+    # This catches recently recruited faculty whose publication history is at
+    # a prior institution (e.g. Hanks joined from Duke — all his papers say Duke).
+    # We still run the efetch affiliation check, but accept ANY institution.
+    if result["count"] == 0 and not search_term.startswith("ORCID:"):
+        term_parts = search_term.split()
+        # Only drop affiliation if the term is specific enough: has initials
+        # (e.g. 'Hanks B') or is an uncommon full name — avoids massive false-positive sets
+        is_specific = len(term_parts) >= 2 and (
+            len(term_parts[-1]) <= 3 or  # second token is initials like 'B' or 'BA'
+            len(term_parts[0]) > 6       # long/uncommon last name
+        )
+        if is_specific:
+            no_aff_result = pubmed_search(search_term, affiliation="", max_results=15)
+            if no_aff_result["count"] > 0:
+                print(f"    No-affiliation fallback: '{search_term}' found {no_aff_result['count']} results (recent recruit?)")
+                result = no_aff_result
 
     pubs = []
     if result["ids"]:
