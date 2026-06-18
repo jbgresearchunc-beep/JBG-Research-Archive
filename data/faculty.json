@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T22:41:52.034005Z",
+  "generated_at": "2026-06-18T22:55:24.047047Z",
   "total_faculty": 49,
   "departments": [
     "Medicine \u2014 Oncology",
@@ -449,32 +449,12 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/brent.hanks.1/bibliography/public",
-      "pubmed_recent_recruit": true,
-      "pubmed_search": "Hanks B",
-      "pubmed_count": 3,
-      "pubmed_verified": 3,
+      "pubmed_hint": "Hanks BA",
+      "pubmed_search": "Hanks Brent",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "39729355",
-          "title": "Assembly of Pyrenes through a Quadruple Photochemical Cascade: Blocking Groups Allow Diversion from the Double Mallory Path to Photocyclization at the Bay Region.",
-          "journal": "J Am Chem Soc",
-          "year": "2025"
-        },
-        {
-          "pmid": "31488661",
-          "title": "The formation of human populations in South and Central Asia.",
-          "journal": "Science",
-          "year": "2019"
-        },
-        {
-          "pmid": "30694757",
-          "title": "The Emerging Role of Surgery for Patients With Advanced Melanoma Treated With Immunotherapy.",
-          "journal": "J Surg Res",
-          "year": "2019"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
