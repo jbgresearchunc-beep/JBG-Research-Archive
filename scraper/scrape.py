@@ -669,8 +669,8 @@ def sanitize_hint(hint, faculty_name):
         print(f"    Rejecting hint with digits '{hint}'")
         return None
 
-    # Reject if too long to be an author string
-    if len(hint_clean) > 40:
+    # Reject if too long to be an author string — but NOT MYNCBI/ORCID markers
+    if len(hint_clean) > 40 and not hint_clean.startswith(("MYNCBI:", "ORCID:")):
         print(f"    Rejecting overly long hint '{hint}'")
         return None
 
