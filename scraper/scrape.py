@@ -107,7 +107,9 @@ def fetch_url(url, retries=3, delay=1.5):
 # mid-word (e.g. "MS" in "Adams"). Comma-separated creds are also handled
 # by clean_name_for_pubmed which strips everything after the first comma.
 DEGREE_SUFFIXES = re.compile(
-    r"(?<![A-Za-z])(MD|PhD|DO|MPH|MBA|FACS|FACP|FAAN|RN|NP|PA-C|"
+    r"(?<![A-Za-z])(Ph\.D\.?|M\.D\.?|D\.O\.?|M\.P\.H\.?|M\.B\.A\.?|"
+    r"M\.S\.c\.?|B\.S\.c\.?|M\.H\.S\.?|"
+    r"MD|PhD|DO|MPH|MBA|FACS|FACP|FAAN|RN|NP|PA-C|"
     r"PharmD|DDS|DVM|DrPH|ScD|JD|MBBS|BMBS|MHS|MHA|MSCR|MSPH|"
     r"FRCSC|FACOG|FAAD|FACR|FACEP|FAHA|FHRS|MPP|BSN|ARNP|CNM|"
     r"RD|BCPS|BCGP|CPP|BCNP|ABR|FASN|FANA|FASGE|FRCR|FACG|"
@@ -409,20 +411,31 @@ def clean_name_for_pubmed(name):
 def build_pubmed_search_string(name):
     """
     Build a PubMed author search string from a faculty name.
-    PubMed's author index stores names as 'Lastname Firstname' so we
-    reorder accordingly. E.g. 'Jennifer C. Carr' -> 'Carr Jennifer'
-    This is more specific than initials ('Carr JC') while still matching
-    how PubMed indexes author names internally.
+    PubMed indexes authors as 'Lastname FI' or 'Lastname FirstMiddle'.
+    We include middle initials when present for specificity.
+    E.g. 'William Y. Kim'  -> 'Kim WY'
+         'Brian C. Miller' -> 'Miller BC'
+         'Jennifer Carr'   -> 'Carr Jennifer'
+         'E. Claire Dees'  -> 'Dees EC'
     """
     clean = clean_name_for_pubmed(name)
-    parts = [p for p in clean.split() if p]
+    # Strip stray dots/punctuation left by degree removal, filter empty parts
+    parts = [p.rstrip(".") for p in clean.split() if p]
+    parts = [p for p in parts if p and (len(p) > 1 or p.isalpha())]
     if len(parts) < 2:
         return clean
     last = parts[-1]
-    # Use first name only (not middle) for the search — avoids issues with
-    # middle name variants and is specific enough with last name
-    first = parts[0]
-    return f"{last} {first}"
+    first_parts = parts[:-1]  # everything before the last name
+
+    # If any part is a single letter (initial), use initials format for all first parts
+    # e.g. ['William', 'Y'] → 'WY', ['E', 'Claire'] → 'EC'
+    has_initial = any(len(p) == 1 and p.isalpha() for p in first_parts)
+    if has_initial:
+        initials = "".join(p[0].upper() for p in first_parts if p and p[0].isalpha())
+        return f"{last} {initials}"
+
+    # No initials — use full first name only (middle name dropped to avoid mismatch)
+    return f"{last} {first_parts[0]}"
 
 
 def pubmed_search(search_term, affiliation="University of North Carolina", max_results=5):
@@ -651,8 +664,8 @@ def sanitize_hint(hint, faculty_name):
         print(f"    Rejecting garbage hint '{hint}'")
         return None
 
-    # Reject if contains digits
-    if re.search(r"\d", hint_clean):
+    # Reject if contains digits — but NOT MYNCBI/ORCID markers which legitimately contain them
+    if re.search(r"\d", hint_clean) and not hint_clean.startswith(("MYNCBI:", "ORCID:")):
         print(f"    Rejecting hint with digits '{hint}'")
         return None
 
