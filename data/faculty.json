@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T21:45:31.797732Z",
+  "generated_at": "2026-06-18T21:55:25.286628Z",
   "total_faculty": 49,
   "departments": [
     "Medicine \u2014 Oncology",
@@ -153,16 +153,40 @@
         "Medicine \u2014 Oncology"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/yash.agrawal.3/bibliography/public",
-      "pubmed_search": "Agrawal YN",
-      "pubmed_count": 1,
-      "pubmed_verified": 1,
+      "pubmed_search": "Agrawal Y",
+      "pubmed_count": 5,
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "40632974",
-          "title": "Transcriptomic Predictors of Survival for Palbociclib + Endocrine Therapy Versus Capecitabine in Aromatase Inhibitor-Resistant Breast Cancer From the GEICAM/2013-02 PEARL Trial.",
-          "journal": "JCO Precis Oncol",
+          "pmid": "42126533",
+          "title": "Single-cell transcriptomics reveals immune landscape dynamics in metastatic hormone receptor-positive breast cancer treated with abemaciclib and endocrine therapy.",
+          "journal": "Clin Cancer Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "41145934",
+          "title": "Simultaneous Omission of Sentinel Lymph Node Biopsy and Radiation in Older Women with Early ER+ Breast Cancer.",
+          "journal": "Ann Surg Oncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "39765189",
+          "title": "Linking tumor immune infiltration to enhanced longevity in recurrence-free breast cancer.",
+          "journal": "ESMO Open",
           "year": "2025"
+        },
+        {
+          "pmid": "38448600",
+          "title": "Cell-cycle inhibition and immune microenvironment in breast cancer treated with ribociclib and letrozole or chemotherapy.",
+          "journal": "NPJ Breast Cancer",
+          "year": "2024"
+        },
+        {
+          "pmid": "31528530",
+          "title": "Retrospective review of the patient cases at a major trauma center in Nairobi, Kenya and implications for emergency care development.",
+          "journal": "Afr J Emerg Med",
+          "year": "2019"
         }
       ],
       "nih_grants": []
@@ -408,7 +432,7 @@
         "Medicine \u2014 Oncology"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/brent.hanks.1/bibliography/public",
-      "pubmed_search": "Hanks Brent",
+      "pubmed_search": "Hanks B",
       "pubmed_count": 0,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
