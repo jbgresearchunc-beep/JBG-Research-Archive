@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T15:04:55.577846Z",
+  "generated_at": "2026-06-18T15:13:46.870364Z",
   "total_faculty": 53,
   "departments": [
     "Medicine \u2014 Oncology",
@@ -1147,10 +1147,10 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Flores Reyna",
-      "pubmed_count": 0,
+      "pubmed_search": "Flores R",
+      "pubmed_count": 3,
       "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
+      "pubmed_ambiguous": true,
       "publications": [],
       "nih_grants": []
     },
