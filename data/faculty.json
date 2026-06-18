@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-18T19:20:11.179433Z",
-  "total_faculty": 53,
+  "generated_at": "2026-06-18T21:45:31.797732Z",
+  "total_faculty": 49,
   "departments": [
     "Medicine \u2014 Oncology",
     "Radiation Oncology"
@@ -60,40 +60,40 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Sanoff Hanna",
-      "pubmed_count": 14,
+      "pubmed_search": "Sanoff HK",
+      "pubmed_count": 70,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "40108482",
-          "title": "Utilizing Patient Input in Rectal Cancer Trial Design.",
+          "pmid": "42043735",
+          "title": "Assessing Patient Characteristics in Neuroendocrine Tumor Research: A Comparison of the NET-PRO Study to SEER Population-Based Data.",
+          "journal": "Endocrine",
+          "year": "2026"
+        },
+        {
+          "pmid": "41822553",
+          "title": "Using a participation monitoring database to enhance recruitment in a rare cancer population.",
+          "journal": "J Clin Transl Sci",
+          "year": "2026"
+        },
+        {
+          "pmid": "41812068",
+          "title": "Patient-, Provider-, and Area-Level Factors Associated with Hepatocellular Carcinoma Surveillance in Patients with Cirrhosis in North Carolina.",
+          "journal": "N C Med J",
+          "year": "2025"
+        },
+        {
+          "pmid": "41808486",
+          "title": "Quality of life and care experiences in a US multi-institutional neuroendocrine tumor cohort.",
           "journal": "J Natl Cancer Inst",
-          "year": "2025"
+          "year": "2026"
         },
         {
-          "pmid": "39779996",
-          "title": "Gene signatures derived from transcriptomic-causal networks stratify colorectal cancer patients for effective targeted therapy.",
-          "journal": "Commun Med (Lond)",
-          "year": "2025"
-        },
-        {
-          "pmid": "38485756",
-          "title": "Future direction of total neoadjuvant therapy for locally advanced rectal cancer.",
-          "journal": "Nat Rev Gastroenterol Hepatol",
-          "year": "2024"
-        },
-        {
-          "pmid": "37216627",
-          "title": "Predicting Acute Care Events Among Patients Initiating Chemotherapy: A Practice-Based Validation and Adaptation of the PROACCT Model.",
+          "pmid": "41529232",
+          "title": "Ensuring the Future of Cooperative Group Cancer Clinical Trials: A Call for Comprehensive Support and Prioritization.",
           "journal": "JCO Oncol Pract",
-          "year": "2023"
-        },
-        {
-          "pmid": "36602796",
-          "title": "Effect of a MUC5AC Antibody (NPC-1C) Administered With Second-Line Gemcitabine and Nab-Paclitaxel on the Survival of Patients With Advanced Pancreatic Ductal Adenocarcinoma: A Randomized Clinical Trial.",
-          "journal": "JAMA Netw Open",
-          "year": "2023"
+          "year": "2026"
         }
       ],
       "nih_grants": []
@@ -153,34 +153,16 @@
         "Medicine \u2014 Oncology"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/yash.agrawal.3/bibliography/public",
-      "pubmed_search": "Agrawal Yash",
-      "pubmed_count": 4,
-      "pubmed_verified": 4,
+      "pubmed_search": "Agrawal YN",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "42126533",
-          "title": "Single-cell transcriptomics reveals immune landscape dynamics in metastatic hormone receptor-positive breast cancer treated with abemaciclib and endocrine therapy.",
-          "journal": "Clin Cancer Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "41145934",
-          "title": "Simultaneous Omission of Sentinel Lymph Node Biopsy and Radiation in Older Women with Early ER+ Breast Cancer.",
-          "journal": "Ann Surg Oncol",
-          "year": "2026"
-        },
-        {
-          "pmid": "38448600",
-          "title": "Cell-cycle inhibition and immune microenvironment in breast cancer treated with ribociclib and letrozole or chemotherapy.",
-          "journal": "NPJ Breast Cancer",
-          "year": "2024"
-        },
-        {
-          "pmid": "31528530",
-          "title": "Retrospective review of the patient cases at a major trauma center in Nairobi, Kenya and implications for emergency care development.",
-          "journal": "Afr J Emerg Med",
-          "year": "2019"
+          "pmid": "40632974",
+          "title": "Transcriptomic Predictors of Survival for Palbociclib + Endocrine Therapy Versus Capecitabine in Aromatase Inhibitor-Resistant Breast Cancer From the GEICAM/2013-02 PEARL Trial.",
+          "journal": "JCO Precis Oncol",
+          "year": "2025"
         }
       ],
       "nih_grants": []
@@ -193,21 +175,15 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Aldrich Jeffrey",
-      "pubmed_count": 2,
-      "pubmed_verified": 2,
+      "pubmed_search": "Aldrich JD",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "41721913",
-          "title": "Investigating initial patterns of progression on first-line treatment in patients with de novo metastatic breast cancer.",
-          "journal": "Breast Cancer Res Treat",
-          "year": "2026"
-        },
-        {
-          "pmid": "38366007",
-          "title": "Treatment patterns and outcomes of high-grade immune checkpoint inhibitor-related pneumonitis in an oncology hospitalist service.",
-          "journal": "Support Care Cancer",
+          "pmid": "38834015",
+          "title": "A systematic review and meta-analysis of observational studies and uncontrolled trials reporting on the use of checkpoint blockers in patients with cancer and pre-existing autoimmune disease.",
+          "journal": "Eur J Cancer",
           "year": "2024"
         }
       ],
@@ -363,40 +339,40 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Reeder-Hayes Katherine",
-      "pubmed_count": 28,
+      "pubmed_search": "Reeder-Hayes KE",
+      "pubmed_count": 79,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "41452486",
-          "title": "Tumor biology and access to care and metastatic breast cancer outcomes.",
+          "pmid": "41954601",
+          "title": "Impacts of Hurricane-Related Flooding on Time to Initial Cancer-Directed Treatment in North Carolina.",
+          "journal": "Cancer Epidemiol Biomarkers Prev",
+          "year": "2026"
+        },
+        {
+          "pmid": "41885380",
+          "title": "Exploring Clinical Pathways to a Metastatic Lung Cancer Diagnosis: A Latent Class Analysis Using North Carolina Multipayer Claims Data.",
+          "journal": "Cancer Epidemiol Biomarkers Prev",
+          "year": "2026"
+        },
+        {
+          "pmid": "41721913",
+          "title": "Investigating initial patterns of progression on first-line treatment in patients with de novo metastatic breast cancer.",
           "journal": "Breast Cancer Res Treat",
-          "year": "2025"
+          "year": "2026"
         },
         {
-          "pmid": "41307714",
-          "title": "Promoting Resilience in Stress Management (PRISM) for women with breast cancer: a qualitative analysis of patient impressions and recommendations.",
-          "journal": "Breast Cancer Res Treat",
-          "year": "2025"
+          "pmid": "41663549",
+          "title": "Symptomatic radiation necrosis after concurrent targeted therapy and stereotactic radiosurgery for brain metastases: a bicentric retrospective analysis.",
+          "journal": "J Neurooncol",
+          "year": "2026"
         },
         {
-          "pmid": "40846803",
-          "title": "Impact of motivational interviewing on psychosocial and symptom outcomes during breast cancer endocrine therapy.",
-          "journal": "Support Care Cancer",
-          "year": "2025"
-        },
-        {
-          "pmid": "40522391",
-          "title": "Promoting resilience in stress management (PRISM) for patients with early stage breast cancer: a pilot feasibility study.",
-          "journal": "Breast Cancer Res Treat",
-          "year": "2025"
-        },
-        {
-          "pmid": "40310643",
-          "title": "Racial and Ethnic Disparities in Receipt of ERBB2-Targeted Therapy for Breast Cancer, 2010-2020.",
-          "journal": "JAMA Netw Open",
-          "year": "2025"
+          "pmid": "41588752",
+          "title": "Treatment Initiation Among Black and White Older Adults With Multiple Myeloma: A SEER-Medicare Analysis.",
+          "journal": "Cancer Med",
+          "year": "2026"
         }
       ],
       "nih_grants": []
@@ -448,7 +424,7 @@
         "Medicine \u2014 Oncology"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/michael.iglesia.1/bibliography/public",
-      "pubmed_search": "Iglesia Michael",
+      "pubmed_search": "Iglesia M",
       "pubmed_count": 1,
       "pubmed_verified": 0,
       "pubmed_ambiguous": true,
@@ -583,51 +559,88 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Nyrop Kirsten",
-      "pubmed_count": 4,
-      "pubmed_verified": 4,
+      "pubmed_search": "Nyrop KA",
+      "pubmed_count": 74,
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "34629320",
-          "title": "Social support and outcomes in older adults with lung cancer.",
+          "pmid": "42308690",
+          "title": "Quality of life and function in younger and older women treated for non-metastatic breast cancer: Three or more years post primary treatment.",
           "journal": "J Geriatr Oncol",
-          "year": "2022"
+          "year": "2026"
         },
         {
-          "pmid": "33507038",
-          "title": "Measuring quality of life in older people with cancer.",
-          "journal": "Curr Opin Support Palliat Care",
-          "year": "2021"
+          "pmid": "41711655",
+          "title": "Associations Between Neurobehavioral Symptoms During Breast Cancer Chemotherapy and Patient-Reported Cognitive Impairment 3 or More Years After Chemotherapy.",
+          "journal": "Psychooncology",
+          "year": "2026"
         },
         {
-          "pmid": "35117935",
-          "title": "p16 a biomarker of aging and tolerance for cancer therapy.",
-          "journal": "Transl Cancer Res",
-          "year": "2020"
+          "pmid": "41124019",
+          "title": "Clinician documentation of social circumstances of older and younger women receiving chemotherapy for early breast cancer.",
+          "journal": "Oncologist",
+          "year": "2025"
         },
         {
-          "pmid": "30205939",
-          "title": "Mental status evaluation in older adults with cancer: Development of the Mental Health Index-13.",
+          "pmid": "39821865",
+          "title": "Comparison of patient-reported symptoms with multi-item patient-reported outcome measures of fatigue, anxiety, and depression in the clinical care of women undergoing chemotherapy for early breast cancer.",
+          "journal": "Qual Life Res",
+          "year": "2025"
+        },
+        {
+          "pmid": "39706780",
+          "title": "Association of p16(INK4a), a biomarker of cellular senescence, with receipt of therapy and frailty status among adults with plasma cell disorders.",
           "journal": "J Geriatr Oncol",
-          "year": "2019"
+          "year": "2025"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Jeffrey S. Damrauer Ph.D.",
+      "name": "Jeffrey S. Damrauer .",
       "profile_url": "https://www.med.unc.edu/medicine/oncology/people/jeffrey-s-damrauer-ph-d/",
       "department": "Medicine \u2014 Oncology",
       "role": "",
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Ph.D. Jeffrey",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
+      "pubmed_search": "Damrauer JS",
+      "pubmed_count": 27,
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
-      "publications": [],
+      "publications": [
+        {
+          "pmid": "42119042",
+          "title": "Blinded by the Smoke: Are We Ignoring a Key Modifier of Response in NMIBC Trials?",
+          "journal": "J Urol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41707654",
+          "title": "DeCAF defines clinical fibroblast subtypes and multidimensional tumor-stroma crosstalk shaping prognosis and immunotherapy response.",
+          "journal": "Cell Rep Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "41390483",
+          "title": "APOBEC3 promotes squamous differentiation via IL-1A/AP-1 signaling.",
+          "journal": "Nat Commun",
+          "year": "2025"
+        },
+        {
+          "pmid": "40542202",
+          "title": "Correction: An FGFR-p53 developmental signaling axis drives salivary cancer progression.",
+          "journal": "Oncogene",
+          "year": "2025"
+        },
+        {
+          "pmid": "40456865",
+          "title": "An FGFR-p53 developmental signaling axis drives salivary cancer progression.",
+          "journal": "Oncogene",
+          "year": "2025"
+        }
+      ],
       "nih_grants": []
     },
     {
@@ -661,11 +674,42 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Kim William",
-      "pubmed_count": 1,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
-      "publications": [],
+      "pubmed_search": "Kim WY",
+      "pubmed_count": 57,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42119042",
+          "title": "Blinded by the Smoke: Are We Ignoring a Key Modifier of Response in NMIBC Trials?",
+          "journal": "J Urol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41768416",
+          "title": "Computational pathology in bladder cancer: A scoping review.",
+          "journal": "Bladder Cancer",
+          "year": "2026"
+        },
+        {
+          "pmid": "41707654",
+          "title": "DeCAF defines clinical fibroblast subtypes and multidimensional tumor-stroma crosstalk shaping prognosis and immunotherapy response.",
+          "journal": "Cell Rep Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "41509221",
+          "title": "Computational design of orthogonal TCR &#x3b1;/&#x3b2; interfaces for dual-TCR therapeutics.",
+          "journal": "bioRxiv",
+          "year": "2026"
+        },
+        {
+          "pmid": "41390483",
+          "title": "APOBEC3 promotes squamous differentiation via IL-1A/AP-1 signaling.",
+          "journal": "Nat Commun",
+          "year": "2025"
+        }
+      ],
       "nih_grants": []
     },
     {
@@ -676,22 +720,40 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Miller Brian",
-      "pubmed_count": 5,
-      "pubmed_verified": 2,
+      "pubmed_search": "Miller BC",
+      "pubmed_count": 13,
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "32427295",
-          "title": "Time to Consider a New Look at Physician-Owned Hospitals to Increase Competition in Health Care?",
-          "journal": "JAMA",
-          "year": "2020"
+          "pmid": "42024441",
+          "title": "T cell receptor signaling induces expression of lysine demethylase KDM6B to maintainTreg homeostasis.",
+          "journal": "J Clin Invest",
+          "year": "2026"
         },
         {
-          "pmid": "36218607",
-          "title": "Time to Consider a New Look at Physician-Owned Hospitals to Increase Competition in Health Care?",
-          "journal": "JAMA Health Forum",
-          "year": "2020"
+          "pmid": "41676732",
+          "title": "Harnessing Inflammatory Monocytes to Overcome Resistance to Anti-PD-1 Immunotherapy.",
+          "journal": "bioRxiv",
+          "year": "2026"
+        },
+        {
+          "pmid": "41106435",
+          "title": "Structure-guided design and engineering of a biparatopic antibody targeting CCR2 in triple negative breast cancer.",
+          "journal": "J Control Release",
+          "year": "2025"
+        },
+        {
+          "pmid": "41005293",
+          "title": "Intra-tumoral hypoxia promotes CD8+ T cell dysfunction via chronic activation of integrated stress response transcription factor ATF4.",
+          "journal": "Immunity",
+          "year": "2025"
+        },
+        {
+          "pmid": "40661381",
+          "title": "Single-cell transcriptomics yield insights into the stress-immune interplay and inform disease risk.",
+          "journal": "bioRxiv",
+          "year": "2025"
         }
       ],
       "nih_grants": []
@@ -704,22 +766,40 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Rose Tracy",
-      "pubmed_count": 2,
-      "pubmed_verified": 2,
+      "pubmed_search": "Rose TL",
+      "pubmed_count": 51,
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "41945031",
-          "title": "Pembrolizumab in Combination With Gemcitabine and Concurrent Hypofractionated Radiation Therapy as Bladder-sparing Treatment for Muscle-invasive Urothelial Cancer of the Bladder: A Multicenter Phase 2 Trial.",
-          "journal": "Eur Urol",
+          "pmid": "42252791",
+          "title": "Diagnostic challenges in pathologic staging of renal cell carcinoma following systemic immunotherapy.",
+          "journal": "Am J Clin Pathol",
           "year": "2026"
         },
         {
-          "pmid": "39131874",
-          "title": "Factors Influencing Patient Decision-Making in the Treatment of Muscle-Invasive Bladder Cancer.",
+          "pmid": "41390483",
+          "title": "APOBEC3 promotes squamous differentiation via IL-1A/AP-1 signaling.",
+          "journal": "Nat Commun",
+          "year": "2025"
+        },
+        {
+          "pmid": "40503641",
+          "title": "Engagement in cancer clinical trials among a nationally representative cancer survivor sample: Motivators, barriers and opportunities for improvement.",
+          "journal": "Tumori",
+          "year": "2025"
+        },
+        {
+          "pmid": "40034245",
+          "title": "Summary from the NCI clinical trials planning meeting on next generation of clinical trials in non-muscle invasive bladder cancer.",
           "journal": "Bladder Cancer",
-          "year": "2024"
+          "year": "2025"
+        },
+        {
+          "pmid": "39758190",
+          "title": "Pembrolizumab and axitinib induced pathological complete response in metastatic clear cell renal cell carcinoma with inferior vena cava thrombus: A case report.",
+          "journal": "SAGE Open Med Case Rep",
+          "year": "2025"
         }
       ],
       "nih_grants": []
@@ -1192,98 +1272,6 @@
       "nih_grants": []
     },
     {
-      "name": "Gaorav Gupta, , Ph.D.",
-      "profile_url": "https://www.med.unc.edu/radonc/directory/gaorav-gupta/",
-      "department": "Radiation Oncology",
-      "role": "",
-      "departments": [
-        "Radiation Oncology"
-      ],
-      "pubmed_search": "Gupta Gaorav",
-      "pubmed_count": 7,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41282221",
-          "title": "PARP7 Suppresses Radiation-induced Necroptosis and Abscopal Immunity.",
-          "journal": "Res Sq",
-          "year": "2025"
-        },
-        {
-          "pmid": "40630542",
-          "title": "FANCA Deficiency Induces Oncogenic R-Loop Dependent Synthetic Lethality with PARP1 Inhibitors.",
-          "journal": "Res Sq",
-          "year": "2025"
-        },
-        {
-          "pmid": "40599321",
-          "title": "Spatial transcriptomic analysis of immune checkpoint blockade response in triple negative breast cancers with tertiary lymphoid structures.",
-          "journal": "iScience",
-          "year": "2025"
-        },
-        {
-          "pmid": "37782247",
-          "title": "Discovery of a 53BP1 Small Molecule Antagonist Using a Focused DNA-Encoded Library Screen.",
-          "journal": "J Med Chem",
-          "year": "2023"
-        },
-        {
-          "pmid": "32434040",
-          "title": "Proceedings of the ASTRO-RSNA Oligometastatic Disease Research Workshop.",
-          "journal": "Int J Radiat Oncol Biol Phys",
-          "year": "2020"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Ellen Jones, , Ph.D.",
-      "profile_url": "https://www.med.unc.edu/radonc/directory/ellen-jones/",
-      "department": "Radiation Oncology",
-      "role": "",
-      "departments": [
-        "Radiation Oncology"
-      ],
-      "pubmed_search": "Jones Ellen",
-      "pubmed_count": 8,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41721913",
-          "title": "Investigating initial patterns of progression on first-line treatment in patients with de novo metastatic breast cancer.",
-          "journal": "Breast Cancer Res Treat",
-          "year": "2026"
-        },
-        {
-          "pmid": "39317637",
-          "title": "Quality of Life Outcomes in Breast Cancer Patients Receiving Chemotherapy With or Without Radiation Therapy.",
-          "journal": "Clin Breast Cancer",
-          "year": "2025"
-        },
-        {
-          "pmid": "36280107",
-          "title": "Radiation Therapy for Endometrial Cancer: An American Society for Radiation Oncology Clinical Practice Guideline.",
-          "journal": "Pract Radiat Oncol",
-          "year": "2023"
-        },
-        {
-          "pmid": "34920164",
-          "title": "Dosimetric and Clinical Factors Associated With Breast Reconstruction Complications in Patients Receiving Postmastectomy Radiation.",
-          "journal": "Pract Radiat Oncol",
-          "year": "2022"
-        },
-        {
-          "pmid": "34620572",
-          "title": "Demographic and clinical factors associated with variations in opioid administration using conscious sedation during HDR brachytherapy for cervical cancer.",
-          "journal": "Brachytherapy",
-          "year": "2021"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "Michael Repka",
       "profile_url": "https://www.med.unc.edu/radonc/directory/michael-repka/",
       "department": "Radiation Oncology",
@@ -1313,52 +1301,6 @@
           "title": "Poor Prognosis among Radiation-Associated Bladder Cancer Is Defined by Clinicogenomic Features.",
           "journal": "Cancer Res Commun",
           "year": "2024"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Colette Shen, , Ph.D.",
-      "profile_url": "https://www.med.unc.edu/radonc/directory/colette-shen/",
-      "department": "Radiation Oncology",
-      "role": "",
-      "departments": [
-        "Radiation Oncology"
-      ],
-      "pubmed_search": "Shen Colette",
-      "pubmed_count": 26,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41844777",
-          "title": "Deep learning based 3D brain metastasis synthesis with configurable parameters for 3D data augmentation.",
-          "journal": "Sci Rep",
-          "year": "2026"
-        },
-        {
-          "pmid": "40084896",
-          "title": "Commentary: Long-Term Outcomes After CyberKnife Radiosurgery for Nonfunctioning Pituitary Adenomas.",
-          "journal": "Neurosurgery",
-          "year": "2025"
-        },
-        {
-          "pmid": "39288256",
-          "title": "Identifying dose constraints for the parotid ducts to minimize patient-reported xerostomia: Is conventional mean dose sparing of the parotid glands sufficient?",
-          "journal": "J Appl Clin Med Phys",
-          "year": "2024"
-        },
-        {
-          "pmid": "39263446",
-          "title": "Hippocampal-Sparing Radiation Therapy in Primary Sinonasal and Cutaneous Tumors of the Head and Neck.",
-          "journal": "Adv Radiat Oncol",
-          "year": "2024"
-        },
-        {
-          "pmid": "39059508",
-          "title": "Extended nnU-Net for Brain Metastasis Detection and Segmentation in Contrast-Enhanced Magnetic Resonance Imaging With a Large Multi-Institutional Data Set.",
-          "journal": "Int J Radiat Oncol Biol Phys",
-          "year": "2025"
         }
       ],
       "nih_grants": []
@@ -1405,52 +1347,6 @@
           "title": "Investigating initial patterns of progression on first-line treatment in patients with de novo metastatic breast cancer.",
           "journal": "Breast Cancer Res Treat",
           "year": "2026"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Ashley Weiner, , Ph.D.",
-      "profile_url": "https://www.med.unc.edu/radonc/directory/ashley-weiner/",
-      "department": "Radiation Oncology",
-      "role": "",
-      "departments": [
-        "Radiation Oncology"
-      ],
-      "pubmed_search": "Weiner Ashley",
-      "pubmed_count": 10,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42088929",
-          "title": "Increased frequency of remote and off-site work impacts incident learning workflows in radiation oncology.",
-          "journal": "Tech Innov Patient Support Radiat Oncol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41816471",
-          "title": "Survival after salvage pulmonary resection for non-small cell lung cancer: a national cancer database analysis.",
-          "journal": "J Thorac Dis",
-          "year": "2026"
-        },
-        {
-          "pmid": "40186836",
-          "title": "Review of Bone Metastasis in Gynecologic Malignancies: Evaluation and Treatment.",
-          "journal": "Curr Treat Options Oncol",
-          "year": "2025"
-        },
-        {
-          "pmid": "39515465",
-          "title": "Appropriateness Criteria for Radiation Therapy in the Setting of Presumed Early-Stage Lung Cancer.",
-          "journal": "Pract Radiat Oncol",
-          "year": "2025"
-        },
-        {
-          "pmid": "38340775",
-          "title": "Erratum to: Fields EC, Erickson B, Hubbard A, Chino J, Small C, Weiner A, Petereit D, Mayadev JS, Yashar CM, Joyner M. Tipping the Balance: Adding Resources for Cervical Cancer Brachytherapy. Int J Radiat Oncol Biol Phys 2023;117:1138-1142.",
-          "journal": "Int J Radiat Oncol Biol Phys",
-          "year": "2024"
         }
       ],
       "nih_grants": []
