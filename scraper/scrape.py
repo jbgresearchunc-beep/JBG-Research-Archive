@@ -176,9 +176,11 @@ def extract_name(raw_text):
     text = re.sub(r"\([^)]*\)", "", text)
     # Remove quoted nicknames e.g. "Yemi"
     text = re.sub(r'["\'\u201c\u201d][^"\'\u201c\u201d]*["\'\u201c\u201d]', "", text)
-    text = DEGREE_SUFFIXES.sub("", text).strip().rstrip(",").strip()
+    text = DEGREE_SUFFIXES.sub("", text).strip()
     text = TITLE_PREFIXES.sub("", text).strip()
-    # Collapse whitespace
+    # Strip trailing commas, dots, spaces left by degree removal
+    text = re.sub(r"[\s,\.]+$", "", text).strip()
+    # Collapse internal whitespace
     text = re.sub(r"\s+", " ", text)
     return text
 
@@ -836,21 +838,52 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
 
     # Final fallback: drop the UNC affiliation filter entirely.
     # Catches recently recruited faculty whose papers list a prior institution.
-    # Only trigger when search term has initials (specific enough to avoid
-    # flooding results) — e.g. 'Hanks B' yes, 'Cervantes Elizabeth' no.
+    # Only trigger when search term ends with 1-2 letter initials — specific enough
+    # to avoid flooding with false positives. Try two-initial form first (e.g. 'Hanks BA')
+    # before dropping affiliation entirely.
     if result["count"] == 0 and not search_term.startswith("ORCID:"):
         term_parts = search_term.split()
         has_initials = len(term_parts) >= 2 and len(term_parts[-1]) <= 2 and term_parts[-1].isalpha()
         if has_initials:
-            no_aff_result = pubmed_search(search_term, affiliation="", max_results=15)
-            if no_aff_result["count"] > 0:
-                print(f"    No-affiliation fallback: '{search_term}' found {no_aff_result['count']} results (recent recruit?)")
-                result = no_aff_result
+            # If search term has only one initial (e.g. 'Hanks B'), try two initials
+            # by checking if the raw name has a middle name/initial we can use
+            if len(term_parts[-1]) == 1:
+                clean = clean_name_for_pubmed(name)
+                raw_parts = [p.rstrip(".") for p in clean.split() if p]
+                raw_parts = [p for p in raw_parts if p and (len(p) > 1 or p.isalpha())]
+                if len(raw_parts) >= 3:
+                    # e.g. ['Brent', 'A', 'Hanks'] or ['Brent', 'Hanks'] - check for middle
+                    first_parts = raw_parts[:-1]
+                    if len(first_parts) >= 2:
+                        two_initials = "".join(p[0].upper() for p in first_parts if p and p[0].isalpha())
+                        if len(two_initials) >= 2:
+                            two_init_term = f"{term_parts[0]} {two_initials}"
+                            if two_init_term != search_term:
+                                two_init_result = pubmed_search(two_init_term, max_results=15)
+                                if two_init_result["count"] > 0:
+                                    print(f"    Fallback (two initials): '{search_term}' → '{two_init_term}' ({two_init_result['count']} results)")
+                                    search_term = two_init_term
+                                    result = two_init_result
+
+            # If still 0, drop affiliation (recent recruit at another institution)
+            if result["count"] == 0:
+                no_aff_result = pubmed_search(search_term, affiliation="", max_results=15)
+                if no_aff_result["count"] > 0:
+                    print(f"    No-affiliation fallback: '{search_term}' found {no_aff_result['count']} results (recent recruit?)")
+                    result = no_aff_result
+                    faculty_member["pubmed_recent_recruit"] = True  # flag for UI
 
     pubs = []
+    recent_recruit = faculty_member.get("pubmed_recent_recruit", False)
     if result["ids"]:
-        candidates = pubmed_fetch_summaries(result["ids"][:15], search_term=search_term)
-        pubs = candidates[:5]  # keep top 5 after affiliation filtering
+        # For recent recruits, skip UNC affiliation verification — their papers
+        # are at a prior institution and won't have UNC in the affiliation field
+        candidates = pubmed_fetch_summaries(
+            result["ids"][:15],
+            search_term=search_term,
+            verify_affiliation=not recent_recruit
+        )
+        pubs = candidates[:5]
 
     faculty_member["pubmed_search"] = search_term
     faculty_member["pubmed_count"] = result["count"]  # raw search count
