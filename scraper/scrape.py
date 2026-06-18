@@ -360,6 +360,59 @@ def scrape_profile_for_pubmed_string(profile_url):
 
 PUBMED_BASE = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
 PUBMED_EMAIL = "jgbresearch@unc.edu"  # NCBI requests a contact email
+COMPUTED_AUTHORS_API = "https://www.ncbi.nlm.nih.gov/research/litsense-api/api/author/"
+
+
+def fetch_pmids_via_computed_authors(name, seed_pmid=None):
+    """
+    Use NCBI's Computed Authors API to get all disambiguated publications for
+    a faculty member. This is NCBI's own ML-based author disambiguation system,
+    updated weekly, and far more reliable than name+affiliation searching.
+
+    Requires one seed PMID — any paper we know belongs to this author.
+    Returns (pmids, total_count) where pmids is sorted newest-first.
+
+    API docs: https://www.ncbi.nlm.nih.gov/research/bionlp/APIs/authors/
+    Call format: ?query={pmid} {LastName} {Initial}
+    """
+    if not seed_pmid:
+        return [], 0
+
+    # Build the author name in 'LastName Initial' format
+    clean = clean_name_for_pubmed(name)
+    parts = [p.rstrip(".") for p in clean.split() if p]
+    parts = [p for p in parts if p and (len(p) > 1 or p.isalpha())]
+    if len(parts) < 2:
+        return [], 0
+
+    last = parts[-1]
+    first_initial = parts[0][0].upper()
+    author_query = f"{last} {first_initial}"
+
+    query = f"{seed_pmid} {author_query}"
+    url = f"{COMPUTED_AUTHORS_API}?query={urllib.parse.quote(query)}"
+
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": f"unc-research-explorer/{PUBMED_EMAIL}"})
+        with urllib.request.urlopen(req, timeout=15) as r:
+            data = json.loads(r.read())
+        results = data.get("results", [])
+        if not results:
+            return [], 0
+        # May return multiple author clusters — take the one containing our seed PMID
+        for cluster in results:
+            pmids = [str(p) for p in cluster.get("pmids", [])]
+            if str(seed_pmid) in pmids:
+                # Sort newest first (PMIDs are roughly chronological)
+                pmids_sorted = sorted(pmids, key=lambda x: int(x), reverse=True)
+                return pmids_sorted, len(pmids_sorted)
+        # Seed not found in any cluster — return first cluster's PMIDs
+        pmids = [str(p) for p in results[0].get("pmids", [])]
+        pmids_sorted = sorted(pmids, key=lambda x: int(x), reverse=True)
+        return pmids_sorted, len(pmids_sorted)
+    except Exception as e:
+        print(f"    Computed Authors API error for '{author_query}': {e}")
+        return [], 0
 
 
 def fetch_pmids_by_author_id(author_id, max_results=100):
@@ -876,8 +929,7 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
     pubs = []
     recent_recruit = faculty_member.get("pubmed_recent_recruit", False)
     if result["ids"]:
-        # For recent recruits, skip UNC affiliation verification — their papers
-        # are at a prior institution and won't have UNC in the affiliation field
+        # For recent recruits, skip UNC affiliation verification
         candidates = pubmed_fetch_summaries(
             result["ids"][:15],
             search_term=search_term,
@@ -885,11 +937,32 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
         )
         pubs = candidates[:5]
 
-    faculty_member["pubmed_search"] = search_term
-    faculty_member["pubmed_count"] = result["count"]  # raw search count
-    faculty_member["pubmed_verified"] = len(pubs)     # UNC-verified count
-    # If we got raw results but 0 verified, flag it so the frontend can
-    # show a warning rather than a misleading "X on PubMed" badge
+        # ----------------------------------------------------------------
+        # Computed Authors upgrade: once we have a seed PMID we know belongs
+        # to this author, use NCBI's ML disambiguation API to get their
+        # FULL publication list — not just what matched our name search.
+        # This gives correct counts and catches recently-renamed/affiliated papers.
+        # ----------------------------------------------------------------
+        if pubs and not search_term.startswith("ORCID:"):
+            seed_pmid = pubs[0]["pmid"]
+            print(f"    Computed Authors: seeding with PMID {seed_pmid}")
+            ca_pmids, ca_count = fetch_pmids_via_computed_authors(name, seed_pmid=seed_pmid)
+            if ca_count > 0:
+                print(f"    Computed Authors: found {ca_count} total PMIDs for this author")
+                # Fetch summaries from the most recent CA pmids
+                ca_candidates = pubmed_fetch_summaries(
+                    ca_pmids[:20],
+                    search_term=search_term,
+                    verify_affiliation=False  # CA already disambiguated — trust it
+                )
+                if ca_candidates:
+                    pubs = ca_candidates[:5]
+                    faculty_member["pubmed_count"] = ca_count
+                    faculty_member["pubmed_search"] = f"ComputedAuthors:{search_term}"
+
+    faculty_member["pubmed_search"] = faculty_member.get("pubmed_search") or search_term
+    faculty_member["pubmed_count"] = faculty_member.get("pubmed_count") or result["count"]
+    faculty_member["pubmed_verified"] = len(pubs)
     faculty_member["pubmed_ambiguous"] = (result["count"] > 0 and len(pubs) == 0)
     faculty_member["publications"] = pubs
 
