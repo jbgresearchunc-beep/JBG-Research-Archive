@@ -358,28 +358,32 @@ PUBMED_BASE = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
 PUBMED_EMAIL = "jgbresearch@unc.edu"  # NCBI requests a contact email
 
 
-def fetch_myncbi_pmids(bib_url, max_pages=2):
+def fetch_pmids_by_author_id(author_id, max_results=100):
     """
-    Fetch PMIDs directly from a faculty's public MyNCBI bibliography page.
-    This bypasses PubMed author search entirely — no ambiguity from initials.
-    Returns a list of PMID strings (up to max_pages * ~20 per page).
+    Use the NCBI E-utilities [Author Identifier] field to retrieve PMIDs
+    for a faculty member by their unique NCBI author ID (the slug from their
+    MyNCBI URL, e.g. 'brent.hanks.1').
+
+    API call:
+      esearch.fcgi?db=pubmed&term=brent.hanks.1[Author Identifier]&retmax=100
+
+    This is far more reliable than guessing name format (Hanks B vs Hanks BA).
     """
-    pmids = []
-    for page in range(1, max_pages + 1):
-        url = f"{bib_url}?page={page}"
-        html = fetch_url(url)
-        if not html:
-            break
-        # PMIDs appear as links like /pubmed/39970333/ or as text "PubMed PMID: 39970333"
-        found = re.findall(r'/pubmed/(\d{6,9})/', html)
-        found += re.findall(r'PubMed PMID:\s*\n?\s*(\d{6,9})', html)
-        found = list(dict.fromkeys(found))  # deduplicate preserving order
-        pmids.extend(found)
-        # If fewer than 10 PMIDs on this page, we've hit the last page
-        if len(found) < 10:
-            break
-        time.sleep(0.5)
-    return list(dict.fromkeys(pmids))  # final dedup
+    import urllib.parse
+    term = urllib.parse.quote(f"{author_id}[Author Identifier]")
+    url = (
+        f"{PUBMED_BASE}esearch.fcgi"
+        f"?db=pubmed&term={term}&retmax={max_results}&retmode=json&email={PUBMED_EMAIL}"
+    )
+    try:
+        with urllib.request.urlopen(url, timeout=15) as r:
+            data = json.loads(r.read())
+        pmids = data["esearchresult"]["idlist"]
+        count = int(data["esearchresult"]["count"])
+        return pmids, count
+    except Exception as e:
+        print(f"    Author Identifier search error for '{author_id}': {e}")
+        return [], 0
 
 
 def clean_name_for_pubmed(name):
@@ -714,23 +718,38 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
 
     clean_hint = sanitize_hint(pubmed_string, name)
 
-    # MyNCBI bibliography — fetch PMIDs directly, no search needed
+    # MyNCBI bibliography — use E-utilities [Author Identifier] search.
+    # The MyNCBI URL slug (e.g. 'brent.hanks.1') IS the NCBI author identifier,
+    # searchable via: esearch?term=brent.hanks.1[Author Identifier]
+    # This is exact and unambiguous — no guessing at 'Hanks B' vs 'Hanks BA'.
     if clean_hint and clean_hint.startswith("MYNCBI:"):
         bib_url = clean_hint.replace("MYNCBI:", "")
-        print(f"    MyNCBI: fetching bibliography for {name} from {bib_url}")
-        pmids = fetch_myncbi_pmids(bib_url, max_pages=2)
-        print(f"    MyNCBI: found {len(pmids)} PMIDs")
+        # Extract the author ID slug from the URL
+        # e.g. .../myncbi/brent.hanks.1/bibliography/... → 'brent.hanks.1'
+        author_id = bib_url.rstrip("/").split("/myncbi/")[-1].split("/")[0]
+        print(f"    MyNCBI Author ID '{author_id}' → querying via [Author Identifier]")
+        pmids, count = fetch_pmids_by_author_id(author_id, max_results=100)
+        print(f"    MyNCBI: found {count} total PMIDs, fetching top {min(len(pmids),15)}")
         if pmids:
             pubs = pubmed_fetch_summaries(pmids[:15], search_term=name)[:5]
-            faculty_member["pubmed_search"] = f"MyNCBI:{bib_url}"
-            faculty_member["pubmed_count"] = len(pmids)
+            faculty_member["pubmed_search"] = f"{author_id}[Author Identifier]"
+            faculty_member["pubmed_count"] = count
             faculty_member["pubmed_verified"] = len(pubs)
             faculty_member["pubmed_ambiguous"] = False
             faculty_member["publications"] = pubs
             time.sleep(0.4)
             return faculty_member
-        # If fetch failed, fall through to name-based search
-        clean_hint = None
+        # [Author Identifier] returned 0 — slug may be a hash (e.g. '1foVmTwbUHA5f')
+        # or the author hasn't linked their papers. Fall back to name-based search.
+        print(f"    MyNCBI Author ID search returned 0 — falling back to name search")
+        slug_parts = [p for p in author_id.split(".") if p and not p.isdigit()]
+        if len(slug_parts) >= 2:
+            # Readable slug like 'brent.hanks.1' → derive 'Hanks B'
+            slug_hint = f"{slug_parts[1].capitalize()} {slug_parts[0][0].upper()}"
+            print(f"    Slug-derived fallback search: '{slug_hint}'")
+            clean_hint = slug_hint
+        else:
+            clean_hint = None
 
     if clean_hint and clean_hint.startswith("ORCID:"):
         search_term = clean_hint
