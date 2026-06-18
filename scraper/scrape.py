@@ -1035,6 +1035,18 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
     with open(config_path) as f:
         config = json.load(f)
 
+    # Load manual PubMed overrides (lowercased name → search string)
+    overrides_path = config_path.replace("departments.json", "pubmed_overrides.json")
+    pubmed_overrides = {}
+    try:
+        with open(overrides_path) as f:
+            raw = json.load(f)
+        pubmed_overrides = {k.lower(): v for k, v in raw.items() if not k.startswith("_")}
+        if pubmed_overrides:
+            print(f"Loaded {len(pubmed_overrides)} PubMed override(s): {list(pubmed_overrides.keys())}")
+    except FileNotFoundError:
+        pass
+
     departments = config["departments"]
     if dept_filter:
         departments = [d for d in departments if dept_filter.lower() in d["name"].lower()]
@@ -1080,6 +1092,13 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
     # ---- Step 2: Scrape profile pages for curated PubMed strings ----
     print("\n=== Step 2: Checking profiles for PubMed search strings ===")
     for f in all_faculty:
+        # Manual override takes priority over everything else
+        name_key = f["name"].lower().strip()
+        if name_key in pubmed_overrides:
+            override = pubmed_overrides[name_key]
+            print(f"  {f['name']}: OVERRIDE → '{override}'")
+            f["pubmed_hint"] = override
+            continue
         if f.get("profile_url"):
             ps = scrape_profile_for_pubmed_string(f["profile_url"])
             if ps:

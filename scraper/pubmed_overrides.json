@@ -1,0 +1,10 @@
+{
+  "_comment": "Manual PubMed search overrides for faculty the scraper can't disambiguate automatically.",
+  "_format": "Keys are lowercased faculty names, values are the exact PubMed search string to use.",
+  "_examples": {
+    "Hanks BA": "Lastname + middle initial — used when scraper only knows first initial",
+    "ORCID:0000-0001-2345-6789": "ORCID if not found on faculty page",
+    "ComputedAuthors:12345678 Hanks B": "Force a specific Computed Authors seed PMID"
+  },
+  "brent hanks": "Hanks BA"
+}
