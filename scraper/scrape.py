@@ -325,25 +325,17 @@ def scrape_profile_for_pubmed_string(profile_url):
 
     # Pattern 4: MyNCBI bibliography URL
     # e.g. https://www.ncbi.nlm.nih.gov/myncbi/brent.hanks.1/bibliography/public/
-    # We can't directly search by MyNCBI username, but we can extract the name
-    # from the URL slug (e.g. 'brent.hanks.1' -> search 'Hanks Brent')
-    # This is used as a signal that the faculty has a curated NCBI profile;
-    # the actual search will fall through to the name-based search below.
+    # Return a MYNCBI: marker so the enrichment function can fetch PMIDs directly
+    # from the faculty's curated bibliography page — bypassing PubMed search entirely.
     myncbi_match = re.search(
-        r"ncbi\.nlm\.nih\.gov/myncbi/([^/]+)/bibliography",
+        r'(https?://www\.ncbi\.nlm\.nih\.gov/myncbi/[^/]+/bibliography[^\s"]*)',
         html, re.IGNORECASE
     )
     if myncbi_match:
-        # Return a special marker so the caller knows to use the full name search
-        # but with higher confidence (faculty curated this link themselves)
-        slug = myncbi_match.group(1)
-        # slug is like 'brent.hanks.1' — extract name parts
-        parts = [p for p in slug.split(".") if p and not p.isdigit()]
-        if len(parts) >= 2:
-            # Reconstruct as 'Lastname Firstname' for PubMed
-            first = parts[0].capitalize()
-            last = parts[1].capitalize()
-            return f"{last} {first}"
+        bib_url = myncbi_match.group(1).rstrip("/")
+        if not bib_url.endswith("/public"):
+            bib_url += "/public"
+        return f"MYNCBI:{bib_url}"
 
     # Pattern 5: ORCID — matches both public profile and login URLs
     # e.g. https://orcid.org/0000-0002-2803-3272
@@ -364,6 +356,30 @@ def scrape_profile_for_pubmed_string(profile_url):
 
 PUBMED_BASE = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
 PUBMED_EMAIL = "jgbresearch@unc.edu"  # NCBI requests a contact email
+
+
+def fetch_myncbi_pmids(bib_url, max_pages=2):
+    """
+    Fetch PMIDs directly from a faculty's public MyNCBI bibliography page.
+    This bypasses PubMed author search entirely — no ambiguity from initials.
+    Returns a list of PMID strings (up to max_pages * ~20 per page).
+    """
+    pmids = []
+    for page in range(1, max_pages + 1):
+        url = f"{bib_url}?page={page}"
+        html = fetch_url(url)
+        if not html:
+            break
+        # PMIDs appear as links like /pubmed/39970333/ or as text "PubMed PMID: 39970333"
+        found = re.findall(r'/pubmed/(\d{6,9})/', html)
+        found += re.findall(r'PubMed PMID:\s*\n?\s*(\d{6,9})', html)
+        found = list(dict.fromkeys(found))  # deduplicate preserving order
+        pmids.extend(found)
+        # If fewer than 10 PMIDs on this page, we've hit the last page
+        if len(found) < 10:
+            break
+        time.sleep(0.5)
+    return list(dict.fromkeys(pmids))  # final dedup
 
 
 def clean_name_for_pubmed(name):
@@ -697,6 +713,25 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
     name = faculty_member["name"]
 
     clean_hint = sanitize_hint(pubmed_string, name)
+
+    # MyNCBI bibliography — fetch PMIDs directly, no search needed
+    if clean_hint and clean_hint.startswith("MYNCBI:"):
+        bib_url = clean_hint.replace("MYNCBI:", "")
+        print(f"    MyNCBI: fetching bibliography for {name} from {bib_url}")
+        pmids = fetch_myncbi_pmids(bib_url, max_pages=2)
+        print(f"    MyNCBI: found {len(pmids)} PMIDs")
+        if pmids:
+            pubs = pubmed_fetch_summaries(pmids[:15], search_term=name)[:5]
+            faculty_member["pubmed_search"] = f"MyNCBI:{bib_url}"
+            faculty_member["pubmed_count"] = len(pmids)
+            faculty_member["pubmed_verified"] = len(pubs)
+            faculty_member["pubmed_ambiguous"] = False
+            faculty_member["publications"] = pubs
+            time.sleep(0.4)
+            return faculty_member
+        # If fetch failed, fall through to name-based search
+        clean_hint = None
+
     if clean_hint and clean_hint.startswith("ORCID:"):
         search_term = clean_hint
     elif clean_hint:
@@ -705,6 +740,7 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
         search_term = clean_hint
     else:
         search_term = build_pubmed_search_string(name)
+
 
     print(f"    PubMed: {name} → '{search_term}'")
     result = pubmed_search(search_term, max_results=15)
