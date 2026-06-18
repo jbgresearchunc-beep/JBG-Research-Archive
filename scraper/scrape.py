@@ -464,13 +464,22 @@ def pubmed_search(search_term, affiliation="University of North Carolina", max_r
     url = PUBMED_BASE + "esearch.fcgi?" + params
 
     try:
-        with urllib.request.urlopen(url, timeout=10) as resp:
-            data = json.loads(resp.read())
-        result = data.get("esearchresult", {})
-        return {
-            "count": int(result.get("count", 0)),
-            "ids": result.get("idlist", []),
-        }
+        for attempt in range(3):
+            try:
+                with urllib.request.urlopen(url, timeout=10) as resp:
+                    data = json.loads(resp.read())
+                result = data.get("esearchresult", {})
+                return {
+                    "count": int(result.get("count", 0)),
+                    "ids": result.get("idlist", []),
+                }
+            except urllib.error.HTTPError as e:
+                if e.code == 429:
+                    wait = 2 ** attempt
+                    time.sleep(wait)
+                    continue
+                raise
+        return {"count": 0, "ids": []}
     except Exception as e:
         print(f"    PubMed search error for '{search_term}': {e}")
         return {"count": 0, "ids": []}
@@ -497,7 +506,7 @@ def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term=""):
     if not pmids:
         return []
 
-    # Use efetch XML to get affiliation info
+    # Use efetch XML to get affiliation info — retry up to 3x on 429
     params = urllib.parse.urlencode({
         "db": "pubmed",
         "id": ",".join(pmids),
@@ -508,11 +517,26 @@ def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term=""):
     })
     url = PUBMED_BASE + "efetch.fcgi?" + params
 
-    try:
-        with urllib.request.urlopen(url, timeout=15) as resp:
-            xml_data = resp.read().decode("utf-8", errors="replace")
-    except Exception as e:
-        print(f"    PubMed efetch error: {e}, falling back to esummary")
+    xml_data = None
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(url, timeout=15) as resp:
+                xml_data = resp.read().decode("utf-8", errors="replace")
+            break
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                wait = 2 ** attempt  # 1s, 2s, 4s
+                print(f"    PubMed efetch 429 — waiting {wait}s before retry {attempt+1}/3")
+                time.sleep(wait)
+            else:
+                print(f"    PubMed efetch error: {e}, falling back to esummary")
+                return pubmed_fetch_summaries_fallback(pmids)
+        except Exception as e:
+            print(f"    PubMed efetch error: {e}, falling back to esummary")
+            return pubmed_fetch_summaries_fallback(pmids)
+
+    if xml_data is None:
+        print(f"    PubMed efetch failed after 3 retries, falling back to esummary")
         return pubmed_fetch_summaries_fallback(pmids)
 
     # Parse XML manually (avoid external deps)
@@ -811,18 +835,13 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
                     result = alt_result
 
     # Final fallback: drop the UNC affiliation filter entirely.
-    # This catches recently recruited faculty whose publication history is at
-    # a prior institution (e.g. Hanks joined from Duke — all his papers say Duke).
-    # We still run the efetch affiliation check, but accept ANY institution.
+    # Catches recently recruited faculty whose papers list a prior institution.
+    # Only trigger when search term has initials (specific enough to avoid
+    # flooding results) — e.g. 'Hanks B' yes, 'Cervantes Elizabeth' no.
     if result["count"] == 0 and not search_term.startswith("ORCID:"):
         term_parts = search_term.split()
-        # Only drop affiliation if the term is specific enough: has initials
-        # (e.g. 'Hanks B') or is an uncommon full name — avoids massive false-positive sets
-        is_specific = len(term_parts) >= 2 and (
-            len(term_parts[-1]) <= 3 or  # second token is initials like 'B' or 'BA'
-            len(term_parts[0]) > 6       # long/uncommon last name
-        )
-        if is_specific:
+        has_initials = len(term_parts) >= 2 and len(term_parts[-1]) <= 2 and term_parts[-1].isalpha()
+        if has_initials:
             no_aff_result = pubmed_search(search_term, affiliation="", max_results=15)
             if no_aff_result["count"] > 0:
                 print(f"    No-affiliation fallback: '{search_term}' found {no_aff_result['count']} results (recent recruit?)")
@@ -841,8 +860,8 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
     faculty_member["pubmed_ambiguous"] = (result["count"] > 0 and len(pubs) == 0)
     faculty_member["publications"] = pubs
 
-    # Rate limiting — NCBI allows 3 req/sec without API key
-    time.sleep(0.4)
+    # Rate limiting — NCBI allows 3 req/sec without API key; sleep generously
+    time.sleep(0.8)
     return faculty_member
 
 
