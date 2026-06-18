@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T22:25:19.426133Z",
+  "generated_at": "2026-06-18T22:32:31.736978Z",
   "total_faculty": 49,
   "departments": [
     "Medicine \u2014 Oncology",
@@ -14,8 +14,8 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Basch Ethan",
-      "pubmed_count": 134,
+      "pubmed_count": 369,
+      "pubmed_search": "ComputedAuthors:Basch Ethan",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -32,21 +32,21 @@
           "year": "2026"
         },
         {
+          "pmid": "41962066",
+          "title": "Remote Therapeutic Monitoring and Infection-Related Health Care Resource Utilization in Patients With Hematologic Malignancies.",
+          "journal": "JCO Oncol Pract",
+          "year": "2026"
+        },
+        {
           "pmid": "41931724",
           "title": "Supporting Reimbursement for Electronic Patient-Reported Outcomes in Clinical Cancer Care Using Current Procedural Terminology Codes for Remote Therapeutic Monitoring.",
           "journal": "JCO Oncol Pract",
           "year": "2026"
         },
         {
-          "pmid": "41920389",
-          "title": "Quality of life during electronic patient-reported outcome (ePRO) monitoring in thoracic surgery patients: a pilot randomized controlled trial.",
-          "journal": "Qual Life Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "41765915",
-          "title": "The development of national learning collaborative for ePRO enabled RSM in oncology: insights for co-implementation.",
-          "journal": "Implement Sci Commun",
+          "pmid": "41773814",
+          "title": "Impact of smoking on health-related quality-of-life outcomes in prostate cancer survivors.",
+          "journal": "Cancer",
           "year": "2026"
         }
       ],
@@ -106,8 +106,8 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Abdou Yara",
-      "pubmed_count": 32,
+      "pubmed_count": 50,
+      "pubmed_search": "ComputedAuthors:Abdou Yara",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -130,15 +130,15 @@
           "year": "2026"
         },
         {
+          "pmid": "41260260",
+          "title": "Association between type and location of germline BRCA1/2 pathogenic or likely pathogenic variants with phenotype and prognosis in young patients with breast cancer: results from an international cohort study.",
+          "journal": "Ann Oncol",
+          "year": "2026"
+        },
+        {
           "pmid": "41179118",
           "title": "Prognostic utility of inflammatory indices and circulating nucleic acids for neoadjuvant chemotherapy outcomes in breast cancer: a systematic review.",
           "journal": "Ther Adv Med Oncol",
-          "year": "2025"
-        },
-        {
-          "pmid": "40956531",
-          "title": "Postmastectomy Radiation Therapy: An ASTRO/ASCO/SSO Clinical Practice Guideline.",
-          "journal": "Ann Surg Oncol",
           "year": "2025"
         }
       ],
@@ -153,8 +153,8 @@
         "Medicine \u2014 Oncology"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/yash.agrawal.3/bibliography/public",
-      "pubmed_search": "Agrawal Y",
-      "pubmed_count": 5,
+      "pubmed_count": 7,
+      "pubmed_search": "ComputedAuthors:Agrawal Y",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -171,6 +171,12 @@
           "year": "2026"
         },
         {
+          "pmid": "40632974",
+          "title": "Transcriptomic Predictors of Survival for Palbociclib + Endocrine Therapy Versus Capecitabine in Aromatase Inhibitor-Resistant Breast Cancer From the GEICAM/2013-02 PEARL Trial.",
+          "journal": "JCO Precis Oncol",
+          "year": "2025"
+        },
+        {
           "pmid": "39765189",
           "title": "Linking tumor immune infiltration to enhanced longevity in recurrence-free breast cancer.",
           "journal": "ESMO Open",
@@ -181,12 +187,6 @@
           "title": "Cell-cycle inhibition and immune microenvironment in breast cancer treated with ribociclib and letrozole or chemotherapy.",
           "journal": "NPJ Breast Cancer",
           "year": "2024"
-        },
-        {
-          "pmid": "31528530",
-          "title": "Retrospective review of the patient cases at a major trauma center in Nairobi, Kenya and implications for emergency care development.",
-          "journal": "Afr J Emerg Med",
-          "year": "2019"
         }
       ],
       "nih_grants": []
@@ -199,16 +199,40 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Aldrich JD",
-      "pubmed_count": 1,
-      "pubmed_verified": 1,
+      "pubmed_count": 9,
+      "pubmed_search": "ComputedAuthors:Aldrich JD",
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
+        {
+          "pmid": "41721913",
+          "title": "Investigating initial patterns of progression on first-line treatment in patients with de novo metastatic breast cancer.",
+          "journal": "Breast Cancer Res Treat",
+          "year": "2026"
+        },
         {
           "pmid": "38834015",
           "title": "A systematic review and meta-analysis of observational studies and uncontrolled trials reporting on the use of checkpoint blockers in patients with cancer and pre-existing autoimmune disease.",
           "journal": "Eur J Cancer",
           "year": "2024"
+        },
+        {
+          "pmid": "38366007",
+          "title": "Treatment patterns and outcomes of high-grade immune checkpoint inhibitor-related pneumonitis in an oncology hospitalist service.",
+          "journal": "Support Care Cancer",
+          "year": "2024"
+        },
+        {
+          "pmid": "37596146",
+          "title": "Monitoring of Triple Negative Breast Cancer After Neoadjuvant Chemotherapy.",
+          "journal": "Clin Breast Cancer",
+          "year": "2023"
+        },
+        {
+          "pmid": "36333193",
+          "title": "Racial Disparities in Clinical Outcomes on Investigator-Initiated Breast Cancer Clinical Trials at an Urban Medical Center.",
+          "journal": "Clin Breast Cancer",
+          "year": "2023"
         }
       ],
       "nih_grants": []
@@ -221,11 +245,17 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Dees EC",
-      "pubmed_count": 44,
+      "pubmed_count": 125,
+      "pubmed_search": "ComputedAuthors:Dees EC",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
+        {
+          "pmid": "42061438",
+          "title": "CLO26-104: TBCRC 050: A Phase 1b/2 Trial of Niraparib and Trastuzumab in HER2+ Metastatic Breast Cancer (MBC): Safety and Efficacy.",
+          "journal": "J Natl Compr Canc Netw",
+          "year": "2026"
+        },
         {
           "pmid": "41721913",
           "title": "Investigating initial patterns of progression on first-line treatment in patients with de novo metastatic breast cancer.",
@@ -249,12 +279,6 @@
           "title": "Overall survival in patients with hormone receptor-positive, HER2-negative advanced breast cancer treated in a phase 1b trial evaluating gedatolisib in combination with palbociclib and endocrine therapy.",
           "journal": "Lancet Oncol",
           "year": "2025"
-        },
-        {
-          "pmid": "40144206",
-          "title": "Abemaciclib in combination with therapies for patients with metastatic breast cancer: a phase 1b study.",
-          "journal": "Front Oncol",
-          "year": "2025"
         }
       ],
       "nih_grants": []
@@ -268,40 +292,22 @@
         "Medicine \u2014 Oncology"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1foVmTwbUHA5f/bibliography/public",
-      "pubmed_search": "Kimani Stephen",
-      "pubmed_count": 10,
-      "pubmed_verified": 5,
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Kimani Stephen",
+      "pubmed_verified": 2,
       "pubmed_ambiguous": false,
       "publications": [
+        {
+          "pmid": "41333895",
+          "title": "Rituximab is associated with an increased risk of malaria among adult lymphoma patients in Malawi: a prospective observational cohort.",
+          "journal": "EClinicalMedicine",
+          "year": "2025"
+        },
         {
           "pmid": "41179118",
           "title": "Prognostic utility of inflammatory indices and circulating nucleic acids for neoadjuvant chemotherapy outcomes in breast cancer: a systematic review.",
           "journal": "Ther Adv Med Oncol",
           "year": "2025"
-        },
-        {
-          "pmid": "35772043",
-          "title": "Clinical Characteristics and Outcomes of Acute Lymphoblastic Leukemia in Adolescents and Young Adults in Malawi.",
-          "journal": "JCO Glob Oncol",
-          "year": "2022"
-        },
-        {
-          "pmid": "34303416",
-          "title": "Comparison of best supportive care, CHOP, or R-CHOP for treatment of diffuse large B-cell lymphoma in Malawi: a cost-effectiveness analysis.",
-          "journal": "Lancet Glob Health",
-          "year": "2021"
-        },
-        {
-          "pmid": "34242082",
-          "title": "Forming the Hematology-Oncology Collaborative Videoconferencing (CO-VID) Learning Initiative: Experiential Lessons Learned From a Novel Trainee-Led Multidisciplinary Virtual Learning Platform.",
-          "journal": "JCO Oncol Pract",
-          "year": "2022"
-        },
-        {
-          "pmid": "34043413",
-          "title": "Hepatocellular Carcinoma in Sub-Saharan Africa.",
-          "journal": "JCO Glob Oncol",
-          "year": "2021"
         }
       ],
       "nih_grants": []
@@ -329,9 +335,9 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Ray Emily",
-      "pubmed_count": 3,
-      "pubmed_verified": 3,
+      "pubmed_count": 7,
+      "pubmed_search": "ComputedAuthors:Ray Emily",
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
@@ -347,10 +353,22 @@
           "year": "2026"
         },
         {
-          "pmid": "37216627",
-          "title": "Predicting Acute Care Events Among Patients Initiating Chemotherapy: A Practice-Based Validation and Adaptation of the PROACCT Model.",
-          "journal": "JCO Oncol Pract",
-          "year": "2023"
+          "pmid": "41721913",
+          "title": "Investigating initial patterns of progression on first-line treatment in patients with de novo metastatic breast cancer.",
+          "journal": "Breast Cancer Res Treat",
+          "year": "2026"
+        },
+        {
+          "pmid": "41384625",
+          "title": "Commission on Cancer Quality Measures: Time to Breast Operation Quality Measure.",
+          "journal": "J Am Coll Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "40344355",
+          "title": "Co-Creating and Refining a Values Assessment Tool (VAsT) for Women With Metastatic Breast Cancer.",
+          "journal": "Psychooncology",
+          "year": "2025"
         }
       ],
       "nih_grants": []
@@ -409,8 +427,8 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Urban C",
       "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Urban C",
       "pubmed_verified": 1,
       "pubmed_ambiguous": false,
       "publications": [
@@ -433,9 +451,9 @@
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/brent.hanks.1/bibliography/public",
       "pubmed_recent_recruit": true,
-      "pubmed_search": "Hanks B",
-      "pubmed_count": 3,
-      "pubmed_verified": 3,
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Hanks B",
+      "pubmed_verified": 1,
       "pubmed_ambiguous": false,
       "publications": [
         {
@@ -443,18 +461,6 @@
           "title": "Assembly of Pyrenes through a Quadruple Photochemical Cascade: Blocking Groups Allow Diversion from the Double Mallory Path to Photocyclization at the Bay Region.",
           "journal": "J Am Chem Soc",
           "year": "2025"
-        },
-        {
-          "pmid": "31488661",
-          "title": "The formation of human populations in South and Central Asia.",
-          "journal": "Science",
-          "year": "2019"
-        },
-        {
-          "pmid": "30694757",
-          "title": "The Emerging Role of Surgery for Patients With Advanced Melanoma Treated With Immunotherapy.",
-          "journal": "J Surg Res",
-          "year": "2019"
         }
       ],
       "nih_grants": []
@@ -483,8 +489,8 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Jia Jingquan",
-      "pubmed_count": 6,
+      "pubmed_count": 24,
+      "pubmed_search": "ComputedAuthors:Jia Jingquan",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -529,9 +535,9 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Somasundaram Ashwin",
-      "pubmed_count": 10,
-      "pubmed_verified": 5,
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Somasundaram Ashwin",
+      "pubmed_verified": 1,
       "pubmed_ambiguous": false,
       "publications": [
         {
@@ -539,30 +545,6 @@
           "title": "Latent Regulatory Programs Generate Synthetic T Cell States with Enhanced Therapeutic Potential.",
           "journal": "bioRxiv",
           "year": "2026"
-        },
-        {
-          "pmid": "41457289",
-          "title": "A patient-mediated implementation strategy to improve nutrition care delivery for esophageal and gastric cancer: a study protocol for a pilot randomized controlled trial.",
-          "journal": "J Health Popul Nutr",
-          "year": "2025"
-        },
-        {
-          "pmid": "40893054",
-          "title": "Open-Label, Phase II Trial of Extracellular Regulated Kinase Inhibition Alone and in Combination With Autophagy Inhibition in Patients With Metastatic Pancreatic Cancer.",
-          "journal": "JCO Precis Oncol",
-          "year": "2025"
-        },
-        {
-          "pmid": "40829181",
-          "title": "KRAS: the Achilles' heel of pancreas cancer biology.",
-          "journal": "J Clin Invest",
-          "year": "2025"
-        },
-        {
-          "pmid": "40571483",
-          "title": "Phase II study of avelumab and trastuzumab with FOLFOX chemotherapy in previously untreated HER2-amplified metastatic gastroesophageal adenocarcinoma.",
-          "journal": "Oncologist",
-          "year": "2025"
         }
       ],
       "nih_grants": []
@@ -575,11 +557,17 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Sorah Jonathan",
-      "pubmed_count": 2,
-      "pubmed_verified": 2,
+      "pubmed_count": 13,
+      "pubmed_search": "ComputedAuthors:Sorah Jonathan",
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
+        {
+          "pmid": "41939858",
+          "title": "Case Report: Pulsed electric field treatment of metastatic liver disease demonstrating a possible abscopal response.",
+          "journal": "Front Immunol",
+          "year": "2026"
+        },
         {
           "pmid": "41527214",
           "title": "Prognostic Value of a Novel Nuclear Grading of Cutaneous Melanoma: The UNC Chapel Hill Method.",
@@ -587,10 +575,22 @@
           "year": "2026"
         },
         {
-          "pmid": "31788302",
-          "title": "Myeloid sarcoma manifesting as generalized lymphadenopathy in a patient with myelofibrosis.",
-          "journal": "Clin Case Rep",
-          "year": "2019"
+          "pmid": "40990835",
+          "title": "Phase II single-arm study of palbociclib and cetuximab in anti-EGFR na&#xef;ve patients with KRAS/NRAS/BRAF wild-type, metastatic colorectal cancer.",
+          "journal": "Oncologist",
+          "year": "2025"
+        },
+        {
+          "pmid": "40928075",
+          "title": "Anatomic Location Predicts Response Rates: Real World Outcomes With Over 1100 Cycles of Talimogene Laherparepvec Description: A Retrospective Review of a Prospectively Maintained Database.",
+          "journal": "Ann Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "40453415",
+          "title": "Exploring the Role of Patient Preferences in Hepatocellular Carcinoma Treatment Decisions: A Qualitative Study.",
+          "journal": "MDM Policy Pract",
+          "year": "2025"
         }
       ],
       "nih_grants": []
@@ -649,8 +649,8 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Damrauer JS",
-      "pubmed_count": 27,
+      "pubmed_count": 40,
+      "pubmed_search": "ComputedAuthors:Damrauer JS",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -673,14 +673,14 @@
           "year": "2025"
         },
         {
-          "pmid": "40542202",
-          "title": "Correction: An FGFR-p53 developmental signaling axis drives salivary cancer progression.",
-          "journal": "Oncogene",
+          "pmid": "40615649",
+          "title": "Pan-cancer immune and stromal deconvolution predicts clinical outcomes and mutation profiles.",
+          "journal": "Sci Rep",
           "year": "2025"
         },
         {
-          "pmid": "40456865",
-          "title": "An FGFR-p53 developmental signaling axis drives salivary cancer progression.",
+          "pmid": "40542202",
+          "title": "Correction: An FGFR-p53 developmental signaling axis drives salivary cancer progression.",
           "journal": "Oncogene",
           "year": "2025"
         }
@@ -696,9 +696,9 @@
         "Medicine \u2014 Oncology"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1xSVwhxpjxvQI/bibliography/public",
-      "pubmed_search": "Fahey Catherine",
-      "pubmed_count": 1,
-      "pubmed_verified": 1,
+      "pubmed_count": 5,
+      "pubmed_search": "ComputedAuthors:Fahey Catherine",
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
@@ -706,6 +706,30 @@
           "title": "Bladder-preserving trimodality therapy for muscle-invasive bladder cancer: current state-of-the-art.",
           "journal": "Expert Rev Anticancer Ther",
           "year": "2026"
+        },
+        {
+          "pmid": "40422537",
+          "title": "Mechanistic Insights and Future Directions for Enfortumab Vedotin in Urothelial Carcinoma: Highlights from the 10th Annual Leo &amp; Anne Albert Institute for Bladder Cancer Care and Research Symposium.",
+          "journal": "Curr Oncol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39147674",
+          "title": "First-line Systemic Therapy Following Adjuvant Immunotherapy in Renal Cell Carcinoma: An International Multicenter Study.",
+          "journal": "Eur Urol",
+          "year": "2024"
+        },
+        {
+          "pmid": "37207297",
+          "title": "Triplet Strategies in Metastatic Clear Cell Renal Cell Carcinoma: A Worthy Option in the First-Line Setting?",
+          "journal": "Am Soc Clin Oncol Educ Book",
+          "year": "2023"
+        },
+        {
+          "pmid": "25155756",
+          "title": "The somatic genomic landscape of chromophobe renal cell carcinoma.",
+          "journal": "Cancer Cell",
+          "year": "2014"
         }
       ],
       "nih_grants": []
@@ -718,11 +742,17 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Kim WY",
-      "pubmed_count": 57,
+      "pubmed_count": 128,
+      "pubmed_search": "ComputedAuthors:Kim WY",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
+        {
+          "pmid": "42239304",
+          "title": "Immunodominance Hierarchy of Endogenous BBN963 Bladder Cancer Antigens Remains Stable Under Anti-PD1 and Anti-CTLA4 Immunotherapy.",
+          "journal": "bioRxiv",
+          "year": "2026"
+        },
         {
           "pmid": "42119042",
           "title": "Blinded by the Smoke: Are We Ignoring a Key Modifier of Response in NMIBC Trials?",
@@ -746,12 +776,6 @@
           "title": "Computational design of orthogonal TCR &#x3b1;/&#x3b2; interfaces for dual-TCR therapeutics.",
           "journal": "bioRxiv",
           "year": "2026"
-        },
-        {
-          "pmid": "41390483",
-          "title": "APOBEC3 promotes squamous differentiation via IL-1A/AP-1 signaling.",
-          "journal": "Nat Commun",
-          "year": "2025"
         }
       ],
       "nih_grants": []
@@ -764,9 +788,9 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Miller BC",
-      "pubmed_count": 13,
-      "pubmed_verified": 5,
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Miller BC",
+      "pubmed_verified": 4,
       "pubmed_ambiguous": false,
       "publications": [
         {
@@ -776,28 +800,22 @@
           "year": "2026"
         },
         {
-          "pmid": "41676732",
-          "title": "Harnessing Inflammatory Monocytes to Overcome Resistance to Anti-PD-1 Immunotherapy.",
-          "journal": "bioRxiv",
-          "year": "2026"
-        },
-        {
           "pmid": "41106435",
           "title": "Structure-guided design and engineering of a biparatopic antibody targeting CCR2 in triple negative breast cancer.",
           "journal": "J Control Release",
           "year": "2025"
         },
         {
-          "pmid": "41005293",
-          "title": "Intra-tumoral hypoxia promotes CD8+ T cell dysfunction via chronic activation of integrated stress response transcription factor ATF4.",
-          "journal": "Immunity",
+          "pmid": "39657892",
+          "title": "Harnessing extracellular vesicle-mediated crosstalk between T cells and cancer cells for therapeutic applications.",
+          "journal": "J Control Release",
           "year": "2025"
         },
         {
-          "pmid": "40661381",
-          "title": "Single-cell transcriptomics yield insights into the stress-immune interplay and inform disease risk.",
-          "journal": "bioRxiv",
-          "year": "2025"
+          "pmid": "37228586",
+          "title": "A synthetic lethal screen for Snail-induced enzalutamide resistance identifies JAK/STAT signaling as a therapeutic vulnerability in prostate cancer.",
+          "journal": "Front Mol Biosci",
+          "year": "2023"
         }
       ],
       "nih_grants": []
@@ -810,8 +828,8 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Rose TL",
-      "pubmed_count": 51,
+      "pubmed_count": 68,
+      "pubmed_search": "ComputedAuthors:Rose TL",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -820,6 +838,18 @@
           "title": "Diagnostic challenges in pathologic staging of renal cell carcinoma following systemic immunotherapy.",
           "journal": "Am J Clin Pathol",
           "year": "2026"
+        },
+        {
+          "pmid": "41945031",
+          "title": "Pembrolizumab in Combination With Gemcitabine and Concurrent Hypofractionated Radiation Therapy as Bladder-sparing Treatment for Muscle-invasive Urothelial Cancer of the Bladder: A Multicenter Phase 2 Trial.",
+          "journal": "Eur Urol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41497342",
+          "title": "Current perspective on the impact of endogenous retroviruses in clear cell renal cell carcinoma.",
+          "journal": "Kidney Cancer J",
+          "year": "2023"
         },
         {
           "pmid": "41390483",
@@ -831,18 +861,6 @@
           "pmid": "40503641",
           "title": "Engagement in cancer clinical trials among a nationally representative cancer survivor sample: Motivators, barriers and opportunities for improvement.",
           "journal": "Tumori",
-          "year": "2025"
-        },
-        {
-          "pmid": "40034245",
-          "title": "Summary from the NCI clinical trials planning meeting on next generation of clinical trials in non-muscle invasive bladder cancer.",
-          "journal": "Bladder Cancer",
-          "year": "2025"
-        },
-        {
-          "pmid": "39758190",
-          "title": "Pembrolizumab and axitinib induced pathological complete response in metastatic clear cell renal cell carcinoma with inferior vena cava thrombus: A case report.",
-          "journal": "SAGE Open Med Case Rep",
           "year": "2025"
         }
       ],
@@ -857,9 +875,9 @@
         "Medicine \u2014 Oncology"
       ],
       "pubmed_hint": "in Virology",
-      "pubmed_search": "Whang Y",
-      "pubmed_count": 2,
-      "pubmed_verified": 2,
+      "pubmed_count": 5,
+      "pubmed_search": "ComputedAuthors:Whang Y",
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
@@ -869,10 +887,28 @@
           "year": "2024"
         },
         {
-          "pmid": "33516829",
-          "title": "Patterns of Recurrence, Detection Rates, and Impact of 18-F Fluciclovine PET/CT on the Management of Men With Recurrent Prostate Cancer.",
-          "journal": "Urology",
-          "year": "2021"
+          "pmid": "38344981",
+          "title": "Real-World Incidence and Severity of Hypertension Caused by Abiraterone Acetate in Patients With Metastatic Prostate Cancer.",
+          "journal": "Ann Pharmacother",
+          "year": "2024"
+        },
+        {
+          "pmid": "38261983",
+          "title": "PRESTO: A Phase III, Open-Label Study of Intensification of Androgen Blockade in Patients With High-Risk Biochemically Relapsed Castration-Sensitive Prostate Cancer (AFT-19).",
+          "journal": "J Clin Oncol",
+          "year": "2024"
+        },
+        {
+          "pmid": "37410340",
+          "title": "Quality of life in the year after new diagnosis with advanced prostate cancer for Black and White individuals living in the US.",
+          "journal": "Qual Life Res",
+          "year": "2023"
+        },
+        {
+          "pmid": "36795891",
+          "title": "Rucaparib or Physician's Choice in Metastatic Prostate Cancer.",
+          "journal": "N Engl J Med",
+          "year": "2023"
         }
       ],
       "nih_grants": []
@@ -900,11 +936,17 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Gwynn Morgan",
-      "pubmed_count": 3,
-      "pubmed_verified": 3,
+      "pubmed_count": 9,
+      "pubmed_search": "ComputedAuthors:Gwynn Morgan",
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
+        {
+          "pmid": "40928075",
+          "title": "Anatomic Location Predicts Response Rates: Real World Outcomes With Over 1100 Cycles of Talimogene Laherparepvec Description: A Retrospective Review of a Prospectively Maintained Database.",
+          "journal": "Ann Surg",
+          "year": "2025"
+        },
         {
           "pmid": "40700671",
           "title": "Combination Therapy With Olaparib Plus Lenvatinib in a Patient With BRCA2-Mutated, Radioiodine-Refractory, Metastatic Papillary Thyroid Cancer: A Case Report.",
@@ -922,6 +964,12 @@
           "title": "Ultrasound-guided Intralesional Injection of Talimogene laherparepvec (Imlygic) for Advanced Melanoma: Technical Note on a Preliminary Experience.",
           "journal": "Cardiovasc Intervent Radiol",
           "year": "2021"
+        },
+        {
+          "pmid": "31586396",
+          "title": "Characterization of changes in medication complexity using a modified scoring tool.",
+          "journal": "Am J Health Syst Pharm",
+          "year": "2019"
         }
       ],
       "nih_grants": []
@@ -949,8 +997,8 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Patel Shetal",
-      "pubmed_count": 10,
+      "pubmed_count": 58,
+      "pubmed_search": "ComputedAuthors:Patel Shetal",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -961,28 +1009,28 @@
           "year": "2026"
         },
         {
-          "pmid": "41816471",
-          "title": "Survival after salvage pulmonary resection for non-small cell lung cancer: a national cancer database analysis.",
-          "journal": "J Thorac Dis",
-          "year": "2026"
-        },
-        {
-          "pmid": "41235297",
-          "title": "Characteristics of Short-Term Survivors With ALK or ROS1-Altered Metastatic NSCLC.",
-          "journal": "JTO Clin Res Rep",
+          "pmid": "41463172",
+          "title": "Immunotherapy and Radiation for Clinical Perineural Invasion in Cutaneous Squamous Cell Carcinoma.",
+          "journal": "Cancers (Basel)",
           "year": "2025"
         },
         {
-          "pmid": "35731223",
-          "title": "Comprehensive Viral Genotyping Reveals Prognostic Viral Phylogenetic Groups in HPV16-Associated Squamous Cell Carcinoma of the Oropharynx.",
-          "journal": "Mol Cancer Res",
-          "year": "2022"
+          "pmid": "41041809",
+          "title": "Novel Assessment of Advanced Practice Provider-Led Head and Neck Cancer Survivorship Clinic: Quality-of-Care Metric Analysis and HOUSES Index Application.",
+          "journal": "Head Neck",
+          "year": "2026"
         },
         {
-          "pmid": "34104228",
-          "title": "An overview of lurbinectedin as a new second-line treatment option for small cell lung cancer.",
-          "journal": "Ther Adv Med Oncol",
-          "year": "2021"
+          "pmid": "40382948",
+          "title": "Identification of clinical and pathologic features associated with extranodal extension in patients with HPV-mediated oropharyngeal squamous cell carcinoma.",
+          "journal": "Oral Oncol",
+          "year": "2025"
+        },
+        {
+          "pmid": "40165242",
+          "title": "Retraction Note: Tetrathiomolybdate inhibits head and neck cancer metastasis by decreasing tumor cell motility, invasiveness and by promoting tumor cell anoikis.",
+          "journal": "Mol Cancer",
+          "year": "2025"
         }
       ],
       "nih_grants": []
@@ -995,8 +1043,8 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Sheth Siddharth",
-      "pubmed_count": 49,
+      "pubmed_count": 52,
+      "pubmed_search": "ComputedAuthors:Sheth Siddharth",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -1019,9 +1067,9 @@
           "year": "2026"
         },
         {
-          "pmid": "41467967",
-          "title": "Single-cell landscape of peripheral and tumor-infiltrating immune cells in HPV-negative HNSCC.",
-          "journal": "Oncoimmunology",
+          "pmid": "41818638",
+          "title": "Pembrolizumab With or Without Lenvatinib as First-Line Therapy for Recurrent or Metastatic Head and Neck Squamous Cell Carcinoma: Phase III LEAP-010 Study.",
+          "journal": "J Clin Oncol",
           "year": "2026"
         },
         {
@@ -1042,9 +1090,9 @@
         "Medicine \u2014 Oncology"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/10Wfsml1N6pQ8/bibliography/public",
-      "pubmed_search": "Trivedi Sumita",
-      "pubmed_count": 1,
-      "pubmed_verified": 1,
+      "pubmed_count": 26,
+      "pubmed_search": "ComputedAuthors:Trivedi Sumita",
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
@@ -1052,6 +1100,30 @@
           "title": "Transcriptomic analysis-guided assessment of precision-cut tumor slices (PCTS) as an ex-vivo tool in cancer research.",
           "journal": "Sci Rep",
           "year": "2024"
+        },
+        {
+          "pmid": "35466279",
+          "title": "Precision-Cut Tumor Slices (PCTS) as an Ex Vivo Model in Immunotherapy Research.",
+          "journal": "Antibodies (Basel)",
+          "year": "2022"
+        },
+        {
+          "pmid": "35305095",
+          "title": "Comparison of the Seventh and Eighth Edition of American Joint Committee on Cancer (AJCC) Staging for Selected and Nonselected Oropharyngeal Squamous Cell Carcinomas.",
+          "journal": "Oncologist",
+          "year": "2022"
+        },
+        {
+          "pmid": "34244017",
+          "title": "Immunotherapy for Head and Neck Cancer.",
+          "journal": "Hematol Oncol Clin North Am",
+          "year": "2021"
+        },
+        {
+          "pmid": "34116847",
+          "title": "Epidermal Growth Factor Receptor-Targeted Therapy for Head and Neck Cancer.",
+          "journal": "Otolaryngol Clin North Am",
+          "year": "2021"
         }
       ],
       "nih_grants": []
@@ -1064,8 +1136,8 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Weiss Jared",
-      "pubmed_count": 60,
+      "pubmed_count": 103,
+      "pubmed_search": "ComputedAuthors:Weiss Jared",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -1088,15 +1160,15 @@
           "year": "2026"
         },
         {
+          "pmid": "41644270",
+          "title": "Shared PRAME epitopes are T-cell targets in NUT carcinoma.",
+          "journal": "J Immunother Cancer",
+          "year": "2026"
+        },
+        {
           "pmid": "41467574",
           "title": "A Multi-Year Collaborative Curriculum Improves Multidisciplinary Team Members' Ability to Comprehensively Care for Patients With Squamous Cell Carcinoma of the Head and Neck.",
           "journal": "Ear Nose Throat J",
-          "year": "2025"
-        },
-        {
-          "pmid": "41235297",
-          "title": "Characteristics of Short-Term Survivors With ALK or ROS1-Altered Metastatic NSCLC.",
-          "journal": "JTO Clin Res Rep",
           "year": "2025"
         }
       ],
@@ -1125,11 +1197,23 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Stein Jacob",
-      "pubmed_count": 5,
+      "pubmed_count": 33,
+      "pubmed_search": "ComputedAuthors:Stein Jacob",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
+        {
+          "pmid": "42284527",
+          "title": "Challenging the Conventional Wisdom Around Doxorubicin in Soft Tissue Sarcoma.",
+          "journal": "JCO Oncol Pract",
+          "year": "2026"
+        },
+        {
+          "pmid": "42241662",
+          "title": "Unique Challenges in Sarcoma Care for Adolescents and Young Adults.",
+          "journal": "Am Soc Clin Oncol Educ Book",
+          "year": "2026"
+        },
         {
           "pmid": "42096621",
           "title": "Uterine Sarcomas: Clinical Management and a Review of Systemic Therapy.",
@@ -1137,28 +1221,16 @@
           "year": "2026"
         },
         {
-          "pmid": "39400612",
-          "title": "University of North Carolina adolescent and young adult cancer program: reach and characteristics of care.",
-          "journal": "JNCI Cancer Spectr",
-          "year": "2024"
+          "pmid": "41894112",
+          "title": "Clinical Practice Guidelines for the Care of Adolescents and Young Adults (AYAs) with Cancer: a Scoping Review.",
+          "journal": "Curr Oncol Rep",
+          "year": "2026"
         },
         {
-          "pmid": "37155196",
-          "title": "Developing a Comprehensive Adolescent and Young Adult Cancer Program: Lessons Learned from 7 Years of Growth and Progress.",
-          "journal": "J Adolesc Young Adult Oncol",
-          "year": "2023"
-        },
-        {
-          "pmid": "36960673",
-          "title": "The Adolescent and Young Adult Needs Assessment &amp; Service Bridge (NA-SB): A single-arm feasibility pilot study.",
-          "journal": "J Psychosoc Oncol",
-          "year": "2024"
-        },
-        {
-          "pmid": "34410323",
-          "title": "Use of an Analytics and Electronic Health Record-Based Approach for Targeted COVID-19 Vaccine Outreach to Marginalized Populations.",
-          "journal": "JAMA Oncol",
-          "year": "2021"
+          "pmid": "41886699",
+          "title": "Acute Care Events During Systemic Cancer Treatment: Moving From Risk Prediction to Clinical Decision Support Using a Two-Model Approach.",
+          "journal": "JCO Oncol Pract",
+          "year": "2026"
         }
       ],
       "nih_grants": []
@@ -1171,15 +1243,39 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Woodcock Mark",
-      "pubmed_count": 1,
-      "pubmed_verified": 1,
+      "pubmed_count": 19,
+      "pubmed_search": "ComputedAuthors:Woodcock Mark",
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "39779871",
-          "title": "A multi-kinase inhibitor screen identifies inhibitors preserving stem-cell-like chimeric antigen receptor T cells.",
-          "journal": "Nat Immunol",
+          "pmid": "42284527",
+          "title": "Challenging the Conventional Wisdom Around Doxorubicin in Soft Tissue Sarcoma.",
+          "journal": "JCO Oncol Pract",
+          "year": "2026"
+        },
+        {
+          "pmid": "42247309",
+          "title": "High-avidity cathepsin-G-specific CAR-T cells for the treatment of acute myeloid leukemia.",
+          "journal": "Blood",
+          "year": "2026"
+        },
+        {
+          "pmid": "41148213",
+          "title": "Molecular glue degrader function of SPOP inhibitors enhances STING-dependent immunotherapy efficacy in melanoma models.",
+          "journal": "J Clin Invest",
+          "year": "2025"
+        },
+        {
+          "pmid": "40690747",
+          "title": "A simple and efficient method for the robust expansion of human ILC2s to prevent acute GVHD.",
+          "journal": "Blood Adv",
+          "year": "2025"
+        },
+        {
+          "pmid": "40425012",
+          "title": "Enhancer-driven gene regulatory networks reveal transcription factors governing T cell adaptation and differentiation in the tumor microenvironment.",
+          "journal": "Immunity",
           "year": "2025"
         }
       ],
@@ -1194,40 +1290,40 @@
         "Medicine \u2014 Oncology"
       ],
       "pubmed_hint": "Collichio Frances",
-      "pubmed_search": "Collichio Frances",
-      "pubmed_count": 14,
+      "pubmed_count": 81,
+      "pubmed_search": "ComputedAuthors:Collichio Frances",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
+        {
+          "pmid": "41663549",
+          "title": "Symptomatic radiation necrosis after concurrent targeted therapy and stereotactic radiosurgery for brain metastases: a bicentric retrospective analysis.",
+          "journal": "J Neurooncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41527214",
+          "title": "Prognostic Value of a Novel Nuclear Grading of Cutaneous Melanoma: The UNC Chapel Hill Method.",
+          "journal": "Am J Surg Pathol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40928075",
+          "title": "Anatomic Location Predicts Response Rates: Real World Outcomes With Over 1100 Cycles of Talimogene Laherparepvec Description: A Retrospective Review of a Prospectively Maintained Database.",
+          "journal": "Ann Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "38574049",
+          "title": "Lymphangitic Melanomatosis: Case Report of Intralymphatic Spread of Melanoma in a 66-year-old Man.",
+          "journal": "Am J Dermatopathol",
+          "year": "2024"
+        },
         {
           "pmid": "37769968",
           "title": "Factors associated with radiation necrosis and intracranial control in patients treated with immune checkpoint inhibitors and stereotactic radiotherapy.",
           "journal": "Radiother Oncol",
           "year": "2023"
-        },
-        {
-          "pmid": "37592104",
-          "title": "Ipilimumab with or without nivolumab in PD-1 or PD-L1 blockade refractory metastatic melanoma: a randomized phase 2 trial.",
-          "journal": "Nat Med",
-          "year": "2023"
-        },
-        {
-          "pmid": "37423433",
-          "title": "Subspecialty Milestones and F-CCC: A New Tool to Assess Faculty.",
-          "journal": "Am J Med",
-          "year": "2023"
-        },
-        {
-          "pmid": "34648098",
-          "title": "Talimogene Laherparepvec (T-VEC) for the Treatment of Advanced Locoregional Melanoma After Failure of Immunotherapy: An International Multi-Institutional Experience.",
-          "journal": "Ann Surg Oncol",
-          "year": "2022"
-        },
-        {
-          "pmid": "34242082",
-          "title": "Forming the Hematology-Oncology Collaborative Videoconferencing (CO-VID) Learning Initiative: Experiential Lessons Learned From a Novel Trainee-Led Multidisciplinary Virtual Learning Platform.",
-          "journal": "JCO Oncol Pract",
-          "year": "2022"
         }
       ],
       "nih_grants": []
@@ -1240,11 +1336,29 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_search": "Moschos Stergios",
-      "pubmed_count": 3,
-      "pubmed_verified": 3,
+      "pubmed_count": 9,
+      "pubmed_search": "ComputedAuthors:Moschos Stergios",
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
+        {
+          "pmid": "41663549",
+          "title": "Symptomatic radiation necrosis after concurrent targeted therapy and stereotactic radiosurgery for brain metastases: a bicentric retrospective analysis.",
+          "journal": "J Neurooncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41527214",
+          "title": "Prognostic Value of a Novel Nuclear Grading of Cutaneous Melanoma: The UNC Chapel Hill Method.",
+          "journal": "Am J Surg Pathol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41005293",
+          "title": "Intra-tumoral hypoxia promotes CD8+ T cell dysfunction via chronic activation of integrated stress response transcription factor ATF4.",
+          "journal": "Immunity",
+          "year": "2025"
+        },
         {
           "pmid": "40752973",
           "title": "Theranostics 2.0: Target-driven, artificial intelligence-enabled cancer therapy across tumor types.",
@@ -1252,16 +1366,10 @@
           "year": "2025"
         },
         {
-          "pmid": "39509669",
-          "title": "DNA Methylation Classes of Stage II and III Primary Melanomas and Their Clinical and Prognostic Significance.",
-          "journal": "JCO Precis Oncol",
-          "year": "2024"
-        },
-        {
-          "pmid": "37769968",
-          "title": "Factors associated with radiation necrosis and intracranial control in patients treated with immune checkpoint inhibitors and stereotactic radiotherapy.",
-          "journal": "Radiother Oncol",
-          "year": "2023"
+          "pmid": "39752606",
+          "title": "Comparative Analysis of Intracranial Response Assessment Criteria in Patients With Melanoma Brain Metastases Treated With Combination Nivolumab + Ipilimumab in CheckMate 204.",
+          "journal": "J Clin Oncol",
+          "year": "2025"
         }
       ],
       "nih_grants": []
@@ -1289,28 +1397,40 @@
       "departments": [
         "Radiation Oncology"
       ],
-      "pubmed_search": "Casey Dana",
-      "pubmed_count": 3,
-      "pubmed_verified": 3,
+      "pubmed_count": 61,
+      "pubmed_search": "ComputedAuthors:Casey Dana",
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "39844722",
-          "title": "Lymph Node Staging and Treatment in Pediatric Patients With Soft Tissue Sarcomas: A Consensus Opinion From the Children's Oncology Group, European paediatric Soft Tissue Sarcoma Study Group, and the Cooperative Weichteilsarkom Studiengruppe.",
-          "journal": "Pediatr Blood Cancer",
-          "year": "2025"
+          "pmid": "42207068",
+          "title": "Breast Cancer Reirradiation Practice Patterns: An International Survey From the Reirradiation Collaborative Group (ReCOG).",
+          "journal": "Pract Radiat Oncol",
+          "year": "2026"
         },
         {
-          "pmid": "39502069",
-          "title": "Late Events Occurring After 5&#xa0;Years in Pediatric Rhabdomyosarcoma: A Report From the Children's Oncology Group.",
-          "journal": "Pediatr Blood Cancer",
-          "year": "2025"
+          "pmid": "41899494",
+          "title": "Biological Advances and Current Challenges for Pediatric Rhabdomyosarcoma.",
+          "journal": "Cancers (Basel)",
+          "year": "2026"
         },
         {
-          "pmid": "36744538",
-          "title": "The significance of margins in pediatric Non-Rhabdomyosarcoma soft tissue sarcomas: Consensus on surgical margin definition harmonization from the INternational Soft Tissue SaRcoma ConsorTium (INSTRuCT).",
-          "journal": "Cancer Med",
-          "year": "2023"
+          "pmid": "41800063",
+          "title": "Editorial: Use of radiation therapy for hematological malignancies.",
+          "journal": "Front Oncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41721913",
+          "title": "Investigating initial patterns of progression on first-line treatment in patients with de novo metastatic breast cancer.",
+          "journal": "Breast Cancer Res Treat",
+          "year": "2026"
+        },
+        {
+          "pmid": "41145934",
+          "title": "Simultaneous Omission of Sentinel Lymph Node Biopsy and Radiation in Older Women with Early ER+ Breast Cancer.",
+          "journal": "Ann Surg Oncol",
+          "year": "2026"
         }
       ],
       "nih_grants": []
@@ -1323,9 +1443,9 @@
       "departments": [
         "Radiation Oncology"
       ],
-      "pubmed_search": "Repka Michael",
-      "pubmed_count": 3,
-      "pubmed_verified": 3,
+      "pubmed_count": 31,
+      "pubmed_search": "ComputedAuthors:Repka Michael",
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
@@ -1345,6 +1465,18 @@
           "title": "Poor Prognosis among Radiation-Associated Bladder Cancer Is Defined by Clinicogenomic Features.",
           "journal": "Cancer Res Commun",
           "year": "2024"
+        },
+        {
+          "pmid": "38636587",
+          "title": "Target Delineation in Postoperative Radiation Therapy for Head and Neck Cancer After Flap Reconstruction.",
+          "journal": "Pract Radiat Oncol",
+          "year": "2024"
+        },
+        {
+          "pmid": "38585005",
+          "title": "Prognostic utility of biopsy-based PTEN and ERG status on biochemical progression and overall survival after SBRT for localized prostate cancer.",
+          "journal": "Front Oncol",
+          "year": "2024"
         }
       ],
       "nih_grants": []
@@ -1357,8 +1489,8 @@
       "departments": [
         "Radiation Oncology"
       ],
-      "pubmed_search": "Sud Shivani",
-      "pubmed_count": 18,
+      "pubmed_count": 23,
+      "pubmed_search": "ComputedAuthors:Sud Shivani",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -1403,11 +1535,23 @@
       "departments": [
         "Radiation Oncology"
       ],
-      "pubmed_search": "Pearlstein Kevin",
-      "pubmed_count": 2,
-      "pubmed_verified": 2,
+      "pubmed_count": 19,
+      "pubmed_search": "ComputedAuthors:Pearlstein Kevin",
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
+        {
+          "pmid": "41253707",
+          "title": "NTCP model guided whole brain radiation re-planning to reduce risk of acute xerostomia and dry eye.",
+          "journal": "J Appl Clin Med Phys",
+          "year": "2025"
+        },
+        {
+          "pmid": "41161645",
+          "title": "Parotid-Sparing Versus Conventional Whole Brain Radiation Therapy: A Multi-Institutional Randomized Clinical Trial.",
+          "journal": "Int J Radiat Oncol Biol Phys",
+          "year": "2026"
+        },
         {
           "pmid": "37268927",
           "title": "Outcomes of surgical resection and intraoperative electron radiotherapy for patients with para-aortic recurrences of gastrointestinal and gynecologic malignancies.",
@@ -1418,6 +1562,12 @@
           "pmid": "34920164",
           "title": "Dosimetric and Clinical Factors Associated With Breast Reconstruction Complications in Patients Receiving Postmastectomy Radiation.",
           "journal": "Pract Radiat Oncol",
+          "year": "2022"
+        },
+        {
+          "pmid": "34419565",
+          "title": "Coronary Artery Calcifications and Cardiac Risk After Radiation Therapy for Stage III Lung Cancer.",
+          "journal": "Int J Radiat Oncol Biol Phys",
           "year": "2022"
         }
       ],
@@ -1431,9 +1581,9 @@
       "departments": [
         "Radiation Oncology"
       ],
-      "pubmed_search": "Anderson R",
-      "pubmed_count": 13,
-      "pubmed_verified": 5,
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Anderson R",
+      "pubmed_verified": 2,
       "pubmed_ambiguous": false,
       "publications": [
         {
@@ -1443,28 +1593,10 @@
           "year": "2025"
         },
         {
-          "pmid": "38566520",
-          "title": "Understanding Adaptive Leadership in the Context of Nursing Homes.",
-          "journal": "J Appl Gerontol",
-          "year": "2024"
-        },
-        {
           "pmid": "37971996",
           "title": "Exploring barriers and facilitators of implementing an at-home SARS-CoV-2 antigen self-testing intervention: The Rapid Acceleration of Diagnostics-Underserved Populations (RADx-UP) initiatives.",
           "journal": "PLoS One",
           "year": "2023"
-        },
-        {
-          "pmid": "36107475",
-          "title": "The Influence of Context on Implementation and Improvement: Protocol for a Mixed Methods, Secondary Analyses Study.",
-          "journal": "JMIR Res Protoc",
-          "year": "2022"
-        },
-        {
-          "pmid": "31042807",
-          "title": "Diffusing an Innovation: Clinician Perceptions of Continuous Predictive Analytics Monitoring in Intensive Care.",
-          "journal": "Appl Clin Inform",
-          "year": "2019"
         }
       ],
       "nih_grants": []
@@ -1567,9 +1699,9 @@
       "departments": [
         "Radiation Oncology"
       ],
-      "pubmed_search": "Morris David",
-      "pubmed_count": 5,
-      "pubmed_verified": 3,
+      "pubmed_count": 49,
+      "pubmed_search": "ComputedAuthors:Morris David",
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
@@ -1585,10 +1717,22 @@
           "year": "2019"
         },
         {
+          "pmid": "30857758",
+          "title": "Patient-reported Quality of Life Following Stereotactic Body Radiotherapy and Conventionally Fractionated External Beam Radiotherapy Compared with Active Surveillance Among Men with Localized Prostate Cancer.",
+          "journal": "Eur Urol",
+          "year": "2019"
+        },
+        {
           "pmid": "30852467",
           "title": "Phase II study of stereotactic radiosurgery for the treatment of patients with oligoprogression on erlotinib.",
           "journal": "Cancer Treat Res Commun",
           "year": "2019"
+        },
+        {
+          "pmid": "24890359",
+          "title": "Patterns of practice in radiation therapy for non-small cell lung cancer among members of the American Society for Radiation Oncology.",
+          "journal": "Pract Radiat Oncol",
+          "year": "2014"
         }
       ],
       "nih_grants": []
