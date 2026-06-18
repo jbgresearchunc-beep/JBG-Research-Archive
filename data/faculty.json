@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T15:13:46.870364Z",
+  "generated_at": "2026-06-18T15:24:24.938043Z",
   "total_faculty": 53,
   "departments": [
     "Medicine \u2014 Oncology",
@@ -152,7 +152,7 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_hint": "Agrawal Yash",
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/yash.agrawal.3/bibliography/public",
       "pubmed_search": "Agrawal Yash",
       "pubmed_count": 4,
       "pubmed_verified": 4,
@@ -267,6 +267,7 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1foVmTwbUHA5f/bibliography/public",
       "pubmed_search": "Kimani Stephen",
       "pubmed_count": 10,
       "pubmed_verified": 5,
@@ -430,7 +431,7 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_hint": "Hanks Brent",
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/brent.hanks.1/bibliography/public",
       "pubmed_search": "Hanks Brent",
       "pubmed_count": 0,
       "pubmed_verified": 0,
@@ -446,7 +447,7 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
-      "pubmed_hint": "Iglesia Michael",
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/michael.iglesia.1/bibliography/public",
       "pubmed_search": "Iglesia Michael",
       "pubmed_count": 1,
       "pubmed_verified": 0,
@@ -637,6 +638,7 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1xSVwhxpjxvQI/bibliography/public",
       "pubmed_search": "Fahey Catherine",
       "pubmed_count": 1,
       "pubmed_verified": 1,
@@ -915,6 +917,7 @@
       "departments": [
         "Medicine \u2014 Oncology"
       ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/10Wfsml1N6pQ8/bibliography/public",
       "pubmed_search": "Trivedi Sumita",
       "pubmed_count": 1,
       "pubmed_verified": 1,
