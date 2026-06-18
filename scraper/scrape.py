@@ -128,7 +128,16 @@ NON_NAME_PATTERNS = re.compile(
     r"appointment|profile|view|all|more|click|here|back|next|"
     r"previous|apply|submit|calendar|event|blog|video|photo|"
     r"gallery|map|campus|career|job|giving|donate|privacy|"
-    r"accessibility|intranet|skip|menu|navigation|toggle|search)",
+    r"accessibility|intranet|skip|menu|navigation|toggle|search|"
+    r"building|clinic|hospital|location|floor|suite|wing|annex|"
+    r"physicians|community|engagement|school|university|medicine|"
+    r"neurology|cardiology|surgery|pediatrics|oncology|radiology|"
+    r"services|resources|directions|parking|hours|phone|fax|address|"
+    r"imaging|neuroradiology|interventional|musculoskeletal|thoracic|"
+    r"abdominal|nuclear|mammography|ultrasound|fluoroscopy|"
+    r"subspecialty|section|division|group|section|trauma|vascular|"
+    r"breast|cardiac|body|head|neck|spine|pediatric imaging|"
+    r"fellowship|residency|rotation|conference|seminar|lecture)",
     re.IGNORECASE
 )
 
@@ -143,8 +152,14 @@ def looks_like_name(text):
     clean = TITLE_PREFIXES.sub("", clean).strip()
     if NON_NAME_PATTERNS.search(clean):
         return False
-    # Should have 2-4 space-separated words, each starting with uppercase
+    # Reject all-caps strings (e.g. "CLINIC LOCATIONS", "UNC HOSPITALS")
     words = clean.split()
+    if any(w.isupper() and len(w) > 2 for w in words):
+        return False
+    # Reject strings with digits (e.g. "3009 Old Clinic Building")
+    if re.search(r"\d", clean):
+        return False
+    # Should have 2-4 space-separated words, each starting with uppercase
     if len(words) < 2 or len(words) > 5:
         return False
     # Most words should start with uppercase
@@ -308,9 +323,33 @@ def scrape_profile_for_pubmed_string(profile_url):
             if not HINT_GARBAGE_WORDS.search(author_term) and len(author_term) >= 3:
                 return author_term
 
-    # Pattern 4: ORCID
+    # Pattern 4: MyNCBI bibliography URL
+    # e.g. https://www.ncbi.nlm.nih.gov/myncbi/brent.hanks.1/bibliography/public/
+    # We can't directly search by MyNCBI username, but we can extract the name
+    # from the URL slug (e.g. 'brent.hanks.1' -> search 'Hanks Brent')
+    # This is used as a signal that the faculty has a curated NCBI profile;
+    # the actual search will fall through to the name-based search below.
+    myncbi_match = re.search(
+        r"ncbi\.nlm\.nih\.gov/myncbi/([^/]+)/bibliography",
+        html, re.IGNORECASE
+    )
+    if myncbi_match:
+        # Return a special marker so the caller knows to use the full name search
+        # but with higher confidence (faculty curated this link themselves)
+        slug = myncbi_match.group(1)
+        # slug is like 'brent.hanks.1' — extract name parts
+        parts = [p for p in slug.split(".") if p and not p.isdigit()]
+        if len(parts) >= 2:
+            # Reconstruct as 'Lastname Firstname' for PubMed
+            first = parts[0].capitalize()
+            last = parts[1].capitalize()
+            return f"{last} {first}"
+
+    # Pattern 5: ORCID — matches both public profile and login URLs
+    # e.g. https://orcid.org/0000-0002-2803-3272
+    # e.g. https://orcid.org/my-orcid?orcid=0000-0002-2803-3272
     orcid_match = re.search(
-        r"orcid\.org/(\d{4}-\d{4}-\d{4}-\d{3}[\dX])",
+        r"orcid[=:/]+(\d{4}-\d{4}-\d{4}-\d{3}[\dX])",
         html, re.IGNORECASE
     )
     if orcid_match:
@@ -694,6 +733,9 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
     faculty_member["pubmed_search"] = search_term
     faculty_member["pubmed_count"] = result["count"]  # raw search count
     faculty_member["pubmed_verified"] = len(pubs)     # UNC-verified count
+    # If we got raw results but 0 verified, flag it so the frontend can
+    # show a warning rather than a misleading "X on PubMed" badge
+    faculty_member["pubmed_ambiguous"] = (result["count"] > 0 and len(pubs) == 0)
     faculty_member["publications"] = pubs
 
     # Rate limiting — NCBI allows 3 req/sec without API key
@@ -777,6 +819,30 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
         time.sleep(1)  # polite crawl delay
 
     print(f"\nTotal faculty scraped: {len(all_faculty)}")
+
+    # ---- Deduplication: merge faculty with same name across departments ----
+    # Faculty with joint appointments appear on multiple department pages.
+    # Keep one entry per person, storing all departments as a list.
+    print("\n=== Deduplicating faculty ===")
+    seen = {}  # name_lower -> index in deduplicated list
+    deduplicated = []
+    for f in all_faculty:
+        key = f["name"].lower().strip()
+        if key in seen:
+            # Merge: add this department to existing entry
+            existing = deduplicated[seen[key]]
+            existing_depts = existing.get("departments", [existing["department"]])
+            if f["department"] not in existing_depts:
+                existing_depts.append(f["department"])
+                existing["departments"] = existing_depts
+                existing["department"] = existing_depts[0]  # keep primary
+            print(f"  Merged duplicate: {f['name']} ({f['department']})")
+        else:
+            seen[key] = len(deduplicated)
+            f["departments"] = [f["department"]]
+            deduplicated.append(f)
+    all_faculty = deduplicated
+    print(f"  {len(all_faculty)} unique faculty after deduplication")
 
     # ---- Step 2: Scrape profile pages for curated PubMed strings ----
     print("\n=== Step 2: Checking profiles for PubMed search strings ===")
