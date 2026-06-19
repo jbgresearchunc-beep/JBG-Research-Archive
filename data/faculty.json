@@ -1,101 +1,198 @@
 {
-  "generated_at": "2026-06-19T23:56:17.915592Z",
-  "total_faculty": 5,
+  "generated_at": "2026-06-19T23:57:44.979855Z",
+  "total_faculty": 6,
   "departments": [
-    "Radiology"
+    "Neurosurgery"
   ],
   "faculty": [
     {
-      "name": "Know Before You Go",
-      "profile_url": "",
-      "department": "Radiology",
+      "name": "Matthew Ewend",
+      "profile_url": "https://www.med.unc.edu/neurosurgery/directory/matthew-ewend-md-facs/",
+      "department": "Neurosurgery",
       "role": "",
       "departments": [
-        "Radiology"
+        "Neurosurgery"
       ],
-      "pubmed_search": "Go Know",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Referring Physician Info",
-      "profile_url": "",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ],
-      "pubmed_search": "Info Referring",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Living in Chapel Hill",
-      "profile_url": "",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ],
-      "pubmed_count": 3,
-      "pubmed_search": "ComputedAuthors:Hill L",
-      "pubmed_verified": 3,
+      "pubmed_count": 103,
+      "pubmed_search": "ComputedAuthors:Ewend Matthew",
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "41920389",
-          "title": "Quality of life during electronic patient-reported outcome (ePRO) monitoring in thoracic surgery patients: a pilot randomized controlled trial.",
-          "journal": "Qual Life Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "41209804",
-          "title": "Social anxiety and emoji use: gender differences and the role of loneliness in digital communication among college students.",
-          "journal": "Front Psychol",
+          "pmid": "39543051",
+          "title": "Association between tumor location and toxicity outcomes after stereotactic radiosurgery for brain metastases.",
+          "journal": "J Neurooncol",
           "year": "2025"
         },
         {
-          "pmid": "31727380",
-          "title": "Financial hardship among rural cancer survivors: An analysis of the Medical Expenditure Panel Survey.",
-          "journal": "Prev Med",
-          "year": "2019"
+          "pmid": "36585869",
+          "title": "Tumor sound, auditory cues, and tissue pathology in glioma surgery: a proof-of-concept study.",
+          "journal": "J Neurosurg",
+          "year": "2023"
+        },
+        {
+          "pmid": "36582567",
+          "title": "Disparities in Postoperative Endocrine Outcomes After Endoscopic-Assisted Transsphenoidal Pituitary Adenoma Resection.",
+          "journal": "Cureus",
+          "year": "2022"
+        },
+        {
+          "pmid": "36394838",
+          "title": "Association of Autologous Tumor Lysate-Loaded Dendritic Cell Vaccination With Extension of Survival Among Patients With Newly Diagnosed and Recurrent Glioblastoma: A Phase 3 Prospective Externally Controlled Cohort Trial.",
+          "journal": "JAMA Oncol",
+          "year": "2023"
+        },
+        {
+          "pmid": "35832968",
+          "title": "Comparative Outcomes by Surgical Approach in Patients with Malignant Sinonasal Disease.",
+          "journal": "J Neurol Surg B Skull Base",
+          "year": "2022"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Striving for Scientific Advancement",
-      "profile_url": "",
-      "department": "Radiology",
+      "name": "Kimberly M. Hamilton",
+      "profile_url": "https://www.med.unc.edu/neurosurgery/directory/kimberly-hamilton-md/",
+      "department": "Neurosurgery",
       "role": "",
       "departments": [
-        "Radiology"
+        "Neurosurgery"
       ],
-      "pubmed_search": "Advancement Striving",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Hamilton KM",
+      "pubmed_verified": 2,
       "pubmed_ambiguous": false,
-      "publications": [],
+      "publications": [
+        {
+          "pmid": "42118351",
+          "title": "Developing a core outcome set for the NeuroPoint Alliance Quality Outcomes Database Pediatric Tumor Surgery Registry: a modified Delphi study.",
+          "journal": "J Neurooncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "8609975",
+          "title": "International collaboration.",
+          "journal": "Nature",
+          "year": "1996"
+        }
+      ],
       "nih_grants": []
     },
     {
-      "name": "That Define Us",
-      "profile_url": "",
-      "department": "Radiology",
+      "name": "Jeremy Rich",
+      "profile_url": "https://www.med.unc.edu/neurosurgery/directory/jeremy-rich-md-mhs-mba/",
+      "department": "Neurosurgery",
       "role": "",
       "departments": [
-        "Radiology"
+        "Neurosurgery"
       ],
-      "pubmed_search": "Us That",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Rich Jeremy",
+      "pubmed_verified": 1,
       "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41279006",
+          "title": "AAV Kills Dividing Cells by Depleting PARP1 and Other DNA Damage Response Proteins.",
+          "journal": "bioRxiv",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Vibhor Krishna",
+      "profile_url": "https://www.med.unc.edu/neurosurgery/physicians/physicians-faculty/vibhor-krishna-md/",
+      "department": "Neurosurgery",
+      "role": "",
+      "departments": [
+        "Neurosurgery"
+      ],
+      "pubmed_count": 15,
+      "pubmed_search": "ComputedAuthors:Krishna Vibhor",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42107848",
+          "title": "Focused Ultrasound Ablation for Neurological Disorders.",
+          "journal": "Biol Psychiatry",
+          "year": "2026"
+        },
+        {
+          "pmid": "41996720",
+          "title": "Focused ultrasound thalamotomy for essential tremor in octogenarians.",
+          "journal": "J Neurosurg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41350630",
+          "title": "Precision connectivity in osteoarthritis pain with permutation and network analysis: a key step toward clinical application.",
+          "journal": "BMC Med Imaging",
+          "year": "2025"
+        },
+        {
+          "pmid": "41200451",
+          "title": "Unilateral magnetic resonance-guided focused ultrasound for medication-refractory essential tremor: 5-year continued access study.",
+          "journal": "Front Neurol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39869356",
+          "title": "Cognitive Effects of MR-Guided Focused Ultrasound Thalamotomy-Time to Evaluation-Reply.",
+          "journal": "JAMA Neurol",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "James B. Walker",
+      "profile_url": "https://www.med.unc.edu/neurosurgery/physicians/community-physicians-faculty/james-b-walker-md/",
+      "department": "Neurosurgery",
+      "role": "",
+      "departments": [
+        "Neurosurgery"
+      ],
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Walker JB",
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39246788",
+          "title": "Minimally invasive tubular approach to intramedullary cavernous malformations.",
+          "journal": "Surg Neurol Int",
+          "year": "2024"
+        },
+        {
+          "pmid": "19934994",
+          "title": "A novel simulation model for minimally invasive spine surgery.",
+          "journal": "Neurosurgery",
+          "year": "2009"
+        },
+        {
+          "pmid": "18797320",
+          "title": "Percutaneous placement of an external drain of the cisterna magna using interventional magnetic resonance imaging in a patient with a persistent cerebrospinal fluid fistula: technical case report.",
+          "journal": "Neurosurgery",
+          "year": "2008"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Lindsey Hughes Tyler",
+      "profile_url": "https://www.med.unc.edu/neurosurgery/physicians/community-physicians-faculty/lindsey-tyler-md/",
+      "department": "Neurosurgery",
+      "role": "",
+      "departments": [
+        "Neurosurgery"
+      ],
+      "pubmed_search": "Tyler L",
+      "pubmed_count": 2,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
       "publications": [],
       "nih_grants": []
     }
