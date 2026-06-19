@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-19T01:10:24.796457Z",
-  "total_faculty": 16,
+  "generated_at": "2026-06-19T01:17:13.568797Z",
+  "total_faculty": 38,
   "departments": [
     "Pediatrics"
   ],
@@ -111,6 +111,70 @@
       "nih_grants": []
     },
     {
+      "name": "Find a Doc",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "Doc FA",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Welcome New Provider: Jaimi McDonough",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "Jaimi McDonough joined the Division of Developmental Behavioral Pediatrics on June 2, 2025 as an Ass",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "McDonough Welcome",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Shiva Zargham",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Zargham Shiva",
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40534946",
+          "title": "A Case Series of the Use of Intranasal Dexmedetomidine for Procedural Sedation in the Pediatric Emergency Department.",
+          "journal": "J Pediatr Pharmacol Ther",
+          "year": "2025"
+        },
+        {
+          "pmid": "33842804",
+          "title": "Psychometric Testing of the Debriefing Assessment for Simulation in Healthcare (DASH) for Trainee-led, In Situ Simulations in the Pediatric Emergency Department Context.",
+          "journal": "AEM Educ Train",
+          "year": "2021"
+        },
+        {
+          "pmid": "33125203",
+          "title": "Burnout and Resiliency Trends in Pediatric Emergency Medicine Fellows.",
+          "journal": "Pediatr Emerg Care",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
       "name": "Pediatric Endocrinology",
       "profile_url": "",
       "department": "Pediatrics",
@@ -164,6 +228,171 @@
         "Pediatrics"
       ],
       "pubmed_search": "Gastroenterology Pediatric",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Our Vision",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "Vision Our",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Primary Care",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "Care Primary",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Adolescent Care",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "Care A",
+      "pubmed_count": 2,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Complex & Diagnostic Care",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "Care Complex",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Development, Behavior, and Learning",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "Development",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Child Maltreatment",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "Maltreatment Child",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Genetics & Metabolism",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "Metabolism Genetics",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Pandya\u2019s Laboratory",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "Laboratory Pandya\u2019s",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Pediatric Genetics & Metabolism",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "Metabolism Pediatric",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Hematology & Sickle Cell",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "Cell Hematology",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Developmental Therapeutics and Pharmacology",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "Pharmacology Developmental",
       "pubmed_count": 0,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
@@ -239,6 +468,188 @@
         "Pediatrics"
       ],
       "pubmed_search": "Disease Pediatric",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Scheduling & Referrals",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "Referrals Scheduling",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Pediatric Pulmonology",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "Pulmonology Pediatric",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Laura Cannon",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_count": 14,
+      "pubmed_search": "ComputedAuthors:Cannon Laura",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41931026",
+          "title": "Cumulative Social Disadvantage and Disease Activity in Juvenile Idiopathic Arthritis: A Childhood Arthritis and Rheumatology Research Alliance Registry Study.",
+          "journal": "Arthritis Care Res (Hoboken)",
+          "year": "2026"
+        },
+        {
+          "pmid": "41121260",
+          "title": "Long-term safety of canakinumab in patients with systemic juvenile idiopathic arthritis: 5-year results from the Childhood Arthritis and Rheumatology Research Alliance (CARRA) registry.",
+          "journal": "Pediatr Rheumatol Online J",
+          "year": "2025"
+        },
+        {
+          "pmid": "40813107",
+          "title": "Disease activity trajectories in paediatric lupus and associations with socioeconomic factors and patient-reported pain.",
+          "journal": "Lupus Sci Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "40696394",
+          "title": "Disease activity at two consecutive registry visits and subsequent medication escalation for patients with juvenile idiopathic arthritis in the CARRA registry.",
+          "journal": "Pediatr Rheumatol Online J",
+          "year": "2025"
+        },
+        {
+          "pmid": "40344490",
+          "title": "Three-Year Outcomes and Latent Class Trajectory Analysis of the Childhood Arthritis and Rheumatology Research Alliance Polyarticular JIA Consensus Treatment Plans Study.",
+          "journal": "Arthritis Rheumatol",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Priyanka Rao",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "will join the education team as Associate Program Directors.  They were chosen from a pool of excell",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_count": 7,
+      "pubmed_search": "ComputedAuthors:Rao Priyanka",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41943782",
+          "title": "Decision Support Tools Strengthen Early Peanut Introduction Practices and Streamline Data Automation.",
+          "journal": "Cureus",
+          "year": "2026"
+        },
+        {
+          "pmid": "39786368",
+          "title": "Where Are the Pediatricians?-Reply.",
+          "journal": "JAMA",
+          "year": "2025"
+        },
+        {
+          "pmid": "38958947",
+          "title": "Where Are All the Pediatricians?",
+          "journal": "JAMA",
+          "year": "2024"
+        },
+        {
+          "pmid": "38161152",
+          "title": "Lice: Head, Body, Pubic.",
+          "journal": "Pediatr Rev",
+          "year": "2024"
+        },
+        {
+          "pmid": "37525303",
+          "title": "Varicella.",
+          "journal": "Pediatr Rev",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Rheumatology Care",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "Care Rheumatology",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Transitioning To Adult Care",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "Care Transitioning",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Resident Documents",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "Documents Resident",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Pediatric Rheumatology",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "Rheumatology Pediatric",
       "pubmed_count": 0,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
