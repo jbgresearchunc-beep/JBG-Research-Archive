@@ -1,244 +1,5038 @@
 {
-  "generated_at": "2026-06-19T17:08:35.105648Z",
-  "total_faculty": 6,
+  "generated_at": "2026-06-19T17:46:18.798293Z",
+  "total_faculty": 169,
   "departments": [
-    "Surgery \u2014 Plastic & Reconstructive Surgery"
+    "Neurology"
   ],
   "faculty": [
     {
-      "name": "Kevin Calder",
-      "profile_url": "https://www.med.unc.edu/surgery/plastic/people/kevin-calder-md/",
-      "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
-      "role": "",
+      "name": "Kimberly Mournighan",
+      "profile_url": "https://www.med.unc.edu/medicine/geriatrics/people/kimberly-mournighan-md/",
+      "department": "Neurology",
+      "role": "Adjunct-Faculty",
       "departments": [
-        "Surgery \u2014 Plastic & Reconstructive Surgery"
+        "Neurology"
       ],
-      "pubmed_count": 2,
-      "pubmed_search": "ComputedAuthors:Calder Kevin",
-      "pubmed_verified": 2,
+      "pubmed_count": 8,
+      "pubmed_search": "ComputedAuthors:Mournighan Kimberly",
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "42231814",
-          "title": "Trends in Cleft Palate Incidence in the Era of Prenatal Ultrasonography and Early Detection.",
-          "journal": "Cleft Palate Craniofac J",
+          "pmid": "41809251",
+          "title": "Perspectives of Older Adults and Their Caregivers on Post-Discharge Medication Management: A Qualitative Study.",
+          "journal": "Health Sci Rep",
           "year": "2026"
         },
         {
-          "pmid": "38745814",
-          "title": "Selective Peripheral Denervation and Selective Nerve Injury for the Treatment of Cervical Dystonia Through a Periauricular Incision.",
-          "journal": "Cureus",
+          "pmid": "41288196",
+          "title": "An Analysis of Institutional Anti-Amyloid Websites.",
+          "journal": "J Am Geriatr Soc",
+          "year": "2025"
+        },
+        {
+          "pmid": "40243126",
+          "title": "CoCare-CI: A Clinical Innovation to Address Behavioral Symptoms in Hospitalized Older Adults With Cognitive Impairment.",
+          "journal": "J Am Geriatr Soc",
+          "year": "2025"
+        },
+        {
+          "pmid": "38767253",
+          "title": "Measuring frailty in clinical practice: Overcoming challenges with implementation.",
+          "journal": "J Am Geriatr Soc",
           "year": "2024"
+        },
+        {
+          "pmid": "37610294",
+          "title": "Establishing and sustaining an acute care for elders unit: An incremental journey to success.",
+          "journal": "J Am Geriatr Soc",
+          "year": "2023"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Jennifer C. Carr",
-      "profile_url": "https://www.med.unc.edu/surgery/plastic/people/jennifer-c-carr/",
-      "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
-      "role": "",
+      "name": "Matthew Harris, , ABPP-CN",
+      "profile_url": "https://www.med.unc.edu/phyrehab/directory/matthew-harris/",
+      "department": "Neurology",
+      "role": "Abc",
       "departments": [
-        "Surgery \u2014 Plastic & Reconstructive Surgery"
+        "Neurology"
       ],
-      "pubmed_hint": "Carr JC",
+      "pubmed_count": 5,
+      "pubmed_search": "ComputedAuthors:Harris Matthew",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41527767",
+          "title": "Certainty-weighted recognition memory: Potential applications for early detection and metacognition.",
+          "journal": "J Alzheimers Dis",
+          "year": "2026"
+        },
+        {
+          "pmid": "33662216",
+          "title": "High elevation rates of the Structured Inventory of Malingered Symptomatology (SIMS) in neuropsychological patients.",
+          "journal": "Appl Neuropsychol Adult",
+          "year": "2022"
+        },
+        {
+          "pmid": "9316184",
+          "title": "Ischemic but not thermal pain sensitivity varies across the menstrual cycle.",
+          "journal": "Psychosom Med",
+          "year": "1997"
+        },
+        {
+          "pmid": "9316183",
+          "title": "Relationship between pain sensitivity and resting arterial blood pressure in patients with painful temporomandibular disorders.",
+          "journal": "Psychosom Med",
+          "year": "1997"
+        },
+        {
+          "pmid": "8969871",
+          "title": "Pain sensitivity in patients with temporomandibular disorders: relationship to clinical and psychosocial factors.",
+          "journal": "Clin J Pain",
+          "year": "1996"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Patrick J. Smith",
+      "profile_url": "https://www.med.unc.edu/psych/people/patrick-j-smith-phd-mph/",
+      "department": "Neurology",
+      "role": "Adjunct-Faculty",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 8,
+      "pubmed_search": "ComputedAuthors:Smith PJ",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42250524",
+          "title": "Response to letter in response to: \"Melatonin prescribing characteristics and delirium outcomes: A health system database-based study\".",
+          "journal": "Gen Hosp Psychiatry",
+          "year": "2026"
+        },
+        {
+          "pmid": "42140022",
+          "title": "Melatonin prescribing characteristics and delirium outcomes: A health system database-based study.",
+          "journal": "Gen Hosp Psychiatry",
+          "year": "2026"
+        },
+        {
+          "pmid": "41935221",
+          "title": "Impact of donor age on cognitive recovery in allogenic hematopoietic stem cell transplant patients with mild cognitive impairment.",
+          "journal": "Bone Marrow Transplant",
+          "year": "2026"
+        },
+        {
+          "pmid": "41083195",
+          "title": "Higher interleukin-6 (IL-6) is associated with decline in psychomotor processing speed but not executive functioning in older adults: Gender-specific effects.",
+          "journal": "J Gerontol B Psychol Sci Soc Sci",
+          "year": "2025"
+        },
+        {
+          "pmid": "40274094",
+          "title": "Postoperative Lung Transplant Considerations in the Older Recipient.",
+          "journal": "Chest",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Andrea Kurasz",
+      "profile_url": "https://www.med.unc.edu/neurology/people/andrea-kurasz-phd/",
+      "department": "Neurology",
+      "role": "Memory-And-Cognitive-Disorders",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Kurasz Andrea",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Hadley J. Bryan, Sc.M, ., CGC",
+      "profile_url": "https://www.med.unc.edu/neurology/people/hadley-j-bryan/",
+      "department": "Neurology",
+      "role": "Precision-Medicine-And-Neurogenetics",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Bryan HJ",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Stephanie Roses",
+      "profile_url": "https://www.med.unc.edu/neurology/people/stephanie-roses-md/",
+      "department": "Neurology",
+      "role": "Als-Clinic",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Roses Stephanie",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Sierra Hudson",
+      "profile_url": "https://www.med.unc.edu/neurology/people/sierra-hudson-do/",
+      "department": "Neurology",
+      "role": "Child-Resident",
+      "departments": [
+        "Neurology"
+      ],
       "pubmed_count": 1,
-      "pubmed_search": "ComputedAuthors:Carr JC",
+      "pubmed_search": "ComputedAuthors:Hudson S",
       "pubmed_verified": 1,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "34609971",
-          "title": "Proposed Solutions for Improving the Plastic Surgery Residency Application Process.",
-          "journal": "Plast Reconstr Surg",
+          "pmid": "36729146",
+          "title": "Allosteric regulation of exocyst: Discrete activation of tethering by two spatial signals.",
+          "journal": "J Cell Biol",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Malina Maharan",
+      "profile_url": "https://www.med.unc.edu/neurology/people/malina-maharan-md/",
+      "department": "Neurology",
+      "role": "Child-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Maharan Malina",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Jennifer Grisolia, , BCCCP",
+      "profile_url": "https://www.med.unc.edu/neurology/people/jennifer-grisolia-pharmd-bcccp/",
+      "department": "Neurology",
+      "role": "Neurocritical-Care-Pharmacy-Specialist",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Grisolia Jennifer",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Rachel Alexandra Kolar, , BCCCP",
+      "profile_url": "https://www.med.unc.edu/neurology/people/rachel-alexandra-kolar-pharmd-bcccp/",
+      "department": "Neurology",
+      "role": "Neurocritical-Care-Pharmacy-Specialist",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Kolar R",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Kayla E. John, , BCCCP",
+      "profile_url": "https://www.med.unc.edu/neurology/people/kayla-e-john/",
+      "department": "Neurology",
+      "role": "Neurocritical-Care-Pharmacy-Specialist",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:John KE",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40292333",
+          "title": "Salivary Gland Botulinum Toxin a Injections for Treating Sialorrhea Among Critically Ill Patients With Neurological Disorders.",
+          "journal": "Neurohospitalist",
+          "year": "2025"
+        },
+        {
+          "pmid": "39844965",
+          "title": "Factor XIa Inhibitor Reversal in Intracranial Hemorrhage: A Case Report.",
+          "journal": "Neurohospitalist",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Erica D. Johnson, , MS",
+      "profile_url": "https://www.med.unc.edu/neurology/people/erica-d-johnson-md-ms/",
+      "department": "Neurology",
+      "role": "Comprehensive-Neurology",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Johnson ED",
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40437340",
+          "title": "Scrutinizing reference adaptation: Do people only adapt to infrequent discourse structures?",
+          "journal": "Psychon Bull Rev",
+          "year": "2025"
+        },
+        {
+          "pmid": "35549442",
+          "title": "The frequency of referential patterns guides pronoun comprehension.",
+          "journal": "J Exp Psychol Learn Mem Cogn",
+          "year": "2023"
+        },
+        {
+          "pmid": "34381397",
+          "title": "Individual Differences in Print Exposure Predict Use of Implicit Causality in Pronoun Comprehension and Referential Prediction.",
+          "journal": "Front Psychol",
           "year": "2021"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Lynn Damitz",
-      "profile_url": "https://www.med.unc.edu/surgery/plastic/people/lynn-damitz-md/",
-      "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
-      "role": "",
+      "name": "Geetika Bajpai, , , DM",
+      "profile_url": "https://www.med.unc.edu/neurology/people/geetika-bajpai-mbbs-md-dm/",
+      "department": "Neurology",
+      "role": "Epilepsy",
       "departments": [
-        "Surgery \u2014 Plastic & Reconstructive Surgery"
+        "Neurology"
       ],
-      "pubmed_hint": "damitz l",
-      "pubmed_count": 20,
-      "pubmed_search": "ComputedAuthors:Damitz Lynn",
+      "pubmed_search": "Bajpai Geetika",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Hannah H. Noah",
+      "profile_url": "https://www.med.unc.edu/neurology/people/hannah-h-noah-md-mph/",
+      "department": "Neurology",
+      "role": "Memory-And-Cognitive-Disorders",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Noah H",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Camilo Albert",
+      "profile_url": "https://www.med.unc.edu/neurology/people/camilo-albert-md/",
+      "department": "Neurology",
+      "role": "Fellowship",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Albert C",
+      "pubmed_count": 6,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Prathima Racha",
+      "profile_url": "https://www.med.unc.edu/neurology/people/prathima-racha-md/",
+      "department": "Neurology",
+      "role": "Fellowship",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Racha Prathima",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Jamie Palaganas",
+      "profile_url": "https://www.med.unc.edu/neurology/people/jamie-palaganas-md/",
+      "department": "Neurology",
+      "role": "Child-Neurology",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 36,
+      "pubmed_search": "ComputedAuthors:Palaganas J",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "40865729",
-          "title": "Establishment of standardized definitions and a core set of outcome characteristics following hidradenitis suppurativa surgery developed by an expert Delphi consensus.",
-          "journal": "J Am Acad Dermatol",
+          "pmid": "41948250",
+          "title": "Procedural Skills Decay in Emergency Medicine: A Scoping Review.",
+          "journal": "Cureus",
+          "year": "2026"
+        },
+        {
+          "pmid": "41287128",
+          "title": "The Advocacy-Inquiry Rubric (AIR): a standard to build debriefing and feedback skills.",
+          "journal": "Adv Simul (Lond)",
           "year": "2025"
         },
         {
-          "pmid": "39931119",
-          "title": "Identifying Contextual Workplace Stressors in a Division of Plastic and Reconstructive Surgery.",
-          "journal": "Plast Reconstr Surg Glob Open",
-          "year": "2025"
+          "pmid": "40742289",
+          "title": "Application of the METRICS Framework to Build Programs of Healthcare Simulation Research.",
+          "journal": "Simul Healthc",
+          "year": "2026"
         },
         {
-          "pmid": "39526808",
-          "title": "Challenges in Radial Forearm Free Flap Surgery: A Comprehensive Case Analysis of Septic Complications at the Donor Site.",
-          "journal": "Ann Plast Surg",
-          "year": "2025"
+          "pmid": "39980724",
+          "title": "A guide to prompt design: foundations and applications for healthcare simulationists.",
+          "journal": "Front Med (Lausanne)",
+          "year": "2024"
         },
         {
-          "pmid": "39489064",
-          "title": "General Surgery Versus Integrated Surgical Sub-specialties: Predictors for Residency Match and Interview Invites Among Surgical Candidates.",
-          "journal": "J Surg Educ",
+          "pmid": "39353859",
+          "title": "In-Person Healthcare Simulation: An Umbrella Review of the Literature.",
+          "journal": "Simul Healthc",
           "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Aiden Walker",
+      "profile_url": "https://www.med.unc.edu/neurology/people/aiden-walker-md/",
+      "department": "Neurology",
+      "role": "Class-Of-2029-Child-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Walker A",
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42217537",
+          "title": "Adolescent ethanol exposure reprograms HMGB1 responsivity to adult ethanol challenge in males.",
+          "journal": "Physiol Behav",
+          "year": "2026"
         },
         {
-          "pmid": "38911577",
-          "title": "Unveiling the Potential of AI in Plastic Surgery Education: A Comparative Study of Leading AI Platforms' Performance on In-training Examinations.",
-          "journal": "Plast Reconstr Surg Glob Open",
+          "pmid": "42009214",
+          "title": "Inhibition of HMGB1 restores adult hippocampal neurogenesis and spatial learning after adolescent binge alcohol exposure.",
+          "journal": "Physiol Behav",
+          "year": "2026"
+        },
+        {
+          "pmid": "41550868",
+          "title": "Adolescent adversity persistently induces proinflammatory HMGB1 signaling and disrupts the basal forebrain cholinergic system in female rats.",
+          "journal": "Neurobiol Stress",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Carolina Mebane, , MS",
+      "profile_url": "https://www.med.unc.edu/neurology/people/carolina-mebane-md-ms/",
+      "department": "Neurology",
+      "role": "Class-Of-2029-Child-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Mebane Carolina",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Priya Raju",
+      "profile_url": "https://www.med.unc.edu/neurology/people/priya-raju-md/",
+      "department": "Neurology",
+      "role": "Class-Of-2028-Child-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Raju Priya",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Burcu Asma",
+      "profile_url": "https://www.med.unc.edu/neurology/people/burcu-asma-md/",
+      "department": "Neurology",
+      "role": "Class-Of-2028-Child-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Asma Burcu",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Courtney Cahoy",
+      "profile_url": "https://www.med.unc.edu/neurology/people/courtney-cahoy-md/",
+      "department": "Neurology",
+      "role": "Class-Of-2028-Child-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Cahoy Courtney",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Omneya Ayoub, , MS",
+      "profile_url": "https://www.med.unc.edu/neurology/people/omneya-ayoub-do-ms/",
+      "department": "Neurology",
+      "role": "Class-Of-2027-Child-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Ayoub O",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41727378",
+          "title": "Transmission Electron Microscopy for Structural Insights into Bacterial Cellulose Nanowhiskers in Ternary Deep Eutectic Solvent.",
+          "journal": "ACS Meas Sci Au",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Holly Phillippe",
+      "profile_url": "https://www.med.unc.edu/neurology/people/holly-phillippe-do/",
+      "department": "Neurology",
+      "role": "Class-Of-2026-Child-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Phillippe Holly",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Stacey Adams",
+      "profile_url": "https://www.med.unc.edu/neurology/people/stacey-chung-md-pharmd/",
+      "department": "Neurology",
+      "role": "Class-Of-2026-Child-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Adams S",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39286616",
+          "title": "TNF Promoter Hypomethylation Is Associated With Mucosal Inflammation in IBD and Anti-TNF Response.",
+          "journal": "Gastro Hep Adv",
+          "year": "2024"
+        },
+        {
+          "pmid": "38370739",
+          "title": "TNF promoter hypomethylation is associated with mucosal inflammation in IBD and anti-TNF response.",
+          "journal": "medRxiv",
           "year": "2024"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Gregory M. Knoll",
-      "profile_url": "https://www.med.unc.edu/surgery/plastic/people/gregory-m-knoll-md/",
-      "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
-      "role": "",
+      "name": "Michaela Squire",
+      "profile_url": "https://www.med.unc.edu/neurology/people/michaela-squire-do/",
+      "department": "Neurology",
+      "role": "Class-Of-2025-Child-Resident",
       "departments": [
-        "Surgery \u2014 Plastic & Reconstructive Surgery"
+        "Neurology"
       ],
-      "pubmed_count": 9,
-      "pubmed_search": "ComputedAuthors:Knoll GM",
-      "pubmed_verified": 5,
+      "pubmed_search": "Squire Michaela",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Steven Papas",
+      "profile_url": "https://www.med.unc.edu/neurology/people/steven-papas-md/",
+      "department": "Neurology",
+      "role": "Class-Of-2025-Child-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Papas Steven",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Shakil Hossain, , MS",
+      "profile_url": "https://www.med.unc.edu/neurology/people/shakil-hossain-do-ms/",
+      "department": "Neurology",
+      "role": "Fellowship",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Hossain S",
+      "pubmed_count": 7,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Feirde Un Candan",
+      "profile_url": "https://www.med.unc.edu/neurology/people/feirde-un-candan/",
+      "department": "Neurology",
+      "role": "Class-Of-2028",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Candan Feirde",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Edwin Varillas Reyes",
+      "profile_url": "https://www.med.unc.edu/neurology/people/edwin-varillas-reyes-md/",
+      "department": "Neurology",
+      "role": "Class-Of-2029",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Reyes E",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Giulia Santangelo",
+      "profile_url": "https://www.med.unc.edu/neurology/people/giulia-santangelo-md/",
+      "department": "Neurology",
+      "role": "Class-Of-2029",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Santangelo Giulia",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Blaine Marie",
+      "profile_url": "https://www.med.unc.edu/neurology/people/blaine-marie-md/",
+      "department": "Neurology",
+      "role": "Class-Of-2029",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Marie Blaine",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Sydney Fogle",
+      "profile_url": "https://www.med.unc.edu/neurology/people/sydney-fogle-md/",
+      "department": "Neurology",
+      "role": "Class-Of-2029",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Fogle Sydney",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Daniel Dolinski",
+      "profile_url": "https://www.med.unc.edu/neurology/people/daniel-dolinski-md/",
+      "department": "Neurology",
+      "role": "Class-Of-2029",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Dolinski Daniel",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Anshul Daga",
+      "profile_url": "https://www.med.unc.edu/neurology/people/anshul-daga-md/",
+      "department": "Neurology",
+      "role": "Class-Of-2029",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Daga A",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Ayesha Anwer",
+      "profile_url": "https://www.med.unc.edu/neurology/people/ayesha-aswer-md/",
+      "department": "Neurology",
+      "role": "Class-Of-2029",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Anwer Ayesha",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Marlee Silverstein",
+      "profile_url": "https://www.med.unc.edu/ophth/directory/marlee-silverstein-md/",
+      "department": "Neurology",
+      "role": "Batten-Disease-Coe",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Silverstein M",
+      "pubmed_count": 41,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Emily Cetrone",
+      "profile_url": "https://www.med.unc.edu/medicine/geriatrics/people/emily-cetrone/",
+      "department": "Neurology",
+      "role": "Abc",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Cetrone Emily",
+      "pubmed_verified": 1,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "42004427",
-          "title": "Outcomes Following Retrograde Intramedullary Threaded Nail Fixation of Distal Ulnar Neck Fractures.",
-          "journal": "J Hand Surg Glob Online",
-          "year": "2026"
-        },
-        {
-          "pmid": "41762191",
-          "title": "Stability of Distal Ulnar Neck Fractures During Cyclic Loading Following Intramedullary Threaded Nail Fixation or Volar-Locking Plate and Screw Fixation: A Cadaveric Biomechanical Comparison.",
-          "journal": "J Hand Surg Am",
-          "year": "2026"
-        },
-        {
-          "pmid": "41657744",
-          "title": "The Influence of Glucagon-like Peptide-1 Receptor Agonists on Outcomes Following Trigger Finger Release.",
-          "journal": "J Hand Surg Glob Online",
-          "year": "2026"
-        },
-        {
-          "pmid": "41141327",
-          "title": "Postoperative Ketorolac Use and the Odds of a Nonunion in Operatively Treated Scaphoid Fractures.",
-          "journal": "J Hand Surg Glob Online",
-          "year": "2025"
-        },
-        {
-          "pmid": "41127759",
-          "title": "Dorsal Ganglion Cyst Excision Complicated by First Dorsal Metacarpal Artery Pseudoaneurysm: A Case Report.",
+          "pmid": "39371884",
+          "title": "Platypnea-Orthodeoxia Syndrome: Presentation of a 90-Year-Old.",
           "journal": "Cureus",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Amy Abramowitz",
+      "profile_url": "https://www.med.unc.edu/psych/people/amy-abramowitz-md/",
+      "department": "Neurology",
+      "role": "Abc",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 5,
+      "pubmed_search": "ComputedAuthors:Abramowitz Amy",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40058984",
+          "title": "Developing Treatment Models for the Delivery of the Antiamyloid Therapy, Lecanemab: Considerations for Implementation of Lecanemab in Healthcare Systems.",
+          "journal": "Am J Geriatr Psychiatry",
+          "year": "2025"
+        },
+        {
+          "pmid": "39132679",
+          "title": "Leveraging multi-site electronic health data for characterization of subtypes: a pilot study of dementia in the N3C Clinical Tenant.",
+          "journal": "JAMIA Open",
+          "year": "2024"
+        },
+        {
+          "pmid": "38856858",
+          "title": "Management of MCI in the Outpatient Setting.",
+          "journal": "Curr Psychiatry Rep",
+          "year": "2024"
+        },
+        {
+          "pmid": "34657890",
+          "title": "Characterizing the Resilience Effect of Neurodegeneration for the Mechanistic Pathway of Alzheimer's Disease.",
+          "journal": "J Alzheimers Dis",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Kimberly Foss, CGC",
+      "profile_url": "https://www.med.unc.edu/genetics/directory/kimberly-foss-ms-cgc/",
+      "department": "Neurology",
+      "role": "Gdndd-Experts",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 8,
+      "pubmed_search": "ComputedAuthors:Foss Kimberly",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42183344",
+          "title": "What it Takes to Implement Population-Based Genomic Screening: A Multi-Site Qualitative Study of Implementation Determinants Across Health Systems.",
+          "journal": "Res Sq",
+          "year": "2026"
+        },
+        {
+          "pmid": "41540409",
+          "title": "North Carolina primary care provider perspectives on expanded genomic screening in children.",
+          "journal": "BMC Med Genomics",
+          "year": "2026"
+        },
+        {
+          "pmid": "40964029",
+          "title": "Primary Care Provider Perspectives on Expanded Genomic Screening in Children.",
+          "journal": "Res Sq",
+          "year": "2025"
+        },
+        {
+          "pmid": "40604832",
+          "title": "Proceedings from the 2023 transdisciplinary conference for future leaders in precision public health \"Applying Implementation Science to Precision Public Health\".",
+          "journal": "BMC Proc",
+          "year": "2025"
+        },
+        {
+          "pmid": "40258355",
+          "title": "Age-Based Genomic Screening: Pediatric Providers' Perspectives on Implementation.",
+          "journal": "Public Health Genomics",
           "year": "2025"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Clara Lee",
-      "profile_url": "https://www.med.unc.edu/surgery/plastic/people/clara-lee-md-mpp-facs/",
-      "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
-      "role": "",
+      "name": "Muge Calikoglu",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/muge-calikoglu-md-mph/",
+      "department": "Neurology",
+      "role": "Gdndd-Experts",
       "departments": [
-        "Surgery \u2014 Plastic & Reconstructive Surgery"
+        "Neurology"
       ],
-      "pubmed_hint": "Lee CN",
-      "pubmed_count": 102,
-      "pubmed_search": "ComputedAuthors:Lee Clara",
-      "pubmed_verified": 5,
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Calikoglu Muge",
+      "pubmed_verified": 4,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "42012737",
-          "title": "Shared Decision-Making in IPMN of the Pancreas: A Framework for Surgical Decisions Under Uncertainty.",
-          "journal": "Ann Surg Oncol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41991888",
-          "title": "Attitudes and Perspectives on Shared Decision Making Among Breast Surgical Oncologists: A Qualitative Study.",
-          "journal": "Ann Surg Oncol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41687092",
-          "title": "Correction: Social Media as a Platform for Cancer Care Decision-Making Among Women: Internet Survey-Based Study on Trust, Engagement, and Preferences.",
-          "journal": "JMIR Cancer",
-          "year": "2026"
-        },
-        {
-          "pmid": "41264869",
-          "title": "Assessing the Usability of a Novel Toolkit for Creating Visual Key Information Pages for Informed Consent for Research: Mixed Methods Usability Study.",
-          "journal": "JMIR Form Res",
+          "pmid": "39721588",
+          "title": "Heterozygous UBR5 variants result in a neurodevelopmental syndrome with developmental delay, autism, and intellectual disability.",
+          "journal": "Am J Hum Genet",
           "year": "2025"
         },
         {
-          "pmid": "41043297",
-          "title": "Evaluation of visual displays to share expected quality of life changes with patients with breast cancer.",
-          "journal": "Surgery",
+          "pmid": "27392080",
+          "title": "Clinical Sequencing Exploratory Research Consortium: Accelerating Evidence-Based Practice of Genomic Medicine.",
+          "journal": "Am J Hum Genet",
+          "year": "2016"
+        },
+        {
+          "pmid": "27181682",
+          "title": "Clinical Sequencing Exploratory Research Consortium: Accelerating Evidence-Based Practice of Genomic Medicine.",
+          "journal": "Am J Hum Genet",
+          "year": "2016"
+        },
+        {
+          "pmid": "15580640",
+          "title": "A clinical report of a patient with two abnormal cell lines: 46,XX,del(21)(q22.1) and 47,XX,+3.",
+          "journal": "Am J Med Genet A",
+          "year": "2005"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Ana Felix, MBBCh",
+      "profile_url": "https://www.med.unc.edu/medicine/geriatrics/people/ana-felix/",
+      "department": "Neurology",
+      "role": "Medical-Students",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_hint": "Felix AC",
+      "pubmed_search": "Felix Ana",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Jeremy Rich",
+      "profile_url": "https://www.med.unc.edu/neurology/people/jeremy-rich-md-mhs-mba/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Rich Jeremy",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41279006",
+          "title": "AAV Kills Dividing Cells by Depleting PARP1 and Other DNA Damage Response Proteins.",
+          "journal": "bioRxiv",
           "year": "2025"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Katherine Rodby",
-      "profile_url": "https://www.med.unc.edu/surgery/plastic/people/katherine-rodby-md-facs/",
-      "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
-      "role": "",
+      "name": "Candace Henderson",
+      "profile_url": "https://www.med.unc.edu/neurology/people/candace-henderson/",
+      "department": "Neurology",
+      "role": "Neurosciences-Clinical-Trial-Unit",
       "departments": [
-        "Surgery \u2014 Plastic & Reconstructive Surgery"
+        "Neurology"
       ],
-      "pubmed_hint": "Rodby KA",
-      "pubmed_count": 11,
-      "pubmed_search": "ComputedAuthors:Rodby Katherine",
+      "pubmed_count": 13,
+      "pubmed_search": "ComputedAuthors:Henderson Candace",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "39914237",
-          "title": "Reduction mammoplasty after abdominally-based free flap breast reconstruction: Indications, techniques, and outcomes.",
-          "journal": "J Plast Reconstr Aesthet Surg",
-          "year": "2025"
+          "pmid": "39015144",
+          "title": "Examining the role of patient-reported external factors and risk of relapse in anti-neutrophilic cytoplasmic autoantibody vasculitis.",
+          "journal": "Front Nephrol",
+          "year": "2024"
         },
         {
-          "pmid": "37856237",
-          "title": "Navigating Food and Drug Administration Mandated Breast Implant Patient Literature: A Call to Increase Equitable Healthcare Access Within Plastic Surgery.",
-          "journal": "Ann Plast Surg",
+          "pmid": "36763808",
+          "title": "Kidney Disease Progression in Membranous Nephropathy among Black Participants with High-Risk APOL1 Genotype.",
+          "journal": "Clin J Am Soc Nephrol",
           "year": "2023"
         },
         {
-          "pmid": "34529591",
-          "title": "Incision Location Predicts 30-Day Major Adverse Events after Cosmetic Breast Augmentation: An Analysis of the Tracking Outcomes and Operations for Plastic Surgeons Database.",
-          "journal": "Plast Reconstr Surg",
+          "pmid": "36381498",
+          "title": "The frequency of Treg subsets distinguishes disease activity in ANCA vasculitis.",
+          "journal": "Clin Transl Immunology",
+          "year": "2022"
+        },
+        {
+          "pmid": "35672132",
+          "title": "Immunological Interaction of HLA-DPB1 and Proteinase 3 in ANCA Vasculitis is Associated with Clinical Disease Activity.",
+          "journal": "J Am Soc Nephrol",
+          "year": "2022"
+        },
+        {
+          "pmid": "34901577",
+          "title": "Validation of Diagnosis Codes to Identify Infection-Related Acute Care Events in Patients With Glomerular Disease.",
+          "journal": "Kidney Int Rep",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Mary C. Edmondson",
+      "profile_url": "https://www.med.unc.edu/neurology/people/mary-c-edmondson-md/",
+      "department": "Neurology",
+      "role": "",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 17,
+      "pubmed_search": "ComputedAuthors:Edmondson MC",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "36242718",
+          "title": "The Safety of Deutetrabenazine for Chorea in Huntington Disease: An Open-Label Extension Study.",
+          "journal": "CNS Drugs",
+          "year": "2022"
+        },
+        {
+          "pmid": "35908569",
+          "title": "Baricitinib in patients admitted to hospital with COVID-19 (RECOVERY): a randomised, controlled, open-label, platform trial and updated meta-analysis.",
+          "journal": "Lancet",
+          "year": "2022"
+        },
+        {
+          "pmid": "35151397",
+          "title": "Casirivimab and imdevimab in patients admitted to hospital with COVID-19 (RECOVERY): a randomised, controlled, open-label, platform trial.",
+          "journal": "Lancet",
+          "year": "2022"
+        },
+        {
+          "pmid": "34800427",
+          "title": "Aspirin in patients admitted to hospital with COVID-19 (RECOVERY): a randomised, controlled, open-label, platform trial.",
+          "journal": "Lancet",
+          "year": "2022"
+        },
+        {
+          "pmid": "34000257",
+          "title": "Convalescent plasma in patients admitted to hospital with COVID-19 (RECOVERY): a randomised controlled, open-label, platform trial.",
+          "journal": "Lancet",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Stephanie Iyer, , BCACP",
+      "profile_url": "https://www.unchealth.org/care-services/doctors/i/stephanie-iyer-pharmd-cpp",
+      "department": "Neurology",
+      "role": "Comprehensive-Neurology-App",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Iyer Stephanie",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39471270",
+          "title": "Impact of discontinuing disease-modifying therapies on health care utilization among midlife patients with multiple sclerosis in the United States.",
+          "journal": "J Manag Care Spec Pharm",
+          "year": "2024"
+        },
+        {
+          "pmid": "39268507",
+          "title": "Evaluation of a Quality Measure for Multiple Sclerosis Care: Disease-Modifying Therapy Initiation at the University of North Carolina's Outpatient Neurology Clinic.",
+          "journal": "Int J MS Care",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jessica Rider, FNP-BC, MSN",
+      "profile_url": "https://www.med.unc.edu/neurology/people/jessica-rider-fnp-bc-msn/",
+      "department": "Neurology",
+      "role": "Movement-Disorders-App",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Rider Jessica",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Deanna Saylor",
+      "profile_url": "https://www.med.unc.edu/neurology/people/deanna-saylor-md/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 6,
+      "pubmed_search": "ComputedAuthors:Saylor Deanna",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42213586",
+          "title": "Long-term trends in HIV-related stigma among older adults with and without HIV: a cohort study from Mbarara, Uganda.",
+          "journal": "Gerontologist",
+          "year": "2026"
+        },
+        {
+          "pmid": "41695114",
+          "title": "Diagnostic pathways and barriers in multiple sclerosis in Zambia: A qualitative study.",
+          "journal": "Mult Scler J Exp Transl Clin",
+          "year": "2026"
+        },
+        {
+          "pmid": "41280946",
+          "title": "The Current State of Diagnostics for Neuroimmunological Disorders in Africa.",
+          "journal": "J Cent Nerv Syst Dis",
+          "year": "2025"
+        },
+        {
+          "pmid": "40630544",
+          "title": "Antiretroviral Therapy and Risk of Stroke in People with HIV in Zambia.",
+          "journal": "Res Sq",
+          "year": "2025"
+        },
+        {
+          "pmid": "37845760",
+          "title": "Myelin oligodendrocyte glycoprotein antibody-associated disease (MOGAD) and Human Immunodeficiency virus infection: dilemmas in diagnosis and management: a case series.",
+          "journal": "J Med Case Rep",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Robert S. Greenwood",
+      "profile_url": "https://www.med.unc.edu/neurology/people/robert-s-greenwood-md/",
+      "department": "Neurology",
+      "role": "Child-Neurology",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 91,
+      "pubmed_search": "ComputedAuthors:Greenwood RS",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "33346789",
+          "title": "Add-on Cannabidiol Treatment for Drug-Resistant Seizures in Tuberous Sclerosis Complex: A Placebo-Controlled Randomized Clinical Trial.",
+          "journal": "JAMA Neurol",
           "year": "2021"
         },
         {
-          "pmid": "31306388",
-          "title": "Delay in Cleft Lip and Palate Surgical Repair: An Institutional Review on Cleft Health Disparities in an Urban Population.",
-          "journal": "J Craniofac Surg",
+          "pmid": "31595648",
+          "title": "Clinical spectrum of individuals with pathogenic NF1 missense variants affecting p.Met1149, p.Arg1276, and p.Lys1423: genotype-phenotype study in neurofibromatosis type 1.",
+          "journal": "Hum Mutat",
+          "year": "2020"
+        },
+        {
+          "pmid": "30926685",
+          "title": "Neurology workforce deficits: Is allopathic medical student recruitment the answer?",
+          "journal": "Neurology",
           "year": "2019"
         },
         {
-          "pmid": "27305880",
-          "title": "Trends in Breast Reconstruction by Ethnicity: An Institutional Review Centered on the Treatment of an Urban Population.",
-          "journal": "Am Surg",
-          "year": "2016"
+          "pmid": "30800292",
+          "title": "Precision in pediatric epilepsy.",
+          "journal": "F1000Res",
+          "year": "2019"
+        },
+        {
+          "pmid": "30746764",
+          "title": "Clinical, neuroradiological, and biochemical features of SLC35A2-CDG patients.",
+          "journal": "J Inherit Metab Dis",
+          "year": "2019"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Eldad Hadar",
+      "profile_url": "https://www.med.unc.edu/neurosurgery/physicians/meet-eldad-hadar/",
+      "department": "Neurology",
+      "role": "",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Hadar Eldad",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "38395616",
+          "title": "Internal Representations Are Prioritized by Frontoparietal Theta Connectivity and Suppressed by alpha Oscillation Dynamics: Evidence from Concurrent Transcranial Magnetic Stimulation EEG and Invasive EEG.",
+          "journal": "J Neurosci",
+          "year": "2024"
+        },
+        {
+          "pmid": "38169752",
+          "title": "Day one postoperative MRI findings following electrode placement for deep brain stimulation: analysis of a large case series.",
+          "journal": "Front Neurol",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Brandon L. Waters",
+      "profile_url": "https://www.med.unc.edu/neurology/people/brandon-l-waters-md/",
+      "department": "Neurology",
+      "role": "Epilepsy",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Waters B",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Chris E. Hilliard, BS, CCRC",
+      "profile_url": "https://www.med.unc.edu/neurology/people/chris-e-hilliard-bs-ccrc/",
+      "department": "Neurology",
+      "role": "Neurosciences-Clinical-Trial-Unit",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 15,
+      "pubmed_search": "ComputedAuthors:Hilliard C",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "32371539",
+          "title": "Concurrent Definitive Immunoradiotherapy for Patients with Stage III-IV Head and Neck Cancer and Cisplatin Contraindication.",
+          "journal": "Clin Cancer Res",
+          "year": "2020"
+        },
+        {
+          "pmid": "31301758",
+          "title": "Associations Between Attention-Deficit/Hyperactivity Disorder and Various Eating Disorders: A Swedish Nationwide Population Study Using Multiple Genetically Informative Approaches.",
+          "journal": "Biol Psychiatry",
+          "year": "2019"
+        },
+        {
+          "pmid": "30115475",
+          "title": "Induction chemotherapy with carboplatin, nab-paclitaxel and cetuximab for at least N2b nodal status or surgically unresectable squamous cell carcinoma of the head and neck.",
+          "journal": "Oral Oncol",
+          "year": "2018"
+        },
+        {
+          "pmid": "29155802",
+          "title": "Investigation of common, low-frequency and rare genome-wide variation in anorexia nervosa.",
+          "journal": "Mol Psychiatry",
+          "year": "2018"
+        },
+        {
+          "pmid": "28827695",
+          "title": "Erratum: A genome-wide association study of anorexia nervosa suggests a risk locus implicated in dysregulated leptin signaling.",
+          "journal": "Sci Rep",
+          "year": "2017"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Trevi Mancilla",
+      "profile_url": "https://www.med.unc.edu/neurology/people/trevi-mancilla-md-ph-d/",
+      "department": "Neurology",
+      "role": "Fellowship",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Mancilla Trevi",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Lindsey J. Krawchuk",
+      "profile_url": "https://www.med.unc.edu/neurology/people/lindsey-j-krawchuk-md/",
+      "department": "Neurology",
+      "role": "Inpatient-Faculty-Supervisor",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Krawchuk LJ",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41131428",
+          "title": "Resource Utilization After Mechanical Thrombectomy: Is ICU Care Required for All Patients?",
+          "journal": "Neurocrit Care",
+          "year": "2026"
+        },
+        {
+          "pmid": "37802120",
+          "title": "Prognostic Neuroimaging Biomarkers in Acute Vascular Brain Injury and Traumatic Brain Injury.",
+          "journal": "Semin Neurol",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Brett Daniel Friedler",
+      "profile_url": "https://www.med.unc.edu/neurology/people/brett-daniel-friedler-md/",
+      "department": "Neurology",
+      "role": "",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Friedler Brett",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Kostika Mulo",
+      "profile_url": "https://www.med.unc.edu/neurology/people/kostika-mulo-do/",
+      "department": "Neurology",
+      "role": "Stroke",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Mulo Kostika",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Nathaniel Wooten",
+      "profile_url": "https://www.med.unc.edu/neurology/people/nathaniel-wooten-md/",
+      "department": "Neurology",
+      "role": "Als-Clinic",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Wooten Nathaniel",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40750791",
+          "title": "A New Case Linking a Somatic NRAS Variant to Encephalocraniocutaneous Lipomatosis.",
+          "journal": "Am J Med Genet A",
+          "year": "2025"
+        },
+        {
+          "pmid": "39962912",
+          "title": "Evaluation of an External Vibrating and Cold Device on Patient Pain Perception During Needle Electromyography.",
+          "journal": "Muscle Nerve",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Manisha Chopra, , CCRP",
+      "profile_url": "https://www.med.unc.edu/neurology/people/manisha-chopra-mbbs-ccrp/",
+      "department": "Neurology",
+      "role": "Adult-Ctrc-Pod-A",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 37,
+      "pubmed_search": "ComputedAuthors:Chopra Manisha",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41514039",
+          "title": "BCMA-directed mRNA CAR-T cell therapy for myasthenia gravis: exploratory biomarker analysis of a placebo-controlled phase 2b trial.",
+          "journal": "Nat Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "38365379",
+          "title": "Comparative effectiveness of azathioprine and mycophenolate mofetil for myasthenia gravis (PROMISE-MG): a prospective cohort study.",
+          "journal": "Lancet Neurol",
+          "year": "2024"
+        },
+        {
+          "pmid": "37353278",
+          "title": "Safety and clinical activity of autologous RNA chimeric antigen receptor T-cell therapy in myasthenia gravis (MG-001): a prospective, multicentre, open-label, non-randomised phase 1b/2a study.",
+          "journal": "Lancet Neurol",
+          "year": "2023"
+        },
+        {
+          "pmid": "37059508",
+          "title": "Safety and efficacy of zilucoplan in patients with generalised myasthenia gravis (RAISE): a randomised, double-blind, placebo-controlled, phase 3 study.",
+          "journal": "Lancet Neurol",
+          "year": "2023"
+        },
+        {
+          "pmid": "36211621",
+          "title": "Classical Complement Pathway Inhibition in a \"Human-On-A-Chip\" Model of Autoimmune Demyelinating Neuropathies.",
+          "journal": "Adv Ther (Weinh)",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Margaret DeRamus, MS, CCC-SLP",
+      "profile_url": "https://www.med.unc.edu/psych/directory/margaret-deramus/",
+      "department": "Neurology",
+      "role": "Whole-Brain-Health-Multidisciplinary-Clinic",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 13,
+      "pubmed_search": "ComputedAuthors:DeRamus Margaret",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41083159",
+          "title": "Criterion Validity, Scalability and Stability of Scoring on the Bayley-III in Children With Angelman Syndrome.",
+          "journal": "J Intellect Disabil Res",
+          "year": "2025"
+        },
+        {
+          "pmid": "39294386",
+          "title": "Experiences of Spanish-Speaking Families with a Remote Neurodevelopmental Assessment.",
+          "journal": "J Autism Dev Disord",
+          "year": "2026"
+        },
+        {
+          "pmid": "39256896",
+          "title": "White matter microstructure and functional connectivity in the brains of infants with Turner syndrome.",
+          "journal": "Cereb Cortex",
+          "year": "2024"
+        },
+        {
+          "pmid": "37314896",
+          "title": "Assessing Autism in Deaf/Hard-of-Hearing Youths: Interdisciplinary Teams, COVID Considerations, and Future Directions.",
+          "journal": "Perspect Psychol Sci",
+          "year": "2023"
+        },
+        {
+          "pmid": "35150089",
+          "title": "A multidisciplinary approach and consensus statement to establish standards of care for Angelman syndrome.",
+          "journal": "Mol Genet Genomic Med",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Marcia Cordova-Roth",
+      "profile_url": "https://sph.unc.edu/adv_profile/marcia-cordova-roth-mph/",
+      "department": "Neurology",
+      "role": "Whole-Brain-Health-Multidisciplinary-Clinic",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Cordova-Roth Marcia",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Blaise Morrison, , HSP-P, CRC, LPC",
+      "profile_url": "https://www.med.unc.edu/healthsciences/crmh/directory/blaise-morrison-phd-crc-pc/",
+      "department": "Neurology",
+      "role": "Whole-Brain-Health-Multidisciplinary-Clinic",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Morrison Blaise",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41541086",
+          "title": "Empowering stroke survivors beyond inpatient rehabilitation: the STRIDE program.",
+          "journal": "Front Stroke",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Morgan Parlier",
+      "profile_url": "https://www.med.unc.edu/psych/directory/morgan-parlier/",
+      "department": "Neurology",
+      "role": "Whole-Brain-Health-Multidisciplinary-Clinic",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 13,
+      "pubmed_search": "ComputedAuthors:Parlier Morgan",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "32372567",
+          "title": "Segregating patterns of copy number variations in extended autism spectrum disorder (ASD) pedigrees.",
+          "journal": "Am J Med Genet B Neuropsychiatr Genet",
+          "year": "2020"
+        },
+        {
+          "pmid": "29890955",
+          "title": "A genome-wide linkage study of autism spectrum disorder and the broad autism phenotype in extended pedigrees.",
+          "journal": "J Neurodev Disord",
+          "year": "2018"
+        },
+        {
+          "pmid": "26322138",
+          "title": "High rates of parkinsonism in adults with autism.",
+          "journal": "J Neurodev Disord",
+          "year": "2015"
+        },
+        {
+          "pmid": "25432440",
+          "title": "Using extended pedigrees to identify novel autism spectrum disorder (ASD) candidate genes.",
+          "journal": "Hum Genet",
+          "year": "2015"
+        },
+        {
+          "pmid": "25339495",
+          "title": "When father doesn't know best: selective disagreement between self-report and informant report of the broad autism phenotype in parents of a child with autism.",
+          "journal": "Autism Res",
+          "year": "2014"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Anne Harris",
+      "profile_url": "https://www.med.unc.edu/pediatrics/directory/anne-harris-phd/",
+      "department": "Neurology",
+      "role": "Whole-Brain-Health-Multidisciplinary-Clinic",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Harris A",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41421740",
+          "title": "Mining natural history collections for molecular treasures: mitogenomes and nuclear ribosomal transcription units of proteocephalid tapeworms (Onchoproteocephalidea) via genome skimming.",
+          "journal": "Int J Parasitol",
+          "year": "2025"
+        },
+        {
+          "pmid": "41183135",
+          "title": "On campus dormitories as viral transmission sinks: Phylodynamic insights into student housing networks during the COVID-19 pandemic.",
+          "journal": "PLoS Pathog",
+          "year": "2025"
+        },
+        {
+          "pmid": "39472826",
+          "title": "Unveiling putative modulators of mutable collagenous tissue in the brittle star Ophiomastix wendtii: an RNA-Seq analysis.",
+          "journal": "BMC Genomics",
+          "year": "2024"
+        },
+        {
+          "pmid": "38971244",
+          "title": "A gold standard dataset and evaluation of methods for lineage abundance estimation from wastewater.",
+          "journal": "Sci Total Environ",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Richard Sutherland",
+      "profile_url": "https://www.med.unc.edu/urology/directory/richard-sutherland-md/",
+      "department": "Neurology",
+      "role": "Tuberous-Sclerosis-Complex",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 11,
+      "pubmed_search": "ComputedAuthors:Sutherland R",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "31010641",
+          "title": "Opioid-prescribing patterns, storage, handling, and disposal in postoperative pediatric urology patients.",
+          "journal": "J Pediatr Urol",
+          "year": "2019"
+        },
+        {
+          "pmid": "30270102",
+          "title": "Improving surgical training by identifying the most common feedback trainees receive for index cases.",
+          "journal": "J Pediatr Urol",
+          "year": "2018"
+        },
+        {
+          "pmid": "23937953",
+          "title": "A novel method of teaching surgical techniques to residents--computerized enhanced visual learning (CEVL) with simulation to certify mastery of training: a model using newborn clamp circumcision.",
+          "journal": "J Pediatr Urol",
+          "year": "2013"
+        },
+        {
+          "pmid": "20599114",
+          "title": "Editorial comment.",
+          "journal": "Urology",
+          "year": "2010"
+        },
+        {
+          "pmid": "10799237",
+          "title": "Upper urinary tract manifestations of the VACTERL association.",
+          "journal": "J Urol",
+          "year": "2000"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Elizabeth Nieman",
+      "profile_url": "https://www.med.unc.edu/derm/directory/elizabeth-nieman-md/",
+      "department": "Neurology",
+      "role": "Tuberous-Sclerosis-Complex",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1LWsgtWaeHuQ5/bibliography/public",
+      "pubmed_count": 6,
+      "pubmed_search": "ComputedAuthors:Nieman Elizabeth",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39976419",
+          "title": "Variants of Uncertain Significance in Vascular Anomalies: The Role of Reclassification.",
+          "journal": "Pediatr Blood Cancer",
+          "year": "2025"
+        },
+        {
+          "pmid": "38967954",
+          "title": "Spontaneous multifocal pyogenic granulomas.",
+          "journal": "Pediatr Dermatol",
+          "year": "2024"
+        },
+        {
+          "pmid": "37654602",
+          "title": "Granuloma Annulare-Like Id Reaction to Inflamed Molluscum Contagiosum: A Case Report.",
+          "journal": "Clin Med Insights Pediatr",
+          "year": "2023"
+        },
+        {
+          "pmid": "37625520",
+          "title": "Repurposing of antiangiogenic agents for treatment of vascular anomalies.",
+          "journal": "Pharmacol Ther",
+          "year": "2023"
+        },
+        {
+          "pmid": "37335276",
+          "title": "Update on lasers in pediatric dermatology: how primary care providers can help patients and families navigate appropriate treatment options and timelines.",
+          "journal": "Curr Opin Pediatr",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "David E. Kram , MCR",
+      "profile_url": "https://www.unchealth.org/care-services/doctors/k/david-e-kram-md-mcr",
+      "department": "Neurology",
+      "role": "Tuberous-Sclerosis-Complex",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 5,
+      "pubmed_search": "ComputedAuthors:Kram DE",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42014872",
+          "title": "Correction: Automated computer vision and dose-response modeling improve throughput and accuracy of an ex vivo functional precision medicine platform.",
+          "journal": "Sci Rep",
+          "year": "2026"
+        },
+        {
+          "pmid": "41402401",
+          "title": "Automated computer vision and dose-response modeling improve throughput and accuracy of an ex vivo functional precision medicine platform.",
+          "journal": "Sci Rep",
+          "year": "2025"
+        },
+        {
+          "pmid": "41282203",
+          "title": "Rapid Functional Drug Screening of Passage-Zero Patient Brain Tumor Tissues Ex Vivo: Results from a Clinical Feasibility Study.",
+          "journal": "Res Sq",
+          "year": "2025"
+        },
+        {
+          "pmid": "41270976",
+          "title": "Informing development of brain cancer therapies within \"preclinical trials\" using ex vivo patient tumors.",
+          "journal": "Adv Drug Deliv Rev",
+          "year": "2026"
+        },
+        {
+          "pmid": "40964008",
+          "title": "Automated Computer Vision and Dose-Response Modeling Improve Throughput and Accuracy of an Ex Vivo Functional Precision Medicine Platform.",
+          "journal": "Res Sq",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Maja Kostic",
+      "profile_url": "https://www.med.unc.edu/ophth/directory/maja-kostic-md-phd/",
+      "department": "Neurology",
+      "role": "Tuberous-Sclerosis-Complex",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Kostic M",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Brent W. Kinder, , MS",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/brent-kinder-md-ms/",
+      "department": "Neurology",
+      "role": "Tuberous-Sclerosis-Complex",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Kinder BW",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40967605",
+          "title": "The Evaluation of the Oncologic Patient for Drug-Induced Pneumonitis.",
+          "journal": "Semin Respir Crit Care Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "40311083",
+          "title": "A 45-Year-Old Woman with New Breast Cancer Is Found to Have Organizing Pneumonia: Should She Proceed with Immunotherapy?",
+          "journal": "Ann Am Thorac Soc",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Elizabeth Jalazo",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/elizabeth-jalazo-md/",
+      "department": "Neurology",
+      "role": "Tuberous-Sclerosis-Complex",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 13,
+      "pubmed_search": "ComputedAuthors:Jalazo Elizabeth",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41795090",
+          "title": "Crossing the finish line towards a disease-modifying treatment for Angelman syndrome.",
+          "journal": "J Neurodev Disord",
+          "year": "2026"
+        },
+        {
+          "pmid": "41791391",
+          "title": "Newborn screening for type 1 diabetes using genome-based risk scores in the Early Check program.",
+          "journal": "Am J Hum Genet",
+          "year": "2026"
+        },
+        {
+          "pmid": "41089670",
+          "title": "Treatment of Single Patient With PMM2-Congenital Disorder of Glycosylation With Govorestat (AT-007), an Aldose Reductase Inhibitor.",
+          "journal": "JIMD Rep",
+          "year": "2025"
+        },
+        {
+          "pmid": "40913169",
+          "title": "Feasibility and clinical utility of expanded genomic newborn screening in the Early Check program.",
+          "journal": "Nat Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "39375994",
+          "title": "A systematic framework for selecting gene-condition pairs for inclusion in newborn sequencing panels: Early Check implementation.",
+          "journal": "Genet Med",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Keisha L. Gibson",
+      "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/keisha-gibson/",
+      "department": "Neurology",
+      "role": "Tuberous-Sclerosis-Complex",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 69,
+      "pubmed_search": "ComputedAuthors:Gibson KL",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42027203",
+          "title": "Text Messaging for Longitudinal Data Collection From Adults With Glomerular Disease: Lessons From the Cure Glomerulonephropathy Network.",
+          "journal": "Kidney Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "41748071",
+          "title": "Polygenic risk scores and HLA class II variants are biomarkers of corticosteroid response in childhood nephrotic syndrome.",
+          "journal": "Kidney Int",
+          "year": "2026"
+        },
+        {
+          "pmid": "41627919",
+          "title": "Is It Time to Change Our Approach to Childhood Lupus Nephritis?",
+          "journal": "J Am Soc Nephrol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41502806",
+          "title": "Circulating Testican-2 and MGT5A are Markers of Membranous Nephropathy.",
+          "journal": "Kidney Int Rep",
+          "year": "2026"
+        },
+        {
+          "pmid": "40970117",
+          "title": "Polygenic Risk Scores and HLA Class II Variants are Biomarkers of Corticosteroid Response in Childhood Nephrotic Syndrome.",
+          "journal": "medRxiv",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Scott Elton, , FAANS, FAAP",
+      "profile_url": "https://www.med.unc.edu/neurosurgery/directory/scott-elton-md-faans-faap/",
+      "department": "Neurology",
+      "role": "Tuberous-Sclerosis-Complex",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Elton Scott",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41785221",
+          "title": "An ex vivo functional biomarker of treatment response in pediatric low-grade glioma.",
+          "journal": "PLoS One",
+          "year": "2026"
+        },
+        {
+          "pmid": "41192954",
+          "title": "Maternal Health Literacy and Prenatal Learning Experiences Related to Diagnosis and Surgical Management: A Qualitative Study of Women With Pregnancies Associated With Surgically Correctable Congenital Anomalies.",
+          "journal": "Prenat Diagn",
+          "year": "2025"
+        },
+        {
+          "pmid": "38724863",
+          "title": "Automated translation accurately translates recorded pediatric neurosurgery clinic conversations between Spanish and English.",
+          "journal": "Neurosurg Rev",
+          "year": "2024"
+        },
+        {
+          "pmid": "38361025",
+          "title": "Synthetic interpolated DSA for radiation exposure reduction via gamma variate contrast flow modeling: a retrospective cohort study.",
+          "journal": "Eur Radiol Exp",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Mary Clay Federspiel, MSN, CPNP-PC",
+      "profile_url": "https://www.unchealth.org/care-services/doctors/f/mary-clay-federspiel-msn-cpnp-pc",
+      "department": "Neurology",
+      "role": "Child-Neurology-App",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Federspiel Mary",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Robert Christian",
+      "profile_url": "https://www.med.unc.edu/psych/people/robert-christian-md-faap/",
+      "department": "Neurology",
+      "role": "Tuberous-Sclerosis-Complex",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 11,
+      "pubmed_search": "ComputedAuthors:Christian R",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39437359",
+          "title": "Factors Associated with Substance Use Disorder among High-Need Adolescents and Young Adults in North Carolina.",
+          "journal": "N C Med J",
+          "year": "2024"
+        },
+        {
+          "pmid": "31134691",
+          "title": "Anxiety-associated and separation distress-associated behaviours in Angelman syndrome.",
+          "journal": "J Intellect Disabil Res",
+          "year": "2019"
+        },
+        {
+          "pmid": "29453706",
+          "title": "Family Experiences with the Diagnosis of Autism Spectrum Disorder: System Barriers and Facilitators of Efficient Diagnosis.",
+          "journal": "J Autism Dev Disord",
+          "year": "2018"
+        },
+        {
+          "pmid": "29164446",
+          "title": "Automated Detection of Repetitive Motor Behaviors as an Outcome Measurement in Intellectual and Developmental Disabilities.",
+          "journal": "J Autism Dev Disord",
+          "year": "2018"
+        },
+        {
+          "pmid": "28738821",
+          "title": "Quality improvement, implementation, and dissemination strategies to improve mental health care for children and adolescents: a systematic review.",
+          "journal": "Implement Sci",
+          "year": "2017"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Thiri W. Lin",
+      "profile_url": "https://www.med.unc.edu/neurology/people/thiri-w-lin-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Lin TW",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Chhitij Tiwari",
+      "profile_url": "https://www.med.unc.edu/neurology/people/chhitij-tiwari-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 7,
+      "pubmed_search": "ComputedAuthors:Tiwari Chhitij",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41075280",
+          "title": "Neurocognitive disorders, depression, and associated factors in younger and older adults from an urban-marginalized area of Peru.",
+          "journal": "Alzheimers Dement",
+          "year": "2025"
+        },
+        {
+          "pmid": "40058158",
+          "title": "Neuroepidemiology of transverse myelitis and its etiologies in Latin America: A systematic review and meta-analysis.",
+          "journal": "Mult Scler Relat Disord",
+          "year": "2025"
+        },
+        {
+          "pmid": "40018442",
+          "title": "Usefulness of lumbar puncture educational videos for older people with HIV.",
+          "journal": "Front Digit Health",
+          "year": "2025"
+        },
+        {
+          "pmid": "39050126",
+          "title": "Hospital outcomes of acute COVID-19 infection among patients with neurological conditions: a single-center study.",
+          "journal": "Front Neurol",
+          "year": "2024"
+        },
+        {
+          "pmid": "37450200",
+          "title": "Combined rapid sequence MRI protocol and skull radiography as an alternative to head CT in the evaluation of abusive head trauma in children: a pilot study.",
+          "journal": "Neurosurg Rev",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Natalia Avery",
+      "profile_url": "https://www.med.unc.edu/neurology/people/natalia-avery-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Avery Natalia",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Marshall Harris",
+      "profile_url": "https://www.med.unc.edu/neurology/people/marshall-harris-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 5,
+      "pubmed_search": "ComputedAuthors:Harris M",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41527767",
+          "title": "Certainty-weighted recognition memory: Potential applications for early detection and metacognition.",
+          "journal": "J Alzheimers Dis",
+          "year": "2026"
+        },
+        {
+          "pmid": "33662216",
+          "title": "High elevation rates of the Structured Inventory of Malingered Symptomatology (SIMS) in neuropsychological patients.",
+          "journal": "Appl Neuropsychol Adult",
+          "year": "2022"
+        },
+        {
+          "pmid": "9316184",
+          "title": "Ischemic but not thermal pain sensitivity varies across the menstrual cycle.",
+          "journal": "Psychosom Med",
+          "year": "1997"
+        },
+        {
+          "pmid": "9316183",
+          "title": "Relationship between pain sensitivity and resting arterial blood pressure in patients with painful temporomandibular disorders.",
+          "journal": "Psychosom Med",
+          "year": "1997"
+        },
+        {
+          "pmid": "8969871",
+          "title": "Pain sensitivity in patients with temporomandibular disorders: relationship to clinical and psychosocial factors.",
+          "journal": "Clin J Pain",
+          "year": "1996"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jocelyn Vuong",
+      "profile_url": "https://www.med.unc.edu/neurology/people/jocelyn-vuong-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Vuong J",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Brandon Welborn",
+      "profile_url": "https://www.med.unc.edu/neurology/people/brandon-welborn-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Welborn Brandon",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Kristen Adams",
+      "profile_url": "https://www.med.unc.edu/neurology/people/kristen-adams-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 7,
+      "pubmed_search": "ComputedAuthors:Adams K",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "38618528",
+          "title": "Genotype-informed nutrition counselling in clinical practice.",
+          "journal": "BMJ Nutr Prev Health",
+          "year": "2023"
+        },
+        {
+          "pmid": "28253745",
+          "title": "Survey of Nutrition Education in U.S. Medical Schools - An Instructor-Based Analysis.",
+          "journal": "Med Educ Online",
+          "year": "2001"
+        },
+        {
+          "pmid": "20962306",
+          "title": "Nutrition in medicine: nutrition education for medical students and residents.",
+          "journal": "Nutr Clin Pract",
+          "year": "2010"
+        },
+        {
+          "pmid": "20736683",
+          "title": "Nutrition education in U.S. medical schools: latest update of a national survey.",
+          "journal": "Acad Med",
+          "year": "2010"
+        },
+        {
+          "pmid": "16600955",
+          "title": "The evolution of Nutrition in Medicine, a computer-assisted nutrition curriculum.",
+          "journal": "Am J Clin Nutr",
+          "year": "2006"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Nikash Shankar",
+      "profile_url": "https://www.med.unc.edu/neurology/people/nikash-shankar-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Shankar Nikash",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Casey Manzanero",
+      "profile_url": "https://www.med.unc.edu/neurology/people/casey-manzanero-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Manzanero Casey",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Sanjana Madishetty",
+      "profile_url": "https://www.med.unc.edu/neurology/people/sanjana-madishetty-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Madishetty Sanjana",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Abigail Lange",
+      "profile_url": "https://www.med.unc.edu/neurology/people/abigail-lange-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Lange A",
+      "pubmed_count": 3,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Shivansh Chawla",
+      "profile_url": "https://www.med.unc.edu/neurology/people/shivansh-chawla-do/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 79,
+      "pubmed_search": "ComputedAuthors:Chawla S",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41917300",
+          "title": "Comparison of neonatal outcomes of term neonates with meconium-stained amniotic fluid before and after routine endotracheal suctioning strategy at birth.",
+          "journal": "J Perinatol",
+          "year": "2026"
+        },
+        {
+          "pmid": "39982720",
+          "title": "Short Duration of Antenatal Corticosteroid Exposure and Outcomes in Extremely Preterm Infants.",
+          "journal": "JAMA Netw Open",
+          "year": "2025"
+        },
+        {
+          "pmid": "39521175",
+          "title": "Respiratory Outcomes of Infants Born Extremely Preterm in the Necrotizing Enterocolitis Surgery Trial.",
+          "journal": "J Pediatr",
+          "year": "2025"
+        },
+        {
+          "pmid": "39354211",
+          "title": "Association of antenatal steroid administration with neonatal morbidities among late preterm multiple gestation infants.",
+          "journal": "J Perinatol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39288987",
+          "title": "Trends in sex differences in neurodevelopmental outcomes among extremely preterm infants.",
+          "journal": "Arch Dis Child Fetal Neonatal Ed",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Faris Almubaslat",
+      "profile_url": "https://www.med.unc.edu/neurology/people/faris-almubaslat-md-phd/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Almubaslat Faris",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40058158",
+          "title": "Neuroepidemiology of transverse myelitis and its etiologies in Latin America: A systematic review and meta-analysis.",
+          "journal": "Mult Scler Relat Disord",
+          "year": "2025"
+        },
+        {
+          "pmid": "37744515",
+          "title": "A review of neurological health disparities in Peru.",
+          "journal": "Front Public Health",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Fatemeh Sadeghifar",
+      "profile_url": "https://www.med.unc.edu/neurology/people/fatemeh-sadeghifar-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Sadeghifar Fatemeh",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Katherine Meyer",
+      "profile_url": "https://www.med.unc.edu/neurology/people/katherine-meyer-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Meyer K",
+      "pubmed_count": 21,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42307870",
+          "title": "Metabolic pathways associated with cardiometabolic risk effects on cognition in middle-aged adults: the CARDIA study.",
+          "journal": "Metabolomics",
+          "year": "2026"
+        },
+        {
+          "pmid": "41552797",
+          "title": "Sociocultural Considerations in Heart Failure Self-Care Readiness: A Thematic Analysis.",
+          "journal": "SAGE Open Nurs",
+          "year": "2026"
+        },
+        {
+          "pmid": "40886099",
+          "title": "A Mixed Methods Analysis of Factors That Influence the Diet Quality and Decision-Making of Adolescent Girls in an Urban Informal Settlement in Kenya.",
+          "journal": "Matern Child Nutr",
+          "year": "2026"
+        },
+        {
+          "pmid": "38566176",
+          "title": "Dietary quality and dietary greenhouse gas emissions in the USA: a comparison of the planetary health diet index, healthy eating index-2015, and dietary approaches to stop hypertension.",
+          "journal": "Int J Behav Nutr Phys Act",
+          "year": "2024"
+        },
+        {
+          "pmid": "38309827",
+          "title": "Adherence to the Planetary Health Diet Index and correlation with nutrients of public health concern: an analysis of NHANES 2003-2018.",
+          "journal": "Am J Clin Nutr",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Ray Jhun",
+      "profile_url": "https://www.med.unc.edu/neurology/people/ray-jhun-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Jhun Ray",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Sean Hamill",
+      "profile_url": "https://www.med.unc.edu/neurology/people/sean-hamill-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Hamill Sean",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Rusudani Goletiani",
+      "profile_url": "https://www.med.unc.edu/neurology/people/rusudani-goletiani-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Goletiani Rusudani",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Tricia",
+      "profile_url": "https://www.med.unc.edu/neurology/people/tricia-factora-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Tricia",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Sergey Antipenko",
+      "profile_url": "https://www.med.unc.edu/neurology/people/sergey-antipenko-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Antipenko Sergey",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Aaron Meller",
+      "profile_url": "https://www.med.unc.edu/neurology/people/aaron-meller-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Meller Aaron",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Luke Kupcha",
+      "profile_url": "https://www.med.unc.edu/neurology/people/luke-kupcha-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Kupcha Luke",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Nikoloz Karazanashvili",
+      "profile_url": "https://www.med.unc.edu/neurology/people/nikoloz-karazanashvili-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Karazanashvili Nikoloz",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "36579226",
+          "title": "Recurrent Embolic Strokes From Prosthetic Valve Endocarditis With Negative Initial Evaluation in a Non-Toxic-Appearing Patient: A Case Report.",
+          "journal": "Cureus",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Amanda Crooks",
+      "profile_url": "https://www.med.unc.edu/neurology/people/amanda-crooks-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Crooks A",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Xem Bui",
+      "profile_url": "https://www.med.unc.edu/neurology/people/xem-bui-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Bui Xem",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Kelby Brown, Jr",
+      "profile_url": "https://www.med.unc.edu/neurology/people/kelby-brown-jr-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 123,
+      "pubmed_search": "ComputedAuthors:Brown K",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42150895",
+          "title": "Long-Term Functional Hearing Preservation in Pediatric Cochlear Implant Recipients.",
+          "journal": "Otol Neurotol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42049500",
+          "title": "Electrode Contacts in the Functional Hearing Region for Pediatric Cochlear Implant Recipients.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        },
+        {
+          "pmid": "41981750",
+          "title": "Association of Total Cochlear Volume and Initial Hearing Preservation With a Straight Electrode Array.",
+          "journal": "Otol Neurotol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41796981",
+          "title": "Cochlear Implant Recipients With Electrodes in the Acoustic Region: Long-Term Hearing Preservation.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        },
+        {
+          "pmid": "41792877",
+          "title": "Attrition in Cochlear Implant Research: Sociodemographic, Audiologic, and Performance Variables.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Claire Books",
+      "profile_url": "https://www.med.unc.edu/neurology/people/claire-books-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Books Claire",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Laura de Lima Xavier",
+      "profile_url": "https://www.med.unc.edu/neurology/people/laura-de-lima-xavier-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Xavier Laura",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "John K. Whalen",
+      "profile_url": "https://www.med.unc.edu/neurology/people/john-k-whalen-do/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Whalen J",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40182314",
+          "title": "Implementation of 2HELPS2B Seizure Risk Score: A Cost-Effective Approach to Seizure Detection in the Intensive Care Units.",
+          "journal": "Neurol Clin Pract",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Diana Ontiveros",
+      "profile_url": "https://www.med.unc.edu/neurology/people/diana-ontiveros-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Ontiveros Diana",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "37686793",
+          "title": "Description of Baseline Nutrition and Physical Activity Knowledge and Behavior in Acute Stroke/TIA Patients Enrolled in the Health Education on Information Retention and Behavior Change in Stroke (HERBS) Pilot Trial.",
+          "journal": "Nutrients",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Joshua Nardin",
+      "profile_url": "https://www.med.unc.edu/neurology/people/joshua-nardin-do/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Nardin Joshua",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41466101",
+          "title": "Patient Outcomes Among Medicare Beneficiaries With Guillain-Barr&#xe9; Syndrome.",
+          "journal": "J Peripher Nerv Syst",
+          "year": "2026"
+        },
+        {
+          "pmid": "41342796",
+          "title": "Characterizing Guillain-Barr&#xe9; Risk Factors Among Traditional Medicare Beneficiaries.",
+          "journal": "Inquiry",
+          "year": "2025"
+        },
+        {
+          "pmid": "40513035",
+          "title": "Clinical and Electrodiagnostic Findings in Anti-myelin-Associated Glycoprotein Antibody Polyneuropathy: A Single Center Review.",
+          "journal": "J Clin Neuromuscul Dis",
+          "year": "2025"
+        },
+        {
+          "pmid": "38746856",
+          "title": "Evaluating algorithms for identifying incident Guillain-Barr&#xe9; Syndrome in Medicare fee-for-service claims.",
+          "journal": "Glob Epidemiol",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Alan D. Howard, Jr",
+      "profile_url": "https://www.med.unc.edu/neurology/people/alan-d-howard-jr-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Howard A",
+      "pubmed_count": 7,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Rachel",
+      "profile_url": "https://www.med.unc.edu/neurology/people/rachel-do-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Rachel",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "James Andrews",
+      "profile_url": "https://www.med.unc.edu/neurology/people/james-andrews-md/",
+      "department": "Neurology",
+      "role": "Adult-Resident",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 41,
+      "pubmed_search": "ComputedAuthors:Andrews J",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41776147",
+          "title": "Exploring the Lived Experiences of Individuals with Amyotrophic Lateral Sclerosis (ALS): A Qualitative Study and Conceptual Model of Signs, Symptoms, and Functional Impacts.",
+          "journal": "Neurol Ther",
+          "year": "2026"
+        },
+        {
+          "pmid": "41661214",
+          "title": "Long-Term Tofersen in SOD1 Amyotrophic Lateral Sclerosis.",
+          "journal": "JAMA Neurol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41553108",
+          "title": "The Use of Durable Medical Equipment in COURAGE-ALS, a Phase 3, Multicentre, Randomized Clinical Trial for ALS.",
+          "journal": "Muscle Nerve",
+          "year": "2026"
+        },
+        {
+          "pmid": "41463070",
+          "title": "Quantitative Measures of Time to Loss of 15% Vital Capacity and Survival Extension in Slowly Progressive Amyotrophic Lateral Sclerosis (ALS) Patients Treated with the Immune Regulator NP001 Suggests an Immunopathogenic Subset of ALS.",
+          "journal": "Biomedicines",
+          "year": "2025"
+        },
+        {
+          "pmid": "41361897",
+          "title": "Utility of patient subgrouping in ALS clinical trials: a World Federation of Neurology white paper.",
+          "journal": "Amyotroph Lateral Scler Frontotemporal Degener",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Theodore Yip",
+      "profile_url": "https://www.med.unc.edu/phyrehab/directory/theodore-yip-md/",
+      "department": "Neurology",
+      "role": "Batten-Disease-Coe",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_hint": "theodore yip",
+      "pubmed_search": "Yip Theodore",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Andrea Markl Corse",
+      "profile_url": "https://www.med.unc.edu/neurology/people/andrea-markl-corse-md/",
+      "department": "Neurology",
+      "role": "Als-Clinic",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Corse Andrea",
+      "pubmed_count": 2,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Hailey Segall, MS, CGC",
+      "profile_url": "https://www.med.unc.edu/neurology/people/hailey-segall-ms-cgc/",
+      "department": "Neurology",
+      "role": "Als-Clinic",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Segall Hailey",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Deborah F. Gelinas",
+      "profile_url": "https://www.med.unc.edu/neurology/people/deborah-f-gelinas-md/",
+      "department": "Neurology",
+      "role": "Als-Clinic",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 12,
+      "pubmed_search": "ComputedAuthors:Gelinas D",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41696747",
+          "title": "Real-world treatment utilization in adults with chronic inflammatory demyelinating polyneuropathy in the United States.",
+          "journal": "Front Neurol",
+          "year": "2025"
+        },
+        {
+          "pmid": "41534441",
+          "title": "Impact of corticosteroid use on comorbidities in patients with myasthenia gravis in the US National Veterans Affairs Health Network.",
+          "journal": "J Neurol Sci",
+          "year": "2026"
+        },
+        {
+          "pmid": "40845416",
+          "title": "Reduction in oral glucocorticoid use after efgartigimod initiation in clinical practice among patients with generalized myasthenia gravis.",
+          "journal": "J Neurol Sci",
+          "year": "2025"
+        },
+        {
+          "pmid": "40223516",
+          "title": "ADAPT NXT: Fixed Cycles or Every-Other-Week IV Efgartigimod in Generalized Myasthenia Gravis.",
+          "journal": "Ann Clin Transl Neurol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39963480",
+          "title": "Racial disparities in acute care utilization among individuals with myasthenia gravis.",
+          "journal": "Front Public Health",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Eric Creed",
+      "profile_url": "https://www.med.unc.edu/neurology/people/eric-creed-do/",
+      "department": "Neurology",
+      "role": "Als-Clinic",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Creed Eric",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41503688",
+          "title": "Risk of Infection Following Clearance of Immunoglobulin G by Plasma Exchange in Myasthenia Gravis.",
+          "journal": "Muscle Nerve",
+          "year": "2026"
+        },
+        {
+          "pmid": "35875279",
+          "title": "Case Report of Dysmorphic Physical Findings in Male With Shapiro Syndrome.",
+          "journal": "Cureus",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Vinay Chaudhry",
+      "profile_url": "https://www.med.unc.edu/neurology/people/vinay-chaudhry-md/",
+      "department": "Neurology",
+      "role": "Als-Clinic",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Chaudhry Vinay",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39804640",
+          "title": "Five-Year Results With Patisiran for Hereditary Transthyretin Amyloidosis With Polyneuropathy: A Randomized Clinical Trial With Open-Label Extension.",
+          "journal": "JAMA Neurol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39748889",
+          "title": "The Historical Case for a Strong and Diverse Neurology Clerkship Leadership Team.",
+          "journal": "Neurol Educ",
+          "year": "2024"
+        },
+        {
+          "pmid": "39506207",
+          "title": "Vitamin D levels do not correlate with severity of idiopathic peripheral neuropathy.",
+          "journal": "J Peripher Nerv Syst",
+          "year": "2024"
+        },
+        {
+          "pmid": "37788681",
+          "title": "Neuroprognostication: Guillain-Barr&#xe9; Syndrome.",
+          "journal": "Semin Neurol",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Tamara Strohm",
+      "profile_url": "https://www.med.unc.edu/neurology/people/tamara-strohm-md/",
+      "department": "Neurology",
+      "role": "Medical-Students",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 13,
+      "pubmed_search": "ComputedAuthors:Strohm Tamara",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40087034",
+          "title": "Corrigendum to \"ROTEM and von Willebrand Factor in COVID patients presenting with acute ischemic stroke: A case series: ROTEM and von Willebrand Factor in COVID-19 Related Stroke\" [Journal of Stroke and Cerebrovascular Diseases, Volume 33 (11), 2024 Nov 1, p.107894].",
+          "journal": "J Stroke Cerebrovasc Dis",
+          "year": "2025"
+        },
+        {
+          "pmid": "39844965",
+          "title": "Factor XIa Inhibitor Reversal in Intracranial Hemorrhage: A Case Report.",
+          "journal": "Neurohospitalist",
+          "year": "2025"
+        },
+        {
+          "pmid": "39106921",
+          "title": "ROTEM and von Willebrand Factor in COVID patients presenting with acute ischemic stroke: A case series: ROTEM and von Willebrand Factor in COVID-19 Related Stroke.",
+          "journal": "J Stroke Cerebrovasc Dis",
+          "year": "2024"
+        },
+        {
+          "pmid": "35667164",
+          "title": "Collaborative Integration of Palliative Care in Critically Ill Stroke Patients in the Neurocritical Care Unit: A Single Center Pilot Study.",
+          "journal": "J Stroke Cerebrovasc Dis",
+          "year": "2022"
+        },
+        {
+          "pmid": "34851193",
+          "title": "Response to Mroz et al., Applying the Care and Communication Bundle to Promote Palliative Care in a Neuro-Intensive Care Unit: Why and How (DOI: 10.1089/jpm.2020.0730).",
+          "journal": "J Palliat Med",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Atif Tahir Sheikh",
+      "profile_url": "https://www.med.unc.edu/neurology/people/atif-tahir-sheikh-md/",
+      "department": "Neurology",
+      "role": "Epilepsy",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Sheikh Atif",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42030518",
+          "title": "Postapproval Study for Brain-Responsive Neurostimulation for Drug-Resistant Focal Epilepsy: Three-Year Efficacy and Interim Safety Results.",
+          "journal": "Neurology",
+          "year": "2026"
+        },
+        {
+          "pmid": "32642638",
+          "title": "Lacosamide-associated second-degree atrioventricular block in a healthy, young athlete.",
+          "journal": "Epilepsy Behav Rep",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Nathan A. Walker",
+      "profile_url": "https://www.med.unc.edu/neurology/people/nathan-a-walker-md/",
+      "department": "Neurology",
+      "role": "Inpatient-Faculty-Supervisor",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Walker NA",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "35499278",
+          "title": "Sex differences in Epworth Sleepiness Scale normalization with continuous positive airway pressure.",
+          "journal": "J Clin Sleep Med",
+          "year": "2022"
+        },
+        {
+          "pmid": "31938991",
+          "title": "Clinical utility of the Epworth sleepiness scale.",
+          "journal": "Sleep Breath",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Bradley V. Vaughn",
+      "profile_url": "https://www.med.unc.edu/neurology/people/bradley-v-vaughn-md/",
+      "department": "Neurology",
+      "role": "Epilepsy",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 61,
+      "pubmed_search": "ComputedAuthors:Vaughn BV",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41424498",
+          "title": "Rett syndrome: a review of clinical manifestations and therapeutic approaches.",
+          "journal": "Front Sleep",
+          "year": "2024"
+        },
+        {
+          "pmid": "40149249",
+          "title": "Sleep and Cancer.",
+          "journal": "Cancers (Basel)",
+          "year": "2025"
+        },
+        {
+          "pmid": "37072321",
+          "title": "Sleep apnoea and hypoventilation in patients with five major types of muscular dystrophy.",
+          "journal": "BMJ Open Respir Res",
+          "year": "2023"
+        },
+        {
+          "pmid": "35801259",
+          "title": "Nonpharmacologic Interventions and Seizure Frequency in Patients With Psychogenic Nonepileptic Seizures: An Integrative Review.",
+          "journal": "J Am Psychiatr Nurses Assoc",
+          "year": "2023"
+        },
+        {
+          "pmid": "31375204",
+          "title": "Non-REM Parasomnia: The Promise of Precision Medicine.",
+          "journal": "Sleep Med Clin",
+          "year": "2019"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Dena Williams",
+      "profile_url": "https://www.med.unc.edu/neurology/people/dena-williams-do/",
+      "department": "Neurology",
+      "role": "Education",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Williams Dena",
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41131428",
+          "title": "Resource Utilization After Mechanical Thrombectomy: Is ICU Care Required for All Patients?",
+          "journal": "Neurocrit Care",
+          "year": "2026"
+        },
+        {
+          "pmid": "39615330",
+          "title": "Curriculum innovation: Interactive educational workshop improves neurology resident knowledge of multiple sclerosis.",
+          "journal": "Mult Scler Relat Disord",
+          "year": "2025"
+        },
+        {
+          "pmid": "37671233",
+          "title": "Recurrent Reversible Cerebral Vasoconstriction Syndrome: A Report of Two Cases.",
+          "journal": "Cureus",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "James Pham Ho",
+      "profile_url": "https://www.med.unc.edu/neurology/people/james-pham-ho-md/",
+      "department": "Neurology",
+      "role": "Comprehensive-Stroke-Center-Core-Team",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 11,
+      "pubmed_search": "ComputedAuthors:Ho James",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41661614",
+          "title": "Endovascular Therapy for Basilar Occlusions-The ATTENTION Trial.",
+          "journal": "JAMA Neurol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41131428",
+          "title": "Resource Utilization After Mechanical Thrombectomy: Is ICU Care Required for All Patients?",
+          "journal": "Neurocrit Care",
+          "year": "2026"
+        },
+        {
+          "pmid": "39496213",
+          "title": "Contemporary Management of Acute Ischemic Stroke.",
+          "journal": "Annu Rev Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "38361025",
+          "title": "Synthetic interpolated DSA for radiation exposure reduction via gamma variate contrast flow modeling: a retrospective cohort study.",
+          "journal": "Eur Radiol Exp",
+          "year": "2024"
+        },
+        {
+          "pmid": "37778046",
+          "title": "Does the clopidogrel CYP2C19 genotype assay predict postprocedure stenosis in cerebral aneurysms treated with a flow diverter?",
+          "journal": "Neurosurg Focus",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Michael Wang",
+      "profile_url": "https://www.med.unc.edu/neurology/people/michael-wang-md/",
+      "department": "Neurology",
+      "role": "Medical-Students",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1ZkIT7m18cnA95/bibliography/public",
+      "pubmed_count": 79,
+      "pubmed_search": "ComputedAuthors:Wang Michael",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42054679",
+          "title": "Mim8 Bispecific Antibody Prophylaxis in Hemophilia A with or without Inhibitors.",
+          "journal": "N Engl J Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "41419413",
+          "title": "Corrigendum to 'Real-world use of protein C concentrate for the treatment of patients with protein C deficiency: an international registry': [Journal of Thrombosis and Haemostasis 23(11) (2025) 3569-3577].",
+          "journal": "J Thromb Haemost",
+          "year": "2026"
+        },
+        {
+          "pmid": "41358585",
+          "title": "Final Analysis of a Study of Etranacogene Dezaparvovec for Hemophilia B.",
+          "journal": "N Engl J Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "41220279",
+          "title": "Safety and Effectiveness of Emicizumab in People With Haemophilia A Enrolled in the ATHN 7 Haemophilia Natural History Study.",
+          "journal": "Haemophilia",
+          "year": "2026"
+        },
+        {
+          "pmid": "40918739",
+          "title": "Inhibitor development and clinical characteristics in children with severe hemophilia A in the ATHN 8 US cohort study.",
+          "journal": "Blood Vessel Thromb Hemost",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Ming-Chieh Ding",
+      "profile_url": "https://www.med.unc.edu/neurology/people/ming-chieh-ding-md-phd/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Ding Ming-Chieh",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41543035",
+          "title": "Cilostazol increases collateral remodeling and reduces the severity of ischemic stroke.",
+          "journal": "J Cereb Blood Flow Metab",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Tanya P. Garcia",
+      "profile_url": "https://www.med.unc.edu/neurology/people/tanya-p-garcia-phd/",
+      "department": "Neurology",
+      "role": "Huntington-Disease-Program",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 20,
+      "pubmed_search": "ComputedAuthors:Garcia TP",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41957667",
+          "title": "Higher educational attainment in Huntington disease families: evidence from the Enroll-HD study.",
+          "journal": "Orphanet J Rare Dis",
+          "year": "2026"
+        },
+        {
+          "pmid": "41809115",
+          "title": "Wearable Ultrasound Sensing with Dual Arrays and Machine Learning for Real-Time Tremor Characterization and Antagonist Muscle Monitoring.",
+          "journal": "IEEE Trans Instrum Meas",
+          "year": "2026"
+        },
+        {
+          "pmid": "41307364",
+          "title": "Fertility Treatment, Female-Factor Infertility, and Autism Spectrum Disorder: Study to Explore Early Development.",
+          "journal": "Paediatr Perinat Epidemiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41203924",
+          "title": "Changes in Autism Traits from Early Childhood To Adolescence in the Study To Explore Early Development.",
+          "journal": "J Autism Dev Disord",
+          "year": "2025"
+        },
+        {
+          "pmid": "40985162",
+          "title": "Periconceptional Hormonal Contraception Use and Autism Spectrum Disorder in the Study to Explore Early Development.",
+          "journal": "Paediatr Perinat Epidemiol",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Robert Kanser",
+      "profile_url": "https://www.med.unc.edu/neurology/people/robert-kanser-phd/",
+      "department": "Neurology",
+      "role": "Huntington-Disease-Program",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Kanser Robert",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Hokuto Morita, , MA",
+      "profile_url": "https://www.med.unc.edu/neurology/people/hokuto-morita-md-ma/",
+      "department": "Neurology",
+      "role": "Movement-Disorders",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Morita H",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Jenna Lea, MS, CGC",
+      "profile_url": "https://www.med.unc.edu/neurology/people/jeanna-lea-ms-cgc/",
+      "department": "Neurology",
+      "role": "Child-Neurology",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Lea J",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "31395051",
+          "title": "A qualitative study of the process of adoption, implementation and enforcement of smoke-free policies in privately-owned affordable housing.",
+          "journal": "BMC Public Health",
+          "year": "2019"
+        },
+        {
+          "pmid": "30624678",
+          "title": "Implementation and enforcement of smoke-free policies in public housing.",
+          "journal": "Health Educ Res",
+          "year": "2019"
+        },
+        {
+          "pmid": "29935078",
+          "title": "Developing Smoke-Free Policies in Public Housing: Perspectives From Early Adopters in 2 Southern States.",
+          "journal": "Prev Chronic Dis",
+          "year": "2018"
+        },
+        {
+          "pmid": "9019113",
+          "title": "Opportunities for cooperation. A dialogue with the Saratov Medical University, Russia.",
+          "journal": "N C Med J",
+          "year": "1997"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Zachary Cohen",
+      "profile_url": "https://www.med.unc.edu/psych/people/zachary-cohen-md/",
+      "department": "Neurology",
+      "role": "Adjunct-Faculty",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Cohen Zachary",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Yasmeen Rauf",
+      "profile_url": "https://www.med.unc.edu/neurology/people/yasmeen-rauf-md/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Rauf Yasmeen",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41282203",
+          "title": "Rapid Functional Drug Screening of Passage-Zero Patient Brain Tumor Tissues Ex Vivo: Results from a Clinical Feasibility Study.",
+          "journal": "Res Sq",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Matthew Field Sharrock",
+      "profile_url": "https://www.med.unc.edu/neurology/people/matthew-field-sharrock-md/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 8,
+      "pubmed_search": "ComputedAuthors:Sharrock Matthew",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "35434846",
+          "title": "Bayesian deep learning outperforms clinical trial estimators of intracerebral and intraventricular hemorrhage volume.",
+          "journal": "J Neuroimaging",
+          "year": "2022"
+        },
+        {
+          "pmid": "34303090",
+          "title": "Post-Trial Enhanced Deployment and Technical Performance with the MISTIE Procedure per Lessons Learned.",
+          "journal": "J Stroke Cerebrovasc Dis",
+          "year": "2021"
+        },
+        {
+          "pmid": "32980970",
+          "title": "3D Deep Neural Network Segmentation of Intracerebral Hemorrhage: Development and Validation for Clinical Trials.",
+          "journal": "Neuroinformatics",
+          "year": "2021"
+        },
+        {
+          "pmid": "32629092",
+          "title": "Postcardiac arrest neurological prognostication with quantitative regional cerebral densitometry.",
+          "journal": "Resuscitation",
+          "year": "2020"
+        },
+        {
+          "pmid": "31045914",
+          "title": "Noninvasive Neurological Monitoring in Extracorporeal Membrane Oxygenation.",
+          "journal": "ASAIO J",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Weiting Zhang",
+      "profile_url": "https://www.med.unc.edu/neurology/people/weiting-zhang-md-phd/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/weiting.zhang.1/bibliography/public",
+      "pubmed_count": 17,
+      "pubmed_search": "ComputedAuthors:Zhang W",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40679746",
+          "title": "Exploring the Impact of Insurance Gaps on Healthcare Burden for Autistic Children.",
+          "journal": "J Autism Dev Disord",
+          "year": "2025"
+        },
+        {
+          "pmid": "38285693",
+          "title": "Expanding capabilities to evaluate readiness for return to duty after mTBI: The CAMP study protocol.",
+          "journal": "PLoS One",
+          "year": "2024"
+        },
+        {
+          "pmid": "37847662",
+          "title": "Validity and Responsiveness of the Portable Warrior Test of Tactical Agility After Rehabilitation in Service Members With Mild Traumatic Brain Injury.",
+          "journal": "Phys Ther",
+          "year": "2023"
+        },
+        {
+          "pmid": "37508725",
+          "title": "Geographic Variation in Preventable Hospitalizations among US Children with Autism.",
+          "journal": "Children (Basel)",
+          "year": "2023"
+        },
+        {
+          "pmid": "37142910",
+          "title": "Racial Disparities in Hospitalization Due to Ambulatory Care Sensitive Conditions Among U.S. Children with Autism.",
+          "journal": "J Autism Dev Disord",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Susan Wilson, DNP, , MSN, ANP-C",
+      "profile_url": "https://www.med.unc.edu/neurology/people/susan-wilson-dnp-rn-msn-anp-c/",
+      "department": "Neurology",
+      "role": "",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 13,
+      "pubmed_search": "ComputedAuthors:Wilson Susan",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39050126",
+          "title": "Hospital outcomes of acute COVID-19 infection among patients with neurological conditions: a single-center study.",
+          "journal": "Front Neurol",
+          "year": "2024"
+        },
+        {
+          "pmid": "37536783",
+          "title": "Stroke: Hospital Nursing Management Within the First 24 Hours.",
+          "journal": "Nurs Clin North Am",
+          "year": "2023"
+        },
+        {
+          "pmid": "36071331",
+          "title": "Association of Serum Pyridoxal Phosphate Levels with Established Status Epilepticus.",
+          "journal": "Neurocrit Care",
+          "year": "2023"
+        },
+        {
+          "pmid": "35864766",
+          "title": "SARS-CoV-2 infection and seizures: the perfect storm.",
+          "journal": "J Integr Neurosci",
+          "year": "2022"
+        },
+        {
+          "pmid": "35862046",
+          "title": "Comparison of Outcomes of Ischemic Stroke Initially Imaged With Cranial Computed Tomography Alone vs Computed Tomography Plus Magnetic Resonance Imaging.",
+          "journal": "JAMA Netw Open",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Luigi Troiani, PA",
+      "profile_url": "https://www.med.unc.edu/neurology/people/luigi-troiani-pa-mhs/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 12,
+      "pubmed_search": "ComputedAuthors:Troiani Luigi",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40018442",
+          "title": "Usefulness of lumbar puncture educational videos for older people with HIV.",
+          "journal": "Front Digit Health",
+          "year": "2025"
+        },
+        {
+          "pmid": "26307155",
+          "title": "Varicella-Zoster Immunity in US Healthcare Personnel With Self-Reported History of Disease.",
+          "journal": "Infect Control Hosp Epidemiol",
+          "year": "2015"
+        },
+        {
+          "pmid": "26239974",
+          "title": "Pharmacokinetic Modeling of Lamivudine and Zidovudine Triphosphates Predicts Differential Pharmacokinetics in Seminal Mononuclear Cells and Peripheral Blood Mononuclear Cells.",
+          "journal": "Antimicrob Agents Chemother",
+          "year": "2015"
+        },
+        {
+          "pmid": "22987661",
+          "title": "Diffusion tensor imaging based network analysis detects alterations of neuroconnectivity in patients with clinically early relapsing-remitting multiple sclerosis.",
+          "journal": "Hum Brain Mapp",
+          "year": "2013"
+        },
+        {
+          "pmid": "21856936",
+          "title": "Simvastatin inhibits IFN regulatory factor 4 expression and Th17 cell differentiation in CD4+ T cells derived from patients with multiple sclerosis.",
+          "journal": "J Immunol",
+          "year": "2011"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Rebecca Traub",
+      "profile_url": "https://www.med.unc.edu/neurology/people/rebecca-traub-md/",
+      "department": "Neurology",
+      "role": "Als-Clinic",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1Fs5j0MBP5bQB/bibliography/public",
+      "pubmed_count": 12,
+      "pubmed_search": "ComputedAuthors:Traub Rebecca",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41721550",
+          "title": "Ultra High-Resolution Ultrasound Features of Carpal Tunnel Syndrome in Transthyretin Amyloidosis: A Cross-Sectional Study.",
+          "journal": "Muscle Nerve",
+          "year": "2026"
+        },
+        {
+          "pmid": "41514039",
+          "title": "BCMA-directed mRNA CAR-T cell therapy for myasthenia gravis: exploratory biomarker analysis of a placebo-controlled phase 2b trial.",
+          "journal": "Nat Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "41466101",
+          "title": "Patient Outcomes Among Medicare Beneficiaries With Guillain-Barr&#xe9; Syndrome.",
+          "journal": "J Peripher Nerv Syst",
+          "year": "2026"
+        },
+        {
+          "pmid": "41342796",
+          "title": "Characterizing Guillain-Barr&#xe9; Risk Factors Among Traditional Medicare Beneficiaries.",
+          "journal": "Inquiry",
+          "year": "2025"
+        },
+        {
+          "pmid": "40549225",
+          "title": "Update on paraproteinemic neuropathy.",
+          "journal": "Curr Neurol Neurosci Rep",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Claudia M. Testa",
+      "profile_url": "https://www.med.unc.edu/neurology/people/claudia-m-testa-md-phd/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Testa CM",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41556478",
+          "title": "Update on Medical Treatments for Essential Tremor: An International Parkinson and Movement Disorder Society Evidence-Based Medicine Review.",
+          "journal": "Mov Disord",
+          "year": "2026"
+        },
+        {
+          "pmid": "41527249",
+          "title": "Dancing in Chaos: The Need for a Classification System for Chorea.",
+          "journal": "Mov Disord Clin Pract",
+          "year": "2026"
+        },
+        {
+          "pmid": "39825184",
+          "title": "Safety and Efficacy of Deutetrabenazine at High versus Lower Daily Dosages in the ARC-HD Study to Treat Chorea in Huntington Disease.",
+          "journal": "CNS Drugs",
+          "year": "2025"
+        },
+        {
+          "pmid": "39729631",
+          "title": "Valbenazine for the treatment of chorea associated with Huntington's disease.",
+          "journal": "Expert Opin Pharmacother",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Miriam Sklerov, , MSc",
+      "profile_url": "https://www.med.unc.edu/neurology/people/miriam-sklerov-md-ms/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 20,
+      "pubmed_search": "ComputedAuthors:Sklerov Miriam",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42222444",
+          "title": "It Takes a Village: Patient Satisfaction in a Specialized Atypical Parkinsonism Interdisciplinary Clinic.",
+          "journal": "Brain Neurosci Adv",
+          "year": "2026"
+        },
+        {
+          "pmid": "41867235",
+          "title": "Population differences in wearable device wear time: Rescuing data to address biases and advance health equity.",
+          "journal": "medRxiv",
+          "year": "2026"
+        },
+        {
+          "pmid": "41284573",
+          "title": "Evidence of central autonomic dysfunction in orthostatic hypotension of Parkinson's disease.",
+          "journal": "Parkinsonism Relat Disord",
+          "year": "2025"
+        },
+        {
+          "pmid": "40292333",
+          "title": "Salivary Gland Botulinum Toxin a Injections for Treating Sialorrhea Among Critically Ill Patients With Neurological Disorders.",
+          "journal": "Neurohospitalist",
+          "year": "2025"
+        },
+        {
+          "pmid": "39899491",
+          "title": "Neuronal oscillations and functional connectivity of paced nostril breathing: A high-density EEG study.",
+          "journal": "PLoS One",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Heidi Roth",
+      "profile_url": "https://www.med.unc.edu/neurology/people/heidi-roth-md/",
+      "department": "Neurology",
+      "role": "Abc",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 5,
+      "pubmed_search": "ComputedAuthors:Roth Heidi",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40058984",
+          "title": "Developing Treatment Models for the Delivery of the Antiamyloid Therapy, Lecanemab: Considerations for Implementation of Lecanemab in Healthcare Systems.",
+          "journal": "Am J Geriatr Psychiatry",
+          "year": "2025"
+        },
+        {
+          "pmid": "39924880",
+          "title": "Genetic and biomarker disclosure process in a memory and aging study.",
+          "journal": "J Alzheimers Dis",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Daniel Roque",
+      "profile_url": "https://www.med.unc.edu/neurology/people/daniel-roque-md/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 13,
+      "pubmed_search": "ComputedAuthors:Roque Daniel",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42107848",
+          "title": "Focused Ultrasound Ablation for Neurological Disorders.",
+          "journal": "Biol Psychiatry",
+          "year": "2026"
+        },
+        {
+          "pmid": "41996720",
+          "title": "Focused ultrasound thalamotomy for essential tremor in octogenarians.",
+          "journal": "J Neurosurg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41809115",
+          "title": "Wearable Ultrasound Sensing with Dual Arrays and Machine Learning for Real-Time Tremor Characterization and Antagonist Muscle Monitoring.",
+          "journal": "IEEE Trans Instrum Meas",
+          "year": "2026"
+        },
+        {
+          "pmid": "41048539",
+          "title": "Nonlinear System Identification of Tremors Dynamics: A Data-driven Approximation Using Koopman Operator Theory.",
+          "journal": "Int IEEE EMBS Conf Neural Eng",
+          "year": "2023"
+        },
+        {
+          "pmid": "40855878",
+          "title": "Towards Ultrasound Imaging-based Closed-loop Peripheral Nerve Stimulation for Tremor Suppression.",
+          "journal": "Curr Opin Biomed Eng",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Priya Palta",
+      "profile_url": "https://www.med.unc.edu/neurology/people/priya-palta-phd-mhs/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/priya.palta.1/bibliography/public",
+      "pubmed_search": "Palta P",
+      "pubmed_count": 109,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42318286",
+          "title": "Accelerometer-derived daily steps, cognition, and cognitive impairment in U.S. community-dwelling older adults: The Atherosclerosis Risk in Communities Study.",
+          "journal": "Alzheimers Dement (N Y)",
+          "year": "2026"
+        },
+        {
+          "pmid": "42269125",
+          "title": "Frailty as a Modifier of the Associations Between Vascular Risk Factors and Incident Dementia.",
+          "journal": "Neurology",
+          "year": "2026"
+        },
+        {
+          "pmid": "42218436",
+          "title": "Healthcare utilization and morbidity preceding a dementia classification: the Atherosclerosis Risk in Communities (ARIC) study.",
+          "journal": "BMC Health Serv Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "42215416",
+          "title": "JCL Roundtable: Lipid metabolism, brain health, and dementia prevention.",
+          "journal": "J Clin Lipidol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42152189",
+          "title": "Examining the Relevance of Gait Speed Resiliencies to Different Stressors: the ARIC Study.",
+          "journal": "J Gerontol A Biol Sci Med Sci",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Anahit C. Mehrabyan",
+      "profile_url": "https://www.med.unc.edu/neurology/people/anahit-c-mehrabyan-md/",
+      "department": "Neurology",
+      "role": "Als-Clinic",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 13,
+      "pubmed_search": "ComputedAuthors:Mehrabyan AC",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39475687",
+          "title": "Immune-Mediated Megaconial Myopathy: A Novel Subtype of Autoimmune Myopathy.",
+          "journal": "Neurology",
+          "year": "2024"
+        },
+        {
+          "pmid": "38416306",
+          "title": "ANCA-associated vasculitis presenting with isolated neurological manifestations in a patient with cocaine abuse: a case report and literature review.",
+          "journal": "Clin Rheumatol",
+          "year": "2024"
+        },
+        {
+          "pmid": "38284651",
+          "title": "Retrospective review of patients with myasthenia gravis switched from plasma exchange therapy to efgartigimod treatment.",
+          "journal": "Muscle Nerve",
+          "year": "2024"
+        },
+        {
+          "pmid": "37751854",
+          "title": "Disease-Based Prognostication: Myasthenia Gravis.",
+          "journal": "Semin Neurol",
+          "year": "2023"
+        },
+        {
+          "pmid": "35915690",
+          "title": "Bilateral Acute Hippocampal Ischemia in Two Patients Abusing Cocaine: What is the Outcome?",
+          "journal": "Cureus",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Sung-Ho Lee",
+      "profile_url": "https://www.med.unc.edu/neurology/people/sung-ho-lee-phd/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 29,
+      "pubmed_search": "ComputedAuthors:Lee Sung-Ho",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41933849",
+          "title": "Alcohol impacts an fMRI marker of neural inhibition in humans and rodents.",
+          "journal": "Neuroimage",
+          "year": "2026"
+        },
+        {
+          "pmid": "41275018",
+          "title": "Aberrantly integrated adult-born immature neurons disrupt brain-wide networks during spatial memory processing.",
+          "journal": "Mol Psychiatry",
+          "year": "2026"
+        },
+        {
+          "pmid": "41062705",
+          "title": "Measurement of electrochemical brain activity with fast-scan cyclic voltammetry during functional magnetic resonance imaging.",
+          "journal": "Nat Protoc",
+          "year": "2026"
+        },
+        {
+          "pmid": "40995458",
+          "title": "Activation mapping in multi-center retrospective rat sensory-evoked functional MRI datasets using a unified pipeline.",
+          "journal": "Imaging Neurosci (Camb)",
+          "year": "2025"
+        },
+        {
+          "pmid": "40828173",
+          "title": "Chronic ethanol exposure reduces resting state functional connectivity and regional synchrony in male rats.",
+          "journal": "Psychopharmacology (Berl)",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "David Y. Hwang, , , , FCCM, FNCS",
+      "profile_url": "https://www.med.unc.edu/neurology/people/david-y-hwang-md-faan-fccm-fncs/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Hwang DY",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42062211",
+          "title": "Overcoming Patient-Centered Outcomes Research Barriers During and After Critical Illness Hospitalization.",
+          "journal": "Am J Crit Care",
+          "year": "2026"
+        },
+        {
+          "pmid": "41730449",
+          "title": "Protocol for a randomized trial of a scalable, interactive tool to support surrogate decision-makers of critically ill patients.",
+          "journal": "Contemp Clin Trials",
+          "year": "2026"
+        },
+        {
+          "pmid": "39982183",
+          "title": "Executive Summary: Society of Critical Care Medicine Guidelines on Family-Centered Care for Adult ICUs.",
+          "journal": "Crit Care Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "37704937",
+          "title": "Common Data Elements for Disorders of Consciousness: Recommendations from the Working Group on Goals-of-Care and Family/Surrogate Decision-Maker Data.",
+          "journal": "Neurocrit Care",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "James F. Howard Jr",
+      "profile_url": "https://www.med.unc.edu/neurology/people/james-f-howard-jr-md/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Jr JFH",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Andrea Bozoki",
+      "profile_url": "https://www.med.unc.edu/neurology/people/andrea-bozoki-md/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_hint": "aka dementia",
+      "pubmed_count": 43,
+      "pubmed_search": "ComputedAuthors:Bozoki A",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42060164",
+          "title": "Factors influencing accelerated progression in behavioral variant frontotemporal dementia.",
+          "journal": "J Neurol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40317057",
+          "title": "Prognostic value of plasma biomarkers for informing clinical trial design in mild-to-moderate Alzheimer's disease.",
+          "journal": "Alzheimers Res Ther",
+          "year": "2025"
+        },
+        {
+          "pmid": "39483064",
+          "title": "Alzheimer Disease as a Clinical-Biological Construct-An International Working Group Recommendation.",
+          "journal": "JAMA Neurol",
+          "year": "2024"
+        },
+        {
+          "pmid": "38558141",
+          "title": "Reliability and Validity of Smartphone Cognitive Testing for Frontotemporal Lobar Degeneration.",
+          "journal": "JAMA Netw Open",
+          "year": "2024"
+        },
+        {
+          "pmid": "36138153",
+          "title": "Temporal order of clinical and biomarker changes in familial frontotemporal dementia.",
+          "journal": "Nat Med",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "John Younce",
+      "profile_url": "https://www.med.unc.edu/neurology/people/john-younce-md/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Younce John",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Shahzad S. Khan",
+      "profile_url": "https://www.med.unc.edu/neurology/people/shahzad-s-khan/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Khan SS",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39088390",
+          "title": "Loss of primary cilia and dopaminergic neuroprotection in pathogenic LRRK2-driven and idiopathic Parkinson's disease.",
+          "journal": "Proc Natl Acad Sci U S A",
+          "year": "2024"
+        },
+        {
+          "pmid": "38293195",
+          "title": "Loss of primary cilia and dopaminergic neuroprotection in pathogenic LRRK2-driven and idiopathic Parkinson's disease.",
+          "journal": "bioRxiv",
+          "year": "2024"
+        },
+        {
+          "pmid": "34658337",
+          "title": "Pathogenic LRRK2 control of primary cilia and Hedgehog signaling in neurons and astrocytes of mouse brain.",
+          "journal": "Elife",
+          "year": "2021"
+        },
+        {
+          "pmid": "33190318",
+          "title": "Locus coeruleus in memory formation and Alzheimer's disease.",
+          "journal": "Eur J Neurosci",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Yen-Yu Ian Shih",
+      "profile_url": "https://www.med.unc.edu/neurology/people/yen-yu-ian-shih-phd/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1Zqua89Q9ink7/bibliography/public",
+      "pubmed_count": 60,
+      "pubmed_search": "ComputedAuthors:Shih YI",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42141308",
+          "title": "Parsing autism spectrum heterogeneity through fMRI.",
+          "journal": "Nat Neurosci",
+          "year": "2026"
+        },
+        {
+          "pmid": "41933849",
+          "title": "Alcohol impacts an fMRI marker of neural inhibition in humans and rodents.",
+          "journal": "Neuroimage",
+          "year": "2026"
+        },
+        {
+          "pmid": "41720092",
+          "title": "Ventral hippocampal NPY interneurons regulate circadian feeding in mice.",
+          "journal": "Neuron",
+          "year": "2026"
+        },
+        {
+          "pmid": "41423359",
+          "title": "In Vivo pi-SSelMQC&#xa0;to Recover 100% Biomarker Signals From Both MQ Coherence Transfer Pathways with Applications in Tumor Lactate Imaging.",
+          "journal": "Acad Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41275018",
+          "title": "Aberrantly integrated adult-born immature neurons disrupt brain-wide networks during spatial memory processing.",
+          "journal": "Mol Psychiatry",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Rick B. Meeker",
+      "profile_url": "https://www.med.unc.edu/neurology/people/rick-b-meeker-phd/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Meeker RB",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40909641",
+          "title": "Peripheral immune patterns enable robust cross-platform prediction of ALS onset and progression.",
+          "journal": "bioRxiv",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Albert Hinn",
+      "profile_url": "https://www.med.unc.edu/neurology/people/albert-hinn-md/",
+      "department": "Neurology",
+      "role": "Epilepsy",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Hinn Albert",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Clio Rubinos, , MS",
+      "profile_url": "https://www.med.unc.edu/neurology/people/clio-rubinos-md-ms/",
+      "department": "Neurology",
+      "role": "Epilepsy",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/clio.rubinos.1/bibliography/public",
+      "pubmed_count": 19,
+      "pubmed_search": "ComputedAuthors:Rubinos C",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42208396",
+          "title": "Patient voices in acute symptomatic seizures: A qualitative approach to outcome assessment.",
+          "journal": "Epilepsy Behav",
+          "year": "2026"
+        },
+        {
+          "pmid": "41802393",
+          "title": "Patient-reported outcome measures in patients with post-brain injury seizures.",
+          "journal": "Epilepsy Behav",
+          "year": "2026"
+        },
+        {
+          "pmid": "41323357",
+          "title": "Network analysis of antiseizure medication use, efficacy, and safety in epilepsy: A retrospective cohort study in a tertiary care center.",
+          "journal": "Epilepsy Behav Rep",
+          "year": "2025"
+        },
+        {
+          "pmid": "40625348",
+          "title": "Moderate pyridoxal phosphate deficiency enhances neuronal excitability and promotes calcium dysregulation.",
+          "journal": "Front Neurosci",
+          "year": "2025"
+        },
+        {
+          "pmid": "40244869",
+          "title": "Management and Outcomes in Confirmed or Suspected Acute Symptomatic Seizure: Role of Structured Outpatient Care.",
+          "journal": "Ann Clin Transl Neurol",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Suzette LaRoche",
+      "profile_url": "https://www.med.unc.edu/neurology/people/suzette-laroche-md/",
+      "department": "Neurology",
+      "role": "Epilepsy",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:LaRoche Suzette",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40182314",
+          "title": "Implementation of 2HELPS2B Seizure Risk Score: A Cost-Effective Approach to Seizure Detection in the Intensive Care Units.",
+          "journal": "Neurol Clin Pract",
+          "year": "2025"
+        },
+        {
+          "pmid": "38233889",
+          "title": "Management of status epilepticus in pregnancy: a clinician survey.",
+          "journal": "Neurol Res Pract",
+          "year": "2024"
+        },
+        {
+          "pmid": "37832589",
+          "title": "Electroencephalography as a Biomarker of Prognosis in Acute Brain Injury.",
+          "journal": "Semin Neurol",
+          "year": "2023"
+        },
+        {
+          "pmid": "37253272",
+          "title": "Ellen R. Grass Lecture: Disparities in Access to Neurodiagnostic Testing.",
+          "journal": "Neurodiagn J",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Lynn Liu, , MS",
+      "profile_url": "https://www.med.unc.edu/neurology/people/lynn-liu-md/",
+      "department": "Neurology",
+      "role": "Epilepsy",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Liu Lynn",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41770265",
+          "title": "Neurodiagnostic Training in the United States and Around the Globe.",
+          "journal": "Neurodiagn J",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Qian-Zhou Yang",
+      "profile_url": "https://www.med.unc.edu/neurology/people/qian-zhou-jojo-yang-md/",
+      "department": "Neurology",
+      "role": "Child-Neurology",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 87,
+      "pubmed_search": "ComputedAuthors:Yang Q",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42187338",
+          "title": "Distinct Symptom Occurrence Subgroups Among Patients With Colorectal Cancer: Differences in Social Determinants of Health and Diet Quality.",
+          "journal": "Res Nurs Health",
+          "year": "2026"
+        },
+        {
+          "pmid": "42080799",
+          "title": "Identifying DASH Adherence Patterns and Their Association With Dietary Behaviors Among Adults With Hypertension.",
+          "journal": "Res Nurs Health",
+          "year": "2026"
+        },
+        {
+          "pmid": "41738686",
+          "title": "Comparing the Effects of Diabetes-Specific and Overall Medication Regimen Complexity on Diabetes Distress.",
+          "journal": "Sci Diabetes Self Manag Care",
+          "year": "2026"
+        },
+        {
+          "pmid": "40762877",
+          "title": "Factors Associated with Perceived Discrimination in Healthcare Among United States Middle-aged and Older Adults.",
+          "journal": "J Gen Intern Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "40370006",
+          "title": "Chronic Illness Self-Management Latent Profiles in Individuals With Comorbid Type 2 Diabetes and Hypertension.",
+          "journal": "Sci Diabetes Self Manag Care",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Steven P. Trau",
+      "profile_url": "https://www.med.unc.edu/neurology/people/steven-p-trau-md/",
+      "department": "Neurology",
+      "role": "Child-Neurology",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 10,
+      "pubmed_search": "ComputedAuthors:Trau SP",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "38296781",
+          "title": "Tourette Syndrome and Tic Disorders.",
+          "journal": "Pediatr Rev",
+          "year": "2024"
+        },
+        {
+          "pmid": "36756724",
+          "title": "Increasing Seizures, Encephalopathy, and Hypothermia in an 18-Year-Old Woman.",
+          "journal": "Pediatrics",
+          "year": "2023"
+        },
+        {
+          "pmid": "36380888",
+          "title": "Creating a Patient-Based Diagnostic Checklist for Functional Tics During the COVID-19 Pandemic.",
+          "journal": "Neurol Clin Pract",
+          "year": "2022"
+        },
+        {
+          "pmid": "35608644",
+          "title": "Electrodiagnostic Findings in Riboflavin Transporter Deficiency Type 2.",
+          "journal": "J Clin Neuromuscul Dis",
+          "year": "2022"
+        },
+        {
+          "pmid": "32916380",
+          "title": "Institutional Pediatric Convulsive Status Epilepticus Protocol Decreases Time to First and Second Line Anti-Seizure Medication Administration.",
+          "journal": "Seizure",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Chon Lee",
+      "profile_url": "https://www.med.unc.edu/neurology/people/chon-lee-md/",
+      "department": "Neurology",
+      "role": "Child-Neurology",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/chon.lee.1/bibliography/public",
+      "pubmed_count": 48,
+      "pubmed_search": "ComputedAuthors:Lee C",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42228313",
+          "title": "Building the Oncology Workforce: A Qualitative Evaluation of an Inter-Institutional Cancer Research Internship for Underrepresented Undergraduate Students.",
+          "journal": "J Cancer Educ",
+          "year": "2026"
+        },
+        {
+          "pmid": "41915024",
+          "title": "Building HOPE: operationalizing hybrid decentralized oncology clinical trials with community providers beyond traditional healthcare system networks.",
+          "journal": "Oncologist",
+          "year": "2026"
+        },
+        {
+          "pmid": "41911514",
+          "title": "Clinicogenomic Characteristics and Treatment Outcomes of Patients With Advanced ALK-Rearranged Squamous and Adenosquamous Non-Small Cell Lung Cancers.",
+          "journal": "JCO Precis Oncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41663549",
+          "title": "Symptomatic radiation necrosis after concurrent targeted therapy and stereotactic radiosurgery for brain metastases: a bicentric retrospective analysis.",
+          "journal": "J Neurooncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40991878",
+          "title": "Benchmarking the Current Landscape: Insights From an Association of American Cancer Institutes Survey on Academic Cancer Service Lines.",
+          "journal": "JCO Oncol Pract",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Senyene E. Hunter",
+      "profile_url": "https://www.med.unc.edu/neurology/people/senyene-e-hunter-md-phd/",
+      "department": "Neurology",
+      "role": "Child-Neurology",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 21,
+      "pubmed_search": "ComputedAuthors:Hunter SE",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41960595",
+          "title": "Expanding access to genomic analysis and reporting in research studies: The GENYSIS research core.",
+          "journal": "J Clin Transl Sci",
+          "year": "2026"
+        },
+        {
+          "pmid": "41915868",
+          "title": "Do We Understand the Genetic Landscape of Status Epilepticus?: Results From the Italian Pediatric Status Epilepticus Group.",
+          "journal": "Neurology",
+          "year": "2026"
+        },
+        {
+          "pmid": "41172580",
+          "title": "Treatment Practices for Infantile Epileptic Spasms Syndrome: Consensus and Variation in Major Pediatric Epilepsy Centers.",
+          "journal": "Pediatr Neurol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41015834",
+          "title": "Health disparities in youth with Epilepsy: A closer look at behavioral health outcomes.",
+          "journal": "Epilepsy Behav",
+          "year": "2025"
+        },
+        {
+          "pmid": "40934838",
+          "title": "Characterizing CHD2-associated epilepsy: A multicenter study and pooled analysis of the literature.",
+          "journal": "Seizure",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Diana M. Cejas",
+      "profile_url": "https://www.med.unc.edu/neurology/people/diana-m-cejas-md-mph/",
+      "department": "Neurology",
+      "role": "Child-Neurology",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 8,
+      "pubmed_search": "ComputedAuthors:Cejas DM",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41824953",
+          "title": "Developing and Validating Measures of Structural Ableism to Improve Health Outcomes for the Disability Community: Protocol for a Mixed Methods Study.",
+          "journal": "JMIR Res Protoc",
+          "year": "2026"
+        },
+        {
+          "pmid": "40601886",
+          "title": "Advancing Disability Equity in Neurology: An AAN Position Statement.",
+          "journal": "Neurology",
+          "year": "2025"
+        },
+        {
+          "pmid": "40462660",
+          "title": "Depictions of Pediatric Neurologic Disability in Graphic Novels.",
+          "journal": "J Child Neurol",
+          "year": "2025"
+        },
+        {
+          "pmid": "40437971",
+          "title": "Neurodiversity-Affirming Clinical Care: Principles and Pearls.",
+          "journal": "J Child Neurol",
+          "year": "2025"
+        },
+        {
+          "pmid": "40089379",
+          "title": "Renewing the Commitment to Diversity in Neurology: Resisting the Backlash.",
+          "journal": "Pediatr Neurol",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jordan Broman-Fulks",
+      "profile_url": "https://www.med.unc.edu/neurology/people/jordan-broman-fulks-md/",
+      "department": "Neurology",
+      "role": "Child-Neurology",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Broman-Fulks Jordan",
+      "pubmed_count": 4,
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40538544",
+          "title": "Case Report: long-term clinical outcomes in RANBP2-associated acute necrotizing encephalopathy.",
+          "journal": "Front Pharmacol",
+          "year": "2025"
+        },
+        {
+          "pmid": "38198979",
+          "title": "Resting-State Functional Magnetic Resonance Imaging Network Association With Mortality, Epilepsy, Cognition, and Motor Two-Year Outcomes in Suspected Severe Neonatal Acute Brain Injury.",
+          "journal": "Pediatr Neurol",
+          "year": "2024"
+        },
+        {
+          "pmid": "37788679",
+          "title": "Functional MRI for Acute Covert Consciousness: Emerging Data and Implementation Case Series.",
+          "journal": "Semin Neurol",
+          "year": "2023"
+        },
+        {
+          "pmid": "37638177",
+          "title": "Treatable brain network biomarkers in children in coma using task and resting-state functional MRI: a case series.",
+          "journal": "Front Neurol",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Katelyn Bricker",
+      "profile_url": "https://www.med.unc.edu/neurology/people/katelyn-bricker-md/",
+      "department": "Neurology",
+      "role": "Child-Neurology",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Bricker Katelyn",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41424498",
+          "title": "Rett syndrome: a review of clinical manifestations and therapeutic approaches.",
+          "journal": "Front Sleep",
+          "year": "2024"
+        },
+        {
+          "pmid": "39961893",
+          "title": "Sex- and age-differences in supine positional obstructive sleep apnea in children and adults.",
+          "journal": "Sleep Breath",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Yael Shiloh-Malawsky",
+      "profile_url": "https://www.med.unc.edu/neurology/people/yael-shiloh-malawsky-md/",
+      "department": "Neurology",
+      "role": "Batten-Disease-Coe",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Shiloh-Malawsky Yael",
+      "pubmed_count": 9,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41988794",
+          "title": "New genotype-phenotype correlations and management recommendations for individuals with RERE variants.",
+          "journal": "Genet Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "40931928",
+          "title": "Long-Read Sequencing of a Neurodevelopmental Disorder Patient Reveals Complex Rearrangement Involving the ARID1B Gene.",
+          "journal": "Am J Med Genet A",
+          "year": "2026"
+        },
+        {
+          "pmid": "38094673",
+          "title": "Pharmacokinetics and Proposed Dosing of Levetiracetam in Children With Obesity.",
+          "journal": "J Pediatr Pharmacol Ther",
+          "year": "2023"
+        },
+        {
+          "pmid": "37841286",
+          "title": "A homozygous missense variant in the YG box domain in an individual with severe spinal muscular atrophy: a case report and variant characterization.",
+          "journal": "Front Cell Neurosci",
+          "year": "2023"
+        },
+        {
+          "pmid": "36315135",
+          "title": "Genetic Testing to Inform Epilepsy Treatment Management From an International Study of Clinical Practice.",
+          "journal": "JAMA Neurol",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Casey Olm-Shipman, , MS",
+      "profile_url": "https://www.med.unc.edu/neurology/people/casey-olm-shipman-md-ms/",
+      "department": "Neurology",
+      "role": "Child-Neurology",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Olm-Shipman Casey",
+      "pubmed_count": 11,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40182314",
+          "title": "Implementation of 2HELPS2B Seizure Risk Score: A Cost-Effective Approach to Seizure Detection in the Intensive Care Units.",
+          "journal": "Neurol Clin Pract",
+          "year": "2025"
+        },
+        {
+          "pmid": "39838252",
+          "title": "Medical Students' Observations of High Value and Potentially Wasteful Care Behaviors Modeled During Clinical Rotations.",
+          "journal": "J Gen Intern Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "36865641",
+          "title": "Implementation of a Standardized Shared Decision-making Bundle to Improve Communication Practices in the Neurocritical Care Unit.",
+          "journal": "Neurol Clin Pract",
+          "year": "2023"
+        },
+        {
+          "pmid": "36333030",
+          "title": "Quality Improvement in Neurocritical Care.",
+          "journal": "Crit Care Clin",
+          "year": "2023"
+        },
+        {
+          "pmid": "36071331",
+          "title": "Association of Serum Pyridoxal Phosphate Levels with Established Status Epilepticus.",
+          "journal": "Neurocrit Care",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Gwenn A. Garden",
+      "profile_url": "https://www.med.unc.edu/neurology/people/gwenn-a-garden-md-phd/",
+      "department": "Neurology",
+      "role": "Administration",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Garden GA",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40166227",
+          "title": "Genetic risk in endolysosomal network genes correlates with endolysosomal dysfunction across neural cell types in Alzheimer's disease.",
+          "journal": "bioRxiv",
+          "year": "2025"
+        },
+        {
+          "pmid": "39148839",
+          "title": "The Interaction Effects of Sex, Age, APOE and Common Health Risk Factors on Human Brain Functions.",
+          "journal": "medRxiv",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Zheng Jane Fan",
+      "profile_url": "https://www.med.unc.edu/neurology/people/zheng-jane-fan-md/",
+      "department": "Neurology",
+      "role": "Child-Neurology",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/zheng.fan.3/bibliography/public",
+      "pubmed_count": 39,
+      "pubmed_search": "ComputedAuthors:Fan Z",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40931928",
+          "title": "Long-Read Sequencing of a Neurodevelopmental Disorder Patient Reveals Complex Rearrangement Involving the ARID1B Gene.",
+          "journal": "Am J Med Genet A",
+          "year": "2026"
+        },
+        {
+          "pmid": "40609167",
+          "title": "Comparison of overnight trends in relative power for specific frequency bands, sleep stages, and brain regions between patients with depressive disorder and matched control subjects.",
+          "journal": "Psychiatry Res Neuroimaging",
+          "year": "2025"
+        },
+        {
+          "pmid": "40563523",
+          "title": "Age Trajectories of O2 Saturation and Levels of Serum Bicarbonate or End-Tidal CO2 Across the Life Course of Women and Men: Insights from EHR and PSG Data.",
+          "journal": "Biomolecules",
+          "year": "2025"
+        },
+        {
+          "pmid": "39961893",
+          "title": "Sex- and age-differences in supine positional obstructive sleep apnea in children and adults.",
+          "journal": "Sleep Breath",
+          "year": "2025"
+        },
+        {
+          "pmid": "39741923",
+          "title": "Detection of Movement and Lead-Popping Artifacts in Polysomnography EEG Data.",
+          "journal": "Signals (Basel)",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Irena Dujmovic Basuroski",
+      "profile_url": "https://www.med.unc.edu/neurology/people/irena-dujmovic-basuroski-md-phd/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Basuroski ID",
+      "pubmed_count": 5,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42307210",
+          "title": "Gephyrin Neurological Autoimmunity.",
+          "journal": "Ann Neurol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40538544",
+          "title": "Case Report: long-term clinical outcomes in RANBP2-associated acute necrotizing encephalopathy.",
+          "journal": "Front Pharmacol",
+          "year": "2025"
+        },
+        {
+          "pmid": "36166778",
+          "title": "Paraneoplastic Optic Neuropathy in a Patient With Glioblastoma.",
+          "journal": "J Neuroophthalmol",
+          "year": "2024"
+        },
+        {
+          "pmid": "35929108",
+          "title": "\"String of Pearls\" in Spinal Cord Sarcoidosis.",
+          "journal": "Ann Neurol",
+          "year": "2022"
+        },
+        {
+          "pmid": "31586803",
+          "title": "Long-term outcome and prognosis in patients with neuromyelitis optica spectrum disorder from Serbia.",
+          "journal": "Mult Scler Relat Disord",
+          "year": "2019"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Monica Maria Diaz, ., M.S",
+      "profile_url": "https://www.med.unc.edu/neurology/people/monica-maria-diaz-m-d-m-s/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/monica.diaz.1/bibliography/public",
+      "pubmed_count": 7,
+      "pubmed_search": "ComputedAuthors:Diaz M",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41821191",
+          "title": "Associations Between Cardiovascular Risk Factors and Neurofilament Light Levels Among US Mexican American Adults.",
+          "journal": "Brain Behav",
+          "year": "2026"
+        },
+        {
+          "pmid": "41505823",
+          "title": "Rare demyelinating autoimmune diseases and pregnancy outcomes.",
+          "journal": "Mult Scler Relat Disord",
+          "year": "2026"
+        },
+        {
+          "pmid": "40183580",
+          "title": "Chronic meningitis: diagnostic and therapeutic challenges.",
+          "journal": "Curr Opin Infect Dis",
+          "year": "2025"
+        },
+        {
+          "pmid": "39615330",
+          "title": "Curriculum innovation: Interactive educational workshop improves neurology resident knowledge of multiple sclerosis.",
+          "journal": "Mult Scler Relat Disord",
+          "year": "2025"
+        },
+        {
+          "pmid": "38435720",
+          "title": "New approaches for understanding the potential role of microbes in Alzheimer's disease.",
+          "journal": "Brain Behav Immun Health",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Todd J. Cohen",
+      "profile_url": "https://www.med.unc.edu/neurology/people/todd-j-cohen-phd/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 15,
+      "pubmed_search": "ComputedAuthors:Cohen TJ",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41128923",
+          "title": "LRRK2 kinase-mediated accumulation of lysosome-associated phospho-Rabs in tauopathies and synucleinopathies.",
+          "journal": "Acta Neuropathol",
+          "year": "2025"
+        },
+        {
+          "pmid": "37061718",
+          "title": "Compensatory remodeling of a septo-hippocampal GABAergic network in the triple transgenic Alzheimer's mouse model.",
+          "journal": "J Transl Med",
+          "year": "2023"
+        },
+        {
+          "pmid": "36912451",
+          "title": "Aberrantly activated TAK1 links neuroinflammation and neuronal loss in Alzheimer's disease mouse models.",
+          "journal": "J Cell Sci",
+          "year": "2023"
+        },
+        {
+          "pmid": "25728750",
+          "title": "HDAC4 regulates muscle fiber type-specific gene expression programs.",
+          "journal": "Mol Cells",
+          "year": "2015"
+        },
+        {
+          "pmid": "22658415",
+          "title": "A direct HDAC4-MAP kinase crosstalk activates muscle atrophy program.",
+          "journal": "Mol Cell",
+          "year": "2012"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Julia M. Carlson",
+      "profile_url": "https://www.med.unc.edu/neurology/people/julia-m-carlson-md/",
+      "department": "Neurology",
+      "role": "Neurocritical-Care",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 8,
+      "pubmed_search": "ComputedAuthors:Carlson JM",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41780004",
+          "title": "The Eyes Have It.",
+          "journal": "N Engl J Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "41190887",
+          "title": "NeuroRecovery Clinics: A Survey to Understand the Current Landscape and Opinions of Post-NeuroICU Clinics.",
+          "journal": "Crit Care Explor",
+          "year": "2025"
+        },
+        {
+          "pmid": "40292333",
+          "title": "Salivary Gland Botulinum Toxin a Injections for Treating Sialorrhea Among Critically Ill Patients With Neurological Disorders.",
+          "journal": "Neurohospitalist",
+          "year": "2025"
+        },
+        {
+          "pmid": "39986729",
+          "title": "Traumatic brain injury and disorders of consciousness.",
+          "journal": "Handb Clin Neurol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39399568",
+          "title": "Novel Post-Neurointensive Care Recovery Clinic: Design, Utilization, and Clinician Perspectives.",
+          "journal": "Neurol Clin Pract",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jamie K. Capal",
+      "profile_url": "https://www.med.unc.edu/neurology/people/jamie-k-capal-md/",
+      "department": "Neurology",
+      "role": "Archieve",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 41,
+      "pubmed_search": "ComputedAuthors:Capal JK",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42090945",
+          "title": "A two-step temporal data augmentation and supervised learning framework for predicting autism diagnosis at 36&#x202f;months in patients with tuberous sclerosis complex.",
+          "journal": "Comput Biol Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "42085697",
+          "title": "Closing the Gap to Interventions for Tuberous Sclerosis Complex-Associated Neuropsychiatric Disorders (TAND): Protocol for a Longitudinal Study of TAND Severity, Predictors, and Caregiver Well-Being (TANDem-2).",
+          "journal": "JMIR Res Protoc",
+          "year": "2026"
+        },
+        {
+          "pmid": "41258699",
+          "title": "Convolutional neural networks for automatic tuber segmentation and quantification of tuber burden in tuberous sclerosis complex.",
+          "journal": "Epilepsia",
+          "year": "2026"
+        },
+        {
+          "pmid": "41061327",
+          "title": "Neurodevelopmental Outcomes From the PREVeNT Trial.",
+          "journal": "Pediatr Neurol",
+          "year": "2025"
+        },
+        {
+          "pmid": "40774147",
+          "title": "Developmental Trajectories of Adaptive Functioning and Behavior Problems in Children With Co-Occurring Tuberous Sclerosis Complex and Autism Spectrum Disorder, With and Without Seizures.",
+          "journal": "Pediatr Neurol",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Nina Browner",
+      "profile_url": "https://www.med.unc.edu/neurology/people/nina-browner-md/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_count": 6,
+      "pubmed_search": "ComputedAuthors:Browner Nina",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42222444",
+          "title": "It Takes a Village: Patient Satisfaction in a Specialized Atypical Parkinsonism Interdisciplinary Clinic.",
+          "journal": "Brain Neurosci Adv",
+          "year": "2026"
+        },
+        {
+          "pmid": "40446490",
+          "title": "Stability vs. performance: The role of weight shift during gait initiation for people with Parkinson disease.",
+          "journal": "J Biomech",
+          "year": "2025"
+        },
+        {
+          "pmid": "40292333",
+          "title": "Salivary Gland Botulinum Toxin a Injections for Treating Sialorrhea Among Critically Ill Patients With Neurological Disorders.",
+          "journal": "Neurohospitalist",
+          "year": "2025"
+        },
+        {
+          "pmid": "39233878",
+          "title": "Curriculum Innovations: A Podcast-Based Neurologic Emergency Flipped Classroom Curriculum for Neurology Residents.",
+          "journal": "Neurol Educ",
+          "year": "2023"
+        },
+        {
+          "pmid": "38583376",
+          "title": "Limb and joint kinetics during walking in individuals with Mild-Moderate Parkinson's disease.",
+          "journal": "J Biomech",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jorge L. Almod\u00f3var-Su\u00e1rez",
+      "profile_url": "https://www.med.unc.edu/neurology/people/jorge-l-almodovar-suarez-md/",
+      "department": "Neurology",
+      "role": "Als-Clinic",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_search": "Almod\u00f3var-Su\u00e1rez JL",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Varina L. Boerwinkle",
+      "profile_url": "https://www.med.unc.edu/neurology/people/varina-l-boerwinkle-md/",
+      "department": "Neurology",
+      "role": "Child-Neurology",
+      "departments": [
+        "Neurology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1ts45pE2RuS51/bibliography/public",
+      "pubmed_count": 14,
+      "pubmed_search": "ComputedAuthors:Boerwinkle VL",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42107848",
+          "title": "Focused Ultrasound Ablation for Neurological Disorders.",
+          "journal": "Biol Psychiatry",
+          "year": "2026"
+        },
+        {
+          "pmid": "41419918",
+          "title": "Correction: Multimodal contrastive learning on rs-fMRI to quantify whole-brain network recovery after hypothalamic hamartoma surgery.",
+          "journal": "Biomed Eng Online",
+          "year": "2025"
+        },
+        {
+          "pmid": "41220406",
+          "title": "A multimodal deep learning framework for functional brain network classification in rs-fMRI.",
+          "journal": "Cogn Neurodyn",
+          "year": "2025"
+        },
+        {
+          "pmid": "41163168",
+          "title": "Multimodal contrastive learning on rs-fMRI to quantify whole-brain network recovery after hypothalamic hamartoma surgery.",
+          "journal": "Biomed Eng Online",
+          "year": "2025"
+        },
+        {
+          "pmid": "40951276",
+          "title": "Precision Connectivity in Arthritis Pain with Permutation and Network Analysis: A Key Step Toward Clinical Application.",
+          "journal": "Res Sq",
+          "year": "2025"
         }
       ],
       "nih_grants": []
