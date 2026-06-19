@@ -351,11 +351,15 @@ function renderCard(f) {
   const init = initials(f.name);
   const pubs = (f.publications || []).slice(0, 4);
   const grants = (f.nih_grants || []).slice(0, 2);
-  const deptShort = f.department.split("—").pop().trim();
+  const allDepts = f.departments || [f.department];
+  const deptShort = allDepts.map(d => d.split("—").pop().trim()).join(" · ");
 
-  const pubBadge = f.pubmed_count > 0
-    ? `<span class="badge badge-pubmed">📄 ${f.pubmed_count} on PubMed</span>`
-    : "";
+  const verifiedCount = f.pubmed_verified ?? f.pubmed_count ?? 0;
+  const pubBadge = verifiedCount > 0
+    ? `<span class="badge badge-pubmed">📄 ${verifiedCount} verified publications</span>`
+    : (f.pubmed_ambiguous
+        ? `<span class="badge" style="background:#FEF3E2;color:#92580A">⚠ Publications need verification</span>`
+        : "");
   const nihBadge = grants.length > 0
     ? `<span class="badge badge-nih">🏛 NIH funded</span>`
     : "";
@@ -408,7 +412,10 @@ function renderCard(f) {
         </div>
       </div>
       <div class="badges">
-        <span class="badge badge-dept">${escapeHtml(f.department)}</span>
+        ${(f.departments && f.departments.length > 1
+          ? f.departments
+          : [f.department]
+        ).map(d => `<span class="badge badge-dept">${escapeHtml(d)}</span>`).join("")}
         ${pubBadge}${nihBadge}
       </div>
       ${pubsHtml}
@@ -422,11 +429,13 @@ function applyFilters() {
   const sort = document.getElementById("sortBy").value;
 
   let filtered = ALL_FACULTY.filter(f => {
-    if (dept && f.department !== dept) return false;
+    // Match against all departments (handles joint appointments & shunting)
+    const allDepts = f.departments && f.departments.length ? f.departments : [f.department];
+    if (dept && !allDepts.includes(dept)) return false;
     if (!query) return true;
     const haystack = [
       f.name,
-      f.department,
+      allDepts.join(" "),
       f.role,
       (f.publications || []).map(p => p.title + " " + p.journal).join(" "),
       (f.nih_grants || []).map(g => g.title).join(" "),
@@ -435,7 +444,7 @@ function applyFilters() {
   });
 
   if (sort === "pubs") {
-    filtered.sort((a, b) => (b.pubmed_count || 0) - (a.pubmed_count || 0));
+    filtered.sort((a, b) => (b.pubmed_verified ?? b.pubmed_count || 0) - (a.pubmed_verified ?? a.pubmed_count || 0));
   } else {
     filtered.sort((a, b) => a.name.localeCompare(b.name));
   }
@@ -464,8 +473,13 @@ async function init() {
 
     ALL_FACULTY = data.faculty || [];
 
-    // Populate department filter
-    const depts = [...new Set(ALL_FACULTY.map(f => f.department))].sort();
+    // Populate department filter from all departments arrays (catches joint appointments)
+    const deptSet = new Set();
+    ALL_FACULTY.forEach(f => {
+      const allDepts = f.departments && f.departments.length ? f.departments : [f.department];
+      allDepts.forEach(d => deptSet.add(d));
+    });
+    const depts = [...deptSet].sort();
     const sel = document.getElementById("deptFilter");
     depts.forEach(d => {
       const opt = document.createElement("option");
