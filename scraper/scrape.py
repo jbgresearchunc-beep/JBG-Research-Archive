@@ -205,6 +205,87 @@ def extract_name(raw_text):
     return text
 
 
+def scrape_faculty_via_wp_rest(base_url, dept_name):
+    """
+    Scrape faculty from a WordPress site using the WP REST API.
+    Used for departments whose faculty pages are JavaScript-rendered
+    (e.g. UNC Pediatrics divisions).
+
+    Strategy:
+    1. Query /wp-json/wp/v2/pages?search=faculty to find faculty page IDs
+    2. Query /wp-json/wp/v2/pages?parent={id} to get child pages (individual profiles)
+    3. Extract names from page titles
+
+    Returns list of faculty dicts, same format as scrape_faculty_from_page.
+    """
+    # Derive the WordPress base (strip trailing path after domain)
+    parsed = urllib.parse.urlparse(base_url)
+    # For URLs like /pediatrics/ai/team/faculty/, the WP install is at /pediatrics/
+    path_parts = parsed.path.strip("/").split("/")
+    wp_base = f"{parsed.scheme}://{parsed.netloc}/{path_parts[0]}"
+    api_base = f"{wp_base}/wp-json/wp/v2"
+
+    faculty = []
+
+    try:
+        # Step 1: find the faculty page by slug/search
+        # Try to find pages matching the URL path
+        slug = path_parts[-1] if path_parts[-1] else path_parts[-2]
+        search_url = (
+            f"{api_base}/pages?slug={slug}&per_page=10"
+            f"&_fields=id,title,link,slug,parent&_embed=false"
+        )
+        data, _ = None, None
+        html = fetch_url(search_url)
+        if not html:
+            return []
+
+        pages = json.loads(html)
+        if not isinstance(pages, list) or not pages:
+            # Try searching instead
+            search_url2 = f"{api_base}/pages?search=faculty&per_page=50&_fields=id,title,link,slug,parent"
+            html2 = fetch_url(search_url2)
+            if html2:
+                pages = json.loads(html2)
+
+        # Step 2: get child pages of the faculty page (individual person pages)
+        faculty_page_ids = [p["id"] for p in pages if isinstance(pages, list)]
+
+        for parent_id in faculty_page_ids[:5]:  # cap to avoid runaway
+            children_url = (
+                f"{api_base}/pages?parent={parent_id}&per_page=100"
+                f"&_fields=id,title,link,slug&status=publish"
+            )
+            html_children = fetch_url(children_url)
+            if not html_children:
+                continue
+            children = json.loads(html_children)
+            if not isinstance(children, list):
+                continue
+
+            for child in children:
+                raw_title = child.get("title", {})
+                if isinstance(raw_title, dict):
+                    raw_title = raw_title.get("rendered", "")
+                name = extract_name(re.sub(r"<[^>]+>", "", raw_title).strip())
+                link = child.get("link", "")
+                if name and looks_like_name(name):
+                    faculty.append({
+                        "name": name,
+                        "profile_url": link,
+                        "department": dept_name,
+                        "role": "",
+                    })
+
+        if faculty:
+            print(f"    WP REST API: found {len(faculty)} faculty")
+
+    except Exception as e:
+        print(f"    WP REST API error for {base_url}: {e}")
+
+    return faculty
+
+
 def scrape_faculty_from_page(url, dept_name):
     """
     Scrape a department faculty page and return list of faculty dicts.
@@ -269,6 +350,15 @@ def scrape_faculty_from_page(url, dept_name):
                     })
 
     print(f"  Found {len(faculty)} faculty")
+
+    # If HTML scraping returned nothing, the page is likely JavaScript-rendered.
+    # Try the WordPress REST API as a fallback.
+    if len(faculty) == 0:
+        print(f"  No faculty from HTML — trying WP REST API...")
+        faculty = scrape_faculty_via_wp_rest(url, dept_name)
+        if faculty:
+            print(f"  Found {len(faculty)} faculty via WP REST API")
+
     return faculty
 
 
