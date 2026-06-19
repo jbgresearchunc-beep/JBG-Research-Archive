@@ -121,10 +121,7 @@
     {
       "name": "Radiology",
       "short": "Radiology",
-      "urls": [
-        "https://www.med.unc.edu/radiology/about/our-people/faculty/",
-        "https://www.med.unc.edu/radiology/about/our-people/radiological-sciences-faculty/"
-      ]
+      "url": "https://www.med.unc.edu/radiology/about/our-people/faculty/"
     },
     {
       "name": "Radiation Oncology",
