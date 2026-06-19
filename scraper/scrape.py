@@ -139,7 +139,19 @@ NON_NAME_PATTERNS = re.compile(
     r"abdominal|nuclear|mammography|ultrasound|fluoroscopy|"
     r"subspecialty|section|division|group|section|trauma|vascular|"
     r"breast|cardiac|body|head|neck|spine|pediatric imaging|"
-    r"fellowship|residency|rotation|conference|seminar|lecture)",
+    r"fellowship|residency|rotation|conference|seminar|lecture|"
+    r"quality|safety|council|positions|open|local|links|follow|"
+    r"notice|nondiscrimination|aviso|practicas|privadas|gift|"
+    r"make a gift|county|rounds|grand|strategic|plan|annual|"
+    r"population|health|sciences|commitment|training|history|"
+    r"specialty|procedures|request|information|interest|"
+    r"academic|affairs|radiological|exams|procedures|"
+    r"residents|current|interdisciplinary|perspectives|connect|"
+    r"fellows|obstetric|anesthesiology|regional|"
+    r"movement disorders|multiple sclerosis|neurocritical|"
+    r"neuromuscular|memory|cognitive|providers|assistants|"
+    r"adjunct|position|application|emeritus|associate professor|"
+    r"professor|instructor|lecturer)",
     re.IGNORECASE
 )
 
@@ -437,6 +449,9 @@ def fetch_pmids_by_author_id(author_id, max_results=100):
             data = json.loads(r.read())
         pmids = data["esearchresult"]["idlist"]
         count = int(data["esearchresult"]["count"])
+        if count > 1000:
+            print(f"    Author Identifier returned {count} PMIDs — slug '{author_id}' is invalid, skipping")
+            return [], 0
         return pmids, count
     except Exception as e:
         print(f"    Author Identifier search error for '{author_id}': {e}")
@@ -809,6 +824,44 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
     """
     name = faculty_member["name"]
 
+    # Manual override is stored as "OVERRIDE:searchterm" — check it BEFORE sanitize_hint
+    # so the sanitizer doesn't strip the prefix
+    raw_hint = pubmed_string or ""
+    if raw_hint.startswith("OVERRIDE:"):
+        search_term = raw_hint.replace("OVERRIDE:", "").strip()
+        if search_term == "SKIP":
+            print(f"    Skipping {name} per manual override")
+            faculty_member["pubmed_search"] = "SKIP"
+            faculty_member["pubmed_count"] = 0
+            faculty_member["pubmed_verified"] = 0
+            faculty_member["pubmed_ambiguous"] = False
+            faculty_member["publications"] = []
+            return faculty_member
+        print(f"    Using manual override: '{search_term}'")
+        result = pubmed_search(search_term, max_results=15)
+        print(f"    PubMed: {name} → '{search_term}' ({result['count']} results)")
+        pubs = []
+        if result["ids"]:
+            candidates = pubmed_fetch_summaries(result["ids"][:15], search_term=search_term, verify_affiliation=False)
+            pubs = candidates[:5]
+            if pubs:
+                seed_pmid = pubs[0]["pmid"]
+                print(f"    Computed Authors: seeding with PMID {seed_pmid}")
+                ca_pmids, ca_count = fetch_pmids_via_computed_authors(name, seed_pmid=seed_pmid)
+                if ca_count > 0 and ca_count <= 500:
+                    print(f"    Computed Authors: found {ca_count} total PMIDs for this author")
+                    ca_candidates = pubmed_fetch_summaries(ca_pmids[:20], search_term=search_term, verify_affiliation=False)
+                    if ca_candidates:
+                        pubs = ca_candidates[:5]
+                        faculty_member["pubmed_count"] = ca_count
+        faculty_member["pubmed_search"] = search_term
+        faculty_member["pubmed_count"] = faculty_member.get("pubmed_count") or result["count"]
+        faculty_member["pubmed_verified"] = len(pubs)
+        faculty_member["pubmed_ambiguous"] = False
+        faculty_member["publications"] = pubs
+        time.sleep(0.8)
+        return faculty_member
+
     clean_hint = sanitize_hint(pubmed_string, name)
 
     # MyNCBI bibliography — use E-utilities [Author Identifier] search.
@@ -823,6 +876,10 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
         print(f"    MyNCBI Author ID '{author_id}' → querying via [Author Identifier]")
         pmids, count = fetch_pmids_by_author_id(author_id, max_results=100)
         print(f"    MyNCBI: found {count} total PMIDs, fetching top {min(len(pmids),15)}")
+        if count > 2000:
+            # Hashed/broken slug is matching a massive result set — skip and fall back
+            print(f"    MyNCBI: result set too large ({count}), slug '{author_id}' is probably broken — falling back")
+            pmids, count = [], 0
         if pmids:
             pubs = pubmed_fetch_summaries(pmids[:15], search_term=name)[:5]
             faculty_member["pubmed_search"] = f"{author_id}[Author Identifier]"
@@ -944,8 +1001,12 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
         # Computed Authors will return an entirely wrong author cluster.
         # Skip for recent recruits (unverified seeds) and ORCID searches.
         # ----------------------------------------------------------------
-        verified_pubs = [p for p in pubs if p]  # pubs already filtered by UNC affil (unless recent_recruit)
-        if verified_pubs and not recent_recruit and not search_term.startswith("ORCID:"):
+        # Only seed Computed Authors from genuinely verified pubs.
+        # recent_recruit pubs bypass UNC verification, so skip CA for them.
+        # For normal searches, pubmed_fetch_summaries already filters to UNC-verified,
+        # so any pub in pubs[] is confirmed.
+        verified_pubs = pubs if not recent_recruit else []
+        if verified_pubs and not search_term.startswith("ORCID:"):
             seed_pmid = verified_pubs[0]["pmid"]
             print(f"    Computed Authors: seeding with PMID {seed_pmid}")
             ca_pmids, ca_count = fetch_pmids_via_computed_authors(name, seed_pmid=seed_pmid)
@@ -1081,6 +1142,9 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
                 existing_depts.append(f["department"])
                 existing["departments"] = existing_depts
                 existing["department"] = existing_depts[0]  # keep primary
+            # Preserve pubmed_hint if the incoming entry has one and existing doesn't
+            if f.get("pubmed_hint") and not existing.get("pubmed_hint"):
+                existing["pubmed_hint"] = f["pubmed_hint"]
             print(f"  Merged duplicate: {f['name']} ({f['department']})")
         else:
             seen[key] = len(deduplicated)
@@ -1097,7 +1161,8 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
         if name_key in pubmed_overrides:
             override = pubmed_overrides[name_key]
             print(f"  {f['name']}: OVERRIDE → '{override}'")
-            f["pubmed_hint"] = override
+            # Prefix with OVERRIDE: so sanitize_hint passes it through unchanged
+            f["pubmed_hint"] = f"OVERRIDE:{override}"
             continue
         if f.get("profile_url"):
             ps = scrape_profile_for_pubmed_string(f["profile_url"])
