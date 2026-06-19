@@ -106,7 +106,7 @@
     {
       "name": "Neurosurgery",
       "short": "Neurosurgery",
-      "url": "https://www.med.unc.edu/neurosurgery/about/people/faculty/"
+      "url": "https://www.med.unc.edu/neurosurgery/physicians/"
     },
     {
       "name": "Obstetrics & Gynecology",
@@ -126,12 +126,12 @@
     {
       "name": "Radiation Oncology",
       "short": "Rad Oncology",
-      "url": "https://www.med.unc.edu/radonc/about/people/faculty/"
+      "url": "https://www.med.unc.edu/radonc/about/for-professionals-2/"
     },
     {
       "name": "Anesthesiology",
       "short": "Anesthesiology",
-      "url": "https://www.med.unc.edu/anesthesiology/about/people/faculty/"
+      "url": "https://www.med.unc.edu/anesthesiology/our-department/faculty-directory-2/"
     },
     {
       "name": "Dermatology",
@@ -141,7 +141,7 @@
     {
       "name": "Emergency Medicine",
       "short": "Emergency Med",
-      "url": "https://www.med.unc.edu/emergmed/about/people/faculty/"
+      "url": "https://www.med.unc.edu/emergmed/about-us/directory/"
     },
     {
       "name": "Family Medicine",
@@ -156,7 +156,7 @@
     {
       "name": "Otolaryngology / Head & Neck Surgery",
       "short": "ENT",
-      "url": "https://www.med.unc.edu/ent/about/people/faculty/"
+      "url": "https://www.med.unc.edu/ent/directory/"
     },
     {
       "name": "Ophthalmology",
@@ -166,7 +166,7 @@
     {
       "name": "Urology",
       "short": "Urology",
-      "url": "https://www.med.unc.edu/urology/about/people/faculty/"
+      "url": "https://www.med.unc.edu/urology/about-us/faculty/"
     },
     {
       "name": "Physical Medicine & Rehabilitation",
