@@ -1119,10 +1119,19 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
     print("\n=== Step 1: Scraping faculty pages ===")
     for dept in departments:
         print(f"\n[{dept['name']}]")
-        faculty_list = scrape_faculty_from_page(dept["url"], dept["name"])
-        dept_index[dept["name"]] = faculty_list
-        all_faculty.extend(faculty_list)
-        time.sleep(1)  # polite crawl delay
+        # Support both single "url" and multiple "urls" per department
+        urls = dept.get("urls") or [dept.get("url")]
+        urls = [u for u in urls if u]
+        dept_faculty = []
+        for url in urls:
+            faculty_list = scrape_faculty_from_page(url, dept["name"])
+            dept_faculty.extend(faculty_list)
+            time.sleep(0.5)
+        dept_index[dept["name"]] = dept_faculty
+        all_faculty.extend(dept_faculty)
+        if len(urls) > 1:
+            print(f"  Total from {len(urls)} pages: {len(dept_faculty)} faculty")
+        time.sleep(0.5)
 
     print(f"\nTotal faculty scraped: {len(all_faculty)}")
 
