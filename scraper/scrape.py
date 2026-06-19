@@ -151,7 +151,15 @@ NON_NAME_PATTERNS = re.compile(
     r"movement disorders|multiple sclerosis|neurocritical|"
     r"neuromuscular|memory|cognitive|providers|assistants|"
     r"adjunct|position|application|emeritus|associate professor|"
-    r"professor|instructor|lecturer)",
+    r"professor|instructor|lecturer|"
+    r"making a referral|making an appointment|sublingual|immunotherapy|"
+    r"find a doctor|my chart|show your support|scheduling|referrals|"
+    r"impactful publications|social media|rheumatology care|"
+    r"transitioning to adult|resident documents|darville|thompson laboratory|"
+    r"vogt laboratory|pandya|hematology & sickle|developmental therapeutics|"
+    r"inflammatory bowel|endoscopy|colonoscopy|primary care|adolescent care|"
+    r"complex & diagnostic|development, behavior|child maltreatment|"
+    r"genetics & metabolism|infectious diseases(?! \w)|pediatric (?!faculty))",
     re.IGNORECASE
 )
 
