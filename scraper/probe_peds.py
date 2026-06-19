@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Run this as a one-off GitHub Actions step to see what the WP REST API returns.
-Add to discover_urls.yml as an extra step, or run standalone.
+Phase 2 probe: we know faculty pages exist with IDs 39244, 39249, 36843.
+Now find ALL faculty page IDs and their children (individual faculty profiles).
 """
 import urllib.request, json, time
 
@@ -13,55 +13,50 @@ HEADERS = {
     )
 }
 
-def fetch(url):
+def fetch_json(url):
     try:
         req = urllib.request.Request(url, headers=HEADERS)
         with urllib.request.urlopen(req, timeout=10) as r:
-            return r.read().decode('utf-8', errors='replace'), r.status
+            return json.loads(r.read())
     except Exception as e:
-        return None, str(e)
+        print(f"  ERROR: {e}")
+        return None
 
-base = "https://www.med.unc.edu/pediatrics"
+base = "https://www.med.unc.edu/pediatrics/wp-json/wp/v2"
 
-print("=" * 60)
-print("Probing UNC Pediatrics WordPress REST API")
-print("=" * 60)
+# Step 1: Get ALL pages with slug=faculty (paginate to get all divisions)
+print("=== Step 1: Get all 'faculty' pages (all divisions) ===")
+all_faculty_pages = []
+for page_num in range(1, 5):
+    url = f"{base}/pages?slug=faculty&per_page=100&page={page_num}&_fields=id,title,link,slug,parent"
+    data = fetch_json(url)
+    if not data or not isinstance(data, list) or len(data) == 0:
+        break
+    all_faculty_pages.extend(data)
+    print(f"  Page {page_num}: {len(data)} results")
+    time.sleep(0.3)
 
-endpoints = [
-    # Does the API exist at all?
-    f"{base}/wp-json/",
-    # Standard WP page types
-    f"{base}/wp-json/wp/v2/types",
-    # Search for pages with 'faculty' in slug
-    f"{base}/wp-json/wp/v2/pages?slug=faculty&per_page=5&_fields=id,title,link,slug,parent",
-    # Get ALL pages, look for faculty ones
-    f"{base}/wp-json/wp/v2/pages?per_page=10&_fields=id,title,link,slug,parent",
-    # Custom post type? Check posts too
-    f"{base}/wp-json/wp/v2/posts?per_page=5&_fields=id,title,link,slug",
-    # The tec api hinted in meta
-    f"{base}/wp-json/tec/v1/",
-    # Try the actual faculty page as a WP page
-    f"{base}/wp-json/wp/v2/pages?slug=faculty&parent_slug=team&per_page=10",
-]
+print(f"\nTotal 'faculty' pages found: {len(all_faculty_pages)}")
+for p in all_faculty_pages:
+    print(f"  id={p['id']} parent={p.get('parent',0)} link={p.get('link','')}")
 
-for url in endpoints:
-    print(f"\n--- GET {url}")
-    data, status = fetch(url)
-    print(f"Status: {status}")
-    if data:
-        print(f"Length: {len(data)} bytes")
-        # Pretty print if JSON
-        try:
-            parsed = json.loads(data)
-            if isinstance(parsed, list):
-                print(f"Array of {len(parsed)} items")
-                for item in parsed[:3]:
-                    if isinstance(item, dict):
-                        print(f"  id={item.get('id')} slug={item.get('slug')} title={item.get('title',{}).get('rendered','') if isinstance(item.get('title'),dict) else item.get('title','')}")
-            elif isinstance(parsed, dict):
-                print(f"Object with keys: {list(parsed.keys())[:10]}")
-                if 'routes' in parsed:
-                    print(f"  Routes (first 10): {list(parsed['routes'].keys())[:10]}")
-        except:
-            print(f"Raw (first 500 chars): {data[:500]}")
-    time.sleep(0.5)
+# Step 2: For each faculty page, get its children (individual faculty members)
+print("\n=== Step 2: Get children of each faculty page ===")
+all_people = []
+for fpage in all_faculty_pages[:20]:  # cap at 20 divisions
+    parent_id = fpage['id']
+    parent_link = fpage.get('link', '')
+    url = f"{base}/pages?parent={parent_id}&per_page=100&_fields=id,title,link,slug&status=publish"
+    children = fetch_json(url)
+    if not children or not isinstance(children, list):
+        continue
+    print(f"\n  Faculty page {parent_id} ({parent_link}): {len(children)} children")
+    for child in children[:5]:  # show first 5
+        title = child.get('title', {})
+        if isinstance(title, dict):
+            title = title.get('rendered', '')
+        print(f"    id={child['id']} title={title} link={child.get('link','')}")
+    all_people.extend(children)
+    time.sleep(0.3)
+
+print(f"\nTotal faculty profiles found: {len(all_people)}")
