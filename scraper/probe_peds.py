@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Phase 2 probe: we know faculty pages exist with IDs 39244, 39249, 36843.
-Now find ALL faculty page IDs and their children (individual faculty profiles).
+Phase 3: faculty are not child pages — they're a Toolset custom post type.
+Find the right post type and query it filtered by parent division.
 """
 import urllib.request, json, time
 
@@ -13,50 +13,57 @@ HEADERS = {
     )
 }
 
-def fetch_json(url):
+def fetch_json(url, silent=False):
     try:
         req = urllib.request.Request(url, headers=HEADERS)
         with urllib.request.urlopen(req, timeout=10) as r:
             return json.loads(r.read())
     except Exception as e:
-        print(f"  ERROR: {e}")
+        if not silent:
+            print(f"  ERROR {url}: {e}")
         return None
 
-base = "https://www.med.unc.edu/pediatrics/wp-json/wp/v2"
+base = "https://www.med.unc.edu/pediatrics/wp-json"
 
-# Step 1: Get ALL pages with slug=faculty (paginate to get all divisions)
-print("=== Step 1: Get all 'faculty' pages (all divisions) ===")
-all_faculty_pages = []
-for page_num in range(1, 5):
-    url = f"{base}/pages?slug=faculty&per_page=100&page={page_num}&_fields=id,title,link,slug,parent"
-    data = fetch_json(url)
-    if not data or not isinstance(data, list) or len(data) == 0:
-        break
-    all_faculty_pages.extend(data)
-    print(f"  Page {page_num}: {len(data)} results")
-    time.sleep(0.3)
+# Step 1: list ALL registered post types
+print("=== All registered post types ===")
+types = fetch_json(f"{base}/wp/v2/types")
+if types:
+    for slug, info in types.items():
+        rest_base = info.get('rest_base', '')
+        print(f"  {slug:30s} rest_base={rest_base}")
 
-print(f"\nTotal 'faculty' pages found: {len(all_faculty_pages)}")
-for p in all_faculty_pages:
-    print(f"  id={p['id']} parent={p.get('parent',0)} link={p.get('link','')}")
+time.sleep(0.5)
 
-# Step 2: For each faculty page, get its children (individual faculty members)
-print("\n=== Step 2: Get children of each faculty page ===")
-all_people = []
-for fpage in all_faculty_pages[:20]:  # cap at 20 divisions
-    parent_id = fpage['id']
-    parent_link = fpage.get('link', '')
-    url = f"{base}/pages?parent={parent_id}&per_page=100&_fields=id,title,link,slug&status=publish"
-    children = fetch_json(url)
-    if not children or not isinstance(children, list):
-        continue
-    print(f"\n  Faculty page {parent_id} ({parent_link}): {len(children)} children")
-    for child in children[:5]:  # show first 5
-        title = child.get('title', {})
-        if isinstance(title, dict):
-            title = title.get('rendered', '')
-        print(f"    id={child['id']} title={title} link={child.get('link','')}")
-    all_people.extend(children)
-    time.sleep(0.3)
+# Step 2: try Toolset's custom post search endpoint
+print("\n=== Toolset PostSearch endpoint ===")
+toolset = fetch_json(f"{base}/ToolsetBlocks/Rest/API/v1/PostSearch")
+if toolset:
+    print(json.dumps(toolset, indent=2)[:500])
 
-print(f"\nTotal faculty profiles found: {len(all_people)}")
+time.sleep(0.5)
+
+# Step 3: try common custom post type names for faculty/people
+print("\n=== Try common custom post type REST bases ===")
+candidates = [
+    "faculty", "people", "person", "staff", "team",
+    "provider", "physician", "researcher", "member",
+    "ped-faculty", "peds-faculty", "faculty-member",
+]
+for slug in candidates:
+    data = fetch_json(f"{base}/wp/v2/{slug}?per_page=3&_fields=id,title,link", silent=True)
+    if data and isinstance(data, list) and len(data) > 0:
+        print(f"  FOUND: /{slug} — {len(data)} results")
+        for item in data[:3]:
+            title = item.get('title', {})
+            if isinstance(title, dict): title = title.get('rendered', '')
+            print(f"    id={item['id']} title={title}")
+    time.sleep(0.2)
+
+# Step 4: check all routes for anything faculty-related
+print("\n=== All API routes containing 'faculty' or 'people' or 'person' ===")
+root = fetch_json(f"{base}/")
+if root and 'routes' in root:
+    for route in root['routes']:
+        if any(word in route.lower() for word in ['faculty', 'people', 'person', 'staff', 'provider']):
+            print(f"  {route}")
