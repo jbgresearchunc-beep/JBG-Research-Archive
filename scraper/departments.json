@@ -64,16 +64,23 @@
       "name": "Pediatrics",
       "short": "Pediatrics",
       "urls": [
-        "https://www.med.unc.edu/pediatrics/ai/team/faculty/",
-        "https://www.med.unc.edu/pediatrics/endo/team/faculty/",
-        "https://www.med.unc.edu/pediatrics/gi/team/faculty/",
-        "https://www.med.unc.edu/pediatrics/hemeonc/team/faculty/",
-        "https://www.med.unc.edu/pediatrics/id/team/faculty/",
-        "https://www.med.unc.edu/pediatrics/neonatal/team/faculty/",
-        "https://www.med.unc.edu/pediatrics/nephrology/team/faculty/",
-        "https://www.med.unc.edu/pediatrics/neuro/team/faculty/",
-        "https://www.med.unc.edu/pediatrics/pulmonology/team/faculty/",
-        "https://www.med.unc.edu/pediatrics/cardiology/team/faculty/"
+        "https://www.med.unc.edu/pediatrics/ai/team/",
+        "https://www.med.unc.edu/pediatrics/cardiology/team/",
+        "https://www.med.unc.edu/pediatrics/pccm/",
+        "https://www.med.unc.edu/pediatrics/dbl/",
+        "https://www.med.unc.edu/pediatrics/emerg/",
+        "https://www.med.unc.edu/pediatrics/endo/",
+        "https://www.med.unc.edu/pediatrics/gi/",
+        "https://www.med.unc.edu/pediatrics/gpam/",
+        "https://www.med.unc.edu/pediatrics/gene/",
+        "https://www.med.unc.edu/pediatrics/hemonc/",
+        "https://www.med.unc.edu/pediatrics/hosp/",
+        "https://www.med.unc.edu/pediatrics/id/",
+        "https://www.med.unc.edu/pediatrics/npm/",
+        "https://www.med.unc.edu/pediatrics/neph/",
+        "https://www.med.unc.edu/pediatrics/pulm/",
+        "https://www.med.unc.edu/pediatrics/rheum/",
+        "https://www.med.unc.edu/pediatrics/wilmington/"
       ]
     },
     {
