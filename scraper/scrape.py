@@ -285,6 +285,16 @@ def scrape_faculty_via_wp_rest(base_url, dept_name):
 
             link = entry.get("link", "")
 
+            # Skip people whose profile URL belongs to a different department.
+            # e.g. Brent Kinder appears in Neurology's ud_entry feed because he
+            # treats TSC patients, but his profile is under /medicine/pulmonary/
+            # The wp_base path (e.g. '/neurology') should appear in their profile URL.
+            if link and wp_base:
+                wp_path = urllib.parse.urlparse(wp_base).path  # e.g. '/neurology'
+                profile_path = urllib.parse.urlparse(link).path
+                if wp_path and wp_path not in profile_path:
+                    continue  # belongs to a different department
+
             # Get division from class_list
             class_list = entry.get("class_list", [])
             division = ""
