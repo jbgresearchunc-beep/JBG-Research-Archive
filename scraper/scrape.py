@@ -207,81 +207,102 @@ def extract_name(raw_text):
 
 def scrape_faculty_via_wp_rest(base_url, dept_name):
     """
-    Scrape faculty from a WordPress site using the WP REST API.
-    Used for departments whose faculty pages are JavaScript-rendered
-    (e.g. UNC Pediatrics divisions).
+    Scrape faculty from a WordPress/Toolset site using the ud_entry custom post type.
+    Used for UNC Pediatrics whose faculty pages are JavaScript-rendered.
 
-    Strategy:
-    1. Query /wp-json/wp/v2/pages?search=faculty to find faculty page IDs
-    2. Query /wp-json/wp/v2/pages?parent={id} to get child pages (individual profiles)
-    3. Extract names from page titles
+    The site stores all people as ud_entry posts at:
+      /wp-json/wp/v2/ud_entry?per_page=100&page=N
 
-    Returns list of faculty dicts, same format as scrape_faculty_from_page.
+    Each entry has:
+      - title.rendered: full name with credentials
+      - ud_entry_custom_fields: {ud_first_name, ud_last_name, ud_positions}
+      - class_list: includes ud_division-{code} for division membership
+      - link: profile URL
+
+    We filter to faculty (MD, PhD, DO, etc.) and exclude admin/nursing/support staff.
+    Only called once per department (first URL), subsequent division URLs are skipped.
     """
-    # Derive the WordPress base (strip trailing path after domain)
+    # Only run this once for the whole Pediatrics department
+    # (all divisions share the same wp-json endpoint)
     parsed = urllib.parse.urlparse(base_url)
-    # For URLs like /pediatrics/ai/team/faculty/, the WP install is at /pediatrics/
     path_parts = parsed.path.strip("/").split("/")
     wp_base = f"{parsed.scheme}://{parsed.netloc}/{path_parts[0]}"
-    api_base = f"{wp_base}/wp-json/wp/v2"
+    api_url = f"{wp_base}/wp-json/wp/v2/ud_entry"
+
+    # Faculty credential patterns — only include people with these in their title
+    FACULTY_CREDENTIALS = re.compile(
+        r"\b(MD|PhD|DO|PharmD|DrPH|DVM|DDS|MBBS|ScD|MD-PhD|MD/PhD)\b",
+        re.IGNORECASE
+    )
 
     faculty = []
+    seen = set()
+    page = 1
 
-    try:
-        # Step 1: find the faculty page by slug/search
-        # Try to find pages matching the URL path
-        slug = path_parts[-1] if path_parts[-1] else path_parts[-2]
-        search_url = (
-            f"{api_base}/pages?slug={slug}&per_page=10"
-            f"&_fields=id,title,link,slug,parent&_embed=false"
+    while True:
+        url = (
+            f"{api_url}?per_page=100&page={page}"
+            f"&_fields=id,title,link,ud_entry_custom_fields,class_list,ud_division"
         )
-        data, _ = None, None
-        html = fetch_url(search_url)
+        html = fetch_url(url)
         if not html:
-            return []
+            break
+        try:
+            entries = json.loads(html)
+        except Exception:
+            break
+        if not isinstance(entries, list) or len(entries) == 0:
+            break
 
-        pages = json.loads(html)
-        if not isinstance(pages, list) or not pages:
-            # Try searching instead
-            search_url2 = f"{api_base}/pages?search=faculty&per_page=50&_fields=id,title,link,slug,parent"
-            html2 = fetch_url(search_url2)
-            if html2:
-                pages = json.loads(html2)
+        for entry in entries:
+            # Get name from title
+            raw_title = entry.get("title", {})
+            if isinstance(raw_title, dict):
+                raw_title = raw_title.get("rendered", "")
+            raw_title = re.sub(r"<[^>]+>", "", raw_title).strip()  # strip HTML entities
 
-        # Step 2: get child pages of the faculty page (individual person pages)
-        faculty_page_ids = [p["id"] for p in pages if isinstance(pages, list)]
+            # Only include people with faculty credentials
+            if not FACULTY_CREDENTIALS.search(raw_title):
+                # Also check ud_positions for faculty title
+                custom = entry.get("ud_entry_custom_fields", {})
+                positions = custom.get("ud_positions", [])
+                position_text = " ".join(p.get("ud_title", "") for p in positions)
+                if not FACULTY_CREDENTIALS.search(position_text):
+                    # Check for professor/instructor titles
+                    if not re.search(
+                        r"\b(professor|instructor|director|chief|lecturer)\b",
+                        position_text, re.IGNORECASE
+                    ):
+                        continue
 
-        for parent_id in faculty_page_ids[:5]:  # cap to avoid runaway
-            children_url = (
-                f"{api_base}/pages?parent={parent_id}&per_page=100"
-                f"&_fields=id,title,link,slug&status=publish"
-            )
-            html_children = fetch_url(children_url)
-            if not html_children:
+            name = extract_name(raw_title)
+            if not name or len(name) < 4:
                 continue
-            children = json.loads(html_children)
-            if not isinstance(children, list):
+            name_key = name.lower()
+            if name_key in seen:
                 continue
+            seen.add(name_key)
 
-            for child in children:
-                raw_title = child.get("title", {})
-                if isinstance(raw_title, dict):
-                    raw_title = raw_title.get("rendered", "")
-                name = extract_name(re.sub(r"<[^>]+>", "", raw_title).strip())
-                link = child.get("link", "")
-                if name and looks_like_name(name):
-                    faculty.append({
-                        "name": name,
-                        "profile_url": link,
-                        "department": dept_name,
-                        "role": "",
-                    })
+            link = entry.get("link", "")
 
-        if faculty:
-            print(f"    WP REST API: found {len(faculty)} faculty")
+            # Get division from class_list
+            class_list = entry.get("class_list", [])
+            division = ""
+            for cls in class_list:
+                if cls.startswith("ud_division-") and cls != "ud_division-all_peds":
+                    division = cls.replace("ud_division-", "").replace("_", " ").title()
+                    break
 
-    except Exception as e:
-        print(f"    WP REST API error for {base_url}: {e}")
+            faculty.append({
+                "name": name,
+                "profile_url": link,
+                "department": dept_name,
+                "role": division,
+            })
+
+        print(f"    WP REST API page {page}: {len(entries)} entries, {len(faculty)} faculty so far")
+        page += 1
+        time.sleep(0.3)
 
     return faculty
 
@@ -352,10 +373,21 @@ def scrape_faculty_from_page(url, dept_name):
     print(f"  Found {len(faculty)} faculty")
 
     # If HTML scraping returned nothing, the page is likely JavaScript-rendered.
-    # Try the WordPress REST API as a fallback.
+    # Try the WordPress REST API as a fallback — but only once per WP install
+    # (the ud_entry endpoint returns ALL people, so one call covers all divisions)
     if len(faculty) == 0:
+        # Check if we've already fetched this WP install
+        parsed = urllib.parse.urlparse(url)
+        path_parts = parsed.path.strip("/").split("/")
+        wp_key = f"{parsed.netloc}/{path_parts[0]}"  # e.g. "www.med.unc.edu/pediatrics"
+        if not hasattr(scrape_faculty_from_page, "_wp_rest_cache"):
+            scrape_faculty_from_page._wp_rest_cache = {}
+        if wp_key in scrape_faculty_from_page._wp_rest_cache:
+            print(f"  WP REST already fetched for {wp_key} — skipping")
+            return []
         print(f"  No faculty from HTML — trying WP REST API...")
         faculty = scrape_faculty_via_wp_rest(url, dept_name)
+        scrape_faculty_from_page._wp_rest_cache[wp_key] = True
         if faculty:
             print(f"  Found {len(faculty)} faculty via WP REST API")
 
