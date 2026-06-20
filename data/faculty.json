@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-20T04:52:23.584422Z",
-  "total_faculty": 2357,
+  "generated_at": "2026-06-20T14:29:44.364536Z",
+  "total_faculty": 2354,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -8121,11 +8121,17 @@
       "departments": [
         "Medicine \u2014 Nephrology & Hypertension"
       ],
-      "pubmed_count": 145,
-      "pubmed_search": "ComputedAuthors:Flythe JE",
+      "pubmed_search": "Flythe JE",
+      "pubmed_count": 90,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
+        {
+          "pmid": "42320575",
+          "title": "Meaningful Engagement of Patients in Research.",
+          "journal": "Am J Kidney Dis",
+          "year": "2026"
+        },
         {
           "pmid": "42275144",
           "title": "Patient Centered Technologies to Improve Hemodialysis Vascular Access Cannulation.",
@@ -8148,12 +8154,6 @@
           "pmid": "41971228",
           "title": "The Perspectives of Patients and Community Health Workers on the Recruitment and Retention of Latino Individuals in Research in Dialysis: A Qualitative Study.",
           "journal": "Kidney Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "41713645",
-          "title": "Green dialysis: environmentally sustainable care, growth, and innovation: conclusions from a Kidney Disease: Improving Global Outcomes (KDIGO) Controversies Conference.",
-          "journal": "Kidney Int",
           "year": "2026"
         }
       ],
@@ -17779,7 +17779,7 @@
       "publications": [
         {
           "pmid": "42248299",
-          "title": "Accuracy of clinical phenotype for diagnosing adults with primary ciliary dyskinesia.",
+          "title": "Accuracy of Clinical Phenotype for Diagnosing Adults With Primary Ciliary Dyskinesia.",
           "journal": "Chest",
           "year": "2026"
         },
@@ -22335,7 +22335,7 @@
       "publications": [
         {
           "pmid": "42248299",
-          "title": "Accuracy of clinical phenotype for diagnosing adults with primary ciliary dyskinesia.",
+          "title": "Accuracy of Clinical Phenotype for Diagnosing Adults With Primary Ciliary Dyskinesia.",
           "journal": "Chest",
           "year": "2026"
         },
@@ -29266,42 +29266,11 @@
         "Psychiatry"
       ],
       "pubmed_hint": "Alcohol Cannabis",
-      "pubmed_count": 39,
-      "pubmed_search": "ComputedAuthors:Hooper S",
-      "pubmed_verified": 5,
+      "pubmed_search": "Alcohol Cannabis",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42129510",
-          "title": "The association of newborn metabolites with early-life wheezing and asthma among US children in the ECHO Program.",
-          "journal": "Commun Med (Lond)",
-          "year": "2026"
-        },
-        {
-          "pmid": "41875060",
-          "title": "Per- and Polyfluoroalkyl Substances During Pregnancy and Gestational Diabetes: The Environmental Influences on Child Health Outcomes (ECHO) Cohort.",
-          "journal": "Diabetes Care",
-          "year": "2026"
-        },
-        {
-          "pmid": "41722752",
-          "title": "Placental histopathology and early childhood neurodevelopment in the Environmental influences on Child Health Outcomes cohort.",
-          "journal": "Am J Obstet Gynecol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41697983",
-          "title": "Association of Maternal Smoking During Pregnancy With Childhood Blood Pressure and Hypertension in the ECHO Cohort.",
-          "journal": "Circulation",
-          "year": "2026"
-        },
-        {
-          "pmid": "41642661",
-          "title": "Fibroblast Growth Factor 23 Trajectories in Children and Association with CKD Progression: The CKD in Children Study.",
-          "journal": "Clin J Am Soc Nephrol",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -31379,11 +31348,17 @@
       "departments": [
         "Psychiatry"
       ],
-      "pubmed_count": 5,
-      "pubmed_search": "ComputedAuthors:Nathan Margo",
-      "pubmed_verified": 5,
+      "pubmed_search": "Nathan Margo",
+      "pubmed_count": 3,
+      "pubmed_verified": 3,
       "pubmed_ambiguous": false,
       "publications": [
+        {
+          "pmid": "42322123",
+          "title": "Editorial: Menopause and mental health.",
+          "journal": "Int J Gynaecol Obstet",
+          "year": "2026"
+        },
         {
           "pmid": "41992107",
           "title": "Impact of a Perinatal Psychiatry Access Program on Patient Experience: A Cross-Sectional Study.",
@@ -31391,28 +31366,10 @@
           "year": "2026"
         },
         {
-          "pmid": "41720285",
-          "title": "Functional neural changes linked to depression during the menopause transition and the effects of hormone therapy: A narrative review.",
-          "journal": "Prog Neuropsychopharmacol Biol Psychiatry",
-          "year": "2026"
-        },
-        {
-          "pmid": "41679526",
-          "title": "The Impact of Estradiol Dynamics During the Menopause Transition on Depression Risk: A Narrative Review of Estradiol's Neurobiological Mechanisms.",
-          "journal": "Biol Psychiatry",
-          "year": "2026"
-        },
-        {
-          "pmid": "40912312",
-          "title": "Characterizing the spectrum of distress symptoms in midlife women with perimenopausal depression.",
-          "journal": "J Affect Disord",
-          "year": "2026"
-        },
-        {
-          "pmid": "39837465",
-          "title": "Effects of estradiol administration on brain activation and anhedonia in perimenopausal women: A pharmaco-fMRI study.",
-          "journal": "J Affect Disord",
-          "year": "2025"
+          "pmid": "37496178",
+          "title": "Targeting psychological and menopausal factors linked to non-adherence to anti-estrogen therapy in women with early-stage hormone-receptor positive breast cancer: A&#xa0;web-based feasibility study of Finding My Way.",
+          "journal": "Psychooncology",
+          "year": "2023"
         }
       ],
       "nih_grants": []
@@ -36107,39 +36064,39 @@
       "departments": [
         "Psychiatry"
       ],
-      "pubmed_count": 59,
-      "pubmed_search": "ComputedAuthors:Schiller Crystal",
+      "pubmed_search": "Schiller Crystal",
+      "pubmed_count": 11,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "41720285",
-          "title": "Functional neural changes linked to depression during the menopause transition and the effects of hormone therapy: A narrative review.",
-          "journal": "Prog Neuropsychopharmacol Biol Psychiatry",
-          "year": "2026"
-        },
-        {
-          "pmid": "41679526",
-          "title": "The Impact of Estradiol Dynamics During the Menopause Transition on Depression Risk: A Narrative Review of Estradiol's Neurobiological Mechanisms.",
-          "journal": "Biol Psychiatry",
-          "year": "2026"
-        },
-        {
-          "pmid": "41611533",
-          "title": "Causal Evidence for Prefrontal-Motor Coupling in Reward-Responsive Goal-Directed Behavior.",
-          "journal": "J Neurosci",
-          "year": "2026"
-        },
-        {
-          "pmid": "41422952",
-          "title": "Novel methods for detecting hormone sensitive affective dysregulation in regularly cycling women: A proof-of-concept study.",
-          "journal": "J Affect Disord",
+          "pmid": "42322123",
+          "title": "Editorial: Menopause and mental health.",
+          "journal": "Int J Gynaecol Obstet",
           "year": "2026"
         },
         {
           "pmid": "41282910",
           "title": "Machine learning-optimized perinatal depression screening: Maximum impact, minimal burden.",
           "journal": "medRxiv",
+          "year": "2025"
+        },
+        {
+          "pmid": "40657349",
+          "title": "Augmenting single-session behavioral activation for depression with delta-beta tACS: Preliminary investigation of a double-blind placebo-controlled randomized pilot clinical trial.",
+          "journal": "J Mood Anxiety Disord",
+          "year": "2025"
+        },
+        {
+          "pmid": "40117443",
+          "title": "Transforming Women's Health Research-The Time Is Now.",
+          "journal": "J Clin Endocrinol Metab",
+          "year": "2026"
+        },
+        {
+          "pmid": "39581384",
+          "title": "Estradiol modulates resting-state connectivity in perimenopausal depression.",
+          "journal": "J Affect Disord",
           "year": "2025"
         }
       ],
@@ -46607,15 +46564,15 @@
       "departments": [
         "Obstetrics & Gynecology"
       ],
+      "pubmed_search": "Zahn Katelin",
       "pubmed_count": 6,
-      "pubmed_search": "ComputedAuthors:Zahn Katelin",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "41314252",
-          "title": "Antenatal Anemia and Perinatal Outcomes for Patients with Cardiac Disease in Pregnancy.",
-          "journal": "Am J Perinatol",
+          "pmid": "42322123",
+          "title": "Editorial: Menopause and mental health.",
+          "journal": "Int J Gynaecol Obstet",
           "year": "2026"
         },
         {
@@ -48799,10 +48756,22 @@
         "Obstetrics & Gynecology"
       ],
       "pubmed_search": "Neal-Perry Genevieve",
-      "pubmed_count": 26,
+      "pubmed_count": 28,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
+        {
+          "pmid": "42322123",
+          "title": "Editorial: Menopause and mental health.",
+          "journal": "Int J Gynaecol Obstet",
+          "year": "2026"
+        },
+        {
+          "pmid": "42320873",
+          "title": "Anti-Mullerian Hormone Rebound and Estradiol Changes in the Study of Women's Health Across the Nation.",
+          "journal": "Fertil Steril",
+          "year": "2026"
+        },
         {
           "pmid": "41891361",
           "title": "Disparities in genetic testing: Evaluation of reproductive carrier screening in the United States.",
@@ -48819,18 +48788,6 @@
           "pmid": "41588611",
           "title": "Substance use and menopausal hormone therapy: Treatment initiation and interruption among US women with and without HIV, 2008-2019.",
           "journal": "Int J Gynaecol Obstet",
-          "year": "2026"
-        },
-        {
-          "pmid": "41259888",
-          "title": "Early onset, maintenance of effect, and day-/night-time findings following fezolinetant treatment for moderate to severe vasomotor symptoms associated with menopause: A pooled phase 3 analysis.",
-          "journal": "Maturitas",
-          "year": "2025"
-        },
-        {
-          "pmid": "41186575",
-          "title": "Association between central adiposity and cognitive domain function in recently postmenopausal women: an analysis from the KEEPS-Cog substudy of the Kronos Early Estrogen Preventive Study.",
-          "journal": "Menopause",
           "year": "2026"
         }
       ],
@@ -64459,21 +64416,6 @@
       "nih_grants": []
     },
     {
-      "name": "Our & PAs",
-      "profile_url": "https://www.med.unc.edu/derm/the-department/our-people/",
-      "department": "Dermatology",
-      "role": "",
-      "departments": [
-        "Dermatology"
-      ],
-      "pubmed_search": "PAs Our",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
       "name": "Jane Brice",
       "profile_url": "https://www.med.unc.edu/emergmed/directory/jane-brice/",
       "department": "Emergency Medicine",
@@ -69015,36 +68957,6 @@
         "Ophthalmology"
       ],
       "pubmed_search": "Friedland BR",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Adult",
-      "profile_url": "https://www.med.unc.edu/urology/patientinfo/adult-non-cancer/#faculty",
-      "department": "Urology",
-      "role": "",
-      "departments": [
-        "Urology"
-      ],
-      "pubmed_search": "Adult",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Cancer Specialists",
-      "profile_url": "https://www.med.unc.edu/urology/patientinfo/cancer/#faculty",
-      "department": "Urology",
-      "role": "",
-      "departments": [
-        "Urology"
-      ],
-      "pubmed_search": "Specialists Cancer",
       "pubmed_count": 0,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
