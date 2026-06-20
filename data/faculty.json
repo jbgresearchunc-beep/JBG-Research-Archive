@@ -1,1766 +1,424 @@
 {
-  "generated_at": "2026-06-20T00:21:00.728382Z",
-  "total_faculty": 63,
+  "generated_at": "2026-06-20T00:26:53.491751Z",
+  "total_faculty": 10,
   "departments": [
-    "Emergency Medicine"
+    "Medicine \u2014 Gastroenterology & Hepatology"
   ],
   "faculty": [
     {
-      "name": "Jane Brice",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/jane-brice/",
-      "department": "Emergency Medicine",
+      "name": "Jihad Aljabban",
+      "profile_url": "https://www.med.unc.edu/medicine/gi/people/jihad-aljabban-md/",
+      "department": "Medicine \u2014 Gastroenterology & Hepatology",
       "role": "",
       "departments": [
-        "Emergency Medicine"
+        "Medicine \u2014 Gastroenterology & Hepatology"
+      ],
+      "pubmed_search": "Aljabban Jihad",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Shifali Arora",
+      "profile_url": "https://www.med.unc.edu/medicine/gi/people/shifali-arora/",
+      "department": "Medicine \u2014 Gastroenterology & Hepatology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Gastroenterology & Hepatology"
       ],
       "pubmed_count": 7,
-      "pubmed_search": "ComputedAuthors:Brice Jane",
+      "pubmed_search": "ComputedAuthors:Arora Shifali",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "42254550",
-          "title": "Stroke Survivor and Caregiver Perspectives on Seeking Emergency Medical Care.",
-          "journal": "J Patient Exp",
+          "pmid": "41260282",
+          "title": "Optimizing Scheduling Efficiency and Throughput in the Endoscopy Unit: Best Practices and Strategies to Improve Unit Utilization.",
+          "journal": "Clin Gastroenterol Hepatol",
           "year": "2026"
         },
         {
-          "pmid": "41930739",
-          "title": "Staffing Trends Amid Boarding Challenges: A Five-Year Analysis (2019-2023).",
-          "journal": "Acad Emerg Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "40208966",
-          "title": "Rural Emergency Medical Services Perspectives on Improving Acute Stroke Care: A Qualitative Study.",
-          "journal": "Prehosp Emerg Care",
-          "year": "2025"
-        },
-        {
-          "pmid": "39917114",
-          "title": "Characterizing the Use and Potential of Social Media for Education and Advancement in Emergency Medical Services (EMS).",
-          "journal": "Cureus",
-          "year": "2025"
-        },
-        {
-          "pmid": "39495960",
-          "title": "Drug Misuse Among Pediatric Patients: Encounters in the Prehospital Field.",
-          "journal": "N C Med J",
-          "year": "2024"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Andrew W. Godfrey",
-      "profile_url": "https://emergencymedicine.duke.edu/profile/andrew-w-godfrey",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Godfrey A",
-      "pubmed_count": 3,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "James L. Larson",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/james-larson/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Larson JL",
-      "pubmed_count": 7,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Tyler Beckler",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/tyler-beckler/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Beckler Tyler",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Smeet Bhimani",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/smeet-bhimani-do/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 1,
-      "pubmed_search": "ComputedAuthors:Bhimani Smeet",
-      "pubmed_verified": 1,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41973408",
-          "title": "Navigating Medication Risk in the ED: Communication Preferences of Older Adults Regarding Deprescribing.",
-          "journal": "Acad Emerg Med",
-          "year": "2026"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Nikki Binz",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/nikki-binz/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Binz Nikki",
-      "pubmed_count": 2,
-      "pubmed_verified": 2,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42291614",
-          "title": "Empowering Women in Academic Emergency Medicine: A Time-Efficient Workshop Incorporating Large Language Models to Enhance Leadership Skills.",
-          "journal": "AEM Educ Train",
-          "year": "2026"
-        },
-        {
-          "pmid": "40598093",
-          "title": "A mixed methods pilot study of an internal coaching program within an academic emergency department.",
-          "journal": "BMC Med Educ",
-          "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Charles Blevins",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/charles-blevins/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 5,
-      "pubmed_search": "ComputedAuthors:Blevins C",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "29431918",
-          "title": "Examining the psychological and emotional mechanisms of mindfulness that reduce stress to enhance healthy behaviours.",
-          "journal": "Stress Health",
-          "year": "2018"
-        },
-        {
-          "pmid": "29097180",
-          "title": "Student Veterans Reintegrating From the Military to the University With Traumatic Injuries: How Does Service Use Relate to Health Status?",
-          "journal": "Arch Phys Med Rehabil",
-          "year": "2018"
-        },
-        {
-          "pmid": "28352240",
-          "title": "Military Service Member and Veteran Reintegration: A Conceptual Analysis, Unified Definition, and Key Domains.",
-          "journal": "Front Psychol",
-          "year": "2017"
-        },
-        {
-          "pmid": "28206799",
-          "title": "Military service member and veteran reintegration: A critical review and adapted ecological model.",
-          "journal": "Am J Orthopsychiatry",
-          "year": "2017"
-        },
-        {
-          "pmid": "27444965",
-          "title": "Inflammation and positive affect: Examining the stress-buffering hypothesis with data from the National Longitudinal Study of Adolescent to Adult Health.",
-          "journal": "Brain Behav Immun",
-          "year": "2017"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Gary Burke",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/gary-burke/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 4,
-      "pubmed_search": "ComputedAuthors:Burke Gary",
-      "pubmed_verified": 4,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "29768634",
-          "title": "Perceived Burden of EHRs on Physicians at Different Stages of Their Career.",
-          "journal": "Appl Clin Inform",
-          "year": "2018"
-        },
-        {
-          "pmid": "29304831",
-          "title": "Randomized controlled pilot study of an educational video plus telecare for the early outpatient management of musculoskeletal pain among older emergency department patients.",
-          "journal": "Trials",
-          "year": "2018"
-        },
-        {
-          "pmid": "23369766",
-          "title": "Expansion of electronic health record-based screening, prevention, and management of diabetes in New York City.",
-          "journal": "Prev Chronic Dis",
-          "year": "2013"
-        },
-        {
-          "pmid": "22540386",
-          "title": "Pain and interference of pain with function and mood in elderly adults involved in a motor vehicle collision: a pilot study.",
-          "journal": "Exp Aging Res",
-          "year": "2012"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Montika Bush",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/montika-bush/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 18,
-      "pubmed_search": "ComputedAuthors:Bush Montika",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41294649",
-          "title": "Post-Myocardial Infarction Guideline-Recommended Therapy Utilizing Sankey Diagrams Among Medicare Beneficiaries.",
-          "journal": "J Cardiopulm Rehabil Prev",
-          "year": "2026"
-        },
-        {
-          "pmid": "38778488",
-          "title": "Sex and age differences in atypical chief complaints for acute decompensated heart failure in the emergency department.",
-          "journal": "Clin Exp Emerg Med",
-          "year": "2025"
-        },
-        {
-          "pmid": "38021991",
-          "title": "Determining the Educational Value of an Emergency Medicine Rotation for Non-Emergency Medicine Residents.",
-          "journal": "Cureus",
-          "year": "2023"
-        },
-        {
-          "pmid": "37064600",
-          "title": "Psychosocial services provided by licensed cardiac rehabilitation programs.",
-          "journal": "Front Rehabil Sci",
-          "year": "2023"
-        },
-        {
-          "pmid": "35550175",
-          "title": "Brief Educational Video plus Telecare to Enhance Recovery for Older Emergency Department Patients with Acute Musculoskeletal Pain: an update to the study protocol for a randomized controlled trial.",
-          "journal": "Trials",
-          "year": "2022"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Zachary Cardon",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/zachary-cardon/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 2,
-      "pubmed_search": "ComputedAuthors:Cardon Zachary",
-      "pubmed_verified": 2,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "40275439",
-          "title": "Comparative Safety of Medications for Severe Agitation: A Geriatric Emergency Department Guidelines 2.0 Systematic Review.",
-          "journal": "J Am Geriatr Soc",
-          "year": "2025"
-        },
-        {
-          "pmid": "40067297",
-          "title": "Emergency Department Programs to Support Medication Safety in Older Adults: A Systematic Review and Meta-Analysis.",
-          "journal": "JAMA Netw Open",
-          "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Martin Casey",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/martin-casey/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Casey M",
-      "pubmed_count": 1,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Howard Choi",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/howard-choi/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Choi H",
-      "pubmed_count": 11,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Joshua Clark",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/joshua-clark/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 3,
-      "pubmed_search": "ComputedAuthors:Clark Joshua",
-      "pubmed_verified": 3,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "40967605",
-          "title": "The Evaluation of the Oncologic Patient for Drug-Induced Pneumonitis.",
-          "journal": "Semin Respir Crit Care Med",
-          "year": "2025"
-        },
-        {
-          "pmid": "40311083",
-          "title": "A 45-Year-Old Woman with New Breast Cancer Is Found to Have Organizing Pneumonia: Should She Proceed with Immunotherapy?",
-          "journal": "Ann Am Thorac Soc",
-          "year": "2025"
-        },
-        {
-          "pmid": "39281842",
-          "title": "Near fatal case of mirvetuximab soravtansine-gynx induced interstitial lung disease and a review of the primary literature.",
-          "journal": "Gynecol Oncol Rep",
-          "year": "2024"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Julianne Cyr",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/julianne-cyr/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 8,
-      "pubmed_search": "ComputedAuthors:Cyr Julianne",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41823796",
-          "title": "\"We Call Ourselves The Pride Truck\": A Phenomenological Approach to Contextualizing LGBTQ+ EMS Professional Life.",
-          "journal": "Prehosp Emerg Care",
-          "year": "2026"
-        },
-        {
-          "pmid": "40598093",
-          "title": "A mixed methods pilot study of an internal coaching program within an academic emergency department.",
-          "journal": "BMC Med Educ",
-          "year": "2025"
-        },
-        {
-          "pmid": "39917114",
-          "title": "Characterizing the Use and Potential of Social Media for Education and Advancement in Emergency Medical Services (EMS).",
-          "journal": "Cureus",
-          "year": "2025"
-        },
-        {
-          "pmid": "39495960",
-          "title": "Drug Misuse Among Pediatric Patients: Encounters in the Prehospital Field.",
-          "journal": "N C Med J",
+          "pmid": "38911129",
+          "title": "AN ELECTRONIC MEDICAL RECORD PREDICTION MODEL TO IDENTIFY INADEQUATE BOWEL PREPARATION IN PATIENTS AT OUTPATIENT COLONOSCOPY.",
+          "journal": "Tech Innov Gastrointest Endosc",
           "year": "2024"
         },
         {
-          "pmid": "39324729",
-          "title": "Evaluation of the Implementation of a Novel Fluid Resuscitation Device in the Prehospital Care of Sepsis Patients: Application of the Implementation Outcomes Framework.",
-          "journal": "Prehosp Emerg Care",
-          "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Alexandra Digenakis",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/alexandra-digenakis/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Digenakis Alexandra",
-      "pubmed_count": 1,
-      "pubmed_verified": 1,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "35005703",
-          "title": "Building a virtual community of practice for medical students: The Global Emergency Medicine Student Leadership Program.",
-          "journal": "J Am Coll Emerg Physicians Open",
-          "year": "2021"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Ming Ding, MSc",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/ming-ding/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 55,
-      "pubmed_search": "ComputedAuthors:Ding Ming",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42153445",
-          "title": "Estimating the effects of treatment regimes over the course of chronic disease: A multi-state causal framework with baseline confounding.",
-          "journal": "Stat Methods Med Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "41553776",
-          "title": "A Linear Mixed Model With Measurement Error Correction (LMM-MEC): A Method for Summary-Data-Based Multivariable Mendelian Randomization.",
-          "journal": "Genet Epidemiol",
-          "year": "2026"
-        },
-        {
-          "pmid": "40621718",
-          "title": "Long-term lignan intake, whole grain foods, and the risk of gout: results from two prospective cohort studies.",
-          "journal": "Arthritis Care Res (Hoboken)",
-          "year": "2025"
-        },
-        {
-          "pmid": "37983030",
-          "title": "Intake of Energy Drinks Before and During Pregnancy and Adverse Pregnancy Outcomes.",
-          "journal": "JAMA Netw Open",
-          "year": "2023"
-        },
-        {
-          "pmid": "36936601",
-          "title": "Associations between patterns of modifiable risk factors in mid-life to late life and longevity: 36 year prospective cohort study.",
-          "journal": "BMJ Med",
-          "year": "2022"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Kimberly Fender",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/kimberly-fender/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Fender Kimberly",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Joseph Fisher",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/joseph-fisher/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 5,
-      "pubmed_search": "ComputedAuthors:Fisher Joseph",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "32386806",
-          "title": "Severe hypernatremia and gastric dilation from chronic eating disorder and intentional salt ingestion.",
-          "journal": "Am J Emerg Med",
+          "pmid": "32701733",
+          "title": "Reviving Routine Gastrointestinal Endoscopy in the COVID-19 Era.",
+          "journal": "Am J Gastroenterol",
           "year": "2020"
         },
         {
-          "pmid": "32224041",
-          "title": "The rule of two's didn't work: Meckel's diverticulum with hemorrhagic shock in an adolescent.",
-          "journal": "Am J Emerg Med",
+          "pmid": "32141918",
+          "title": "A Quality Improvement Initiative Results in Improved Rates of Timely Postvariceal Bleeding Surveillance Endoscopy.",
+          "journal": "Am J Gastroenterol",
           "year": "2020"
         },
         {
-          "pmid": "29344523",
-          "title": "Clinical skills temporal degradation assessment in undergraduate medical education.",
-          "journal": "J Adv Med Educ Prof",
-          "year": "2018"
-        },
-        {
-          "pmid": "28223850",
-          "title": "Unusual etiology of gastrointestinal symptoms: the case of jojoba butter.",
-          "journal": "Open Access Emerg Med",
-          "year": "2017"
-        },
-        {
-          "pmid": "28202296",
-          "title": "Psychosis in the ED: A case of NMDA receptor antibody encephalitis.",
-          "journal": "Am J Emerg Med",
-          "year": "2017"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Kyle Grimaldi",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/kyle-grimaldi/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Grimaldi Kyle",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Kristie Hadley",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/kristie-hadley/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Hadley Kristie",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Maglin Halsey-Nichols",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/maglin-halsey-nichols/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Halsey-Nichols Maglin",
-      "pubmed_count": 2,
-      "pubmed_verified": 2,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "35899220",
-          "title": "Abdominal Pain in the Emergency Department: How to Select the Correct Imaging for Diagnosis.",
-          "journal": "Open Access Emerg Med",
-          "year": "2022"
-        },
-        {
-          "pmid": "34600632",
-          "title": "Abdominal Pain in the Emergency Department: Missed Diagnoses.",
-          "journal": "Emerg Med Clin North Am",
-          "year": "2021"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Jonathan Hancher",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/jonathan-hancher/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 2,
-      "pubmed_search": "ComputedAuthors:Hancher Jonathan",
-      "pubmed_verified": 2,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "32386806",
-          "title": "Severe hypernatremia and gastric dilation from chronic eating disorder and intentional salt ingestion.",
-          "journal": "Am J Emerg Med",
-          "year": "2020"
-        },
-        {
-          "pmid": "32377443",
-          "title": "Management of Travel-Related Infectious Diseases in the Emergency Department.",
-          "journal": "Curr Emerg Hosp Med Rep",
-          "year": "2020"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Katherine Harmon",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/katherine-harmon-phd/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 1,
-      "pubmed_search": "ComputedAuthors:Harmon K",
-      "pubmed_verified": 1,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "31384632",
-          "title": "Variability in Hospital Admission Rates for Neonates With Fever in North Carolina.",
-          "journal": "Glob Pediatr Health",
+          "pmid": "31270274",
+          "title": "Heterogeneous antiretroviral drug distribution and HIV/SHIV detection in the gut of three species.",
+          "journal": "Sci Transl Med",
           "year": "2019"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Michael Harrigan",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/michael-harrigan/",
-      "department": "Emergency Medicine",
+      "name": "M. Andrea Azcarate-Peril, Ph. D",
+      "profile_url": "https://www.med.unc.edu/medicine/gi/people/m-andrea-azcarate-peril-ph-d/",
+      "department": "Medicine \u2014 Gastroenterology & Hepatology",
       "role": "",
       "departments": [
-        "Emergency Medicine"
+        "Medicine \u2014 Gastroenterology & Hepatology"
       ],
-      "pubmed_search": "Harrigan Michael",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Jason Holbrook",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/jason-holbrook/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 1,
-      "pubmed_search": "ComputedAuthors:Holbrook Jason",
-      "pubmed_verified": 1,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "36990147",
-          "title": "Prognostic Value of Respiratory Variation in Right Atrial Pressure in Patients With Precapillary Pulmonary Hypertension.",
-          "journal": "Chest",
-          "year": "2023"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Mark Hoppens",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/mark-hopper/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 1,
-      "pubmed_search": "ComputedAuthors:Hoppens Mark",
-      "pubmed_verified": 1,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "32828327",
-          "title": "Multicenter Validation of an Emergency Department-Based Screening Tool to Identify Elder Abuse.",
-          "journal": "Ann Emerg Med",
-          "year": "2020"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Amy Ising",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/amy-ising/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 31,
-      "pubmed_search": "ComputedAuthors:Ising Amy",
+      "pubmed_search": "Azcarate-Peril MA",
+      "pubmed_count": 78,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "40882128",
-          "title": "Improving the Performance of a Syndromic Surveillance Definition for Sexual Violence.",
-          "journal": "J Public Health Manag Pract",
-          "year": "2025"
+          "pmid": "41959202",
+          "title": "Gut Microbiome Alterations in Canine Idiopathic Epilepsy: A Pairwise Case-Control Study.",
+          "journal": "bioRxiv",
+          "year": "2026"
         },
         {
-          "pmid": "38687735",
-          "title": "EMS injury cause codes more accurate than emergency department visit ICD-10-CM codes for firearm injury intent in North Carolina.",
+          "pmid": "41737910",
+          "title": "Prebiotic &#x3b2; (1-4) Galacto-oligosaccharides Strengthen Intestinal Barrier Integrity via Mucus Production and Modulation of Tight Junction Genes.",
+          "journal": "Food Biosci",
+          "year": "2026"
+        },
+        {
+          "pmid": "41575985",
+          "title": "Stool and vaginal microbiome profiles patterns among Black and White endometrial cancer survivors: A pilot study in North Carolina.",
           "journal": "PLoS One",
-          "year": "2024"
+          "year": "2026"
         },
         {
-          "pmid": "37790954",
-          "title": "Pregnancy and Emergency Department Utilization in North Carolina, 2016-2021: A Population-Based Surveillance Study.",
-          "journal": "AJPM Focus",
-          "year": "2023"
+          "pmid": "41298209",
+          "title": "Reply to A. Guan.",
+          "journal": "Am J Clin Nutr",
+          "year": "2026"
         },
         {
-          "pmid": "37733637",
-          "title": "Seasonal Trends in Emergency Department Visits for Mental and Behavioral Health Conditions Among Children and Adolescents Aged 5-17 Years - United States, January 2018-June 2023.",
-          "journal": "MMWR Morb Mortal Wkly Rep",
-          "year": "2023"
-        },
-        {
-          "pmid": "36867507",
-          "title": "Evaluation of an Emergency Department Visit Data Mental Health Dashboard.",
-          "journal": "J Public Health Manag Pract",
-          "year": "2023"
+          "pmid": "41127036",
+          "title": "Exploring the Effects of Dietary Intake on Gut Microbiome Diversity and Composition of Older Adults with Type 1 Diabetes: A Pilot Study.",
+          "journal": "Curr Dev Nutr",
+          "year": "2025"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Jonathan Jones",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/jonathan-jones/",
-      "department": "Emergency Medicine",
+      "name": "Trevor S. Barlowe",
+      "profile_url": "https://www.med.unc.edu/medicine/gi/people/trevor-s-barlowe-md/",
+      "department": "Medicine \u2014 Gastroenterology & Hepatology",
       "role": "",
       "departments": [
-        "Emergency Medicine"
+        "Medicine \u2014 Gastroenterology & Hepatology"
       ],
-      "pubmed_count": 12,
-      "pubmed_search": "ComputedAuthors:Jones J",
+      "pubmed_count": 22,
+      "pubmed_search": "ComputedAuthors:Barlowe TS",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "41804334",
-          "title": "Sources and Changes in Medical Student Motivation: A Longitudinal Self-Determination Theory Analysis.",
-          "journal": "J Med Educ Curric Dev",
+          "pmid": "41551662",
+          "title": "Increasing Social Vulnerability Impacts Presentation and Decreases Treatment Response in Eosinophilic Esophagitis.",
+          "journal": "Gastro Hep Adv",
           "year": "2026"
         },
         {
-          "pmid": "41059453",
-          "title": "Exaggerated plethysmography waveforms associated with premature ventricular contractions.",
-          "journal": "Anaesth Rep",
+          "pmid": "41484499",
+          "title": "Differences in Presentation and Outcomes by Type and Severity of Food Impaction Symptoms in Eosinophilic Esophagitis.",
+          "journal": "Dig Dis Sci",
+          "year": "2026"
+        },
+        {
+          "pmid": "41363726",
+          "title": "An Eosinophilic Esophagitis Endoscopic Reference Score Threshold of 2 or Less Is Robust for Assessing Endoscopic Response to Treatment of Eosinophilic Esophagitis.",
+          "journal": "Am J Gastroenterol",
           "year": "2025"
         },
         {
-          "pmid": "40893733",
-          "title": "Perspectives on Analgesia in Patients with Nerve Blocks: A Pilot Survey of Perioperative Nurses.",
-          "journal": "Local Reg Anesth",
-          "year": "2025"
+          "pmid": "41234705",
+          "title": "Differences in Clinical Presentation and Treatment Response of Patients With Eosinophilic Esophagitis Complicated by Esophageal Food Impaction.",
+          "journal": "Gastro Hep Adv",
+          "year": "2026"
         },
         {
-          "pmid": "40851632",
-          "title": "The effects of Dexmedetomidine on Recovery from Acute KIdney INjury (DRAIN): a single-center retrospective review using the Medical Information Mart for Intensive Care, fourth edition (MIMIC-IV).",
-          "journal": "Ther Adv Drug Saf",
-          "year": "2025"
-        },
-        {
-          "pmid": "39537560",
-          "title": "Simulation with Monte Carlo methods to focus quality improvement efforts on interventions with the greatest potential for reducing PACU length of stay: a cross-sectional observational study.",
-          "journal": "BMJ Open Qual",
-          "year": "2024"
+          "pmid": "41158113",
+          "title": "Prevalence of Esophageal Foreign Body and Food Impaction in the United States.",
+          "journal": "Gastro Hep Adv",
+          "year": "2026"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "John Kim, , MMCi",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/john-kim-md/",
-      "department": "Emergency Medicine",
+      "name": "Edward L. Barnes",
+      "profile_url": "https://www.med.unc.edu/medicine/gi/people/edward-l-barnes-md-mph/",
+      "department": "Medicine \u2014 Gastroenterology & Hepatology",
       "role": "",
       "departments": [
-        "Emergency Medicine"
+        "Medicine \u2014 Gastroenterology & Hepatology"
       ],
-      "pubmed_count": 1,
-      "pubmed_search": "ComputedAuthors:Kim John",
-      "pubmed_verified": 1,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "40971613",
-          "title": "Establishing and implementing a responsible artificial intelligence framework: a 1-year review.",
-          "journal": "J Am Med Inform Assoc",
-          "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Yi Li",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/yi-li/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 21,
-      "pubmed_search": "ComputedAuthors:Li Yi",
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1lccGvaT0ri5-/bibliography/public",
+      "pubmed_count": 196,
+      "pubmed_search": "ComputedAuthors:Barnes EL",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "41996755",
-          "title": "Polygenic depression risk, childhood parental substance abuse, and G&#xd7;E interaction in divergent depression trajectories from middle to late adulthood.",
-          "journal": "J Psychiatr Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "40976652",
-          "title": "Demystifying Clone-Censor-Weighting to Studying Treatment Initiation Windows: An Example Using Publicly Available Synthetic Medicare Claims Data.",
-          "journal": "Pharmacoepidemiol Drug Saf",
-          "year": "2025"
-        },
-        {
-          "pmid": "38906275",
-          "title": "Polygenic risk, childhood abuse and gene x environment interactions with depression development from middle to late adulthood: A U.S. national life-course study.",
-          "journal": "Prev Med",
-          "year": "2024"
-        },
-        {
-          "pmid": "37036453",
-          "title": "Gender differences in the association of polygenic risk and divergent depression trajectories from mid to late life: a national longitudinal study.",
-          "journal": "Biodemography Soc Biol",
-          "year": "2023"
-        },
-        {
-          "pmid": "34665567",
-          "title": "Period of Marriage and Genetic Similarity in Height between Spouses in the United States over the 20th Century.",
-          "journal": "Hum Biol",
-          "year": "2021"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Mariecely Luciano-Feijoo",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/mariecely-luciano-feijoo-md/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Luciano-Feijoo Mariecely",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Daniel Markwalter",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/daniel-markwalter-md/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 4,
-      "pubmed_search": "ComputedAuthors:Markwalter Daniel",
-      "pubmed_verified": 4,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41125269",
-          "title": "Emergency department-initiated palliative care screening among older adults: a systematic review and meta-analysis protocol.",
+          "pmid": "42191195",
+          "title": "Modulate Obesity and relateD metabolic complIcations For Yielding improvements in IBD outcomes (MODIFY-IBD): consensus on obesity and cardiometabolic comorbidities in inflammatory bowel disease using systematic reviews and the RAND/UCLA appropriateness method.",
           "journal": "BMJ Open",
-          "year": "2025"
-        },
-        {
-          "pmid": "36580544",
-          "title": "Buprenorphine-Naloxone in the Setting of Kratom Withdrawal, Opioid Use Disorder, and Stage IV Lung Adenocarcinoma.",
-          "journal": "J Palliat Med",
-          "year": "2023"
-        },
-        {
-          "pmid": "31328928",
-          "title": "Framing the future: Family preparedness for care transitions of critically ill children.",
-          "journal": "Fam Syst Health",
-          "year": "2019"
-        },
-        {
-          "pmid": "25734729",
-          "title": "A piece of my mind. In the hands of another.",
-          "journal": "JAMA",
-          "year": "2015"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Lauren Massimo",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/lauren-massimo/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 96,
-      "pubmed_search": "ComputedAuthors:Massimo Lauren",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42238478",
-          "title": "Clinicoanatomic localization of iron-rich gliosis in aphasic presentations of globular glial tauopathy.",
-          "journal": "Brain Commun",
           "year": "2026"
         },
         {
-          "pmid": "42060164",
-          "title": "Factors influencing accelerated progression in behavioral variant frontotemporal dementia.",
-          "journal": "J Neurol",
+          "pmid": "42010070",
+          "title": "Inflamed Skin and Bones: SAPHO Syndrome in a Patient with Indeterminate Colitis.",
+          "journal": "Dig Dis Sci",
           "year": "2026"
         },
         {
-          "pmid": "41346478",
-          "title": "Higher neighborhood deprivation is associated with accelerated disease progression in behavioral-variant frontotemporal degeneration.",
-          "journal": "Alzheimers Dement Behav Socioecon Aging",
-          "year": "2025"
-        },
-        {
-          "pmid": "41216140",
-          "title": "Cumulative incidence of motor and cognitive features in the amyotrophic lateral sclerosis-frontotemporal degeneration spectrum.",
-          "journal": "Brain Commun",
-          "year": "2025"
-        },
-        {
-          "pmid": "41140436",
-          "title": "Racial/ethnic differences in neuropsychological test performance in frontotemporal degeneration.",
-          "journal": "Alzheimers Dement (Amst)",
-          "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Michael McGarry",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/michael-mcgarry/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "McGarry Michael",
-      "pubmed_count": 1,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Samuel McLean",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/samuel-mclean/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 219,
-      "pubmed_search": "ComputedAuthors:McLean Samuel",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42224674",
-          "title": "Smartphone Keystroke Biomarkers as Predictors of Adverse Neuropsychiatric Sequelae After Trauma in Trauma Survivors: Prospective Observational Cohort Study.",
-          "journal": "J Med Internet Res",
+          "pmid": "41970275",
+          "title": "Lack of disparities in postoperative care after ileocecal resection in patients with Crohn's disease at tertiary inflammatory bowel diseases centers.",
+          "journal": "Ther Adv Gastroenterol",
           "year": "2026"
         },
         {
-          "pmid": "42214575",
-          "title": "Peritraumatic C-reactive protein levels predict pain outcomes following traumatic stress exposure in a sex-dependent manner.",
-          "journal": "J Pain",
+          "pmid": "41882315",
+          "title": "IBD Care Across Diverse Patient Populations: Changing the Narrative.",
+          "journal": "Dig Dis Sci",
           "year": "2026"
         },
         {
-          "pmid": "42200045",
-          "title": "Social support and post-traumatic stress symptoms: Longitudinal bidirectional relationships in the AURORA study.",
-          "journal": "J Mood Anxiety Disord",
-          "year": "2026"
-        },
-        {
-          "pmid": "42186353",
-          "title": "Testing a Smartphone-Based Intervention Targeting Anxiety Sensitivity Among Women Presenting for Emergency Care After Sexual Assault: Pilot Randomized Controlled Trial.",
-          "journal": "JMIR Form Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "42151109",
-          "title": "Associations between residential segregation, ambient air pollution, and hippocampal features in recent trauma survivors.",
-          "journal": "Transl Psychiatry",
+          "pmid": "41794217",
+          "title": "Mirikizumab Long-Term Efficacy and Safety in Patients With Crohn's Disease: Results From the VIVID-2 Open-Label Extension Trial.",
+          "journal": "Clin Gastroenterol Hepatol",
           "year": "2026"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Abhi Mehrotra",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/abhi-mehrotra/",
-      "department": "Emergency Medicine",
+      "name": "Todd Baron",
+      "profile_url": "https://www.med.unc.edu/medicine/gi/people/todd-baron-md/",
+      "department": "Medicine \u2014 Gastroenterology & Hepatology",
       "role": "",
       "departments": [
-        "Emergency Medicine"
+        "Medicine \u2014 Gastroenterology & Hepatology"
       ],
-      "pubmed_count": 11,
-      "pubmed_search": "ComputedAuthors:Mehrotra Abhi",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "38276937",
-          "title": "The Clinical Emergency Data Registry: Structure, Use, and Limitations for Research.",
-          "journal": "Ann Emerg Med",
-          "year": "2024"
-        },
-        {
-          "pmid": "37980725",
-          "title": "Patient sex, racial and ethnic disparities in emergency department triage: A multi-site retrospective study.",
-          "journal": "Am J Emerg Med",
-          "year": "2024"
-        },
-        {
-          "pmid": "32726505",
-          "title": "Using Sex-specific Cutoffs for High-sensitivity Cardiac Troponin T to Diagnose Acute Myocardial Infarction.",
-          "journal": "Acad Emerg Med",
-          "year": "2021"
-        },
-        {
-          "pmid": "31288959",
-          "title": "The effects of emergency department crowding on triage and hospital admission decisions.",
-          "journal": "Am J Emerg Med",
-          "year": "2020"
-        },
-        {
-          "pmid": "29238804",
-          "title": "Efficacy of High-Sensitivity Troponin T in Identifying Very-Low-Risk Patients With Possible Acute Coronary Syndrome.",
-          "journal": "JAMA Cardiol",
-          "year": "2018"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Jillian Merica",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/jillian-merica/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Merica Jillian",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Michelle L. Meyer",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/michelle-meyer/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1fkv7b9Spzuk8/bibliography/public",
-      "pubmed_count": 100,
-      "pubmed_search": "ComputedAuthors:Meyer ML",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42255500",
-          "title": "Association of LDL protein cargo with segmental pulse wave velocity in older adults in the atherosclerosis risk in communities study.",
-          "journal": "Front Aging",
-          "year": "2026"
-        },
-        {
-          "pmid": "42230806",
-          "title": "Acute psychological stress transiently increases arterial stiffness in young adults.",
-          "journal": "J Hum Hypertens",
-          "year": "2026"
-        },
-        {
-          "pmid": "42090837",
-          "title": "Associations between sedentary behavior and allostatic load: The 1970 British Cohort Study.",
-          "journal": "Psychoneuroendocrinology",
-          "year": "2026"
-        },
-        {
-          "pmid": "41973408",
-          "title": "Navigating Medication Risk in the ED: Communication Preferences of Older Adults Regarding Deprescribing.",
-          "journal": "Acad Emerg Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "41961196",
-          "title": "Intervention mapping to develop a patient-advocate enhanced program to reduce sedentary behavior in endometrial cancer survivors.",
-          "journal": "J Cancer Surviv",
-          "year": "2026"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Diane L. Miller, , MS",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/diane-miller/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 2,
-      "pubmed_search": "ComputedAuthors:Miller DL",
-      "pubmed_verified": 2,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "39264840",
-          "title": "Consensus Statement of the National Association of EMS Physicians International Association of Fire Chiefs and the International Association of Chiefs of Police: Best Practices for Collaboration Between Law Enforcement and Emergency Medical Services During Acute Behavioral Emergencies.",
-          "journal": "Prehosp Emerg Care",
-          "year": "2024"
-        },
-        {
-          "pmid": "36265294",
-          "title": "Safety of Vascular Neck Restraint applied by law enforcement officers.",
-          "journal": "J Forensic Leg Med",
-          "year": "2022"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Nathaniel Miller",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/nathaniel-miller/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 2,
-      "pubmed_search": "ComputedAuthors:Miller N",
-      "pubmed_verified": 2,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42228807",
-          "title": "\"To Get the Patient the Best Care\": A Qualitative Analysis of Community Health Worker Integration in North Carolina Federally Qualified Health Centers.",
-          "journal": "J Ambul Care Manage",
-          "year": "2026"
-        },
-        {
-          "pmid": "33666117",
-          "title": "A Statewide Approach to Falls Prevention: Widespread Implementation of A Matter of Balance in North Carolina, 2014-2019.",
-          "journal": "J Appl Gerontol",
-          "year": "2021"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Sarah Monks",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/sarah-monks/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 1,
-      "pubmed_search": "ComputedAuthors:Monks Sarah",
-      "pubmed_verified": 1,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "31864868",
-          "title": "Bromism: An overlooked and elusive toxidrome from chronic dextromethorphan abuse.",
-          "journal": "Am J Emerg Med",
-          "year": "2020"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "William Mosher",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/william-mosher/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Mosher William",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Justin Myers",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/justin-myers/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 5,
-      "pubmed_search": "ComputedAuthors:Myers Justin",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "37085780",
-          "title": "Evaluation of the World Health Organization-International Committee of the Red Cross Basic Emergency Care course for senior medical students.",
-          "journal": "Int J Emerg Med",
-          "year": "2023"
-        },
-        {
-          "pmid": "9270398",
-          "title": "Anticholinergic poisoning in colicky infants treated with hyoscyamine sulfate.",
-          "journal": "Am J Emerg Med",
-          "year": "1997"
-        },
-        {
-          "pmid": "8858659",
-          "title": "The ED on line: computerization of the pediatric emergency department.",
-          "journal": "Pediatr Emerg Care",
-          "year": "1996"
-        },
-        {
-          "pmid": "8857803",
-          "title": "Vomiting, ataxia, and altered mental status in an adolescent: late-onset ornithine transcarbamylase deficiency.",
-          "journal": "Am J Emerg Med",
-          "year": "1996"
-        },
-        {
-          "pmid": "8768166",
-          "title": "Delayed pulmonary edema and bronchospasm after accidental lacrimator exposure.",
-          "journal": "Am J Emerg Med",
-          "year": "1996"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Olga Otter",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/olga-otter/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Otter Olga",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Kristen Palomba",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/kristen-palomba/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Palomba Kristen",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Ryan Parawan",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/ryan-parawan/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Parawan Ryan",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Daniel Park",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/daniel-park/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 2,
-      "pubmed_search": "ComputedAuthors:Park Daniel",
-      "pubmed_verified": 2,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42006581",
-          "title": "Outpatient assessment of bronchopulmonary dysplasia using point of care lung ultrasound.",
-          "journal": "Front Pediatr",
-          "year": "2026"
-        },
-        {
-          "pmid": "40829141",
-          "title": "Exploring the Perspectives of Pediatric Health Care Providers, Youth Patients, and Caregivers on Machine Learning Suicide Risk Classification: Mixed Methods Study.",
-          "journal": "J Med Internet Res",
-          "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Byron Parker",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/byron-parker/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Parker B",
-      "pubmed_count": 2,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Mehul D. Patel",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/mehul-patel/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/mehul.patel.1/bibliography/public",
-      "pubmed_search": "Patel M",
       "pubmed_count": 44,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Andrew Petrilli",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/andrew-petrilli/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Petrilli Andrew",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Eugenia B. Quackenbush",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/eugenia-quackenbush/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 20,
-      "pubmed_search": "ComputedAuthors:Quackenbush EB",
+      "pubmed_search": "ComputedAuthors:Baron Todd",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "40864467",
-          "title": "Peripheral Vasopressor Use in Early Sepsis-Induced Hypotension.",
-          "journal": "JAMA Netw Open",
-          "year": "2025"
-        },
-        {
-          "pmid": "37662441",
-          "title": "Transition of care from the emergency department to skilled nursing facility: Retrospective case-control study.",
-          "journal": "J Am Coll Emerg Physicians Open",
-          "year": "2023"
-        },
-        {
-          "pmid": "36688507",
-          "title": "Early Restrictive or Liberal Fluid Management for Sepsis-Induced Hypotension.",
-          "journal": "N Engl J Med",
-          "year": "2023"
-        },
-        {
-          "pmid": "35550175",
-          "title": "Brief Educational Video plus Telecare to Enhance Recovery for Older Emergency Department Patients with Acute Musculoskeletal Pain: an update to the study protocol for a randomized controlled trial.",
-          "journal": "Trials",
-          "year": "2022"
-        },
-        {
-          "pmid": "35072154",
-          "title": "Utility of COVID-19 antigen testing in the emergency department.",
-          "journal": "J Am Coll Emerg Physicians Open",
-          "year": "2022"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Will Roper",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/will-roper-md/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 1,
-      "pubmed_search": "ComputedAuthors:Roper W",
-      "pubmed_verified": 1,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "38363335",
-          "title": "Prehospital Extended FAST Exams Improve Clinical Decision Making by Helicopter EMS Crews: A Retrospective Case Series.",
-          "journal": "Prehosp Emerg Care",
-          "year": "2024"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Will Roper Jr",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/will-roper-jr/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Jr Will",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Matthew Scholer",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/matthew-scholer/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Scholer Matthew",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Karen Serrano",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/karen-serrano/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 3,
-      "pubmed_search": "ComputedAuthors:Serrano Karen",
-      "pubmed_verified": 3,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42186353",
-          "title": "Testing a Smartphone-Based Intervention Targeting Anxiety Sensitivity Among Women Presenting for Emergency Care After Sexual Assault: Pilot Randomized Controlled Trial.",
-          "journal": "JMIR Form Res",
+          "pmid": "42084951",
+          "title": "Protective Impact of GLP-1 Therapy on Post-ERCP Outcomes: A TriNetX Retrospective Cohort Analysis.",
+          "journal": "J Clin Gastroenterol",
           "year": "2026"
         },
         {
-          "pmid": "41379700",
-          "title": "The role of posttraumatic stress disorder symptoms in pain severity, interference, and variability after sexual assault: An ecological momentary assessment study.",
-          "journal": "J Psychopathol Clin Sci",
+          "pmid": "41646466",
+          "title": "A lifetime of pushing boundaries: thinking outside the box to endoscopically treat complex gastrointestinal diseases.",
+          "journal": "IGIE",
           "year": "2025"
         },
         {
-          "pmid": "37798854",
-          "title": "Acceptability of a smartphone-based intervention targeting anxiety sensitivity among women receiving emergency care after sexual assault: A pilot uncontrolled trial.",
-          "journal": "J Trauma Stress",
-          "year": "2023"
+          "pmid": "41646458",
+          "title": "Single-session endoscopic retrograde cholangiopancreatography and endoscopic ultrasound-guided gallbladder drainage for management of biliary obstruction and gallbladder disease.",
+          "journal": "IGIE",
+          "year": "2025"
+        },
+        {
+          "pmid": "41614699",
+          "title": "A Technical Review of EUS-Guided Variceal Eradication.",
+          "journal": "Clin Transl Gastroenterol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40966230",
+          "title": "Standardizing Success and Troubleshooting in EUS-Guided Gastroenterostomy: An International Technical Review (With Videos).",
+          "journal": "J Clin Gastroenterol",
+          "year": "2026"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Benjamin Smith",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/benjamin-smith/",
-      "department": "Emergency Medicine",
+      "name": "A. Sidney Barritt",
+      "profile_url": "https://www.med.unc.edu/medicine/gi/people/a-sidney-barritt-iv-md-mscr/",
+      "department": "Medicine \u2014 Gastroenterology & Hepatology",
       "role": "",
       "departments": [
-        "Emergency Medicine"
+        "Medicine \u2014 Gastroenterology & Hepatology"
       ],
-      "pubmed_count": 5,
-      "pubmed_search": "ComputedAuthors:Smith Benjamin",
+      "pubmed_search": "Barritt AS",
+      "pubmed_count": 91,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "42006581",
-          "title": "Outpatient assessment of bronchopulmonary dysplasia using point of care lung ultrasound.",
-          "journal": "Front Pediatr",
+          "pmid": "42319114",
+          "title": "Progression of MASH to cirrhosis, decompensation, and mortality, and the utility of NITs for detection and risk stratification.",
+          "journal": "Hepatol Commun",
           "year": "2026"
         },
         {
-          "pmid": "38363335",
-          "title": "Prehospital Extended FAST Exams Improve Clinical Decision Making by Helicopter EMS Crews: A Retrospective Case Series.",
-          "journal": "Prehosp Emerg Care",
-          "year": "2024"
-        },
-        {
-          "pmid": "37274825",
-          "title": "ANCA vasculitis expands the spectrum of autoimmune manifestations of activated PI3 kinase &#x3b4; syndrome.",
-          "journal": "Front Pediatr",
-          "year": "2023"
-        },
-        {
-          "pmid": "37194993",
-          "title": "Imaging of the septum pellucidum: normal, variants and pathology.",
-          "journal": "Br J Radiol",
-          "year": "2023"
-        },
-        {
-          "pmid": "36473783",
-          "title": "Outcomes of intermediate-risk hydronephrosis in pediatric patients.",
-          "journal": "J Pediatr Urol",
-          "year": "2023"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Elena Stansky",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/elena-stansky/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Stansky Elena",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Timothy Wetzel",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/timothy-wetzel/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Wetzel Timothy",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Travis Wieland",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/travis-wieland/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_search": "Wieland Travis",
-      "pubmed_count": 1,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Meredith Williamson",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/meredith-williamson/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 1,
-      "pubmed_search": "ComputedAuthors:Williamson Meredith",
-      "pubmed_verified": 1,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "37441829",
-          "title": "A Systematic Emergency Department Care Protocol for Syncope Patients Reduces Admissions.",
-          "journal": "Am J Cardiol",
-          "year": "2023"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Daniel Willner",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/daniel-willner-md/",
-      "department": "Emergency Medicine",
-      "role": "",
-      "departments": [
-        "Emergency Medicine"
-      ],
-      "pubmed_count": 4,
-      "pubmed_search": "ComputedAuthors:Willner Daniel",
-      "pubmed_verified": 4,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41791187",
-          "title": "Rural-urban differences in prehospital deaths due to injury in North Carolina.",
-          "journal": "Am J Emerg Med",
+          "pmid": "42231601",
+          "title": "Liver Injury From Medications Used for Treating Inflammatory Bowel Disease: The Drug-Induced Liver Injury Network Experience.",
+          "journal": "Liver Int",
           "year": "2026"
         },
         {
-          "pmid": "38363335",
-          "title": "Prehospital Extended FAST Exams Improve Clinical Decision Making by Helicopter EMS Crews: A Retrospective Case Series.",
-          "journal": "Prehosp Emerg Care",
-          "year": "2024"
+          "pmid": "42154123",
+          "title": "External Validation of Laboratory-Based Models to Assess Portal Hypertension Severity in Patients with Compensated Chronic Liver Disease.",
+          "journal": "Dig Dis Sci",
+          "year": "2026"
         },
         {
-          "pmid": "20167845",
-          "title": "Cytomegalovirus pneumonitis is a risk for bronchiolitis obliterans syndrome in lung transplantation.",
-          "journal": "Am J Respir Crit Care Med",
-          "year": "2010"
+          "pmid": "41812068",
+          "title": "Patient-, Provider-, and Area-Level Factors Associated with Hepatocellular Carcinoma Surveillance in Patients with Cirrhosis in North Carolina.",
+          "journal": "N C Med J",
+          "year": "2025"
         },
         {
-          "pmid": "19017896",
-          "title": "Diagnosis and outcome of early pleural space infection following lung transplantation.",
-          "journal": "Chest",
-          "year": "2009"
+          "pmid": "41691615",
+          "title": "Less Restrictive Medicaid Policies for Direct-Acting Antiviral Access Are Associated With Greater Declines in Hepatocellular Carcinoma Deaths.",
+          "journal": "Cancer Med",
+          "year": "2026"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "John Wooten",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/john-wooten/",
-      "department": "Emergency Medicine",
+      "name": "Isabelle S. Byers",
+      "profile_url": "https://www.med.unc.edu/medicine/gi/people/isabelle-byers-md/",
+      "department": "Medicine \u2014 Gastroenterology & Hepatology",
       "role": "",
       "departments": [
-        "Emergency Medicine"
+        "Medicine \u2014 Gastroenterology & Hepatology"
       ],
       "pubmed_count": 6,
-      "pubmed_search": "ComputedAuthors:Wooten J",
+      "pubmed_search": "ComputedAuthors:Byers IS",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "32990599",
-          "title": "Sperm-specific COX6B2 enhances oxidative phosphorylation, proliferation, and survival in human lung adenocarcinoma.",
-          "journal": "Elife",
-          "year": "2020"
+          "pmid": "42119069",
+          "title": "Beyond the taxonomy: Reconsidering stigma's place in liver disease care.",
+          "journal": "Liver Transpl",
+          "year": "2026"
         },
         {
-          "pmid": "32877641",
-          "title": "Neuropeptides Modulate Local Astrocytes to Regulate Adult Hippocampal Neural Stem Cells.",
-          "journal": "Neuron",
-          "year": "2020"
+          "pmid": "41562474",
+          "title": "Addiction in Gastrointestinal and Liver Disorders.",
+          "journal": "Am J Gastroenterol",
+          "year": "2026"
         },
         {
-          "pmid": "30224646",
-          "title": "Functional classification of long non-coding RNAs by k-mer content.",
-          "journal": "Nat Genet",
-          "year": "2018"
+          "pmid": "41362827",
+          "title": "Care Coordination for Patients Admitted With Alcohol-Associated Liver Disease: An Assessment of Appropriate Follow-up and Treatment at Time of Discharge.",
+          "journal": "Gastro Hep Adv",
+          "year": "2026"
         },
         {
-          "pmid": "29478897",
-          "title": "An Adeno-Associated Virus-Based Toolkit for Preferential Targeting and Manipulating Quiescent Neural Stem Cells in the Adult Hippocampus.",
-          "journal": "Stem Cell Reports",
-          "year": "2018"
+          "pmid": "39018083",
+          "title": "Transplantation for alcohol-associated liver disease in the modern era: Benefits and issues unresolved.",
+          "journal": "Liver Transpl",
+          "year": "2025"
         },
         {
-          "pmid": "26929321",
-          "title": "High-throughput small molecule screen identifies inhibitors of aberrant chromatin accessibility.",
-          "journal": "Proc Natl Acad Sci U S A",
-          "year": "2016"
+          "pmid": "38052695",
+          "title": "Closing the Care Gap: Management of Alcohol Use Disorder in Patients with Alcohol-associated Liver Disease.",
+          "journal": "Clin Ther",
+          "year": "2023"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "May Yen",
-      "profile_url": "https://www.med.unc.edu/emergmed/directory/may-yen/",
-      "department": "Emergency Medicine",
+      "name": "Ian Carroll",
+      "profile_url": "https://www.med.unc.edu/medicine/gi/people/ian-carroll-phd/",
+      "department": "Medicine \u2014 Gastroenterology & Hepatology",
       "role": "",
       "departments": [
-        "Emergency Medicine"
+        "Medicine \u2014 Gastroenterology & Hepatology"
       ],
       "pubmed_count": 3,
-      "pubmed_search": "ComputedAuthors:Yen May",
+      "pubmed_search": "ComputedAuthors:Carroll Ian",
       "pubmed_verified": 3,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "31864868",
-          "title": "Bromism: An overlooked and elusive toxidrome from chronic dextromethorphan abuse.",
-          "journal": "Am J Emerg Med",
-          "year": "2020"
+          "pmid": "42161712",
+          "title": "Early changes in cognitive function following bariatric surgery: evidence for rapid improvement or practice effects?",
+          "journal": "Surg Obes Relat Dis",
+          "year": "2026"
         },
         {
-          "pmid": "26432425",
-          "title": "Marked Hypofibrinogenemia and Gastrointestinal Bleeding After Copperhead (Agkistrodon contortrix) Envenomation.",
-          "journal": "Wilderness Environ Med",
-          "year": "2015"
+          "pmid": "40057403",
+          "title": "The relationship between physical activity, sedentary time, and cognitive function following bariatric surgery.",
+          "journal": "Surg Obes Relat Dis",
+          "year": "2025"
         },
         {
-          "pmid": "25728451",
-          "title": "Time to antivenom administration is not associated with total antivenom dose administered in a copperhead-predominant snakebite population.",
-          "journal": "Acad Emerg Med",
-          "year": "2015"
+          "pmid": "39196507",
+          "title": "Intestinal Energy Harvest Mediates Gut Microbiota-Associated Weight Loss Following Bariatric Surgery.",
+          "journal": "Obes Surg",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Cary C. Cotton",
+      "profile_url": "https://www.med.unc.edu/medicine/gi/people/cary-c-cotton-md-mph/",
+      "department": "Medicine \u2014 Gastroenterology & Hepatology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Gastroenterology & Hepatology"
+      ],
+      "pubmed_count": 80,
+      "pubmed_search": "ComputedAuthors:Cotton CC",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41956235",
+          "title": "A Machine-Based Learning Model for Recurrence Prediction and Timing After Endoscopic Eradication Therapy for Barrett's Esophagus.",
+          "journal": "Clin Gastroenterol Hepatol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41739741",
+          "title": "Variability in time to surveillance endoscopy for eosinophilic esophagitis remission and relation to treatment outcomes.",
+          "journal": "Dis Esophagus",
+          "year": "2026"
+        },
+        {
+          "pmid": "41551662",
+          "title": "Increasing Social Vulnerability Impacts Presentation and Decreases Treatment Response in Eosinophilic Esophagitis.",
+          "journal": "Gastro Hep Adv",
+          "year": "2026"
+        },
+        {
+          "pmid": "41548722",
+          "title": "Prospective cohort study of palliative treatment of esophageal cancer with liquid nitrogen spray cryotherapy.",
+          "journal": "Gastrointest Endosc",
+          "year": "2026"
+        },
+        {
+          "pmid": "41484499",
+          "title": "Differences in Presentation and Outcomes by Type and Severity of Food Impaction Symptoms in Eosinophilic Esophagitis.",
+          "journal": "Dig Dis Sci",
+          "year": "2026"
         }
       ],
       "nih_grants": []
