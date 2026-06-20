@@ -159,7 +159,11 @@ NON_NAME_PATTERNS = re.compile(
     r"vogt laboratory|pandya|hematology & sickle|developmental therapeutics|"
     r"inflammatory bowel|endoscopy|colonoscopy|primary care|adolescent care|"
     r"complex & diagnostic|development, behavior|child maltreatment|"
-    r"genetics & metabolism|infectious diseases(?! \w)|pediatric (?!faculty))",
+    r"genetics & metabolism|infectious diseases(?! \w)|pediatric (?!faculty)|"
+    r"know before you go|referring physician|living in chapel hill|"
+    r"striving for|that define us|faces that define|our history|"
+    r"make a gift|population health|strategic plan|annual report|"
+    r"grand rounds|fellowship|application overview|specialty procedures)",
     re.IGNORECASE
 )
 
@@ -176,7 +180,7 @@ def looks_like_name(text):
         return False
     # Reject all-caps strings (e.g. "CLINIC LOCATIONS", "UNC HOSPITALS")
     words = clean.split()
-    if any(w.isupper() and len(w) > 2 for w in words):
+    if any(w.isupper() and len(w) > 2 and w.isalpha() for w in words):
         return False
     # Reject strings with digits (e.g. "3009 Old Clinic Building")
     if re.search(r"\d", clean):
@@ -238,6 +242,9 @@ def scrape_faculty_via_wp_rest(base_url, dept_name):
     faculty = []
     seen = set()
     page = 1
+    total_entries_seen = 0
+    rejected_no_credential = 0
+    rejected_wrong_dept = 0
 
     while True:
         url = (
@@ -246,14 +253,18 @@ def scrape_faculty_via_wp_rest(base_url, dept_name):
         )
         html = fetch_url(url)
         if not html:
+            print(f"    WP REST: no response for page {page} (url: {api_url})")
             break
         try:
             entries = json.loads(html)
-        except Exception:
+        except Exception as e:
+            print(f"    WP REST: JSON parse error on page {page}: {e}")
+            print(f"    Raw response (first 300 chars): {html[:300]}")
             break
         if not isinstance(entries, list) or len(entries) == 0:
             break
 
+        total_entries_seen += len(entries)
         for entry in entries:
             # Get name from title
             raw_title = entry.get("title", {})
@@ -273,6 +284,7 @@ def scrape_faculty_via_wp_rest(base_url, dept_name):
                         r"\b(professor|instructor|director|chief|lecturer)\b",
                         position_text, re.IGNORECASE
                     ):
+                        rejected_no_credential += 1
                         continue
 
             name = extract_name(raw_title)
@@ -293,6 +305,7 @@ def scrape_faculty_via_wp_rest(base_url, dept_name):
                 wp_path = urllib.parse.urlparse(wp_base).path  # e.g. '/neurology'
                 profile_path = urllib.parse.urlparse(link).path
                 if wp_path and wp_path not in profile_path:
+                    rejected_wrong_dept += 1
                     continue  # belongs to a different department
 
             # Get division from class_list
@@ -313,6 +326,11 @@ def scrape_faculty_via_wp_rest(base_url, dept_name):
         print(f"    WP REST API page {page}: {len(entries)} entries, {len(faculty)} faculty so far")
         page += 1
         time.sleep(0.3)
+
+    print(f"    WP REST summary: {total_entries_seen} total entries, "
+          f"{rejected_no_credential} rejected (no credential), "
+          f"{rejected_wrong_dept} rejected (wrong dept), "
+          f"{len(faculty)} kept")
 
     return faculty
 
@@ -382,24 +400,25 @@ def scrape_faculty_from_page(url, dept_name):
 
     print(f"  Found {len(faculty)} faculty")
 
-    # If HTML scraping returned nothing, the page is likely JavaScript-rendered.
-    # Try the WordPress REST API as a fallback — but only once per WP install
-    # (the ud_entry endpoint returns ALL people, so one call covers all divisions)
-    if len(faculty) == 0:
-        # Check if we've already fetched this WP install
+    # If HTML scraping returned nothing or suspiciously few results, the page
+    # is likely JavaScript-rendered. Try the WordPress REST API as a fallback.
+    # Threshold of 10 catches cases where nav items slip through the name filter.
+    if len(faculty) < 10:
         parsed = urllib.parse.urlparse(url)
         path_parts = parsed.path.strip("/").split("/")
-        wp_key = f"{parsed.netloc}/{path_parts[0]}"  # e.g. "www.med.unc.edu/pediatrics"
+        wp_key = f"{parsed.netloc}/{path_parts[0]}"
         if not hasattr(scrape_faculty_from_page, "_wp_rest_cache"):
             scrape_faculty_from_page._wp_rest_cache = {}
         if wp_key in scrape_faculty_from_page._wp_rest_cache:
             print(f"  WP REST already fetched for {wp_key} — skipping")
-            return []
-        print(f"  No faculty from HTML — trying WP REST API...")
-        faculty = scrape_faculty_via_wp_rest(url, dept_name)
+            return faculty  # return whatever HTML found (may be empty)
+        print(f"  {'No' if len(faculty) == 0 else 'Only ' + str(len(faculty))} faculty from HTML — trying WP REST API...")
+        rest_faculty = scrape_faculty_via_wp_rest(url, dept_name)
+        if rest_faculty:
+            scrape_faculty_from_page._wp_rest_cache[wp_key] = True
+            print(f"  Found {len(rest_faculty)} faculty via WP REST API")
+            return rest_faculty
         scrape_faculty_from_page._wp_rest_cache[wp_key] = True
-        if faculty:
-            print(f"  Found {len(faculty)} faculty via WP REST API")
 
     return faculty
 
