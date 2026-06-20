@@ -1,19 +1,111 @@
 {
-  "generated_at": "2026-06-20T01:29:46.264153Z",
-  "total_faculty": 5,
+  "generated_at": "2026-06-20T02:20:47.225416Z",
+  "total_faculty": 183,
   "departments": [
     "Radiology"
   ],
   "faculty": [
     {
-      "name": "Know Before You Go",
-      "profile_url": "",
+      "name": "Ahrang Jung",
+      "profile_url": "https://www.med.unc.edu/radiology/people/ahrang-jung-phd-rn/",
       "department": "Radiology",
-      "role": "",
+      "role": "All",
       "departments": [
         "Radiology"
       ],
-      "pubmed_search": "Go Know",
+      "pubmed_count": 12,
+      "pubmed_search": "ComputedAuthors:Jung Ahrang",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39763133",
+          "title": "A Pilot Randomized Controlled Trial of Families Addressing Cancer Together for Parents With Cancer: Feasibility, Acceptability, and Preliminary Effects.",
+          "journal": "Psychooncology",
+          "year": "2025"
+        },
+        {
+          "pmid": "38993209",
+          "title": "Well-being and Perceptions of Supportive Resources among Caregivers of Patients with Bladder Cancer.",
+          "journal": "Bladder Cancer",
+          "year": "2021"
+        },
+        {
+          "pmid": "38513534",
+          "title": "\"A strong reason why I enjoy coming to work\": Clinician acceptability of a palliative and supportive care intervention (PACT) for older adults with acute myeloid leukemia and their care partners.",
+          "journal": "J Geriatr Oncol",
+          "year": "2024"
+        },
+        {
+          "pmid": "36598590",
+          "title": "Perspectives of caregivers of older adults with acute myeloid leukemia during initial hypomethylating agents and venetoclax chemotherapy.",
+          "journal": "Support Care Cancer",
+          "year": "2023"
+        },
+        {
+          "pmid": "35831719",
+          "title": "Families Addressing Cancer Together (FACT): feasibility and acceptability of a web-based psychosocial intervention for parents with cancer.",
+          "journal": "Support Care Cancer",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Hui Wang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/hui-wang-phd/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 25,
+      "pubmed_search": "ComputedAuthors:Wang Hui",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42148085",
+          "title": "Regulatory complexity and therapeutic targeting of the necroptosis network.",
+          "journal": "Front Immunol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42112365",
+          "title": "Differential spleen immune signatures and germinal center responses during acute infection with Orientia tsutsugamushi Karp versus Gilliam strains.",
+          "journal": "Front Immunol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42079579",
+          "title": "Discovery of co-stimulatory anti-CD28 VHHs for developing cancer immune therapeutic anti-tumor/CD3/CD28 trispecific T cell engager.",
+          "journal": "Front Immunol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42023221",
+          "title": "Therapeutic efficacy of bovine ultra-long CDR H3 antibody against BVDV in challenged BALB/c mouse model.",
+          "journal": "Front Immunol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41958671",
+          "title": "Breaking the metabolo-immune cycle in primary biliary cholangitis for therapeutic benefit.",
+          "journal": "Front Immunol",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Leina Zerey",
+      "profile_url": "https://www.med.unc.edu/radiology/people/leina-zerey-md/",
+      "department": "Radiology",
+      "role": "Abdominal-Imaging",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Zerey Leina",
       "pubmed_count": 0,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
@@ -21,14 +113,14 @@
       "nih_grants": []
     },
     {
-      "name": "Referring Physician Info",
-      "profile_url": "",
+      "name": "Krishna Rauniyar",
+      "profile_url": "https://www.med.unc.edu/radiology/people/krishna-rauniyar-md/",
       "department": "Radiology",
-      "role": "",
+      "role": "All",
       "departments": [
         "Radiology"
       ],
-      "pubmed_search": "Info Referring",
+      "pubmed_search": "Rauniyar Krishna",
       "pubmed_count": 0,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
@@ -36,48 +128,2256 @@
       "nih_grants": []
     },
     {
-      "name": "Living in Chapel Hill",
-      "profile_url": "",
+      "name": "Yuli &#8220;David&#8221; Jiang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/yuli-david-jiang-md/",
       "department": "Radiology",
-      "role": "",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 37,
+      "pubmed_search": "ComputedAuthors:Jiang Y",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41694548",
+          "title": "Canopy2: Tumor Phylogeny Inference by Bulk DNA and Single-Cell RNA Sequencing.",
+          "journal": "Stat Biosci",
+          "year": "2026"
+        },
+        {
+          "pmid": "41323105",
+          "title": "distQTL: distribution quantitative trait loci identification by population-scale single-cell data.",
+          "journal": "NAR Genom Bioinform",
+          "year": "2025"
+        },
+        {
+          "pmid": "40502036",
+          "title": "Single cell multiomic analysis of the impact of Delta-9-tetrahydrocannabinol on HIV infected CD4 T cells.",
+          "journal": "bioRxiv",
+          "year": "2025"
+        },
+        {
+          "pmid": "40291723",
+          "title": "Single-Cell Multiomic Analysis of Circadian Rhythmicity in Mouse Liver.",
+          "journal": "bioRxiv",
+          "year": "2025"
+        },
+        {
+          "pmid": "40291679",
+          "title": "distQTL: Distribution Quantitative Trait Loci Identification by Population-Scale Single-Cell Data.",
+          "journal": "bioRxiv",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Joe Vimal Raj",
+      "profile_url": "https://www.med.unc.edu/radiology/people/joe-vimal-raj-mbbs-md/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 5,
+      "pubmed_search": "ComputedAuthors:Raj J",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "31828326",
+          "title": "APE1 senses DNA single-strand breaks for repair and signaling.",
+          "journal": "Nucleic Acids Res",
+          "year": "2020"
+        },
+        {
+          "pmid": "29361157",
+          "title": "APE2 promotes DNA damage response pathway from a single-strand break.",
+          "journal": "Nucleic Acids Res",
+          "year": "2018"
+        },
+        {
+          "pmid": "28054837",
+          "title": "Radiosurgery Alters the Endothelial Surface Proteome: Externalized Intracellular Molecules as Potential Vascular Targets in Irradiated Brain Arteriovenous Malformations.",
+          "journal": "Radiat Res",
+          "year": "2017"
+        },
+        {
+          "pmid": "25884263",
+          "title": "Angiographic, hemodynamic, and histological changes in an animal model of brain arteriovenous malformations treated with Gamma Knife radiosurgery.",
+          "journal": "J Neurosurg",
+          "year": "2015"
+        },
+        {
+          "pmid": "8157793",
+          "title": "Through the eye of the needle: saving your running intradermal suture.",
+          "journal": "J Am Acad Dermatol",
+          "year": "1994"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Minh-Tri &#8220;Tri&#8221; Dang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/minh-tri-tri-dang/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Dang M",
+      "pubmed_count": 2,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Kerri Kind",
+      "profile_url": "https://www.med.unc.edu/radiology/people/kerri-kind/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Kind Kerri",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Carrie Anne Orlikowski",
+      "profile_url": "https://www.med.unc.edu/radiology/people/carrie-anne-orlikowski-md/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Orlikowski Carrie",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Kingsley Asiedu",
+      "profile_url": "https://www.med.unc.edu/radiology/people/kingsley-asiedu-md/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Asiedu Kingsley",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Joshua Wallace",
+      "profile_url": "https://www.med.unc.edu/radiology/people/joshua-wallace-md-mph/",
+      "department": "Radiology",
+      "role": "Abdominal-Imaging",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Wallace Joshua",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "36911752",
+          "title": "Near-Peer Teaching in Radiology Symposia: A Success Story in Residents as Teachers.",
+          "journal": "J Med Educ Curric Dev",
+          "year": "2023"
+        },
+        {
+          "pmid": "25613147",
+          "title": "Factors that predict increased catheter tip movement in left internal jugular vein implantable venous access ports upon standing.",
+          "journal": "J Vasc Access",
+          "year": "2015"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Danielle Stevens",
+      "profile_url": "https://www.med.unc.edu/radiology/people/danielle-stevens-phd/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 32,
+      "pubmed_search": "ComputedAuthors:Stevens Danielle",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42035818",
+          "title": "Early pregnancy oxylipin markers of inflammation and oxidative stress are associated with small-for-gestational-age birth and specific phenotypes of fetal growth restriction.",
+          "journal": "Am J Obstet Gynecol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41955050",
+          "title": "Maternal Oxidative Stress Biomarkers Across Pregnancy in Relation to Fetal Growth: Evidence from the TIDES Cohort.",
+          "journal": "Am J Epidemiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41846030",
+          "title": "Associations between prenatal per- and polyfluoroalkyl substances (PFAS) exposure and fetal growth measurements in utero and at birth in the LIFECODES cohort: 2006-2019.",
+          "journal": "Environ Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "40821107",
+          "title": "Risk of cardiovascular events during labor and delivery associated with acute ambient temperature changes.",
+          "journal": "J Clim Chang Health",
+          "year": "2021"
+        },
+        {
+          "pmid": "40311894",
+          "title": "Exposure to phthalates and replacements during pregnancy in association with gestational blood pressure and hypertensive disorders of pregnancy.",
+          "journal": "Environ Res",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Blaine T. Mischen",
+      "profile_url": "https://www.med.unc.edu/radiology/people/blaine-t-mischen-md/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Mischen BT",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Avni Patel",
+      "profile_url": "https://www.med.unc.edu/radiology/people/avni-patel-md/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Patel A",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41554396",
+          "title": "Characterization of Lower Extremity Pain in Ambulatory Individuals After Stroke.",
+          "journal": "Arch Phys Med Rehabil",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Elijah Burton",
+      "profile_url": "https://www.med.unc.edu/radiology/people/elijah-burton-md/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Burton E",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Bradley Spieler, , FSAR",
+      "profile_url": "https://www.med.unc.edu/radiology/people/bradley-spieler-md/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Spieler Bradley",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41989565",
+          "title": "Artificial intelligence in hepatocellular carcinoma: imaging-based subtyping and prediction of treatment response and prognosis.",
+          "journal": "Abdom Radiol (NY)",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jeremy Jose",
+      "profile_url": "https://www.med.unc.edu/radiology/people/jeremy-jose-md/",
+      "department": "Radiology",
+      "role": "Abdominal-Imaging",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Jose J",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "32940684",
+          "title": "Using cloud-based, open-source technology to evaluate, improve, and rapidly disseminate community-based intervention data.",
+          "journal": "J Am Med Inform Assoc",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Poonam Yadav",
+      "profile_url": "https://www.med.unc.edu/radiology/people/poonam-yadav-md/",
+      "department": "Radiology",
+      "role": "Chest-Fellow",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Yadav Poonam",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41782968",
+          "title": "A rare case report of Xanthogranulomatous peritonitis mimicking ovarian cancer.",
+          "journal": "Radiol Case Rep",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "No\u00ebl Jeansonne",
+      "profile_url": "https://www.med.unc.edu/radiology/people/noel-jeansonne-md/",
+      "department": "Radiology",
+      "role": "Dr-Class-2029",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Jeansonne No\u00ebl",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Roshan Valentine",
+      "profile_url": "https://www.med.unc.edu/radiology/people/roshan-valentine-md/",
+      "department": "Radiology",
+      "role": "Fellows",
       "departments": [
         "Radiology"
       ],
       "pubmed_count": 3,
-      "pubmed_search": "ComputedAuthors:Hill L",
+      "pubmed_search": "ComputedAuthors:Valentine Roshan",
       "pubmed_verified": 3,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "41920389",
-          "title": "Quality of life during electronic patient-reported outcome (ePRO) monitoring in thoracic surgery patients: a pilot randomized controlled trial.",
-          "journal": "Qual Life Res",
+          "pmid": "42118299",
+          "title": "Comparative Analysis of the LOBO Device and Coils for Proximal Splenic Artery Embolization: A Multi-Institutional Retrospective Study.",
+          "journal": "Cardiovasc Intervent Radiol",
           "year": "2026"
         },
         {
-          "pmid": "41209804",
-          "title": "Social anxiety and emoji use: gender differences and the role of loneliness in digital communication among college students.",
-          "journal": "Front Psychol",
+          "pmid": "41850521",
+          "title": "Safety and Effectiveness of the Low-Profile Braided Occluder Vascular Occlusion Device for Embolization of Pulmonary Arteriovenous Malformations: A Single-Center Retrospective Experience.",
+          "journal": "J Vasc Interv Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41523341",
+          "title": "Fixing the \"Oops\" Moment: Glueing Up Pulmonary Artery Pseudoaneurysm after a Lung Biopsy.",
+          "journal": "Indian J Radiol Imaging",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Zachary Aulgur",
+      "profile_url": "https://www.med.unc.edu/radiology/people/zachary-aulgur-md/",
+      "department": "Radiology",
+      "role": "Bi-Fellow",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Aulgur Zachary",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Jackson Rossborough",
+      "profile_url": "https://www.med.unc.edu/radiology/people/jackson-rossborough-md/",
+      "department": "Radiology",
+      "role": "Class-Of-2030-Ir-Resident",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Rossborough Jackson",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Don Truong",
+      "profile_url": "https://www.med.unc.edu/radiology/people/don-truong-md/",
+      "department": "Radiology",
+      "role": "Ai-Fellow",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Truong D",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Jyoshitha Tella",
+      "profile_url": "https://www.med.unc.edu/radiology/people/jyoshitha-tella-md/",
+      "department": "Radiology",
+      "role": "Class-Of-2030-Ir-Resident",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Tella Jyoshitha",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "34075665",
+          "title": "Sex-specific plasticity in CRF regulation of inhibitory control in central amygdala CRF1 neurons after chronic voluntary alcohol drinking.",
+          "journal": "Addict Biol",
+          "year": "2022"
+        },
+        {
+          "pmid": "32950560",
+          "title": "Sex differences in corticotropin releasing factor peptide regulation of inhibitory control and excitability in central amygdala corticotropin releasing factor receptor 1-neurons.",
+          "journal": "Neuropharmacology",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Benjamin Greiner",
+      "profile_url": "https://www.med.unc.edu/radiology/people/benjamin-greiner-do/",
+      "department": "Radiology",
+      "role": "Bi-Fellow",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Greiner Benjamin",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Charlotte Goins",
+      "profile_url": "https://www.med.unc.edu/radiology/people/charlotte-goins-md/",
+      "department": "Radiology",
+      "role": "Dr-Class-2029",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Goins Charlotte",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Haneyeh Shahbazian",
+      "profile_url": "https://www.med.unc.edu/radiology/people/haneyeh-shahbazian-md/",
+      "department": "Radiology",
+      "role": "Dr-Class-2029",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Shahbazian Haneyeh",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39469598",
+          "title": "Development and management of iatrogenic biloma post microwave ablation of solitary metastatic breast cancer lesion in the liver.",
+          "journal": "Radiol Case Rep",
           "year": "2025"
         },
         {
-          "pmid": "31727380",
-          "title": "Financial hardship among rural cancer survivors: An analysis of the Medical Expenditure Panel Survey.",
-          "journal": "Prev Med",
+          "pmid": "39308614",
+          "title": "A rare case of replaced right hepatic artery with direct aortic origin described angiographically during trans-arterial radioembolization.",
+          "journal": "Radiol Case Rep",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Courtney Wing",
+      "profile_url": "https://www.med.unc.edu/radiology/people/courtney-wing-md/",
+      "department": "Radiology",
+      "role": "Dr-Class-2029",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Wing Courtney",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41926365",
+          "title": "Comparison of stationary digital chest tomosynthesis to portable chest radiographs: A patient study.",
+          "journal": "PLoS One",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Andrew Sinensky",
+      "profile_url": "https://www.med.unc.edu/radiology/people/andrew-sinesky-md/",
+      "department": "Radiology",
+      "role": "Fellows",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Sinensky Andrew",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Mikal Ramon",
+      "profile_url": "https://www.med.unc.edu/radiology/people/mikal-ramon-md/",
+      "department": "Radiology",
+      "role": "Class-Of-2028-Ir-Resident",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Ramon M",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42230855",
+          "title": "The ROBOKOP v1.0 knowledge graph system for exploring relationships between biomedical entities.",
+          "journal": "Sci Rep",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Greggory Adams",
+      "profile_url": "https://www.med.unc.edu/radiology/people/greggory-adams/",
+      "department": "Radiology",
+      "role": "Dr-Class-2029",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Adams G",
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41085063",
+          "title": "Post-Radiation Microbiological Changes in Osteoradionecrosis: Investigating the Microbial Landscape.",
+          "journal": "Otolaryngol Head Neck Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "40652344",
+          "title": "Head and Neck Free-Flap Reconstruction in Patients With Pre-Existing Coagulopathies: A Case Series.",
+          "journal": "Ear Nose Throat J",
+          "year": "2025"
+        },
+        {
+          "pmid": "34639288",
+          "title": "Attitudes and Behaviors That Impact Skin Cancer Risk among Men.",
+          "journal": "Int J Environ Res Public Health",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Rachel Roth",
+      "profile_url": "https://www.med.unc.edu/radiology/people/rachel-roth-md/",
+      "department": "Radiology",
+      "role": "Bi-Fellow",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Roth R",
+      "pubmed_count": 2,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Carly Troupe",
+      "profile_url": "https://www.med.unc.edu/radiology/people/carly-troupe-md/",
+      "department": "Radiology",
+      "role": "Class-Of-2030-Ir-Resident",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Troupe Carly",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "William Johnson",
+      "profile_url": "https://www.med.unc.edu/radiology/people/william-johnson-md/",
+      "department": "Radiology",
+      "role": "Dr-Class-2029",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Johnson William",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40787777",
+          "title": "Nanoparticulate Wood Treatments Contribute to the Aquatic Toxicity of Simulated Urban Wildfire Ashes.",
+          "journal": "Environ Sci Technol",
+          "year": "2025"
+        },
+        {
+          "pmid": "37332508",
+          "title": "Effectiveness of building-level sewage surveillance during both community-spread and sporadic-infection phases of SARS-CoV-2 in a university campus population.",
+          "journal": "FEMS Microbes",
+          "year": "2022"
+        },
+        {
+          "pmid": "36480499",
+          "title": "Evaluation of a COVID-19 convalescent plasma program at a U.S. academic medical center.",
+          "journal": "PLoS One",
+          "year": "2022"
+        },
+        {
+          "pmid": "34500183",
+          "title": "High-resolution within-sewer SARS-CoV-2 surveillance facilitates informed intervention.",
+          "journal": "Water Res",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Dahyun Kang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/dahyun-kang-md/",
+      "department": "Radiology",
+      "role": "Dr-Class-2029",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Kang Dahyun",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Lucas Sheridan",
+      "profile_url": "https://www.med.unc.edu/radiology/people/lucas-sheridan-do/",
+      "department": "Radiology",
+      "role": "Class-Of-2028-Ir-Resident",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Sheridan Lucas",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Daniel Moore",
+      "profile_url": "https://www.med.unc.edu/radiology/people/daniel-moore-md/",
+      "department": "Radiology",
+      "role": "Dr-Class-2029",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Moore Daniel",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "36378203",
+          "title": "Screening for Obstructive Sleep Apnea in Adults: Updated Evidence Report and Systematic Review for the US Preventive Services Task Force.",
+          "journal": "JAMA",
+          "year": "2022"
+        },
+        {
+          "pmid": "7097959",
+          "title": "Gangrene of a fingertip from a mitten thread.",
+          "journal": "JAMA",
+          "year": "1982"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jamison Kline",
+      "profile_url": "https://www.med.unc.edu/radiology/people/jamison-kline-md/",
+      "department": "Radiology",
+      "role": "Dr-Class-2029",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Kline J",
+      "pubmed_count": 3,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Emily J. Werder",
+      "profile_url": "https://www.med.unc.edu/radiology/people/emily-j-werder-phd/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 38,
+      "pubmed_search": "ComputedAuthors:Werder EJ",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42204348",
+          "title": "Incorporating geospatial environmental exposure indicators in individual hypertension risk prediction: a multi-stage machine learning pipeline.",
+          "journal": "J Expo Sci Environ Epidemiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42016558",
+          "title": "Sex-specific associations of gestational age at birth and birth size with early life within-network brain connectivity: An exploratory study.",
+          "journal": "Imaging Neurosci (Camb)",
+          "year": "2026"
+        },
+        {
+          "pmid": "41870482",
+          "title": "Characterization of the Childhood Exposome with High-Resolution Mass Spectrometry.",
+          "journal": "Chem Res Toxicol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41671672",
+          "title": "Early life phthalate and replacement plasticizer exposures and changes in early childhood brain functional connectivity and structural morphology.",
+          "journal": "Environ Int",
+          "year": "2026"
+        },
+        {
+          "pmid": "41346371",
+          "title": "Residential Proximity to Metal-Emitting Industries and Toenail Metal Concentration in the US Gulf States.",
+          "journal": "Expo Health",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Fernando Augusto de Albuquerque Mendes Filho",
+      "profile_url": "https://www.med.unc.edu/radiology/people/fernando-augusto-de-albuquerque-mendes-filho-md/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Filho Fernando",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Romuald &#8220;Rom&#8221; Ferre, , FRCPC, FSBI",
+      "profile_url": "https://www.med.unc.edu/radiology/people/romuald-ferre-md-frcpc-fsbi/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Ferre Romuald",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42190471",
+          "title": "Ultrasound correlation modifies malignancy risk of architectural distortion on digital mammography and tomosynthesis: A systematic review and meta-analysis.",
+          "journal": "Clin Imaging",
+          "year": "2026"
+        },
+        {
+          "pmid": "41963229",
+          "title": "Contrast-Enhanced Mammography in the Work-up of Asymmetries: A Systematic Review and Meta-analysis.",
+          "journal": "Acad Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41610812",
+          "title": "Pediatric and adolescent breast masses: imaging evaluation and management-An educational review.",
+          "journal": "Clin Imaging",
+          "year": "2026"
+        },
+        {
+          "pmid": "41515570",
+          "title": "Diagnostic Performance of Artificial Intelligence in Predicting Malignant Upgrade of B3 Breast Lesions: Systematic Review and Meta-Analysis.",
+          "journal": "Diagnostics (Basel)",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Veronica Hudson",
+      "profile_url": "https://www.med.unc.edu/radiology/people/veronica-hudson-pa-c/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Hudson V",
+      "pubmed_count": 2,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Bahareh Gholami",
+      "profile_url": "https://www.med.unc.edu/radiology/people/bahareh-gholami-md/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 7,
+      "pubmed_search": "ComputedAuthors:Gholami Bahareh",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42118299",
+          "title": "Comparative Analysis of the LOBO Device and Coils for Proximal Splenic Artery Embolization: A Multi-Institutional Retrospective Study.",
+          "journal": "Cardiovasc Intervent Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41939858",
+          "title": "Case Report: Pulsed electric field treatment of metastatic liver disease demonstrating a possible abscopal response.",
+          "journal": "Front Immunol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41850521",
+          "title": "Safety and Effectiveness of the Low-Profile Braided Occluder Vascular Occlusion Device for Embolization of Pulmonary Arteriovenous Malformations: A Single-Center Retrospective Experience.",
+          "journal": "J Vasc Interv Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41586995",
+          "title": "Preoperative embolization of dual arterial supply in extralobar pulmonary sequestration: a case report and literature review.",
+          "journal": "CVIR Endovasc",
+          "year": "2026"
+        },
+        {
+          "pmid": "41307819",
+          "title": "Radioembolization in Hepatocellular Carcinoma: Indications and Outcomes.",
+          "journal": "J Gastrointest Cancer",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Samuel Ostrum",
+      "profile_url": "https://www.med.unc.edu/radiology/people/samuel-ostrum-md/",
+      "department": "Radiology",
+      "role": "Abdominal-Imaging",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Ostrum Samuel",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Bahram &#8220;Bobby&#8221; Kiani",
+      "profile_url": "https://www.med.unc.edu/radiology/people/bahram-bobby-kiani-mha-md/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Kiani Bahram",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42275029",
+          "title": "Validation and application of automated CT analysis to musculoskeletal profiling in MVC occupants.",
+          "journal": "Traffic Inj Prev",
+          "year": "2026"
+        },
+        {
+          "pmid": "37716194",
+          "title": "Computed tomography assessment of pelvic bone density: Associations with age and pelvic fracture in motor vehicle crashes.",
+          "journal": "Accid Anal Prev",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Rebecca Hansen",
+      "profile_url": "https://www.med.unc.edu/radiology/people/rebecca-hansen-md/",
+      "department": "Radiology",
+      "role": "All-Faculty",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Hansen Rebecca",
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42234273",
+          "title": "Muscular dystrophy cardiomyopathy in pediatric cardiac MRI.",
+          "journal": "Int J Cardiovasc Imaging",
+          "year": "2026"
+        },
+        {
+          "pmid": "41167989",
+          "title": "Implementing peer learning in a pediatric division in a university-based health system: Review and illustration of case categories and related quality improvement.",
+          "journal": "Curr Probl Diagn Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40488774",
+          "title": "The Journey and Relevant Influences for the 15-month Pathway Addressing the Pediatric Radiology Workforce Shortage.",
+          "journal": "Pediatr Radiol",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Andrea &#8220;Andi&#8221; Senter",
+      "profile_url": "https://www.med.unc.edu/radiology/people/andrea-andi-senter-md/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Senter Andrea",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Meghan R. Clark",
+      "profile_url": "https://www.med.unc.edu/radiology/people/meghan-r-clark-md/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 8,
+      "pubmed_search": "ComputedAuthors:Clark M",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41765082",
+          "title": "Novel Acousto-Optic Sensor for Needle Tip Tracking and Internal Ultrasound Imaging from the Tip for Biopsy and Thermal Ablation.",
+          "journal": "J Vasc Interv Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "37575340",
+          "title": "Pelvic Venous Disorders: An Update in Terminology, Diagnosis, and Treatment.",
+          "journal": "Semin Intervent Radiol",
+          "year": "2023"
+        },
+        {
+          "pmid": "34895702",
+          "title": "Transvenous Biopsies - Technique, Pearls, and Pitfalls.",
+          "journal": "Tech Vasc Interv Radiol",
+          "year": "2021"
+        },
+        {
+          "pmid": "34602270",
+          "title": "Secondary Interventions After TEVAR for Aortic Dissection.",
+          "journal": "Tech Vasc Interv Radiol",
+          "year": "2021"
+        },
+        {
+          "pmid": "34580013",
+          "title": "Maximizing Educational Engagement and Program Exposure for Recruitment to the Integrated and Independent Interventional Radiology Programs in a Virtual Environment.",
+          "journal": "Acad Radiol",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Alexandra &#8220;Alex&#8221; K. Banathy",
+      "profile_url": "https://www.med.unc.edu/radiology/people/alexandra-alex-k-banathy/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_recent_recruit": true,
+      "pubmed_search": "Banathy AK",
+      "pubmed_count": 4,
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "34602266",
+          "title": "Update on Trials &amp; Devices for Endovascular Management of the Ascending Aorta and Arch.",
+          "journal": "Tech Vasc Interv Radiol",
+          "year": "2021"
+        },
+        {
+          "pmid": "34580013",
+          "title": "Maximizing Educational Engagement and Program Exposure for Recruitment to the Integrated and Independent Interventional Radiology Programs in a Virtual Environment.",
+          "journal": "Acad Radiol",
+          "year": "2022"
+        },
+        {
+          "pmid": "31830864",
+          "title": "Images in Vascular Medicine. Multivessel obstruction and treatment in a patient with retroperitoneal leiomyosarcoma.",
+          "journal": "Vasc Med",
+          "year": "2020"
+        },
+        {
+          "pmid": "31709923",
+          "title": "Images in Vascular Medicine. Malignancy related superior vena cava (SVC) syndrome treated with kissing brachiocephalic vein and SVC stenting.",
+          "journal": "Vasc Med",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Uzay Emir",
+      "profile_url": "https://www.med.unc.edu/radiology/people/uzay-emir-phd/",
+      "department": "Radiology",
+      "role": "All-Faculty",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Emir Uzay",
+      "pubmed_count": 9,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42088739",
+          "title": "Stability of single-subject estimation of glutamate and GABA dynamics in concurrent fMRI-fMRS at 7 T.",
+          "journal": "Proc Int Soc Magn Reson Med Sci Meet Exhib Int Soc Magn Reson Med Sci Meet Exhib",
+          "year": "2025"
+        },
+        {
+          "pmid": "42012613",
+          "title": "Multi-contrast dual-resolution UTE for myelin fraction mapping and structural imaging.",
+          "journal": "MAGMA",
+          "year": "2026"
+        },
+        {
+          "pmid": "41190329",
+          "title": "Baclofen, a GABAb receptor agonist, impairs motor learning in healthy people and changes inhibitory dynamics in motor areas.",
+          "journal": "Imaging Neurosci (Camb)",
+          "year": "2025"
+        },
+        {
+          "pmid": "41149647",
+          "title": "Association of Intracellular Microstructural and Neuropsychological Changes in HIV: A Pilot Validation of Trace Diffusion-Weighted Magnetic Resonance Spectroscopic Imaging Using Radial Trajectories.",
+          "journal": "Metabolites",
+          "year": "2025"
+        },
+        {
+          "pmid": "41135745",
+          "title": "Quantitative ultrashort T2 components imaging in the brain using variable flip angle balanced steady state free precession ultrashort echo time MRI.",
+          "journal": "Neuroimage",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Behrooz Masuodi",
+      "profile_url": "https://www.med.unc.edu/radiology/people/behrooz-masuodi-md/",
+      "department": "Radiology",
+      "role": "All-Faculty",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Masuodi Behrooz",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40996323",
+          "title": "Safety of Percutaneous Thermal Ablation of Lung Tumours in Pulmonary Hypertension.",
+          "journal": "Eur J Cardiothorac Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "40073314",
+          "title": "Case 8-2025: A 72-Year-Old Woman with Altered Mental Status and Acidemia.",
+          "journal": "N Engl J Med",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Amit Mehta",
+      "profile_url": "https://www.med.unc.edu/radiology/people/amit-mehta-md/",
+      "department": "Radiology",
+      "role": "Fellows",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Mehta Amit",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Pranav Ajmera",
+      "profile_url": "https://www.med.unc.edu/radiology/people/pranav-ajmera-md/",
+      "department": "Radiology",
+      "role": "Fellows",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 6,
+      "pubmed_search": "ComputedAuthors:Ajmera Pranav",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41193916",
+          "title": "CT patterns of acute enterocolitis - a practical guide for the emergency radiologist.",
+          "journal": "Emerg Radiol",
+          "year": "2025"
+        },
+        {
+          "pmid": "40287285",
+          "title": "FDA-approved artificial intelligence products in abdominal imaging: A comprehensive review.",
+          "journal": "Curr Probl Diagn Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40203607",
+          "title": "Exploring the therapeutic potential of ultrasound-guided nerve hydrodissection: a comprehensive retrospective analysis.",
+          "journal": "Clin Radiol",
+          "year": "2025"
+        },
+        {
+          "pmid": "38937346",
+          "title": "Deciphering ovarian torsion: insights from CT imaging analysis.",
+          "journal": "Emerg Radiol",
+          "year": "2024"
+        },
+        {
+          "pmid": "38506965",
+          "title": "Response to: ChatGPT's limited accuracy in generating anatomical images for medical.",
+          "journal": "Skeletal Radiol",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Kevin Wang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/kevin-wang-md/",
+      "department": "Radiology",
+      "role": "Class-Of-2029-Ir-Resident",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 5,
+      "pubmed_search": "ComputedAuthors:Wang Kevin",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42230078",
+          "title": "Treatment of Coagulopathy.",
+          "journal": "Tech Vasc Interv Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41908494",
+          "title": "Deep Generative Models: Complexity, Dimensionality, and Approximation.",
+          "journal": "J Mach Learn Res",
+          "year": "2025"
+        },
+        {
+          "pmid": "41390408",
+          "title": "Examining rural community pharmacists' knowledge and practices in opioid overdose prevention and treatment services in the Southeastern United States.",
+          "journal": "Harm Reduct J",
+          "year": "2025"
+        },
+        {
+          "pmid": "40575960",
+          "title": "Identifying the Surgical to Nonsurgical Care Transition for Trauma Patients: Time to Redesign Trauma Workflow.",
+          "journal": "Am Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "40545194",
+          "title": "Frequency of left common iliac vein compression in asymptomatic adolescents and young adults.",
+          "journal": "J Vasc Surg Venous Lymphat Disord",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Vivek Somasundaram",
+      "profile_url": "https://www.med.unc.edu/radiology/people/vivek-somasundaram-md/",
+      "department": "Radiology",
+      "role": "Class-Of-2029-Ir-Resident",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Somasundaram Vivek",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "29553528",
+          "title": "Incorporating Pericytes into an Endothelial Cell Bead Sprouting Assay.",
+          "journal": "J Vis Exp",
+          "year": "2018"
+        },
+        {
+          "pmid": "27663930",
+          "title": "Estimating the excess lifetime risk of radiation induced secondary malignancy (SMN) in pediatric patients treated with craniospinal irradiation (CSI): Conventional radiation therapy versus helical intensity modulated radiation therapy.",
+          "journal": "Pract Radiat Oncol",
+          "year": "2017"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Naishal Patel",
+      "profile_url": "https://www.med.unc.edu/radiology/people/naishal-patel-md/",
+      "department": "Radiology",
+      "role": "Class-Of-2029-Ir-Resident",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Patel Naishal",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39524245",
+          "title": "Obstetric Interventional Radiology: Periprocedural Considerations When Caring for the Pregnant and Postpartum Patient.",
+          "journal": "Semin Intervent Radiol",
+          "year": "2024"
+        },
+        {
+          "pmid": "39347976",
+          "title": "Benign pericholecystic regeneration mimicking hepatocellular carcinoma: a potential pitfall in imaging of cirrhosis.",
+          "journal": "Abdom Radiol (NY)",
+          "year": "2025"
+        },
+        {
+          "pmid": "32186725",
+          "title": "Pain Agreements and Time-to-Event Analysis of Substance Misuse in a Primary Care Chronic Pain Program.",
+          "journal": "Pain Med",
+          "year": "2020"
+        },
+        {
+          "pmid": "30300733",
+          "title": "Impact of in vitro heavy metal exposure on pancreatic &#x3b2;-cell function.",
+          "journal": "Toxicol Lett",
+          "year": "2018"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Sarah Swinehart",
+      "profile_url": "https://www.med.unc.edu/radiology/people/sarah-swinehart-md/",
+      "department": "Radiology",
+      "role": "Dr-Class-2028",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Swinehart Sarah",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Sriramkumar Sridharan",
+      "profile_url": "https://www.med.unc.edu/radiology/people/sriramkumar-sridharan-md/",
+      "department": "Radiology",
+      "role": "Dr-Class-2028",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Sridharan S",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "38882395",
+          "title": "Biomaterial systems for evaluating the influence of ECM mechanics on anti-fibrotic therapeutic efficacy.",
+          "journal": "Matrix Biol Plus",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Andrew Schuler",
+      "profile_url": "https://www.med.unc.edu/radiology/people/andrew-schuler-md/",
+      "department": "Radiology",
+      "role": "Dr-Class-2028",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Schuler Andrew",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Tyler Rogers",
+      "profile_url": "https://www.med.unc.edu/radiology/people/tyler-rogers-md/",
+      "department": "Radiology",
+      "role": "Dr-Class-2028",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Rogers Tyler",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "36276658",
+          "title": "Anastomosing hemangioma of the liver: An unusual variant in abdominal MRI imaging.",
+          "journal": "Radiol Case Rep",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Ron Perets",
+      "profile_url": "https://www.med.unc.edu/radiology/people/ron-perets-md/",
+      "department": "Radiology",
+      "role": "Dr-Class-2028",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Perets Ron",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Vedang Patel",
+      "profile_url": "https://www.med.unc.edu/radiology/people/vedang-patel-md/",
+      "department": "Radiology",
+      "role": "Dr-Class-2028",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Patel Vedang",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39347976",
+          "title": "Benign pericholecystic regeneration mimicking hepatocellular carcinoma: a potential pitfall in imaging of cirrhosis.",
+          "journal": "Abdom Radiol (NY)",
+          "year": "2025"
+        },
+        {
+          "pmid": "39172893",
+          "title": "MRI paraspinous skeletal muscle enhancement: A potential imaging biomarker for assessing clinical liver cirrhosis severity.",
+          "journal": "PLoS One",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Candler Blake",
+      "profile_url": "https://www.med.unc.edu/radiology/people/candler-kimsey-md/",
+      "department": "Radiology",
+      "role": "Dr-Class-2028",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Blake Candler",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Caroline Day",
+      "profile_url": "https://www.med.unc.edu/radiology/people/caroline-andrews-md/",
+      "department": "Radiology",
+      "role": "Dr-Class-2028",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 60,
+      "pubmed_search": "ComputedAuthors:Day C",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "37813818",
+          "title": "Development of Prodrug-Payloads for Targeted Therapeutic Applications of Platinum-Acridine Anticancer Agents.",
+          "journal": "Bioconjug Chem",
+          "year": "2023"
+        },
+        {
+          "pmid": "37583829",
+          "title": "Platinum-Acridine Agents with High Activity in Cancers Expressing the Solute Carrier MATE1 (SLC47A1).",
+          "journal": "ACS Med Chem Lett",
+          "year": "2023"
+        },
+        {
+          "pmid": "37315176",
+          "title": "Vanadyl as a Spectroscopic Probe of Tunable Ligand Donor Strength in Bimetallic Complexes.",
+          "journal": "Inorg Chem",
+          "year": "2023"
+        },
+        {
+          "pmid": "35749658",
+          "title": "Synthesis and Optical Characterization of a Rhodamine B Spirolactam Dimer.",
+          "journal": "J Phys Chem A",
+          "year": "2022"
+        },
+        {
+          "pmid": "35731899",
+          "title": "Arylselenyl Radical-Mediated Cyclization of N-(2-Alkynyl)anilines: Access to 3-Selenylquinolines.",
+          "journal": "J Org Chem",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Shawn Ahuja",
+      "profile_url": "https://www.med.unc.edu/radiology/people/shawn-ahuja-md/",
+      "department": "Radiology",
+      "role": "Dr-Class-2028",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Ahuja Shawn",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "35696824",
+          "title": "The metabolic cost of walking balance control and adaptation in young adults.",
+          "journal": "Gait Posture",
+          "year": "2022"
+        },
+        {
+          "pmid": "33158590",
+          "title": "Provision of ready-to-drink protein following bariatric surgery: An evaluation of tolerability, body composition, and metabolic rate.",
+          "journal": "Clin Nutr",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Erin Medeiros, PA",
+      "profile_url": "https://www.med.unc.edu/radiology/people/erin-medeiros-pa/",
+      "department": "Radiology",
+      "role": "Apps",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Medeiros Erin",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Tony Jeanmenne",
+      "profile_url": "https://www.med.unc.edu/radiology/people/tony-jeanmenne-md/",
+      "department": "Radiology",
+      "role": "Msk",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Jeanmenne Tony",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Virginie Papadopoulou",
+      "profile_url": "https://www.med.unc.edu/radiology/people/virginie-papadopoulou-phd/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 43,
+      "pubmed_search": "ComputedAuthors:Papadopoulou Virginie",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41875437",
+          "title": "An echo from the past: open access repository of over 10,000 annotated Doppler audio recordings of venous gas emboli.",
+          "journal": "Diving Hyperb Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "40588368",
+          "title": "Ultrasound detection of lymphatic bubbles in a porcine dive model.",
+          "journal": "J Appl Physiol (1985)",
+          "year": "2025"
+        },
+        {
+          "pmid": "38615356",
+          "title": "In-field use of I-VED electrical impedance sensor for assessing post-dive decompression stress in humans.",
+          "journal": "Undersea Hyperb Med",
+          "year": "2024"
+        },
+        {
+          "pmid": "37561745",
+          "title": "Development of a graphical user interface for automatic separation of human voice from Doppler ultrasound audio in diving experiments.",
+          "journal": "PLoS One",
+          "year": "2023"
+        },
+        {
+          "pmid": "37442717",
+          "title": "Radiotherapy Sensitization With Ultrasound-Stimulated Intravenously Injected Oxygen Microbubbles Can Have Contrary Effects Depending on the Study Model.",
+          "journal": "Ultrasound Med Biol",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jill Dickerson",
+      "profile_url": "https://www.med.unc.edu/radiology/people/jill-dickerson/",
+      "department": "Radiology",
+      "role": "All-Staff",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Dickerson J",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Eve Pedersen",
+      "profile_url": "https://www.med.unc.edu/radiology/people/eve-pedersen/",
+      "department": "Radiology",
+      "role": "All-Staff",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Pedersen Eve",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Sarah DeRycke, FNP-C, MSN, , CRN",
+      "profile_url": "https://www.med.unc.edu/radiology/people/sarah-derycke-2/",
+      "department": "Radiology",
+      "role": "Apps",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "DeRycke Sarah",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Blair Allen",
+      "profile_url": "https://www.med.unc.edu/radiology/people/blair-allen/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Allen B",
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "37377026",
+          "title": "Genomic analyses in Cornelia de Lange Syndrome and related diagnoses: Novel candidate genes, genotype-phenotype correlations and common mechanisms.",
+          "journal": "Am J Med Genet A",
+          "year": "2023"
+        },
+        {
+          "pmid": "9641073",
+          "title": "Utilization of diagnostic resources for meningoencephalitis in the pediatric ICU.",
+          "journal": "W V Med J",
+          "year": "1998"
+        },
+        {
+          "pmid": "9268106",
+          "title": "Are Melnick-Needles syndrome and oto-palato-digital syndrome type II allelic? Observations in a four-generation kindred.",
+          "journal": "Am J Med Genet",
+          "year": "1997"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Joseph K.T. Lee",
+      "profile_url": "https://www.med.unc.edu/radiology/people/joseph-k-t-lee/",
+      "department": "Radiology",
+      "role": "Alumni",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Lee Joseph",
+      "pubmed_count": 3,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Paul L. Molina",
+      "profile_url": "https://www.med.unc.edu/radiology/people/paul-l-molina/",
+      "department": "Radiology",
+      "role": "Alumni",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 58,
+      "pubmed_search": "ComputedAuthors:Molina PL",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "30622199",
+          "title": "Opinions and Practices of Lung Cancer Screening by Physician Specialty.",
+          "journal": "N C Med J",
+          "year": "2019"
+        },
+        {
+          "pmid": "30393627",
+          "title": "Multidisciplinary quality improvement initiative to standardize reporting of lung cancer screening.",
+          "journal": "Transl Lung Cancer Res",
+          "year": "2018"
+        },
+        {
+          "pmid": "29403320",
+          "title": "Opinions, practice patterns, and perceived barriers to lung cancer screening among attending and resident primary care physicians.",
+          "journal": "Risk Manag Healthc Policy",
+          "year": "2017"
+        },
+        {
+          "pmid": "28885238",
+          "title": "Improving the Implementation of Lung Cancer Screening Guidelines at an Academic Primary Care Practice.",
+          "journal": "J Healthc Qual",
+          "year": "2018"
+        },
+        {
+          "pmid": "28825884",
+          "title": "James Howard Scatliff, MD.",
+          "journal": "Radiology",
+          "year": "2017"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Danielle Durham",
+      "profile_url": "https://www.med.unc.edu/radiology/people/danielle-durham/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 43,
+      "pubmed_search": "ComputedAuthors:Durham Danielle",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41397257",
+          "title": "Diagnostic Follow-up of Positive Results on Low-Dose Computed Tomography Screening in the Medicare Population.",
+          "journal": "Ann Intern Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "41263674",
+          "title": "Burden and Impact of Frailty and Comorbidity in Individuals Screened for Lung Cancer.",
+          "journal": "Cancer Epidemiol Biomarkers Prev",
+          "year": "2026"
+        },
+        {
+          "pmid": "41026483",
+          "title": "Lung Cancer Screening in Cancer Survivors vs Those Without a History of Cancer.",
+          "journal": "JAMA Netw Open",
+          "year": "2025"
+        },
+        {
+          "pmid": "40912293",
+          "title": "Comparison of Underlying Risk of Developing and Dying From Lung Cancer in Screened Populations.",
+          "journal": "Chest",
+          "year": "2026"
+        },
+        {
+          "pmid": "40420868",
+          "title": "The United States' Early Experience With Lung Cancer Screening-Creation of a National Data Linkage: A Brief Report.",
+          "journal": "JTO Clin Res Rep",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Markeela Lipscomb, CCRC",
+      "profile_url": "https://www.med.unc.edu/radiology/people/markeela-lipscomb/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Lipscomb Markeela",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Desma Jones, CCRC",
+      "profile_url": "https://www.med.unc.edu/radiology/people/desma-jones/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Jones D",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41210477",
+          "title": "\"Making our voices count\": patient action groups as a strategy to engage people with lived experience in implementation of an intervention for hypertensive disorders of pregnancy.",
+          "journal": "Front Health Serv",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Noman Khan",
+      "profile_url": "https://www.med.unc.edu/radiology/people/noman-khan/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Khan Noman",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41505284",
+          "title": "Neuroimaging Patterns of Recreational Drug Use in the Emergency Setting.",
+          "journal": "Radiographics",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Shweta Kataria",
+      "profile_url": "https://www.med.unc.edu/radiology/people/shweta-kataria/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Kataria Shweta",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41933232",
+          "title": "The double threat: imaging manifestations of thoracic sarcoidosis with miliary nodules and myocardial involvement with radiologic-pathologic correlation.",
+          "journal": "Int J Cardiovasc Imaging",
+          "year": "2026"
+        },
+        {
+          "pmid": "41732757",
+          "title": "Case report: Pancreatitis-associated polyarthritis, panniculitis, and bone infarcts in a patient with alcohol use disorder.",
+          "journal": "Acta Radiol Open",
+          "year": "2026"
+        },
+        {
+          "pmid": "40400844",
+          "title": "Tuberculous Chronic Palmar Bursitis and Flexor Tenosynovitis of the Wrist: A Case Report.",
+          "journal": "Cureus",
+          "year": "2025"
+        },
+        {
+          "pmid": "38020506",
+          "title": "Added value of high-resolution ultrasound and MRI in the evaluation of rheumatologic diseases.",
+          "journal": "J Ultrason",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Selima Siala",
+      "profile_url": "https://www.med.unc.edu/radiology/people/selima-siala/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 9,
+      "pubmed_search": "ComputedAuthors:Siala Selima",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41167989",
+          "title": "Implementing peer learning in a pediatric division in a university-based health system: Review and illustration of case categories and related quality improvement.",
+          "journal": "Curr Probl Diagn Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40930194",
+          "title": "What Not to Miss in Fetal Head and Neck MRI: A Pictorial Essay.",
+          "journal": "Semin Ultrasound CT MR",
+          "year": "2025"
+        },
+        {
+          "pmid": "40272566",
+          "title": "Fundamentals of fetal brain MRI: indications, technique, and normal anatomy.",
+          "journal": "Pediatr Radiol",
+          "year": "2025"
+        },
+        {
+          "pmid": "40255327",
+          "title": "Minute Pulmonary Meningothelial-Like Nodules: An Incidental Benign Entity in Association With Lung Adenocarcinoma.",
+          "journal": "Case Rep Radiol",
+          "year": "2025"
+        },
+        {
+          "pmid": "40174708",
+          "title": "Fetal MRI of Prenatal Scalp Lesions: A Pictorial Essay.",
+          "journal": "Semin Ultrasound CT MR",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Marcelo Takahashi",
+      "profile_url": "https://www.med.unc.edu/radiology/people/marcelo-takahashi/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 26,
+      "pubmed_search": "ComputedAuthors:Takahashi M",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40833651",
+          "title": "Investigating size and surface modification to optimise the delivery of nanodiamonds to brain glial cells.",
+          "journal": "Discov Nano",
+          "year": "2025"
+        },
+        {
+          "pmid": "40467491",
+          "title": "Preoperative Longitudinal Strain on Computed Tomography Is a Sensitive Marker of Patient Prognosis After Transcatheter Aortic Valve Replacement.",
+          "journal": "Circ J",
+          "year": "2025"
+        },
+        {
+          "pmid": "40370304",
+          "title": "Neuronal deterioration associated with hyperexcitability under mild chronic cerebral hypoperfusion.",
+          "journal": "J Cereb Blood Flow Metab",
+          "year": "2025"
+        },
+        {
+          "pmid": "39345733",
+          "title": "Two-photon optogenetics-based assessment of neuronal connectivity in healthy and chronic hypoperfusion mice.",
+          "journal": "Neurophotonics",
+          "year": "2024"
+        },
+        {
+          "pmid": "38843838",
+          "title": "Imaging &#x3b1;-synuclein pathologies in animal models and patients with Parkinson's and related diseases.",
+          "journal": "Neuron",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Matthew Patetta",
+      "profile_url": "https://www.med.unc.edu/radiology/people/matthew-patetta/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Patetta Matthew",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Lindsey Shwayyat",
+      "profile_url": "https://www.med.unc.edu/radiology/people/lindsey-shwayyat/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Shwayyat Lindsey",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Baxter Williams",
+      "profile_url": "https://www.med.unc.edu/radiology/people/baxter-williams/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Williams Baxter",
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41850521",
+          "title": "Safety and Effectiveness of the Low-Profile Braided Occluder Vascular Occlusion Device for Embolization of Pulmonary Arteriovenous Malformations: A Single-Center Retrospective Experience.",
+          "journal": "J Vasc Interv Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "37865445",
+          "title": "Utilization of Intravascular Ultrasound in the Management of Venous Disease.",
+          "journal": "Tech Vasc Interv Radiol",
+          "year": "2023"
+        },
+        {
+          "pmid": "30777202",
+          "title": "Iodine quantification based on rest / stress perfusion dual energy CT to differentiate ischemic, infarcted and normal myocardium.",
+          "journal": "Eur J Radiol",
           "year": "2019"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Striving for Scientific Advancement",
-      "profile_url": "",
+      "name": "Benjamin Brown",
+      "profile_url": "https://www.med.unc.edu/radiology/people/benjamin-brown/",
       "department": "Radiology",
-      "role": "",
+      "role": "All",
       "departments": [
         "Radiology"
       ],
-      "pubmed_search": "Advancement Striving",
+      "pubmed_count": 7,
+      "pubmed_search": "ComputedAuthors:Brown Benjamin",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41850521",
+          "title": "Safety and Effectiveness of the Low-Profile Braided Occluder Vascular Occlusion Device for Embolization of Pulmonary Arteriovenous Malformations: A Single-Center Retrospective Experience.",
+          "journal": "J Vasc Interv Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "39117185",
+          "title": "Virtual Multidisciplinary Team Meetings: A Tool to Increase Radiology Access in Global Health Settings.",
+          "journal": "J Am Coll Radiol",
+          "year": "2024"
+        },
+        {
+          "pmid": "35489786",
+          "title": "Nontarget Radiopaque Embolic Deposition during Prostatic Artery Embolization.",
+          "journal": "J Vasc Interv Radiol",
+          "year": "2022"
+        },
+        {
+          "pmid": "32951971",
+          "title": "Meeting the Need for IR Training in Kenya.",
+          "journal": "J Vasc Interv Radiol",
+          "year": "2020"
+        },
+        {
+          "pmid": "32359530",
+          "title": "Comparison of Postprostatic Artery Embolization Cone-Beam CT and Estimated Radiopaque Particle Distribution on Follow-up Imaging: A Case Report.",
+          "journal": "J Vasc Interv Radiol",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Bryan Harris",
+      "profile_url": "https://www.med.unc.edu/radiology/people/bryan-harris/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Harris Bryan",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42130667",
+          "title": "Technical and Clinical Outcomes of Embolization of Hypervascular Renal Tumors Using Tantalum-Loaded Obsidio Conformable Embolic (Ta-OCE): a single-center experience.",
+          "journal": "CVIR Oncol",
+          "year": "2025"
+        },
+        {
+          "pmid": "41939858",
+          "title": "Case Report: Pulsed electric field treatment of metastatic liver disease demonstrating a possible abscopal response.",
+          "journal": "Front Immunol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41307819",
+          "title": "Radioembolization in Hepatocellular Carcinoma: Indications and Outcomes.",
+          "journal": "J Gastrointest Cancer",
+          "year": "2025"
+        },
+        {
+          "pmid": "40217796",
+          "title": "Early Experience Using Tantalum-Loaded Nanocomposite Hydrogel Conformable Embolic for Upper Gastrointestinal Bleeding-Open-Sandwich Technique.",
+          "journal": "J Clin Med",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Lourens du Pisanie, Jr",
+      "profile_url": "https://www.med.unc.edu/radiology/people/lourens-du-pisanie-jr/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Pisanie Ld",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39308614",
+          "title": "A rare case of replaced right hepatic artery with direct aortic origin described angiographically during trans-arterial radioembolization.",
+          "journal": "Radiol Case Rep",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Nisha Pradhan",
+      "profile_url": "https://www.med.unc.edu/radiology/people/nisha-pradhan/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Pradhan Nisha",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "James Morgan",
+      "profile_url": "https://www.med.unc.edu/radiology/people/james-morgan/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 18,
+      "pubmed_search": "ComputedAuthors:Morgan James",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41692535",
+          "title": "Bridging the Gap: Reimagining Quality Improvement to Address Healthcare Disparities.",
+          "journal": "Obstet Gynecol Clin North Am",
+          "year": "2026"
+        },
+        {
+          "pmid": "41189553",
+          "title": "Multi-modality imaging problem-solving for pelvic splenosis on PSMA PET in a patient with recurrent prostate cancer.",
+          "journal": "BJUI Compass",
+          "year": "2025"
+        },
+        {
+          "pmid": "40707630",
+          "title": "Hyperhemolysis in a sickle cell disease patient in pregnancy.",
+          "journal": "Ann Hematol",
+          "year": "2025"
+        },
+        {
+          "pmid": "31930994",
+          "title": "Utility of follow-up standard sonography for fetal anomaly detection.",
+          "journal": "Am J Obstet Gynecol",
+          "year": "2020"
+        },
+        {
+          "pmid": "29523279",
+          "title": "Pharmacokinetics of amlodipine besylate at delivery and during lactation.",
+          "journal": "Pregnancy Hypertens",
+          "year": "2018"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Hunter McLellan",
+      "profile_url": "https://www.med.unc.edu/radiology/people/hunter-mclellan/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "McLellan Hunter",
       "pubmed_count": 0,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
@@ -85,18 +2385,3278 @@
       "nih_grants": []
     },
     {
-      "name": "That Define Us",
-      "profile_url": "",
+      "name": "Bianca Martinez",
+      "profile_url": "https://www.med.unc.edu/radiology/people/bianca-martinez/",
       "department": "Radiology",
-      "role": "",
+      "role": "All",
       "departments": [
         "Radiology"
       ],
-      "pubmed_search": "Us That",
+      "pubmed_count": 6,
+      "pubmed_search": "ComputedAuthors:Martinez B",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40402088",
+          "title": "The Distribution of Coronary Plaque Volumes across CAD-RADS Categories: A PRECISE Substudy.",
+          "journal": "Radiol Cardiothorac Imaging",
+          "year": "2025"
+        },
+        {
+          "pmid": "37610768",
+          "title": "Deferred Testing in Stable Outpatients With Suspected Coronary Artery Disease: A Prespecified Secondary Analysis of the PRECISE Randomized Clinical Trial.",
+          "journal": "JAMA Cardiol",
+          "year": "2023"
+        },
+        {
+          "pmid": "37610731",
+          "title": "Comparison of an Initial Risk-Based Testing Strategy vs Usual Testing in Stable Symptomatic Patients With Suspected Coronary Artery Disease: The PRECISE Randomized Clinical Trial.",
+          "journal": "JAMA Cardiol",
+          "year": "2023"
+        },
+        {
+          "pmid": "34953768",
+          "title": "The prospective randomized trial of the optimal evaluation of cardiac symptoms and revascularization: Rationale and design of the PRECISE trial.",
+          "journal": "Am Heart J",
+          "year": "2022"
+        },
+        {
+          "pmid": "27058908",
+          "title": "Sex Differences in Functional and CT&#xa0;Angiography Testing in Patients With Suspected Coronary Artery Disease.",
+          "journal": "J Am Coll Cardiol",
+          "year": "2016"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Atima Huria",
+      "profile_url": "https://www.med.unc.edu/radiology/people/atima-huria/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Huria Atima",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41707205",
+          "title": "Unknown Case: Young Woman With a Palpable Retroareolar Mass.",
+          "journal": "J Breast Imaging",
+          "year": "2026"
+        },
+        {
+          "pmid": "34143654",
+          "title": "The Influence of a Sister's Breastfeeding Experience on a Mother's Breastfeeding Behavior: Is There an Intragenerational Effect?",
+          "journal": "Breastfeed Med",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Franco Godoy",
+      "profile_url": "https://www.med.unc.edu/radiology/people/franco-godoy/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Godoy Franco",
       "pubmed_count": 0,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
       "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Chris Childers",
+      "profile_url": "https://www.med.unc.edu/radiology/people/chris-childers/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Childers Chris",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Tim Brown",
+      "profile_url": "https://www.med.unc.edu/radiology/people/tim-brown/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 41,
+      "pubmed_search": "ComputedAuthors:Brown T",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42237574",
+          "title": "Association of cultural racism with breast cancer survival among United States adults, 2018-2020.",
+          "journal": "Am J Epidemiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42010106",
+          "title": "Upstream Drivers of Poor Cardiovascular Health Among Black and White Americans.",
+          "journal": "J Gen Intern Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "41467379",
+          "title": "State-Level Structural Racism and Incident Coronary Heart Disease.",
+          "journal": "J Am Heart Assoc",
+          "year": "2026"
+        },
+        {
+          "pmid": "40858765",
+          "title": "A latent measure of cultural racism and its association with US mortality and life expectancy.",
+          "journal": "Nat Hum Behav",
+          "year": "2025"
+        },
+        {
+          "pmid": "40580466",
+          "title": "Association of multimorbidity trajectories from early adulthood through middle age with middle-age physical function.",
+          "journal": "J Gerontol A Biol Sci Med Sci",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Rachel Bright",
+      "profile_url": "https://www.med.unc.edu/radiology/people/rachel-bright/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Bright Rachel",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Elisabeth Sidden",
+      "profile_url": "https://www.med.unc.edu/radiology/people/elisabeth-sidden/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Sidden Elisabeth",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Esha Sharda",
+      "profile_url": "https://www.med.unc.edu/radiology/people/esha-sharda/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Sharda Esha",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "David Sailer",
+      "profile_url": "https://www.med.unc.edu/radiology/people/david-sailer/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Sailer David",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40884450",
+          "title": "Triple-Negative Breast Cancer: Differential Imaging Features Based on Menopausal Status and Race.",
+          "journal": "J Breast Imaging",
+          "year": "2025"
+        },
+        {
+          "pmid": "34600795",
+          "title": "Virtual Journal Club Beyond the Pandemic: An Enduring and Fluid Educational Forum.",
+          "journal": "Curr Probl Diagn Radiol",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Christopher Ruggiero",
+      "profile_url": "https://www.med.unc.edu/radiology/people/christopher-ruggiero/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Ruggiero Christopher",
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42200159",
+          "title": "Evidence of anorectal involvement by prostate cancer on GA-68-PSMA-11 PET/CT portends inguinal nodal metastasis.",
+          "journal": "Radiol Case Rep",
+          "year": "2026"
+        },
+        {
+          "pmid": "41505284",
+          "title": "Neuroimaging Patterns of Recreational Drug Use in the Emergency Setting.",
+          "journal": "Radiographics",
+          "year": "2026"
+        },
+        {
+          "pmid": "39603258",
+          "title": "Langerhans Cell Histiocytosis-Associated Vertebra Plana on FDG PET.",
+          "journal": "Nuklearmedizin",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Nakul Patel",
+      "profile_url": "https://www.med.unc.edu/radiology/people/nakul-patel/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 17,
+      "pubmed_search": "ComputedAuthors:Patel N",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42202378",
+          "title": "Long-Term Impact of Frailty on Outcomes Following Alcohol Septal Ablation in Hypertrophic Obstructive Cardiomyopathy.",
+          "journal": "JACC Adv",
+          "year": "2026"
+        },
+        {
+          "pmid": "42103152",
+          "title": "Outcomes of Prasugrel vs Ticagrelor Following Percutaneous Coronary Intervention for Coronary Artery Disease.",
+          "journal": "Can J Cardiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41989376",
+          "title": "Sodium-Glucose Cotransporter 2 Inhibitor Use and Outcomes in Peripartum Cardiomyopathy.",
+          "journal": "JACC Adv",
+          "year": "2026"
+        },
+        {
+          "pmid": "41937235",
+          "title": "Impact of Frailty on Outcomes Following Mitral Transcatheter Edge-to-Edge Repair: A Propensity-Score Matched Analysis.",
+          "journal": "Catheter Cardiovasc Interv",
+          "year": "2026"
+        },
+        {
+          "pmid": "41915803",
+          "title": "Safe prescribing of antihypertensive drugs in the elderly and managing the risk of adverse events.",
+          "journal": "Expert Opin Drug Saf",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Matthew Gellatly",
+      "profile_url": "https://www.med.unc.edu/radiology/people/matthew-gellatly/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Gellatly Matthew",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40884447",
+          "title": "Epinephrine-Containing Lidocaine and Hematoma Risk After Image-Guided Core-Needle Breast Biopsy.",
+          "journal": "J Breast Imaging",
+          "year": "2025"
+        },
+        {
+          "pmid": "38914072",
+          "title": "Metastatic Adenoid Cystic Carcinoma of the Bartholin Gland.",
+          "journal": "Clin Nucl Med",
+          "year": "2024"
+        },
+        {
+          "pmid": "33088379",
+          "title": "Metastatic basal cell carcinoma with atypical pattern of spread.",
+          "journal": "Radiol Case Rep",
+          "year": "2020"
+        },
+        {
+          "pmid": "32921568",
+          "title": "Training Radiology Residents, Bloom Style.",
+          "journal": "Acad Radiol",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Joshua Chen",
+      "profile_url": "https://www.med.unc.edu/radiology/people/joshua-chen/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 5,
+      "pubmed_search": "ComputedAuthors:Chen J",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42094063",
+          "title": "Extrachromosomal DNA Gives Cancer a New Evolutionary Pathway.",
+          "journal": "Res Sq",
+          "year": "2026"
+        },
+        {
+          "pmid": "39963364",
+          "title": "Leveraging AI to automate detection and quantification of extrachromosomal DNA to decode drug responses.",
+          "journal": "Front Pharmacol",
+          "year": "2024"
+        },
+        {
+          "pmid": "39484472",
+          "title": "Leveraging AI to Automate Detection and Quantification of Extrachromosomal DNA (ecDNA) to Decode Drug Responses.",
+          "journal": "bioRxiv",
+          "year": "2024"
+        },
+        {
+          "pmid": "39185785",
+          "title": "A standardized protocol for sample preparation for scanning electron microscopy to visualize extrachromosomal DNA.",
+          "journal": "Biotechniques",
+          "year": "2024"
+        },
+        {
+          "pmid": "39091515",
+          "title": "CytoCellDB: a comprehensive resource for exploring extrachromosomal DNA in cancer cell lines.",
+          "journal": "NAR Cancer",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Carlo Castro",
+      "profile_url": "https://www.med.unc.edu/radiology/people/carlo-castro/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Castro C",
+      "pubmed_count": 3,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "David Bartlett",
+      "profile_url": "https://www.med.unc.edu/radiology/people/david-bartlett/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Bartlett David",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41505284",
+          "title": "Neuroimaging Patterns of Recreational Drug Use in the Emergency Setting.",
+          "journal": "Radiographics",
+          "year": "2026"
+        },
+        {
+          "pmid": "38906245",
+          "title": "Hepatobiliary Infection after Transjugular Intrahepatic Portosystemic Shunt Creation in Patients with Prior Biliary Intervention: A Multi-Institution Retrospective Study.",
+          "journal": "J Vasc Interv Radiol",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Janet Zhang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/janet-zhang/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Zhang Janet",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41195878",
+          "title": "Severe Esophageal Food Impaction: A Silent Threat to the Airway.",
+          "journal": "Anesthesiology",
+          "year": "2026"
+        },
+        {
+          "pmid": "35405997",
+          "title": "Multimodal Diagnostic Approaches to Advance Precision Medicine in Sarcopenia and Frailty.",
+          "journal": "Nutrients",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jordan Taylor",
+      "profile_url": "https://www.med.unc.edu/radiology/people/jordan-taylor/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Taylor Jordan",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "38659207",
+          "title": "The effect of experts on attitude change in public-facing political science: Scientific communication on term limits in the United States.",
+          "journal": "Public Underst Sci",
+          "year": "2025"
+        },
+        {
+          "pmid": "36406033",
+          "title": "Anticoagulation and Antiplatelet Agents in Peripheral Arterial Interventions.",
+          "journal": "Semin Intervent Radiol",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Henry Stiepel",
+      "profile_url": "https://www.med.unc.edu/radiology/people/henry-stiepel/",
+      "department": "Radiology",
+      "role": "Ai-Fellow",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Stiepel Henry",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Bhavana Pottabatula",
+      "profile_url": "https://www.med.unc.edu/radiology/people/bhavana-pottabatula/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Pottabatula Bhavana",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Matthew MacLean",
+      "profile_url": "https://www.med.unc.edu/radiology/people/matthew-maclean/",
+      "department": "Radiology",
+      "role": "Ai-Fellow",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "MacLean Matthew",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Ellen Jones",
+      "profile_url": "https://www.med.unc.edu/radiology/people/ellen-jones/",
+      "department": "Radiology",
+      "role": "Ai-Fellow",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 6,
+      "pubmed_search": "ComputedAuthors:Jones Ellen",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41721913",
+          "title": "Investigating initial patterns of progression on first-line treatment in patients with de novo metastatic breast cancer.",
+          "journal": "Breast Cancer Res Treat",
+          "year": "2026"
+        },
+        {
+          "pmid": "39317637",
+          "title": "Quality of Life Outcomes in Breast Cancer Patients Receiving Chemotherapy With or Without Radiation Therapy.",
+          "journal": "Clin Breast Cancer",
+          "year": "2025"
+        },
+        {
+          "pmid": "36280107",
+          "title": "Radiation Therapy for Endometrial Cancer: An American Society for Radiation Oncology Clinical Practice Guideline.",
+          "journal": "Pract Radiat Oncol",
+          "year": "2023"
+        },
+        {
+          "pmid": "31414036",
+          "title": "Do Smokers Recall Source or Quitline on Cigarette Constituent Messages?",
+          "journal": "Tob Regul Sci",
+          "year": "2018"
+        },
+        {
+          "pmid": "28472370",
+          "title": "Providing Nicotine Replacement Therapy in Focus Groups.",
+          "journal": "Nicotine Tob Res",
+          "year": "2018"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Cristina Guzzetti, , ESIR",
+      "profile_url": "https://www.med.unc.edu/radiology/people/cristina-guzzetti/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Guzzetti Cristina",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Tyler Glass",
+      "profile_url": "https://www.med.unc.edu/radiology/people/tyler-glass/",
+      "department": "Radiology",
+      "role": "Ai-Fellow",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Glass Tyler",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Andrew Campbell",
+      "profile_url": "https://www.med.unc.edu/radiology/people/andrew-campbell/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Campbell Andrew",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41920322",
+          "title": "Revisiting FLAIR vascular hyperintensity: from flow disturbance to vessel wall disease.",
+          "journal": "Eur Radiol",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Diane Armao",
+      "profile_url": "https://www.med.unc.edu/radiology/people/diane-armao/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 68,
+      "pubmed_search": "ComputedAuthors:Armao Diane",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40878963",
+          "title": "T2 Hyperintensities in Gracile Tracts of Cervical Spinal Cord in Giant Axonal Neuropathy (GAN).",
+          "journal": "Muscle Nerve",
+          "year": "2025"
+        },
+        {
+          "pmid": "38507752",
+          "title": "Intrathecal Gene Therapy for Giant Axonal Neuropathy.",
+          "journal": "N Engl J Med",
+          "year": "2024"
+        },
+        {
+          "pmid": "37866019",
+          "title": "Stability dynamics of neurofilament and GFAP networks and protein fragments.",
+          "journal": "Curr Opin Cell Biol",
+          "year": "2023"
+        },
+        {
+          "pmid": "37672338",
+          "title": "Intermediate filament dysregulation in astrocytes in the human disease model of KLHL16 mutation in giant axonal neuropathy (GAN).",
+          "journal": "Mol Biol Cell",
+          "year": "2023"
+        },
+        {
+          "pmid": "37064081",
+          "title": "Pituitary adenoma associated with xanthogranuloma.",
+          "journal": "Radiol Case Rep",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Sarah J. Nyante",
+      "profile_url": "https://www.med.unc.edu/radiology/people/sarah-j-nyante/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 77,
+      "pubmed_search": "ComputedAuthors:Nyante SJ",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41324402",
+          "title": "Association between Participant Characteristics and Breast Parenchymal Texture Variation among Postmenopausal Women.",
+          "journal": "Cancer Epidemiol Biomarkers Prev",
+          "year": "2026"
+        },
+        {
+          "pmid": "40770282",
+          "title": "Exploring associations between breast tumor inflammatory gene expression and mammographic calcifications and masses in a community-based population.",
+          "journal": "Sci Rep",
+          "year": "2025"
+        },
+        {
+          "pmid": "40526234",
+          "title": "Mammographic calcifications association with risk of advanced breast cancer.",
+          "journal": "Breast Cancer Res Treat",
+          "year": "2025"
+        },
+        {
+          "pmid": "38572934",
+          "title": "Trends in breast, colon, pancreatic, and uterine cancers in women during the COVID-19 pandemic in North Carolina.",
+          "journal": "Cancer Med",
+          "year": "2024"
+        },
+        {
+          "pmid": "38263910",
+          "title": "Novel breast cancer susceptibility loci under linkage peaks identified in African ancestry consortia.",
+          "journal": "Hum Mol Genet",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Louise Henderson",
+      "profile_url": "https://www.med.unc.edu/radiology/people/louise-henderson/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 165,
+      "pubmed_search": "ComputedAuthors:Henderson Louise",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41771133",
+          "title": "Outcomes of Density-Targeted Supplemental Breast Magnetic Resonance Imaging Screening by Breast Cancer Risk: Long-Term Health and Economic Considerations.",
+          "journal": "Ann Intern Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "41397257",
+          "title": "Diagnostic Follow-up of Positive Results on Low-Dose Computed Tomography Screening in the Medicare Population.",
+          "journal": "Ann Intern Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "41338715",
+          "title": "A Vision Toward Risk-Stratified Postoperative Surveillance for Lung Cancer: Harnessing CT and AI.",
+          "journal": "J Am Coll Radiol",
+          "year": "2025"
+        },
+        {
+          "pmid": "41301000",
+          "title": "Design and Interim Recruitment Outcomes of a Multi-Modal, Multi-Level Patient Navigation Intervention for Lung Cancer Screening in the Southeast U.S.",
+          "journal": "Cancers (Basel)",
+          "year": "2025"
+        },
+        {
+          "pmid": "41263674",
+          "title": "Burden and Impact of Frailty and Comorbidity in Individuals Screened for Lung Cancer.",
+          "journal": "Cancer Epidemiol Biomarkers Prev",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Hong Yuan",
+      "profile_url": "https://www.med.unc.edu/radiology/people/hong-yuan/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 79,
+      "pubmed_search": "ComputedAuthors:Yuan Hong",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42169391",
+          "title": "Longitudinal Analysis of Cannabinoid Type 1 Receptor in HIV-1 Tat Transgenic Mice Using PET Imaging and Western Blot Analysis.",
+          "journal": "Cannabis Cannabinoid Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "42058368",
+          "title": "HIV-1 Tat expression drives progressive synaptic decline: evidence from&#xa0;longitudinal [11C]-UCB-J PET imaging.",
+          "journal": "NeuroImmune Pharm Ther",
+          "year": "2026"
+        },
+        {
+          "pmid": "41171857",
+          "title": "Evaluation of the new blood-pool CT contrast agent VivoVist in mouse models.",
+          "journal": "PLoS One",
+          "year": "2025"
+        },
+        {
+          "pmid": "40493789",
+          "title": "Approach to Chelating Radioactivity using Carbon Dots for Positron Emission Tomography Imaging.",
+          "journal": "ACS Appl Mater Interfaces",
+          "year": "2025"
+        },
+        {
+          "pmid": "39349184",
+          "title": "Implant dynamics, inner structure, and their impact on drug release of in situ forming implants uncovered through CT imaging.",
+          "journal": "J Control Release",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Pew-Thian Yap",
+      "profile_url": "https://www.med.unc.edu/radiology/people/pew-thian-yap/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 301,
+      "pubmed_search": "ComputedAuthors:Yap Pew-Thian",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42284695",
+          "title": "ADLS: Alignment of discrete latent spaces for unsupervised cross-modality medical image translation.",
+          "journal": "Comput Med Imaging Graph",
+          "year": "2026"
+        },
+        {
+          "pmid": "41882352",
+          "title": "Functional hierarchy of the human neocortex across the lifespan.",
+          "journal": "Nature",
+          "year": "2026"
+        },
+        {
+          "pmid": "41867361",
+          "title": "A Large-scale Neural Model Inversion Framework for Effective Connectivity Estimation.",
+          "journal": "Med Image Comput Comput Assist Interv",
+          "year": "2026"
+        },
+        {
+          "pmid": "41806520",
+          "title": "Precise estimation of tissue microstructure with hybrid graph transformer.",
+          "journal": "Artif Intell Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "41624256",
+          "title": "Learning MRI artefact removal with unpaired data.",
+          "journal": "Nat Mach Intell",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Zhengwang Wu",
+      "profile_url": "https://www.med.unc.edu/radiology/people/zhangweng-wu/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 118,
+      "pubmed_search": "ComputedAuthors:Wu Zhengwang",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42214884",
+          "title": "A longitudinally-consistent deep framework for joint subcortical segmentation and registration of infant brains.",
+          "journal": "Comput Med Imaging Graph",
+          "year": "2026"
+        },
+        {
+          "pmid": "42092392",
+          "title": "Surface expansion regionalization of the hippocampus in early brain development.",
+          "journal": "Dev Cogn Neurosci",
+          "year": "2026"
+        },
+        {
+          "pmid": "42016558",
+          "title": "Sex-specific associations of gestational age at birth and birth size with early life within-network brain connectivity: An exploratory study.",
+          "journal": "Imaging Neurosci (Camb)",
+          "year": "2026"
+        },
+        {
+          "pmid": "41869677",
+          "title": "Disentangled Hybrid Transformer for Identification of Infants with Prenatal Drug Exposure.",
+          "journal": "Med Image Comput Comput Assist Interv",
+          "year": "2024"
+        },
+        {
+          "pmid": "41868474",
+          "title": "Cycle-consistent Learning for Fetal Cortical Surface Reconstruction.",
+          "journal": "Med Image Comput Comput Assist Interv",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Zhanhong Wu",
+      "profile_url": "https://www.med.unc.edu/radiology/people/zhanhong-wu/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 72,
+      "pubmed_search": "ComputedAuthors:Wu Zhanhong",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42221563",
+          "title": "Deoxyradiofluorination of Phenols via a Difluoromethoxy Nucleofuge Enabled by Organic Photoredox Catalysis.",
+          "journal": "ACS Cent Sci",
+          "year": "2026"
+        },
+        {
+          "pmid": "42169391",
+          "title": "Longitudinal Analysis of Cannabinoid Type 1 Receptor in HIV-1 Tat Transgenic Mice Using PET Imaging and Western Blot Analysis.",
+          "journal": "Cannabis Cannabinoid Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "42058368",
+          "title": "HIV-1 Tat expression drives progressive synaptic decline: evidence from&#xa0;longitudinal [11C]-UCB-J PET imaging.",
+          "journal": "NeuroImmune Pharm Ther",
+          "year": "2026"
+        },
+        {
+          "pmid": "42028336",
+          "title": "Integrated transient chromophores for efficient photo-induced radiofluorination.",
+          "journal": "Chem",
+          "year": "2026"
+        },
+        {
+          "pmid": "40881429",
+          "title": "Carbon isotopic labelling of carboxylic acids enabled by organic photoredox-catalysed cyanation.",
+          "journal": "Nat Synth",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Li Wang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/li-wang/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 224,
+      "pubmed_search": "ComputedAuthors:Wang Li",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42214884",
+          "title": "A longitudinally-consistent deep framework for joint subcortical segmentation and registration of infant brains.",
+          "journal": "Comput Med Imaging Graph",
+          "year": "2026"
+        },
+        {
+          "pmid": "42092392",
+          "title": "Surface expansion regionalization of the hippocampus in early brain development.",
+          "journal": "Dev Cogn Neurosci",
+          "year": "2026"
+        },
+        {
+          "pmid": "42016558",
+          "title": "Sex-specific associations of gestational age at birth and birth size with early life within-network brain connectivity: An exploratory study.",
+          "journal": "Imaging Neurosci (Camb)",
+          "year": "2026"
+        },
+        {
+          "pmid": "41869677",
+          "title": "Disentangled Hybrid Transformer for Identification of Infants with Prenatal Drug Exposure.",
+          "journal": "Med Image Comput Comput Assist Interv",
+          "year": "2024"
+        },
+        {
+          "pmid": "41815924",
+          "title": "Longitudinally Consistent Individualized Prediction of Infant Cortical Morphological Development.",
+          "journal": "Med Image Comput Comput Assist Interv",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Eric Muir",
+      "profile_url": "https://www.med.unc.edu/radiology/people/eric-muir/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Muir Eric",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Mingxia Liu",
+      "profile_url": "https://www.med.unc.edu/radiology/people/mingxia-liu/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 140,
+      "pubmed_search": "ComputedAuthors:Liu Mingxia",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42013265",
+          "title": "Topology-Learnable Static-Dynamic Graph Convolutional Network for Brain Disorder Detection With Functional MRI.",
+          "journal": "IEEE Trans Neural Syst Rehabil Eng",
+          "year": "2026"
+        },
+        {
+          "pmid": "41934717",
+          "title": "Learning from heterogeneous structural MRI via collaborative domain adaptation for late-Life depression assessment.",
+          "journal": "Neural Netw",
+          "year": "2026"
+        },
+        {
+          "pmid": "41932134",
+          "title": "Functional imaging constrained diffusion for brain PET synthesis from structural MRI.",
+          "journal": "Med Image Anal",
+          "year": "2026"
+        },
+        {
+          "pmid": "41693959",
+          "title": "Improving Late-Life Depression Analysis with Collaborative Domain Adaptation: Learning from Heterogeneous Structural MRI.",
+          "journal": "Reconstr Imaging Motion Estim Graph Biomed Image Anal (2025)",
+          "year": "2026"
+        },
+        {
+          "pmid": "41473811",
+          "title": "Distribution-Guided Multi-Tracer Brain PET Synthesis from Structural MRI with Class-Conditioned Weighted Diffusion.",
+          "journal": "Med Image Comput Comput Assist Interv",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Tengfei Li",
+      "profile_url": "https://www.med.unc.edu/radiology/people/tengfei-li/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 80,
+      "pubmed_search": "ComputedAuthors:Li Tengfei",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42162304",
+          "title": "Multi-organ imaging and genetics show the impact of sleep patterns on the human brain and body.",
+          "journal": "Commun Med (Lond)",
+          "year": "2026"
+        },
+        {
+          "pmid": "42092392",
+          "title": "Surface expansion regionalization of the hippocampus in early brain development.",
+          "journal": "Dev Cogn Neurosci",
+          "year": "2026"
+        },
+        {
+          "pmid": "42016558",
+          "title": "Sex-specific associations of gestational age at birth and birth size with early life within-network brain connectivity: An exploratory study.",
+          "journal": "Imaging Neurosci (Camb)",
+          "year": "2026"
+        },
+        {
+          "pmid": "41993545",
+          "title": "Connectome-based spatial statistics enabling large-scale population analyses of human connectome across cohorts.",
+          "journal": "bioRxiv",
+          "year": "2026"
+        },
+        {
+          "pmid": "41764180",
+          "title": "Computation and resource efficient genome-wide association analysis for large-scale imaging studies.",
+          "journal": "Nat Commun",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Guoshi Li",
+      "profile_url": "https://www.med.unc.edu/radiology/people/guoshi-li/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 7,
+      "pubmed_search": "ComputedAuthors:Li Guoshi",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41867361",
+          "title": "A Large-scale Neural Model Inversion Framework for Effective Connectivity Estimation.",
+          "journal": "Med Image Comput Comput Assist Interv",
+          "year": "2026"
+        },
+        {
+          "pmid": "41286508",
+          "title": "The effective connectome over a century of human life.",
+          "journal": "Commun Biol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39866850",
+          "title": "Development of Effective Connectome from Infancy to Adolescence.",
+          "journal": "Med Image Comput Comput Assist Interv",
+          "year": "2024"
+        },
+        {
+          "pmid": "39814858",
+          "title": "Revealing excitation-inhibition imbalance in Alzheimer's disease using multiscale neural model inversion of resting-state functional MRI.",
+          "journal": "Commun Med (Lond)",
+          "year": "2025"
+        },
+        {
+          "pmid": "38264784",
+          "title": "Coherent olfactory bulb gamma oscillations arise from coupling independent columnar oscillators.",
+          "journal": "J Neurophysiol",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Gang Li",
+      "profile_url": "https://www.med.unc.edu/radiology/people/gang-li/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 65,
+      "pubmed_search": "ComputedAuthors:Li Gang",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42244772",
+          "title": "Embryo-scale Visual Cell Sorting reveals a conserved transcriptomic signature of nucleolar size linked to proteostasis.",
+          "journal": "bioRxiv",
+          "year": "2026"
+        },
+        {
+          "pmid": "42214884",
+          "title": "A longitudinally-consistent deep framework for joint subcortical segmentation and registration of infant brains.",
+          "journal": "Comput Med Imaging Graph",
+          "year": "2026"
+        },
+        {
+          "pmid": "42092392",
+          "title": "Surface expansion regionalization of the hippocampus in early brain development.",
+          "journal": "Dev Cogn Neurosci",
+          "year": "2026"
+        },
+        {
+          "pmid": "42016558",
+          "title": "Sex-specific associations of gestational age at birth and birth size with early life within-network brain connectivity: An exploratory study.",
+          "journal": "Imaging Neurosci (Camb)",
+          "year": "2026"
+        },
+        {
+          "pmid": "41877122",
+          "title": "Celecoxib inhibits COX-2 and initiates YAP-dependent mitochondrial apoptosis via YBX1 shuttling in hepatocellular carcinoma.",
+          "journal": "Cell Commun Signal",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Li-Ming Hsu",
+      "profile_url": "https://www.med.unc.edu/radiology/people/li-ming-hsu/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Hsu Li-Ming",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41720092",
+          "title": "Ventral hippocampal NPY interneurons regulate circadian feeding in mice.",
+          "journal": "Neuron",
+          "year": "2026"
+        },
+        {
+          "pmid": "40161795",
+          "title": "SORDINO for Silent, Sensitive, Specific, and Artifact-Resisting fMRI in awake behaving mice.",
+          "journal": "bioRxiv",
+          "year": "2025"
+        },
+        {
+          "pmid": "39096961",
+          "title": "Optogenetic fMRI reveals therapeutic circuits of subthalamic nucleus deep brain stimulation.",
+          "journal": "Brain Stimul",
+          "year": "2024"
+        },
+        {
+          "pmid": "38464010",
+          "title": "Optogenetic fMRI reveals therapeutic circuits of subthalamic nucleus deep brain stimulation.",
+          "journal": "bioRxiv",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Zibo Li",
+      "profile_url": "https://www.med.unc.edu/radiology/people/zibo-li/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Li Zibo",
+      "pubmed_count": 81,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42294171",
+          "title": "Preclinical Theranostic Study of 68Ga/177Lu/225Ac-Labeled Bicyclic Peptides Targeting Nectin&#x2011;4 in Lung Cancer.",
+          "journal": "ACS Omega",
+          "year": "2026"
+        },
+        {
+          "pmid": "42250214",
+          "title": "PET Imaging Characterization of Sphingosine-1-Phosphate Receptor 2 in a Mouse Model of Esophageal Adenocarcinoma and Metastatic Lymph Node.",
+          "journal": "Mol Pharm",
+          "year": "2026"
+        },
+        {
+          "pmid": "42221563",
+          "title": "Deoxyradiofluorination of Phenols via a Difluoromethoxy Nucleofuge Enabled by Organic Photoredox Catalysis.",
+          "journal": "ACS Cent Sci",
+          "year": "2026"
+        },
+        {
+          "pmid": "42169391",
+          "title": "Longitudinal Analysis of Cannabinoid Type 1 Receptor in HIV-1 Tat Transgenic Mice Using PET Imaging and Western Blot Analysis.",
+          "journal": "Cannabis Cannabinoid Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "42058368",
+          "title": "HIV-1 Tat expression drives progressive synaptic decline: evidence from&#xa0;longitudinal [11C]-UCB-J PET imaging.",
+          "journal": "NeuroImmune Pharm Ther",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Eran Dayan",
+      "profile_url": "https://www.med.unc.edu/radiology/people/eran-dayan/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 9,
+      "pubmed_search": "ComputedAuthors:Dayan Eran",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41821191",
+          "title": "Associations Between Cardiovascular Risk Factors and Neurofilament Light Levels Among US Mexican American Adults.",
+          "journal": "Brain Behav",
+          "year": "2026"
+        },
+        {
+          "pmid": "41742087",
+          "title": "Association between processing speed and segregation/integration of large-scale functional networks in middle-aged and older people living with HIV.",
+          "journal": "BMC Neurol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41290706",
+          "title": "Salience network segregation and symptom profiles in psychosis risk subgroups among youth and early adults.",
+          "journal": "Schizophrenia (Heidelb)",
+          "year": "2025"
+        },
+        {
+          "pmid": "41284573",
+          "title": "Evidence of central autonomic dysfunction in orthostatic hypotension of Parkinson's disease.",
+          "journal": "Parkinsonism Relat Disord",
+          "year": "2025"
+        },
+        {
+          "pmid": "39587764",
+          "title": "Impact of white matter hyperintensity volume on cognition among US Mexican American adults.",
+          "journal": "J Int Neuropsychol Soc",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Wei-Tang Chang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/wei-tang-chang/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 29,
+      "pubmed_search": "ComputedAuthors:Chang Wei-Tang",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42012994",
+          "title": "Brain-wide mapping of layer-specific functional connectivity in the human cortex at 3T using draining-vein-suppressed fMRI.",
+          "journal": "Elife",
+          "year": "2026"
+        },
+        {
+          "pmid": "38645765",
+          "title": "Optimal shrinkage denoising breaks the noise floor in high-resolution diffusion MRI.",
+          "journal": "Patterns (N Y)",
+          "year": "2024"
+        },
+        {
+          "pmid": "37961360",
+          "title": "Enabling brain-wide mapping of layer-specific functional connectivity at 3T via layer-dependent fMRI with draining-vein suppression.",
+          "journal": "bioRxiv",
+          "year": "2024"
+        },
+        {
+          "pmid": "35994030",
+          "title": "Noise Mapping and Removal in Complex-Valued Multi-Channel MRI via Optimal Shrinkage of Singular Values.",
+          "journal": "Med Image Comput Comput Assist Interv",
+          "year": "2021"
+        },
+        {
+          "pmid": "35917693",
+          "title": "Rapid Diffusion Magnetic Resonance Imaging Using Slice-Interleaved Encoding.",
+          "journal": "Med Image Anal",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Sahar Ahmad",
+      "profile_url": "https://www.med.unc.edu/radiology/people/sahar-ahmad/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 42,
+      "pubmed_search": "ComputedAuthors:Ahmad Sahar",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41882352",
+          "title": "Functional hierarchy of the human neocortex across the lifespan.",
+          "journal": "Nature",
+          "year": "2026"
+        },
+        {
+          "pmid": "41286508",
+          "title": "The effective connectome over a century of human life.",
+          "journal": "Commun Biol",
+          "year": "2025"
+        },
+        {
+          "pmid": "41058962",
+          "title": "MindMap: the intricate connections of the human brain.",
+          "journal": "Radiol Adv",
+          "year": "2025"
+        },
+        {
+          "pmid": "40640148",
+          "title": "Functional development of the human cerebellum from birth to age five.",
+          "journal": "Nat Commun",
+          "year": "2025"
+        },
+        {
+          "pmid": "40530350",
+          "title": "Editorial: Recent advances in pediatric neuroradiology.",
+          "journal": "Front Radiol",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Courtney Evron, PA",
+      "profile_url": "https://www.med.unc.edu/radiology/people/courtney-evron/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Evron Courtney",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Alex Villalobos",
+      "profile_url": "https://www.med.unc.edu/radiology/people/alex-villalobos/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 32,
+      "pubmed_search": "ComputedAuthors:Villalobos Alex",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42130667",
+          "title": "Technical and Clinical Outcomes of Embolization of Hypervascular Renal Tumors Using Tantalum-Loaded Obsidio Conformable Embolic (Ta-OCE): a single-center experience.",
+          "journal": "CVIR Oncol",
+          "year": "2025"
+        },
+        {
+          "pmid": "42118299",
+          "title": "Comparative Analysis of the LOBO Device and Coils for Proximal Splenic Artery Embolization: A Multi-Institutional Retrospective Study.",
+          "journal": "Cardiovasc Intervent Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41586995",
+          "title": "Preoperative embolization of dual arterial supply in extralobar pulmonary sequestration: a case report and literature review.",
+          "journal": "CVIR Endovasc",
+          "year": "2026"
+        },
+        {
+          "pmid": "41307819",
+          "title": "Radioembolization in Hepatocellular Carcinoma: Indications and Outcomes.",
+          "journal": "J Gastrointest Cancer",
+          "year": "2025"
+        },
+        {
+          "pmid": "41002557",
+          "title": "Safety of Combination TARE and SBRT in Hepatocellular Carcinoma: A Review of Literature &amp; Single-Center Case Series.",
+          "journal": "Curr Oncol",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Priya Mody",
+      "profile_url": "https://www.med.unc.edu/radiology/people/priya-mody/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 7,
+      "pubmed_search": "ComputedAuthors:Mody Priya",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42252328",
+          "title": "Compression and Superficial Varicosities Outperform Gonadal Vein Diameter in Differentiating Symptomatic from Asymptomatic Pelvic Venous Disorders: A Case-Control Study.",
+          "journal": "Cardiovasc Intervent Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42130667",
+          "title": "Technical and Clinical Outcomes of Embolization of Hypervascular Renal Tumors Using Tantalum-Loaded Obsidio Conformable Embolic (Ta-OCE): a single-center experience.",
+          "journal": "CVIR Oncol",
+          "year": "2025"
+        },
+        {
+          "pmid": "40217796",
+          "title": "Early Experience Using Tantalum-Loaded Nanocomposite Hydrogel Conformable Embolic for Upper Gastrointestinal Bleeding-Open-Sandwich Technique.",
+          "journal": "J Clin Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "39524245",
+          "title": "Obstetric Interventional Radiology: Periprocedural Considerations When Caring for the Pregnant and Postpartum Patient.",
+          "journal": "Semin Intervent Radiol",
+          "year": "2024"
+        },
+        {
+          "pmid": "38771634",
+          "title": "Protein N -Glycans in Healthy and Sclerotic Glomeruli in Diabetic Kidney Disease.",
+          "journal": "J Am Soc Nephrol",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Nima Kokabi, , FRCPC",
+      "profile_url": "https://www.med.unc.edu/radiology/people/nima-kokabi/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 27,
+      "pubmed_search": "ComputedAuthors:Kokabi Nima",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42154123",
+          "title": "External Validation of Laboratory-Based Models to Assess Portal Hypertension Severity in Patients with Compensated Chronic Liver Disease.",
+          "journal": "Dig Dis Sci",
+          "year": "2026"
+        },
+        {
+          "pmid": "42130667",
+          "title": "Technical and Clinical Outcomes of Embolization of Hypervascular Renal Tumors Using Tantalum-Loaded Obsidio Conformable Embolic (Ta-OCE): a single-center experience.",
+          "journal": "CVIR Oncol",
+          "year": "2025"
+        },
+        {
+          "pmid": "42089990",
+          "title": "Recent developments and prospects in locoregional therapy of hepatocellular carcinoma.",
+          "journal": "Abdom Radiol (NY)",
+          "year": "2026"
+        },
+        {
+          "pmid": "41939858",
+          "title": "Case Report: Pulsed electric field treatment of metastatic liver disease demonstrating a possible abscopal response.",
+          "journal": "Front Immunol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41850521",
+          "title": "Safety and Effectiveness of the Low-Profile Braided Occluder Vascular Occlusion Device for Embolization of Pulmonary Arteriovenous Malformations: A Single-Center Retrospective Experience.",
+          "journal": "J Vasc Interv Radiol",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Nicole Keefe",
+      "profile_url": "https://www.med.unc.edu/radiology/people/nicole-keefe/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 26,
+      "pubmed_search": "ComputedAuthors:Keefe Nicole",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42252328",
+          "title": "Compression and Superficial Varicosities Outperform Gonadal Vein Diameter in Differentiating Symptomatic from Asymptomatic Pelvic Venous Disorders: A Case-Control Study.",
+          "journal": "Cardiovasc Intervent Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42230078",
+          "title": "Treatment of Coagulopathy.",
+          "journal": "Tech Vasc Interv Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42167591",
+          "title": "Commentary on Blue Ribbon Panel on Fluoroscopy Safety.",
+          "journal": "J Vasc Interv Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41905682",
+          "title": "Commentary on \"SCAI Summit on Radiation and Orthopedic Risks in Fluoroscopic Labs\".",
+          "journal": "J Vasc Interv Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41837923",
+          "title": "ACR Appropriateness Criteria&#xae; Abdominal Aortic Aneurysm or Dissection-Interventional Planning and Follow-Up: Update 2025.",
+          "journal": "J Am Coll Radiol",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Hyeon Yu, , FSIR",
+      "profile_url": "https://www.med.unc.edu/radiology/people/hyeon-yu/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 47,
+      "pubmed_search": "ComputedAuthors:Yu Hyeon",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42154123",
+          "title": "External Validation of Laboratory-Based Models to Assess Portal Hypertension Severity in Patients with Compensated Chronic Liver Disease.",
+          "journal": "Dig Dis Sci",
+          "year": "2026"
+        },
+        {
+          "pmid": "41879726",
+          "title": "Balancing Therapeutic Efficacy and Ovarian Preservation in Minimally Invasive Treatment of Endometrioma.",
+          "journal": "AJR Am J Roentgenol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41307819",
+          "title": "Radioembolization in Hepatocellular Carcinoma: Indications and Outcomes.",
+          "journal": "J Gastrointest Cancer",
+          "year": "2025"
+        },
+        {
+          "pmid": "41283443",
+          "title": "Sarcopenia in Interventional Radiology: An Opportunistic Imaging Biomarker for Patient Outcomes and Procedural Planning.",
+          "journal": "Muscles",
+          "year": "2025"
+        },
+        {
+          "pmid": "41002557",
+          "title": "Safety of Combination TARE and SBRT in Hepatocellular Carcinoma: A Review of Literature &amp; Single-Center Case Series.",
+          "journal": "Curr Oncol",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Gloria Salazar, , FSIR",
+      "profile_url": "https://www.med.unc.edu/radiology/people/gloria-salazar/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 22,
+      "pubmed_search": "ComputedAuthors:Salazar Gloria",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42252328",
+          "title": "Compression and Superficial Varicosities Outperform Gonadal Vein Diameter in Differentiating Symptomatic from Asymptomatic Pelvic Venous Disorders: A Case-Control Study.",
+          "journal": "Cardiovasc Intervent Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42118299",
+          "title": "Comparative Analysis of the LOBO Device and Coils for Proximal Splenic Artery Embolization: A Multi-Institutional Retrospective Study.",
+          "journal": "Cardiovasc Intervent Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42008086",
+          "title": "Enhanced myometrial vascularity: tailored superselective flow-reduction uterine artery embolization for fertility preservation.",
+          "journal": "CVIR Endovasc",
+          "year": "2026"
+        },
+        {
+          "pmid": "41786126",
+          "title": "The Society of Interventional Radiology Practice Guidance Document on Venous-Origin Chronic Pelvic Pain in Women.",
+          "journal": "J Vasc Interv Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41432346",
+          "title": "Venoactive drugs for venous origin chronic pelvic pain in women: A systematic review.",
+          "journal": "Phlebology",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Charles T. Burke, , FSIR",
+      "profile_url": "https://www.med.unc.edu/radiology/people/charles-t-burke/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 44,
+      "pubmed_search": "ComputedAuthors:Burke CT",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "34853507",
+          "title": "Management of Postprocedural Uterine Artery Embolization Pain.",
+          "journal": "Semin Intervent Radiol",
+          "year": "2021"
+        },
+        {
+          "pmid": "34853504",
+          "title": "How I Do It: Computed Tomography-Guided Modified Translumbar Embolization of Type 2 Endoleak.",
+          "journal": "Semin Intervent Radiol",
+          "year": "2021"
+        },
+        {
+          "pmid": "33778662",
+          "title": "Type II Endoleak Nidus Volume on Arterial and Delayed Phases of Initial CT Angiography after Endovascular Abdominal Aortic Aneurysm Repair Predicts Persistent Endoleak and Aneurysm Sac Enlargement.",
+          "journal": "Radiol Cardiothorac Imaging",
+          "year": "2021"
+        },
+        {
+          "pmid": "33777284",
+          "title": "Embolization of uterine arteriovenous malformation causing postpartum hemorrhage using n-butyl cyanoacrylate: A case report.",
+          "journal": "Radiol Case Rep",
+          "year": "2021"
+        },
+        {
+          "pmid": "32376174",
+          "title": "Superior Hypogastric Nerve Block for Pain Control after Uterine Artery Embolization: Effect of Addition of Steroids on Analgesia.",
+          "journal": "J Vasc Interv Radiol",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "David M. Mauro",
+      "profile_url": "https://www.med.unc.edu/radiology/people/david-m-mauro/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 25,
+      "pubmed_search": "ComputedAuthors:Mauro DM",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42118299",
+          "title": "Comparative Analysis of the LOBO Device and Coils for Proximal Splenic Artery Embolization: A Multi-Institutional Retrospective Study.",
+          "journal": "Cardiovasc Intervent Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41850521",
+          "title": "Safety and Effectiveness of the Low-Profile Braided Occluder Vascular Occlusion Device for Embolization of Pulmonary Arteriovenous Malformations: A Single-Center Retrospective Experience.",
+          "journal": "J Vasc Interv Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41307819",
+          "title": "Radioembolization in Hepatocellular Carcinoma: Indications and Outcomes.",
+          "journal": "J Gastrointest Cancer",
+          "year": "2025"
+        },
+        {
+          "pmid": "41002557",
+          "title": "Safety of Combination TARE and SBRT in Hepatocellular Carcinoma: A Review of Literature &amp; Single-Center Case Series.",
+          "journal": "Curr Oncol",
+          "year": "2025"
+        },
+        {
+          "pmid": "40453415",
+          "title": "Exploring the Role of Patient Preferences in Hepatocellular Carcinoma Treatment Decisions: A Qualitative Study.",
+          "journal": "MDM Policy Pract",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "William &#8220;Will&#8221; W. Pryor",
+      "profile_url": "https://www.med.unc.edu/radiology/people/william-will-w-pryor/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Pryor WW",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41167989",
+          "title": "Implementing peer learning in a pediatric division in a university-based health system: Review and illustration of case categories and related quality improvement.",
+          "journal": "Curr Probl Diagn Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "39117185",
+          "title": "Virtual Multidisciplinary Team Meetings: A Tool to Increase Radiology Access in Global Health Settings.",
+          "journal": "J Am Coll Radiol",
+          "year": "2024"
+        },
+        {
+          "pmid": "38292800",
+          "title": "Osteopetrosis complicated by multilevel spondylolysis.",
+          "journal": "Radiol Case Rep",
+          "year": "2024"
+        },
+        {
+          "pmid": "38234212",
+          "title": "What Do We C in Children With Scurvy? A Case Series Focused on Musculoskeletal Symptoms.",
+          "journal": "Hosp Pediatr",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Lane Donnelly",
+      "profile_url": "https://www.med.unc.edu/radiology/people/lane-donnelly/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Donnelly Lane",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Melania Bula",
+      "profile_url": "https://www.med.unc.edu/radiology/people/melania-bula/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Bula Melania",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Carolina Guimaraes, , FAAP",
+      "profile_url": "https://www.med.unc.edu/radiology/people/carolina-guimaraes/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 46,
+      "pubmed_search": "ComputedAuthors:Guimaraes Carolina",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40409897",
+          "title": "ACR Appropriateness Criteria&#xae; Back Pain-Child: 2024 Update.",
+          "journal": "J Am Coll Radiol",
+          "year": "2025"
+        },
+        {
+          "pmid": "40174708",
+          "title": "Fetal MRI of Prenatal Scalp Lesions: A Pictorial Essay.",
+          "journal": "Semin Ultrasound CT MR",
+          "year": "2025"
+        },
+        {
+          "pmid": "39960680",
+          "title": "NICHD Magnetic Resonance Brain Imaging Score in Term Infants With Hypoxic-Ischemic Encephalopathy: A Secondary Analysis of a Randomized Clinical Trial.",
+          "journal": "JAMA Pediatr",
+          "year": "2025"
+        },
+        {
+          "pmid": "38944430",
+          "title": "Prenatal Imaging of Supratentorial Fetal Brain Malformation.",
+          "journal": "Magn Reson Imaging Clin N Am",
+          "year": "2024"
+        },
+        {
+          "pmid": "38823946",
+          "title": "ACR Appropriateness Criteria&#xae; Orbital Imaging and Vision Loss-Child.",
+          "journal": "J Am Coll Radiol",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Kassie McCullagh",
+      "profile_url": "https://www.med.unc.edu/radiology/people/kassie-mccullagh/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 6,
+      "pubmed_search": "ComputedAuthors:McCullagh Kassie",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40161969",
+          "title": "Primary spinal meningeal melanoma with intramedullary and intradural extramedullary components-a case report.",
+          "journal": "BJR Case Rep",
+          "year": "2025"
+        },
+        {
+          "pmid": "38423746",
+          "title": "Does CISS MRI Reliably Depict the Endolymphatic Duct in Children with and without Vestibular Aqueduct Enlargement?",
+          "journal": "AJNR Am J Neuroradiol",
+          "year": "2024"
+        },
+        {
+          "pmid": "37356860",
+          "title": "Troublemaking Lesions: Spinal Tumor Mimics.",
+          "journal": "Neuroimaging Clin N Am",
+          "year": "2023"
+        },
+        {
+          "pmid": "36244725",
+          "title": "Anatomy of the Larynx and Cervical Trachea.",
+          "journal": "Neuroimaging Clin N Am",
+          "year": "2022"
+        },
+        {
+          "pmid": "35871783",
+          "title": "Headache Attributed to Non-vascular Intracranial Disorder: Neoplasms, Infections, and Substance Abuse.",
+          "journal": "Neurol Clin",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Yueh Z. Lee",
+      "profile_url": "https://www.med.unc.edu/radiology/people/yueh-z-lee/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 114,
+      "pubmed_search": "ComputedAuthors:Lee YZ",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42247374",
+          "title": "Feasibility study of prospective gated tomosynthesis using a wide-angle carbon nanotube enabled, stationary digital chest tomosynthesis scanner: In-vivo evaluation in a porcine subject.",
+          "journal": "PLoS One",
+          "year": "2026"
+        },
+        {
+          "pmid": "41926365",
+          "title": "Comparison of stationary digital chest tomosynthesis to portable chest radiographs: A patient study.",
+          "journal": "PLoS One",
+          "year": "2026"
+        },
+        {
+          "pmid": "41844777",
+          "title": "Deep learning based 3D brain metastasis synthesis with configurable parameters for 3D data augmentation.",
+          "journal": "Sci Rep",
+          "year": "2026"
+        },
+        {
+          "pmid": "41651967",
+          "title": "Feasibility of multisource CBCT for improving the predictability of dental implant primary stability compared to conventional CBCT.",
+          "journal": "Sci Rep",
+          "year": "2026"
+        },
+        {
+          "pmid": "41329628",
+          "title": "Exploring prefrontal alpha modulation as a mechanistic treatment target in lupus-associated depression: A transcranial alternating current stimulation study.",
+          "journal": "Lupus",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Sheng-Che &#8220;Alex&#8221; Hung",
+      "profile_url": "https://www.med.unc.edu/radiology/people/sheng-che-alex-hung/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1DGxebrP9GtQD/bibliography/public",
+      "pubmed_count": 14,
+      "pubmed_search": "ComputedAuthors:Hung Sheng-Che",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42209150",
+          "title": "Predictive Value of Air Bubble and Meniscus Signs on Routine Trauma Head CT for Nondisplaced Temporal Bone Fractures.",
+          "journal": "AJNR Am J Neuroradiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42092392",
+          "title": "Surface expansion regionalization of the hippocampus in early brain development.",
+          "journal": "Dev Cogn Neurosci",
+          "year": "2026"
+        },
+        {
+          "pmid": "40750791",
+          "title": "A New Case Linking a Somatic NRAS Variant to Encephalocraniocutaneous Lipomatosis.",
+          "journal": "Am J Med Genet A",
+          "year": "2025"
+        },
+        {
+          "pmid": "40538544",
+          "title": "Case Report: long-term clinical outcomes in RANBP2-associated acute necrotizing encephalopathy.",
+          "journal": "Front Pharmacol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39440801",
+          "title": "Editorial Comment: Optimizing Imaging With Photon-Counting Detector CTA of the Head and Neck.",
+          "journal": "AJR Am J Roentgenol",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Benjamin Huang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/benjamin-huang/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 47,
+      "pubmed_search": "ComputedAuthors:Huang Benjamin",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41281564",
+          "title": "Associations between structural injury and task-based corticomuscular connectivity after stroke.",
+          "journal": "Front Neurol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39263446",
+          "title": "Hippocampal-Sparing Radiation Therapy in Primary Sinonasal and Cutaneous Tumors of the Head and Neck.",
+          "journal": "Adv Radiat Oncol",
+          "year": "2024"
+        },
+        {
+          "pmid": "38842027",
+          "title": "Cross-Frequency Coupling as a Biomarker for Early Stroke Recovery.",
+          "journal": "Neurorehabil Neural Repair",
+          "year": "2024"
+        },
+        {
+          "pmid": "38423746",
+          "title": "Does CISS MRI Reliably Depict the Endolymphatic Duct in Children with and without Vestibular Aqueduct Enlargement?",
+          "journal": "AJNR Am J Neuroradiol",
+          "year": "2024"
+        },
+        {
+          "pmid": "37321858",
+          "title": "The Development and Application of a Cost-Effective Cervical Spine Phantom for Use in Fluoroscopically Guided Lateral C1-C2 Spinal Puncture Training.",
+          "journal": "AJNR Am J Neuroradiol",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Mauricio Castillo",
+      "profile_url": "https://www.med.unc.edu/radiology/people/mauricio-castillo/",
+      "department": "Radiology",
+      "role": "Alumni",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 88,
+      "pubmed_search": "ComputedAuthors:Castillo Mauricio",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39653434",
+          "title": "AJNR: A Brief History in 8 Episodes.",
+          "journal": "AJNR Am J Neuroradiol",
+          "year": "2024"
+        },
+        {
+          "pmid": "39288967",
+          "title": "Artificial Intelligence-Generated Editorials in Radiology: Can Expert Editors Detect Them?",
+          "journal": "AJNR Am J Neuroradiol",
+          "year": "2025"
+        },
+        {
+          "pmid": "25698625",
+          "title": "Do you need a coach? I do.",
+          "journal": "AJNR Am J Neuroradiol",
+          "year": "2015"
+        },
+        {
+          "pmid": "25258366",
+          "title": "Crossing the Rubicon.",
+          "journal": "AJNR Am J Neuroradiol",
+          "year": "2015"
+        },
+        {
+          "pmid": "25104289",
+          "title": "The winds of change.",
+          "journal": "AJNR Am J Neuroradiol",
+          "year": "2015"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Bilal Battal",
+      "profile_url": "https://www.med.unc.edu/radiology/people/bilal-battal/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 7,
+      "pubmed_search": "ComputedAuthors:Battal Bilal",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42209150",
+          "title": "Predictive Value of Air Bubble and Meniscus Signs on Routine Trauma Head CT for Nondisplaced Temporal Bone Fractures.",
+          "journal": "AJNR Am J Neuroradiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41920322",
+          "title": "Revisiting FLAIR vascular hyperintensity: from flow disturbance to vessel wall disease.",
+          "journal": "Eur Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40287245",
+          "title": "Imaging Approach to Myelopathies.",
+          "journal": "Magn Reson Imaging Clin N Am",
+          "year": "2025"
+        },
+        {
+          "pmid": "38965094",
+          "title": "Redefining traumatic axonal injury assessment for grading and prognostication: a never-ending MRI endeavor.",
+          "journal": "Eur Radiol",
+          "year": "2024"
+        },
+        {
+          "pmid": "37951698",
+          "title": "Imaging of Reversible Cerebral Vasoconstriction Syndrome and Posterior Reversible Encephalopathy Syndrome.",
+          "journal": "Neuroimaging Clin N Am",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Carlos Zamora",
+      "profile_url": "https://www.med.unc.edu/radiology/people/carlos-zamora/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 16,
+      "pubmed_search": "ComputedAuthors:Zamora Carlos",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42209150",
+          "title": "Predictive Value of Air Bubble and Meniscus Signs on Routine Trauma Head CT for Nondisplaced Temporal Bone Fractures.",
+          "journal": "AJNR Am J Neuroradiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42034513",
+          "title": "Neuronal injury and axonal degeneration: Pathologic mechanisms and findings beyond Wallerian changes.",
+          "journal": "Curr Probl Diagn Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41173265",
+          "title": "Nivolumab with doxorubicin, vinblastine, and dacarbazine for the frontline treatment of central nervous system classical Hodgkin lymphoma.",
+          "journal": "Leuk Lymphoma",
+          "year": "2026"
+        },
+        {
+          "pmid": "40287245",
+          "title": "Imaging Approach to Myelopathies.",
+          "journal": "Magn Reson Imaging Clin N Am",
+          "year": "2025"
+        },
+        {
+          "pmid": "39648098",
+          "title": "Navigating Well-being in Radiology: Strategies, Challenges, and Opportunities Across Career Transitions.",
+          "journal": "Acad Radiol",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Sten Solander",
+      "profile_url": "https://www.med.unc.edu/radiology/people/sten-solander/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Solander Sten",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39822142",
+          "title": "CYP2C19 Genotype-Guided Antiplatelet Therapy and Clinical Outcomes in Patients Undergoing a Neurointerventional Procedure.",
+          "journal": "Clin Transl Sci",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Cody Schwartz",
+      "profile_url": "https://www.med.unc.edu/radiology/people/cody-schwartz/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 6,
+      "pubmed_search": "ComputedAuthors:Schwartz Cody",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41732757",
+          "title": "Case report: Pancreatitis-associated polyarthritis, panniculitis, and bone infarcts in a patient with alcohol use disorder.",
+          "journal": "Acta Radiol Open",
+          "year": "2026"
+        },
+        {
+          "pmid": "33487540",
+          "title": "Breast Imaging Boot Camp Meets Milestones 2.0: A Match Made in Clinic.",
+          "journal": "Acad Radiol",
+          "year": "2022"
+        },
+        {
+          "pmid": "32921568",
+          "title": "Training Radiology Residents, Bloom Style.",
+          "journal": "Acad Radiol",
+          "year": "2021"
+        },
+        {
+          "pmid": "30064918",
+          "title": "Enhancement of Musculoskeletal Radiology Resident Education with the Use of an Individual Smart Portable Ultrasound Device (iSPUD).",
+          "journal": "Acad Radiol",
+          "year": "2018"
+        },
+        {
+          "pmid": "28283724",
+          "title": "Radiation dose associated with CT-guided drain placement for pediatric patients.",
+          "journal": "Pediatr Radiol",
+          "year": "2017"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Girish Gandikota",
+      "profile_url": "https://www.med.unc.edu/radiology/people/girish-gandikota/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 8,
+      "pubmed_search": "ComputedAuthors:Gandikota Girish",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41732757",
+          "title": "Case report: Pancreatitis-associated polyarthritis, panniculitis, and bone infarcts in a patient with alcohol use disorder.",
+          "journal": "Acta Radiol Open",
+          "year": "2026"
+        },
+        {
+          "pmid": "40716108",
+          "title": "High-Resolution Ultrasound of Clinically Relevant Sensory Nerves of the Arm and the Forearm.",
+          "journal": "J Ultrasound Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "40381536",
+          "title": "A comparison of performance of DeepSeek-R1 model-generated responses to musculoskeletal radiology queries against ChatGPT-4 and ChatGPT-4o - A feasibility study.",
+          "journal": "Clin Imaging",
+          "year": "2025"
+        },
+        {
+          "pmid": "39552959",
+          "title": "Utility of Magnetic Resonance Arthrography in the Age of Expanded Magnetic Resonance Imaging Capabilities: A Global Survey Perspective.",
+          "journal": "Cureus",
+          "year": "2024"
+        },
+        {
+          "pmid": "38860894",
+          "title": "Elevating Patient Care with Standardized Reporting in Axial Spondyloarthritis Imaging.",
+          "journal": "Radiology",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jorge Oldan",
+      "profile_url": "https://www.med.unc.edu/radiology/people/jorgeoldan/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Oldan Jorge",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42059812",
+          "title": "Sulbactam-durlobactam and cefiderocol combination treatment of Burkholderia cenocepacia-associated Fitz-Hugh-Curtis syndrome.",
+          "journal": "Antimicrob Agents Chemother",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Marija Ivanovic",
+      "profile_url": "https://www.med.unc.edu/radiology/people/marija-ivanovic/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Ivanovic Marija",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41529930",
+          "title": "Real-Time Imaging of 177Lu-Labeled Radiopharmaceutical Infusions with a Portable &#x3b3;-Camera: Pilot Trial Results.",
+          "journal": "J Nucl Med Technol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40282441",
+          "title": "Initial Experience with Single-Session Resin-Based Transarterial Radioembolization Mapping and Treatment of Small Hepatocellular Carcinomas.",
+          "journal": "Cancers (Basel)",
+          "year": "2025"
+        },
+        {
+          "pmid": "39757069",
+          "title": "Suboptimal patient positioning with panoramic and CBCT imaging: effects on dose.",
+          "journal": "Oral Surg Oral Med Oral Pathol Oral Radiol",
+          "year": "2025"
+        },
+        {
+          "pmid": "37123046",
+          "title": "Increased tryptophan, but not increased glucose metabolism, predict resistance of pembrolizumab in stage III/IV melanoma.",
+          "journal": "Oncoimmunology",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jennifer Schroeder",
+      "profile_url": "https://www.med.unc.edu/radiology/people/jennifer-schroeder/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Schroeder J",
+      "pubmed_count": 2,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "John Nazarian",
+      "profile_url": "https://www.med.unc.edu/radiology/people/john-nazarian/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Nazarian John",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40971613",
+          "title": "Establishing and implementing a responsible artificial intelligence framework: a 1-year review.",
+          "journal": "J Am Med Inform Assoc",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Mariana DeFreitas",
+      "profile_url": "https://www.med.unc.edu/radiology/people/mariana-defreitas/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "DeFreitas Mariana",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Mark Rynties",
+      "profile_url": "https://www.med.unc.edu/radiology/people/mark-rynties/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Rynties Mark",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Jeffrey Gage",
+      "profile_url": "https://www.med.unc.edu/radiology/people/jeff-gage/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Gage Jeffrey",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Yildiz Sengul",
+      "profile_url": "https://www.med.unc.edu/radiology/people/yildiz-sengul/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Sengul Yildiz",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40575365",
+          "title": "A rare interstitial lung disease in young adulthood due to surfactant protein C gene mutation: Two case reports with brief literature review.",
+          "journal": "Radiol Case Rep",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Muthu Sakthivel, , FSCMR",
+      "profile_url": "https://www.med.unc.edu/radiology/people/muthu-sakthivel/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 5,
+      "pubmed_search": "ComputedAuthors:Sakthivel Muthu",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41933232",
+          "title": "The double threat: imaging manifestations of thoracic sarcoidosis with miliary nodules and myocardial involvement with radiologic-pathologic correlation.",
+          "journal": "Int J Cardiovasc Imaging",
+          "year": "2026"
+        },
+        {
+          "pmid": "41926365",
+          "title": "Comparison of stationary digital chest tomosynthesis to portable chest radiographs: A patient study.",
+          "journal": "PLoS One",
+          "year": "2026"
+        },
+        {
+          "pmid": "36294480",
+          "title": "Dynamic Perfluorinated Gas MRI Shows Improved Lung Ventilation in People with Cystic Fibrosis after Elexacaftor/Tezacaftor/Ivacaftor: An Observational Study.",
+          "journal": "J Clin Med",
+          "year": "2022"
+        },
+        {
+          "pmid": "35857635",
+          "title": "SARS-CoV-2 infection produces chronic pulmonary epithelial and immune cell dysfunction with fibrosis in mice.",
+          "journal": "Sci Transl Med",
+          "year": "2022"
+        },
+        {
+          "pmid": "35280479",
+          "title": "Feasibility of a prototype carbon nanotube enabled stationary digital chest tomosynthesis system for identification of pulmonary nodules by pulmonologists.",
+          "journal": "J Thorac Dis",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Fenner Griffin",
+      "profile_url": "https://www.med.unc.edu/radiology/people/fenner-griffin/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_hint": "Charleston SC",
+      "pubmed_search": "Griffin Fenner",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Hollins Clark",
+      "profile_url": "https://www.med.unc.edu/radiology/people/hollins-clark/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 19,
+      "pubmed_search": "ComputedAuthors:Clark Hollins",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "38165185",
+          "title": "Clinical Characteristics of SARS-CoV-2 Acute Pulmonary Embolism and Adjusted D-dimer for Emergency Department Patients.",
+          "journal": "West J Emerg Med",
+          "year": "2023"
+        },
+        {
+          "pmid": "36759296",
+          "title": "Bridging the Communication Gaps: A Prospective Single-Arm Pilot Study Testing the Feasibility of Interdisciplinary Radiotherapy Planning in Locally Advanced Lung Cancer.",
+          "journal": "Acad Radiol",
+          "year": "2023"
+        },
+        {
+          "pmid": "33937015",
+          "title": "Comprehensive and Computable Molecular Diagnostic Panel (C2Dx) From Small Volume Specimens for Precision Oncology: Molecular Subtyping of Non-Small Cell Lung Cancer From Fine Needle Aspirates.",
+          "journal": "Front Oncol",
+          "year": "2021"
+        },
+        {
+          "pmid": "33932531",
+          "title": "Long-Term Outcomes From a Phase 2 Trial of Radiofrequency Ablation Combined With External Beam Radiation Therapy for Patients With Inoperable Non-Small Cell Lung Cancer.",
+          "journal": "Int J Radiat Oncol Biol Phys",
+          "year": "2021"
+        },
+        {
+          "pmid": "30642553",
+          "title": "Feasibility of lung cancer RNA acquisition from a single transbronchial or transthoracic needle pass (FASTT trial).",
+          "journal": "Lung Cancer",
+          "year": "2019"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Todd R. Hazelton, , MS",
+      "profile_url": "https://www.med.unc.edu/radiology/people/todd-r-hazelton/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Hazelton TR",
+      "pubmed_count": 2,
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42308101",
+          "title": "Closing the Global Radiation Dose Gap in Cardiac Imaging.",
+          "journal": "AJR Am J Roentgenol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41513514",
+          "title": "Organizing Pneumonia Phenotype.",
+          "journal": "Semin Roentgenol",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Valerie Jewells, , , FAOCR",
+      "profile_url": "https://www.med.unc.edu/radiology/people/valerie-jewells/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 51,
+      "pubmed_search": "ComputedAuthors:Jewells Valerie",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40292245",
+          "title": "Weakly Supervised Cerebellar Cortical Surface Parcellation with Self-Visual Representation Learning.",
+          "journal": "Med Image Comput Comput Assist Interv",
+          "year": "2023"
+        },
+        {
+          "pmid": "39199670",
+          "title": "Radiographic Response Assessments and Standardized Imaging Interpretation Criteria in Head and Neck Cancer on FDG PET/CT: A Narrative Review.",
+          "journal": "Cancers (Basel)",
+          "year": "2024"
+        },
+        {
+          "pmid": "37064081",
+          "title": "Pituitary adenoma associated with xanthogranuloma.",
+          "journal": "Radiol Case Rep",
+          "year": "2023"
+        },
+        {
+          "pmid": "36632547",
+          "title": "Recurrent acute hemorrhagic necrotizing encephalopathy associated with RAN-binding protein-2 gene mutation in a pediatric patient.",
+          "journal": "BJR Case Rep",
+          "year": "2022"
+        },
+        {
+          "pmid": "35414636",
+          "title": "Qualitative and quantitative methods in post-chemoradiation PET for head and neck cancer.",
+          "journal": "Nucl Med Commun",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Lynn A. Fordham, , , FAIUM, FAAWR",
+      "profile_url": "https://www.med.unc.edu/radiology/people/lynn-a-fordham/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 68,
+      "pubmed_search": "ComputedAuthors:Fordham LA",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41167989",
+          "title": "Implementing peer learning in a pediatric division in a university-based health system: Review and illustration of case categories and related quality improvement.",
+          "journal": "Curr Probl Diagn Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "36911752",
+          "title": "Near-Peer Teaching in Radiology Symposia: A Success Story in Residents as Teachers.",
+          "journal": "J Med Educ Curric Dev",
+          "year": "2023"
+        },
+        {
+          "pmid": "34751996",
+          "title": "Sex-specific biomechanics and morphology of the anterior cruciate ligament during skeletal growth in a porcine model.",
+          "journal": "J Orthop Res",
+          "year": "2022"
+        },
+        {
+          "pmid": "34727387",
+          "title": "Age- and sex-specific differences in ACL and ACL bundle size during adolescent growth.",
+          "journal": "J Orthop Res",
+          "year": "2022"
+        },
+        {
+          "pmid": "33250037",
+          "title": "Student-led peer review of an online teaching file: perspectives after 2 years.",
+          "journal": "Med Educ Online",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Weili Lin",
+      "profile_url": "https://www.med.unc.edu/radiology/people/weili-lin/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 430,
+      "pubmed_search": "ComputedAuthors:Lin Weili",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42214884",
+          "title": "A longitudinally-consistent deep framework for joint subcortical segmentation and registration of infant brains.",
+          "journal": "Comput Med Imaging Graph",
+          "year": "2026"
+        },
+        {
+          "pmid": "42092392",
+          "title": "Surface expansion regionalization of the hippocampus in early brain development.",
+          "journal": "Dev Cogn Neurosci",
+          "year": "2026"
+        },
+        {
+          "pmid": "42012994",
+          "title": "Brain-wide mapping of layer-specific functional connectivity in the human cortex at 3T using draining-vein-suppressed fMRI.",
+          "journal": "Elife",
+          "year": "2026"
+        },
+        {
+          "pmid": "41994472",
+          "title": "Tract-specific white matter microstructure associated with early cognitive development in infants.",
+          "journal": "Neuroimage Rep",
+          "year": "2026"
+        },
+        {
+          "pmid": "41882352",
+          "title": "Functional hierarchy of the human neocortex across the lifespan.",
+          "journal": "Nature",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "J. Keith Smith",
+      "profile_url": "https://www.med.unc.edu/radiology/people/j-keith-smith/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 10,
+      "pubmed_search": "ComputedAuthors:Smith JK",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42101106",
+          "title": "Circadian regulation of reproduction and neoblast cell division in the catenulid flatworm Stenostomum virginianum (Platyhelminthes).",
+          "journal": "Photochem Photobiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "34168518",
+          "title": "Nourished, Exposed Beaches Exhibit Altered Sediment Structure and Meiofaunal Communities.",
+          "journal": "Diversity (Basel)",
+          "year": "2020"
+        },
+        {
+          "pmid": "33551466",
+          "title": "The curious and neglected soft-bodied meiofauna: Rouphozoa (Gastrotricha and Platyhelminthes).",
+          "journal": "Hydrobiologia",
+          "year": "2020"
+        },
+        {
+          "pmid": "27695276",
+          "title": "Structure of the male copulatory apparatus in Prognathorhynchus busheki (Platyhelminthes, Kalyptorhynchia).",
+          "journal": "Invertebr Biol",
+          "year": "2016"
+        },
+        {
+          "pmid": "26842059",
+          "title": "Xenacoelomorpha is the sister group to Nephrozoa.",
+          "journal": "Nature",
+          "year": "2016"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Matthew A. Mauro, , , FSIR",
+      "profile_url": "https://www.med.unc.edu/radiology/people/matthew-a-mauro/",
+      "department": "Radiology",
+      "role": "Abdominal-Imaging",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Mauro MA",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "38008536",
+          "title": "The Path to Primary Specialty Recognition of Interventional Radiology and the IR/DR Certificate.",
+          "journal": "J Vasc Interv Radiol",
+          "year": "2023"
+        },
+        {
+          "pmid": "31843251",
+          "title": "Quality of life after pharmacomechanical catheter-directed thrombolysis for proximal deep venous thrombosis.",
+          "journal": "J Vasc Surg Venous Lymphat Disord",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Cherie M. Kuzmiak, , , FSBI",
+      "profile_url": "https://www.med.unc.edu/radiology/people/cherie-m-kuzmiak/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_hint": "Kuzmiak CM",
+      "pubmed_count": 90,
+      "pubmed_search": "ComputedAuthors:Kuzmiak CM",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42273835",
+          "title": "Paget disease of the breast: An often-overlooked malignancy.",
+          "journal": "Breast Dis",
+          "year": "2024"
+        },
+        {
+          "pmid": "42190471",
+          "title": "Ultrasound correlation modifies malignancy risk of architectural distortion on digital mammography and tomosynthesis: A systematic review and meta-analysis.",
+          "journal": "Clin Imaging",
+          "year": "2026"
+        },
+        {
+          "pmid": "41963229",
+          "title": "Contrast-Enhanced Mammography in the Work-up of Asymmetries: A Systematic Review and Meta-analysis.",
+          "journal": "Acad Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41885663",
+          "title": "ACR Appropriateness Criteria&#xae; Breast Imaging During Lactation.",
+          "journal": "J Am Coll Radiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41707219",
+          "title": "Unknown Case: 44-Year-Old Woman With a Palpable Left Breast Mass.",
+          "journal": "J Breast Imaging",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Genevieve A. Woodard",
+      "profile_url": "https://www.med.unc.edu/radiology/people/genevieve-a-woodard/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 27,
+      "pubmed_search": "ComputedAuthors:Woodard GA",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42018695",
+          "title": "Mammographic and Pathologic Appearance of Retained Superparamagnetic Iron Oxide.",
+          "journal": "J Breast Imaging",
+          "year": "2026"
+        },
+        {
+          "pmid": "40884447",
+          "title": "Epinephrine-Containing Lidocaine and Hematoma Risk After Image-Guided Core-Needle Breast Biopsy.",
+          "journal": "J Breast Imaging",
+          "year": "2025"
+        },
+        {
+          "pmid": "38424997",
+          "title": "Utilization of Patient Navigators in Breast Imaging Facilities Across the United States: A Survey of Breast Imaging Radiologists.",
+          "journal": "J Breast Imaging",
+          "year": "2020"
+        },
+        {
+          "pmid": "38424949",
+          "title": "The Value of Targeted Ultrasound for the Primary Evaluation of Breast Symptoms in Pregnant Women of All Ages.",
+          "journal": "J Breast Imaging",
+          "year": "2021"
+        },
+        {
+          "pmid": "38424887",
+          "title": "Intraoperative Radiography to Aid in Biopsy Clip Retrieval at the Time of Surgery.",
+          "journal": "J Breast Imaging",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Chris Young, RRA, RT",
+      "profile_url": "https://www.med.unc.edu/radiology/people/chris-young/",
+      "department": "Radiology",
+      "role": "Abdominal-Imaging",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 6,
+      "pubmed_search": "ComputedAuthors:Young C",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41984450",
+          "title": "Intrawound Tobramycin Plus Vancomycin to Prevent Surgical Site Infection in Tibial Fractures: The TOBRA Randomized Clinical Trial.",
+          "journal": "JAMA",
+          "year": "2026"
+        },
+        {
+          "pmid": "41182889",
+          "title": "Maternal and Fetal Perioperative Outcomes After Pelvic Ring or Acetabulum Fracture in Gravid Patients.",
+          "journal": "J Orthop Trauma",
+          "year": "2026"
+        },
+        {
+          "pmid": "40202596",
+          "title": "\"Natural history of low velocity ballistic nerve injuries to the humerus\".",
+          "journal": "Arch Orthop Trauma Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "39363953",
+          "title": "Deep infections after low-velocity ballistic tibia fractures are frequently polymicrobial and recalcitrant.",
+          "journal": "OTA Int",
+          "year": "2024"
+        },
+        {
+          "pmid": "38117575",
+          "title": "Are Orthopaedic Trauma Surgeons Appropriately Compensated for Treating Acetabular Fractures? An Analysis of Operative Times and Relative Value Units.",
+          "journal": "J Orthop Trauma",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Lauren M.B. Burke, , FSAR",
+      "profile_url": "https://www.med.unc.edu/radiology/people/lauren-m-b-burke/",
+      "department": "Radiology",
+      "role": "Abdominal-Imaging",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Burke Lauren",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42084923",
+          "title": "MVA.HIVconsvX vaccination-evoked T cell expansion inversely associates with age in people with HIV-1 on antiretroviral therapy.",
+          "journal": "J Clin Invest",
+          "year": "2026"
+        },
+        {
+          "pmid": "7189052",
+          "title": "Post-transfusion purpura as a gynecologic complication.",
+          "journal": "Obstet Gynecol",
+          "year": "1980"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Dustin Rea",
+      "profile_url": "https://www.med.unc.edu/radiology/people/dustin-rea/",
+      "department": "Radiology",
+      "role": "Abdominal-Imaging",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Rea Dustin",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Ellie R. Lee",
+      "profile_url": "https://www.med.unc.edu/radiology/people/ellie-r-lee/",
+      "department": "Radiology",
+      "role": "Abdominal-Imaging",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 8,
+      "pubmed_search": "ComputedAuthors:Lee ER",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "37892632",
+          "title": "The Performance of Flash Replenishment Contrast-Enhanced Ultrasound for the Qualitative Assessment of Kidney Lesions in Patients with Chronic Kidney Disease.",
+          "journal": "J Clin Med",
+          "year": "2023"
+        },
+        {
+          "pmid": "34561781",
+          "title": "Radiology Dictation Errors with COVID-19 Protective Equipment: Does Wearing a Surgical Mask Increase the Dictation Error Rate?",
+          "journal": "J Digit Imaging",
+          "year": "2021"
+        },
+        {
+          "pmid": "31265803",
+          "title": "Keeping Clean in the Reading Room: An Initiative to Improve Workstation Hygiene.",
+          "journal": "J Am Coll Radiol",
+          "year": "2019"
+        },
+        {
+          "pmid": "28088432",
+          "title": "Detection of Upper Tract Urothelial Malignancies by Computed Tomography Urography in Patients Referred for Hematuria at a Large Tertiary Referral Center.",
+          "journal": "Urology",
+          "year": "2017"
+        },
+        {
+          "pmid": "25945724",
+          "title": "Tuberculous Epididymitis.",
+          "journal": "Ultrasound Q",
+          "year": "2015"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "W. Brian Hyslop",
+      "profile_url": "https://www.med.unc.edu/radiology/people/w-brian-hyslop/",
+      "department": "Radiology",
+      "role": "Abdominal-Imaging",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 23,
+      "pubmed_search": "ComputedAuthors:Hyslop WB",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41060064",
+          "title": "Pancreatic Calcification and Pathologic Fibrosis Score: Correlation With Islet Yield and Insulin Independence After Total Pancreatectomy With Islet Autotransplantation (TPIAT).",
+          "journal": "Pancreas",
+          "year": "2026"
+        },
+        {
+          "pmid": "40685114",
+          "title": "Intracholecystic papillary mucinous neoplasm in a kidney transplant recipient.",
+          "journal": "J Gastrointest Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "39029263",
+          "title": "Preoperative Identification and Outcomes of Vascular Variants on Surgery for Chronic Pancreatitis.",
+          "journal": "J Surg Res",
+          "year": "2024"
+        },
+        {
+          "pmid": "35414482",
+          "title": "Selection of parenchymal preserving or total pancreatectomy with/without islet cell autotransplantation surgery for patients with chronic pancreatitis.",
+          "journal": "Pancreatology",
+          "year": "2022"
+        },
+        {
+          "pmid": "33220788",
+          "title": "MRI of the Acute Abdomen in Adults.",
+          "journal": "Semin Roentgenol",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Josephine Finazzo",
+      "profile_url": "https://www.med.unc.edu/radiology/people/josephine-finazzo/",
+      "department": "Radiology",
+      "role": "Abdominal-Imaging",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_search": "Finazzo Josephine",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Kristen Olinger",
+      "profile_url": "https://www.med.unc.edu/radiology/people/kristen-olinger/",
+      "department": "Radiology",
+      "role": "Abdominal-Imaging",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 12,
+      "pubmed_search": "ComputedAuthors:Olinger Kristen",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41532619",
+          "title": "Disappearance of Colorectal Liver Metastases on CT and MRI Does Not Reliably Indicate Nonviability.",
+          "journal": "AJR Am J Roentgenol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40221182",
+          "title": "Imaging of Iatrogenic Injuries to the Bowel.",
+          "journal": "Radiol Clin North Am",
+          "year": "2025"
+        },
+        {
+          "pmid": "39198135",
+          "title": "A Lexicon for First-Trimester US: Society of Radiologists in Ultrasound Consensus Conference Recommendations.",
+          "journal": "Am J Obstet Gynecol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39189906",
+          "title": "A Lexicon for First-Trimester US: Society of Radiologists in Ultrasound Consensus Conference Recommendations.",
+          "journal": "Radiology",
+          "year": "2024"
+        },
+        {
+          "pmid": "38340216",
+          "title": "Utility of tele-guidance for point-of-care ultrasound: a single center prospective diagnostic study.",
+          "journal": "J Ultrasound",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Ersan Altun",
+      "profile_url": "https://www.med.unc.edu/radiology/people/ersan-altun/",
+      "department": "Radiology",
+      "role": "Abdominal-Imaging",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 55,
+      "pubmed_search": "ComputedAuthors:Altun Ersan",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39318975",
+          "title": "A Case of Rapidly Progressive De Novo Metastatic Small-Cell Neuroendocrine Prostate Cancer.",
+          "journal": "Case Rep Oncol Med",
+          "year": "2024"
+        },
+        {
+          "pmid": "38827529",
+          "title": "Inflammatory myofibroblastic tumor in a patient with X-Linked hypophosphatemia: A case of Occam's razor or Hickam's dictum?",
+          "journal": "Urol Case Rep",
+          "year": "2024"
+        },
+        {
+          "pmid": "37892632",
+          "title": "The Performance of Flash Replenishment Contrast-Enhanced Ultrasound for the Qualitative Assessment of Kidney Lesions in Patients with Chronic Kidney Disease.",
+          "journal": "J Clin Med",
+          "year": "2023"
+        },
+        {
+          "pmid": "37314737",
+          "title": "Thermal ablation compared to stereotactic body radiation therapy for hepatocellular carcinoma: A multicenter retrospective comparative study.",
+          "journal": "Hepatol Commun",
+          "year": "2023"
+        },
+        {
+          "pmid": "35256864",
+          "title": "Current Opinion on the Use of Magnetic Resonance Imaging in Staging Prostate Cancer: A Narrative Review.",
+          "journal": "Cancer Manag Res",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Maureen P. Kohi, , FSIR, FCIRSE",
+      "profile_url": "https://www.med.unc.edu/radiology/people/maureen-p-kohi/",
+      "department": "Radiology",
+      "role": "All",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Kohi MP",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42252328",
+          "title": "Compression and Superficial Varicosities Outperform Gonadal Vein Diameter in Differentiating Symptomatic from Asymptomatic Pelvic Venous Disorders: A Case-Control Study.",
+          "journal": "Cardiovasc Intervent Radiol",
+          "year": "2026"
+        }
+      ],
       "nih_grants": []
     }
   ]
