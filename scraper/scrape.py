@@ -276,8 +276,14 @@ def scrape_faculty_via_wp_rest(base_url, dept_name):
             if not FACULTY_CREDENTIALS.search(raw_title):
                 # Also check ud_positions for faculty title
                 custom = entry.get("ud_entry_custom_fields", {})
+                if not isinstance(custom, dict):
+                    custom = {}
                 positions = custom.get("ud_positions", [])
-                position_text = " ".join(p.get("ud_title", "") for p in positions)
+                if not isinstance(positions, list):
+                    positions = []
+                position_text = " ".join(
+                    p.get("ud_title", "") for p in positions if isinstance(p, dict)
+                )
                 if not FACULTY_CREDENTIALS.search(position_text):
                     # Check for professor/instructor titles
                     if not re.search(
@@ -310,9 +316,11 @@ def scrape_faculty_via_wp_rest(base_url, dept_name):
 
             # Get division from class_list
             class_list = entry.get("class_list", [])
+            if not isinstance(class_list, list):
+                class_list = []
             division = ""
             for cls in class_list:
-                if cls.startswith("ud_division-") and cls != "ud_division-all_peds":
+                if isinstance(cls, str) and cls.startswith("ud_division-") and cls != "ud_division-all_peds":
                     division = cls.replace("ud_division-", "").replace("_", " ").title()
                     break
 
