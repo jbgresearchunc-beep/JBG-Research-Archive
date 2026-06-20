@@ -194,14 +194,21 @@ def looks_like_name(text):
 
 
 def extract_name(raw_text):
-    """Clean raw link text into a canonical name."""
+    """Clean raw link text into a canonical name (no credentials)."""
     text = raw_text.strip()
     # Remove parenthetical nicknames e.g. (Yemi)
     text = re.sub(r"\([^)]*\)", "", text)
     # Remove quoted nicknames e.g. "Yemi"
     text = re.sub(r'["\'\u201c\u201d][^"\'\u201c\u201d]*["\'\u201c\u201d]', "", text)
-    text = DEGREE_SUFFIXES.sub("", text).strip()
     text = TITLE_PREFIXES.sub("", text).strip()
+    # Cut off at the first comma — everything after a comma is credentials
+    # (MD, PhD, FACS, FSCMR, Jr, Sr, II, III, etc.), regardless of which
+    # specific abbreviation it is. This is more robust than trying to
+    # enumerate every credential abbreviation in DEGREE_SUFFIXES.
+    text = text.split(",")[0].strip()
+    # Also strip any trailing degree suffix that appears without a comma
+    # (e.g. "John Smith MD" or "Jane Doe PhD")
+    text = DEGREE_SUFFIXES.sub("", text).strip()
     # Strip trailing commas, dots, spaces left by degree removal
     text = re.sub(r"[\s,\.]+$", "", text).strip()
     # Collapse internal whitespace
