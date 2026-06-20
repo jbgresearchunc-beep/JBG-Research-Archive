@@ -124,7 +124,19 @@
     {
       "name": "Radiology",
       "short": "Radiology",
-      "url": "https://www.med.unc.edu/radiology/about/our-people/faculty/"
+      "urls": [
+        "https://www.med.unc.edu/radiology/about/our-people/abdominal-imaging/",
+        "https://www.med.unc.edu/radiology/about/our-people/breast-imaging/",
+        "https://www.med.unc.edu/radiology/about/our-people/cardiothoracic-imaging/",
+        "https://www.med.unc.edu/radiology/about/our-people/emergency-imaging/",
+        "https://www.med.unc.edu/radiology/about/our-people/interventional-radiology/",
+        "https://www.med.unc.edu/radiology/about/our-people/molecular-imaging-and-therapeutics/",
+        "https://www.med.unc.edu/radiology/about/our-people/musculoskeletal-imaging/",
+        "https://www.med.unc.edu/radiology/about/our-people/neurointerventional-radiology/",
+        "https://www.med.unc.edu/radiology/about/our-people/neuroradiology/",
+        "https://www.med.unc.edu/radiology/about/our-people/pediatric-imaging/",
+        "https://www.med.unc.edu/radiology/about/our-people/radiological-sciences-faculty/"
+      ]
     },
     {
       "name": "Radiation Oncology",
