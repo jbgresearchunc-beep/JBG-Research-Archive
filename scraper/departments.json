@@ -111,7 +111,10 @@
     {
       "name": "Obstetrics & Gynecology",
       "short": "OB/GYN",
-      "url": "https://www.med.unc.edu/obgyn/about/people/faculty/"
+      "urls": [
+        "https://www.med.unc.edu/obgyn/department-directory/clinical-faculty-and-providers/",
+        "https://www.med.unc.edu/obgyn/department-directory/research-faculty/"
+      ]
     },
     {
       "name": "Pathology & Laboratory Medicine",
