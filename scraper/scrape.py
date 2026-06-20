@@ -163,9 +163,36 @@ NON_NAME_PATTERNS = re.compile(
     r"know before you go|referring physician|living in chapel hill|"
     r"striving for|that define us|faces that define|our history|"
     r"make a gift|population health|strategic plan|annual report|"
-    r"grand rounds|fellowship|application overview|specialty procedures)",
+    r"grand rounds|fellowship|application overview|specialty procedures|"
+    r"non-cancer|cancer specialists|specialists$|^adult$|^adult,|"
+    r"^our |& pas$|& np|physicians? & |providers? & )",
     re.IGNORECASE
 )
+
+# Exact-match denylist for short section-header / fragment strings that
+# otherwise pass the structural "looks like a name" checks (e.g. bare first
+# names left over from a malformed card, or split halves of a heading like
+# "Adult, Non-Cancer Specialists" / "Cancer Specialists"). Checked against
+# the fully cleaned name, case-insensitively, as a whole-string match — not
+# substring — so it won't accidentally reject real faculty whose name
+# happens to contain one of these words.
+KNOWN_NON_NAME_STRINGS = {
+    "adult",
+    "cancer specialists",
+    "non-cancer specialists",
+    "adult, non-cancer specialists",
+    "our & pas",
+    "our physicians & pas",
+    "our team",
+    "our people",
+    "our providers",
+    "know before you go",
+    "referring physician info",
+    "living in chapel hill",
+    "striving for scientific advancement",
+    "that define us",
+    "faces that define us",
+}
 
 
 def looks_like_name(text):
@@ -178,12 +205,21 @@ def looks_like_name(text):
     clean = TITLE_PREFIXES.sub("", clean).strip()
     if NON_NAME_PATTERNS.search(clean):
         return False
+    if clean.lower().strip() in KNOWN_NON_NAME_STRINGS:
+        return False
     # Reject all-caps strings (e.g. "CLINIC LOCATIONS", "UNC HOSPITALS")
     words = clean.split()
     if any(w.isupper() and len(w) > 2 and w.isalpha() for w in words):
         return False
     # Reject strings with digits (e.g. "3009 Old Clinic Building")
     if re.search(r"\d", clean):
+        return False
+    # Reject single-token "names" (e.g. a stray "Sara", "Tricia", "Rachel"
+    # left over from a malformed card with no last name). Real faculty
+    # entries on UNC SOM profile pages always include a last name, so a
+    # single capitalized word reaching this point is a parsing artifact,
+    # not a real faculty entry.
+    if len(words) < 2:
         return False
     # Should have 2-4 space-separated words, each starting with uppercase
     if len(words) < 2 or len(words) > 5:
