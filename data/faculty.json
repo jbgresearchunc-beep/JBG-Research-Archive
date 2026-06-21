@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T14:29:44.364536Z",
+  "generated_at": "2026-06-21T14:04:46.146216Z",
   "total_faculty": 2354,
   "departments": [
     "Medicine \u2014 Cardiology",
@@ -29266,11 +29266,42 @@
         "Psychiatry"
       ],
       "pubmed_hint": "Alcohol Cannabis",
-      "pubmed_search": "Alcohol Cannabis",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
+      "pubmed_count": 39,
+      "pubmed_search": "ComputedAuthors:Hooper S",
+      "pubmed_verified": 5,
       "pubmed_ambiguous": false,
-      "publications": [],
+      "publications": [
+        {
+          "pmid": "42129510",
+          "title": "The association of newborn metabolites with early-life wheezing and asthma among US children in the ECHO Program.",
+          "journal": "Commun Med (Lond)",
+          "year": "2026"
+        },
+        {
+          "pmid": "41875060",
+          "title": "Per- and Polyfluoroalkyl Substances During Pregnancy and Gestational Diabetes: The Environmental Influences on Child Health Outcomes (ECHO) Cohort.",
+          "journal": "Diabetes Care",
+          "year": "2026"
+        },
+        {
+          "pmid": "41722752",
+          "title": "Placental histopathology and early childhood neurodevelopment in the Environmental influences on Child Health Outcomes cohort.",
+          "journal": "Am J Obstet Gynecol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41697983",
+          "title": "Association of Maternal Smoking During Pregnancy With Childhood Blood Pressure and Hypertension in the ECHO Cohort.",
+          "journal": "Circulation",
+          "year": "2026"
+        },
+        {
+          "pmid": "41642661",
+          "title": "Fibroblast Growth Factor 23 Trajectories in Children and Association with CKD Progression: The CKD in Children Study.",
+          "journal": "Clin J Am Soc Nephrol",
+          "year": "2026"
+        }
+      ],
       "nih_grants": []
     },
     {
@@ -35520,7 +35551,7 @@
         },
         {
           "pmid": "39540577",
-          "title": "Elevating the Field of Eating Disorders Through Scholarship and Thoughtfulness: Honoring the Legacy&#xa0;of&#xa0;Dr. Michael Strober.",
+          "title": "Elevating the Field of Eating Disorders Through Scholarship and Thoughtfulness: Honoring the Legacy\u00a0of\u00a0Dr. Michael Strober.",
           "journal": "Int J Eat Disord",
           "year": "2025"
         },
