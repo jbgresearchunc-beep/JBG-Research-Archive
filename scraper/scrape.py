@@ -98,6 +98,28 @@ def fetch_url(url, retries=3, delay=1.5):
     return None
 
 
+def fetch_json(url, retries=3, delay=1.5):
+    """Like fetch_url but sends Accept: application/json — used for REST API calls."""
+    headers = {
+        "User-Agent": "UNC-Research-Explorer/1.0 (student research tool; contact: jgbresearch@unc.edu)",
+        "Accept": "application/json",
+    }
+    req = urllib.request.Request(url, headers=headers)
+    for attempt in range(retries):
+        try:
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                return resp.read().decode("utf-8", errors="replace")
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                return None
+            print(f"  HTTP {e.code} fetching {url} (attempt {attempt+1})")
+        except Exception as e:
+            print(f"  Error fetching {url}: {e} (attempt {attempt+1})")
+        if attempt < retries - 1:
+            time.sleep(delay * (attempt + 1))
+    return None
+
+
 # ---------------------------------------------------------------------------
 # Faculty name extraction
 # ---------------------------------------------------------------------------
@@ -163,36 +185,9 @@ NON_NAME_PATTERNS = re.compile(
     r"know before you go|referring physician|living in chapel hill|"
     r"striving for|that define us|faces that define|our history|"
     r"make a gift|population health|strategic plan|annual report|"
-    r"grand rounds|fellowship|application overview|specialty procedures|"
-    r"non-cancer|cancer specialists|specialists$|^adult$|^adult,|"
-    r"^our |& pas$|& np|physicians? & |providers? & )",
+    r"grand rounds|fellowship|application overview|specialty procedures)",
     re.IGNORECASE
 )
-
-# Exact-match denylist for short section-header / fragment strings that
-# otherwise pass the structural "looks like a name" checks (e.g. bare first
-# names left over from a malformed card, or split halves of a heading like
-# "Adult, Non-Cancer Specialists" / "Cancer Specialists"). Checked against
-# the fully cleaned name, case-insensitively, as a whole-string match — not
-# substring — so it won't accidentally reject real faculty whose name
-# happens to contain one of these words.
-KNOWN_NON_NAME_STRINGS = {
-    "adult",
-    "cancer specialists",
-    "non-cancer specialists",
-    "adult, non-cancer specialists",
-    "our & pas",
-    "our physicians & pas",
-    "our team",
-    "our people",
-    "our providers",
-    "know before you go",
-    "referring physician info",
-    "living in chapel hill",
-    "striving for scientific advancement",
-    "that define us",
-    "faces that define us",
-}
 
 
 def looks_like_name(text):
@@ -205,21 +200,12 @@ def looks_like_name(text):
     clean = TITLE_PREFIXES.sub("", clean).strip()
     if NON_NAME_PATTERNS.search(clean):
         return False
-    if clean.lower().strip() in KNOWN_NON_NAME_STRINGS:
-        return False
     # Reject all-caps strings (e.g. "CLINIC LOCATIONS", "UNC HOSPITALS")
     words = clean.split()
     if any(w.isupper() and len(w) > 2 and w.isalpha() for w in words):
         return False
     # Reject strings with digits (e.g. "3009 Old Clinic Building")
     if re.search(r"\d", clean):
-        return False
-    # Reject single-token "names" (e.g. a stray "Sara", "Tricia", "Rachel"
-    # left over from a malformed card with no last name). Real faculty
-    # entries on UNC SOM profile pages always include a last name, so a
-    # single capitalized word reaching this point is a parsing artifact,
-    # not a real faculty entry.
-    if len(words) < 2:
         return False
     # Should have 2-4 space-separated words, each starting with uppercase
     if len(words) < 2 or len(words) > 5:
@@ -282,6 +268,13 @@ def scrape_faculty_via_wp_rest(base_url, dept_name):
         re.IGNORECASE
     )
 
+    # Titles that identify trainees — exclude anyone whose position matches these
+    TRAINEE_TITLES = re.compile(
+        r"\b(resident|residency|intern|interns|fellow(?!ship\s+director|ship\s+program\s+director)"
+        r"|student|clerkship|trainee|house\s+officer|pgy[-\s]?\d|class\s+of\s+\d{4})\b",
+        re.IGNORECASE
+    )
+
     faculty = []
     seen = set()
     page = 1
@@ -294,7 +287,7 @@ def scrape_faculty_via_wp_rest(base_url, dept_name):
             f"{api_url}?per_page=100&page={page}"
             f"&_fields=id,title,link,ud_entry_custom_fields,class_list,ud_division"
         )
-        html = fetch_url(url)
+        html = fetch_json(url)
         if not html:
             print(f"    WP REST: no response for page {page} (url: {api_url})")
             break
@@ -315,18 +308,25 @@ def scrape_faculty_via_wp_rest(base_url, dept_name):
                 raw_title = raw_title.get("rendered", "")
             raw_title = re.sub(r"<[^>]+>", "", raw_title).strip()  # strip HTML entities
 
+            # Pull position text once — used for both credential and trainee checks
+            custom = entry.get("ud_entry_custom_fields", {})
+            if not isinstance(custom, dict):
+                custom = {}
+            positions = custom.get("ud_positions", [])
+            if not isinstance(positions, list):
+                positions = []
+            position_text = " ".join(
+                p.get("ud_title", "") for p in positions if isinstance(p, dict)
+            )
+
+            # Exclude trainees — check both title and position
+            if TRAINEE_TITLES.search(raw_title) or TRAINEE_TITLES.search(position_text):
+                rejected_no_credential += 1
+                continue
+
             # Only include people with faculty credentials
             if not FACULTY_CREDENTIALS.search(raw_title):
                 # Also check ud_positions for faculty title
-                custom = entry.get("ud_entry_custom_fields", {})
-                if not isinstance(custom, dict):
-                    custom = {}
-                positions = custom.get("ud_positions", [])
-                if not isinstance(positions, list):
-                    positions = []
-                position_text = " ".join(
-                    p.get("ud_title", "") for p in positions if isinstance(p, dict)
-                )
                 if not FACULTY_CREDENTIALS.search(position_text):
                     # Check for professor/instructor titles
                     if not re.search(
@@ -474,17 +474,36 @@ def scrape_faculty_from_page(url, dept_name):
     return faculty
 
 
-def scrape_profile_for_pubmed_string(profile_url):
+HINT_GARBAGE_WORDS = re.compile(
+    r"\b(including|biventricular|pacemaker|device|therapy|treatment|"
+    r"surgery|medicine|health|care|service|program|department|division|"
+    r"center|clinic|hospital|research|education|training)\b",
+    re.IGNORECASE
+)
+
+# Common last names where article-level UNC affiliation is not enough to
+# confirm the target author — require per-author affiliation data instead.
+AMBIGUOUS_LASTNAMES = {
+    "smith", "lee", "kim", "wang", "chen", "johnson", "brown",
+    "jones", "taylor", "williams", "wilson", "moore", "harris",
+    "martin", "thompson", "garcia", "martinez", "anderson",
+    "clark", "lewis", "robinson", "walker", "young", "hall",
+    "allen", "wright", "scott", "hill", "green", "adams",
+    "baker", "nelson", "carter", "mitchell", "perez", "roberts",
+    "turner", "phillips", "campbell", "parker", "evans", "edwards",
+}
+
+
+def scrape_profile_for_pubmed_string(profile_url, html=None):
     """
     Try to extract a curated PubMed search string from a faculty profile page.
-    Handles several formats found on UNC SOM profiles:
-      - "Search PubMed using Doe JA as search criteria"
-      - "publications on PubMed (*Lee, CN)"
-      - PubMed URL with ?term=Lee%2C+CN
+    Accepts pre-fetched HTML to avoid double-fetching when is_trainee_profile
+    has already retrieved the page.
     """
     if not profile_url:
         return None
-    html = fetch_url(profile_url)
+    if html is None:
+        html = fetch_url(profile_url)
     if not html:
         return None
 
@@ -576,9 +595,42 @@ def scrape_profile_for_pubmed_string(profile_url):
     return None
 
 
-# ---------------------------------------------------------------------------
-# PubMed queries
-# ---------------------------------------------------------------------------
+TRAINEE_PROFILE_PATTERN = re.compile(
+    r"\b(resident|residency|intern(?!al)|fellow(?!\s+(?:of|award|member))"
+    r"|pgy[-\s]?\d|class\s+of\s+\d{4}|house\s+officer|medical\s+student"
+    r"|dental\s+student|pharmacy\s+student|graduate\s+student)\b",
+    re.IGNORECASE
+)
+
+ATTENDING_PROFILE_PATTERN = re.compile(
+    r"\b(professor|assistant\s+professor|associate\s+professor|instructor"
+    r"|lecturer|attending|clinical\s+faculty|adjunct\s+professor"
+    r"|division\s+chief|department\s+chair|program\s+director)\b",
+    re.IGNORECASE
+)
+
+
+def is_trainee_profile(html):
+    """
+    Given already-fetched profile HTML, determine if this person is a trainee.
+    Returns True if trainee, False if attending/faculty or unknown.
+    """
+    if not html:
+        return False
+
+    # Strip HTML tags for clean text search
+    text = re.sub(r"<[^>]+>", " ", html)
+    text = re.sub(r"\s+", " ", text)
+
+    # If we see a clear attending/faculty title, keep them regardless
+    if ATTENDING_PROFILE_PATTERN.search(text[:3000]):
+        return False
+
+    # If we see a trainee title in the first 3000 chars (title/header area), exclude
+    if TRAINEE_PROFILE_PATTERN.search(text[:3000]):
+        return True
+
+    return False
 
 PUBMED_BASE = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
 PUBMED_EMAIL = "jgbresearch@unc.edu"  # NCBI requests a contact email
@@ -631,10 +683,9 @@ def fetch_pmids_via_computed_authors(name, seed_pmid=None):
                 # Sort newest first (PMIDs are roughly chronological)
                 pmids_sorted = sorted(pmids, key=lambda x: int(x), reverse=True)
                 return pmids_sorted, len(pmids_sorted)
-        # Seed not found in any cluster — return first cluster's PMIDs
-        pmids = [str(p) for p in results[0].get("pmids", [])]
-        pmids_sorted = sorted(pmids, key=lambda x: int(x), reverse=True)
-        return pmids_sorted, len(pmids_sorted)
+        # Seed not found in any cluster — don't guess, return empty
+        print(f"    Computed Authors: seed PMID {seed_pmid} not found in any cluster")
+        return [], 0
     except Exception as e:
         print(f"    Computed Authors API error for '{author_query}': {e}")
         return [], 0
@@ -727,14 +778,15 @@ def pubmed_search(search_term, affiliation="University of North Carolina", max_r
     Query PubMed and return list of PMIDs.
     search_term: either a name-based string like 'Doe JA' or an ORCID.
     """
+    current_year = datetime.utcnow().year
     if search_term.startswith("ORCID:"):
         orcid = search_term.replace("ORCID:", "")
-        query = f'{orcid}[auid] AND "{affiliation}"[Affiliation] AND ("2018"[PDAT] : "2026"[PDAT])'
+        query = f'{orcid}[auid] AND "{affiliation}"[Affiliation] AND ("2018"[PDAT] : "{current_year}"[PDAT])'
     elif affiliation:
-        query = f'"{search_term}"[Author] AND "{affiliation}"[Affiliation] AND ("2018"[PDAT] : "2026"[PDAT])'
+        query = f'"{search_term}"[Author] AND "{affiliation}"[Affiliation] AND ("2018"[PDAT] : "{current_year}"[PDAT])'
     else:
         # No affiliation filter — used as last resort for recently recruited faculty
-        query = f'"{search_term}"[Author] AND ("2018"[PDAT] : "2026"[PDAT])'
+        query = f'"{search_term}"[Author] AND ("2018"[PDAT] : "{current_year}"[PDAT])'
 
     params = urllib.parse.urlencode({
         "db": "pubmed",
@@ -874,6 +926,8 @@ def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term=""):
             target_has_unc = False
             any_has_unc = affiliation_is_unc(all_aff_text)
 
+            # Track whether ANY author block has per-author affiliations stored
+            any_block_has_affs = False
             for block in author_blocks:
                 last_match = re.search(r"<LastName>(.*?)</LastName>", block)
                 # Per-author affiliations are in <AffiliationInfo><Identifier>
@@ -881,22 +935,32 @@ def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term=""):
                 block_affs = re.findall(r"<Affiliation>(.*?)</Affiliation>", block)
                 block_aff_text = " ".join(block_affs)
 
+                if block_affs:
+                    any_block_has_affs = True
+
                 if last_match:
                     last = last_match.group(1).strip().lower()
                     if last == target_last:
                         # This is our target author — check their affiliation
                         if block_affs and affiliation_is_unc(block_aff_text):
                             target_has_unc = True
-                        elif not block_affs and any_has_unc:
-                            # No per-author affiliation stored; article has UNC somewhere
-                            # and this is our target author — accept it
-                            target_has_unc = True
+
+            # If the paper has NO per-author affiliations at all (older papers),
+            # fall back to article-level — but only if the target last name is
+            # rare enough to be unambiguous (not smith, lee, kim, wang, etc.)
+            if not any_block_has_affs and any_has_unc:
+                if target_last not in AMBIGUOUS_LASTNAMES:
+                    # No per-author data, but article has UNC affiliation and
+                    # the last name is distinctive enough to trust the match
+                    target_has_unc = True
+                else:
+                    print(f"      PMID {pmid} — UNC affiliation found but last name '{target_last}' too common to verify per-author")
 
             if not any_has_unc:
                 print(f"      Skipping PMID {pmid} — no UNC affiliation in article")
                 continue
             # If we have per-author data and target isn't at UNC, skip
-            if author_blocks and not target_has_unc and any_has_unc:
+            if not target_has_unc and any_has_unc:
                 print(f"      PMID {pmid} — UNC affiliation found but not for target author ({target_last})")
                 continue
 
@@ -946,14 +1010,6 @@ def pubmed_fetch_summaries_fallback(pmids):
     except Exception as e:
         print(f"    PubMed esummary fallback error: {e}")
         return []
-
-
-HINT_GARBAGE_WORDS = re.compile(
-    r"\b(including|biventricular|pacemaker|device|therapy|treatment|"
-    r"surgery|medicine|health|care|service|program|department|division|"
-    r"center|clinic|hospital|research|education|training)\b",
-    re.IGNORECASE
-)
 
 
 def sanitize_hint(hint, faculty_name):
@@ -1248,8 +1304,8 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
     faculty_member["pubmed_ambiguous"] = (result["count"] > 0 and len(pubs) == 0)
     faculty_member["publications"] = pubs
 
-    # Rate limiting — NCBI allows 3 req/sec without API key; sleep generously
-    time.sleep(0.8)
+    # Rate limiting — sleep respects NCBI API key rate limit
+    time.sleep(PUBMED_SLEEP)
     return faculty_member
 
 
@@ -1380,6 +1436,7 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
 
     # ---- Step 2: Scrape profile pages for curated PubMed strings ----
     print("\n=== Step 2: Checking profiles for PubMed search strings ===")
+    trainees_removed = []
     for f in all_faculty:
         # Manual override takes priority over everything else
         name_key = f["name"].lower().strip()
@@ -1390,11 +1447,26 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
             f["pubmed_hint"] = f"OVERRIDE:{override}"
             continue
         if f.get("profile_url"):
-            ps = scrape_profile_for_pubmed_string(f["profile_url"])
+            # Fetch profile page once — reuse for both trainee check and PubMed hint
+            profile_html = fetch_url(f["profile_url"])
+            time.sleep(0.3)
+
+            # Check if this person is a trainee before spending time on PubMed
+            if is_trainee_profile(profile_html):
+                print(f"  {f['name']} ({f['department']}): trainee — excluding")
+                f["_exclude"] = True
+                trainees_removed.append(f["name"])
+                continue
+
+            ps = scrape_profile_for_pubmed_string(f["profile_url"], html=profile_html)
             if ps:
                 print(f"  {f['name']}: found '{ps}'")
                 f["pubmed_hint"] = ps
-            time.sleep(0.5)
+
+    # Remove trainees flagged during profile check
+    if trainees_removed:
+        all_faculty = [f for f in all_faculty if not f.get("_exclude")]
+        print(f"  Removed {len(trainees_removed)} trainee(s): {', '.join(trainees_removed)}")
 
     # ---- Step 3: Enrich with PubMed ----
     print("\n=== Step 3: Enriching with PubMed ===")
