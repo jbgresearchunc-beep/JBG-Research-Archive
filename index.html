@@ -33,7 +33,6 @@
       line-height: 1.6;
     }
 
-    /* Header */
     header {
       background: var(--navy);
       color: white;
@@ -60,7 +59,6 @@
       text-align: right;
     }
 
-    /* Controls */
     .controls-bar {
       background: var(--surface);
       border-bottom: 1px solid var(--border);
@@ -116,21 +114,18 @@
       white-space: nowrap;
     }
 
-    /* Layout */
     main {
       max-width: 1200px;
       margin: 0 auto;
       padding: 1.5rem 2rem 3rem;
     }
 
-    /* Faculty grid */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
       gap: 1rem;
     }
 
-    /* Cards */
     .card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -179,7 +174,6 @@
       margin-top: 2px;
     }
 
-    /* Badges */
     .badges { display: flex; flex-wrap: wrap; gap: 5px; }
     .badge {
       font-size: 0.72rem;
@@ -200,7 +194,6 @@
       color: var(--accent-green-text);
     }
 
-    /* Publications */
     .pubs-label {
       font-size: 0.72rem;
       font-weight: 600;
@@ -235,7 +228,6 @@
       font-style: italic;
     }
 
-    /* NIH grants */
     .grants-label {
       font-size: 0.72rem;
       font-weight: 600;
@@ -259,7 +251,6 @@
       margin-top: 1px;
     }
 
-    /* Empty state */
     .empty {
       grid-column: 1 / -1;
       text-align: center;
@@ -268,7 +259,6 @@
     }
     .empty h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--text); }
 
-    /* Loading */
     .loading-msg {
       text-align: center;
       padding: 4rem 2rem;
@@ -276,7 +266,6 @@
       font-size: 0.9rem;
     }
 
-    /* Footer */
     footer {
       text-align: center;
       padding: 2rem;
@@ -297,7 +286,7 @@
 <header>
   <div>
     <div class="logo"><span>UNC</span> SOM Research Explorer</div>
-    <div class="subtitle">JGB Research Society · UNC School of Medicine</div>
+    <div class="subtitle">JBG Research Society · UNC School of Medicine</div>
   </div>
   <div class="spacer"></div>
   <div class="updated" id="updatedLabel"></div>
@@ -329,7 +318,7 @@
   Data sourced from <a href="https://pubmed.ncbi.nlm.nih.gov" target="_blank">PubMed</a> and
   <a href="https://reporter.nih.gov" target="_blank">NIH RePORTER</a>.
   Faculty lists scraped from UNC SOM department pages.
-  Updated weekly · Built by JGB Research Society ·
+  Updated weekly · Built by JBG Research Society ·
   <a href="https://github.com/YOUR-ORG/unc-research-explorer" target="_blank">GitHub</a>
 </footer>
 
@@ -429,7 +418,6 @@ function applyFilters() {
   const sort = document.getElementById("sortBy").value;
 
   let filtered = ALL_FACULTY.filter(f => {
-    // Match against all departments (handles joint appointments & shunting)
     const allDepts = f.departments && f.departments.length ? f.departments : [f.department];
     if (dept && !allDepts.includes(dept)) return false;
     if (!query) return true;
@@ -473,7 +461,6 @@ async function init() {
 
     ALL_FACULTY = data.faculty || [];
 
-    // Populate department filter from all departments arrays (catches joint appointments)
     const deptSet = new Set();
     ALL_FACULTY.forEach(f => {
       const allDepts = f.departments && f.departments.length ? f.departments : [f.department];
@@ -488,7 +475,6 @@ async function init() {
       sel.appendChild(opt);
     });
 
-    // Updated label
     if (data.generated_at) {
       const d = new Date(data.generated_at);
       document.getElementById("updatedLabel").textContent =
