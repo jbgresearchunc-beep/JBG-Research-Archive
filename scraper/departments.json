@@ -3,7 +3,7 @@
     {
       "name": "Medicine \u2014 Cardiology",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/cardiology/division/all-faculty-profiles/"
+      "url": "https://www.med.unc.edu/medicine/cardiology/our-team/"
     },
     {
       "name": "Medicine \u2014 Endocrinology & Metabolism",
@@ -13,32 +13,32 @@
     {
       "name": "Medicine \u2014 Gastroenterology & Hepatology",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/gi/division/all-faculty-profiles/"
+      "url": "https://www.med.unc.edu/medicine/gi/our-team/"
     },
     {
       "name": "Medicine \u2014 General Medicine & Clinical Epidemiology",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/im/division/all-faculty-profiles/"
+      "url": "https://www.med.unc.edu/medicine/im/our-team/"
     },
     {
       "name": "Medicine \u2014 Geriatric Medicine",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/geriatrics/division/all-faculty-profiles/"
+      "url": "https://www.med.unc.edu/medicine/geriatrics/our-team/"
     },
     {
       "name": "Medicine \u2014 Hematology",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/hematology/division/all-faculty-profiles/"
+      "url": "https://www.med.unc.edu/medicine/hematology/our-team/"
     },
     {
       "name": "Medicine \u2014 Hospital Medicine",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/hospitalmedicine/division/all-faculty-profiles/"
+      "url": "https://www.med.unc.edu/medicine/hospitalmedicine/our-team/"
     },
     {
       "name": "Medicine \u2014 Infectious Diseases",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/infdis/division/all-faculty-profiles/"
+      "url": "https://www.med.unc.edu/medicine/infdis/our-team/"
     },
     {
       "name": "Medicine \u2014 Nephrology & Hypertension",
@@ -53,12 +53,12 @@
     {
       "name": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/pulmonary/division/all-faculty-profiles/"
+      "url": "https://www.med.unc.edu/medicine/pulmonary/our-team/"
     },
     {
       "name": "Medicine \u2014 Rheumatology, Allergy & Immunology",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/rheumatology-allergy-immunology/division/all-faculty-profiles/"
+      "url": "https://www.med.unc.edu/medicine/rheumatology-allergy-immunology/our-team/"
     },
     {
       "name": "Pediatrics",
@@ -124,19 +124,7 @@
     {
       "name": "Radiology",
       "short": "Radiology",
-      "urls": [
-        "https://www.med.unc.edu/radiology/about/our-people/abdominal-imaging/",
-        "https://www.med.unc.edu/radiology/about/our-people/breast-imaging/",
-        "https://www.med.unc.edu/radiology/about/our-people/cardiothoracic-imaging/",
-        "https://www.med.unc.edu/radiology/about/our-people/emergency-imaging/",
-        "https://www.med.unc.edu/radiology/about/our-people/interventional-radiology/",
-        "https://www.med.unc.edu/radiology/about/our-people/molecular-imaging-and-therapeutics/",
-        "https://www.med.unc.edu/radiology/about/our-people/musculoskeletal-imaging/",
-        "https://www.med.unc.edu/radiology/about/our-people/neurointerventional-radiology/",
-        "https://www.med.unc.edu/radiology/about/our-people/neuroradiology/",
-        "https://www.med.unc.edu/radiology/about/our-people/pediatric-imaging/",
-        "https://www.med.unc.edu/radiology/about/our-people/radiological-sciences-faculty/"
-      ]
+      "url": "https://www.med.unc.edu/radiology/about/our-people/faculty/"
     },
     {
       "name": "Radiation Oncology",
@@ -187,6 +175,11 @@
       "name": "Physical Medicine & Rehabilitation",
       "short": "PM&R",
       "url": "https://www.med.unc.edu/phyrehab/about-us/faculty-staff/faculty/"
+    },
+    {
+      "name": "Lineberger Comprehensive Cancer Center",
+      "short": "Lineberger",
+      "url": "https://unclineberger.org/directory/"
     }
   ]
 }
