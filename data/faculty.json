@@ -1,119 +1,23 @@
 {
-  "generated_at": "2026-06-23T23:18:08.885414Z",
-  "total_faculty": 11,
+  "generated_at": "2026-06-23T23:27:47.968233Z",
+  "total_faculty": 41,
   "departments": [
     "Medicine \u2014 Cardiology"
   ],
   "faculty": [
     {
-      "name": "Kirkwood Adams",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kirkwood-adams/",
+      "name": "George Stouffer",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/rick-stouffer/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
         "Medicine \u2014 Cardiology"
       ],
-      "pubmed_count": 3,
-      "pubmed_search": "ComputedAuthors:Adams Kirkwood",
-      "pubmed_verified": 3,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "38569758",
-          "title": "Efficacy and Safety of Dapagliflozin in Patients With Acute Heart&#xa0;Failure.",
-          "journal": "J Am Coll Cardiol",
-          "year": "2024"
-        },
-        {
-          "pmid": "29803780",
-          "title": "Strength in Numbers: A Team-Based Approach to Managing Patients with Hyponatremia.",
-          "journal": "Am J Med",
-          "year": "2018"
-        },
-        {
-          "pmid": "24251359",
-          "title": "Edoxaban versus warfarin in patients with atrial fibrillation.",
-          "journal": "N Engl J Med",
-          "year": "2013"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Natalia Aerton",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/natalia-aerton-md/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ],
-      "pubmed_search": "Aerton Natalia",
+      "pubmed_search": "Stouffer George",
       "pubmed_count": 0,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
       "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Saba Suhail Arain",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/saba-suhail-arain-md/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ],
-      "pubmed_search": "Arain Saba",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Matthew Baker",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/matthew-baker-md/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ],
-      "pubmed_hint": "including biventricular",
-      "pubmed_count": 244,
-      "pubmed_search": "ComputedAuthors:Baker Matthew",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "39709476",
-          "title": "Targeted long-read sequencing to quantify methylation of the C9orf72 repeat expansion.",
-          "journal": "Mol Neurodegener",
-          "year": "2024"
-        },
-        {
-          "pmid": "39321401",
-          "title": "Gene-Specific Effects on Brain Volume and Cognition of TMEM106B in Frontotemporal Lobar Degeneration.",
-          "journal": "Neurology",
-          "year": "2024"
-        },
-        {
-          "pmid": "38978643",
-          "title": "Deciphering Distinct Genetic Risk Factors for FTLD-TDP Pathological Subtypes via Whole-Genome Sequencing.",
-          "journal": "medRxiv",
-          "year": "2024"
-        },
-        {
-          "pmid": "38633784",
-          "title": "Gene specific effects on brain volume and cognition of TMEM106B in frontotemporal lobar degeneration.",
-          "journal": "medRxiv",
-          "year": "2024"
-        },
-        {
-          "pmid": "38631765",
-          "title": "MAPT H2 haplotype and risk of Pick's disease in the Pick's disease International Consortium: a genetic association study.",
-          "journal": "Lancet Neurol",
-          "year": "2024"
-        }
-      ],
       "nih_grants": []
     },
     {
@@ -125,82 +29,6 @@
         "Medicine \u2014 Cardiology"
       ],
       "pubmed_search": "Bayoumi Essraa",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Alexandra Bishop",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/alexandra-bishop-md/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ],
-      "pubmed_search": "Bishop A",
-      "pubmed_count": 1,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Kayla Brown",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kayla-brown-md/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ],
-      "pubmed_count": 123,
-      "pubmed_search": "ComputedAuthors:Brown K",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42150895",
-          "title": "Long-Term Functional Hearing Preservation in Pediatric Cochlear Implant Recipients.",
-          "journal": "Otol Neurotol",
-          "year": "2026"
-        },
-        {
-          "pmid": "42049500",
-          "title": "Electrode Contacts in the Functional Hearing Region for Pediatric Cochlear Implant Recipients.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        },
-        {
-          "pmid": "41981750",
-          "title": "Association of Total Cochlear Volume and Initial Hearing Preservation With a Straight Electrode Array.",
-          "journal": "Otol Neurotol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41796981",
-          "title": "Cochlear Implant Recipients With Electrodes in the Acoustic Region: Long-Term Hearing Preservation.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        },
-        {
-          "pmid": "41792877",
-          "title": "Attrition in Cochlear Implant Research: Sociodemographic, Audiologic, and Performance Variables.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Marykate Carrillo",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/marykate-carrillo-md/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ],
-      "pubmed_search": "Carrillo Marykate",
       "pubmed_count": 0,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
@@ -300,14 +128,1327 @@
       "nih_grants": []
     },
     {
-      "name": "Michael Cinelli",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/michael-cinelli-do/",
+      "name": "Anil K. Gehi",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/anil-k-gehi-md/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
         "Medicine \u2014 Cardiology"
       ],
-      "pubmed_search": "Cinelli Michael",
+      "pubmed_search": "Gehi AK",
+      "pubmed_count": 38,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42019585",
+          "title": "Reconsidering anticoagulation strategies around cardioversion of atrial fibrillation: time to move beyond the dogma?",
+          "journal": "Trends Cardiovasc Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "41954555",
+          "title": "Pulse Self-Exam for Atrial Fibrillation Screening: A Randomized Controlled Trial.",
+          "journal": "JACC Clin Electrophysiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41686025",
+          "title": "Disentangling the Bidirectional Relationship of Atrial Fibrillation and Coronary Events.",
+          "journal": "Circ Popul Health Outcomes",
+          "year": "2026"
+        },
+        {
+          "pmid": "41631745",
+          "title": "Assessing Potential Benefit of Stroke Prophylaxis Therapy in Atrial Fibrillation and Atrial Flutter Using a Novel Competing Risk Scoring Tool.",
+          "journal": "J Am Heart Assoc",
+          "year": "2026"
+        },
+        {
+          "pmid": "40850588",
+          "title": "Differences in stroke risk among patients with atrial fibrillation and heart failure subtypes.",
+          "journal": "Heart Rhythm",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Susan C. Gilchrist",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/susan-c-gilchrist-md-ms/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_search": "Gilchrist SC",
+      "pubmed_count": 2,
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42322372",
+          "title": "Early anthracycline cardiotoxicity in adolescents and young adults with sarcoma: a prospective echocardiographic study.",
+          "journal": "ESC Heart Fail",
+          "year": "2026"
+        },
+        {
+          "pmid": "41973938",
+          "title": "Physical Activity Monitoring in Adolescents and Young Adults With Cancer: Observational Feasibility Study.",
+          "journal": "JMIR Cancer",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Charles Hicks",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/charles-hicks/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Hicks Charles",
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "36136321",
+          "title": "Association of QTc Formula With the Clinical Management of Patients With Cancer.",
+          "journal": "JAMA Oncol",
+          "year": "2022"
+        },
+        {
+          "pmid": "34026499",
+          "title": "Atrial dysrhythmias due to extrinsic left atrial compression by an esophageal stent.",
+          "journal": "HeartRhythm Case Rep",
+          "year": "2021"
+        },
+        {
+          "pmid": "31310577",
+          "title": "Trials and Tribulations of Corrected QT Interval Monitoring in Oncology: Rationale for a Practice-Changing Standardized Approach.",
+          "journal": "J Clin Oncol",
+          "year": "2019"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Alan Lee Hinderliter",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/alan-lee-hinderliter-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_hint": "Hinderliter A",
+      "pubmed_count": 270,
+      "pubmed_search": "ComputedAuthors:Hinderliter Alan",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41677801",
+          "title": "Mitochondrial Haplogroups and Left Ventricular Diastolic Dysfunction in People Living With and Without HIV.",
+          "journal": "J Infect Dis",
+          "year": "2026"
+        },
+        {
+          "pmid": "41555820",
+          "title": "Lifestyle, sleep quality, and cognitive function in resistant hypertension: One-year follow-up from the TRIUMPH trial.",
+          "journal": "J Alzheimers Dis",
+          "year": "2026"
+        },
+        {
+          "pmid": "41406195",
+          "title": "Incidence of Elevated Inpatient Blood Pressure and Hypertensive Emergencies.",
+          "journal": "Hypertension",
+          "year": "2026"
+        },
+        {
+          "pmid": "40244915",
+          "title": "Incidence of Statin Initiation Among People With and Without HIV in the United States: A Prospective Observational Study.",
+          "journal": "Clin Infect Dis",
+          "year": "2025"
+        },
+        {
+          "pmid": "38860390",
+          "title": "The utility of home blood pressure load in predicting average self-measured blood pressure.",
+          "journal": "J Hypertens",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Adam Moskowitz",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/adam-moskowitz/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_search": "Moskowitz A",
+      "pubmed_count": 3,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Tim Nichols",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/tim-nichols/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Nichols Tim",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41904110",
+          "title": "Corrigendum to 'Lack of factor VIII detection in humans and dogs with an intron 22 inversion challenges hypothesis regarding inhibitor risk' [Journal of Thrombosis and Haemostasis. Volume 22, Issue 12, December 2024, Pages 3415-3430].",
+          "journal": "J Thromb Haemost",
+          "year": "2026"
+        },
+        {
+          "pmid": "41608029",
+          "title": "Treatment of canine hemophilia A via intraosseous delivery of a platelet-specific factor VIII-lentiviral vector.",
+          "journal": "Blood Vessel Thromb Hemost",
+          "year": "2026"
+        },
+        {
+          "pmid": "39233012",
+          "title": "Lack of factor VIII detection in humans and dogs with an intron 22 inversion challenges hypothesis regarding inhibitor risk.",
+          "journal": "J Thromb Haemost",
+          "year": "2024"
+        },
+        {
+          "pmid": "38479150",
+          "title": "Shear shock wave injury in vivo: High frame-rate ultrasound observation and histological assessment.",
+          "journal": "J Biomech",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Thelsa Thomas Weickert",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/thelsa-thomas-weickert-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 10,
+      "pubmed_search": "ComputedAuthors:Weickert Thelsa",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39963223",
+          "title": "LAD Occlusion From Alcohol Reflux During Alcohol Septal Ablation.",
+          "journal": "JACC Case Rep",
+          "year": "2025"
+        },
+        {
+          "pmid": "39691889",
+          "title": "Unmasking Primary Carnitine Deficiency&#xa0;as a Mimic of Hypertrophic&#xa0;Cardiomyopathy.",
+          "journal": "JACC Case Rep",
+          "year": "2024"
+        },
+        {
+          "pmid": "39647785",
+          "title": "Left ventricular hypertrophy and ventricular ectopy in mitral valve prolapse.",
+          "journal": "Int J Cardiol",
+          "year": "2025"
+        },
+        {
+          "pmid": "38823669",
+          "title": "Prevalence and predictors of mitral annular disjunction and ventricular ectopy in mitral valve prolapse.",
+          "journal": "Heart Rhythm",
+          "year": "2024"
+        },
+        {
+          "pmid": "36734224",
+          "title": "Epidemiology and Outcomes of Aortic Stenosis in Acute Decompensated Heart Failure: The ARIC Study.",
+          "journal": "Circ Heart Fail",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Anthony J. Mazzella",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/anthony-mazzella/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1ZI-nziyYG5Q5/bibliography/public",
+      "pubmed_count": 32,
+      "pubmed_search": "ComputedAuthors:Mazzella AJ",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41954555",
+          "title": "Pulse Self-Exam for Atrial Fibrillation Screening: A Randomized Controlled Trial.",
+          "journal": "JACC Clin Electrophysiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41631745",
+          "title": "Assessing Potential Benefit of Stroke Prophylaxis Therapy in Atrial Fibrillation and Atrial Flutter Using a Novel Competing Risk Scoring Tool.",
+          "journal": "J Am Heart Assoc",
+          "year": "2026"
+        },
+        {
+          "pmid": "40850588",
+          "title": "Differences in stroke risk among patients with atrial fibrillation and heart failure subtypes.",
+          "journal": "Heart Rhythm",
+          "year": "2026"
+        },
+        {
+          "pmid": "40543857",
+          "title": "Determining the optimal age cutoff to investigate for cardiac sarcoidosis in patients with complete heart block.",
+          "journal": "Heart Rhythm",
+          "year": "2026"
+        },
+        {
+          "pmid": "39968777",
+          "title": "Atrial Fibrillation Treatment Pathway in the Emergency Department Reduces Median 30-Day Health Service Charges.",
+          "journal": "J Am Heart Assoc",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Joseph A. Sivak",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/joseph-a-sivak-md-facc/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 18,
+      "pubmed_search": "ComputedAuthors:Sivak JA",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41973411",
+          "title": "Real-World Outcomes of Transcatheter Tricuspid Valve Replacement: Analysis From the STS/ACC TVT Registry.",
+          "journal": "JAMA",
+          "year": "2026"
+        },
+        {
+          "pmid": "39691889",
+          "title": "Unmasking Primary Carnitine Deficiency&#xa0;as a Mimic of Hypertrophic&#xa0;Cardiomyopathy.",
+          "journal": "JACC Case Rep",
+          "year": "2024"
+        },
+        {
+          "pmid": "38223706",
+          "title": "Coronary CTA identification of a super-dominant right coronary artery in a child case report.",
+          "journal": "Heliyon",
+          "year": "2024"
+        },
+        {
+          "pmid": "33644518",
+          "title": "Successful MitraClip Implantation in a Barlow's Valve: A Feasible Alternative?",
+          "journal": "CASE (Phila)",
+          "year": "2021"
+        },
+        {
+          "pmid": "33117933",
+          "title": "Loeffler Endocarditis as a Manifestation of Paraneoplastic Hypereosinophilia.",
+          "journal": "CASE (Phila)",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Cody Deen",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/cody-deen/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Deen Cody",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "32320043",
+          "title": "Off-label Use of Direct Oral Anticoagulants Compared With Warfarin for Left Ventricular Thrombi.",
+          "journal": "JAMA Cardiol",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Casey Gazda",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/casey-adams/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Gazda Casey",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "38223706",
+          "title": "Coronary CTA identification of a super-dominant right coronary artery in a child case report.",
+          "journal": "Heliyon",
+          "year": "2024"
+        },
+        {
+          "pmid": "35860774",
+          "title": "Cardiac lymphoma presenting as bradyarrhythmia.",
+          "journal": "HeartRhythm Case Rep",
+          "year": "2022"
+        },
+        {
+          "pmid": "33644518",
+          "title": "Successful MitraClip Implantation in a Barlow's Valve: A Feasible Alternative?",
+          "journal": "CASE (Phila)",
+          "year": "2021"
+        },
+        {
+          "pmid": "33117933",
+          "title": "Loeffler Endocarditis as a Manifestation of Paraneoplastic Hypereosinophilia.",
+          "journal": "CASE (Phila)",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Stephanie Falk Martin",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/stephanie-falk-martin/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 16,
+      "pubmed_search": "ComputedAuthors:Martin Stephanie",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42214682",
+          "title": "Concordant Women, Infants, and Children Staff and Pediatrician Recommendations Associated with Improved Breastfeeding.",
+          "journal": "J Nutr",
+          "year": "2026"
+        },
+        {
+          "pmid": "42175649",
+          "title": "\"There Was no Break\": A Qualitative Analysis of Mothers' Experiences With Labor Induction.",
+          "journal": "Birth",
+          "year": "2026"
+        },
+        {
+          "pmid": "41321059",
+          "title": "Blood pressure is associated with ultra-processed food intake in a sex- and age-specific manner during the transition to adulthood in Cebu, Philippines.",
+          "journal": "Br J Nutr",
+          "year": "2026"
+        },
+        {
+          "pmid": "41281798",
+          "title": "Early life grandmother caregiving trajectories and child development: a longitudinal study.",
+          "journal": "Int J Behav Dev",
+          "year": "2025"
+        },
+        {
+          "pmid": "40886099",
+          "title": "A Mixed Methods Analysis of Factors That Influence the Diet Quality and Decision-Making of Adolescent Girls in an Urban Informal Settlement in Kenya.",
+          "journal": "Matern Child Nutr",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "S. Peter Sheng",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/s-peter-sheng-md-mph/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Sheng SP",
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "30663494",
+          "title": "In-Hospital Outcomes After Transcatheter Versus Surgical Aortic Valve Replacement in Octogenarians.",
+          "journal": "J Am Heart Assoc",
+          "year": "2019"
+        },
+        {
+          "pmid": "29198984",
+          "title": "Relation of an Echocardiographic-Based Cardiac Calcium Score to Mitral Stenosis Severity and Coronary Artery Disease in Patients with Severe Aortic Stenosis.",
+          "journal": "Am J Cardiol",
+          "year": "2018"
+        },
+        {
+          "pmid": "23143806",
+          "title": "Xenon neuroprotection in experimental stroke: interactions with hypothermia and intracerebral hemorrhage.",
+          "journal": "Anesthesiology",
+          "year": "2012"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Ross Joseph Simpson",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/ross-simpson/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Simpson Ross",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40711632",
+          "title": "Physician Perceptions, Knowledge, and Implementation of Lipid-Lowering Guidelines in the USA.",
+          "journal": "J Gen Intern Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "8818572",
+          "title": "Pharmacokinetics and disposition of L-692,429. A novel nonpeptidyl growth hormone secretagogue in preclinical species.",
+          "journal": "Drug Metab Dispos",
+          "year": "1996"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Nora Tolbert",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/nora-tolbert-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Tolbert Nora",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "35509276",
+          "title": "Impact of Federal, State, and Local Housing Policies on Disparities in Cardiovascular Disease in Black/African American Men and Women: From Policy to Pathways to Biology.",
+          "journal": "Front Cardiovasc Med",
+          "year": "2022"
+        },
+        {
+          "pmid": "21647677",
+          "title": "Pilot and feasibility study: prospective proteomic profiling of mammary epithelial cells from high-risk women provides evidence of activation of pro-survival pathways.",
+          "journal": "Breast Cancer Res Treat",
+          "year": "2012"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Robert C. Wirka",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/robert-c-wirka-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 33,
+      "pubmed_search": "ComputedAuthors:Wirka RC",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41844614",
+          "title": "Vascular smooth muscle cell state trajectories mediate molecular mechanisms of coronary disease risk.",
+          "journal": "Nat Commun",
+          "year": "2026"
+        },
+        {
+          "pmid": "41086809",
+          "title": "A cell and transcriptome atlas of human arterial vasculature.",
+          "journal": "Cell Genom",
+          "year": "2025"
+        },
+        {
+          "pmid": "40501802",
+          "title": "Vascular smooth muscle cell atherosclerosis trajectories characterized at single cell resolution identify causal transcriptomic and epigenomic mechanisms of disease risk.",
+          "journal": "bioRxiv",
+          "year": "2025"
+        },
+        {
+          "pmid": "39552248",
+          "title": "Atheroma transcriptomics identifies ARNTL as a smooth muscle cell regulator and with clinical and genetic data improves risk stratification.",
+          "journal": "Eur Heart J",
+          "year": "2025"
+        },
+        {
+          "pmid": "39314359",
+          "title": "A cell and transcriptome atlas of human arterial vasculature.",
+          "journal": "bioRxiv",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Matthew Baker",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/matthew-baker-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_hint": "including biventricular",
+      "pubmed_count": 244,
+      "pubmed_search": "ComputedAuthors:Baker Matthew",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39709476",
+          "title": "Targeted long-read sequencing to quantify methylation of the C9orf72 repeat expansion.",
+          "journal": "Mol Neurodegener",
+          "year": "2024"
+        },
+        {
+          "pmid": "39321401",
+          "title": "Gene-Specific Effects on Brain Volume and Cognition of TMEM106B in Frontotemporal Lobar Degeneration.",
+          "journal": "Neurology",
+          "year": "2024"
+        },
+        {
+          "pmid": "38978643",
+          "title": "Deciphering Distinct Genetic Risk Factors for FTLD-TDP Pathological Subtypes via Whole-Genome Sequencing.",
+          "journal": "medRxiv",
+          "year": "2024"
+        },
+        {
+          "pmid": "38633784",
+          "title": "Gene specific effects on brain volume and cognition of TMEM106B in frontotemporal lobar degeneration.",
+          "journal": "medRxiv",
+          "year": "2024"
+        },
+        {
+          "pmid": "38631765",
+          "title": "MAPT H2 haplotype and risk of Pick's disease in the Pick's disease International Consortium: a genetic association study.",
+          "journal": "Lancet Neurol",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Prabhat Kumar",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/prabhat-kumar-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_hint": "including biventricular",
+      "pubmed_count": 16,
+      "pubmed_search": "ComputedAuthors:Kumar Prabhat",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "31487007",
+          "title": "Approach to Management of Premature Ventricular Contractions.",
+          "journal": "Curr Treat Options Cardiovasc Med",
+          "year": "2019"
+        },
+        {
+          "pmid": "29759689",
+          "title": "Comparison of Single-Coil and Dual-Coil&#xa0;Implantable Defibrillators: A Meta-Analysis.",
+          "journal": "JACC Clin Electrophysiol",
+          "year": "2017"
+        },
+        {
+          "pmid": "29141846",
+          "title": "Atrial Substrate Modification for Atrial Fibrillation: Striving to Get Smarter.",
+          "journal": "Circ Arrhythm Electrophysiol",
+          "year": "2017"
+        },
+        {
+          "pmid": "28496775",
+          "title": "Atrial Fibrillation and Metabolic Syndrome: Understanding the Connection.",
+          "journal": "J Atr Fibrillation",
+          "year": "2012"
+        },
+        {
+          "pmid": "28491567",
+          "title": "Adjusting voltage criteria can unmask conducting channels in a patient with arrhythmogenic right ventricular cardiomyopathy and ventricular tachycardia.",
+          "journal": "HeartRhythm Case Rep",
+          "year": "2015"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Lindsey A. Rosman",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/lindsey-a-rosman-phd/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1v_wlxkYMf_EnH/bibliography/public",
+      "pubmed_count": 33,
+      "pubmed_search": "ComputedAuthors:Rosman LA",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41954555",
+          "title": "Pulse Self-Exam for Atrial Fibrillation Screening: A Randomized Controlled Trial.",
+          "journal": "JACC Clin Electrophysiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41895321",
+          "title": "Atrial fibrillation density as a biomarker for ischaemic stroke risk prediction.",
+          "journal": "Eur Heart J",
+          "year": "2026"
+        },
+        {
+          "pmid": "41631745",
+          "title": "Assessing Potential Benefit of Stroke Prophylaxis Therapy in Atrial Fibrillation and Atrial Flutter Using a Novel Competing Risk Scoring Tool.",
+          "journal": "J Am Heart Assoc",
+          "year": "2026"
+        },
+        {
+          "pmid": "41524886",
+          "title": "Machine learning versus logistic regression for propensity score estimation: a trial emulation benchmarked against the PARADIGM-HF randomized trial.",
+          "journal": "Eur J Epidemiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40850588",
+          "title": "Differences in stroke risk among patients with atrial fibrillation and heart failure subtypes.",
+          "journal": "Heart Rhythm",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Carlos A. Espinoza",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/carlos-a-espinoza-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_recent_recruit": true,
+      "pubmed_search": "Espinoza CA",
+      "pubmed_count": 7,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41383124",
+          "title": "Autoregulation of the MET receptor tyrosine kinase by its intracellular juxtamembrane domain.",
+          "journal": "Biochem J",
+          "year": "2025"
+        },
+        {
+          "pmid": "41285767",
+          "title": "A genome-wide CRISPR screen identifies the TNRC18 gene locus as a regulator of inflammatory signaling.",
+          "journal": "Nat Commun",
+          "year": "2025"
+        },
+        {
+          "pmid": "40784448",
+          "title": "Nootropic benzothiazoles promote dendritic spine formation by targeting fascin-1.",
+          "journal": "J Biol Chem",
+          "year": "2025"
+        },
+        {
+          "pmid": "39356796",
+          "title": "G3BP isoforms differentially affect stress granule assembly and gene expression during cellular stress.",
+          "journal": "Mol Biol Cell",
+          "year": "2024"
+        },
+        {
+          "pmid": "39268701",
+          "title": "Conserved regulatory motifs in the juxtamembrane domain and kinase N-lobe revealed through deep mutational scanning of the MET receptor tyrosine kinase domain.",
+          "journal": "Elife",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jeffrey Lawrence Klein",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/jeffrey-lawrence-klein/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 8,
+      "pubmed_search": "ComputedAuthors:Klein JL",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "35860774",
+          "title": "Cardiac lymphoma presenting as bradyarrhythmia.",
+          "journal": "HeartRhythm Case Rep",
+          "year": "2022"
+        },
+        {
+          "pmid": "35102084",
+          "title": "Hypertension-mediated organ damage in masked hypertension.",
+          "journal": "J Hypertens",
+          "year": "2022"
+        },
+        {
+          "pmid": "34419565",
+          "title": "Coronary Artery Calcifications and Cardiac Risk After Radiation Therapy for Stage III Lung Cancer.",
+          "journal": "Int J Radiat Oncol Biol Phys",
+          "year": "2022"
+        },
+        {
+          "pmid": "29370468",
+          "title": "Association of ambulatory blood pressure variability with coronary artery calcium.",
+          "journal": "J Clin Hypertens (Greenwich)",
+          "year": "2018"
+        },
+        {
+          "pmid": "24842491",
+          "title": "Reproducibility of masked hypertension among adults 30 years or older.",
+          "journal": "Blood Press Monit",
+          "year": "2014"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Peter Mason",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/peter-mason-md-mph/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/peter.mason.3/bibliography/public",
+      "pubmed_recent_recruit": true,
+      "pubmed_search": "Mason P",
+      "pubmed_count": 125,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42090488",
+          "title": "Generation of carbonated peridotite melts via biogenic sediment recycling in modern subduction zones.",
+          "journal": "Sci Adv",
+          "year": "2026"
+        },
+        {
+          "pmid": "41947460",
+          "title": "Single-cell and spatial transcriptomics reveals the spatiotemporal trajectory of the small peptide TAP4 in delaying postharvest fruit senescence.",
+          "journal": "Plant Commun",
+          "year": "2026"
+        },
+        {
+          "pmid": "41812903",
+          "title": "Occupational Asthma Without Nonspecific Bronchial Hyperresponsiveness.",
+          "journal": "J Allergy Clin Immunol Pract",
+          "year": "2026"
+        },
+        {
+          "pmid": "41642163",
+          "title": "Residual Left Atrial Appendage After Incomplete Surgical Closure.",
+          "journal": "JACC Case Rep",
+          "year": "2026"
+        },
+        {
+          "pmid": "41415033",
+          "title": "Consensus-based Recommendations on the Management of Immunosuppression After Squamous Cell Carcinoma Diagnosis in Kidney Transplant Recipients: An International Delphi Consensus Statement.",
+          "journal": "Transplant Direct",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Sheetal Patel",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sheetal-patel-do/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Patel Sheetal",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "38385918",
+          "title": "A Phantom Echocardiographic Figure-of-Eight Image From Disc-Structured Occluder Can Be Artifactual and Truly Ominous.",
+          "journal": "JACC Cardiovasc Interv",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Sameer Prasada",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sameer-prasada-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 11,
+      "pubmed_search": "ComputedAuthors:Prasada Sameer",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41209121",
+          "title": "Interpretation of Discordance Between Non-Hyperemic Pressure Ratios and Fractional Flow Reserve: Potential Mechanisms and Clinical Implications.",
+          "journal": "Rev Cardiovasc Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "36102221",
+          "title": "Outcomes Following Acute Coronary Syndrome in Patients With and Without Rheumatic Immune-Mediated Inflammatory Diseases.",
+          "journal": "J Am Heart Assoc",
+          "year": "2022"
+        },
+        {
+          "pmid": "35738707",
+          "title": "Preoperative Atrial Fibrillation and Cardiovascular Outcomes After Noncardiac Surgery.",
+          "journal": "J Am Coll Cardiol",
+          "year": "2022"
+        },
+        {
+          "pmid": "34859072",
+          "title": "Comparative Risk of Incident Coronary Heart Disease Across Chronic Inflammatory Diseases.",
+          "journal": "Front Cardiovasc Med",
+          "year": "2021"
+        },
+        {
+          "pmid": "33211303",
+          "title": "Apical defect following Tendyne valve placement.",
+          "journal": "J Nucl Cardiol",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Sudhir Prasada",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sudhir-prasada-md-facc/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Prasada Sudhir",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "34984346",
+          "title": "Mucopolysaccharidosis Type I Diagnosed by Aortic and Mitral Valve Replacement.",
+          "journal": "JACC Case Rep",
+          "year": "2021"
+        },
+        {
+          "pmid": "33738407",
+          "title": "A case report of an STEMI mimicker in a patient presenting with haemoptysis and chest pain with metastatic myocardial infiltration and left ventricular mural thrombi.",
+          "journal": "Eur Heart J Case Rep",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Michael Yeung",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/michael-yeung-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 5,
+      "pubmed_search": "ComputedAuthors:Yeung Michael",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41072988",
+          "title": "Uncorrected Tetralogy of Fallot With Pulmonary Atresia in an Adult.",
+          "journal": "JACC Case Rep",
+          "year": "2025"
+        },
+        {
+          "pmid": "39963223",
+          "title": "LAD Occlusion From Alcohol Reflux During Alcohol Septal Ablation.",
+          "journal": "JACC Case Rep",
+          "year": "2025"
+        },
+        {
+          "pmid": "39295521",
+          "title": "An Unusual Culprit: Syncope in an Adolescent With Congenital Left Main Coronary Artery Atresia.",
+          "journal": "World J Pediatr Congenit Heart Surg",
+          "year": "2024"
+        },
+        {
+          "pmid": "38344889",
+          "title": "To flip or not: Case series of coronary angioplasty in patients with right-sided heart.",
+          "journal": "Catheter Cardiovasc Interv",
+          "year": "2024"
+        },
+        {
+          "pmid": "37743147",
+          "title": "Does Sex Matter in Percutaneous Coronary Intervention of Chronic Total Occlusions?",
+          "journal": "Am J Cardiol",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Kirkwood Adams",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kirkwood-adams/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Adams Kirkwood",
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "38569758",
+          "title": "Efficacy and Safety of Dapagliflozin in Patients With Acute Heart&#xa0;Failure.",
+          "journal": "J Am Coll Cardiol",
+          "year": "2024"
+        },
+        {
+          "pmid": "29803780",
+          "title": "Strength in Numbers: A Team-Based Approach to Managing Patients with Hyponatremia.",
+          "journal": "Am J Med",
+          "year": "2018"
+        },
+        {
+          "pmid": "24251359",
+          "title": "Edoxaban versus warfarin in patients with atrial fibrillation.",
+          "journal": "N Engl J Med",
+          "year": "2013"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "David C. Ishizawar",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/david-c-ishizawar-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_recent_recruit": true,
+      "pubmed_search": "Ishizawar DC",
+      "pubmed_count": 2,
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "34262695",
+          "title": "Successful treatment of pulmonary hypertension following hematopoietic stem cell transplant with a single oral tadalafil: a case report.",
+          "journal": "Pulm Circ",
+          "year": "2021"
+        },
+        {
+          "pmid": "29199910",
+          "title": "Impact of four times daily dosing of oral treprostinil on tolerability and daily dose achieved in pulmonary hypertension.",
+          "journal": "Pulm Circ",
+          "year": "2018"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Brian Colwell Jensen",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/brian-jensen/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 48,
+      "pubmed_search": "ComputedAuthors:Jensen Brian",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39936506",
+          "title": "Multifaceted roles of neutrophils in cardiac disease.",
+          "journal": "J Leukoc Biol",
+          "year": "2025"
+        },
+        {
+          "pmid": "37961903",
+          "title": "Novel Pan-ERR Agonists Ameliorate Heart Failure Through Enhancing Cardiac Fatty Acid Metabolism and Mitochondrial Function.",
+          "journal": "Circulation",
+          "year": "2024"
+        },
+        {
+          "pmid": "35242549",
+          "title": "Refractory ventricular arrhythmia in a patient with Lamin A/C (LMNA) cardiomyopathy successfully treated with thoracic bilateral stellate ganglionectomy.",
+          "journal": "HeartRhythm Case Rep",
+          "year": "2022"
+        },
+        {
+          "pmid": "35170492",
+          "title": "Adrenergic Receptor Regulation of Mitochondrial Function in Cardiomyocytes.",
+          "journal": "J Cardiovasc Pharmacol",
+          "year": "2022"
+        },
+        {
+          "pmid": "35111832",
+          "title": "Novel Mechanisms of Anthracycline-Induced Cardiovascular Toxicity: A Focus on Thrombosis, Cardiac Atrophy, and Programmed Cell Death.",
+          "journal": "Front Cardiovasc Med",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "William Mostertz",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/william-tripp-mostertz-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 1,
+      "pubmed_search": "ComputedAuthors:Mostertz William",
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40193584",
+          "title": "Relationship of PAD and Use of TMCS on Outcomes Post-LVAD: A Case Series of 197 Patients.",
+          "journal": "ASAIO J",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Mason Sanders",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/mason-sanders-md__trashed/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 5,
+      "pubmed_search": "ComputedAuthors:Sanders Mason",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42097529",
+          "title": "Microaxial Flow Pumps in Heart Failure-Related Cardiogenic Shock-From Hemodynamic Mechanisms to Clinical Applications: A State-of-the-Art Review.",
+          "journal": "J Card Fail",
+          "year": "2026"
+        },
+        {
+          "pmid": "35860774",
+          "title": "Cardiac lymphoma presenting as bradyarrhythmia.",
+          "journal": "HeartRhythm Case Rep",
+          "year": "2022"
+        },
+        {
+          "pmid": "34386266",
+          "title": "Evaluation and Management of Heart Block After Transcatheter Aortic Valve Replacement.",
+          "journal": "Card Fail Rev",
+          "year": "2021"
+        },
+        {
+          "pmid": "33183993",
+          "title": "Shifting Trends in Timing of Pacemaker Implantation After Transcatheter Aortic Valve Replacement.",
+          "journal": "JACC Cardiovasc Interv",
+          "year": "2021"
+        },
+        {
+          "pmid": "32857905",
+          "title": "Predicting need for pacemaker implantation early and late after transcatheter aortic valve implantation.",
+          "journal": "Catheter Cardiovasc Interv",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jenna N. Skowronski",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/jenna-n-skowronski-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 10,
+      "pubmed_search": "ComputedAuthors:Skowronski J",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42132713",
+          "title": "Bridging the Gap Between Genetic Cardiomyopathies and Pregnancy.",
+          "journal": "JACC Adv",
+          "year": "2026"
+        },
+        {
+          "pmid": "41903908",
+          "title": "Social Determinants of Health and Outcomes in Hospitalized Patients with Heart Failure With Preserved Ejection Fraction.",
+          "journal": "J Card Fail",
+          "year": "2026"
+        },
+        {
+          "pmid": "41141606",
+          "title": "The continuum of prevention and heart failure in cardiovascular medicine: A joint scientific statement from the Heart Failure Society of America and the American Society for Preventive Cardiology.",
+          "journal": "Am J Prev Cardiol",
+          "year": "2025"
+        },
+        {
+          "pmid": "40816577",
+          "title": "The Continuum of Prevention and Heart Failure in Cardiovascular Medicine: A Joint Scientific Statement from the Heart Failure Society of America and The American Society for Preventive Cardiology.",
+          "journal": "J Card Fail",
+          "year": "2026"
+        },
+        {
+          "pmid": "40201304",
+          "title": "Cardio-obstetrics in the Cardiac Intensive Care Unit: An Introductory Guide.",
+          "journal": "US Cardiol",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Elizabeth Volz",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/elizabeth-volz-md-facc/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Volz Elizabeth",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40957369",
+          "title": "Hypertensive Disorders of Pregnancy in Patients With Cardiac Disease: Risk and Impact on Delivery Timing.",
+          "journal": "JACC Adv",
+          "year": "2025"
+        },
+        {
+          "pmid": "39802755",
+          "title": "Risk of Hypertensive Disorders of Pregnancy in Patients With Cardiac Disease.",
+          "journal": "medRxiv",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Barbara Reid-Mills",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/barbara-reid-mills/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_search": "Reid-Mills Barbara",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Kimberly Stinnett",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kimberly-stinnett/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_search": "Stinnett Kimberly",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Elias Wen",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/elias-wen/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_search": "Wen E",
+      "pubmed_count": 2,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Sherry Wimberley",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sherry-wimberley/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_search": "Wimberley Sherry",
       "pubmed_count": 0,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
