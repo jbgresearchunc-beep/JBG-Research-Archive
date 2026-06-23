@@ -407,17 +407,24 @@ def scrape_faculty_from_page(url, dept_name):
     for href, text in parser.links:
         if not looks_like_name(text):
             continue
-        # Prefer links that look like profile pages
+        # Accept links that look like profile pages on any UNC domain
         if href and ("people" in href or "directory" in href or
                      "faculty" in href or "profile" in href or
-                     "/directory/" in href):
+                     "unclineberger.org/directory/" in href):
             name = extract_name(text)
             if name and name.lower() not in seen_names and len(name) > 4:
                 seen_names.add(name.lower())
-                # Try to get role from nearby text (best effort — often not available from link alone)
+                # Build absolute URL — handle med.unc.edu and unclineberger.org
+                if href.startswith("http"):
+                    profile_url = href
+                elif href.startswith("/"):
+                    parsed_base = urllib.parse.urlparse(url)
+                    profile_url = f"{parsed_base.scheme}://{parsed_base.netloc}{href}"
+                else:
+                    profile_url = f"https://www.med.unc.edu{href}"
                 faculty.append({
                     "name": name,
-                    "profile_url": href if href.startswith("http") else f"https://www.med.unc.edu{href}",
+                    "profile_url": profile_url,
                     "department": dept_name,
                     "role": "",
                 })
@@ -1399,6 +1406,23 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
             faculty_list = scrape_faculty_from_page(url, dept["name"])
             dept_faculty.extend(faculty_list)
             time.sleep(0.5)
+
+            # Auto-paginate directory-style pages (e.g. unclineberger.org/directory/)
+            # Try /page/2/, /page/3/, etc. until a page returns 0 new faculty
+            if "/directory/" in url and not re.search(r"/page/\d+/", url):
+                base_url = url.rstrip("/")
+                page = 2
+                while True:
+                    paged_url = f"{base_url}/page/{page}/"
+                    paged_faculty = scrape_faculty_from_page(paged_url, dept["name"])
+                    if not paged_faculty:
+                        break
+                    dept_faculty.extend(paged_faculty)
+                    page += 1
+                    time.sleep(0.5)
+                    if page > 20:  # safety cap
+                        break
+
         dept_index[dept["name"]] = dept_faculty
         all_faculty.extend(dept_faculty)
         if len(urls) > 1:
