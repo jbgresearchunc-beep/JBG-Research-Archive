@@ -616,6 +616,64 @@ ATTENDING_PROFILE_PATTERN = re.compile(
     re.IGNORECASE
 )
 
+# Clinical departments we want to include from Lineberger.
+# Anyone whose Lineberger profile lists one of these departments is kept;
+# everyone else (Biostatistics, Epidemiology, Pharmacy, Public Health, etc.) is excluded.
+LINEBERGER_CLINICAL_DEPTS = {
+    "medicine", "surgery", "pediatrics", "radiology", "radiation oncology",
+    "oncology", "hematology", "pathology", "neurology", "neurosurgery",
+    "obstetrics", "gynecology", "urology", "dermatology", "ophthalmology",
+    "otolaryngology", "anesthesiology", "emergency medicine", "psychiatry",
+    "orthopaedics", "physical medicine", "rehabilitation", "family medicine",
+    "internal medicine", "cardiology", "gastroenterology", "pulmonary",
+    "infectious disease", "nephrology", "rheumatology", "endocrinology",
+    "geriatric", "hospital medicine", "general medicine", "clinical epidemiology",
+    "microbiology", "immunology", "biochemistry", "genetics",
+    "cell biology", "physiology", "pharmacology",
+}
+
+
+def is_lineberger_clinical(html):
+    """
+    For a Lineberger profile page, check whether the faculty member's
+    listed department is a clinical/SOM department we care about.
+    Returns True if they should be included, False if they're from a
+    non-clinical school (Public Health, Pharmacy, Nursing, Arts & Sciences, etc.).
+    Returns True by default if department can't be determined (don't exclude if unsure).
+    """
+    if not html:
+        return True
+
+    # Strip tags and look at the first ~500 chars where department appears
+    text = re.sub(r"<[^>]+>", " ", html)
+    text = re.sub(r"\s+", " ", text).strip()
+
+    # The department line on Lineberger profiles looks like:
+    # "MD, PhD\nAssociate Professor, Radiation Oncology, Biochemistry and Biophysics"
+    # It appears near the top of the page body, after the name.
+    # We grab the first 1500 chars to catch it reliably.
+    snippet = text[:1500].lower()
+
+    # If any clinical dept keyword appears, keep them
+    for dept in LINEBERGER_CLINICAL_DEPTS:
+        if dept in snippet:
+            return True
+
+    # Explicit non-clinical markers — if these appear and nothing clinical did, exclude
+    NON_CLINICAL = [
+        "gillings school", "school of public health", "eshelman school",
+        "school of pharmacy", "school of nursing", "school of social work",
+        "kenan-flagler", "school of information", "college of arts",
+        "biostatistics", "epidemiology", "health behavior", "health policy",
+        "environmental sciences", "nutrition", "maternal and child health",
+    ]
+    for marker in NON_CLINICAL:
+        if marker in snippet:
+            return False
+
+    # Can't determine — include by default
+    return True
+
 
 def is_trainee_profile(html):
     """
@@ -1471,9 +1529,17 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
             f["pubmed_hint"] = f"OVERRIDE:{override}"
             continue
         if f.get("profile_url"):
-            # Fetch profile page once — reuse for both trainee check and PubMed hint
+            # Fetch profile page once — reuse for trainee check, Lineberger filter, and PubMed hint
             profile_html = fetch_url(f["profile_url"])
             time.sleep(0.3)
+
+            # For Lineberger faculty, exclude non-clinical departments
+            if "unclineberger.org" in (f.get("profile_url") or ""):
+                if not is_lineberger_clinical(profile_html):
+                    print(f"  {f['name']} ({f['department']}): non-clinical Lineberger member — excluding")
+                    f["_exclude"] = True
+                    trainees_removed.append(f["name"])
+                    continue
 
             # Check if this person is a trainee before spending time on PubMed
             if is_trainee_profile(profile_html):
