@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T01:11:39.961038Z",
+  "generated_at": "2026-06-24T02:23:06.134436Z",
   "total_faculty": 533,
   "departments": [
     "Lineberger Comprehensive Cancer Center"
@@ -534,42 +534,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/thomas.alexander.2/bibliography/public",
-      "pubmed_count": 44,
-      "pubmed_search": "ComputedAuthors:Alexander T",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:thomas.alexander.2",
+      "pubmed_count": 43,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41834188",
-          "title": "Facilitators and Barriers for Implementing Diagnostic Sequencing Technology for Pediatric Oncology in Low- and Middle-Income Countries.",
-          "journal": "Pediatr Blood Cancer",
-          "year": "2026"
-        },
-        {
-          "pmid": "41679504",
-          "title": "Long-Read Whole-Transcriptome Sequencing and Selective Gene Panel Profiling Enable Sensitive Detection of Fusion Oncogenes in Pediatric B-Cell Acute Lymphoblastic Leukemia.",
-          "journal": "J Mol Diagn",
-          "year": "2026"
-        },
-        {
-          "pmid": "41609969",
-          "title": "Family Perspectives on Pediatric Complementary and Integrative Medicine Practices in Pediatric Hematology and Oncology.",
-          "journal": "Pediatr Blood Cancer",
-          "year": "2026"
-        },
-        {
-          "pmid": "41397197",
-          "title": "Pediatric ALL Treatment Modifications in Low- and Middle-Income Countries: A Systematic Review.",
-          "journal": "JCO Glob Oncol",
-          "year": "2025"
-        },
-        {
-          "pmid": "40378096",
-          "title": "From blueprint to biobank: Leveraging expert recommendations for implementing change (ERIC) to pediatric cancer biobanking in Pakistan.",
-          "journal": "PLoS One",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -836,42 +805,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/gary.asher.1/bibliography/public",
-      "pubmed_count": 40,
-      "pubmed_search": "ComputedAuthors:Asher G",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:gary.asher.1",
+      "pubmed_count": 42,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42150182",
-          "title": "Annals On Call - Preventing Recurrent Nephrolithiasis.",
-          "journal": "Ann Intern Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "41871357",
-          "title": "Prevention of Recurrent Nephrolithiasis in Adults and Children : A Systematic Review.",
-          "journal": "Ann Intern Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "40553460",
-          "title": "Screening for Intimate Partner Violence and for Caregiver Abuse of Older or Vulnerable Adults: An Evidence Report and Systematic Review for the US Preventive Services Task Force.",
-          "journal": "JAMA",
-          "year": "2025"
-        },
-        {
-          "pmid": "40358931",
-          "title": "Screening for Syphilis Infection During Pregnancy: Updated Evidence Report and Systematic Review for the US Preventive Services Task Force.",
-          "journal": "JAMA",
-          "year": "2025"
-        },
-        {
-          "pmid": "38130392",
-          "title": "Healthcare Professionals' Perspectives on Improving Dietary Supplement Documentation in the Electronic Medical Record: Current Challenges and Opportunities to Enhance Quality of Care and Patient Safety.",
-          "journal": "Glob Adv Integr Med Health",
-          "year": "2023"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -883,42 +821,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/hannah.atkins.1/bibliography/public",
-      "pubmed_count": 23,
-      "pubmed_search": "ComputedAuthors:Atkins H",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:hannah.atkins.1",
+      "pubmed_count": 36,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "40683660",
-          "title": "Using Comparative Transcriptomics and Histology to Identify Significant Differentially Expressed Genes Associated with Retained Placenta in Humans and Rhesus Macaques (Macaca mulatta).",
-          "journal": "J Am Assoc Lab Anim Sci",
-          "year": "2025"
-        },
-        {
-          "pmid": "39012151",
-          "title": "Monitoring mouse papillomavirus-associated cancer development using longitudinal Pap smear screening.",
-          "journal": "mBio",
-          "year": "2024"
-        },
-        {
-          "pmid": "38426749",
-          "title": "Interferon lambda restricts herpes simplex virus skin disease by suppressing neutrophil-mediated pathology.",
-          "journal": "mBio",
-          "year": "2024"
-        },
-        {
-          "pmid": "36504866",
-          "title": "Epizootic Yersinia enterocolitica in captive African green monkeys (Chlorocebus aethiops sabaeus).",
-          "journal": "Front Vet Sci",
-          "year": "2022"
-        },
-        {
-          "pmid": "36030094",
-          "title": "The effect of cigarette smoke versus vaporized nicotine on healing of a rat femur.",
-          "journal": "Injury",
-          "year": "2022"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -930,18 +837,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/jeffrey.aube.2/bibliography/public",
-      "pubmed_search": "Aube J",
-      "pubmed_count": 75,
-      "pubmed_verified": 1,
+      "pubmed_search": "MyNCBI:jeffrey.aube.2",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42213719",
-          "title": "Pharmacologic disruption of HuR-RNA interactions prevents maladaptive tubular repair and AKI-to-CKD progression.",
-          "journal": "Am J Physiol Renal Physiol",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -1268,24 +1168,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/derek.bartlett.1/bibliography/public",
-      "pubmed_count": 2,
-      "pubmed_search": "ComputedAuthors:Bartlett D",
-      "pubmed_verified": 2,
+      "pubmed_search": "MyNCBI:derek.bartlett.1",
+      "pubmed_count": 27,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41505284",
-          "title": "Neuroimaging Patterns of Recreational Drug Use in the Emergency Setting.",
-          "journal": "Radiographics",
-          "year": "2026"
-        },
-        {
-          "pmid": "38906245",
-          "title": "Hepatobiliary Infection after Transjugular Intrahepatic Portosystemic Shunt Creation in Patients with Prior Biliary Intervention: A Multi-Institution Retrospective Study.",
-          "journal": "J Vasc Interv Radiol",
-          "year": "2024"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -1528,8 +1415,8 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/ronny%20a..bell.1/bibliography/public",
-      "pubmed_search": "ronny%20a..bell.1[Author Identifier]",
-      "pubmed_count": 424,
+      "pubmed_search": "MyNCBI:ronny%20a..bell.1",
+      "pubmed_count": 50,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
       "publications": [],
@@ -1698,42 +1585,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/ganga.bey.1/bibliography/public",
-      "pubmed_count": 18,
-      "pubmed_search": "ComputedAuthors:Bey G",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:ganga.bey.1",
+      "pubmed_count": 21,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42321601",
-          "title": "Perceived Discrimination and Healthcare System Trust as Barriers to Survivorship Care in Endometrial Cancer.",
-          "journal": "Cancer Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "42185225",
-          "title": "Neighborhood Socioeconomic Deprivation and Perceived Discrimination Among Endometrial Cancer Survivors.",
-          "journal": "Psychooncology",
-          "year": "2026"
-        },
-        {
-          "pmid": "42105323",
-          "title": "Reassessing alcohol consumption and cardiovascular disease by addressing bias in observational data: results from the Multi-Ethnic Study of Atherosclerosis.",
-          "journal": "Eur J Prev Cardiol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41950447",
-          "title": "Psychosocial Risk and Resilience as Moderators of the Association Between Neighborhood Disadvantage and Incident Cardiovascular Disease Across Ethnoracial Groups: Multi-Ethnic Study of Atherosclerosis, United States, 2000-2019.",
-          "journal": "Am J Public Health",
-          "year": "2026"
-        },
-        {
-          "pmid": "41766683",
-          "title": "Social determinants of health across the lifecourse and chronic disease risk: Available data and seminal findings from the Atherosclerosis Risk in Communities (ARIC) Study.",
-          "journal": "Am J Epidemiol",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -1745,42 +1601,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1JMfwJ7FbPr/bibliography/public",
-      "pubmed_count": 38,
-      "pubmed_search": "ComputedAuthors:Bhatt AP",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1JMfwJ7FbPr",
+      "pubmed_count": 45,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41551289",
-          "title": "Commercially Purchased and In-House Bred C57BL/6 Mice with Different Gut Microbiota Exhibit Distinct Indomethacin-Induced Toxicities.",
-          "journal": "Gut Microbes Rep",
-          "year": "2025"
-        },
-        {
-          "pmid": "41093983",
-          "title": "Sex-dependent responses in mice to indomethacin-induced organ injury and gut microbiome-targeted alleviation.",
-          "journal": "Sci Rep",
-          "year": "2025"
-        },
-        {
-          "pmid": "40654689",
-          "title": "Commercially Purchased and In-House Bred C57BL/6 Mice with Different Gut Microbiota Exhibit Distinct Indomethacin-Induced Toxicities.",
-          "journal": "bioRxiv",
-          "year": "2025"
-        },
-        {
-          "pmid": "40348494",
-          "title": "Phase IV Metabolism: Gut Microbial Metabolism of Common Gastrointestinal Drugs.",
-          "journal": "Gastroenterol Clin North Am",
-          "year": "2025"
-        },
-        {
-          "pmid": "39818941",
-          "title": "Improving breast cancer treatments using pharmacomicrobiomics.",
-          "journal": "mBio",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -1884,42 +1709,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1BwOVEH1gPc/bibliography/public",
-      "pubmed_count": 199,
-      "pubmed_search": "ComputedAuthors:Bloom Kerry",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1BwOVEH1gPc",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42054204",
-          "title": "Coordinated chromosome motion emerges from mechanical coupling mediated by the physical spindle environment.",
-          "journal": "Mol Biol Cell",
-          "year": "2026"
-        },
-        {
-          "pmid": "41373843",
-          "title": "The Role of Transient Crosslinks in the Chromatin Search Response to DNA Damage.",
-          "journal": "Int J Mol Sci",
-          "year": "2025"
-        },
-        {
-          "pmid": "40523001",
-          "title": "Cell cycle dependent methylation of Dam1 contributes to kinetochore integrity and faithful chromosome segregation.",
-          "journal": "PLoS Genet",
-          "year": "2025"
-        },
-        {
-          "pmid": "39970915",
-          "title": "Centromeres are stress-induced fragile sites.",
-          "journal": "Curr Biol",
-          "year": "2025"
-        },
-        {
-          "pmid": "39720924",
-          "title": "Closing the loops: chromatin loop dynamics after DNA damage.",
-          "journal": "Nucleus",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -1954,42 +1748,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1xE4qNkDlwsUda/bibliography/public",
-      "pubmed_count": 34,
-      "pubmed_search": "ComputedAuthors:Blumberg Jeffrey",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1xE4qNkDlwsUda",
+      "pubmed_count": 22,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42024417",
-          "title": "Sustained Locoregional Control With Deintensified Chemoradiotherapy for HPV Oropharyngeal Carcinoma.",
-          "journal": "JAMA Otolaryngol Head Neck Surg",
-          "year": "2026"
-        },
-        {
-          "pmid": "40789224",
-          "title": "Laryngo-pharyngeal-vertebral extirpation: a radical multidisciplinary surgical approach to managing complications from oropharyngeal squamous cell carcinoma treatment. Illustrative case.",
-          "journal": "J Neurosurg Case Lessons",
-          "year": "2025"
-        },
-        {
-          "pmid": "39430853",
-          "title": "Comparison of surgical margins and adjuvant therapy for head and neck cancer by hospital type.",
-          "journal": "Transl Cancer Res",
-          "year": "2024"
-        },
-        {
-          "pmid": "38013109",
-          "title": "Technical Nuances of Anterior Column Construction for the Treatment of Osteomyelitis-Induced Cervical Kyphoscoliotic Deformity: An Operative Video Illustration.",
-          "journal": "World Neurosurg",
-          "year": "2024"
-        },
-        {
-          "pmid": "37767817",
-          "title": "Effect of distance of treatment center on survival for HPV-negative head and neck cancer patients.",
-          "journal": "Head Neck",
-          "year": "2023"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -2291,42 +2054,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/alison.brenner.1/bibliography/public",
-      "pubmed_count": 74,
-      "pubmed_search": "ComputedAuthors:Brenner A",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:alison.brenner.1",
+      "pubmed_count": 44,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42191367",
-          "title": "Equity Evaluation of an Intervention to Increase Colorectal Cancer Screening at Federally Qualified Health Centers.",
-          "journal": "Ann Fam Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "41931155",
-          "title": "Scaling what works: a collaborative capacity-building program tailored to optimize resources and scale evidence-based interventions for cancer prevention and control.",
-          "journal": "Cancer Causes Control",
-          "year": "2026"
-        },
-        {
-          "pmid": "41639370",
-          "title": "Time to Follow-Up Colonoscopy After Positive Fecal Immunochemical Test with Centralized Patient Navigation: A Randomized Clinical Trial.",
-          "journal": "J Gen Intern Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "41549310",
-          "title": "What makes patient navigation work? Identifying functions and forms and conducting causal loop diagramming to specify components of a successful colorectal cancer patient navigation program.",
-          "journal": "Implement Sci Commun",
-          "year": "2026"
-        },
-        {
-          "pmid": "41301000",
-          "title": "Design and Interim Recruitment Outcomes of a Multi-Modal, Multi-Level Patient Navigation Intervention for Lung Cancer Screening in the Southeast U.S.",
-          "journal": "Cancers (Basel)",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -2430,42 +2162,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1HWZ79-Rlrhkc/bibliography/public",
-      "pubmed_count": 54,
-      "pubmed_search": "ComputedAuthors:Brown NG",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1HWZ79-Rlrhkc",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42247526",
-          "title": "High-throughput protein target mapping enables accelerated bioactivity discovery for ToxCast and PFAS compounds.",
-          "journal": "Proc Natl Acad Sci U S A",
-          "year": "2026"
-        },
-        {
-          "pmid": "42242586",
-          "title": "Early-onset neuroinflammation drives neurodegeneration caused by lysosomal PI(3,5)P2 insufficiency.",
-          "journal": "Neurobiol Dis",
-          "year": "2026"
-        },
-        {
-          "pmid": "42026065",
-          "title": "Structural basis of NSD2 degradation via targeted recruitment of SCF-FBXO22.",
-          "journal": "Nat Commun",
-          "year": "2026"
-        },
-        {
-          "pmid": "41833837",
-          "title": "Crystal structures reveal phosphorylation-dependent disruption of the heat shock protein 70-CHIP interface: A compensatory G132N variant restores binding affinity.",
-          "journal": "Cell Stress Chaperones",
-          "year": "2026"
-        },
-        {
-          "pmid": "41352346",
-          "title": "Linked-domain inhibitors designed to block UBE2D induce the unfolded protein response.",
-          "journal": "Cell Chem Biol",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -2664,42 +2365,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/kirsten.bryant.1/bibliography/public",
-      "pubmed_count": 36,
-      "pubmed_search": "ComputedAuthors:Bryant K",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:kirsten.bryant.1",
+      "pubmed_count": 31,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42079131",
-          "title": "Characterization and therapeutic suppression of KEAP1-NRF2-driven resistance to KRAS inhibitors in pancreatic and lung cancer.",
-          "journal": "bioRxiv",
-          "year": "2026"
-        },
-        {
-          "pmid": "42054558",
-          "title": "KRAS Signaling Inhibition Induces a Targetable Metabolic Dependency on Lipophagy-Dependent Fatty Acid Oxidation in Pancreatic Cancer.",
-          "journal": "Cancer Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "41573866",
-          "title": "Dordaviprone/ONC201 Activation of the ClpP Mitochondrial Protease Inhibits the Growth of KRAS-Mutant Pancreatic Cancer and Overcomes RAS Inhibitor Resistance.",
-          "journal": "bioRxiv",
-          "year": "2025"
-        },
-        {
-          "pmid": "41248420",
-          "title": "CRISPR-Cas9 Screening Identifies Resistance Mechanisms to KRAS Inhibition in Pancreatic Cancer.",
-          "journal": "Cancer Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "41026826",
-          "title": "Defining the MYC-regulated transcriptome and kinome that support KRAS- and ERK-dependent growth of pancreatic cancer.",
-          "journal": "Sci Signal",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -2818,42 +2488,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/craig.cameron.1/bibliography/public",
-      "pubmed_count": 5,
-      "pubmed_search": "ComputedAuthors:Cameron C",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:craig.cameron.1",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "36700653",
-          "title": "Virology under the Microscope-a Call for Rational Discourse.",
-          "journal": "mSphere",
-          "year": "2023"
-        },
-        {
-          "pmid": "36700642",
-          "title": "Virology under the Microscope-a Call for Rational Discourse.",
-          "journal": "mBio",
-          "year": "2023"
-        },
-        {
-          "pmid": "36700640",
-          "title": "Virology under the Microscope-a Call for Rational Discourse.",
-          "journal": "J Virol",
-          "year": "2023"
-        },
-        {
-          "pmid": "10315405",
-          "title": "Having a bone marrow test: a child's perspective.",
-          "journal": "Child Health Care",
-          "year": "1983"
-        },
-        {
-          "pmid": "10264988",
-          "title": "Using creative arts to help children cope with altered body image.",
-          "journal": "Child Health Care",
-          "year": "1984"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -2880,24 +2519,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/sharon.campbell.1/bibliography/public",
-      "pubmed_count": 2,
-      "pubmed_search": "ComputedAuthors:Campbell S",
-      "pubmed_verified": 2,
+      "pubmed_search": "MyNCBI:sharon.campbell.1",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41879471",
-          "title": "Firearm Ownership As a Moderator of Entrapment, Suicidal Thinking, and Suicide Attempt Likelihood Among Active Duty Military Service Members.",
-          "journal": "J Interpers Violence",
-          "year": "2026"
-        },
-        {
-          "pmid": "36514242",
-          "title": "A Systematic Review of Validated Measures of U.S.-Based Bystander Intervention-Related Constructs.",
-          "journal": "Trauma Violence Abuse",
-          "year": "2023"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -3320,42 +2946,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/xian.chen.1/bibliography/public",
-      "pubmed_count": 42,
-      "pubmed_search": "ComputedAuthors:Chen X",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:xian.chen.1",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42113844",
-          "title": "Host species-specific mutations in the thumb domain of the 3Dpol polymerase are required for efficient replication of human hepatitis A virus in mice.",
-          "journal": "PLoS Pathog",
-          "year": "2026"
-        },
-        {
-          "pmid": "42025203",
-          "title": "Discovery of a Highly Potent and Selective ENL Degrader.",
-          "journal": "J Med Chem",
-          "year": "2026"
-        },
-        {
-          "pmid": "41539304",
-          "title": "Epigenomic, transcriptomic, and proteomic characterization of breast cancer cell line reference samples.",
-          "journal": "Cell Rep Methods",
-          "year": "2026"
-        },
-        {
-          "pmid": "41392981",
-          "title": "Targeting kinesin family member 20A sensitizes stem-like triple-negative breast cancer cells to standard chemotherapy.",
-          "journal": "J Clin Invest",
-          "year": "2025"
-        },
-        {
-          "pmid": "41258132",
-          "title": "Author Correction: AIM2 in regulatory T cells restrains autoimmune diseases.",
-          "journal": "Nature",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -3367,42 +2962,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1JuH-se1-waQs/bibliography/public",
-      "pubmed_count": 21,
-      "pubmed_search": "ComputedAuthors:Chen Xuguang",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1JuH-se1-waQs",
+      "pubmed_count": 27,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41920764",
-          "title": "Development of a Clinical Assay to Guide Patient Therapy in HPV-Associated Head and Neck Cancer.",
-          "journal": "Clin Cancer Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "39766050",
-          "title": "Emerging Radiotherapy Technologies for Head and Neck Squamous Cell Carcinoma: Challenges and Opportunities in the Era of Immunotherapy.",
-          "journal": "Cancers (Basel)",
-          "year": "2024"
-        },
-        {
-          "pmid": "39263446",
-          "title": "Hippocampal-Sparing Radiation Therapy in Primary Sinonasal and Cutaneous Tumors of the Head and Neck.",
-          "journal": "Adv Radiat Oncol",
-          "year": "2024"
-        },
-        {
-          "pmid": "38260225",
-          "title": "Oncologic and Functional Outcomes After Stereotactic Body Radiation Therapy for High-Grade Malignant Spinal Cord Compression.",
-          "journal": "Adv Radiat Oncol",
-          "year": "2024"
-        },
-        {
-          "pmid": "37627141",
-          "title": "A Multidimensional Connectomics- and Radiomics-Based Advanced Machine-Learning Framework to Distinguish Radiation Necrosis from True Progression in Brain Metastases.",
-          "journal": "Cancers (Basel)",
-          "year": "2023"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -3577,10 +3141,10 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/hokyung.chung.1/bibliography/public",
-      "pubmed_search": "Chung H",
-      "pubmed_count": 4,
+      "pubmed_search": "MyNCBI:hokyung.chung.1",
+      "pubmed_count": 18,
       "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
+      "pubmed_ambiguous": false,
       "publications": [],
       "nih_grants": []
     },
@@ -3872,42 +3436,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/lorinda.coombs.1/bibliography/public",
-      "pubmed_count": 42,
-      "pubmed_search": "ComputedAuthors:Coombs L",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:lorinda.coombs.1",
+      "pubmed_count": 44,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42230202",
-          "title": "\"An opportunity to spend time with each other\": The importance of mealtimes for carepartners of older adults with acute myeloid leukemia and myelodysplastic syndromes.",
-          "journal": "J Geriatr Oncol",
-          "year": "2026"
-        },
-        {
-          "pmid": "42049652",
-          "title": "Patterns of Goals-of-Care Documentation in the Outpatient Oncology Setting: A Retrospective Cohort Study of Older Adults with Advanced Cancer.",
-          "journal": "J Palliat Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "42021566",
-          "title": "Factors Associated With Mortality in Appalachian Nursing Homes During the COVID-19 Pandemic.",
-          "journal": "Perm J",
-          "year": "2026"
-        },
-        {
-          "pmid": "41885380",
-          "title": "Exploring Clinical Pathways to a Metastatic Lung Cancer Diagnosis: A Latent Class Analysis Using North Carolina Multipayer Claims Data.",
-          "journal": "Cancer Epidemiol Biomarkers Prev",
-          "year": "2026"
-        },
-        {
-          "pmid": "41556721",
-          "title": "Association of Multi-Level LGBTQ+ Stigma and Hypervigilance With Health Outcomes Among LGBTQ+ Cancer Caregivers.",
-          "journal": "Psychooncology",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -3965,24 +3498,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/david.corcoran.1/bibliography/public",
-      "pubmed_count": 2,
-      "pubmed_search": "ComputedAuthors:Corcoran D",
-      "pubmed_verified": 2,
+      "pubmed_search": "MyNCBI:david.corcoran.1",
+      "pubmed_count": 44,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41076449",
-          "title": "Activating NRF2E79Q mutation alters the differentiation of human non-small cell lung cancer.",
-          "journal": "Cancer Gene Ther",
-          "year": "2025"
-        },
-        {
-          "pmid": "40470216",
-          "title": "Activating NRF2E79Q mutation alters the differentiation of human non-small cell lung cancer.",
-          "journal": "Res Sq",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -4040,42 +3560,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/melissa.cox.1/bibliography/public",
-      "pubmed_count": 34,
-      "pubmed_search": "ComputedAuthors:Cox M",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:melissa.cox.1",
+      "pubmed_count": 40,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42008525",
-          "title": "Mapping sources of chronic disease-promoting products in retail environments: An analysis of co-location patterns of alcohol, tobacco, and fast-food retailers.",
-          "journal": "PLoS One",
-          "year": "2026"
-        },
-        {
-          "pmid": "40245386",
-          "title": "Text Message Intervention to Facilitate Secure Storage and Disposal of Prescription Opioids to Prevent Diversion and Misuse: Protocol for a Randomized Controlled Trial.",
-          "journal": "JMIR Res Protoc",
-          "year": "2025"
-        },
-        {
-          "pmid": "40157086",
-          "title": "Rates and correlates of simultaneous use and mixing of alcohol, tobacco, and cannabis among adults who currently use alcohol and tobacco.",
-          "journal": "Addict Behav",
-          "year": "2025"
-        },
-        {
-          "pmid": "40138212",
-          "title": "Effects of Expanding Direct-to-Consumer Alcohol Home Delivery Policies: Evidence From 18 States of Increases in Alcohol Use and Consequences.",
-          "journal": "J Stud Alcohol Drugs",
-          "year": "2025"
-        },
-        {
-          "pmid": "40092917",
-          "title": "Effects of direct-to-consumer alcohol home delivery policies on alcohol-related online searches in the United States from 2019 to 2023: A Google Trends study.",
-          "journal": "Prev Med Rep",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -4173,42 +3662,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1DcS-GdcX-uAf/bibliography/public",
-      "pubmed_count": 200,
-      "pubmed_search": "ComputedAuthors:Damania BA",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1DcS-GdcX-uAf",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42133805",
-          "title": "NEK2 drives pathogenesis, drug resistance, and LMP1 expression in EBV-positive non-Hodgkin lymphoma.",
-          "journal": "Proc Natl Acad Sci U S A",
-          "year": "2026"
-        },
-        {
-          "pmid": "42033727",
-          "title": "SFPQ prevents MDA5-mediated activation of innate immunity and preserves cell viability.",
-          "journal": "Cell Rep",
-          "year": "2026"
-        },
-        {
-          "pmid": "41105850",
-          "title": "Withaferin A inhibits EBV-driven lymphomagenesis through multiple mechanisms, including EBNA1 degradation.",
-          "journal": "Blood",
-          "year": "2026"
-        },
-        {
-          "pmid": "41042077",
-          "title": "cGAS Inhibits ALDH2 to Suppress Lipid Droplet Function and Regulate MASLD Progression.",
-          "journal": "Adv Sci (Weinh)",
-          "year": "2025"
-        },
-        {
-          "pmid": "40815147",
-          "title": "KSHV and HPV modulate epithelial-to-mesenchymal transition in oral epithelial cells.",
-          "journal": "mBio",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -4606,42 +4064,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1teGsc8XOU5Qa/bibliography/public",
-      "pubmed_count": 191,
-      "pubmed_search": "ComputedAuthors:DeWalt Darren",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1teGsc8XOU5Qa",
+      "pubmed_count": 49,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "36692553",
-          "title": "Disentangling the Role of Health Care Systems in Producing High-Quality Care.",
-          "journal": "JAMA",
-          "year": "2023"
-        },
-        {
-          "pmid": "34784953",
-          "title": "The STUN (STop UNhealthy) Alcohol Use Now trial: study protocol for an adaptive randomized trial on dissemination and implementation of screening and management of unhealthy alcohol use in primary care.",
-          "journal": "Trials",
-          "year": "2021"
-        },
-        {
-          "pmid": "34258724",
-          "title": "The Association of Readmission Reduction Activities with Primary Care Practice Readmission Rates.",
-          "journal": "J Gen Intern Med",
-          "year": "2022"
-        },
-        {
-          "pmid": "34017804",
-          "title": "Recommendations for Assessment of Social, Emotional, and Behavioral Health for the National Children's Study.",
-          "journal": "Front Pediatr",
-          "year": "2021"
-        },
-        {
-          "pmid": "33999548",
-          "title": "Comparative Effectiveness of Aspirin Dosing in Cardiovascular Disease.",
-          "journal": "N Engl J Med",
-          "year": "2021"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -4792,42 +4219,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/claire.doerschuk.1/bibliography/public",
-      "pubmed_count": 14,
-      "pubmed_search": "ComputedAuthors:Doerschuk C",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:claire.doerschuk.1",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41738285",
-          "title": "Dysanapsis: when do the features of different growth patterns become the signs of airway disease?",
-          "journal": "Am J Respir Crit Care Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "41306491",
-          "title": "James C. Hogg: Unlocking Leukocyte Kinetics in Lung Disease.",
-          "journal": "Can J Respir Crit Care Sleep Med",
-          "year": "2025"
-        },
-        {
-          "pmid": "41189581",
-          "title": "Extracellular iron and the lung microbiome in smoking and COPD.",
-          "journal": "ERJ Open Res",
-          "year": "2025"
-        },
-        {
-          "pmid": "40198759",
-          "title": "Characteristics Associated with Lung Function Trajectories: An Analysis of the SPIROMICS Cohort.",
-          "journal": "Ann Am Thorac Soc",
-          "year": "2025"
-        },
-        {
-          "pmid": "40127449",
-          "title": "Reply to Currow et&#xa0;al.: Geographic Variation in Prevalence of Breathlessness: Latitude.",
-          "journal": "Am J Respir Crit Care Med",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -4992,42 +4388,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/david.drewry.1/bibliography/public",
-      "pubmed_count": 128,
-      "pubmed_search": "ComputedAuthors:Drewry D",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:david.drewry.1",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42146425",
-          "title": "Monocyte Migration Emerges from a Divergent Chemokine Signaling Network.",
-          "journal": "bioRxiv",
-          "year": "2026"
-        },
-        {
-          "pmid": "42076879",
-          "title": "Targeting Activin Receptor-like Kinase 2 Using Heterobifunctional Protein Degraders.",
-          "journal": "J Med Chem",
-          "year": "2026"
-        },
-        {
-          "pmid": "41937984",
-          "title": "Identification of a chemical probe for lipid kinase phosphatidylinositol-5-phosphate 4-kinase gamma (PI5P4K&#x3b3;).",
-          "journal": "Curr Res Chem Biol",
-          "year": "2023"
-        },
-        {
-          "pmid": "41651452",
-          "title": "Cellular Context Influences Kinase Inhibitor Selectivity.",
-          "journal": "J Med Chem",
-          "year": "2026"
-        },
-        {
-          "pmid": "41451871",
-          "title": "PAK1 inhibitor NVS-PAK1-1 preserves dendritic spines in amyloid/tau exposed neurons and 5xFAD mice.",
-          "journal": "Alzheimers Dement",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -5162,36 +4527,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/henry.earp.1/bibliography/public",
-      "pubmed_count": 4,
-      "pubmed_search": "ComputedAuthors:Earp S",
-      "pubmed_verified": 4,
+      "pubmed_search": "MyNCBI:henry.earp.1",
+      "pubmed_count": 47,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "33714535",
-          "title": "Corrigendum to \"MERTK in cancer therapy: Targeting the receptor tyrosine kinase in tumor cells and the immune system\" [Pharmacology &amp; Therapeutics 213 (2020) 107577].",
-          "journal": "Pharmacol Ther",
-          "year": "2021"
-        },
-        {
-          "pmid": "32417270",
-          "title": "MERTK in cancer therapy: Targeting the receptor tyrosine kinase in tumor cells and the immune system.",
-          "journal": "Pharmacol Ther",
-          "year": "2020"
-        },
-        {
-          "pmid": "31840656",
-          "title": "Studying the Effects of Tumor-Secreted Paracrine Ligands on Macrophage Activation using Co-Culture with Permeable Membrane Supports.",
-          "journal": "J Vis Exp",
-          "year": "2019"
-        },
-        {
-          "pmid": "1701016",
-          "title": "Angiotensin II stimulates protein-tyrosine phosphorylation in a calcium-dependent manner.",
-          "journal": "Mol Cell Biol",
-          "year": "1990"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -5203,42 +4543,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1tc9nUfQPCtU5p/bibliography/public",
-      "pubmed_count": 8,
-      "pubmed_search": "ComputedAuthors:Edwards Whitney",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1tc9nUfQPCtU5p",
+      "pubmed_count": 7,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42047720",
-          "title": "Protein lipidation in cardiovascular homeostasis, development, and disease.",
-          "journal": "Clin Sci (Lond)",
-          "year": "2026"
-        },
-        {
-          "pmid": "37756602",
-          "title": "The Tbx20-TLE interaction is essential for the maintenance of the second heart field.",
-          "journal": "Development",
-          "year": "2023"
-        },
-        {
-          "pmid": "37290445",
-          "title": "PLIN5 interacts with FATP4 at membrane contact sites to promote lipid droplet-to-mitochondria fatty acid transport.",
-          "journal": "Dev Cell",
-          "year": "2023"
-        },
-        {
-          "pmid": "37148880",
-          "title": "Quantitative proteomic profiling identifies global protein network dynamics in murine embryonic heart development.",
-          "journal": "Dev Cell",
-          "year": "2023"
-        },
-        {
-          "pmid": "29757344",
-          "title": "Complex integration of intrinsic and peripheral signaling is required for pituitary gland development.",
-          "journal": "Biol Reprod",
-          "year": "2018"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -5296,42 +4605,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1n9Ynl_4kxlkV/bibliography/public",
-      "pubmed_count": 12,
-      "pubmed_search": "ComputedAuthors:Emanuele Michael",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1n9Ynl_4kxlkV",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42177192",
-          "title": "USP7 inhibition perturbs proteostasis and tumorigenesis in triple-negative breast cancer.",
-          "journal": "NPJ Breast Cancer",
-          "year": "2026"
-        },
-        {
-          "pmid": "41710088",
-          "title": "Charting the multilevel molecular response to palbociclib in ER-positive breast cancer.",
-          "journal": "NAR Cancer",
-          "year": "2026"
-        },
-        {
-          "pmid": "41502411",
-          "title": "Characterizing the Impact of the Cell Cycle on mRNA Lipid Nanoparticles.",
-          "journal": "J Am Chem Soc",
-          "year": "2026"
-        },
-        {
-          "pmid": "40436319",
-          "title": "Mechanisms of USP18 specificity toward ISG15 revealed by paralog sequence analysis comparison.",
-          "journal": "J Biol Chem",
-          "year": "2025"
-        },
-        {
-          "pmid": "40371133",
-          "title": "Onvansertib inhibits cell proliferation and increases sensitivity to paclitaxel in uterine serous cancer cells.",
-          "journal": "Am J Cancer Res",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -5435,42 +4713,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/lawrence.engel.1/bibliography/public",
-      "pubmed_count": 199,
-      "pubmed_search": "ComputedAuthors:Engel L",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:lawrence.engel.1",
+      "pubmed_count": 40,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42320201",
-          "title": "Corrigendum to \"Environmental exposure and cancer incidence in offshore petroleum workers in Norway\" [Environ. Res. 264 (2025) 121407].",
-          "journal": "Environ Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "41954601",
-          "title": "Impacts of Hurricane-Related Flooding on Time to Initial Cancer-Directed Treatment in North Carolina.",
-          "journal": "Cancer Epidemiol Biomarkers Prev",
-          "year": "2026"
-        },
-        {
-          "pmid": "41948428",
-          "title": "Differences in Long Term Exposure to Wildfire Smoke Among People Who Are Incarcerated Compared to People Who Are Not Incarcerated in California, 2015-2020.",
-          "journal": "Geohealth",
-          "year": "2026"
-        },
-        {
-          "pmid": "41802659",
-          "title": "Associations between ambient exposure to styrene, benzene, toluene, ethylbenzene, and xylenes and hospitalizations in the US Gulf region.",
-          "journal": "Environ Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "41564268",
-          "title": "Association of oil spill-related volatile organic compound exposure with CVD-related biomarkers in the Gulf Long-term Follow-up Study.",
-          "journal": "Ann Work Expo Health",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -5482,42 +4729,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1XiQulcGk8I1X-/bibliography/public",
-      "pubmed_count": 23,
-      "pubmed_search": "ComputedAuthors:Enyioha Chineme",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1XiQulcGk8I1X-",
+      "pubmed_count": 25,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41824745",
-          "title": "Features of mHealth Apps for Tobacco Cessation Important to Black Adults: Discrete Choice Experiment.",
-          "journal": "JMIR Form Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "41650169",
-          "title": "Features of Mobile Health Apps for Tobacco Cessation That Appeal to Black Adults Who Use Tobacco Products: Focus Group Study.",
-          "journal": "JMIR Mhealth Uhealth",
-          "year": "2026"
-        },
-        {
-          "pmid": "41446400",
-          "title": "NC CLASP: the structure and reach of a statewide antibiotic stewardship education program.",
-          "journal": "Antimicrob Steward Healthc Epidemiol",
-          "year": "2025"
-        },
-        {
-          "pmid": "40898158",
-          "title": "Better health and less stress: an elicitation survey on quitting little cigars and cigarillos by young adults.",
-          "journal": "BMC Public Health",
-          "year": "2025"
-        },
-        {
-          "pmid": "40815515",
-          "title": "Little Cigar and Cigarillo Graphic Health Warnings and Quitting Behaviors: A Randomized Clinical Trial.",
-          "journal": "JAMA Netw Open",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -5668,42 +4884,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/ronald.falk.2/bibliography/47171877/public/?sortby=pubDate&amp;sdirection=descending/public",
-      "pubmed_count": 303,
-      "pubmed_search": "ComputedAuthors:Falk R",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:ronald.falk.2",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41390144",
-          "title": "Antimicrobial Prophylaxis in US Medicare Beneficiaries Receiving Immunosuppressants for Antineutrophil Cytoplasmic Antibody-Associated Vasculitis.",
-          "journal": "Am J Kidney Dis",
-          "year": "2026"
-        },
-        {
-          "pmid": "41278316",
-          "title": "Novel Treatment Paradigms: Complement Inhibition in Antineutrophil Cytoplasmic Autoantibody Vasculitis.",
-          "journal": "Kidney Int Rep",
-          "year": "2025"
-        },
-        {
-          "pmid": "40646010",
-          "title": "Defining subgroups of pediatric nephrotic patients with urine proteomics.",
-          "journal": "Sci Rep",
-          "year": "2025"
-        },
-        {
-          "pmid": "40333015",
-          "title": "Antineutrophil Cytoplasmic Antibodies (ANCAs): Role in Diagnosis, Disease Monitoring, and Prognosis.",
-          "journal": "J Am Soc Nephrol",
-          "year": "2025"
-        },
-        {
-          "pmid": "40168593",
-          "title": "Clinical Significance of Immune Deposits and Complement System Activation in FSGS: Findings from the Cure Glomerulonephropathy Network Study.",
-          "journal": "Kidney360",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -5715,42 +4900,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/yuri.fedoriw.1/bibliography/public",
-      "pubmed_count": 117,
-      "pubmed_search": "ComputedAuthors:Fedoriw Y",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:yuri.fedoriw.1",
+      "pubmed_count": 32,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42306579",
-          "title": "Immunogenomic profiles of HIV-associated classic Hodgkin lymphoma from Malawi.",
-          "journal": "Blood Glob Hematol",
-          "year": "2025"
-        },
-        {
-          "pmid": "41673189",
-          "title": "Correction: Shared genomic features of HIV+&#x2009;diffuse large B-cell lymphoma in two African cohorts.",
-          "journal": "Sci Rep",
-          "year": "2026"
-        },
-        {
-          "pmid": "41561441",
-          "title": "Differential roles of Rad18 in repressing carcinogen- and oncogene-driven mutagenesis&#xa0;in vivo.",
-          "journal": "NAR Cancer",
-          "year": "2026"
-        },
-        {
-          "pmid": "41556969",
-          "title": "Mutational profiling of HIV+ diffuse large B-cell lymphoma reveals distinct mutational features with evidence of genomic instability.",
-          "journal": "AIDS",
-          "year": "2026"
-        },
-        {
-          "pmid": "41333895",
-          "title": "Rituximab is associated with an increased risk of malaria among adult lymphoma patients in Malawi: a prospective observational cohort.",
-          "journal": "EClinicalMedicine",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -5839,10 +4993,10 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/grant.fischer.1/bibliography/public",
-      "pubmed_search": "Fischer G",
-      "pubmed_count": 2,
+      "pubmed_search": "MyNCBI:grant.fischer.1",
+      "pubmed_count": 28,
       "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
+      "pubmed_ambiguous": false,
       "publications": [],
       "nih_grants": []
     },
@@ -5901,42 +5055,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/matthew.flick.1/bibliography/46425526/public",
-      "pubmed_count": 104,
-      "pubmed_search": "ComputedAuthors:Flick MJ",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:matthew.flick.1",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42314039",
-          "title": "Plasmin-mediated fibrinolysis is required for hematopoietic recovery after 5-FU-induced myeloablation.",
-          "journal": "Blood Adv",
-          "year": "2026"
-        },
-        {
-          "pmid": "41931627",
-          "title": "Hemostatic B-knob-triggered microgels (BK-TriGs) to address bleeding in neonates.",
-          "journal": "Sci Adv",
-          "year": "2026"
-        },
-        {
-          "pmid": "41568458",
-          "title": "Urokinase Plasminogen Activator Deficiency Delays the Development of Obesity and Metabolic Sequelae.",
-          "journal": "Arterioscler Thromb Vasc Biol",
-          "year": "2026"
-        },
-        {
-          "pmid": "39823326",
-          "title": "Targeting uPAR with an antibody-drug conjugate suppresses tumor growth and reshapes the immune landscape in pancreatic cancer models.",
-          "journal": "Sci Adv",
-          "year": "2025"
-        },
-        {
-          "pmid": "38381848",
-          "title": "Lipid nanoparticles and siRNA targeting plasminogen provide lasting inhibition of fibrinolysis in mouse and dog models of hemophilia A.",
-          "journal": "Sci Transl Med",
-          "year": "2024"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -6041,18 +5164,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1lkhhP5kON0kR/bibliography/public",
-      "pubmed_count": 1,
-      "pubmed_search": "ComputedAuthors:Frankowski Kevin",
-      "pubmed_verified": 1,
+      "pubmed_search": "MyNCBI:1lkhhP5kON0kR",
+      "pubmed_count": 47,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41196005",
-          "title": "Asymmetric Dynamics Between the Protomers of the &#x3c3;2 Receptor Homodimer.",
-          "journal": "J Chem Inf Model",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -6157,8 +5273,8 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1Vi_s-dz7dYM0n/bibliography/public",
-      "pubmed_search": "1Vi_s-dz7dYM0n[Author Identifier]",
-      "pubmed_count": 56,
+      "pubmed_search": "MyNCBI:1Vi_s-dz7dYM0n",
+      "pubmed_count": 50,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
       "publications": [],
@@ -6173,42 +5289,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/rebecca.fry.1/bibliography/public",
-      "pubmed_count": 25,
-      "pubmed_search": "ComputedAuthors:Fry R",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:rebecca.fry.1",
+      "pubmed_count": 38,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42129510",
-          "title": "The association of newborn metabolites with early-life wheezing and asthma among US children in the ECHO Program.",
-          "journal": "Commun Med (Lond)",
-          "year": "2026"
-        },
-        {
-          "pmid": "41722752",
-          "title": "Placental histopathology and early childhood neurodevelopment in the Environmental influences on Child Health Outcomes cohort.",
-          "journal": "Am J Obstet Gynecol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41697983",
-          "title": "Association of Maternal Smoking During Pregnancy With Childhood Blood Pressure and Hypertension in the ECHO Cohort.",
-          "journal": "Circulation",
-          "year": "2026"
-        },
-        {
-          "pmid": "41632155",
-          "title": "Air Pollution Exposure and Birth Weight in the ECHO Cohort.",
-          "journal": "JAMA Netw Open",
-          "year": "2025"
-        },
-        {
-          "pmid": "41450756",
-          "title": "Individual and combined effects of indoor home exposures and ambient PM2.5 during early life on childhood asthma in us birth cohort studies.",
-          "journal": "Environ Epidemiol",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -6266,42 +5351,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/shobhan.gaddameedhi.1/bibliography/public",
-      "pubmed_count": 50,
-      "pubmed_search": "ComputedAuthors:Gaddameedhi S",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:shobhan.gaddameedhi.1",
+      "pubmed_count": 47,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41237160",
-          "title": "In vivo investigation of STN1 downregulation in melanoma formation in adult mice following UV irradiation.",
-          "journal": "PLoS One",
-          "year": "2025"
-        },
-        {
-          "pmid": "40501869",
-          "title": "In vivo investigation of STN1 downregulation in melanoma formation in adult mice following UV irradiation.",
-          "journal": "bioRxiv",
-          "year": "2025"
-        },
-        {
-          "pmid": "40135399",
-          "title": "Long-term sub-erythemal UVB exposure does not impact circadian rhythms in mice under standard and rotating shift light conditions.",
-          "journal": "Photochem Photobiol",
-          "year": "2025"
-        },
-        {
-          "pmid": "38619923",
-          "title": "Molecular-Level Dysregulation of Insulin Pathways and Inflammatory Processes in Peripheral Blood Mononuclear Cells by Circadian Misalignment.",
-          "journal": "J Proteome Res",
-          "year": "2024"
-        },
-        {
-          "pmid": "38619433",
-          "title": "Inspiring basic and applied research in genome integrity mechanisms: Dedication to Samuel H. Wilson.",
-          "journal": "Environ Mol Mutagen",
-          "year": "2024"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -6514,42 +5568,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1lId60MyFtsQT/bibliography/public",
-      "pubmed_count": 11,
-      "pubmed_search": "ComputedAuthors:Gleeson EM",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1lId60MyFtsQT",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41426309",
-          "title": "Patterns of care in pancreatic cancer radiotherapy: impact of facility volume on outcomes.",
-          "journal": "Front Oncol",
-          "year": "2025"
-        },
-        {
-          "pmid": "40563664",
-          "title": "Iterative Cytoreductive Surgery and HIPEC for Peritoneal Metastases from Primary Appendiceal and Colorectal Cancers: An Observational Study.",
-          "journal": "Cancers (Basel)",
-          "year": "2025"
-        },
-        {
-          "pmid": "40346434",
-          "title": "Minimally invasive vs. open radical cholecystectomy for gallbladder cancer: 30-day NSQIP outcomes analysis.",
-          "journal": "Surg Endosc",
-          "year": "2025"
-        },
-        {
-          "pmid": "40055078",
-          "title": "International differences in the selection and outcome of minimally invasive and open distal pancreatectomy: A transatlantic analysis.",
-          "journal": "Surgery",
-          "year": "2025"
-        },
-        {
-          "pmid": "39019733",
-          "title": "International differences in the selection and outcome of minimally invasive and open distal pancreatectomy: A transatlantic analysis.",
-          "journal": "Surgery",
-          "year": "2024"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -6715,42 +5738,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1-Ez6l7Ybwm5O/bibliography/public",
-      "pubmed_count": 113,
-      "pubmed_search": "ComputedAuthors:Googe Paul",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1-Ez6l7Ybwm5O",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41114662",
-          "title": "Tumor miRNA Signatures Associate with Outcomes of Patients with Stage II/III Melanoma.",
-          "journal": "Clin Cancer Res",
-          "year": "2025"
-        },
-        {
-          "pmid": "39509669",
-          "title": "DNA Methylation Classes of Stage II and III Primary Melanomas and Their Clinical and Prognostic Significance.",
-          "journal": "JCO Precis Oncol",
-          "year": "2024"
-        },
-        {
-          "pmid": "39450917",
-          "title": "Immunohistochemical Expression of Immune Regulatory Proteins in Interface Dermatoses.",
-          "journal": "J Cutan Pathol",
-          "year": "2025"
-        },
-        {
-          "pmid": "39258318",
-          "title": "The Successful Use of Upadacitinib as Monotherapy for Hidradenitis Suppurativa and Ulcerative Colitis in the Setting of Refractory Disease.",
-          "journal": "Pediatr Dermatol",
-          "year": "2025"
-        },
-        {
-          "pmid": "38574049",
-          "title": "Lymphangitic Melanomatosis: Case Report of Intralymphatic Spread of Melanoma in a 66-year-old Man.",
-          "journal": "Am J Dermatopathol",
-          "year": "2024"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -6762,42 +5754,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1HSEdxwDckiAG/bibliography/public",
-      "pubmed_count": 26,
-      "pubmed_search": "ComputedAuthors:Gordon Kacy",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1HSEdxwDckiAG",
+      "pubmed_count": 22,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41521795",
-          "title": "Pre-dauer starvation rapidly and reversibly reduces niche proliferative signaling to the Caenorhabditis elegans germ line.",
-          "journal": "Development",
-          "year": "2026"
-        },
-        {
-          "pmid": "40953068",
-          "title": "MIG-21 interacts with Wnt and Netrin signaling in gonad migration in C. elegans.",
-          "journal": "PLoS Genet",
-          "year": "2025"
-        },
-        {
-          "pmid": "40780632",
-          "title": "Human mitochondrial CYP2E1-mediated styrene metabolism increases oxidative stress and impairs antioxidant rescue in Caenorhabditis elegans.",
-          "journal": "Comp Biochem Physiol C Toxicol Pharmacol",
-          "year": "2025"
-        },
-        {
-          "pmid": "40672334",
-          "title": "FLYWCH transcription factors act in a LIN-42/Period autoregulatory loop during gonad migration in C. elegans.",
-          "journal": "bioRxiv",
-          "year": "2025"
-        },
-        {
-          "pmid": "40502126",
-          "title": "Pre-dauer starvation decouples somatic from germline development with lifelong reproductive consequences in C. elegans.",
-          "journal": "bioRxiv",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -7043,18 +6004,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/ajay.gulati.1/bibliography/43837252/public",
-      "pubmed_count": 1,
-      "pubmed_search": "ComputedAuthors:Gulati A",
-      "pubmed_verified": 1,
+      "pubmed_search": "MyNCBI:ajay.gulati.1",
+      "pubmed_count": 49,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42048571",
-          "title": "A scalable high-throughput platform for discovery of intracellular and extracellular regulators of platelet migration.",
-          "journal": "Blood Adv",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -7112,42 +6066,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/stephanie.gupton.1/bibliography/public",
-      "pubmed_count": 63,
-      "pubmed_search": "ComputedAuthors:Gupton S",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:stephanie.gupton.1",
+      "pubmed_count": 45,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41889914",
-          "title": "TRIM9 switches the morphological phenotype of melanoma cells.",
-          "journal": "bioRxiv",
-          "year": "2026"
-        },
-        {
-          "pmid": "41085995",
-          "title": "Coro1A and TRIM67 collaborate in netrin-dependent neuronal morphogenesis.",
-          "journal": "J Cell Biol",
-          "year": "2025"
-        },
-        {
-          "pmid": "40166342",
-          "title": "Coro1A and TRIM67 collaborate in netrin-dependent neuronal morphogenesis.",
-          "journal": "bioRxiv",
-          "year": "2025"
-        },
-        {
-          "pmid": "39871643",
-          "title": "TRIM9 Controls Growth Cone Responses to Netrin Through DCC and UNC5C.",
-          "journal": "J Neurochem",
-          "year": "2025"
-        },
-        {
-          "pmid": "39018246",
-          "title": "Proteomic analysis reveals a PLK1-dependent G2/M degradation program and a role for AKAP2 in coordinating the mitotic cytoskeleton.",
-          "journal": "Cell Rep",
-          "year": "2024"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -7205,10 +6128,10 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1Jam7pJ4py9Ag/bibliography/public",
-      "pubmed_search": "Hacker Kari",
-      "pubmed_count": 1,
+      "pubmed_search": "MyNCBI:1Jam7pJ4py9Ag",
+      "pubmed_count": 17,
       "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
+      "pubmed_ambiguous": false,
       "publications": [],
       "nih_grants": []
     },
@@ -7376,24 +6299,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/jonathan%20james.hansen.1/bibliography/public",
-      "pubmed_count": 2,
-      "pubmed_search": "ComputedAuthors:Hansen J",
-      "pubmed_verified": 2,
+      "pubmed_search": "MyNCBI:jonathan%20james.hansen.1",
+      "pubmed_count": 41,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "29374615",
-          "title": "Prolonged Time to Diagnosis of Eosinophilic Esophagitis Despite Increasing Knowledge of the Disease.",
-          "journal": "Clin Gastroenterol Hepatol",
-          "year": "2018"
-        },
-        {
-          "pmid": "28617448",
-          "title": "Diminishing Effectiveness of Long-Term Maintenance Topical Steroid Therapy in PPI Non-Responsive Eosinophilic Esophagitis.",
-          "journal": "Clin Transl Gastroenterol",
-          "year": "2017"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -7451,42 +6361,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/nathaniel.hathaway.1/bibliography/public",
-      "pubmed_count": 39,
-      "pubmed_search": "ComputedAuthors:Hathaway N",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:nathaniel.hathaway.1",
+      "pubmed_count": 44,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42146153",
-          "title": "Transcriptomic Signature and PROTAC Strategy Revealed Histone Lysine Demethylase as a Target of Anticancer Activity of Deferiprone.",
-          "journal": "ACS Omega",
-          "year": "2026"
-        },
-        {
-          "pmid": "41603740",
-          "title": "Repositioning Antihistamine for Cancer Therapy: Clemizole as a Template for the Design of Liver Tissue-Targeting Epigenetic-Modifying Agents.",
-          "journal": "J Med Chem",
-          "year": "2026"
-        },
-        {
-          "pmid": "41098562",
-          "title": "A First-in-Class Chemical-Induced Proximity System Achieves Dose-Dependent Control of Tumor Protein P53 Gene Activation in Preclinical Models of Gastric Cancer.",
-          "journal": "ACS Pharmacol Transl Sci",
-          "year": "2025"
-        },
-        {
-          "pmid": "40298110",
-          "title": "Dynamic activation of rAAV transgene expression by a small molecule that recruits endogenous transcriptional machinery.",
-          "journal": "Nucleic Acids Res",
-          "year": "2025"
-        },
-        {
-          "pmid": "39423792",
-          "title": "Stalling out chromatin machinery-Oncohistone mutation disrupts heterochromatin memory.",
-          "journal": "Mol Cell",
-          "year": "2024"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -7618,42 +6497,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1zio6X9J2Cv15B/bibliography/public",
-      "pubmed_count": 8,
-      "pubmed_search": "ComputedAuthors:Higgins Dominique",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1zio6X9J2Cv15B",
+      "pubmed_count": 42,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42296555",
-          "title": "Invasive sellar extraventricular neurocytoma: illustrative case.",
-          "journal": "J Neurosurg Case Lessons",
-          "year": "2026"
-        },
-        {
-          "pmid": "42131754",
-          "title": "Evaluating the current neuro-oncology capacity in Sub-Saharan Africa: A questionnaire-based survey.",
-          "journal": "Neurooncol Pract",
-          "year": "2026"
-        },
-        {
-          "pmid": "41785221",
-          "title": "An ex vivo functional biomarker of treatment response in pediatric low-grade glioma.",
-          "journal": "PLoS One",
-          "year": "2026"
-        },
-        {
-          "pmid": "41663549",
-          "title": "Symptomatic radiation necrosis after concurrent targeted therapy and stereotactic radiosurgery for brain metastases: a bicentric retrospective analysis.",
-          "journal": "J Neurooncol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41474743",
-          "title": "Combinatorial treatment of glioblastoma with temozolomide (TMZ) plus 5-ethynyl-2'-deoxyuridine (EdU).",
-          "journal": "Proc Natl Acad Sci U S A",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -7711,42 +6559,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/14uAQxVdCbLQ3/bibliography/public",
-      "pubmed_count": 72,
-      "pubmed_search": "ComputedAuthors:Hingtgen SD",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:14uAQxVdCbLQ3",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42280260",
-          "title": "High-Resolution 3D Bioprinted Hydrogel Scaffolds Enable Sustained Intraperitoneal Cell Delivery.",
-          "journal": "Molecules",
-          "year": "2026"
-        },
-        {
-          "pmid": "42191907",
-          "title": "A novel ex vivo platform for functional evaluation of treatment responses in metastatic ovarian cancer.",
-          "journal": "NPJ Precis Oncol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41957222",
-          "title": "Injectable thermoresponsive hydrogel scaffold for enhanced delivery of next-generation induced neural stem cells for treatment of glioblastoma.",
-          "journal": "Drug Deliv Transl Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "41785221",
-          "title": "An ex vivo functional biomarker of treatment response in pediatric low-grade glioma.",
-          "journal": "PLoS One",
-          "year": "2026"
-        },
-        {
-          "pmid": "41583922",
-          "title": "Characterization of a Bioprinted Anticancer Cell Therapy System Generated with Continuous Liquid Interface Production.",
-          "journal": "Adv Nanobiomed Res",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -7804,42 +6621,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1R1h0lkBOmGkE/bibliography/public",
-      "pubmed_count": 80,
-      "pubmed_search": "ComputedAuthors:Hisada Yohei",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1R1h0lkBOmGkE",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42023399",
-          "title": "Cathepsin G is associated with cerebral vascular injury in myeloid leukemia: a pathologic insight into intracranial hemorrhage.",
-          "journal": "Res Pract Thromb Haemost",
-          "year": "2026"
-        },
-        {
-          "pmid": "41584230",
-          "title": "Comparison of changes in blood cells and hemostatic biomarkers in mouse xenograft models of acute myeloid leukemia and acute promyelocytic leukemia.",
-          "journal": "Res Pract Thromb Haemost",
-          "year": "2026"
-        },
-        {
-          "pmid": "40905116",
-          "title": "Profibrinolytic Factors and Cancer Progression, Metastasis, and Survival.",
-          "journal": "Arterioscler Thromb Vasc Biol",
-          "year": "2025"
-        },
-        {
-          "pmid": "40741180",
-          "title": "The regulation of cancer-associated thrombosis by podoplanin.",
-          "journal": "Thromb Update",
-          "year": "2024"
-        },
-        {
-          "pmid": "40626510",
-          "title": "Hemostatic abnormalities in acute promyelocytic leukemia: clinical implications and mechanisms.",
-          "journal": "Curr Opin Hematol",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -7955,10 +6741,10 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/mohammad.hossain.12/bibliography/public",
-      "pubmed_search": "Hossain M",
-      "pubmed_count": 1,
+      "pubmed_search": "MyNCBI:mohammad.hossain.12",
+      "pubmed_count": 26,
       "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
+      "pubmed_ambiguous": false,
       "publications": [],
       "nih_grants": []
     },
@@ -8149,24 +6935,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1rKXDxiN-ty55/bibliography/public",
-      "pubmed_count": 2,
-      "pubmed_search": "ComputedAuthors:Hwang Janice",
-      "pubmed_verified": 2,
+      "pubmed_search": "MyNCBI:1rKXDxiN-ty55",
+      "pubmed_count": 28,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "38831482",
-          "title": "Low-calorie diet-induced weight loss is associated with altered brain connectivity and food desire in obesity.",
-          "journal": "Obesity (Silver Spring)",
-          "year": "2024"
-        },
-        {
-          "pmid": "2529347",
-          "title": "Serum endorphin levels in uremic patients under maintenance hemodialysis.",
-          "journal": "Taiwan Yi Xue Hui Za Zhi",
-          "year": "1989"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -8224,42 +6997,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1DurACX3IYL/bibliography/public",
+      "pubmed_search": "MyNCBI:1DurACX3IYL",
       "pubmed_count": 34,
-      "pubmed_search": "ComputedAuthors:Ideraabdullah FY",
-      "pubmed_verified": 5,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41807790",
-          "title": "Dietary folate supplementation modifies effects of arsenic exposure on DNA methylation profiles in sperm of mice expressing the human AS3MT.",
-          "journal": "Arch Toxicol",
-          "year": "2026"
-        },
-        {
-          "pmid": "40884172",
-          "title": "Interindividual Genetic Differences Drive Discordance Between Serum Calcidiol and Calcitriol Concentrations in Females.",
-          "journal": "Endocrinology",
-          "year": "2025"
-        },
-        {
-          "pmid": "40524209",
-          "title": "The impact of early-life exposures on growth and adult gut microbiome composition is dependent on genetic strain and parent- of- origin.",
-          "journal": "Microbiome",
-          "year": "2025"
-        },
-        {
-          "pmid": "40504410",
-          "title": "Transgenerational diabetogenic effects of preconception exposure to inorganic arsenic in C57BL/6 mice are associated with dysregulation of DNA methylation and gene expression in G1 and G2 offspring.",
-          "journal": "Arch Toxicol",
-          "year": "2025"
-        },
-        {
-          "pmid": "39894169",
-          "title": "Heritable dysregulation of DNA methylation may underlie the diabetogenic effects of paternal preconception exposure to inorganic arsenic in C57BL/6J mice.",
-          "journal": "Toxicol Appl Pharmacol",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -8271,10 +7013,10 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/michael.iglesia.1/bibliography/public",
-      "pubmed_search": "Iglesia M",
-      "pubmed_count": 1,
+      "pubmed_search": "MyNCBI:michael.iglesia.1",
+      "pubmed_count": 13,
       "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
+      "pubmed_ambiguous": false,
       "publications": [],
       "nih_grants": []
     },
@@ -8315,36 +7057,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/rumey.ishizawar.1/bibliography/public",
-      "pubmed_count": 4,
-      "pubmed_search": "ComputedAuthors:Ishizawar R",
-      "pubmed_verified": 4,
+      "pubmed_search": "MyNCBI:rumey.ishizawar.1",
+      "pubmed_count": 16,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41312639",
-          "title": "Experiential Learning for Developing Telehealth and Shared Decision-Making Skills during Rheumatology Fellowship.",
-          "journal": "Arthritis Care Res (Hoboken)",
-          "year": "2025"
-        },
-        {
-          "pmid": "40598751",
-          "title": "Assessment of Rheumatology Fellows' Skills as Clinical Teachers Through Self-Assessment and Direct Observation.",
-          "journal": "Arthritis Care Res (Hoboken)",
-          "year": "2025"
-        },
-        {
-          "pmid": "40563660",
-          "title": "Neutrophil to Lymphocyte Ratio as a Biomarker for the Prediction of Cancer Outcomes and Immune-Related Adverse Events in a CTLA-4-Treated Population.",
-          "journal": "Cancers (Basel)",
-          "year": "2025"
-        },
-        {
-          "pmid": "39264061",
-          "title": "Multiple Gastrointestinal Immune-Related Adverse Events From Immune Checkpoint Inhibitor Therapy.",
-          "journal": "Clin Transl Gastroenterol",
-          "year": "2024"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -8568,42 +7285,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/christopher.jensen.1/bibliography/public",
-      "pubmed_count": 5,
-      "pubmed_search": "ComputedAuthors:Jensen C",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:christopher.jensen.1",
+      "pubmed_count": 27,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42210871",
-          "title": "Screening and care for individuals experiencing human trafficking: A practical guide for gynecology and obstetrics providers.",
-          "journal": "Int J Gynaecol Obstet",
-          "year": "2026"
-        },
-        {
-          "pmid": "42105800",
-          "title": "The effect of metformin on perinatal outcomes in pregnant women with type 2 diabetes differs by baseline insulin requirements.",
-          "journal": "Am J Obstet Gynecol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41636231",
-          "title": "Bringing MOUD \"In House\": Implementing an Internal MOUD Program During Pregnancy in a State Prison.",
-          "journal": "J Correct Health Care",
-          "year": "2026"
-        },
-        {
-          "pmid": "40878750",
-          "title": "Assessing wireless and wearable sensors for continuous blood pressure measurement in obese pregnant people.",
-          "journal": "Int J Gynaecol Obstet",
-          "year": "2026"
-        },
-        {
-          "pmid": "39878863",
-          "title": "Association Between Preterm Birth and Fulfillment of Desired Permanent Contraception.",
-          "journal": "Matern Child Health J",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -8729,42 +7415,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/corbin.jones.1/bibliography/public",
-      "pubmed_count": 131,
-      "pubmed_search": "ComputedAuthors:Jones C",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:corbin.jones.1",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42172676",
-          "title": "Cytokinin histidine kinase receptors regulate multiple aspects of rice growth and development.",
-          "journal": "Plant Physiol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41772054",
-          "title": "Author Correction: Root microbiota drive direct integration of phosphate stress and immunity.",
-          "journal": "Nature",
-          "year": "2026"
-        },
-        {
-          "pmid": "39651238",
-          "title": "Evolutionary rescue model informs strategies for driving cancer cell populations to extinction.",
-          "journal": "bioRxiv",
-          "year": "2025"
-        },
-        {
-          "pmid": "39001868",
-          "title": "Highly contiguous genome assembly of Drosophila prolongata-a model for evolution of sexual dimorphism and male-specific innovations.",
-          "journal": "G3 (Bethesda)",
-          "year": "2024"
-        },
-        {
-          "pmid": "36266335",
-          "title": "Diverse MarR bacterial regulators of auxin catabolism in the plant microbiome.",
-          "journal": "Nat Microbiol",
-          "year": "2022"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -8945,42 +7600,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/temitope.keku.1/bibliography/public",
-      "pubmed_count": 151,
-      "pubmed_search": "ComputedAuthors:Keku T",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:temitope.keku.1",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41920173",
-          "title": "TGF-&#x3b2; Pathway-Based Polygenic Risk Score Modifies the Association between Red Meat Intake and Colorectal Cancer Risk: Application of a Novel Pathway-Based PRS Method.",
-          "journal": "Cancer Epidemiol Biomarkers Prev",
-          "year": "2026"
-        },
-        {
-          "pmid": "41645200",
-          "title": "Genetic risk factors modulate the association between physical activity and colorectal cancer.",
-          "journal": "BMC Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "41575985",
-          "title": "Stool and vaginal microbiome profiles patterns among Black and White endometrial cancer survivors: A pilot study in North Carolina.",
-          "journal": "PLoS One",
-          "year": "2026"
-        },
-        {
-          "pmid": "41556857",
-          "title": "HLA Heterozygosity Influences Colorectal Cancer Risk and Survival Outcome.",
-          "journal": "Gastroenterology",
-          "year": "2026"
-        },
-        {
-          "pmid": "41168411",
-          "title": "Multiple polygenic score approach in colorectal cancer risk prediction.",
-          "journal": "Sci Rep",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -8992,8 +7616,8 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/14I_pskrIYbUep/bibliography/public",
-      "pubmed_search": "14I_pskrIYbUep[Author Identifier]",
-      "pubmed_count": 75,
+      "pubmed_search": "MyNCBI:14I_pskrIYbUep",
+      "pubmed_count": 50,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
       "publications": [],
@@ -9314,30 +7938,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/adam.kimple.1/bibliography/public",
-      "pubmed_count": 3,
-      "pubmed_search": "ComputedAuthors:Kimple A",
-      "pubmed_verified": 3,
+      "pubmed_search": "MyNCBI:adam.kimple.1",
+      "pubmed_count": 40,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42147490",
-          "title": "An integrated single-cell and spatial proteotranscriptomics atlas of fibroblast-driven immunoregulation within the human adult oral cavity.",
-          "journal": "Cell Press Blue",
-          "year": "2026"
-        },
-        {
-          "pmid": "40494852",
-          "title": "Polybacterial intracellular macromolecules shape single-cell inflammatory profiles in upper airway epithelia.",
-          "journal": "NPJ Biofilms Microbiomes",
-          "year": "2025"
-        },
-        {
-          "pmid": "39677739",
-          "title": "The Immunoregulatory Architecture of the Adult Oral Cavity.",
-          "journal": "bioRxiv",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -9535,8 +8140,8 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/14a2ctPVqDHQv/bibliography/public",
-      "pubmed_search": "Kovalski Joanna",
-      "pubmed_count": 0,
+      "pubmed_search": "MyNCBI:14a2ctPVqDHQv",
+      "pubmed_count": 16,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
       "publications": [],
@@ -9551,42 +8156,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/sarah.kowitt.1/bibliography/public",
-      "pubmed_count": 86,
-      "pubmed_search": "ComputedAuthors:Kowitt SD",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:sarah.kowitt.1",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42152547",
-          "title": "Exploring the Relationship Between Racial Microaggressions and Substance Use in Asian Americans.",
-          "journal": "Subst Use Misuse",
-          "year": "2026"
-        },
-        {
-          "pmid": "41620086",
-          "title": "Optimizing Little Cigar and Cigarillo Warnings for Youth: The Perceived Effectiveness of Pictorial Warning Image Characteristics.",
-          "journal": "Subst Use Misuse",
-          "year": "2026"
-        },
-        {
-          "pmid": "41617163",
-          "title": "Perceived Effectiveness of Cigar Warnings Among Young People in the U.S.",
-          "journal": "Am J Prev Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "41506908",
-          "title": "Examining the influence of descriptors used to market unflavoured cigarillos: an experiment with a sample of youth and young adults from the USA.",
-          "journal": "Tob Control",
-          "year": "2026"
-        },
-        {
-          "pmid": "41389070",
-          "title": "Characterizing the Objective Features of Vaping Prevention Video Ads: A Content Analysis.",
-          "journal": "Am J Prev Med",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -9598,42 +8172,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1VEChdcTnnzQF/bibliography/public",
-      "pubmed_count": 5,
-      "pubmed_search": "ComputedAuthors:Kram David",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1VEChdcTnnzQF",
+      "pubmed_count": 27,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42014872",
-          "title": "Correction: Automated computer vision and dose-response modeling improve throughput and accuracy of an ex vivo functional precision medicine platform.",
-          "journal": "Sci Rep",
-          "year": "2026"
-        },
-        {
-          "pmid": "41402401",
-          "title": "Automated computer vision and dose-response modeling improve throughput and accuracy of an ex vivo functional precision medicine platform.",
-          "journal": "Sci Rep",
-          "year": "2025"
-        },
-        {
-          "pmid": "41282203",
-          "title": "Rapid Functional Drug Screening of Passage-Zero Patient Brain Tumor Tissues Ex Vivo: Results from a Clinical Feasibility Study.",
-          "journal": "Res Sq",
-          "year": "2025"
-        },
-        {
-          "pmid": "41270976",
-          "title": "Informing development of brain cancer therapies within \"preclinical trials\" using ex vivo patient tumors.",
-          "journal": "Adv Drug Deliv Rev",
-          "year": "2026"
-        },
-        {
-          "pmid": "40964008",
-          "title": "Automated Computer Vision and Dose-Response Modeling Improve Throughput and Accuracy of an Ex Vivo Functional Precision Medicine Platform.",
-          "journal": "Res Sq",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -9832,42 +8375,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1beau9tUDaoQt/bibliography/public",
-      "pubmed_count": 108,
-      "pubmed_search": "ComputedAuthors:Lai Sam",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1beau9tUDaoQt",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42144491",
-          "title": "A Droplet Digital PCR Assay for Quantification of Bacteriophage Viral Vector Titer and Purity.",
-          "journal": "Ann Biomed Eng",
-          "year": "2026"
-        },
-        {
-          "pmid": "40986358",
-          "title": "Preferential apical infection and spread of human metapneumovirus highlights the importance of inhaled delivery of neutralizing monoclonal antibody to treat established infections.",
-          "journal": "Proc Natl Acad Sci U S A",
-          "year": "2025"
-        },
-        {
-          "pmid": "40698582",
-          "title": "Engineering Decavalent, Sperm-Binding Laminin-IgG Hybrid Antibodies for Potent Non-Hormonal Contraception.",
-          "journal": "Adv Sci (Weinh)",
-          "year": "2025"
-        },
-        {
-          "pmid": "39777459",
-          "title": "Defining serine tRNA knockout as a strategy for effective repression of gene expression in organisms with a recoded genome.",
-          "journal": "Nucleic Acids Res",
-          "year": "2025"
-        },
-        {
-          "pmid": "39553435",
-          "title": "Siglec15/TGF-&#x3b2; bispecific antibody mediates synergistic anti-tumor response against 4T1 triple negative breast cancer in mice.",
-          "journal": "Bioeng Transl Med",
-          "year": "2024"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -10032,42 +8544,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1H9Wguosi5kAW3/bibliography/public",
+      "pubmed_search": "MyNCBI:1H9Wguosi5kAW3",
       "pubmed_count": 20,
-      "pubmed_search": "ComputedAuthors:LeBlanc Matthew",
-      "pubmed_verified": 5,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41588752",
-          "title": "Treatment Initiation Among Black and White Older Adults With Multiple Myeloma: A SEER-Medicare Analysis.",
-          "journal": "Cancer Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "40853905",
-          "title": "Protocol for a scoping review of time to treatment in adults with newly diagnosed multiple myeloma.",
-          "journal": "PLoS One",
-          "year": "2025"
-        },
-        {
-          "pmid": "40259680",
-          "title": "Exploring the landscape of palliative care provision for black patients with hematologic cancers: A scoping review.",
-          "journal": "Palliat Support Care",
-          "year": "2025"
-        },
-        {
-          "pmid": "39706780",
-          "title": "Association of p16(INK4a), a biomarker of cellular senescence, with receipt of therapy and frailty status among adults with plasma cell disorders.",
-          "journal": "J Geriatr Oncol",
-          "year": "2025"
-        },
-        {
-          "pmid": "39106434",
-          "title": "Structural Racism and Treatment Delay Among Black and White Patients With Breast Cancer.",
-          "journal": "J Clin Oncol",
-          "year": "2024"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -10125,42 +8606,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/carrie.lee.1/bibliography/public",
-      "pubmed_count": 48,
-      "pubmed_search": "ComputedAuthors:Lee C",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:carrie.lee.1",
+      "pubmed_count": 47,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42228313",
-          "title": "Building the Oncology Workforce: A Qualitative Evaluation of an Inter-Institutional Cancer Research Internship for Underrepresented Undergraduate Students.",
-          "journal": "J Cancer Educ",
-          "year": "2026"
-        },
-        {
-          "pmid": "41915024",
-          "title": "Building HOPE: operationalizing hybrid decentralized oncology clinical trials with community providers beyond traditional healthcare system networks.",
-          "journal": "Oncologist",
-          "year": "2026"
-        },
-        {
-          "pmid": "41911514",
-          "title": "Clinicogenomic Characteristics and Treatment Outcomes of Patients With Advanced ALK-Rearranged Squamous and Adenosquamous Non-Small Cell Lung Cancers.",
-          "journal": "JCO Precis Oncol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41663549",
-          "title": "Symptomatic radiation necrosis after concurrent targeted therapy and stereotactic radiosurgery for brain metastases: a bicentric retrospective analysis.",
-          "journal": "J Neurooncol",
-          "year": "2026"
-        },
-        {
-          "pmid": "40991878",
-          "title": "Benchmarking the Current Landscape: Insights From an Association of American Cancer Institutes Survey on Academic Cancer Service Lines.",
-          "journal": "JCO Oncol Pract",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -10218,42 +8668,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/jordan.lee.3/bibliography/public",
-      "pubmed_count": 111,
-      "pubmed_search": "ComputedAuthors:Lee J",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:jordan.lee.3",
+      "pubmed_count": 20,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42319330",
-          "title": "A tooth autotransplantation cost model for pediatric through young adult patients.",
-          "journal": "J Am Dent Assoc",
-          "year": "2026"
-        },
-        {
-          "pmid": "41980731",
-          "title": "Dental Surgeries in Hospitals and Surgery Centers for Children With Developmental Disabilities.",
-          "journal": "Hosp Pediatr",
-          "year": "2026"
-        },
-        {
-          "pmid": "41866747",
-          "title": "Policy Levers to Support the Transition From Pediatric to Adult Dental Care for People With Intellectual and Developmental Disabilities.",
-          "journal": "J Public Health Dent",
-          "year": "2026"
-        },
-        {
-          "pmid": "41071549",
-          "title": "Medicaid Payments and Outcomes for Pediatric Dental Surgical Procedures by Site of Care.",
-          "journal": "JAMA Netw Open",
-          "year": "2025"
-        },
-        {
-          "pmid": "39893138",
-          "title": "Exploring the Link Between Maternal Oral Health Literacy and Child Oral Health Behaviours.",
-          "journal": "Int Dent J",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -10357,8 +8776,8 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/wesley.legant.1/bibliography/public",
-      "pubmed_search": "Legant W",
-      "pubmed_count": 0,
+      "pubmed_search": "MyNCBI:wesley.legant.1",
+      "pubmed_count": 48,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
       "publications": [],
@@ -10689,42 +9108,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1nK86LHhhixkX/bibliography/public",
-      "pubmed_count": 140,
-      "pubmed_search": "ComputedAuthors:Liu Mingxia",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1nK86LHhhixkX",
+      "pubmed_count": 42,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42013265",
-          "title": "Topology-Learnable Static-Dynamic Graph Convolutional Network for Brain Disorder Detection With Functional MRI.",
-          "journal": "IEEE Trans Neural Syst Rehabil Eng",
-          "year": "2026"
-        },
-        {
-          "pmid": "41934717",
-          "title": "Learning from heterogeneous structural MRI via collaborative domain adaptation for late-Life depression assessment.",
-          "journal": "Neural Netw",
-          "year": "2026"
-        },
-        {
-          "pmid": "41932134",
-          "title": "Functional imaging constrained diffusion for brain PET synthesis from structural MRI.",
-          "journal": "Med Image Anal",
-          "year": "2026"
-        },
-        {
-          "pmid": "41693959",
-          "title": "Improving Late-Life Depression Analysis with Collaborative Domain Adaptation: Learning from Heterogeneous Structural MRI.",
-          "journal": "Reconstr Imaging Motion Estim Graph Biomed Image Anal (2025)",
-          "year": "2026"
-        },
-        {
-          "pmid": "41473811",
-          "title": "Distribution-Guided Multi-Tracer Brain PET Synthesis from Structural MRI with Class-Conditioned Weighted Diffusion.",
-          "journal": "Med Image Comput Comput Assist Interv",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -10942,42 +9330,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/matthew%20ryen.lockett.1/bibliography/public",
-      "pubmed_count": 68,
-      "pubmed_search": "ComputedAuthors:Lockett MR",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:matthew%20ryen.lockett.1",
+      "pubmed_count": 47,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42300846",
-          "title": "Opportunities and challenges for analytical chemists: organ-on-chip devices as new approach methods (NAMs) for identifying potential toxins.",
-          "journal": "Analyst",
-          "year": "2026"
-        },
-        {
-          "pmid": "42240598",
-          "title": "Syngas Production at Si Hybrid Photoelectrodes Modified with Re(I) and Mn(I) Tricarbonyl Phenanthroline Complexes Containing Reactive Aryl Azide Groups.",
-          "journal": "ACS Appl Mater Interfaces",
-          "year": "2026"
-        },
-        {
-          "pmid": "41178839",
-          "title": "Potential-Controlled Deposition of Multilayer CO2 Reduction Catalyst Films onto Silicon Photoelectrodes Demonstrates Thickness-Dependent Catalytic Rates.",
-          "journal": "ACS Appl Mater Interfaces",
-          "year": "2025"
-        },
-        {
-          "pmid": "40457868",
-          "title": "Immobilizing a Lehn-Type Catalyst with Nitrocyclocondensation Chemistries: CO2 Reduction on Silicon Hybrid Photoelectrodes.",
-          "journal": "ACS Appl Mater Interfaces",
-          "year": "2025"
-        },
-        {
-          "pmid": "40156146",
-          "title": "An analytical screening platform to differentiate acute and prolonged exposures of per- and polyfluoroalkyl substances on invasive cellular phenotypes.",
-          "journal": "Toxicol Sci",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -10989,42 +9346,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/richard.loeser.1/bibliography/public",
-      "pubmed_count": 21,
-      "pubmed_search": "ComputedAuthors:Loeser R",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:richard.loeser.1",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42301751",
-          "title": "Harnessing Hydrogel Interaction with Functional Polymeric Nanoparticles for Sustained Co-Delivery of Therapeutics.",
-          "journal": "ACS Biomater Sci Eng",
-          "year": "2026"
-        },
-        {
-          "pmid": "42019906",
-          "title": "Osteoarthritic synovial fibroblasts drive inflammatory responses and impair chondrocyte function in response to a fibronectin matrikine.",
-          "journal": "Osteoarthritis Cartilage",
-          "year": "2026"
-        },
-        {
-          "pmid": "41938330",
-          "title": "Body Mass Index Influences Tibiofemoral Cartilage Composition and Biochemistry in Individuals With Anterior Cruciate Ligament Injury.",
-          "journal": "J Athl Train",
-          "year": "2026"
-        },
-        {
-          "pmid": "41856458",
-          "title": "Screening of an FDA-approved drug library reveals MEK1/2 inhibitors block production of osteoarthritis mediators in activated human chondrocytes and synovial fibroblasts.",
-          "journal": "Osteoarthritis Cartilage",
-          "year": "2026"
-        },
-        {
-          "pmid": "41178714",
-          "title": "Repurposing the antihistamine cyproheptadine for osteoarthritis: nothing to sneeze at.",
-          "journal": "J Clin Invest",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -11098,10 +9424,10 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/michael.love.2/bibliography/public",
-      "pubmed_search": "Love M",
-      "pubmed_count": 2,
+      "pubmed_search": "MyNCBI:michael.love.2",
+      "pubmed_count": 50,
       "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
+      "pubmed_ambiguous": false,
       "publications": [],
       "nih_grants": []
     },
@@ -11114,42 +9440,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1zIfcqiKRRckm/bibliography/public",
-      "pubmed_count": 248,
-      "pubmed_search": "ComputedAuthors:Lund JL",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1zIfcqiKRRckm",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42209563",
-          "title": "Trajectories of antidepressant dispensing among privately insured transgender people in the United States.",
-          "journal": "Sci Rep",
-          "year": "2026"
-        },
-        {
-          "pmid": "41954601",
-          "title": "Impacts of Hurricane-Related Flooding on Time to Initial Cancer-Directed Treatment in North Carolina.",
-          "journal": "Cancer Epidemiol Biomarkers Prev",
-          "year": "2026"
-        },
-        {
-          "pmid": "41885380",
-          "title": "Exploring Clinical Pathways to a Metastatic Lung Cancer Diagnosis: A Latent Class Analysis Using North Carolina Multipayer Claims Data.",
-          "journal": "Cancer Epidemiol Biomarkers Prev",
-          "year": "2026"
-        },
-        {
-          "pmid": "41875911",
-          "title": "Prediction models for overall survival and all-cause mortality risk in older adults with cancer: a systematic review.",
-          "journal": "Lancet Healthy Longev",
-          "year": "2026"
-        },
-        {
-          "pmid": "41812068",
-          "title": "Patient-, Provider-, and Area-Level Factors Associated with Hepatocellular Carcinoma Surveillance in Patients with Cirrhosis in North Carolina.",
-          "journal": "N C Med J",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -11161,42 +9456,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/alice.ma.2/bibliography/public",
+      "pubmed_search": "MyNCBI:alice.ma.2",
       "pubmed_count": 41,
-      "pubmed_search": "ComputedAuthors:Ma A",
-      "pubmed_verified": 5,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41658980",
-          "title": "Relationships between bleeding assessment tools (ISTH-BAT, Self-BAT) and quality of life in patients with bleeding symptoms.",
-          "journal": "Res Pract Thromb Haemost",
-          "year": "2026"
-        },
-        {
-          "pmid": "39716893",
-          "title": "Research Letter: Patient Attitudes Towards Haemophilia Gene Therapy at a US Haemophilia Treatment Center.",
-          "journal": "Haemophilia",
-          "year": "2025"
-        },
-        {
-          "pmid": "39536818",
-          "title": "Acquired hemophilia A: a narrative review and management approach in the emicizumab era.",
-          "journal": "J Thromb Haemost",
-          "year": "2025"
-        },
-        {
-          "pmid": "39498237",
-          "title": "Periprocedural hemostatic prophylaxis and outcomes in bleeding disorder of unknown cause.",
-          "journal": "Res Pract Thromb Haemost",
-          "year": "2024"
-        },
-        {
-          "pmid": "38469811",
-          "title": "Free PEG Suppresses Anaphylaxis to PEGylated Nanomedicine in Swine.",
-          "journal": "ACS Nano",
-          "year": "2024"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -11457,36 +9721,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1VEsicdXseaEJo/bibliography/public",
-      "pubmed_count": 4,
-      "pubmed_search": "ComputedAuthors:Mansfield LN",
-      "pubmed_verified": 4,
+      "pubmed_search": "MyNCBI:1VEsicdXseaEJo",
+      "pubmed_count": 14,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42228696",
-          "title": "Exploring primary care health professionals' perceived influence of their communication on HPV vaccine acceptance: Results from a national survey.",
-          "journal": "PLoS One",
-          "year": "2026"
-        },
-        {
-          "pmid": "42014662",
-          "title": "Risk and Protective Factors of Perinatal Depression in Perinatal Latinas: a Systematic Review.",
-          "journal": "J Racial Ethn Health Disparities",
-          "year": "2026"
-        },
-        {
-          "pmid": "41918515",
-          "title": "Emphasizing Science: Black Pastors Encourage Awareness of Medical Information about COVID-19 Vaccine.",
-          "journal": "Glob J Health Sci",
-          "year": "2026"
-        },
-        {
-          "pmid": "38816304",
-          "title": "HPV vaccine standing orders and communication in primary care: A qualitative study.",
-          "journal": "Vaccine",
-          "year": "2024"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -11498,36 +9737,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/david.margolis.1/bibliography/public",
-      "pubmed_count": 4,
-      "pubmed_search": "ComputedAuthors:Margolis D",
-      "pubmed_verified": 4,
+      "pubmed_search": "MyNCBI:david.margolis.1",
+      "pubmed_count": 48,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41857005",
-          "title": "Association of long COVID with health-related quality-of-life outcomes.",
-          "journal": "Sci Rep",
-          "year": "2026"
-        },
-        {
-          "pmid": "39400063",
-          "title": "Viral and Symptom Rebound Following Anti-Severe Acute Respiratory Syndrome Coronavirus 2 Monoclonal Antibody Therapy in a Randomized Placebo-Controlled Trial.",
-          "journal": "J Infect Dis",
-          "year": "2025"
-        },
-        {
-          "pmid": "39252866",
-          "title": "Post-acute COVID-19 outcomes including participant-reported long COVID: amubarvimab/romlusevimab versus placebo in the ACTIV-2 trial.",
-          "journal": "EClinicalMedicine",
-          "year": "2024"
-        },
-        {
-          "pmid": "18181909",
-          "title": "Clinical and electrical performance of expanded polytetrafluoroethylene-covered defibrillator leads in comparison to traditional leads.",
-          "journal": "Pacing Clin Electrophysiol",
-          "year": "2008"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -11585,24 +9799,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1zs-cpM4Rlbc7i/bibliography/public",
-      "pubmed_count": 2,
-      "pubmed_search": "ComputedAuthors:Marron JS",
-      "pubmed_verified": 2,
+      "pubmed_search": "MyNCBI:1zs-cpM4Rlbc7i",
+      "pubmed_count": 46,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41701697",
-          "title": "96 sample parallel acoustic fragmentation for high throughput next generation sequencing library preparation.",
-          "journal": "PLoS One",
-          "year": "2026"
-        },
-        {
-          "pmid": "38800658",
-          "title": "Region of Interest Detection in Melanocytic Skin Tumor Whole Slide Images - Nevus &amp; Melanoma.",
-          "journal": "ArXiv",
-          "year": "2024"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -11726,10 +9927,10 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/18a4txO0oyuAy/bibliography/public",
-      "pubmed_search": "McKay D",
-      "pubmed_count": 13,
+      "pubmed_search": "MyNCBI:18a4txO0oyuAy",
+      "pubmed_count": 50,
       "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
+      "pubmed_ambiguous": false,
       "publications": [],
       "nih_grants": []
     },
@@ -11757,36 +9958,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/jeremy.meier.1/bibliography/public",
-      "pubmed_count": 4,
-      "pubmed_search": "ComputedAuthors:Meier J",
-      "pubmed_verified": 4,
+      "pubmed_search": "MyNCBI:jeremy.meier.1",
+      "pubmed_count": 23,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41289760",
-          "title": "Inhalation exposure to a tire-derived pollutant (6-PPD) triggers lung injury and mitochondrial dysfunction in mice.",
-          "journal": "Ecotoxicol Environ Saf",
-          "year": "2025"
-        },
-        {
-          "pmid": "38490211",
-          "title": "Acetyl-CoA carboxylase obstructs CD8+ T&#xa0;cell lipid utilization in the tumor microenvironment.",
-          "journal": "Cell Metab",
-          "year": "2024"
-        },
-        {
-          "pmid": "35753868",
-          "title": "Game of clones: Diverse implications for clonal hematopoiesis in lymphoma and multiple myeloma.",
-          "journal": "Blood Rev",
-          "year": "2022"
-        },
-        {
-          "pmid": "35044794",
-          "title": "B Cell Function in the Tumor Microenvironment.",
-          "journal": "Annu Rev Immunol",
-          "year": "2022"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -11952,42 +10128,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/jayson.miedema.1/bibliography/public",
-      "pubmed_count": 44,
-      "pubmed_search": "ComputedAuthors:Miedema J",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:jayson.miedema.1",
+      "pubmed_count": 43,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42084393",
-          "title": "Breslow Thickness and Microsatellite Detection in Primary Cutaneous Melanoma: Implications for Oncologic Surgeons and Patients.",
-          "journal": "Am Surg",
-          "year": "2026"
-        },
-        {
-          "pmid": "41542303",
-          "title": "An extraordinary presentation of mycobacterium avium cellulitis.",
-          "journal": "JAAD Case Rep",
-          "year": "2026"
-        },
-        {
-          "pmid": "41527214",
-          "title": "Prognostic Value of a Novel Nuclear Grading of Cutaneous Melanoma: The UNC Chapel Hill Method.",
-          "journal": "Am J Surg Pathol",
-          "year": "2026"
-        },
-        {
-          "pmid": "40995172",
-          "title": "Three cases of cutaneous blastomycosis in immunocompetent patients.",
-          "journal": "JAAD Case Rep",
-          "year": "2025"
-        },
-        {
-          "pmid": "40238144",
-          "title": "Recurring Papules and Nodules on the Vulva.",
-          "journal": "JAMA Dermatol",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -11999,42 +10144,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1LorccQuJ1PQP/bibliography/public",
-      "pubmed_count": 47,
-      "pubmed_search": "ComputedAuthors:Miguez Patricia",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1LorccQuJ1PQP",
+      "pubmed_count": 43,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42001252",
-          "title": "Association between periodontitis and oral health-related quality of life in patients with systemic conditions: A meta-analysis.",
-          "journal": "J Periodontol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41446133",
-          "title": "Melanoregulin Deficiency Affects Bone Maintenance and Lean Body Mass.",
-          "journal": "bioRxiv",
-          "year": "2025"
-        },
-        {
-          "pmid": "40931708",
-          "title": "Recent advancements in artificial intelligence-powered cancer prediction from oral microbiome.",
-          "journal": "Periodontol 2000",
-          "year": "2025"
-        },
-        {
-          "pmid": "40558900",
-          "title": "Evaluation of Two Alloplastic Biomaterials in a Critical-Size Rat Calvarial Defect Model.",
-          "journal": "J Funct Biomater",
-          "year": "2025"
-        },
-        {
-          "pmid": "39917638",
-          "title": "Does diabetes mellitus affect guided bone regeneration outcomes in individuals undergoing dental implants? A systematic review and meta-analysis.",
-          "journal": "Front Dent Med",
-          "year": "2024"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -12046,42 +10160,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/brian.miller.4/bibliography/public",
-      "pubmed_count": 11,
-      "pubmed_search": "ComputedAuthors:Miller B",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:brian.miller.4",
+      "pubmed_count": 24,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42022575",
-          "title": "Experienced Stigma Related to Common Mental Illness and Alcohol Use Disorder in Rural Uganda: A Qualitative Study.",
-          "journal": "SSM Ment Health",
-          "year": "2026"
-        },
-        {
-          "pmid": "40632545",
-          "title": "Medicaid 1115 Waivers for Mental Health-Time for Redesign?",
-          "journal": "JAMA Psychiatry",
-          "year": "2025"
-        },
-        {
-          "pmid": "38025436",
-          "title": "Editorial: Mental health equity.",
-          "journal": "Front Psychiatry",
-          "year": "2023"
-        },
-        {
-          "pmid": "37854428",
-          "title": "A theory of change for community-initiated mental health care in the United States.",
-          "journal": "Glob Ment Health (Camb)",
-          "year": "2023"
-        },
-        {
-          "pmid": "36568763",
-          "title": "Scaling up community-delivered mental health support and care: A landscape analysis.",
-          "journal": "Front Public Health",
-          "year": "2022"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -12351,42 +10434,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1twbAauspdnQT/bibliography/public/https://www.ncbi.nlm.nih.gov/myncbi/1twbAauspdnQT/bibliography/public",
-      "pubmed_count": 112,
-      "pubmed_search": "ComputedAuthors:Moon Andrew",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1twbAauspdnQT",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42294094",
-          "title": "Transplantation of older DCD livers in the machine perfusion era: a U.S. cohort study.",
-          "journal": "Transpl Int",
-          "year": "2026"
-        },
-        {
-          "pmid": "42154123",
-          "title": "External Validation of Laboratory-Based Models to Assess Portal Hypertension Severity in Patients with Compensated Chronic Liver Disease.",
-          "journal": "Dig Dis Sci",
-          "year": "2026"
-        },
-        {
-          "pmid": "42139645",
-          "title": "Overall Survival Among Patients With Hepatocellular Carcinoma Treated With External Beam Radiation Therapy: Individual Patient Data Outcomes From a Multinational Cohort.",
-          "journal": "J Clin Oncol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41823658",
-          "title": "Performance Evaluation of the Xpert&#xae; HCV test on Fingerstick Blood in a Prospective Observational Clinical Study at CLIA-Waived Sites in the United States.",
-          "journal": "Clin Infect Dis",
-          "year": "2026"
-        },
-        {
-          "pmid": "41812068",
-          "title": "Patient-, Provider-, and Area-Level Factors Associated with Hepatocellular Carcinoma Surveillance in Patients with Cirrhosis in North Carolina.",
-          "journal": "N C Med J",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -12582,30 +10634,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/kaitlin.morrison.1/bibliography/public/%20/public",
-      "pubmed_search": "Morrison K",
-      "pubmed_count": 5,
-      "pubmed_verified": 3,
+      "pubmed_search": "MyNCBI:kaitlin.morrison.1",
+      "pubmed_count": 11,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "33624095",
-          "title": "Utility of a safety switch to abrogate CD19.CAR T-cell-associated neurotoxicity.",
-          "journal": "Blood",
-          "year": "2021"
-        },
-        {
-          "pmid": "33259598",
-          "title": "Long-term remission in multiply relapsed enteropathy-associated T-cell lymphoma following CD30 CAR T-cell therapy.",
-          "journal": "Blood Adv",
-          "year": "2020"
-        },
-        {
-          "pmid": "32701411",
-          "title": "Anti-CD30 CAR-T Cell Therapy in Relapsed and Refractory Hodgkin Lymphoma.",
-          "journal": "J Clin Oncol",
-          "year": "2020"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -12863,42 +10896,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1jYSm7GLLajAf/bibliography/public",
+      "pubmed_search": "MyNCBI:1jYSm7GLLajAf",
       "pubmed_count": 50,
-      "pubmed_search": "ComputedAuthors:Nakamura Zev",
-      "pubmed_verified": 5,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42267689",
-          "title": "Examining bidirectional longitudinal relationships between physical activity and physical function in older breast cancer survivors: The Thinking and Living with Cancer study.",
-          "journal": "Cancer",
-          "year": "2026"
-        },
-        {
-          "pmid": "42250524",
-          "title": "Response to letter in response to: \"Melatonin prescribing characteristics and delirium outcomes: A health system database-based study\".",
-          "journal": "Gen Hosp Psychiatry",
-          "year": "2026"
-        },
-        {
-          "pmid": "42140022",
-          "title": "Melatonin prescribing characteristics and delirium outcomes: A health system database-based study.",
-          "journal": "Gen Hosp Psychiatry",
-          "year": "2026"
-        },
-        {
-          "pmid": "41844559",
-          "title": "Interaction of endocrine therapy for breast cancer with APOE4 status on cognition over 5-year follow-up.",
-          "journal": "JNCI Cancer Spectr",
-          "year": "2026"
-        },
-        {
-          "pmid": "41711655",
-          "title": "Associations Between Neurobehavioral Symptoms During Breast Cancer Chemotherapy and Patient-Reported Cognitive Impairment 3 or More Years After Chemotherapy.",
-          "journal": "Psychooncology",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -12910,42 +10912,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/juliane.nguyen.1/bibliography/public",
-      "pubmed_count": 22,
-      "pubmed_search": "ComputedAuthors:Nguyen J",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:juliane.nguyen.1",
+      "pubmed_count": 17,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42204264",
-          "title": "From inflammation to fibrosis and cancer: the emerging role of AIEC-derived metabolites in intestinal disease progression.",
-          "journal": "Exp Mol Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "41942055",
-          "title": "Targeted and quantitatively modeled biologic delivery via dual-functional probiotic yeast in inflammatory bowel disease.",
-          "journal": "J Control Release",
-          "year": "2026"
-        },
-        {
-          "pmid": "41478658",
-          "title": "Pharmacology of next generation therapeutics.",
-          "journal": "J Pharmacol Exp Ther",
-          "year": "2025"
-        },
-        {
-          "pmid": "41135809",
-          "title": "Advanced adhesion and targeting strategies to prolong gut residence time and improve eLBP efficacy in colonic diseases.",
-          "journal": "Adv Drug Deliv Rev",
-          "year": "2025"
-        },
-        {
-          "pmid": "41106435",
-          "title": "Structure-guided design and engineering of a biparatopic antibody targeting CCR2 in triple negative breast cancer.",
-          "journal": "J Control Release",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -12957,42 +10928,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/hazel.nichols.2/bibliography/public",
-      "pubmed_count": 217,
-      "pubmed_search": "ComputedAuthors:Nichols H",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:hazel.nichols.2",
+      "pubmed_count": 26,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42321601",
-          "title": "Perceived Discrimination and Healthcare System Trust as Barriers to Survivorship Care in Endometrial Cancer.",
-          "journal": "Cancer Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "42185225",
-          "title": "Neighborhood Socioeconomic Deprivation and Perceived Discrimination Among Endometrial Cancer Survivors.",
-          "journal": "Psychooncology",
-          "year": "2026"
-        },
-        {
-          "pmid": "41619899",
-          "title": "Birth outcomes after in vitro fertilization among cancer survivors.",
-          "journal": "Fertil Steril",
-          "year": "2026"
-        },
-        {
-          "pmid": "41575985",
-          "title": "Stool and vaginal microbiome profiles patterns among Black and White endometrial cancer survivors: A pilot study in North Carolina.",
-          "journal": "PLoS One",
-          "year": "2026"
-        },
-        {
-          "pmid": "41569390",
-          "title": "Joint effects of IVF and cancer history on birth outcomes.",
-          "journal": "J Assist Reprod Genet",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -13240,8 +11180,8 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1py_Nzy0uQZIgG/bibliography/public",
-      "pubmed_search": "1py_Nzy0uQZIgG[Author Identifier]",
-      "pubmed_count": 194,
+      "pubmed_search": "MyNCBI:1py_Nzy0uQZIgG",
+      "pubmed_count": 31,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
       "publications": [],
@@ -13593,18 +11533,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/shetal.patel.1/bibliography/public",
-      "pubmed_count": 1,
-      "pubmed_search": "ComputedAuthors:Patel S",
-      "pubmed_verified": 1,
+      "pubmed_search": "MyNCBI:shetal.patel.1",
+      "pubmed_count": 27,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42194060",
-          "title": "Epitranscriptomic Stability-Variable Extents of N1-Methyladenosine to N6-Methyladenosine Conversion Under Different Experimental Conditions.",
-          "journal": "Biomolecules",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -13616,19 +11549,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/samantha.pattenden.1/bibliography/public",
-      "pubmed_recent_recruit": true,
-      "pubmed_search": "Pattenden S",
-      "pubmed_count": 1,
-      "pubmed_verified": 1,
+      "pubmed_search": "MyNCBI:samantha.pattenden.1",
+      "pubmed_count": 28,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "30846466",
-          "title": "Return of sleep apnoea and sleep fragmentation following CPAP withdrawal in patients with obstructive sleep apnoea.",
-          "journal": "Eur Respir J",
-          "year": "2019"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -14080,24 +12005,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/bradford.powell.2/bibliography/public",
-      "pubmed_count": 2,
-      "pubmed_search": "ComputedAuthors:Powell B",
-      "pubmed_verified": 2,
+      "pubmed_search": "MyNCBI:bradford.powell.2",
+      "pubmed_count": 49,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "38757444",
-          "title": "Implementing evidence-based assertions of clinical actionability in the context of secondary findings: Updates from the ClinGen Actionability Working Group.",
-          "journal": "Genet Med",
-          "year": "2024"
-        },
-        {
-          "pmid": "6729565",
-          "title": "Focal neurologic signs associated with hyperkalemia.",
-          "journal": "South Med J",
-          "year": "1984"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -14109,30 +12021,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/kevin.pruitt.1/bibliography/public",
-      "pubmed_count": 3,
-      "pubmed_search": "ComputedAuthors:Pruitt K",
-      "pubmed_verified": 3,
+      "pubmed_search": "MyNCBI:kevin.pruitt.1",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41978703",
-          "title": "Cryoablation Plus Immune Checkpoint Inhibitors Enhanced Dendritic Cell and T Cell Activation in TNBC Murine Model.",
-          "journal": "Immunotargets Ther",
-          "year": "2026"
-        },
-        {
-          "pmid": "40376615",
-          "title": "Frizzled receptors: gatekeepers of Wnt signaling in development and disease.",
-          "journal": "Front Cell Dev Biol",
-          "year": "2025"
-        },
-        {
-          "pmid": "38100555",
-          "title": "Cancer drugs with high repositioning potential for Alzheimer's disease.",
-          "journal": "Expert Opin Emerg Drugs",
-          "year": "2023"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -14159,42 +12052,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1xwY4zoemihkt/bibliography/public",
-      "pubmed_search": "Pylayeva-Gupta Yuliya",
-      "pubmed_count": 21,
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1xwY4zoemihkt",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41707654",
-          "title": "DeCAF defines clinical fibroblast subtypes and multidimensional tumor-stroma crosstalk shaping prognosis and immunotherapy response.",
-          "journal": "Cell Rep Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "41331086",
-          "title": "Deciphering KRAS inhibitor resistance.",
-          "journal": "Nat Cell Biol",
-          "year": "2026"
-        },
-        {
-          "pmid": "40425012",
-          "title": "Enhancer-driven gene regulatory networks reveal transcription factors governing T cell adaptation and differentiation in the tumor microenvironment.",
-          "journal": "Immunity",
-          "year": "2025"
-        },
-        {
-          "pmid": "39406185",
-          "title": "B cell heterogeneity in cancer comes of age.",
-          "journal": "Cancer Cell",
-          "year": "2024"
-        },
-        {
-          "pmid": "38157865",
-          "title": "Gut epithelial Interleukin-17 receptor A signaling can modulate distant tumors growth through microbial regulation.",
-          "journal": "Cancer Cell",
-          "year": "2024"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -14252,42 +12114,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/jesse.raab.2/bibliography/public",
-      "pubmed_count": 26,
-      "pubmed_search": "ComputedAuthors:Raab J",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:jesse.raab.2",
+      "pubmed_count": 15,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42239058",
-          "title": "Arginine methylation of BAF155 regulates interactions with RNA processing machinery.",
-          "journal": "bioRxiv",
-          "year": "2026"
-        },
-        {
-          "pmid": "42146427",
-          "title": "Chromatin State Distinguishes Injury-Responsive from State-Stabilizing Transcriptional Programs in Hybrid Hepatocytes.",
-          "journal": "bioRxiv",
-          "year": "2026"
-        },
-        {
-          "pmid": "41956937",
-          "title": "Transcriptomic classification and clinicopathologic correlation of hepatocellular neoplasms with steatotic features in non-cirrhotic livers.",
-          "journal": "Pathology",
-          "year": "2026"
-        },
-        {
-          "pmid": "41712409",
-          "title": "Hepatocyte-targeted Bap1 reduction in the liver primes an inflammatory transcriptional response.",
-          "journal": "G3 (Bethesda)",
-          "year": "2026"
-        },
-        {
-          "pmid": "41296561",
-          "title": "Menin-MLL1 complex cooperates with NF-Y to promote hepatocellular carcinoma survival.",
-          "journal": "Cell Rep",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -14299,42 +12130,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1ZgUfg92wK9Qc/bibliography/public",
-      "pubmed_count": 309,
-      "pubmed_search": "ComputedAuthors:Raffield Laura",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1ZgUfg92wK9Qc",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42274313",
-          "title": "Colocalization of eQTLs With Type 2 Diabetes and Glycemic Traits Using Whole-Genome Sequences in Diverse Populations From the NHLBI Trans-Omics in Precision Medicine (TOPMed) Program.",
-          "journal": "Diabetes",
-          "year": "2026"
-        },
-        {
-          "pmid": "42265570",
-          "title": "Publisher Correction: Whole genome sequence analysis of pulmonary function and COPD in 44,287 multi-ancestry participants.",
-          "journal": "Genome Biol",
-          "year": "2026"
-        },
-        {
-          "pmid": "42234953",
-          "title": "Influence of Cardiometabolic and Alzheimer Disease Genetics on Cognitive-Related Outcomes in a Diverse Population.",
-          "journal": "Neurology",
-          "year": "2026"
-        },
-        {
-          "pmid": "42168198",
-          "title": "Co-occurring clonal hematopoiesis exhibits strong selection and high leukemia risk.",
-          "journal": "Nat Commun",
-          "year": "2026"
-        },
-        {
-          "pmid": "42157490",
-          "title": "An efficient LASSO framework for admixture-aware polygenic scores.",
-          "journal": "HGG Adv",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -14472,42 +12272,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/leah.ranney.1/bibliography/public",
-      "pubmed_count": 97,
-      "pubmed_search": "ComputedAuthors:Ranney L",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:leah.ranney.1",
+      "pubmed_count": 39,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42152547",
-          "title": "Exploring the Relationship Between Racial Microaggressions and Substance Use in Asian Americans.",
-          "journal": "Subst Use Misuse",
-          "year": "2026"
-        },
-        {
-          "pmid": "41620086",
-          "title": "Optimizing Little Cigar and Cigarillo Warnings for Youth: The Perceived Effectiveness of Pictorial Warning Image Characteristics.",
-          "journal": "Subst Use Misuse",
-          "year": "2026"
-        },
-        {
-          "pmid": "41617163",
-          "title": "Perceived Effectiveness of Cigar Warnings Among Young People in the U.S.",
-          "journal": "Am J Prev Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "41506908",
-          "title": "Examining the influence of descriptors used to market unflavoured cigarillos: an experiment with a sample of youth and young adults from the USA.",
-          "journal": "Tob Control",
-          "year": "2026"
-        },
-        {
-          "pmid": "40815515",
-          "title": "Little Cigar and Cigarillo Graphic Health Warnings and Quitting Behaviors: A Randomized Clinical Trial.",
-          "journal": "JAMA Netw Open",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -14611,42 +12380,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1jud4pd3e0Hk3H/bibliography/public",
-      "pubmed_count": 7,
-      "pubmed_search": "ComputedAuthors:Ray EM",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1jud4pd3e0Hk3H",
+      "pubmed_count": 19,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41775971",
-          "title": "ASO Visual Abstract: Commission on Cancer Quality Measure for Omission of Sentinel Lymph Node Biopsy (SNB) in Women Aged 70 Years or Older with Hormone Receptor-Positive (HR+) Invasive Breast Cancer (IBC) Undergoing Breast-Conserving Surgery (BCS): Review of Historical Performance.",
-          "journal": "Ann Surg Oncol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41723318",
-          "title": "Commission on Cancer Quality Measure for Omission of Sentinel Lymph Node Biopsy (SNB) in Women Age 70 or Older with Hormone Receptor-Positive (HR+) Invasive Breast Cancer (IBC) Undergoing Breast-Conserving Surgery (BCS): Review of Historical Performance.",
-          "journal": "Ann Surg Oncol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41721913",
-          "title": "Investigating initial patterns of progression on first-line treatment in patients with de novo metastatic breast cancer.",
-          "journal": "Breast Cancer Res Treat",
-          "year": "2026"
-        },
-        {
-          "pmid": "41384625",
-          "title": "Commission on Cancer Quality Measures: Time to Breast Operation Quality Measure.",
-          "journal": "J Am Coll Surg",
-          "year": "2026"
-        },
-        {
-          "pmid": "40344355",
-          "title": "Co-Creating and Refining a Values Assessment Tool (VAsT) for Women With Metastatic Breast Cancer.",
-          "journal": "Psychooncology",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -14922,42 +12660,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/mya-lee.roberson.1/bibliography/public",
-      "pubmed_count": 57,
-      "pubmed_search": "ComputedAuthors:Roberson M",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:mya-lee.roberson.1",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42321601",
-          "title": "Perceived Discrimination and Healthcare System Trust as Barriers to Survivorship Care in Endometrial Cancer.",
-          "journal": "Cancer Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "42252839",
-          "title": "Clinicopathologic characteristics of early-onset breast cancer among unselected young Black women.",
-          "journal": "Cancer",
-          "year": "2026"
-        },
-        {
-          "pmid": "42227000",
-          "title": "A Patient-Led Survey of Antibody Drug Conjugate Usage and Dosing for People Living With Metastatic Breast Cancer.",
-          "journal": "J Patient Exp",
-          "year": "2026"
-        },
-        {
-          "pmid": "42185225",
-          "title": "Neighborhood Socioeconomic Deprivation and Perceived Discrimination Among Endometrial Cancer Survivors.",
-          "journal": "Psychooncology",
-          "year": "2026"
-        },
-        {
-          "pmid": "42013400",
-          "title": "What Money Cannot Buy: Addressing the Socioeconomic Status Ceiling Effect for Black Patients Across Cancer Types.",
-          "journal": "J Clin Oncol",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -14969,24 +12676,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1b7ktBT9ntx5-/bibliography/public",
-      "pubmed_count": 2,
-      "pubmed_search": "ComputedAuthors:Roberts MC",
-      "pubmed_verified": 2,
+      "pubmed_search": "MyNCBI:1b7ktBT9ntx5-",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42183344",
-          "title": "What it Takes to Implement Population-Based Genomic Screening: A Multi-Site Qualitative Study of Implementation Determinants Across Health Systems.",
-          "journal": "Res Sq",
-          "year": "2026"
-        },
-        {
-          "pmid": "40964029",
-          "title": "Primary Care Provider Perspectives on Expanded Genomic Screening in Children.",
-          "journal": "Res Sq",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -15126,42 +12820,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/donald.rosenstein.1/bibliography/public",
-      "pubmed_count": 20,
-      "pubmed_search": "ComputedAuthors:Rosenstein D",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:donald.rosenstein.1",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42055730",
-          "title": "Navigating Dual Burdens: Financial Burdens and Travel Burdens Among Rural-Dwelling Cancer Survivors.",
-          "journal": "Cancer Control",
-          "year": "2026"
-        },
-        {
-          "pmid": "41875373",
-          "title": "Opportunities and Challenges for Addressing Financial Hardship as an Integrated Part of Cancer Care Delivery.",
-          "journal": "J Natl Cancer Inst",
-          "year": "2026"
-        },
-        {
-          "pmid": "41534014",
-          "title": "Implementation Challenges of a Multi-Center Financial Navigation Intervention: A Qualitative Analysis of Operational Process Data.",
-          "journal": "Cancer Control",
-          "year": "2026"
-        },
-        {
-          "pmid": "41524318",
-          "title": "Differences in Discrimination, Violence, Mental Health, and Substance Use Outcomes by Cancer History Among LGBTQ+ Individuals in North Carolina.",
-          "journal": "N C Med J",
-          "year": "2025"
-        },
-        {
-          "pmid": "40516028",
-          "title": "\"How am I Going to Live? How am I Going to Pay Rent?\": A Mixed Methods Investigation of Employment, Stigma, and Financial Hardship Among LGBTQ+ Cancer Caregivers.",
-          "journal": "Cancer Control",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -15219,42 +12882,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/samuel.rubinstein.1/bibliography/public",
-      "pubmed_count": 56,
-      "pubmed_search": "ComputedAuthors:Rubinstein S",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:samuel.rubinstein.1",
+      "pubmed_count": 27,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42225471",
-          "title": "Use of CD38 Antibodies in High-Risk Newly Diagnosed Multiple Myeloma: A Meta-Analysis.",
-          "journal": "Clin Lymphoma Myeloma Leuk",
-          "year": "2026"
-        },
-        {
-          "pmid": "41867507",
-          "title": "Trends in design of FDA registrational randomized clinical trials in hematology and oncology: a 20-year cohort study.",
-          "journal": "BMJ Connect Oncol",
-          "year": "2025"
-        },
-        {
-          "pmid": "41734388",
-          "title": "Feasibility of decentralized real-world monitoring of SARS-CoV-2 booster vaccines and COVID-19 outcomes in myeloma.",
-          "journal": "Blood Adv",
-          "year": "2026"
-        },
-        {
-          "pmid": "41622719",
-          "title": "Causal Effects of Hydrophilic Bile Acids on Carfilzomib-Related Cardiovascular Events in Multiple Myeloma: A Mendelian Randomization Study.",
-          "journal": "Clin Pharmacol Ther",
-          "year": "2026"
-        },
-        {
-          "pmid": "41588752",
-          "title": "Treatment Initiation Among Black and White Older Adults With Multiple Myeloma: A SEER-Medicare Analysis.",
-          "journal": "Cancer Med",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -15502,42 +13134,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/hanna.sanoff.2/bibliography/public",
-      "pubmed_count": 150,
-      "pubmed_search": "ComputedAuthors:Sanoff H",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:hanna.sanoff.2",
+      "pubmed_count": 49,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41812068",
-          "title": "Patient-, Provider-, and Area-Level Factors Associated with Hepatocellular Carcinoma Surveillance in Patients with Cirrhosis in North Carolina.",
-          "journal": "N C Med J",
-          "year": "2025"
-        },
-        {
-          "pmid": "41808486",
-          "title": "Quality of life and care experiences in a US multi-institutional neuroendocrine tumor cohort.",
-          "journal": "J Natl Cancer Inst",
-          "year": "2026"
-        },
-        {
-          "pmid": "41529232",
-          "title": "Ensuring the Future of Cooperative Group Cancer Clinical Trials: A Call for Comprehensive Support and Prioritization.",
-          "journal": "JCO Oncol Pract",
-          "year": "2026"
-        },
-        {
-          "pmid": "41105939",
-          "title": "Community-Engaged Approach to Increase Physical Activity Among Black Individuals With Colorectal Cancer: Protocol for a Feasibility Randomized Controlled Trial of the Physical Activity Centers Empowerment Study.",
-          "journal": "JMIR Res Protoc",
-          "year": "2025"
-        },
-        {
-          "pmid": "40990835",
-          "title": "Phase II single-arm study of palbociclib and cetuximab in anti-EGFR na&#xef;ve patients with KRAS/NRAS/BRAF wild-type, metastatic colorectal cancer.",
-          "journal": "Oncologist",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -15880,42 +13481,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/rani.sellers.1/bibliography/public",
-      "pubmed_count": 22,
-      "pubmed_search": "ComputedAuthors:Sellers R",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:rani.sellers.1",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42283057",
-          "title": "Dual-adjuvant mucosal vaccine leveraging mast cell and TLR9 agonists for protection against poxvirus infection.",
-          "journal": "RSC Pharm",
-          "year": "2026"
-        },
-        {
-          "pmid": "42262088",
-          "title": "Phase variable colony morphotypes of Clostridioides difficile elicit distinct host responses during acute infection.",
-          "journal": "Infect Immun",
-          "year": "2026"
-        },
-        {
-          "pmid": "42024441",
-          "title": "T cell receptor signaling induces expression of lysine demethylase KDM6B to maintainTreg homeostasis.",
-          "journal": "J Clin Invest",
-          "year": "2026"
-        },
-        {
-          "pmid": "41942055",
-          "title": "Targeted and quantitatively modeled biologic delivery via dual-functional probiotic yeast in inflammatory bowel disease.",
-          "journal": "J Control Release",
-          "year": "2026"
-        },
-        {
-          "pmid": "41632640",
-          "title": "Targeting PAR1 biased signaling with parmodulin reduces thromboinflammation and acute lung injury in sickle cell disease.",
-          "journal": "Blood Adv",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -15949,24 +13519,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/natalicio.serrano.1/bibliography/public",
-      "pubmed_count": 2,
-      "pubmed_search": "ComputedAuthors:Serrano N",
-      "pubmed_verified": 2,
+      "pubmed_search": "MyNCBI:natalicio.serrano.1",
+      "pubmed_count": 17,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "40983259",
-          "title": "An RCT of Front-Of-Package Nutrition Labels in Latino Populations in the U.S.",
-          "journal": "Am J Prev Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "38013054",
-          "title": "Pedestrian-oriented zoning moderates the relationship between racialized economic segregation and active travel to work, United States.",
-          "journal": "Prev Med",
-          "year": "2023"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -16317,10 +13874,10 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/melanie.simpson.2/bibliography/public",
-      "pubmed_search": "Simpson M",
-      "pubmed_count": 5,
+      "pubmed_search": "MyNCBI:melanie.simpson.2",
+      "pubmed_count": 34,
       "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
+      "pubmed_ambiguous": false,
       "publications": [],
       "nih_grants": []
     },
@@ -16333,42 +13890,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/abbie.smith-ryan.1/bibliography/public",
-      "pubmed_search": "Smith-ryan A",
-      "pubmed_count": 12,
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:abbie.smith-ryan.1",
+      "pubmed_count": 36,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42283375",
-          "title": "National Strength and Conditioning Association Position Statement on Strength and Conditioning of Female Athletes. Part II: Training Adaptations and Program Design.",
-          "journal": "J Strength Cond Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "41975223",
-          "title": "Impact of menstrual cycle and hormonal contraception on whole-body protein turnover in recreationally active females.",
-          "journal": "Appl Physiol Nutr Metab",
-          "year": "2026"
-        },
-        {
-          "pmid": "41747234",
-          "title": "Menstrual cycle influences skeletal muscle oxygenation during high-intensity interval training: a work to rest evaluation.",
-          "journal": "Appl Physiol Nutr Metab",
-          "year": "2026"
-        },
-        {
-          "pmid": "40639795",
-          "title": "Low Energy Availability, Carbohydrate Intake, and Relative Energy Deficiency in Sport: The Low Triiodothyronine Hypothesis.",
-          "journal": "Int J Sports Physiol Perform",
-          "year": "2026"
-        },
-        {
-          "pmid": "40503666",
-          "title": "Leg fat-free mass and inter-limb leg fat-free mass asymmetry comparisons between bioelectrical impedance analysis and dual-energy X-ray absorptiometry in male career firefighters.",
-          "journal": "Appl Physiol Nutr Metab",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -16533,42 +14059,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/jennifer.smith.2/bibliography/public",
-      "pubmed_count": 322,
-      "pubmed_search": "ComputedAuthors:Smith J",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:jennifer.smith.2",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42028825",
-          "title": "Persistent human papillomavirus after thermal ablation in Malawian women with and without HIV: Implications for risk-based cervical cancer prevention in low- and middle-income countries.",
-          "journal": "Womens Health (Lond)",
-          "year": "2026"
-        },
-        {
-          "pmid": "41770096",
-          "title": "Racial differences in expected versus actual costs of cervical cancer screening among low-income, under-screened women in North Carolina.",
-          "journal": "Cancer Epidemiol Biomarkers Prev",
-          "year": "2026"
-        },
-        {
-          "pmid": "41575011",
-          "title": "Creative Arts to Enhance Cervical Cancer Awareness Using Art-Based Messages From a Nigerian Crowdsourcing Open Call: Qualitative Thematic Analysis.",
-          "journal": "JMIR Form Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "41505134",
-          "title": "Streamlined Self-Collection Screening for Sexually Transmitted Infections and Human Papillomavirus: A Single-Group Secondary Analysis of a Randomized Clinical Trial.",
-          "journal": "JAMA Netw Open",
-          "year": "2026"
-        },
-        {
-          "pmid": "41118505",
-          "title": "Underscreened Women's Reactions to At-Home Self-Collected Human Papillomavirus Test Result Delivery.",
-          "journal": "Sex Transm Dis",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -16687,36 +14182,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/natasha.snider.1/bibliography/public",
-      "pubmed_count": 4,
-      "pubmed_search": "ComputedAuthors:Snider N",
-      "pubmed_verified": 4,
+      "pubmed_search": "MyNCBI:natasha.snider.1",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "40749357",
-          "title": "The Kelch 3 motif on gigaxonin mediates the interaction with NUDCD3 and regulates vimentin filament morphology.",
-          "journal": "Eur J Cell Biol",
-          "year": "2025"
-        },
-        {
-          "pmid": "40059823",
-          "title": "Neurofilament accumulation disrupts autophagy in giant axonal neuropathy.",
-          "journal": "JCI Insight",
-          "year": "2025"
-        },
-        {
-          "pmid": "38782207",
-          "title": "Glial fibrillary acidic protein is pathologically modified in Alexander disease.",
-          "journal": "J Biol Chem",
-          "year": "2024"
-        },
-        {
-          "pmid": "36993491",
-          "title": "Intermediate filament dysregulation and astrocytopathy in the human disease model of KLHL16 mutation in giant axonal neuropathy (GAN).",
-          "journal": "bioRxiv",
-          "year": "2023"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -17035,42 +14505,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/chrystal.starbird.2/bibliography/public",
-      "pubmed_count": 8,
-      "pubmed_search": "ComputedAuthors:Starbird C",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:chrystal.starbird.2",
+      "pubmed_count": 15,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "38924572",
-          "title": "Special considerations for the use of AI tools by PEERs as a learning and communication aid.",
-          "journal": "J Cell Physiol",
-          "year": "2024"
-        },
-        {
-          "pmid": "38908376",
-          "title": "Structural insights into the role and targeting of EGFRvIII.",
-          "journal": "Structure",
-          "year": "2024"
-        },
-        {
-          "pmid": "38228832",
-          "title": "Gender equity: toward redefining values.",
-          "journal": "Nat Cell Biol",
-          "year": "2024"
-        },
-        {
-          "pmid": "37295396",
-          "title": "Juneteenth in STEMM and the barriers to equitable science.",
-          "journal": "Cell",
-          "year": "2023"
-        },
-        {
-          "pmid": "35868960",
-          "title": "Evaluating diversity, equity, and inclusion consultation requests.",
-          "journal": "Trends Mol Med",
-          "year": "2022"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -17082,42 +14521,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/jacob%20newton.stein.1/bibliography/public",
-      "pubmed_count": 33,
-      "pubmed_search": "ComputedAuthors:Stein J",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:jacob%20newton.stein.1",
+      "pubmed_count": 26,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42284527",
-          "title": "Challenging the Conventional Wisdom Around Doxorubicin in Soft Tissue Sarcoma.",
-          "journal": "JCO Oncol Pract",
-          "year": "2026"
-        },
-        {
-          "pmid": "42241662",
-          "title": "Unique Challenges in Sarcoma Care for Adolescents and Young Adults.",
-          "journal": "Am Soc Clin Oncol Educ Book",
-          "year": "2026"
-        },
-        {
-          "pmid": "42096621",
-          "title": "Uterine Sarcomas: Clinical Management and a Review of Systemic Therapy.",
-          "journal": "Obstet Gynecol Surv",
-          "year": "2026"
-        },
-        {
-          "pmid": "41894112",
-          "title": "Clinical Practice Guidelines for the Care of Adolescents and Young Adults (AYAs) with Cancer: a Scoping Review.",
-          "journal": "Curr Oncol Rep",
-          "year": "2026"
-        },
-        {
-          "pmid": "41886699",
-          "title": "Acute Care Events During Systemic Cancer Treatment: Moving From Risk Prediction to Clinical Decision Support Using a Two-Model Approach.",
-          "journal": "JCO Oncol Pract",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -17560,10 +14968,10 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/hung-jui.tan.1/bibliography/public",
-      "pubmed_search": "Tan H",
-      "pubmed_count": 6,
+      "pubmed_search": "MyNCBI:hung-jui.tan.1",
+      "pubmed_count": 47,
       "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
+      "pubmed_ambiguous": false,
       "publications": [],
       "nih_grants": []
     },
@@ -17622,42 +15030,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1f_AokrfRlBQf/bibliography/public",
-      "pubmed_count": 106,
-      "pubmed_search": "ComputedAuthors:Tang Jennifer",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1f_AokrfRlBQf",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42063267",
-          "title": "List randomization for prevalence estimation of sensitive behavioral data among women with HIV of reproductive age in Lilongwe, Malawi.",
-          "journal": "Am J Epidemiol",
-          "year": "2026"
-        },
-        {
-          "pmid": "42028825",
-          "title": "Persistent human papillomavirus after thermal ablation in Malawian women with and without HIV: Implications for risk-based cervical cancer prevention in low- and middle-income countries.",
-          "journal": "Womens Health (Lond)",
-          "year": "2026"
-        },
-        {
-          "pmid": "41731539",
-          "title": "Accountability for care through undoing racism and equity for moms: a study protocol for a cluster randomized trial of data accountability and community-based doula interventions in prenatal practices.",
-          "journal": "Trials",
-          "year": "2026"
-        },
-        {
-          "pmid": "41549859",
-          "title": "Comparative Effectiveness of Levonorgestrel Implant and Depot Medroxyprogesterone Acetate Injectable for Women Living With HIV on Dolutegravir-Based Antiretroviral Therapy.",
-          "journal": "Pharmacoepidemiol Drug Saf",
-          "year": "2026"
-        },
-        {
-          "pmid": "41504754",
-          "title": "Characteristics of Pregnancy-related Health Events Across Care Settings Nationwide in PCORnet&#xae;.",
-          "journal": "Med Care",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -17914,42 +15291,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/caroline.thompson.1/bibliography/public",
-      "pubmed_count": 46,
-      "pubmed_search": "ComputedAuthors:Thompson C",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:caroline.thompson.1",
+      "pubmed_count": 30,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41893845",
-          "title": "Diagnostic Timing and Ovarian Cancer Survival.",
-          "journal": "JAMA Netw Open",
-          "year": "2026"
-        },
-        {
-          "pmid": "41885380",
-          "title": "Exploring Clinical Pathways to a Metastatic Lung Cancer Diagnosis: A Latent Class Analysis Using North Carolina Multipayer Claims Data.",
-          "journal": "Cancer Epidemiol Biomarkers Prev",
-          "year": "2026"
-        },
-        {
-          "pmid": "40298936",
-          "title": "Applying a Novel Measure of Community-Level Healthcare Access to Assess Breast Cancer Care Timeliness.",
-          "journal": "Cancer Epidemiol Biomarkers Prev",
-          "year": "2025"
-        },
-        {
-          "pmid": "40239988",
-          "title": "Participants' reactions to the inclusion of Sexual Orientation and Gender Identity (SOGI) measures in an established large-scale cohort: The California Teachers Study.",
-          "journal": "Am J Epidemiol",
-          "year": "2025"
-        },
-        {
-          "pmid": "39808161",
-          "title": "Cancer Incidence in the Hispanic Community Health Study/Study of Latinos (HCHS/SOL)-The Onco-SOL Ancillary Study.",
-          "journal": "Cancer Epidemiol Biomarkers Prev",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -18519,30 +15865,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/william.valdar.1/bibliography/40309294/public",
-      "pubmed_count": 3,
-      "pubmed_search": "ComputedAuthors:Valdar W",
-      "pubmed_verified": 3,
+      "pubmed_search": "MyNCBI:william.valdar.1",
+      "pubmed_count": 32,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41143948",
-          "title": "Genetic mapping in collaborative cross mouse strains identifies loci that affect initial sensitivity to cocaine.",
-          "journal": "Psychopharmacology (Berl)",
-          "year": "2025"
-        },
-        {
-          "pmid": "40524209",
-          "title": "The impact of early-life exposures on growth and adult gut microbiome composition is dependent on genetic strain and parent- of- origin.",
-          "journal": "Microbiome",
-          "year": "2025"
-        },
-        {
-          "pmid": "36778219",
-          "title": "Analysis of strain, sex, and diet-dependent modulation of gut microbiota reveals candidate keystone organisms driving microbial diversity in response to American and ketogenic diets.",
-          "journal": "Res Sq",
-          "year": "2023"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -18554,8 +15881,8 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/david.van%20duin.1/bibliography/public",
-      "pubmed_search": "david.van%20duin.1[Author Identifier]",
-      "pubmed_count": 48,
+      "pubmed_search": "MyNCBI:david.van%20duin.1",
+      "pubmed_count": 49,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
       "publications": [],
@@ -18714,42 +16041,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1zOccX0ZqoMQg/bibliography/public",
-      "pubmed_count": 31,
-      "pubmed_search": "ComputedAuthors:Wagner LI",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1zOccX0ZqoMQg",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42216434",
-          "title": "Impact of patient-reported taxane-induced peripheral neuropathy on dose reductions or worsening quality of life in Black women with breast cancer: Analysis from ECOG-ACRIN EAZ171.",
-          "journal": "Cancer",
-          "year": "2026"
-        },
-        {
-          "pmid": "42145872",
-          "title": "Impact of Race, Socioeconomic Status, and Clinicopathologic Features on Clinical Outcomes in Triple-Negative Breast Cancer in the ECOG-ACRIN EA1131 Trial.",
-          "journal": "JCO Oncol Adv",
-          "year": "2026"
-        },
-        {
-          "pmid": "41881905",
-          "title": "Corrigendum to 'Optimization of a digital health intervention to enhance well-being among adolescent and young adult cancer survivors: Design and methods of the EMPOWER full factorial trial' [Contemporary Clinical Trials, Vol. 149 (2025) 107783].",
-          "journal": "Contemp Clin Trials",
-          "year": "2026"
-        },
-        {
-          "pmid": "41671461",
-          "title": "Unveiling Factors Associated With Older Adult Accrual to Cancer Clinical Trials: Lessons From the ECOG-ACRIN Experience.",
-          "journal": "J Natl Compr Canc Netw",
-          "year": "2025"
-        },
-        {
-          "pmid": "41445966",
-          "title": "Teaching Cancer Survivors Coping Skills for Managing Fear of Recurrence: Insights From a Pilot Randomized Controlled Trial.",
-          "journal": "Glob Adv Integr Med Health",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -18761,42 +16057,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/yisong.wan.2/bibliography/public",
-      "pubmed_count": 65,
-      "pubmed_search": "ComputedAuthors:Wan Y",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:yisong.wan.2",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42201839",
-          "title": "CNS1-dependent regulatory T cells shape recovery from acute lung injury.",
-          "journal": "J Immunol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41258132",
-          "title": "Author Correction: AIM2 in regulatory T cells restrains autoimmune diseases.",
-          "journal": "Nature",
-          "year": "2025"
-        },
-        {
-          "pmid": "40631114",
-          "title": "T cell AIM2 Exacerbates Lung Inflammation in OVA-LPS and HDM-induced Asthma Models.",
-          "journal": "bioRxiv",
-          "year": "2025"
-        },
-        {
-          "pmid": "38937625",
-          "title": "4-1BB-encoding CAR causes cell death via sequestration of the ubiquitin-modifying enzyme A20.",
-          "journal": "Cell Mol Immunol",
-          "year": "2024"
-        },
-        {
-          "pmid": "37537369",
-          "title": "Methionine restriction-induced sulfur deficiency impairs antitumour immunity partially through gut microbiota.",
-          "journal": "Nat Metab",
-          "year": "2023"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -18830,42 +16095,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/xiaodong.wang.3/bibliography/public",
-      "pubmed_count": 21,
-      "pubmed_search": "ComputedAuthors:Wang X",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:xiaodong.wang.3",
+      "pubmed_count": 47,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42177192",
-          "title": "USP7 inhibition perturbs proteostasis and tumorigenesis in triple-negative breast cancer.",
-          "journal": "NPJ Breast Cancer",
-          "year": "2026"
-        },
-        {
-          "pmid": "42026065",
-          "title": "Structural basis of NSD2 degradation via targeted recruitment of SCF-FBXO22.",
-          "journal": "Nat Commun",
-          "year": "2026"
-        },
-        {
-          "pmid": "40909644",
-          "title": "Structural basis of NSD2 degradation via targeted recruitment of SCF-FBXO22.",
-          "journal": "bioRxiv",
-          "year": "2025"
-        },
-        {
-          "pmid": "40549918",
-          "title": "Structural mechanism for the recognition of E2F1 by the ubiquitin ligase adaptor Cyclin F.",
-          "journal": "Proc Natl Acad Sci U S A",
-          "year": "2025"
-        },
-        {
-          "pmid": "40379725",
-          "title": "USP37 prevents unscheduled replisome unloading through MCM complex deubiquitination.",
-          "journal": "Nat Commun",
-          "year": "2025"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -19242,42 +16476,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/18qwyszRhux/bibliography/public",
-      "pubmed_count": 82,
-      "pubmed_search": "ComputedAuthors:Whang YE",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:18qwyszRhux",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41893833",
-          "title": "Repeatability of Semi-Quantitative and Volumetric Features from Artificial-Intelligence-Guided Lesion Segmentation on 18F-DCFPyL PSMA-PET/CT Images: Results from a Test-Retest Cohort.",
-          "journal": "Tomography",
-          "year": "2026"
-        },
-        {
-          "pmid": "41346717",
-          "title": "Racial Disparities in the Prescribing of Guideline-Recommended Medications for Metastatic Prostate Cancer: A Retrospective Cohort Study.",
-          "journal": "Prostate Cancer",
-          "year": "2025"
-        },
-        {
-          "pmid": "40971753",
-          "title": "Patient-Reported Outcomes From Males Regarding Germline Testing for Prostate Cancer: Results From the PROGRESS Registry.",
-          "journal": "JCO Precis Oncol",
-          "year": "2025"
-        },
-        {
-          "pmid": "39115414",
-          "title": "Abiraterone, Olaparib, or Abiraterone + Olaparib in First-Line Metastatic Castration-Resistant Prostate Cancer with DNA Repair Defects (BRCAAway).",
-          "journal": "Clin Cancer Res",
-          "year": "2024"
-        },
-        {
-          "pmid": "38108490",
-          "title": "Pain and Its Association with Survival for Black and White Individuals with Advanced Prostate Cancer in the United States.",
-          "journal": "Cancer Res Commun",
-          "year": "2024"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -19442,42 +16645,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/david.williams.3/bibliography/public",
-      "pubmed_search": "Williams D",
-      "pubmed_count": 29,
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:david.williams.3",
+      "pubmed_count": 50,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41126849",
-          "title": "Perceptions of oral corticosteroid use for children with asthma in a survey of US caregivers.",
-          "journal": "Front Pediatr",
-          "year": "2025"
-        },
-        {
-          "pmid": "40300198",
-          "title": "Pragmatic Evaluation of an Improvement Program for People Living With Modifiable High-Risk COPD Versus Usual Care: Protocols for the Cluster Randomized PREVAIL Trial.",
-          "journal": "Chronic Obstr Pulm Dis",
-          "year": "2025"
-        },
-        {
-          "pmid": "40187405",
-          "title": "Health care-seeking behaviors for acute asthma: A US cross-sectional survey.",
-          "journal": "Ann Allergy Asthma Immunol",
-          "year": "2025"
-        },
-        {
-          "pmid": "39615330",
-          "title": "Curriculum innovation: Interactive educational workshop improves neurology resident knowledge of multiple sclerosis.",
-          "journal": "Mult Scler Relat Disord",
-          "year": "2025"
-        },
-        {
-          "pmid": "37859758",
-          "title": "Real-world use and perceptions of shared decision-making for allergy and asthma care in a US population.",
-          "journal": "World Allergy Organ J",
-          "year": "2023"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -19489,18 +16661,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/kevin.williams.2/bibliography/public",
-      "pubmed_count": 1,
-      "pubmed_search": "ComputedAuthors:Williams K",
-      "pubmed_verified": 1,
+      "pubmed_search": "MyNCBI:kevin.williams.2",
+      "pubmed_count": 49,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41798151",
-          "title": "Recognizing autoimmunity in a breast cancer survivor with cutaneous fibrosis.",
-          "journal": "JAAD Case Rep",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -20040,42 +17205,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/shan.yan.2/bibliography/public",
-      "pubmed_count": 44,
-      "pubmed_search": "ComputedAuthors:Yan S",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:shan.yan.2",
+      "pubmed_count": 47,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "40672314",
-          "title": "PARP1 promotes replication-independent DNA double-strand break formation after acute DNA-methylation damage.",
-          "journal": "bioRxiv",
-          "year": "2025"
-        },
-        {
-          "pmid": "39461278",
-          "title": "APE1 is a master regulator of the ATR-/ATM-mediated DNA damage response.",
-          "journal": "DNA Repair (Amst)",
-          "year": "2024"
-        },
-        {
-          "pmid": "39112456",
-          "title": "Distinct regulation of ATM signaling by DNA single-strand breaks and APE1.",
-          "journal": "Nat Commun",
-          "year": "2024"
-        },
-        {
-          "pmid": "38705397",
-          "title": "Ubiquitin-mediated regulation of APE2 protein abundance.",
-          "journal": "J Biol Chem",
-          "year": "2024"
-        },
-        {
-          "pmid": "38619433",
-          "title": "Inspiring basic and applied research in genome integrity mechanisms: Dedication to Samuel H. Wilson.",
-          "journal": "Environ Mol Mutagen",
-          "year": "2024"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -20240,8 +17374,8 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1Rgu1_w9qKQ9nn/bibliography/public",
-      "pubmed_search": "Yopp Justin",
-      "pubmed_count": 0,
+      "pubmed_search": "MyNCBI:1Rgu1_w9qKQ9nn",
+      "pubmed_count": 19,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
       "publications": [],
@@ -20302,42 +17436,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/hong.yuan.1/bibliography/public",
-      "pubmed_count": 79,
-      "pubmed_search": "ComputedAuthors:Yuan H",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:hong.yuan.1",
+      "pubmed_count": 49,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42169391",
-          "title": "Longitudinal Analysis of Cannabinoid Type 1 Receptor in HIV-1 Tat Transgenic Mice Using PET Imaging and Western Blot Analysis.",
-          "journal": "Cannabis Cannabinoid Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "42058368",
-          "title": "HIV-1 Tat expression drives progressive synaptic decline: evidence from&#xa0;longitudinal [11C]-UCB-J PET imaging.",
-          "journal": "NeuroImmune Pharm Ther",
-          "year": "2026"
-        },
-        {
-          "pmid": "41171857",
-          "title": "Evaluation of the new blood-pool CT contrast agent VivoVist in mouse models.",
-          "journal": "PLoS One",
-          "year": "2025"
-        },
-        {
-          "pmid": "40493789",
-          "title": "Approach to Chelating Radioactivity using Carbon Dots for Positron Emission Tomography Imaging.",
-          "journal": "ACS Appl Mater Interfaces",
-          "year": "2025"
-        },
-        {
-          "pmid": "39349184",
-          "title": "Implant dynamics, inner structure, and their impact on drug release of in situ forming implants uncovered through CT imaging.",
-          "journal": "J Control Release",
-          "year": "2024"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -20349,42 +17452,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1zug1rl0RlzQ-/bibliography/public",
-      "pubmed_count": 7,
-      "pubmed_search": "ComputedAuthors:Zaharoff DA",
-      "pubmed_verified": 5,
+      "pubmed_search": "MyNCBI:1zug1rl0RlzQ-",
+      "pubmed_count": 36,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41372113",
-          "title": "Photodynamic therapy simultaneously induces ferroptosis- and apoptosis-like lipid signatures in ovarian cancer cells.",
-          "journal": "Cell Death Dis",
-          "year": "2025"
-        },
-        {
-          "pmid": "40868739",
-          "title": "Chitosan-Glycerol Injectable Hydrogel for Intratumoral Delivery of Macromolecules.",
-          "journal": "Gels",
-          "year": "2025"
-        },
-        {
-          "pmid": "39528061",
-          "title": "Interleukin-12 decorated nanosized semiflexible Immunofilaments enable directed targeting and augmented IFN&#x3b3; responses of natural killer cells.",
-          "journal": "Acta Biomater",
-          "year": "2025"
-        },
-        {
-          "pmid": "38993985",
-          "title": "Safety and Pharmacokinetics of Intravesical Chitosan/Interleukin-12 Immunotherapy in Murine Bladders.",
-          "journal": "Bladder Cancer",
-          "year": "2021"
-        },
-        {
-          "pmid": "38420330",
-          "title": "Evaluating differences in optical properties of indolent and aggressive murine breast tumors using quantitative diffuse reflectance spectroscopy.",
-          "journal": "Biomed Opt Express",
-          "year": "2023"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -20602,18 +17674,11 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/jiawei.zhou.6/bibliography/public",
-      "pubmed_count": 1,
-      "pubmed_search": "ComputedAuthors:Zhou J",
-      "pubmed_verified": 1,
+      "pubmed_search": "MyNCBI:jiawei.zhou.6",
+      "pubmed_count": 18,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41867226",
-          "title": "When Survival Improves But Quality of Life Does Not: A Model-Based Meta-Analysis of Immune Checkpoint Inhibitors.",
-          "journal": "medRxiv",
-          "year": "2026"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
