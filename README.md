@@ -1,6 +1,6 @@
 # UNC SOM Research Explorer
 
-A student-built tool for finding research opportunities at the UNC School of Medicine. Built and maintained by the JGB Research Society.
+A student-built tool for finding research opportunities at the UNC School of Medicine. Built and maintained by the JBG Research Society.
 
 ## What it does
 
@@ -94,4 +94,4 @@ Every Sunday (GitHub Actions cron)
 
 ---
 
-Built by JGB Research Society · UNC School of Medicine
+Built by JBG Research Society · UNC School of Medicine
