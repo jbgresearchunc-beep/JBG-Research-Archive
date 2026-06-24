@@ -5,7 +5,6 @@ on:
     # Every Sunday at 3am UTC (11pm Saturday ET)
     - cron: "0 3 * * 0"
   workflow_dispatch:
-    # Also allow manual trigger from GitHub Actions UI
     inputs:
       department_filter:
         description: "Only scrape departments matching this string (leave blank for all)"
@@ -13,6 +12,14 @@ on:
         default: ""
       skip_nih:
         description: "Skip NIH RePORTER step to save time"
+        required: false
+        default: "false"
+      scrape_only:
+        description: "Only run Steps 1+2 (scrape + profile visits), skip PubMed/NIH"
+        required: false
+        default: "false"
+      enrich_only:
+        description: "Only run Steps 3+4 (PubMed + NIH) using existing faculty_raw.json"
         required: false
         default: "false"
 
@@ -31,23 +38,46 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: |
-          pip install requests beautifulsoup4
+        run: pip install requests beautifulsoup4
 
-      - name: Run scraper
+      - name: Step 1+2 — Scrape faculty pages and profile visits
+        if: ${{ github.event.inputs.enrich_only != 'true' }}
         env:
           NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
         run: |
           python scraper/scrape.py \
             --config scraper/departments.json \
+            --raw-output data/faculty_raw.json \
+            --scrape-only \
+            ${{ github.event.inputs.department_filter != '' && format('--dept "{0}"', github.event.inputs.department_filter) || '' }}
+
+      - name: Commit faculty_raw.json
+        if: ${{ github.event.inputs.enrich_only != 'true' && github.event.inputs.scrape_only != 'true' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/faculty_raw.json
+          git diff --staged --quiet || git commit -m "Update faculty_raw [$(date -u '+%Y-%m-%d')]"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Step 3+4 — PubMed and NIH enrichment
+        if: ${{ github.event.inputs.scrape_only != 'true' }}
+        env:
+          NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
+        run: |
+          python scraper/scrape.py \
+            --config scraper/departments.json \
+            --raw-output data/faculty_raw.json \
             --output data/faculty.json \
+            --enrich-only \
             ${{ github.event.inputs.skip_nih == 'true' && '--skip-nih' || '' }} \
             ${{ github.event.inputs.department_filter != '' && format('--dept "{0}"', github.event.inputs.department_filter) || '' }}
 
       - name: Check output
+        if: ${{ github.event.inputs.scrape_only != 'true' }}
         run: |
-          echo "Faculty data file:"
-          wc -l data/faculty.json
           python -c "
           import json
           with open('data/faculty.json') as f:
@@ -61,7 +91,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/faculty.json
+          git add data/faculty_raw.json data/faculty.json
           git diff --staged --quiet || git commit -m "Update faculty data [$(date -u '+%Y-%m-%d')]"
           git push
         env:
