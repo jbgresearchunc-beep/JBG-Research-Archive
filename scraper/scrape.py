@@ -1624,13 +1624,21 @@ def fetch_nih_grants(name):
 # Main pipeline
 # ---------------------------------------------------------------------------
 
-def run(config_path="scraper/departments.json", output_path="data/faculty.json",
-        pubmed_delay=0.4, skip_nih=False, dept_filter=None):
+# ---------------------------------------------------------------------------
+# Main pipeline
+# ---------------------------------------------------------------------------
 
+def scrape_only(config_path="scraper/departments.json",
+                raw_output_path="data/faculty_raw.json",
+                dept_filter=None):
+    """
+    Steps 1 + 2: Scrape department pages and profile pages.
+    Writes faculty_raw.json with names, profile URLs, departments, pubmed_hints.
+    Does NOT do PubMed or NIH enrichment.
+    """
     with open(config_path) as f:
         config = json.load(f)
 
-    # Load manual PubMed overrides (lowercased name → search string)
     overrides_path = config_path.replace("departments.json", "pubmed_overrides.json")
     pubmed_overrides = {}
     try:
@@ -1647,13 +1655,11 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
         departments = [d for d in departments if dept_filter.lower() in d["name"].lower()]
 
     all_faculty = []
-    dept_index = {}  # dept_name -> list of faculty
 
     # ---- Step 1: Scrape faculty pages ----
     print("\n=== Step 1: Scraping faculty pages ===")
     for dept in departments:
         print(f"\n[{dept['name']}]")
-        # Support both single "url" and multiple "urls" per department
         urls = dept.get("urls") or [dept.get("url")]
         urls = [u for u in urls if u]
         dept_faculty = []
@@ -1662,8 +1668,7 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
             dept_faculty.extend(faculty_list)
             time.sleep(0.5)
 
-            # Auto-paginate directory-style pages (e.g. unclineberger.org/directory/)
-            # Try /page/2/, /page/3/, etc. until a page returns 0 new faculty
+            # Auto-paginate directory-style pages
             if "/directory/" in url and not re.search(r"/page/\d+/", url):
                 base_url = url.rstrip("/")
                 page = 2
@@ -1675,10 +1680,9 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
                     dept_faculty.extend(paged_faculty)
                     page += 1
                     time.sleep(0.5)
-                    if page > 20:  # safety cap
+                    if page > 20:
                         break
 
-        dept_index[dept["name"]] = dept_faculty
         all_faculty.extend(dept_faculty)
         if len(urls) > 1:
             print(f"  Total from {len(urls)} pages: {len(dept_faculty)} faculty")
@@ -1686,23 +1690,19 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
 
     print(f"\nTotal faculty scraped: {len(all_faculty)}")
 
-    # ---- Deduplication: merge faculty with same name across departments ----
-    # Faculty with joint appointments appear on multiple department pages.
-    # Keep one entry per person, storing all departments as a list.
+    # ---- Deduplication ----
     print("\n=== Deduplicating faculty ===")
-    seen = {}  # name_lower -> index in deduplicated list
+    seen = {}
     deduplicated = []
     for f in all_faculty:
         key = f["name"].lower().strip()
         if key in seen:
-            # Merge: add this department to existing entry
             existing = deduplicated[seen[key]]
             existing_depts = existing.get("departments", [existing["department"]])
             if f["department"] not in existing_depts:
                 existing_depts.append(f["department"])
                 existing["departments"] = existing_depts
-                existing["department"] = existing_depts[0]  # keep primary
-            # Preserve pubmed_hint if the incoming entry has one and existing doesn't
+                existing["department"] = existing_depts[0]
             if f.get("pubmed_hint") and not existing.get("pubmed_hint"):
                 existing["pubmed_hint"] = f["pubmed_hint"]
             print(f"  Merged duplicate: {f['name']} ({f['department']})")
@@ -1713,24 +1713,19 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
     all_faculty = deduplicated
     print(f"  {len(all_faculty)} unique faculty after deduplication")
 
-    # ---- Step 2: Scrape profile pages for curated PubMed strings ----
+    # ---- Step 2: Profile page visits ----
     print("\n=== Step 2: Checking profiles for PubMed search strings ===")
     trainees_removed = []
     for f in all_faculty:
-        # Manual override takes priority over everything else
         name_key = f["name"].lower().strip()
         if name_key in pubmed_overrides:
             override = pubmed_overrides[name_key]
             print(f"  {f['name']}: OVERRIDE → '{override}'")
-            # Prefix with OVERRIDE: so sanitize_hint passes it through unchanged
             f["pubmed_hint"] = f"OVERRIDE:{override}"
             continue
+
         profile_url = f.get("profile_url") or ""
 
-        # If no profile URL was captured from the listing page, try to construct one
-        # using the department's known profile URL pattern (if configured).
-        # We only attempt this for departments where we know the pattern — blind
-        # guessing causes timeouts and SSL errors on departments with different structures.
         if not profile_url and f.get("department"):
             dept_conf = next((d for d in config["departments"] if d["name"] == f["department"]), None)
             if dept_conf and dept_conf.get("profile_base"):
@@ -1744,12 +1739,9 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
                 time.sleep(0.2)
 
         if profile_url:
-            # Fetch profile page once — reuse for trainee check, Lineberger filter, and PubMed hint
-            # Use shorter timeout for profile pages — not worth waiting long for a slow page
             profile_html = fetch_url(profile_url, retries=2, delay=1.0)
             time.sleep(0.3)
 
-            # For Lineberger faculty, exclude non-clinical departments
             if "unclineberger.org" in profile_url:
                 if not is_lineberger_clinical(profile_html):
                     print(f"  {f['name']} ({f['department']}): non-clinical Lineberger member — excluding")
@@ -1757,7 +1749,6 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
                     trainees_removed.append(f["name"])
                     continue
 
-            # Check if this person is a trainee/admin before spending time on PubMed
             if is_trainee_profile(profile_html):
                 print(f"  {f['name']} ({f['department']}): excluded (no faculty credentials)")
                 f["_exclude"] = True
@@ -1769,19 +1760,55 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
                 print(f"  {f['name']}: found '{ps}'")
                 f["pubmed_hint"] = ps
 
-    # Remove trainees flagged during profile check
     if trainees_removed:
         all_faculty = [f for f in all_faculty if not f.get("_exclude")]
-        print(f"  Removed {len(trainees_removed)} trainee(s): {', '.join(trainees_removed)}")
+        print(f"  Removed {len(trainees_removed)} excluded: {', '.join(trainees_removed)}")
 
-    # ---- Step 3: Enrich with PubMed ----
+    # Write raw output
+    raw_output = {
+        "generated_at": datetime.utcnow().isoformat() + "Z",
+        "total_faculty": len(all_faculty),
+        "departments": [d["name"] for d in departments],
+        "faculty": all_faculty,
+    }
+    os.makedirs(os.path.dirname(raw_output_path) or ".", exist_ok=True)
+    with open(raw_output_path, "w") as f:
+        json.dump(raw_output, f, indent=2)
+    print(f"\n✓ Written to {raw_output_path}")
+    print(f"  {len(all_faculty)} faculty across {len(departments)} departments")
+    return all_faculty, departments
+
+
+def enrich_only(raw_input_path="data/faculty_raw.json",
+                output_path="data/faculty.json",
+                config_path="scraper/departments.json",
+                skip_nih=False,
+                dept_filter=None):
+    """
+    Steps 3 + 4: PubMed and NIH enrichment.
+    Reads faculty_raw.json, writes faculty.json.
+    Can be re-run independently without re-scraping.
+    """
+    with open(raw_input_path) as f:
+        raw = json.load(f)
+
+    all_faculty = raw["faculty"]
+    departments_in_raw = raw.get("departments", [])
+
+    # Optionally filter to a single department
+    if dept_filter:
+        all_faculty = [f for f in all_faculty
+                       if dept_filter.lower() in " ".join(f.get("departments", [f.get("department", "")])).lower()]
+        departments_in_raw = [d for d in departments_in_raw if dept_filter.lower() in d.lower()]
+
+    # ---- Step 3: PubMed enrichment ----
     print("\n=== Step 3: Enriching with PubMed ===")
     for i, f in enumerate(all_faculty):
         print(f"  [{i+1}/{len(all_faculty)}] {f['name']}")
         enrich_faculty_with_pubmed(f, pubmed_string=f.get("pubmed_hint"))
         time.sleep(PUBMED_SLEEP)
 
-    # ---- Step 4: NIH RePORTER (optional) ----
+    # ---- Step 4: NIH RePORTER ----
     if not skip_nih:
         print("\n=== Step 4: Checking NIH RePORTER ===")
         for f in all_faculty:
@@ -1794,20 +1821,27 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
         for f in all_faculty:
             f["nih_grants"] = []
 
-    # ---- Step 5: Write output ----
+    # Write final output
     output = {
         "generated_at": datetime.utcnow().isoformat() + "Z",
         "total_faculty": len(all_faculty),
-        "departments": [d["name"] for d in departments],
+        "departments": departments_in_raw,
         "faculty": all_faculty,
     }
-
     os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
     with open(output_path, "w") as f:
         json.dump(output, f, indent=2)
-
     print(f"\n✓ Written to {output_path}")
-    print(f"  {len(all_faculty)} faculty across {len(departments)} departments")
+    print(f"  {len(all_faculty)} faculty across {len(departments_in_raw)} departments")
+
+
+def run(config_path="scraper/departments.json", output_path="data/faculty.json",
+        pubmed_delay=0.4, skip_nih=False, dept_filter=None):
+    """Combined pipeline: scrape + enrich in one shot."""
+    raw_path = output_path.replace("faculty.json", "faculty_raw.json")
+    scrape_only(config_path=config_path, raw_output_path=raw_path, dept_filter=dept_filter)
+    enrich_only(raw_input_path=raw_path, output_path=output_path,
+                config_path=config_path, skip_nih=skip_nih, dept_filter=dept_filter)
 
 
 if __name__ == "__main__":
@@ -1815,16 +1849,19 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="UNC SOM faculty scraper")
     parser.add_argument("--config", default="scraper/departments.json")
     parser.add_argument("--output", default="data/faculty.json")
-    parser.add_argument("--skip-nih", action="store_true", help="Skip NIH RePORTER step")
+    parser.add_argument("--raw-output", default="data/faculty_raw.json")
+    parser.add_argument("--skip-nih", action="store_true")
     parser.add_argument("--dept", help="Only scrape departments matching this string")
-    parser.add_argument("--pubmed-delay", type=float, default=0.4,
-                        help="Seconds between PubMed requests (default 0.4)")
+    parser.add_argument("--pubmed-delay", type=float, default=0.4)
+    parser.add_argument("--scrape-only", action="store_true", help="Only run Steps 1+2")
+    parser.add_argument("--enrich-only", action="store_true", help="Only run Steps 3+4")
     args = parser.parse_args()
 
-    run(
-        config_path=args.config,
-        output_path=args.output,
-        skip_nih=args.skip_nih,
-        dept_filter=args.dept,
-        pubmed_delay=args.pubmed_delay,
-    )
+    if args.scrape_only:
+        scrape_only(config_path=args.config, raw_output_path=args.raw_output, dept_filter=args.dept)
+    elif args.enrich_only:
+        enrich_only(raw_input_path=args.raw_output, output_path=args.output,
+                    config_path=args.config, skip_nih=args.skip_nih, dept_filter=args.dept)
+    else:
+        run(config_path=args.config, output_path=args.output,
+            skip_nih=args.skip_nih, dept_filter=args.dept, pubmed_delay=args.pubmed_delay)
