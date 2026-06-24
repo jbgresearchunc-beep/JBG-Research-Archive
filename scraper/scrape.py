@@ -603,9 +603,11 @@ def scrape_profile_for_pubmed_string(profile_url, html=None):
 
 
 TRAINEE_PROFILE_PATTERN = re.compile(
-    r"\b(resident|residency|intern(?!al)|fellow(?!\s+(?:of|award|member))"
+    r"\b(residency|intern(?!al)|fellow(?!\s+(?:of|award|member))"
     r"|pgy[-\s]?\d|class\s+of\s+\d{4}|house\s+officer|medical\s+student"
-    r"|dental\s+student|pharmacy\s+student|graduate\s+student)\b",
+    r"|dental\s+student|pharmacy\s+student|graduate\s+student"
+    r"|(?:neurology|medicine|surgery|pediatrics|psychiatry|radiology"
+    r"|emergency|internal\s+medicine|family\s+medicine)\s+resident)\b",
     re.IGNORECASE
 )
 
