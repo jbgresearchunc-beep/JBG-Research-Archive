@@ -827,7 +827,119 @@ def fetch_pmids_by_author_id(author_id, max_results=100):
     return pmids[:max_results], count
 
 
-def clean_name_for_pubmed(name):
+def search_orcid_by_name(name):
+    """
+    Search ORCID public API by name, return best-matching ORCID iD or None.
+    Does NOT filter by affiliation since UNC faculty rarely list it on ORCID.
+    Returns (orcid_id, given_name, family_name) or (None, None, None).
+    """
+    parts = name.strip().split()
+    if len(parts) < 2:
+        return None, None, None
+    first = parts[0]
+    last = parts[-1]
+
+    query = f"given-names:{first}+AND+family-name:{last}"
+    url = f"https://pub.orcid.org/v3.0/expanded-search/?q={query}&rows=5"
+    data = fetch_json(url)
+    if not data:
+        return None, None, None
+    try:
+        obj = json.loads(data)
+    except Exception:
+        return None, None, None
+
+    results = obj.get("expanded-result") or []
+    for result in results:
+        given = (result.get("given-names") or "").strip()
+        family = (result.get("family-names") or "").strip()
+        orcid = result.get("orcid-id")
+        # Require last name exact match and first name initial match
+        if (family.lower() == last.lower() and
+                given.lower().startswith(first.lower()[0])):
+            return orcid, given, family
+
+    return None, None, None
+
+
+def fetch_pmids_via_orcid(orcid_id, since_year=2018):
+    """
+    Fetch PMIDs from ORCID works API for a given ORCID iD.
+    Also returns DOIs for works that don't have PMIDs, so we can
+    look them up in PubMed via doi[AID].
+    Returns (pmids, dois) — both lists sorted recent-first.
+    """
+    url = f"https://pub.orcid.org/v3.0/{orcid_id}/works"
+    data = fetch_json(url)
+    if not data:
+        return [], []
+    try:
+        obj = json.loads(data)
+    except Exception:
+        return [], []
+
+    pmids = []
+    dois = []
+    seen_pmids = set()
+    seen_dois = set()
+
+    for group in obj.get("group", []):
+        for summary in group.get("work-summary", []):
+            pub_date = summary.get("publication-date") or {}
+            year_val = (pub_date.get("year") or {}).get("value")
+            try:
+                year = int(year_val)
+            except (TypeError, ValueError):
+                year = 0
+
+            if year and year < since_year:
+                continue
+
+            eids = summary.get("external-ids", {}).get("external-id", [])
+            pmid = None
+            doi = None
+            for eid in eids:
+                t = eid.get("external-id-type", "")
+                v = (eid.get("external-id-value") or "").strip()
+                if t == "pmid" and v and v not in seen_pmids:
+                    pmid = v
+                elif t == "doi" and v and v not in seen_dois:
+                    doi = v.lower()
+
+            if pmid:
+                seen_pmids.add(pmid)
+                pmids.append(pmid)
+            elif doi:
+                seen_dois.add(doi)
+                dois.append(doi)
+
+    return pmids, dois
+
+
+def resolve_dois_to_pmids(dois, max_dois=10):
+    """
+    Convert a list of DOIs to PMIDs via PubMed's doi[AID] field.
+    Returns list of PMIDs found.
+    """
+    pmids = []
+    for doi in dois[:max_dois]:
+        api_key_param = f"&api_key={NCBI_API_KEY}" if NCBI_API_KEY else ""
+        term = urllib.parse.quote(f'"{doi}"[AID]')
+        url = (
+            f"{PUBMED_BASE}esearch.fcgi"
+            f"?db=pubmed&term={term}&retmax=1&retmode=json"
+            f"&email={PUBMED_EMAIL}{api_key_param}"
+        )
+        try:
+            with urllib.request.urlopen(url, timeout=10) as r:
+                data = json.loads(r.read())
+            ids = data["esearchresult"]["idlist"]
+            if ids:
+                pmids.append(ids[0])
+        except Exception:
+            pass
+        time.sleep(PUBMED_SLEEP)
+    return pmids
     """
     Strip credentials, nicknames, punctuation from a raw scraped name
     before building a PubMed search string.
@@ -1273,6 +1385,44 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
             clean_hint = slug_hint
         else:
             clean_hint = None
+
+    # ── ORCID lookup ──────────────────────────────────────────────────────────
+    # Try ORCID before falling back to name-based PubMed search.
+    # ORCID gives us a verified author identity, eliminating name ambiguity.
+    # Skip if we already have a good hint (OVERRIDE, MyNCBI, or explicit ORCID).
+    if not (clean_hint and clean_hint.startswith("ORCID:")) and \
+       not (pubmed_string and pubmed_string.startswith("OVERRIDE:")):
+        orcid_id, orcid_given, orcid_family = search_orcid_by_name(name)
+        time.sleep(0.3)
+        if orcid_id:
+            print(f"    ORCID: found {orcid_id} for {orcid_given} {orcid_family}")
+            orcid_pmids, orcid_dois = fetch_pmids_via_orcid(orcid_id, since_year=2018)
+            time.sleep(0.3)
+
+            # Convert DOIs to PMIDs for works not directly linked to PubMed
+            if not orcid_pmids and orcid_dois:
+                print(f"    ORCID: no PMIDs directly, resolving {min(len(orcid_dois), 10)} DOIs...")
+                orcid_pmids = resolve_dois_to_pmids(orcid_dois, max_dois=10)
+
+            if orcid_pmids:
+                print(f"    ORCID: {len(orcid_pmids)} PMIDs found — fetching summaries")
+                pubs = pubmed_fetch_summaries(orcid_pmids[:15], search_term=name,
+                                              verify_affiliation=False)[:5]
+                faculty_member["pubmed_search"] = f"ORCID:{orcid_id}"
+                faculty_member["pubmed_count"] = len(orcid_pmids)
+                faculty_member["pubmed_verified"] = len(pubs)
+                faculty_member["pubmed_ambiguous"] = False
+                faculty_member["publications"] = pubs
+                time.sleep(0.3)
+                return faculty_member
+            else:
+                print(f"    ORCID: found ID but no PMIDs — falling back to name search")
+                # Use ORCID-confirmed name to build a better PubMed search string
+                if orcid_family and orcid_given:
+                    clean_hint = f"{orcid_family} {orcid_given[0]}"
+                    print(f"    ORCID-derived search: '{clean_hint}'")
+        else:
+            print(f"    ORCID: no match found for '{name}'")
 
     if clean_hint and clean_hint.startswith("ORCID:"):
         search_term = clean_hint
