@@ -611,8 +611,16 @@ TRAINEE_PROFILE_PATTERN = re.compile(
 
 ATTENDING_PROFILE_PATTERN = re.compile(
     r"\b(professor|assistant\s+professor|associate\s+professor|instructor"
-    r"|lecturer|attending|clinical\s+faculty|adjunct\s+professor"
+    r"|lecturer|attending\s+physician|clinical\s+faculty|adjunct\s+professor"
     r"|division\s+chief|department\s+chair|program\s+director)\b",
+    re.IGNORECASE
+)
+
+# Must have at least one of these to be included — filters out admin/staff/coordinators
+FACULTY_CREDENTIAL_PATTERN = re.compile(
+    r"\b(MD|PhD|DO|PharmD|DrPH|DVM|DDS|MBBS|ScD|NP|PA-C|CNM|ARNP"
+    r"|professor|instructor|lecturer|attending\s+physician"
+    r"|division\s+chief|department\s+chair)\b",
     re.IGNORECASE
 )
 
@@ -677,22 +685,30 @@ def is_lineberger_clinical(html):
 
 def is_trainee_profile(html):
     """
-    Given already-fetched profile HTML, determine if this person is a trainee.
-    Returns True if trainee, False if attending/faculty or unknown.
+    Given already-fetched profile HTML, determine if this person should be excluded.
+    Returns True (exclude) for:
+      - Trainees (residents, fellows, students)
+      - Admin/staff with no faculty credentials (no MD/PhD/DO/professor title)
+    Returns False (keep) for attending faculty.
     """
     if not html:
         return False
 
-    # Strip HTML tags for clean text search
     text = re.sub(r"<[^>]+>", " ", html)
     text = re.sub(r"\s+", " ", text)
+    snippet = text[:3000]
 
-    # If we see a clear attending/faculty title, keep them regardless
-    if ATTENDING_PROFILE_PATTERN.search(text[:3000]):
+    # If they have a clear attending/faculty title, keep them
+    if ATTENDING_PROFILE_PATTERN.search(snippet):
         return False
 
-    # If we see a trainee title in the first 3000 chars (title/header area), exclude
-    if TRAINEE_PROFILE_PATTERN.search(text[:3000]):
+    # If they have no faculty credential at all (MD, PhD, DO, professor, etc.),
+    # they're admin/staff — exclude
+    if not FACULTY_CREDENTIAL_PATTERN.search(snippet):
+        return True
+
+    # If we see a trainee title, exclude
+    if TRAINEE_PROFILE_PATTERN.search(snippet):
         return True
 
     return False
