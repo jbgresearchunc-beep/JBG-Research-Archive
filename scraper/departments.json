@@ -10,7 +10,7 @@
       "name": "Medicine \u2014 Endocrinology & Metabolism",
       "short": "Medicine",
       "url": "https://med.unc.edu/medicine/endocrinology-metabolism/faculty",
-      "profile_base": "https://www.med.unc.edu/medicine/endo/people"
+      "profile_base": "https://www.med.unc.edu/medicine/endocrinology-metabolism/people"
     },
     {
       "name": "Medicine \u2014 Gastroenterology & Hepatology",
@@ -52,7 +52,7 @@
       "name": "Medicine \u2014 Nephrology & Hypertension",
       "short": "Medicine",
       "url": "https://med.unc.edu/medicine/people/nephrology",
-      "profile_base": "https://www.med.unc.edu/medicine/nephrology/people"
+      "profile_base": "https://www.med.unc.edu/medicine/nephrology-hypertension/people"
     },
     {
       "name": "Medicine \u2014 Oncology",
@@ -93,7 +93,8 @@
         "https://www.med.unc.edu/pediatrics/pulm/team/faculty/",
         "https://www.med.unc.edu/pediatrics/rheum/team/faculty/",
         "https://www.med.unc.edu/pediatrics/wilmington/"
-      ]
+      ],
+      "profile_base": "https://www.med.unc.edu/pediatrics/people"
     },
     {
       "name": "Surgery \u2014 General Surgery",
@@ -103,17 +104,19 @@
     {
       "name": "Surgery \u2014 Plastic & Reconstructive Surgery",
       "short": "Surgery",
-      "url": "https://www.med.unc.edu/surgery/plastic/ourteam/"
+      "url": "https://www.med.unc.edu/surgery/plastic/ourteam/",
+      "profile_base": "https://www.med.unc.edu/surgery/plastic/ourteam"
     },
     {
       "name": "Psychiatry",
       "short": "Psychiatry",
-      "url": "https://www.med.unc.edu/psych/division/faculty/"
+      "url": "https://www.med.unc.edu/psych/about-us/faculty/"
     },
     {
       "name": "Neurology",
       "short": "Neurology",
-      "url": "https://www.med.unc.edu/neurology/about-us/faculty-by-division/"
+      "url": "https://www.med.unc.edu/neurology/about-us/faculty-by-division/",
+      "profile_base": "https://www.med.unc.edu/neurology/people"
     },
     {
       "name": "Neurosurgery",
@@ -126,57 +129,67 @@
       "urls": [
         "https://www.med.unc.edu/obgyn/department-directory/clinical-faculty-and-providers/",
         "https://www.med.unc.edu/obgyn/department-directory/research-faculty/"
-      ]
+      ],
+      "profile_base": "https://www.med.unc.edu/obgyn/people"
     },
     {
       "name": "Pathology & Laboratory Medicine",
       "short": "Pathology",
-      "url": "https://www.med.unc.edu/pathology/faculty"
+      "url": "https://www.med.unc.edu/pathology/faculty",
+      "profile_base": "https://www.med.unc.edu/pathology/directory"
     },
     {
       "name": "Radiology",
       "short": "Radiology",
-      "url": "https://www.med.unc.edu/radiology/about/our-people/faculty/"
+      "url": "https://www.med.unc.edu/radiology/about/our-people/faculty/",
+      "profile_base": "https://www.med.unc.edu/radiology/people"
     },
     {
       "name": "Radiation Oncology",
       "short": "Rad Oncology",
-      "url": "https://www.med.unc.edu/radonc/about/for-professionals-2/"
+      "url": "https://www.med.unc.edu/radonc/about/for-professionals-2/",
+      "profile_base": "https://www.med.unc.edu/radonc/directory"
     },
     {
       "name": "Anesthesiology",
       "short": "Anesthesiology",
-      "url": "https://www.med.unc.edu/anesthesiology/our-department/faculty-directory-2/"
+      "url": "https://www.med.unc.edu/anesthesiology/our-department/faculty-directory-2/",
+      "profile_base": "https://www.med.unc.edu/anesthesiology/directory"
     },
     {
       "name": "Dermatology",
       "short": "Dermatology",
-      "url": "https://www.med.unc.edu/derm/the-department/our-people/"
+      "urls": [
+        "https://www.med.unc.edu/derm/lab-services/dermatopathology/",
+        "https://www.med.unc.edu/derm/patient-care/clinical-services/adult-dermatology/",
+        "https://www.med.unc.edu/derm/patient-care/clinical-services/pediatric-dermatology/",
+        "https://www.med.unc.edu/derm/patient-care/clinical-services/mohs-surgery/"
+      ]
     },
     {
       "name": "Emergency Medicine",
       "short": "Emergency Med",
-      "url": "https://www.med.unc.edu/emergmed/about-us/directory/"
+      "url": "https://www.med.unc.edu/emergmed/about-us/faculty/"
     },
     {
       "name": "Family Medicine",
       "short": "Family Med",
-      "url": "https://www.med.unc.edu/fammed/about/people/faculty/"
+      "url": "https://www.med.unc.edu/fammed/about-us/find-a-doctor/faculty/"
     },
     {
       "name": "Orthopaedics",
       "short": "Orthopaedics",
-      "url": "https://www.med.unc.edu/ortho/about/people/faculty/"
+      "url": "https://www.med.unc.edu/ortho/about-us/faculty/"
     },
     {
       "name": "Otolaryngology / Head & Neck Surgery",
       "short": "ENT",
-      "url": "https://www.med.unc.edu/ent/directory/"
+      "url": "https://www.med.unc.edu/ent/about-us/clinical-faculty/"
     },
     {
       "name": "Ophthalmology",
       "short": "Ophthalmology",
-      "url": "https://www.med.unc.edu/ophth/about/people/faculty/"
+      "url": "https://www.med.unc.edu/ophth/meet-our-faculty-2/clinician-bios/"
     },
     {
       "name": "Urology",
@@ -186,7 +199,7 @@
     {
       "name": "Physical Medicine & Rehabilitation",
       "short": "PM&R",
-      "url": "https://www.med.unc.edu/phyrehab/about-us/faculty-staff/faculty/"
+      "url": "https://www.med.unc.edu/phyrehab/about-us-2/faculty-staff/faculty/"
     },
     {
       "name": "Lineberger Comprehensive Cancer Center",
