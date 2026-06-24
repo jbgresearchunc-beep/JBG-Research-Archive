@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-23T23:56:03.801057Z",
-  "total_faculty": 41,
+  "generated_at": "2026-06-24T00:13:37.021496Z",
+  "total_faculty": 40,
   "departments": [
     "Medicine \u2014 Cardiology"
   ],
@@ -1437,21 +1437,6 @@
       "pubmed_count": 2,
       "pubmed_verified": 0,
       "pubmed_ambiguous": true,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Sherry Wimberley",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sherry-wimberley/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ],
-      "pubmed_search": "Wimberley Sherry",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
       "publications": [],
       "nih_grants": []
     }
