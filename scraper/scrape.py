@@ -1546,27 +1546,49 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
             # Prefix with OVERRIDE: so sanitize_hint passes it through unchanged
             f["pubmed_hint"] = f"OVERRIDE:{override}"
             continue
-        if f.get("profile_url"):
+        profile_url = f.get("profile_url") or ""
+
+        # If no profile URL was captured from the listing page, try to construct one.
+        # Most UNC SOM departments use /people/{firstname-lastname}/ pattern.
+        if not profile_url and f.get("department"):
+            # Build slug from name: "Barbara Reid-Mills" → "barbara-reid-mills"
+            slug = re.sub(r"[^a-z0-9]+", "-", f["name"].lower()).strip("-")
+            # Find the base URL for this department from the config
+            dept_conf = next((d for d in config["departments"] if d["name"] == f["department"]), None)
+            if dept_conf:
+                base = dept_conf.get("url") or (dept_conf.get("urls") or [""])[0]
+                if base:
+                    parsed_base = urllib.parse.urlparse(base)
+                    dept_root = f"{parsed_base.scheme}://{parsed_base.netloc}{'/'.join(parsed_base.path.split('/')[:2])}/"
+                    candidate = f"{dept_root.rstrip('/')}/people/{slug}/"
+                    probe = fetch_url(candidate)
+                    if probe:
+                        profile_url = candidate
+                        f["profile_url"] = profile_url
+                        print(f"  {f['name']}: constructed profile URL → {candidate}")
+                    time.sleep(0.2)
+
+        if profile_url:
             # Fetch profile page once — reuse for trainee check, Lineberger filter, and PubMed hint
-            profile_html = fetch_url(f["profile_url"])
+            profile_html = fetch_url(profile_url)
             time.sleep(0.3)
 
             # For Lineberger faculty, exclude non-clinical departments
-            if "unclineberger.org" in (f.get("profile_url") or ""):
+            if "unclineberger.org" in profile_url:
                 if not is_lineberger_clinical(profile_html):
                     print(f"  {f['name']} ({f['department']}): non-clinical Lineberger member — excluding")
                     f["_exclude"] = True
                     trainees_removed.append(f["name"])
                     continue
 
-            # Check if this person is a trainee before spending time on PubMed
+            # Check if this person is a trainee/admin before spending time on PubMed
             if is_trainee_profile(profile_html):
-                print(f"  {f['name']} ({f['department']}): trainee — excluding")
+                print(f"  {f['name']} ({f['department']}): excluded (no faculty credentials)")
                 f["_exclude"] = True
                 trainees_removed.append(f["name"])
                 continue
 
-            ps = scrape_profile_for_pubmed_string(f["profile_url"], html=profile_html)
+            ps = scrape_profile_for_pubmed_string(profile_url, html=profile_html)
             if ps:
                 print(f"  {f['name']}: found '{ps}'")
                 f["pubmed_hint"] = ps
