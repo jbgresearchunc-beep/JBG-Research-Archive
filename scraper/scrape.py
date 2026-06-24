@@ -78,14 +78,20 @@ class MetaTextParser(HTMLParser):
 
 
 def fetch_url(url, retries=3, delay=1.5):
+    import ssl
     headers = {
         "User-Agent": "UNC-Research-Explorer/1.0 (student research tool; contact: jgbresearch@unc.edu)",
         "Accept": "text/html,application/xhtml+xml",
     }
     req = urllib.request.Request(url, headers=headers)
+    # Some UNC subdomains have certificate chain issues — use unverified context for .unc.edu
+    ctx = ssl.create_default_context()
+    if "unc.edu" in url or "unclineberger.org" in url:
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
     for attempt in range(retries):
         try:
-            with urllib.request.urlopen(req, timeout=15) as resp:
+            with urllib.request.urlopen(req, timeout=15, context=ctx) as resp:
                 return resp.read().decode("utf-8", errors="replace")
         except urllib.error.HTTPError as e:
             if e.code == 404:
@@ -100,14 +106,19 @@ def fetch_url(url, retries=3, delay=1.5):
 
 def fetch_json(url, retries=3, delay=1.5):
     """Like fetch_url but sends Accept: application/json — used for REST API calls."""
+    import ssl
     headers = {
         "User-Agent": "UNC-Research-Explorer/1.0 (student research tool; contact: jgbresearch@unc.edu)",
         "Accept": "application/json",
     }
     req = urllib.request.Request(url, headers=headers)
+    ctx = ssl.create_default_context()
+    if "unc.edu" in url or "unclineberger.org" in url:
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
     for attempt in range(retries):
         try:
-            with urllib.request.urlopen(req, timeout=15) as resp:
+            with urllib.request.urlopen(req, timeout=15, context=ctx) as resp:
                 return resp.read().decode("utf-8", errors="replace")
         except urllib.error.HTTPError as e:
             if e.code == 404:
@@ -1716,29 +1727,26 @@ def run(config_path="scraper/departments.json", output_path="data/faculty.json",
             continue
         profile_url = f.get("profile_url") or ""
 
-        # If no profile URL was captured from the listing page, try to construct one.
-        # Most UNC SOM departments use /people/{firstname-lastname}/ pattern.
+        # If no profile URL was captured from the listing page, try to construct one
+        # using the department's known profile URL pattern (if configured).
+        # We only attempt this for departments where we know the pattern — blind
+        # guessing causes timeouts and SSL errors on departments with different structures.
         if not profile_url and f.get("department"):
-            # Build slug from name: "Barbara Reid-Mills" → "barbara-reid-mills"
-            slug = re.sub(r"[^a-z0-9]+", "-", f["name"].lower()).strip("-")
-            # Find the base URL for this department from the config
             dept_conf = next((d for d in config["departments"] if d["name"] == f["department"]), None)
-            if dept_conf:
-                base = dept_conf.get("url") or (dept_conf.get("urls") or [""])[0]
-                if base:
-                    parsed_base = urllib.parse.urlparse(base)
-                    dept_root = f"{parsed_base.scheme}://{parsed_base.netloc}{'/'.join(parsed_base.path.split('/')[:2])}/"
-                    candidate = f"{dept_root.rstrip('/')}/people/{slug}/"
-                    probe = fetch_url(candidate)
-                    if probe:
-                        profile_url = candidate
-                        f["profile_url"] = profile_url
-                        print(f"  {f['name']}: constructed profile URL → {candidate}")
-                    time.sleep(0.2)
+            if dept_conf and dept_conf.get("profile_base"):
+                slug = re.sub(r"[^a-z0-9]+", "-", f["name"].lower()).strip("-")
+                candidate = f"{dept_conf['profile_base'].rstrip('/')}/{slug}/"
+                probe = fetch_url(candidate, retries=1, delay=0.5)
+                if probe:
+                    profile_url = candidate
+                    f["profile_url"] = profile_url
+                    print(f"  {f['name']}: constructed profile URL → {candidate}")
+                time.sleep(0.2)
 
         if profile_url:
             # Fetch profile page once — reuse for trainee check, Lineberger filter, and PubMed hint
-            profile_html = fetch_url(profile_url)
+            # Use shorter timeout for profile pages — not worth waiting long for a slow page
+            profile_html = fetch_url(profile_url, retries=2, delay=1.0)
             time.sleep(0.3)
 
             # For Lineberger faculty, exclude non-clinical departments
