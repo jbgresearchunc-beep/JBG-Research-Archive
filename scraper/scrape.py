@@ -776,34 +776,55 @@ def fetch_pmids_via_computed_authors(name, seed_pmid=None):
 
 def fetch_pmids_by_author_id(author_id, max_results=100):
     """
-    Use the NCBI E-utilities [Author Identifier] field to retrieve PMIDs
-    for a faculty member by their unique NCBI author ID (the slug from their
-    MyNCBI URL, e.g. 'brent.hanks.1').
+    Fetch PMIDs from a faculty member's MyNCBI public bibliography page.
 
-    API call:
-      esearch.fcgi?db=pubmed&term=brent.hanks.1[Author Identifier]&retmax=100
+    The MyNCBI URL slug (e.g. 'brent.hanks.1' or '1JMfwJ7FbPr') is used to
+    build the bibliography URL directly:
+      https://www.ncbi.nlm.nih.gov/myncbi/{slug}/bibliography/public/
 
-    This is far more reliable than guessing name format (Hanks B vs Hanks BA).
+    This is more reliable than the [Author Identifier] E-utilities field, which:
+      - Returns 0 for newer hash-style IDs (e.g. '1JMfwJ7FbPr', '1BwOVEH1gPc')
+      - Returns absurdly large counts for URL-encoded slugs with spaces
+
+    The bibliography page embeds a JSON payload in the page HTML that we can
+    parse directly for PMIDs.
     """
-    import urllib.parse
-    term = urllib.parse.quote(f"{author_id}[Author Identifier]")
-    api_key_param = f"&api_key={NCBI_API_KEY}" if NCBI_API_KEY else ""
-    url = (
-        f"{PUBMED_BASE}esearch.fcgi"
-        f"?db=pubmed&term={term}&retmax={max_results}&retmode=json&email={PUBMED_EMAIL}{api_key_param}"
-    )
-    try:
-        with urllib.request.urlopen(url, timeout=15) as r:
-            data = json.loads(r.read())
-        pmids = data["esearchresult"]["idlist"]
-        count = int(data["esearchresult"]["count"])
-        if count > 1000:
-            print(f"    Author Identifier returned {count} PMIDs — slug '{author_id}' is invalid, skipping")
-            return [], 0
-        return pmids, count
-    except Exception as e:
-        print(f"    Author Identifier search error for '{author_id}': {e}")
+    bib_url = f"https://www.ncbi.nlm.nih.gov/myncbi/{author_id}/bibliography/public/"
+    html = fetch_url(bib_url)
+    if not html:
         return [], 0
+
+    # The bibliography page embeds citation data as a JSON blob in the HTML.
+    # Look for PMIDs in the page — they appear as data-pmid attributes or
+    # in a JSON structure like "pmid":"12345678"
+    pmids = []
+    seen = set()
+
+    # Method 1: data-pmid attributes (most reliable)
+    for m in re.finditer(r'data-pmid=["\'](\d+)["\']', html):
+        pid = m.group(1)
+        if pid not in seen:
+            seen.add(pid)
+            pmids.append(pid)
+
+    # Method 2: JSON-embedded pmid fields
+    if not pmids:
+        for m in re.finditer(r'"pmid"\s*:\s*"?(\d+)"?', html):
+            pid = m.group(1)
+            if pid not in seen:
+                seen.add(pid)
+                pmids.append(pid)
+
+    # Method 3: citation links like /pubmed/12345678/
+    if not pmids:
+        for m in re.finditer(r'/pubmed/(\d{7,8})/', html):
+            pid = m.group(1)
+            if pid not in seen:
+                seen.add(pid)
+                pmids.append(pid)
+
+    count = len(pmids)
+    return pmids[:max_results], count
 
 
 def clean_name_for_pubmed(name):
@@ -1227,26 +1248,23 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
         bib_url = clean_hint.replace("MYNCBI:", "")
         # Extract the author ID slug from the URL
         # e.g. .../myncbi/brent.hanks.1/bibliography/... → 'brent.hanks.1'
+        # Works for both slug-style ('brent.hanks.1') and hash-style ('1JMfwJ7FbPr')
         author_id = bib_url.rstrip("/").split("/myncbi/")[-1].split("/")[0]
-        print(f"    MyNCBI Author ID '{author_id}' → querying via [Author Identifier]")
+        print(f"    MyNCBI: fetching bibliography for '{author_id}'")
         pmids, count = fetch_pmids_by_author_id(author_id, max_results=100)
-        print(f"    MyNCBI: found {count} total PMIDs, fetching top {min(len(pmids),15)}")
-        if count > 2000:
-            # Hashed/broken slug is matching a massive result set — skip and fall back
-            print(f"    MyNCBI: result set too large ({count}), slug '{author_id}' is probably broken — falling back")
-            pmids, count = [], 0
+        print(f"    MyNCBI: found {count} PMIDs on bibliography page")
         if pmids:
             pubs = pubmed_fetch_summaries(pmids[:15], search_term=name)[:5]
-            faculty_member["pubmed_search"] = f"{author_id}[Author Identifier]"
+            faculty_member["pubmed_search"] = f"MyNCBI:{author_id}"
             faculty_member["pubmed_count"] = count
             faculty_member["pubmed_verified"] = len(pubs)
             faculty_member["pubmed_ambiguous"] = False
             faculty_member["publications"] = pubs
             time.sleep(0.4)
             return faculty_member
-        # [Author Identifier] returned 0 — slug may be a hash (e.g. '1foVmTwbUHA5f')
-        # or the author hasn't linked their papers. Fall back to name-based search.
-        print(f"    MyNCBI Author ID search returned 0 — falling back to name search")
+        # Bibliography page returned 0 — author may not have linked papers publicly.
+        # Fall back to name-based search.
+        print(f"    MyNCBI bibliography empty — falling back to name search")
         slug_parts = [p for p in author_id.split(".") if p and not p.isdigit()]
         if len(slug_parts) >= 2:
             # Readable slug like 'brent.hanks.1' → derive 'Hanks B'
