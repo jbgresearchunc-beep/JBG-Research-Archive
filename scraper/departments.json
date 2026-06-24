@@ -3,62 +3,74 @@
     {
       "name": "Medicine \u2014 Cardiology",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/cardiology/our-team/"
+      "url": "https://www.med.unc.edu/medicine/cardiology/our-team/",
+      "profile_base": "https://www.med.unc.edu/medicine/cardiology/people"
     },
     {
       "name": "Medicine \u2014 Endocrinology & Metabolism",
       "short": "Medicine",
-      "url": "https://med.unc.edu/medicine/endocrinology-metabolism/faculty"
+      "url": "https://med.unc.edu/medicine/endocrinology-metabolism/faculty",
+      "profile_base": "https://www.med.unc.edu/medicine/endo/people"
     },
     {
       "name": "Medicine \u2014 Gastroenterology & Hepatology",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/gi/our-team/"
+      "url": "https://www.med.unc.edu/medicine/gi/our-team/",
+      "profile_base": "https://www.med.unc.edu/medicine/gi/people"
     },
     {
       "name": "Medicine \u2014 General Medicine & Clinical Epidemiology",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/im/our-team/"
+      "url": "https://www.med.unc.edu/medicine/im/our-team/",
+      "profile_base": "https://www.med.unc.edu/medicine/im/people"
     },
     {
       "name": "Medicine \u2014 Geriatric Medicine",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/geriatrics/our-team/"
+      "url": "https://www.med.unc.edu/medicine/geriatrics/our-team/",
+      "profile_base": "https://www.med.unc.edu/medicine/geriatrics/people"
     },
     {
       "name": "Medicine \u2014 Hematology",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/hematology/our-team/"
+      "url": "https://www.med.unc.edu/medicine/hematology/our-team/",
+      "profile_base": "https://www.med.unc.edu/medicine/hematology/people"
     },
     {
       "name": "Medicine \u2014 Hospital Medicine",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/hospitalmedicine/our-team/"
+      "url": "https://www.med.unc.edu/medicine/hospitalmedicine/our-team/",
+      "profile_base": "https://www.med.unc.edu/medicine/hospitalmedicine/people"
     },
     {
       "name": "Medicine \u2014 Infectious Diseases",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/infdis/our-team/"
+      "url": "https://www.med.unc.edu/medicine/infdis/our-team/",
+      "profile_base": "https://www.med.unc.edu/medicine/infdis/people"
     },
     {
       "name": "Medicine \u2014 Nephrology & Hypertension",
       "short": "Medicine",
-      "url": "https://med.unc.edu/medicine/people/nephrology"
+      "url": "https://med.unc.edu/medicine/people/nephrology",
+      "profile_base": "https://www.med.unc.edu/medicine/nephrology/people"
     },
     {
       "name": "Medicine \u2014 Oncology",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/oncology/our-team/"
+      "url": "https://www.med.unc.edu/medicine/oncology/our-team/",
+      "profile_base": "https://www.med.unc.edu/medicine/oncology/people"
     },
     {
       "name": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/pulmonary/our-team/"
+      "url": "https://www.med.unc.edu/medicine/pulmonary/our-team/",
+      "profile_base": "https://www.med.unc.edu/medicine/pulmonary/people"
     },
     {
       "name": "Medicine \u2014 Rheumatology, Allergy & Immunology",
       "short": "Medicine",
-      "url": "https://www.med.unc.edu/medicine/rheumatology-allergy-immunology/our-team/"
+      "url": "https://www.med.unc.edu/medicine/rheumatology-allergy-immunology/our-team/",
+      "profile_base": "https://www.med.unc.edu/medicine/rheumatology-allergy-immunology/people"
     },
     {
       "name": "Pediatrics",
@@ -179,7 +191,8 @@
     {
       "name": "Lineberger Comprehensive Cancer Center",
       "short": "Lineberger",
-      "url": "https://unclineberger.org/directory/"
+      "url": "https://unclineberger.org/directory/",
+      "profile_base": "https://unclineberger.org/directory"
     }
   ]
 }
