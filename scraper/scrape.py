@@ -91,7 +91,7 @@ def fetch_url(url, retries=3, delay=1.5):
         ctx.verify_mode = ssl.CERT_NONE
     for attempt in range(retries):
         try:
-            with urllib.request.urlopen(req, timeout=15, context=ctx) as resp:
+            with urllib.request.urlopen(req, timeout=30, context=ctx) as resp:
                 return resp.read().decode("utf-8", errors="replace")
         except urllib.error.HTTPError as e:
             if e.code == 404:
@@ -118,7 +118,7 @@ def fetch_json(url, retries=3, delay=1.5):
         ctx.verify_mode = ssl.CERT_NONE
     for attempt in range(retries):
         try:
-            with urllib.request.urlopen(req, timeout=15, context=ctx) as resp:
+            with urllib.request.urlopen(req, timeout=30, context=ctx) as resp:
                 return resp.read().decode("utf-8", errors="replace")
         except urllib.error.HTTPError as e:
             if e.code == 404:
@@ -765,7 +765,7 @@ def fetch_pmids_via_computed_authors(name, seed_pmid=None):
 
     try:
         req = urllib.request.Request(url, headers={"User-Agent": f"unc-research-explorer/{PUBMED_EMAIL}"})
-        with urllib.request.urlopen(req, timeout=15) as r:
+        with urllib.request.urlopen(req, timeout=30) as r:
             data = json.loads(r.read())
         results = data.get("results", [])
         if not results:
@@ -1085,7 +1085,7 @@ def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term=""):
     xml_data = None
     for attempt in range(3):
         try:
-            with urllib.request.urlopen(url, timeout=15) as resp:
+            with urllib.request.urlopen(url, timeout=30) as resp:
                 xml_data = resp.read().decode("utf-8", errors="replace")
             break
         except urllib.error.HTTPError as e:
