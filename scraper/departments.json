@@ -184,7 +184,8 @@
     {
       "name": "Otolaryngology / Head & Neck Surgery",
       "short": "ENT",
-      "url": "https://www.med.unc.edu/ent/about-us/clinical-faculty/"
+      "url": "https://www.med.unc.edu/ent/about-us/clinical-faculty/",
+      "profile_base": "https://www.med.unc.edu/ent/directory"
     },
     {
       "name": "Ophthalmology",
