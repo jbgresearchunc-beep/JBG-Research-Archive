@@ -157,46 +157,45 @@ TITLE_PREFIXES = re.compile(
 )
 
 NON_NAME_PATTERNS = re.compile(
-    r"(faculty|directory|people|team|staff|home|search|contact|"
-    r"about|news|education|research|residency|fellowship|program|"
-    r"division|department|center|institute|login|admin|patient|"
-    r"appointment|profile|view|all|more|click|here|back|next|"
-    r"previous|apply|submit|calendar|event|blog|video|photo|"
-    r"gallery|map|campus|career|job|giving|donate|privacy|"
-    r"accessibility|intranet|skip|menu|navigation|toggle|search|"
-    r"building|clinic|hospital|location|floor|suite|wing|annex|"
-    r"physicians|community|engagement|school|university|medicine|"
-    r"neurology|cardiology|surgery|pediatrics|oncology|radiology|"
-    r"services|resources|directions|parking|hours|phone|fax|address|"
-    r"imaging|neuroradiology|interventional|musculoskeletal|thoracic|"
-    r"abdominal|nuclear|mammography|ultrasound|fluoroscopy|"
-    r"subspecialty|section|division|group|section|trauma|vascular|"
-    r"breast|cardiac|body|head|neck|spine|pediatric imaging|"
-    r"fellowship|residency|rotation|conference|seminar|lecture|"
-    r"quality|safety|council|positions|open|local|links|follow|"
-    r"notice|nondiscrimination|aviso|practicas|privadas|gift|"
-    r"make a gift|county|rounds|grand|strategic|plan|annual|"
-    r"population|health|sciences|commitment|training|history|"
-    r"specialty|procedures|request|information|interest|"
-    r"academic|affairs|radiological|exams|procedures|"
-    r"residents|current|interdisciplinary|perspectives|connect|"
-    r"fellows|obstetric|anesthesiology|regional|"
-    r"movement disorders|multiple sclerosis|neurocritical|"
-    r"neuromuscular|memory|cognitive|providers|assistants|"
-    r"adjunct|position|application|emeritus|associate professor|"
-    r"professor|instructor|lecturer|"
-    r"making a referral|making an appointment|sublingual|immunotherapy|"
-    r"find a doctor|my chart|show your support|scheduling|referrals|"
-    r"impactful publications|social media|rheumatology care|"
-    r"transitioning to adult|resident documents|darville|thompson laboratory|"
-    r"vogt laboratory|pandya|hematology & sickle|developmental therapeutics|"
-    r"inflammatory bowel|endoscopy|colonoscopy|primary care|adolescent care|"
-    r"complex & diagnostic|development, behavior|child maltreatment|"
-    r"genetics & metabolism|infectious diseases(?! \w)|pediatric (?!faculty)|"
-    r"know before you go|referring physician|living in chapel hill|"
-    r"striving for|that define us|faces that define|our history|"
-    r"make a gift|population health|strategic plan|annual report|"
-    r"grand rounds|fellowship|application overview|specialty procedures)",
+    # Navigation / UI chrome
+    r"\b(home|search|contact|login|admin|menu|navigation|toggle|skip|"
+    r"back|next|previous|apply|submit|calendar|event|blog|video|photo|"
+    r"gallery|map|career|job|giving|donate|privacy|accessibility|intranet|"
+    r"follow|connect|links|local|notice|nondiscrimination)\b|"
+
+    # Generic page/section labels
+    r"\b(faculty|directory|people|team|staff|about|news|education|"
+    r"research|program|division|department|center|institute|"
+    r"services|resources|information|overview|history|commitment|"
+    r"positions|open|emeritus|adjunct|current|interdisciplinary|"
+    r"perspectives|residents|fellows|providers|assistants)\b|"
+
+    # Clinical/location junk
+    r"\b(patient|appointment|building|clinic|hospital|location|floor|"
+    r"suite|wing|campus|parking|hours|phone|fax|address|directions|"
+    r"physicians|community|school|university|population|health|sciences|"
+    r"scheduling|referrals|my chart|find a doctor|make a gift|"
+    r"show your support|grand rounds|annual report|strategic plan)\b|"
+
+    # Department names (appear as nav links on dept pages)
+    r"\b(medicine|neurology|cardiology|surgery|pediatrics|oncology|"
+    r"radiology|imaging|neuroradiology|interventional|musculoskeletal|"
+    r"abdominal|breast|cardiac|nuclear|mammography|ultrasound|"
+    r"anesthesiology|psychiatry|dermatology|ophthalmology|urology|"
+    r"obstetric|regional|movement\s+disorders|multiple\s+sclerosis|"
+    r"neurocritical|neuromuscular|memory|cognitive)\b|"
+
+    # Radiology-specific nav junk
+    r"\b(know before you go|referring physician|living in chapel hill|"
+    r"striving for|that define us|faces that define)\b|"
+
+    # Pediatrics-specific section headers
+    r"\b(inflammatory bowel|endoscopy|colonoscopy|primary care|"
+    r"adolescent care|complex.*diagnostic|development.*behavior|"
+    r"child maltreatment|genetics.*metabolism|hematology.*sickle|"
+    r"developmental therapeutics|thompson laboratory|vogt laboratory|"
+    r"pandya|darville)\b",
+
     re.IGNORECASE
 )
 
@@ -416,13 +415,16 @@ def scrape_faculty_from_page(url, dept_name):
     faculty = []
 
     for href, text in parser.links:
-        if not looks_like_name(text):
+        # Strip credentials first, then check if it looks like a name
+        # e.g. "Wendell G. Yarbrough, MD, MMHC, FACS" → "Wendell G. Yarbrough"
+        cleaned_text = extract_name(text)
+        if not looks_like_name(cleaned_text):
             continue
         # Accept links that look like profile pages on any UNC domain
         if href and ("people" in href or "directory" in href or
                      "faculty" in href or "profile" in href or
                      "unclineberger.org/directory/" in href):
-            name = extract_name(text)
+            name = cleaned_text
             if name and name.lower() not in seen_names and len(name) > 4:
                 seen_names.add(name.lower())
                 # Build absolute URL — handle med.unc.edu and unclineberger.org
@@ -951,6 +953,9 @@ def resolve_dois_to_pmids(dois, max_dois=10):
             pass
         time.sleep(PUBMED_SLEEP)
     return pmids
+
+
+def clean_name_for_pubmed(name):
     """
     Strip credentials, nicknames, punctuation from a raw scraped name
     before building a PubMed search string.
@@ -1317,256 +1322,229 @@ def sanitize_hint(hint, faculty_name):
         return hint_clean
 
 
+def _pubmed_name_search_with_fallbacks(name, initial_term):
+    """
+    Try progressively broader PubMed name searches until we get results.
+    Returns (search_term, result_dict, is_recent_recruit).
+
+    Fallback order:
+      1. Initial term (from hint or build_pubmed_search_string)
+      2. All-initials form (e.g. 'Hanks B' → 'Hanks BA' if middle name known)
+      3. Single-initial fallback (e.g. 'Hanks Brent' → 'Hanks B')
+      4. No-affiliation search (catches recent recruits at prior institutions)
+    """
+    result = pubmed_search(initial_term, max_results=15)
+    if result["count"] > 0:
+        return initial_term, result, False
+
+    # Fallback 1: try all-initials form from the full name
+    clean = clean_name_for_pubmed(name)
+    parts = [p for p in clean.split() if p]
+    if len(parts) >= 2:
+        last = parts[-1]
+        initials = "".join(p[0] for p in parts[:-1] if p and p[0].isalpha())
+        fallback = f"{last} {initials}"
+        if fallback != initial_term:
+            r = pubmed_search(fallback, max_results=15)
+            if r["count"] > 0:
+                print(f"    Fallback: '{initial_term}' → '{fallback}' ({r['count']} results)")
+                return fallback, r, False
+
+    # Fallback 2: single-initial form of the hint
+    hint_parts = [p for p in initial_term.split() if p]
+    if len(hint_parts) == 2 and len(hint_parts[1]) > 1:
+        alt = f"{hint_parts[0]} {hint_parts[1][0]}"
+        if alt != initial_term:
+            r = pubmed_search(alt, max_results=15)
+            if r["count"] > 0:
+                print(f"    Fallback (hint initial): '{initial_term}' → '{alt}' ({r['count']} results)")
+                return alt, r, False
+
+    # Fallback 3: two-initial form if we only have one initial
+    term_parts = initial_term.split()
+    if len(term_parts) >= 2 and len(term_parts[-1]) == 1 and term_parts[-1].isalpha():
+        clean_parts = [p.rstrip(".") for p in clean_name_for_pubmed(name).split() if p]
+        clean_parts = [p for p in clean_parts if p and (len(p) > 1 or p.isalpha())]
+        if len(clean_parts) >= 3:
+            two_initials = "".join(p[0].upper() for p in clean_parts[:-1] if p and p[0].isalpha())
+            if len(two_initials) >= 2:
+                two_init = f"{term_parts[0]} {two_initials}"
+                if two_init != initial_term:
+                    r = pubmed_search(two_init, max_results=15)
+                    if r["count"] > 0:
+                        print(f"    Fallback (two initials): '{initial_term}' → '{two_init}' ({r['count']} results)")
+                        return two_init, r, False
+
+    # Fallback 4: drop affiliation filter (recent recruit)
+    term_parts = initial_term.split()
+    has_initials = len(term_parts) >= 2 and len(term_parts[-1]) <= 2 and term_parts[-1].isalpha()
+    if has_initials:
+        r = pubmed_search(initial_term, affiliation="", max_results=15)
+        if r["count"] > 0:
+            print(f"    No-affiliation fallback: '{initial_term}' found {r['count']} results (recent recruit?)")
+            return initial_term, r, True
+
+    return initial_term, {"count": 0, "ids": []}, False
+
+
+def _upgrade_with_computed_authors(faculty_member, pubs, search_term):
+    """
+    Given a verified seed publication, use NCBI's Computed Authors API
+    to get the full disambiguated publication list for this author.
+    Updates faculty_member in place and returns updated pubs list.
+    """
+    if not pubs or search_term.startswith("ORCID:"):
+        return pubs
+
+    seed_pmid = pubs[0]["pmid"]
+    print(f"    Computed Authors: seeding with PMID {seed_pmid}")
+    ca_pmids, ca_count = fetch_pmids_via_computed_authors(faculty_member["name"], seed_pmid=seed_pmid)
+
+    if ca_count == 0:
+        return pubs
+    if ca_count > 500:
+        print(f"    Computed Authors: cluster too large ({ca_count}), skipping")
+        return pubs
+
+    print(f"    Computed Authors: found {ca_count} total PMIDs for this author")
+    ca_pubs = pubmed_fetch_summaries(ca_pmids[:20], search_term=search_term, verify_affiliation=False)
+    if ca_pubs:
+        faculty_member["pubmed_count"] = ca_count
+        faculty_member["pubmed_search"] = f"ComputedAuthors:{search_term}"
+        return ca_pubs[:5]
+    return pubs
+
+
 def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
     """
-    Given a faculty dict, query PubMed and attach publication data.
+    Attach PubMed publication data to a faculty dict.
+
+    Lookup priority:
+      1. Manual override (OVERRIDE: prefix) — skip all logic
+      2. MyNCBI bibliography page — most accurate, faculty-curated
+      3. ORCID lookup — identity-verified, then DOI→PMID conversion
+      4. Profile hint (name string from profile page)
+      5. Name-based PubMed search with affiliation verification + fallbacks
+      6. Computed Authors upgrade — once we have a verified seed PMID,
+         use NCBI's ML disambiguation to get the full publication list
     """
     name = faculty_member["name"]
-
-    # Manual override is stored as "OVERRIDE:searchterm" — check it BEFORE sanitize_hint
-    # so the sanitizer doesn't strip the prefix
     raw_hint = pubmed_string or ""
+
+    # ── 1. Manual override ────────────────────────────────────────────────────
     if raw_hint.startswith("OVERRIDE:"):
         search_term = raw_hint.replace("OVERRIDE:", "").strip()
         if search_term == "SKIP":
             print(f"    Skipping {name} per manual override")
-            faculty_member["pubmed_search"] = "SKIP"
-            faculty_member["pubmed_count"] = 0
-            faculty_member["pubmed_verified"] = 0
-            faculty_member["pubmed_ambiguous"] = False
-            faculty_member["publications"] = []
+            faculty_member.update({
+                "pubmed_search": "SKIP", "pubmed_count": 0,
+                "pubmed_verified": 0, "pubmed_ambiguous": False, "publications": []
+            })
             return faculty_member
         print(f"    Using manual override: '{search_term}'")
         result = pubmed_search(search_term, max_results=15)
         print(f"    PubMed: {name} → '{search_term}' ({result['count']} results)")
         pubs = []
         if result["ids"]:
-            candidates = pubmed_fetch_summaries(result["ids"][:15], search_term=search_term, verify_affiliation=False)
-            pubs = candidates[:5]
-            if pubs:
-                seed_pmid = pubs[0]["pmid"]
-                print(f"    Computed Authors: seeding with PMID {seed_pmid}")
-                ca_pmids, ca_count = fetch_pmids_via_computed_authors(name, seed_pmid=seed_pmid)
-                if ca_count > 0 and ca_count <= 500:
-                    print(f"    Computed Authors: found {ca_count} total PMIDs for this author")
-                    ca_candidates = pubmed_fetch_summaries(ca_pmids[:20], search_term=search_term, verify_affiliation=False)
-                    if ca_candidates:
-                        pubs = ca_candidates[:5]
-                        faculty_member["pubmed_count"] = ca_count
-        faculty_member["pubmed_search"] = search_term
-        faculty_member["pubmed_count"] = faculty_member.get("pubmed_count") or result["count"]
-        faculty_member["pubmed_verified"] = len(pubs)
-        faculty_member["pubmed_ambiguous"] = False
-        faculty_member["publications"] = pubs
+            pubs = pubmed_fetch_summaries(result["ids"][:15], search_term=search_term,
+                                          verify_affiliation=False)[:5]
+            pubs = _upgrade_with_computed_authors(faculty_member, pubs, search_term)
+        faculty_member.update({
+            "pubmed_search": faculty_member.get("pubmed_search") or search_term,
+            "pubmed_count": faculty_member.get("pubmed_count") or result["count"],
+            "pubmed_verified": len(pubs), "pubmed_ambiguous": False, "publications": pubs
+        })
         time.sleep(PUBMED_SLEEP)
         return faculty_member
 
     clean_hint = sanitize_hint(pubmed_string, name)
 
-    # MyNCBI bibliography — use E-utilities [Author Identifier] search.
-    # The MyNCBI URL slug (e.g. 'brent.hanks.1') IS the NCBI author identifier,
-    # searchable via: esearch?term=brent.hanks.1[Author Identifier]
-    # This is exact and unambiguous — no guessing at 'Hanks B' vs 'Hanks BA'.
+    # ── 2. MyNCBI bibliography ────────────────────────────────────────────────
     if clean_hint and clean_hint.startswith("MYNCBI:"):
         bib_url = clean_hint.replace("MYNCBI:", "")
-        # Extract the author ID slug from the URL
-        # e.g. .../myncbi/brent.hanks.1/bibliography/... → 'brent.hanks.1'
-        # Works for both slug-style ('brent.hanks.1') and hash-style ('1JMfwJ7FbPr')
         author_id = bib_url.rstrip("/").split("/myncbi/")[-1].split("/")[0]
         print(f"    MyNCBI: fetching bibliography for '{author_id}'")
         pmids, count = fetch_pmids_by_author_id(author_id, max_results=100)
         print(f"    MyNCBI: found {count} PMIDs on bibliography page")
         if pmids:
             pubs = pubmed_fetch_summaries(pmids[:15], search_term=name)[:5]
-            faculty_member["pubmed_search"] = f"MyNCBI:{author_id}"
-            faculty_member["pubmed_count"] = count
-            faculty_member["pubmed_verified"] = len(pubs)
-            faculty_member["pubmed_ambiguous"] = False
-            faculty_member["publications"] = pubs
+            faculty_member.update({
+                "pubmed_search": f"MyNCBI:{author_id}", "pubmed_count": count,
+                "pubmed_verified": len(pubs), "pubmed_ambiguous": False, "publications": pubs
+            })
             time.sleep(0.4)
             return faculty_member
-        # Bibliography page returned 0 — author may not have linked papers publicly.
-        # Fall back to name-based search.
+        # Bibliography empty — derive search hint from slug if possible
         print(f"    MyNCBI bibliography empty — falling back to name search")
         slug_parts = [p for p in author_id.split(".") if p and not p.isdigit()]
         if len(slug_parts) >= 2:
-            # Readable slug like 'brent.hanks.1' → derive 'Hanks B'
-            slug_hint = f"{slug_parts[1].capitalize()} {slug_parts[0][0].upper()}"
-            print(f"    Slug-derived fallback search: '{slug_hint}'")
-            clean_hint = slug_hint
+            clean_hint = f"{slug_parts[1].capitalize()} {slug_parts[0][0].upper()}"
+            print(f"    Slug-derived fallback search: '{clean_hint}'")
         else:
             clean_hint = None
 
-    # ── ORCID lookup ──────────────────────────────────────────────────────────
-    # Try ORCID before falling back to name-based PubMed search.
-    # ORCID gives us a verified author identity, eliminating name ambiguity.
-    # Skip if we already have a good hint (OVERRIDE, MyNCBI, or explicit ORCID).
-    if not (clean_hint and clean_hint.startswith("ORCID:")) and \
-       not (pubmed_string and pubmed_string.startswith("OVERRIDE:")):
+    # ── 3. ORCID lookup ───────────────────────────────────────────────────────
+    if not (clean_hint and clean_hint.startswith("ORCID:")):
         orcid_id, orcid_given, orcid_family = search_orcid_by_name(name)
         time.sleep(0.3)
         if orcid_id:
             print(f"    ORCID: found {orcid_id} for {orcid_given} {orcid_family}")
             orcid_pmids, orcid_dois = fetch_pmids_via_orcid(orcid_id, since_year=2018)
             time.sleep(0.3)
-
-            # Convert DOIs to PMIDs for works not directly linked to PubMed
             if not orcid_pmids and orcid_dois:
                 print(f"    ORCID: no PMIDs directly, resolving {min(len(orcid_dois), 10)} DOIs...")
                 orcid_pmids = resolve_dois_to_pmids(orcid_dois, max_dois=10)
-
             if orcid_pmids:
                 print(f"    ORCID: {len(orcid_pmids)} PMIDs found — fetching summaries")
                 pubs = pubmed_fetch_summaries(orcid_pmids[:15], search_term=name,
                                               verify_affiliation=False)[:5]
-                faculty_member["pubmed_search"] = f"ORCID:{orcid_id}"
-                faculty_member["pubmed_count"] = len(orcid_pmids)
-                faculty_member["pubmed_verified"] = len(pubs)
-                faculty_member["pubmed_ambiguous"] = False
-                faculty_member["publications"] = pubs
+                faculty_member.update({
+                    "pubmed_search": f"ORCID:{orcid_id}", "pubmed_count": len(orcid_pmids),
+                    "pubmed_verified": len(pubs), "pubmed_ambiguous": False, "publications": pubs
+                })
                 time.sleep(0.3)
                 return faculty_member
-            else:
-                print(f"    ORCID: found ID but no PMIDs — falling back to name search")
-                # Use ORCID-confirmed name to build a better PubMed search string
-                if orcid_family and orcid_given:
-                    clean_hint = f"{orcid_family} {orcid_given[0]}"
-                    print(f"    ORCID-derived search: '{clean_hint}'")
+            # ORCID found but no PMIDs — use confirmed name for better search
+            if orcid_family and orcid_given:
+                clean_hint = f"{orcid_family} {orcid_given[0]}"
+                print(f"    ORCID: no PMIDs, using confirmed name: '{clean_hint}'")
         else:
             print(f"    ORCID: no match found for '{name}'")
 
+    # ── 4 + 5. Profile hint → name search with fallbacks ─────────────────────
     if clean_hint and clean_hint.startswith("ORCID:"):
-        search_term = clean_hint
+        initial_term = clean_hint
     elif clean_hint:
-        if clean_hint != build_pubmed_search_string(name):
+        canonical = build_pubmed_search_string(name)
+        if clean_hint != canonical:
             print(f"    Using hint '{clean_hint}' for {name}")
-        search_term = clean_hint
+        initial_term = clean_hint
     else:
-        search_term = build_pubmed_search_string(name)
+        initial_term = build_pubmed_search_string(name)
 
+    print(f"    PubMed: {name} → '{initial_term}'")
+    search_term, result, recent_recruit = _pubmed_name_search_with_fallbacks(name, initial_term)
+    if recent_recruit:
+        faculty_member["pubmed_recent_recruit"] = True
 
-    print(f"    PubMed: {name} → '{search_term}'")
-    result = pubmed_search(search_term, max_results=15)
-
-    # If full-name search returns nothing, try progressively broader fallbacks.
-    # PubMed indexes authors as 'Lastname FI' or 'Lastname FirstI' — not full first name.
-    if result["count"] == 0 and not search_term.startswith("ORCID:"):
-        clean = clean_name_for_pubmed(name)
-        parts = [p for p in clean.split() if p]
-        if len(parts) >= 2:
-            last = parts[-1]
-            initials = "".join(p[0] for p in parts[:-1] if p and p[0].isalpha())
-            fallback_term = f"{last} {initials}"
-            if fallback_term != search_term:
-                fallback_result = pubmed_search(fallback_term, max_results=15)
-                if fallback_result["count"] > 0:
-                    print(f"    Fallback: '{search_term}' → '{fallback_term}' ({fallback_result['count']} results)")
-                    search_term = fallback_term
-                    result = fallback_result
-
-    # If STILL 0 results, the MyNCBI hint may be "Lastname Firstname" but PubMed
-    # indexes the person under initials only (e.g. "Hanks Brent" → try "Hanks B")
-    # Also covers cases where affiliation string is slightly off — retry with
-    # the initials form derived from the hint itself
-    if result["count"] == 0 and not search_term.startswith("ORCID:"):
-        hint_parts = [p for p in search_term.split() if p]
-        if len(hint_parts) == 2:
-            hint_initial = hint_parts[1][0]  # first letter of first name in hint
-            alt_term = f"{hint_parts[0]} {hint_initial}"
-            if alt_term != search_term:
-                alt_result = pubmed_search(alt_term, max_results=15)
-                if alt_result["count"] > 0:
-                    print(f"    Fallback (hint initial): '{search_term}' → '{alt_term}' ({alt_result['count']} results)")
-                    search_term = alt_term
-                    result = alt_result
-
-    # Final fallback: drop the UNC affiliation filter entirely.
-    # Catches recently recruited faculty whose papers list a prior institution.
-    # Only trigger when search term ends with 1-2 letter initials — specific enough
-    # to avoid flooding with false positives. Try two-initial form first (e.g. 'Hanks BA')
-    # before dropping affiliation entirely.
-    if result["count"] == 0 and not search_term.startswith("ORCID:"):
-        term_parts = search_term.split()
-        has_initials = len(term_parts) >= 2 and len(term_parts[-1]) <= 2 and term_parts[-1].isalpha()
-        if has_initials:
-            # If search term has only one initial (e.g. 'Hanks B'), try two initials
-            # by checking if the raw name has a middle name/initial we can use
-            if len(term_parts[-1]) == 1:
-                clean = clean_name_for_pubmed(name)
-                raw_parts = [p.rstrip(".") for p in clean.split() if p]
-                raw_parts = [p for p in raw_parts if p and (len(p) > 1 or p.isalpha())]
-                if len(raw_parts) >= 3:
-                    # e.g. ['Brent', 'A', 'Hanks'] or ['Brent', 'Hanks'] - check for middle
-                    first_parts = raw_parts[:-1]
-                    if len(first_parts) >= 2:
-                        two_initials = "".join(p[0].upper() for p in first_parts if p and p[0].isalpha())
-                        if len(two_initials) >= 2:
-                            two_init_term = f"{term_parts[0]} {two_initials}"
-                            if two_init_term != search_term:
-                                two_init_result = pubmed_search(two_init_term, max_results=15)
-                                if two_init_result["count"] > 0:
-                                    print(f"    Fallback (two initials): '{search_term}' → '{two_init_term}' ({two_init_result['count']} results)")
-                                    search_term = two_init_term
-                                    result = two_init_result
-
-            # If still 0, drop affiliation (recent recruit at another institution)
-            if result["count"] == 0:
-                no_aff_result = pubmed_search(search_term, affiliation="", max_results=15)
-                if no_aff_result["count"] > 0:
-                    print(f"    No-affiliation fallback: '{search_term}' found {no_aff_result['count']} results (recent recruit?)")
-                    result = no_aff_result
-                    faculty_member["pubmed_recent_recruit"] = True  # flag for UI
-
+    # ── 6. Fetch summaries + Computed Authors upgrade ─────────────────────────
     pubs = []
-    recent_recruit = faculty_member.get("pubmed_recent_recruit", False)
     if result["ids"]:
-        # For recent recruits, skip UNC affiliation verification
-        candidates = pubmed_fetch_summaries(
+        pubs = pubmed_fetch_summaries(
             result["ids"][:15],
             search_term=search_term,
             verify_affiliation=not recent_recruit
-        )
-        pubs = candidates[:5]
+        )[:5]
+        if not recent_recruit:
+            pubs = _upgrade_with_computed_authors(faculty_member, pubs, search_term)
 
-        # ----------------------------------------------------------------
-        # Computed Authors upgrade: once we have a UNC-verified seed PMID,
-        # use NCBI's ML disambiguation API to get the full publication list.
-        # IMPORTANT: only seed with a UNC-verified paper — if the seed is wrong,
-        # Computed Authors will return an entirely wrong author cluster.
-        # Skip for recent recruits (unverified seeds) and ORCID searches.
-        # ----------------------------------------------------------------
-        # Only seed Computed Authors from genuinely verified pubs.
-        # recent_recruit pubs bypass UNC verification, so skip CA for them.
-        # For normal searches, pubmed_fetch_summaries already filters to UNC-verified,
-        # so any pub in pubs[] is confirmed.
-        verified_pubs = pubs if not recent_recruit else []
-        if verified_pubs and not search_term.startswith("ORCID:"):
-            seed_pmid = verified_pubs[0]["pmid"]
-            print(f"    Computed Authors: seeding with PMID {seed_pmid}")
-            ca_pmids, ca_count = fetch_pmids_via_computed_authors(name, seed_pmid=seed_pmid)
-            if ca_count > 0:
-                print(f"    Computed Authors: found {ca_count} total PMIDs for this author")
-                # Sanity check: reject obviously wrong clusters (>500 PMIDs suggests wrong person)
-                if ca_count > 500:
-                    print(f"    Computed Authors: cluster too large ({ca_count}), skipping")
-                else:
-                    ca_candidates = pubmed_fetch_summaries(
-                        ca_pmids[:20],
-                        search_term=search_term,
-                        verify_affiliation=False  # CA already disambiguated — trust it
-                    )
-                    if ca_candidates:
-                        pubs = ca_candidates[:5]
-                        faculty_member["pubmed_count"] = ca_count
-                        faculty_member["pubmed_search"] = f"ComputedAuthors:{search_term}"
-
-    faculty_member["pubmed_search"] = faculty_member.get("pubmed_search") or search_term
-    faculty_member["pubmed_count"] = faculty_member.get("pubmed_count") or result["count"]
-    faculty_member["pubmed_verified"] = len(pubs)
-    faculty_member["pubmed_ambiguous"] = (result["count"] > 0 and len(pubs) == 0)
-    faculty_member["publications"] = pubs
-
-    # Rate limiting — sleep respects NCBI API key rate limit
+    faculty_member.update({
+        "pubmed_search": faculty_member.get("pubmed_search") or search_term,
+        "pubmed_count": faculty_member.get("pubmed_count") or result["count"],
+        "pubmed_verified": len(pubs),
+        "pubmed_ambiguous": (result["count"] > 0 and len(pubs) == 0),
+        "publications": pubs,
+    })
     time.sleep(PUBMED_SLEEP)
     return faculty_member
 
@@ -1619,10 +1597,6 @@ def fetch_nih_grants(name):
         print(f"    NIH RePORTER error for {name}: {e}")
         return []
 
-
-# ---------------------------------------------------------------------------
-# Main pipeline
-# ---------------------------------------------------------------------------
 
 # ---------------------------------------------------------------------------
 # Main pipeline
