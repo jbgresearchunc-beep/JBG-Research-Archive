@@ -1628,6 +1628,20 @@ def fetch_nih_grants(name):
 # Main pipeline
 # ---------------------------------------------------------------------------
 
+def dept_matches(filter_str, dept_name, dept_short=""):
+    """
+    Match a department filter string against a department name or short name.
+    Uses word-boundary matching to avoid 'ENT' matching 'Gastroenterology'.
+    Also checks the short name so 'ENT' matches 'Otolaryngology / Head & Neck Surgery'
+    and 'PM&R' matches 'Physical Medicine & Rehabilitation'.
+    """
+    if not filter_str:
+        return True
+    pattern = r'\b' + re.escape(filter_str.strip()) + r'\b'
+    return (bool(re.search(pattern, dept_name, re.IGNORECASE)) or
+            bool(re.search(pattern, dept_short, re.IGNORECASE)))
+
+
 def scrape_only(config_path="scraper/departments.json",
                 raw_output_path="data/faculty_raw.json",
                 dept_filter=None):
@@ -1652,7 +1666,7 @@ def scrape_only(config_path="scraper/departments.json",
 
     departments = config["departments"]
     if dept_filter:
-        departments = [d for d in departments if dept_filter.lower() in d["name"].lower()]
+        departments = [d for d in departments if dept_matches(dept_filter, d["name"], d.get("short", ""))]
 
     all_faculty = []
 
@@ -1798,8 +1812,8 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
     # Optionally filter to a single department
     if dept_filter:
         all_faculty = [f for f in all_faculty
-                       if dept_filter.lower() in " ".join(f.get("departments", [f.get("department", "")])).lower()]
-        departments_in_raw = [d for d in departments_in_raw if dept_filter.lower() in d.lower()]
+                       if any(dept_matches(dept_filter, d) for d in f.get("departments", [f.get("department", "")]))]
+        departments_in_raw = [d for d in departments_in_raw if dept_matches(dept_filter, d)]
 
     # ---- Step 3: PubMed enrichment ----
     print("\n=== Step 3: Enriching with PubMed ===")
