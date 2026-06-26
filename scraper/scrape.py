@@ -471,10 +471,11 @@ def scrape_faculty_from_page(url, dept_name):
 
     print(f"  Found {len(faculty)} faculty")
 
-    # If HTML scraping returned nothing or suspiciously few results, the page
-    # is likely JavaScript-rendered. Try the WordPress REST API as a fallback.
-    # Threshold of 10 catches cases where nav items slip through the name filter.
-    if len(faculty) < 10:
+    # If HTML scraping returned very few results, the page is likely
+    # JavaScript-rendered. Try the WordPress REST API as a fallback.
+    # Threshold of 5 (was 10) avoids firing on small-but-complete departments;
+    # genuinely JS-rendered pages return 0-2 nav-junk items, well under 5.
+    if len(faculty) < 5:
         parsed = urllib.parse.urlparse(url)
         path_parts = parsed.path.strip("/").split("/")
         wp_key = f"{parsed.netloc}/{path_parts[0]}"
@@ -485,11 +486,20 @@ def scrape_faculty_from_page(url, dept_name):
             return faculty  # return whatever HTML found (may be empty)
         print(f"  {'No' if len(faculty) == 0 else 'Only ' + str(len(faculty))} faculty from HTML — trying WP REST API...")
         rest_faculty = scrape_faculty_via_wp_rest(url, dept_name)
-        if rest_faculty:
-            scrape_faculty_from_page._wp_rest_cache[wp_key] = True
-            print(f"  Found {len(rest_faculty)} faculty via WP REST API")
-            return rest_faculty
         scrape_faculty_from_page._wp_rest_cache[wp_key] = True
+        if rest_faculty:
+            # MERGE HTML + WP REST results, deduplicating by name.
+            # Previously this discarded HTML results entirely — a bug that
+            # silently dropped faculty when both sources had distinct people.
+            existing_names = {f["name"].lower() for f in faculty}
+            added = 0
+            for rf in rest_faculty:
+                if rf["name"].lower() not in existing_names:
+                    faculty.append(rf)
+                    existing_names.add(rf["name"].lower())
+                    added += 1
+            print(f"  Found {len(rest_faculty)} via WP REST API "
+                  f"({added} new, {len(rest_faculty) - added} already in HTML results)")
 
     return faculty
 
@@ -867,9 +877,19 @@ def search_orcid_by_name(name):
         given = (result.get("given-names") or "").strip()
         family = (result.get("family-names") or "").strip()
         orcid = result.get("orcid-id")
-        # Require last name exact match and first name initial match
-        if (family.lower() == last.lower() and
-                given.lower().startswith(first.lower()[0])):
+        # Require last name exact match AND first name match strong enough to
+        # disambiguate. A single shared initial ('J' matches Jonathan/Jane/Jose)
+        # is NOT enough — we saw wrong-person ORCID matches from that. Require
+        # either an exact first-name match or a shared prefix of >=3 chars.
+        if family.lower() != last.lower():
+            continue
+        gl, fl = given.lower(), first.lower()
+        exact = gl == fl
+        # Prefix match: one is a prefix of the other and they share >=3 chars
+        # (handles 'Bob'/'Robert' won't match, but 'Cathy'/'Catherine' will)
+        prefix_ok = (len(fl) >= 3 and len(gl) >= 3 and
+                     (gl.startswith(fl) or fl.startswith(gl)))
+        if exact or prefix_ok:
             return orcid, given, family
 
     return None, None, None
@@ -958,11 +978,18 @@ def resolve_dois_to_pmids(dois, max_dois=10):
 def clean_name_for_pubmed(name):
     """
     Strip credentials, nicknames, punctuation from a raw scraped name
-    before building a PubMed search string.
+    before building a PubMed search string. Also normalizes accented
+    characters to ASCII, since PubMed indexes authors in ASCII
+    (e.g. 'Aubé' → 'Aube', 'Giscombé' → 'Giscombe').
     E.g. 'Adeyemi "Yemi" Ogunleye' -> 'Adeyemi Ogunleye'
          'Delora Mount, FAAP'       -> 'Delora Mount'
-         'Katherine Rodby'          -> 'Katherine Rodby'
+         'Jeff Aubé'                -> 'Jeff Aube'
     """
+    import unicodedata
+    # Normalize accented chars to ASCII (NFKD splits base char + combining mark,
+    # then we drop the combining marks)
+    name = unicodedata.normalize("NFKD", name)
+    name = "".join(c for c in name if not unicodedata.combining(c))
     # Remove anything in quotes (nicknames)
     name = re.sub(r'["\u201c\u201d][^"]*["\u201c\u201d]', '', name)
     # Strip degree/credential suffixes (comma-separated at end)
@@ -1065,12 +1092,46 @@ def affiliation_is_unc(aff_string):
     return any(t in aff_lower for t in UNC_AFFILIATION_TERMS)
 
 
-def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term=""):
+def _surname_tokens(name_or_term):
+    """
+    Extract candidate surname forms from a name or search term.
+    Handles multi-word surnames with particles (de Silva, van Duin, von Hippel).
+    Returns a set of lowercase candidates to match against a PubMed <LastName>.
+
+    'Hanks BA'              -> {'hanks'}
+    'de Silva AM'           -> {'silva', 'de silva'}
+    'van Duin D'            -> {'duin', 'van duin'}
+    'Brent A. Hanks' (name) -> {'hanks'}   (last token, initials ignored)
+    """
+    if not name_or_term:
+        return set()
+    PARTICLES = {"de", "van", "von", "del", "der", "di", "da", "la", "le", "den", "ter"}
+    tokens = [t.strip(".,").lower() for t in name_or_term.split() if t.strip(".,")]
+    # Drop trailing initials blocks (1-2 char all-alpha tokens at the end)
+    while len(tokens) > 1 and len(tokens[-1]) <= 2 and tokens[-1].isalpha():
+        tokens.pop()
+    if not tokens:
+        return set()
+    candidates = {tokens[-1]}
+    # If the token before the last is a particle, include the compound surname
+    if len(tokens) >= 2 and tokens[-2] in PARTICLES:
+        candidates.add(f"{tokens[-2]} {tokens[-1]}")
+        # Also accept the particle stripped (PubMed sometimes drops particles)
+        candidates.add(tokens[-1])
+    return candidates
+
+
+def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term="", target_lastname=None):
     """
     Fetch article details for a list of PMIDs.
     Uses efetch (XML) to get affiliation data, then filters to only
-    papers where at least one author is affiliated with UNC.
-    Falls back to esummary if efetch fails.
+    papers where the TARGET author is affiliated with UNC.
+
+    target_lastname: the faculty member's actual surname, used for per-author
+    affiliation matching. If not given, it's derived from search_term — but
+    callers should pass it explicitly, because search_term is "Lastname Initials"
+    for name searches but the full name for MyNCBI/ORCID paths, which would
+    otherwise yield the wrong token (e.g. first name).
     """
     if not pmids:
         return []
@@ -1154,7 +1215,15 @@ def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term=""):
             all_affiliations = re.findall(r"<Affiliation>(.*?)</Affiliation>", article_xml)
             all_aff_text = " ".join(all_affiliations)
 
-            target_last = search_term.split()[0].lower() if search_term else ""
+            # Determine the surname(s) to match. Prefer an explicit target_lastname;
+            # otherwise derive from the search term (handles multi-word surnames).
+            surname_candidates = _surname_tokens(target_lastname or search_term)
+            # The "primary" surname for ambiguity checks is the bare last token
+            # (the single-word surname). For 'de silva' candidates {'silva','de silva'}
+            # the ambiguity check should use 'silva' — the form PubMed most often
+            # stores in <LastName> and the form that appears in AMBIGUOUS_LASTNAMES.
+            primary_last = (min(surname_candidates, key=len)
+                            if surname_candidates else "")
             target_has_unc = False
             any_has_unc = affiliation_is_unc(all_aff_text)
 
@@ -1162,8 +1231,6 @@ def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term=""):
             any_block_has_affs = False
             for block in author_blocks:
                 last_match = re.search(r"<LastName>(.*?)</LastName>", block)
-                # Per-author affiliations are in <AffiliationInfo><Identifier>
-                # or directly as <Affiliation> inside the author block
                 block_affs = re.findall(r"<Affiliation>(.*?)</Affiliation>", block)
                 block_aff_text = " ".join(block_affs)
 
@@ -1172,7 +1239,7 @@ def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term=""):
 
                 if last_match:
                     last = last_match.group(1).strip().lower()
-                    if last == target_last:
+                    if last in surname_candidates:
                         # This is our target author — check their affiliation
                         if block_affs and affiliation_is_unc(block_aff_text):
                             target_has_unc = True
@@ -1181,19 +1248,17 @@ def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term=""):
             # fall back to article-level — but only if the target last name is
             # rare enough to be unambiguous (not smith, lee, kim, wang, etc.)
             if not any_block_has_affs and any_has_unc:
-                if target_last not in AMBIGUOUS_LASTNAMES:
-                    # No per-author data, but article has UNC affiliation and
-                    # the last name is distinctive enough to trust the match
+                if primary_last not in AMBIGUOUS_LASTNAMES:
                     target_has_unc = True
                 else:
-                    print(f"      PMID {pmid} — UNC affiliation found but last name '{target_last}' too common to verify per-author")
+                    print(f"      PMID {pmid} — UNC affiliation found but last name '{primary_last}' too common to verify per-author")
 
             if not any_has_unc:
                 print(f"      Skipping PMID {pmid} — no UNC affiliation in article")
                 continue
             # If we have per-author data and target isn't at UNC, skip
             if not target_has_unc and any_has_unc:
-                print(f"      PMID {pmid} — UNC affiliation found but not for target author ({target_last})")
+                print(f"      PMID {pmid} — UNC affiliation found but not for target author ({primary_last})")
                 continue
 
         if title:
@@ -1387,7 +1452,7 @@ def _pubmed_name_search_with_fallbacks(name, initial_term):
     return initial_term, {"count": 0, "ids": []}, False
 
 
-def _upgrade_with_computed_authors(faculty_member, pubs, search_term):
+def _upgrade_with_computed_authors(faculty_member, pubs, search_term, target_lastname=None):
     """
     Given a verified seed publication, use NCBI's Computed Authors API
     to get the full disambiguated publication list for this author.
@@ -1407,7 +1472,8 @@ def _upgrade_with_computed_authors(faculty_member, pubs, search_term):
         return pubs
 
     print(f"    Computed Authors: found {ca_count} total PMIDs for this author")
-    ca_pubs = pubmed_fetch_summaries(ca_pmids[:20], search_term=search_term, verify_affiliation=False)
+    ca_pubs = pubmed_fetch_summaries(ca_pmids[:20], search_term=search_term,
+                                     verify_affiliation=False, target_lastname=target_lastname)
     if ca_pubs:
         faculty_member["pubmed_count"] = ca_count
         faculty_member["pubmed_search"] = f"ComputedAuthors:{search_term}"
@@ -1467,7 +1533,12 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
         pmids, count = fetch_pmids_by_author_id(author_id, max_results=100)
         print(f"    MyNCBI: found {count} PMIDs on bibliography page")
         if pmids:
-            pubs = pubmed_fetch_summaries(pmids[:15], search_term=name)[:5]
+            # The MyNCBI bibliography is the faculty member's own curated list,
+            # so we trust it and skip UNC affiliation re-verification (which would
+            # otherwise drop papers whose per-author affiliation lists a prior or
+            # collaborating institution).
+            pubs = pubmed_fetch_summaries(pmids[:15], search_term=name,
+                                          verify_affiliation=False)[:5]
             faculty_member.update({
                 "pubmed_search": f"MyNCBI:{author_id}", "pubmed_count": count,
                 "pubmed_verified": len(pubs), "pubmed_ambiguous": False, "publications": pubs
@@ -1527,16 +1598,21 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
     if recent_recruit:
         faculty_member["pubmed_recent_recruit"] = True
 
+    # Derive the real surname from the faculty name for affiliation matching —
+    # more reliable than re-parsing search_term (which mangles multi-word surnames).
+    target_lastname = clean_name_for_pubmed(name)
+
     # ── 6. Fetch summaries + Computed Authors upgrade ─────────────────────────
     pubs = []
     if result["ids"]:
         pubs = pubmed_fetch_summaries(
             result["ids"][:15],
             search_term=search_term,
-            verify_affiliation=not recent_recruit
+            verify_affiliation=not recent_recruit,
+            target_lastname=target_lastname,
         )[:5]
         if not recent_recruit:
-            pubs = _upgrade_with_computed_authors(faculty_member, pubs, search_term)
+            pubs = _upgrade_with_computed_authors(faculty_member, pubs, search_term, target_lastname)
 
     faculty_member.update({
         "pubmed_search": faculty_member.get("pubmed_search") or search_term,
