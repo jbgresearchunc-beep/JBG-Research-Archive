@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T03:56:45.006845Z",
+  "generated_at": "2026-06-26T12:27:44.381811Z",
   "total_faculty": 2756,
   "departments": [
     "Medicine \u2014 Cardiology",
@@ -14595,15 +14595,6 @@
       ]
     },
     {
-      "name": "More \u2013>",
-      "profile_url": "https://www.med.unc.edu/neurosurgery/directory/matthew-ewend-md-facs/",
-      "department": "Neurosurgery",
-      "role": "",
-      "departments": [
-        "Neurosurgery"
-      ]
-    },
-    {
       "name": "Carlos David",
       "profile_url": "https://www.med.unc.edu/neurosurgery/directory/carlos-david-md/",
       "department": "Neurosurgery",
@@ -24306,6 +24297,16 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ]
+    },
+    {
+      "name": "Donald L. Rosenstein",
+      "profile_url": "https://unclineberger.org/directory/donald-rosenstein/",
+      "department": "Lineberger Comprehensive Cancer Center",
+      "role": "",
+      "departments": [
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/donald.rosenstein.1/bibliography/public"
     },
     {
       "name": "Bryan Roth",
