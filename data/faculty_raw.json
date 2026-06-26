@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-25T02:30:08.445731Z",
-  "total_faculty": 2828,
+  "generated_at": "2026-06-26T03:56:45.006845Z",
+  "total_faculty": 2756,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -6767,7 +6767,8 @@
       "department": "Pediatrics",
       "role": "",
       "departments": [
-        "Pediatrics"
+        "Pediatrics",
+        "Psychiatry"
       ]
     },
     {
@@ -6776,7 +6777,8 @@
       "department": "Pediatrics",
       "role": "",
       "departments": [
-        "Pediatrics"
+        "Pediatrics",
+        "Neurology"
       ]
     },
     {
@@ -6858,7 +6860,154 @@
       "role": "",
       "departments": [
         "Pediatrics",
+        "Psychiatry",
+        "Neurology",
+        "Obstetrics & Gynecology",
         "Radiology"
+      ]
+    },
+    {
+      "name": "Quality Improvement Programs",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Pediatric Endocrinology",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Feeding and Swallowing Disorders",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Vascular Anomalies",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Pediatric Gastroenterology",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Infectious Diseases",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Pediatric Infectious Disease",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Pediatric Pulmonology",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Rheumatology Care",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Multi-Specialty Clinics",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Transitioning To Adult Care",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Resident Documents",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Resident Videos",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Quality Improvement",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Pediatric Rheumatology",
+      "profile_url": "",
+      "department": "Pediatrics",
+      "role": "",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Ryan Barbaro",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/ryan-barbaro-md-ms/",
+      "department": "Pediatrics",
+      "role": "Pccm",
+      "departments": [
+        "Pediatrics"
       ]
     },
     {
@@ -9404,141 +9553,6 @@
       ]
     },
     {
-      "name": "Quality Improvement Programs",
-      "profile_url": "",
-      "department": "Pediatrics",
-      "role": "",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Pediatric Endocrinology",
-      "profile_url": "",
-      "department": "Pediatrics",
-      "role": "",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Feeding and Swallowing Disorders",
-      "profile_url": "",
-      "department": "Pediatrics",
-      "role": "",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Vascular Anomalies",
-      "profile_url": "",
-      "department": "Pediatrics",
-      "role": "",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Pediatric Gastroenterology",
-      "profile_url": "",
-      "department": "Pediatrics",
-      "role": "",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Infectious Diseases",
-      "profile_url": "",
-      "department": "Pediatrics",
-      "role": "",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Pediatric Infectious Disease",
-      "profile_url": "",
-      "department": "Pediatrics",
-      "role": "",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Pediatric Pulmonology",
-      "profile_url": "",
-      "department": "Pediatrics",
-      "role": "",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Rheumatology Care",
-      "profile_url": "",
-      "department": "Pediatrics",
-      "role": "",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Multi-Specialty Clinics",
-      "profile_url": "",
-      "department": "Pediatrics",
-      "role": "",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Transitioning To Adult Care",
-      "profile_url": "",
-      "department": "Pediatrics",
-      "role": "",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Resident Documents",
-      "profile_url": "",
-      "department": "Pediatrics",
-      "role": "",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Resident Videos",
-      "profile_url": "",
-      "department": "Pediatrics",
-      "role": "",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Quality Improvement",
-      "profile_url": "",
-      "department": "Pediatrics",
-      "role": "",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Pediatric Rheumatology",
-      "profile_url": "",
-      "department": "Pediatrics",
-      "role": "",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
       "name": "Caprice C. Greenberg",
       "profile_url": "https://www.med.unc.edu/surgery/directory/caprice-c-greenberg-md-mph/",
       "department": "Surgery \u2014 General Surgery",
@@ -10632,6 +10646,15 @@
       "role": "",
       "departments": [
         "Surgery \u2014 Plastic & Reconstructive Surgery"
+      ]
+    },
+    {
+      "name": "Centers & Programs",
+      "profile_url": "",
+      "department": "Psychiatry",
+      "role": "",
+      "departments": [
+        "Psychiatry"
       ]
     },
     {
@@ -14536,108 +14559,8 @@
       ]
     },
     {
-      "name": "Andrea Kurasz",
-      "profile_url": "https://www.med.unc.edu/neurology/people/andrea-kurasz-phd/",
-      "department": "Neurology",
-      "role": "Memory-And-Cognitive-Disorders",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Hadley J. Bryan",
-      "profile_url": "https://www.med.unc.edu/neurology/people/hadley-j-bryan/",
-      "department": "Neurology",
-      "role": "Precision-Medicine-And-Neurogenetics",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Stephanie Roses",
-      "profile_url": "https://www.med.unc.edu/neurology/people/stephanie-roses-md/",
-      "department": "Neurology",
-      "role": "Als-Clinic",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Jennifer Grisolia",
-      "profile_url": "https://www.med.unc.edu/neurology/people/jennifer-grisolia-pharmd-bcccp/",
-      "department": "Neurology",
-      "role": "Neurocritical-Care-Pharmacy-Specialist",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Rachel Alexandra Kolar",
-      "profile_url": "https://www.med.unc.edu/neurology/people/rachel-alexandra-kolar-pharmd-bcccp/",
-      "department": "Neurology",
-      "role": "Neurocritical-Care-Pharmacy-Specialist",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Kayla E. John",
-      "profile_url": "https://www.med.unc.edu/neurology/people/kayla-e-john/",
-      "department": "Neurology",
-      "role": "Neurocritical-Care-Pharmacy-Specialist",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Erica D. Johnson",
-      "profile_url": "https://www.med.unc.edu/neurology/people/erica-d-johnson-md-ms/",
-      "department": "Neurology",
-      "role": "Comprehensive-Neurology",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Geetika Bajpai",
-      "profile_url": "https://www.med.unc.edu/neurology/people/geetika-bajpai-mbbs-md-dm/",
-      "department": "Neurology",
-      "role": "Epilepsy",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Hannah H. Noah",
-      "profile_url": "https://www.med.unc.edu/neurology/people/hannah-h-noah-md-mph/",
-      "department": "Neurology",
-      "role": "Memory-And-Cognitive-Disorders",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Jeremy Rich",
-      "profile_url": "https://www.med.unc.edu/neurology/people/jeremy-rich-md-mhs-mba/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology",
-        "Neurosurgery"
-      ]
-    },
-    {
-      "name": "Candace Henderson",
-      "profile_url": "https://www.med.unc.edu/neurology/people/candace-henderson/",
-      "department": "Neurology",
-      "role": "Neurosciences-Clinical-Trial-Unit",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Mary C. Edmondson",
-      "profile_url": "https://www.med.unc.edu/neurology/people/mary-c-edmondson-md/",
+      "name": "Neuroscience Quality Council",
+      "profile_url": "",
       "department": "Neurology",
       "role": "",
       "departments": [
@@ -14645,246 +14568,8 @@
       ]
     },
     {
-      "name": "Jessica Rider",
-      "profile_url": "https://www.med.unc.edu/neurology/people/jessica-rider-fnp-bc-msn/",
-      "department": "Neurology",
-      "role": "Movement-Disorders-App",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Deanna Saylor",
-      "profile_url": "https://www.med.unc.edu/neurology/people/deanna-saylor-md/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Robert S. Greenwood",
-      "profile_url": "https://www.med.unc.edu/neurology/people/robert-s-greenwood-md/",
-      "department": "Neurology",
-      "role": "Child-Neurology",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Brandon L. Waters",
-      "profile_url": "https://www.med.unc.edu/neurology/people/brandon-l-waters-md/",
-      "department": "Neurology",
-      "role": "Epilepsy",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Chris E. Hilliard",
-      "profile_url": "https://www.med.unc.edu/neurology/people/chris-e-hilliard-bs-ccrc/",
-      "department": "Neurology",
-      "role": "Neurosciences-Clinical-Trial-Unit",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Lindsey J. Krawchuk",
-      "profile_url": "https://www.med.unc.edu/neurology/people/lindsey-j-krawchuk-md/",
-      "department": "Neurology",
-      "role": "Inpatient-Faculty-Supervisor",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Kostika Mulo",
-      "profile_url": "https://www.med.unc.edu/neurology/people/kostika-mulo-do/",
-      "department": "Neurology",
-      "role": "Stroke",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Manisha Chopra",
-      "profile_url": "https://www.med.unc.edu/neurology/people/manisha-chopra-mbbs-ccrp/",
-      "department": "Neurology",
-      "role": "Adult-Ctrc-Pod-A",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Amanda Crooks",
-      "profile_url": "https://www.med.unc.edu/neurology/people/amanda-crooks-md/",
-      "department": "Neurology",
-      "role": "Stroke",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Andrea Markl Corse",
-      "profile_url": "https://www.med.unc.edu/neurology/people/andrea-markl-corse-md/",
-      "department": "Neurology",
-      "role": "Als-Clinic",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Hailey Segall",
-      "profile_url": "https://www.med.unc.edu/neurology/people/hailey-segall-ms-cgc/",
-      "department": "Neurology",
-      "role": "Als-Clinic",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Deborah F. Gelinas",
-      "profile_url": "https://www.med.unc.edu/neurology/people/deborah-f-gelinas-md/",
-      "department": "Neurology",
-      "role": "Als-Clinic",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Eric Creed",
-      "profile_url": "https://www.med.unc.edu/neurology/people/eric-creed-do/",
-      "department": "Neurology",
-      "role": "Als-Clinic",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Vinay Chaudhry",
-      "profile_url": "https://www.med.unc.edu/neurology/people/vinay-chaudhry-md/",
-      "department": "Neurology",
-      "role": "Als-Clinic",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Tamara Strohm",
-      "profile_url": "https://www.med.unc.edu/neurology/people/tamara-strohm-md/",
-      "department": "Neurology",
-      "role": "Medical-Students",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Bradley V. Vaughn",
-      "profile_url": "https://www.med.unc.edu/neurology/people/bradley-v-vaughn-md/",
-      "department": "Neurology",
-      "role": "Epilepsy",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "James Pham Ho",
-      "profile_url": "https://www.med.unc.edu/neurology/people/james-pham-ho-md/",
-      "department": "Neurology",
-      "role": "Comprehensive-Stroke-Center-Core-Team",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Michael Wang",
-      "profile_url": "https://www.med.unc.edu/neurology/people/michael-wang-md/",
-      "department": "Neurology",
-      "role": "Medical-Students",
-      "departments": [
-        "Neurology"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1ZkIT7m18cnA95/bibliography/public"
-    },
-    {
-      "name": "Ming-Chieh Ding",
-      "profile_url": "https://www.med.unc.edu/neurology/people/ming-chieh-ding-md-phd/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Tanya P. Garcia",
-      "profile_url": "https://www.med.unc.edu/neurology/people/tanya-p-garcia-phd/",
-      "department": "Neurology",
-      "role": "Huntington-Disease-Program",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Robert Kanser",
-      "profile_url": "https://www.med.unc.edu/neurology/people/robert-kanser-phd/",
-      "department": "Neurology",
-      "role": "Huntington-Disease-Program",
-      "departments": [
-        "Neurology",
-        "Physical Medicine & Rehabilitation"
-      ]
-    },
-    {
-      "name": "Hokuto Morita",
-      "profile_url": "https://www.med.unc.edu/neurology/people/hokuto-morita-md-ma/",
-      "department": "Neurology",
-      "role": "Movement-Disorders",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Jenna Lea",
-      "profile_url": "https://www.med.unc.edu/neurology/people/jeanna-lea-ms-cgc/",
-      "department": "Neurology",
-      "role": "Child-Neurology",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Yasmeen Rauf",
-      "profile_url": "https://www.med.unc.edu/neurology/people/yasmeen-rauf-md/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology",
-        "Neurosurgery"
-      ]
-    },
-    {
-      "name": "Matthew Field Sharrock",
-      "profile_url": "https://www.med.unc.edu/neurology/people/matthew-field-sharrock-md/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Weiting Zhang",
-      "profile_url": "https://www.med.unc.edu/neurology/people/weiting-zhang-md-phd/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/weiting.zhang.1/bibliography/public"
-    },
-    {
-      "name": "Susan Wilson",
-      "profile_url": "https://www.med.unc.edu/neurology/people/susan-wilson-dnp-rn-msn-anp-c/",
+      "name": "Our Designated Centers of Excellence",
+      "profile_url": "",
       "department": "Neurology",
       "role": "",
       "departments": [
@@ -14892,364 +14577,13 @@
       ]
     },
     {
-      "name": "Luigi Troiani",
-      "profile_url": "https://www.med.unc.edu/neurology/people/luigi-troiani-pa-mhs/",
+      "name": "Administrative Office:",
+      "profile_url": "",
       "department": "Neurology",
-      "role": "Faculty-Researcher",
+      "role": "",
       "departments": [
         "Neurology"
       ]
-    },
-    {
-      "name": "Rebecca Traub",
-      "profile_url": "https://www.med.unc.edu/neurology/people/rebecca-traub-md/",
-      "department": "Neurology",
-      "role": "Als-Clinic",
-      "departments": [
-        "Neurology"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1Fs5j0MBP5bQB/bibliography/public"
-    },
-    {
-      "name": "Claudia M. Testa",
-      "profile_url": "https://www.med.unc.edu/neurology/people/claudia-m-testa-md-phd/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Miriam Sklerov",
-      "profile_url": "https://www.med.unc.edu/neurology/people/miriam-sklerov-md-ms/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Heidi Roth",
-      "profile_url": "https://www.med.unc.edu/neurology/people/heidi-roth-md/",
-      "department": "Neurology",
-      "role": "Abc",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Daniel Roque",
-      "profile_url": "https://www.med.unc.edu/neurology/people/daniel-roque-md/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Priya Palta",
-      "profile_url": "https://www.med.unc.edu/neurology/people/priya-palta-phd-mhs/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/priya.palta.1/bibliography/public"
-    },
-    {
-      "name": "Anahit C. Mehrabyan",
-      "profile_url": "https://www.med.unc.edu/neurology/people/anahit-c-mehrabyan-md/",
-      "department": "Neurology",
-      "role": "Als-Clinic",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Sung-Ho Lee",
-      "profile_url": "https://www.med.unc.edu/neurology/people/sung-ho-lee-phd/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "David Y. Hwang",
-      "profile_url": "https://www.med.unc.edu/neurology/people/david-y-hwang-md-faan-fccm-fncs/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "James F. Howard Jr",
-      "profile_url": "https://www.med.unc.edu/neurology/people/james-f-howard-jr-md/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Andrea Bozoki",
-      "profile_url": "https://www.med.unc.edu/neurology/people/andrea-bozoki-md/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ],
-      "pubmed_hint": "aka dementia"
-    },
-    {
-      "name": "John Younce",
-      "profile_url": "https://www.med.unc.edu/neurology/people/john-younce-md/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Shahzad S. Khan",
-      "profile_url": "https://www.med.unc.edu/neurology/people/shahzad-s-khan/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Yen-Yu Ian Shih",
-      "profile_url": "https://www.med.unc.edu/neurology/people/yen-yu-ian-shih-phd/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1Zqua89Q9ink7/bibliography/public"
-    },
-    {
-      "name": "Rick B. Meeker",
-      "profile_url": "https://www.med.unc.edu/neurology/people/rick-b-meeker-phd/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Albert Hinn",
-      "profile_url": "https://www.med.unc.edu/neurology/people/albert-hinn-md/",
-      "department": "Neurology",
-      "role": "Epilepsy",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Clio Rubinos",
-      "profile_url": "https://www.med.unc.edu/neurology/people/clio-rubinos-md-ms/",
-      "department": "Neurology",
-      "role": "Epilepsy",
-      "departments": [
-        "Neurology"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/clio.rubinos.1/bibliography/public"
-    },
-    {
-      "name": "Suzette LaRoche",
-      "profile_url": "https://www.med.unc.edu/neurology/people/suzette-laroche-md/",
-      "department": "Neurology",
-      "role": "Epilepsy",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Lynn Liu",
-      "profile_url": "https://www.med.unc.edu/neurology/people/lynn-liu-md/",
-      "department": "Neurology",
-      "role": "Epilepsy",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Qian-Zhou Yang",
-      "profile_url": "https://www.med.unc.edu/neurology/people/qian-zhou-jojo-yang-md/",
-      "department": "Neurology",
-      "role": "Child-Neurology",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Steven P. Trau",
-      "profile_url": "https://www.med.unc.edu/neurology/people/steven-p-trau-md/",
-      "department": "Neurology",
-      "role": "Child-Neurology",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Chon Lee",
-      "profile_url": "https://www.med.unc.edu/neurology/people/chon-lee-md/",
-      "department": "Neurology",
-      "role": "Child-Neurology",
-      "departments": [
-        "Neurology"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/chon.lee.1/bibliography/public"
-    },
-    {
-      "name": "Senyene E. Hunter",
-      "profile_url": "https://www.med.unc.edu/neurology/people/senyene-e-hunter-md-phd/",
-      "department": "Neurology",
-      "role": "Child-Neurology",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Diana M. Cejas",
-      "profile_url": "https://www.med.unc.edu/neurology/people/diana-m-cejas-md-mph/",
-      "department": "Neurology",
-      "role": "Child-Neurology",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Jordan Broman-Fulks",
-      "profile_url": "https://www.med.unc.edu/neurology/people/jordan-broman-fulks-md/",
-      "department": "Neurology",
-      "role": "Child-Neurology",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Katelyn Bricker",
-      "profile_url": "https://www.med.unc.edu/neurology/people/katelyn-bricker-md/",
-      "department": "Neurology",
-      "role": "Child-Neurology",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Yael Shiloh-Malawsky",
-      "profile_url": "https://www.med.unc.edu/neurology/people/yael-shiloh-malawsky-md/",
-      "department": "Neurology",
-      "role": "Batten-Disease-Coe",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Casey Olm-Shipman",
-      "profile_url": "https://www.med.unc.edu/neurology/people/casey-olm-shipman-md-ms/",
-      "department": "Neurology",
-      "role": "Child-Neurology",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Gwenn A. Garden",
-      "profile_url": "https://www.med.unc.edu/neurology/people/gwenn-a-garden-md-phd/",
-      "department": "Neurology",
-      "role": "Administration",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Zheng Jane Fan",
-      "profile_url": "https://www.med.unc.edu/neurology/people/zheng-jane-fan-md/",
-      "department": "Neurology",
-      "role": "Child-Neurology",
-      "departments": [
-        "Neurology"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/zheng.fan.3/bibliography/public"
-    },
-    {
-      "name": "Irena Dujmovic Basuroski",
-      "profile_url": "https://www.med.unc.edu/neurology/people/irena-dujmovic-basuroski-md-phd/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Monica Maria Diaz",
-      "profile_url": "https://www.med.unc.edu/neurology/people/monica-maria-diaz-m-d-m-s/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/monica.diaz.1/bibliography/public"
-    },
-    {
-      "name": "Todd J. Cohen",
-      "profile_url": "https://www.med.unc.edu/neurology/people/todd-j-cohen-phd/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Julia M. Carlson",
-      "profile_url": "https://www.med.unc.edu/neurology/people/julia-m-carlson-md/",
-      "department": "Neurology",
-      "role": "Neurocritical-Care",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Jamie K. Capal",
-      "profile_url": "https://www.med.unc.edu/neurology/people/jamie-k-capal-md/",
-      "department": "Neurology",
-      "role": "Archieve",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Nina Browner",
-      "profile_url": "https://www.med.unc.edu/neurology/people/nina-browner-md/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Jorge L. Almod\u00f3var-Su\u00e1rez",
-      "profile_url": "https://www.med.unc.edu/neurology/people/jorge-l-almodovar-suarez-md/",
-      "department": "Neurology",
-      "role": "Als-Clinic",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Varina L. Boerwinkle",
-      "profile_url": "https://www.med.unc.edu/neurology/people/varina-l-boerwinkle-md/",
-      "department": "Neurology",
-      "role": "Child-Neurology",
-      "departments": [
-        "Neurology"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1ts45pE2RuS51/bibliography/public"
     },
     {
       "name": "Matthew Ewend",
@@ -15352,6 +14686,24 @@
       ]
     },
     {
+      "name": "Jeremy Rich",
+      "profile_url": "https://www.med.unc.edu/neurosurgery/directory/jeremy-rich-md-mhs-mba/",
+      "department": "Neurosurgery",
+      "role": "",
+      "departments": [
+        "Neurosurgery"
+      ]
+    },
+    {
+      "name": "Yasmeen Rauf",
+      "profile_url": "https://www.med.unc.edu/neurosurgery/directory/yasmeen-rauf-md/",
+      "department": "Neurosurgery",
+      "role": "",
+      "departments": [
+        "Neurosurgery"
+      ]
+    },
+    {
       "name": "Kevin Carneiro",
       "profile_url": "https://www.med.unc.edu/neurosurgery/directory/kevin-carneiro-do/",
       "department": "Neurosurgery",
@@ -15430,6 +14782,15 @@
       "role": "",
       "departments": [
         "Neurosurgery"
+      ]
+    },
+    {
+      "name": "General Obstetrics",
+      "profile_url": "https://www.med.unc.edu/obgyn/department-directory/general-obstetrics-and-gynecology-and-midwifery-team/",
+      "department": "Obstetrics & Gynecology",
+      "role": "",
+      "departments": [
+        "Obstetrics & Gynecology"
       ]
     },
     {
@@ -16688,15 +16049,6 @@
     {
       "name": "Srihari Chari",
       "profile_url": "https://www.med.unc.edu/obgyn/people/srihari-chari/",
-      "department": "Obstetrics & Gynecology",
-      "role": "",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
-      "name": "General Obstetrics",
-      "profile_url": "https://www.med.unc.edu/obgyn/department-directory/general-obstetrics-and-gynecology-and-midwifery-team/",
       "department": "Obstetrics & Gynecology",
       "role": "",
       "departments": [
@@ -24954,16 +24306,6 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ]
-    },
-    {
-      "name": "Donald L. Rosenstein",
-      "profile_url": "https://unclineberger.org/directory/donald-rosenstein/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/donald.rosenstein.1/bibliography/public"
     },
     {
       "name": "Bryan Roth",
