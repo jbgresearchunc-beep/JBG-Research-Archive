@@ -1480,6 +1480,21 @@ def _upgrade_with_computed_authors(faculty_member, pubs, search_term, target_las
     if not pubs or search_term.startswith("ORCID:"):
         return pubs
 
+    # Require at least 2 verified papers before trusting Computed Authors.
+    # A single matching paper is too weak a seed — for common names like
+    # "Miller B" one coincidental UNC match can seed an entirely wrong
+    # author cluster. Two independent verified papers is much safer.
+    if len(pubs) < 2:
+        # Exception: if the search term is specific (2+ initials or full surname
+        # with given name), one paper is acceptable since ambiguity is lower.
+        term_parts = search_term.split()
+        is_specific = (len(term_parts) >= 2 and
+                       (len(term_parts[-1]) >= 2 or len(term_parts) >= 3))
+        if not is_specific:
+            print(f"    Computed Authors: only {len(pubs)} verified paper(s) "
+                  f"with ambiguous term '{search_term}' — skipping to avoid wrong cluster")
+            return pubs
+
     seed_pmid = pubs[0]["pmid"]
     print(f"    Computed Authors: seeding with PMID {seed_pmid}")
     ca_pmids, ca_count = fetch_pmids_via_computed_authors(faculty_member["name"], seed_pmid=seed_pmid)
@@ -1491,12 +1506,17 @@ def _upgrade_with_computed_authors(faculty_member, pubs, search_term, target_las
         return pubs
 
     print(f"    Computed Authors: found {ca_count} total PMIDs for this author")
+    # Verify CA results still have UNC affiliation for the target author.
+    # CA disambiguates by authorship but doesn't guarantee UNC — without this
+    # check, a correct-but-non-UNC cluster (someone who left UNC) gets attached.
     ca_pubs = pubmed_fetch_summaries(ca_pmids[:20], search_term=search_term,
-                                     verify_affiliation=False, target_lastname=target_lastname)
-    if ca_pubs:
+                                     verify_affiliation=True, target_lastname=target_lastname)
+    if len(ca_pubs) >= 2:
         faculty_member["pubmed_count"] = ca_count
         faculty_member["pubmed_search"] = f"ComputedAuthors:{search_term}"
         return ca_pubs[:5]
+    # CA cluster didn't verify against UNC — keep the original verified pubs
+    print(f"    Computed Authors: cluster failed UNC re-verification ({len(ca_pubs)} confirmed) — keeping original")
     return pubs
 
 
@@ -1586,16 +1606,30 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
                 orcid_pmids = resolve_dois_to_pmids(orcid_dois, max_dois=10)
             if orcid_pmids:
                 print(f"    ORCID: {len(orcid_pmids)} PMIDs found — fetching summaries")
+                target_lastname = clean_name_for_pubmed(name)
+                # When ORCID returns few PMIDs (≤2), the ORCID match itself might
+                # be wrong (common names). Verify UNC affiliation in that case.
+                # With many PMIDs, the ORCID identity is very likely correct, so
+                # trust it (faculty who left UNC still belong in our database).
+                verify = len(orcid_pmids) <= 2
                 pubs = pubmed_fetch_summaries(orcid_pmids[:15], search_term=name,
-                                              verify_affiliation=False)[:5]
-                faculty_member.update({
-                    "pubmed_search": f"ORCID:{orcid_id}", "pubmed_count": len(orcid_pmids),
-                    "pubmed_verified": len(pubs), "pubmed_ambiguous": False, "publications": pubs
-                })
-                time.sleep(0.3)
-                return faculty_member
+                                              verify_affiliation=verify,
+                                              target_lastname=target_lastname)[:5]
+                if verify and not pubs:
+                    # The 1-2 ORCID papers didn't verify against UNC — the ORCID
+                    # match was probably the wrong person. Fall through to name search.
+                    print(f"    ORCID: few PMIDs failed UNC verification — likely wrong match, falling back")
+                    if orcid_family and orcid_given:
+                        clean_hint = f"{orcid_family} {orcid_given[0]}"
+                else:
+                    faculty_member.update({
+                        "pubmed_search": f"ORCID:{orcid_id}", "pubmed_count": len(orcid_pmids),
+                        "pubmed_verified": len(pubs), "pubmed_ambiguous": False, "publications": pubs
+                    })
+                    time.sleep(0.3)
+                    return faculty_member
             # ORCID found but no PMIDs — use confirmed name for better search
-            if orcid_family and orcid_given:
+            elif orcid_family and orcid_given:
                 clean_hint = f"{orcid_family} {orcid_given[0]}"
                 print(f"    ORCID: no PMIDs, using confirmed name: '{clean_hint}'")
         else:
@@ -1633,13 +1667,23 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
         if not recent_recruit:
             pubs = _upgrade_with_computed_authors(faculty_member, pubs, search_term, target_lastname)
 
+    # Flag low-confidence matches: a single-initial search on a common surname
+    # that yielded few papers is inherently ambiguous (could be the wrong person).
+    term_parts = search_term.replace("ComputedAuthors:", "").split()
+    primary_last = clean_name_for_pubmed(name).split()[-1].lower() if clean_name_for_pubmed(name) else ""
+    single_initial = len(term_parts) >= 2 and len(term_parts[-1]) == 1
+    low_confidence = (single_initial and primary_last in AMBIGUOUS_LASTNAMES
+                      and len(pubs) < 3 and not faculty_member.get("pubmed_search", "").startswith(("MyNCBI", "ORCID", "OVERRIDE")))
+
     faculty_member.update({
         "pubmed_search": faculty_member.get("pubmed_search") or search_term,
         "pubmed_count": faculty_member.get("pubmed_count") or result["count"],
         "pubmed_verified": len(pubs),
-        "pubmed_ambiguous": (result["count"] > 0 and len(pubs) == 0),
+        "pubmed_ambiguous": (result["count"] > 0 and len(pubs) == 0) or low_confidence,
         "publications": pubs,
     })
+    if low_confidence:
+        print(f"    ⚠ Low-confidence match for {name} (common surname + single initial) — flagged ambiguous")
     time.sleep(PUBMED_SLEEP)
     return faculty_member
 
