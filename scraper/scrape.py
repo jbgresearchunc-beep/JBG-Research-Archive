@@ -161,7 +161,8 @@ NON_NAME_PATTERNS = re.compile(
     r"\b(home|search|contact|login|admin|menu|navigation|toggle|skip|"
     r"back|next|previous|apply|submit|calendar|event|blog|video|photo|"
     r"gallery|map|career|job|giving|donate|privacy|accessibility|intranet|"
-    r"follow|connect|links|local|notice|nondiscrimination)\b|"
+    r"follow|connect|links|local|notice|nondiscrimination|read\s+more|"
+    r"more|learn\s+more|view\s+more|see\s+more|continue|details)\b|"
 
     # Generic page/section labels
     r"\b(faculty|directory|people|team|staff|about|news|education|"
@@ -862,7 +863,20 @@ def search_orcid_by_name(name):
     first = parts[0]
     last = parts[-1]
 
-    query = f"given-names:{first}+AND+family-name:{last}"
+    # Normalize accents to ASCII and URL-encode — ORCID's API rejects raw
+    # non-ASCII in the query string (causes 'ascii codec' errors), and accented
+    # names are indexed inconsistently anyway.
+    import unicodedata
+    def _ascii(s):
+        s = unicodedata.normalize("NFKD", s)
+        return "".join(c for c in s if not unicodedata.combining(c))
+    first_a = _ascii(first)
+    last_a = _ascii(last)
+    # Skip junk names (HTML artifacts like '–>', single chars, non-alpha)
+    if not re.search(r"[A-Za-z]{2,}", last_a) or not re.search(r"[A-Za-z]{2,}", first_a):
+        return None, None, None
+
+    query = urllib.parse.quote(f"given-names:{first_a} AND family-name:{last_a}")
     url = f"https://pub.orcid.org/v3.0/expanded-search/?q={query}&rows=5"
     data = fetch_json(url)
     if not data:
@@ -871,22 +885,19 @@ def search_orcid_by_name(name):
         obj = json.loads(data)
     except Exception:
         return None, None, None
+    if not isinstance(obj, dict):
+        return None, None, None
 
     results = obj.get("expanded-result") or []
     for result in results:
         given = (result.get("given-names") or "").strip()
         family = (result.get("family-names") or "").strip()
         orcid = result.get("orcid-id")
-        # Require last name exact match AND first name match strong enough to
-        # disambiguate. A single shared initial ('J' matches Jonathan/Jane/Jose)
-        # is NOT enough — we saw wrong-person ORCID matches from that. Require
-        # either an exact first-name match or a shared prefix of >=3 chars.
-        if family.lower() != last.lower():
+        # Match against ASCII-normalized forms on both sides
+        if _ascii(family).lower() != last_a.lower():
             continue
-        gl, fl = given.lower(), first.lower()
+        gl, fl = _ascii(given).lower(), first_a.lower()
         exact = gl == fl
-        # Prefix match: one is a prefix of the other and they share >=3 chars
-        # (handles 'Bob'/'Robert' won't match, but 'Cathy'/'Catherine' will)
         prefix_ok = (len(fl) >= 3 and len(gl) >= 3 and
                      (gl.startswith(fl) or fl.startswith(gl)))
         if exact or prefix_ok:
@@ -910,16 +921,21 @@ def fetch_pmids_via_orcid(orcid_id, since_year=2018):
         obj = json.loads(data)
     except Exception:
         return [], []
+    if not isinstance(obj, dict):
+        return [], []
 
     pmids = []
     dois = []
     seen_pmids = set()
     seen_dois = set()
 
-    for group in obj.get("group", []):
-        for summary in group.get("work-summary", []):
+    for group in (obj.get("group") or []):
+        for summary in (group.get("work-summary") or []):
+            if not isinstance(summary, dict):
+                continue
             pub_date = summary.get("publication-date") or {}
-            year_val = (pub_date.get("year") or {}).get("value")
+            year_obj = pub_date.get("year") or {}
+            year_val = year_obj.get("value") if isinstance(year_obj, dict) else None
             try:
                 year = int(year_val)
             except (TypeError, ValueError):
@@ -928,10 +944,13 @@ def fetch_pmids_via_orcid(orcid_id, since_year=2018):
             if year and year < since_year:
                 continue
 
-            eids = summary.get("external-ids", {}).get("external-id", [])
+            ext = summary.get("external-ids") or {}
+            eids = ext.get("external-id") or [] if isinstance(ext, dict) else []
             pmid = None
             doi = None
             for eid in eids:
+                if not isinstance(eid, dict):
+                    continue
                 t = eid.get("external-id-type", "")
                 v = (eid.get("external-id-value") or "").strip()
                 if t == "pmid" and v and v not in seen_pmids:
@@ -1869,14 +1888,42 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
     print("\n=== Step 3: Enriching with PubMed ===")
     for i, f in enumerate(all_faculty):
         print(f"  [{i+1}/{len(all_faculty)}] {f['name']}")
-        enrich_faculty_with_pubmed(f, pubmed_string=f.get("pubmed_hint"))
+        try:
+            enrich_faculty_with_pubmed(f, pubmed_string=f.get("pubmed_hint"))
+        except Exception as e:
+            # One bad record must never kill the whole run — log and continue.
+            print(f"    ⚠ ERROR enriching {f['name']}: {type(e).__name__}: {e}")
+            f.setdefault("pubmed_search", "ERROR")
+            f.setdefault("pubmed_count", 0)
+            f.setdefault("pubmed_verified", 0)
+            f.setdefault("pubmed_ambiguous", False)
+            f.setdefault("publications", [])
         time.sleep(PUBMED_SLEEP)
+
+        # Periodic checkpoint: save progress every 100 faculty so a late
+        # crash or timeout doesn't lose everything.
+        if (i + 1) % 100 == 0:
+            checkpoint = {
+                "generated_at": datetime.utcnow().isoformat() + "Z",
+                "total_faculty": len(all_faculty),
+                "departments": departments_in_raw,
+                "faculty": all_faculty,
+                "_checkpoint": f"{i+1}/{len(all_faculty)}",
+            }
+            os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
+            with open(output_path, "w") as cf:
+                json.dump(checkpoint, cf, indent=2)
+            print(f"    💾 checkpoint saved at {i+1}/{len(all_faculty)}")
 
     # ---- Step 4: NIH RePORTER ----
     if not skip_nih:
         print("\n=== Step 4: Checking NIH RePORTER ===")
         for f in all_faculty:
-            grants = fetch_nih_grants(f["name"])
+            try:
+                grants = fetch_nih_grants(f["name"])
+            except Exception as e:
+                print(f"    ⚠ ERROR fetching NIH grants for {f['name']}: {e}")
+                grants = []
             f["nih_grants"] = grants
             if grants:
                 print(f"  {f['name']}: {len(grants)} grant(s)")
