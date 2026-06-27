@@ -1593,49 +1593,11 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
         else:
             clean_hint = None
 
-    # ── 3. ORCID lookup ───────────────────────────────────────────────────────
-    if not (clean_hint and clean_hint.startswith("ORCID:")):
-        orcid_id, orcid_given, orcid_family = search_orcid_by_name(name)
-        time.sleep(0.3)
-        if orcid_id:
-            print(f"    ORCID: found {orcid_id} for {orcid_given} {orcid_family}")
-            orcid_pmids, orcid_dois = fetch_pmids_via_orcid(orcid_id, since_year=2018)
-            time.sleep(0.3)
-            if not orcid_pmids and orcid_dois:
-                print(f"    ORCID: no PMIDs directly, resolving {min(len(orcid_dois), 10)} DOIs...")
-                orcid_pmids = resolve_dois_to_pmids(orcid_dois, max_dois=10)
-            if orcid_pmids:
-                print(f"    ORCID: {len(orcid_pmids)} PMIDs found — fetching summaries")
-                target_lastname = clean_name_for_pubmed(name)
-                # When ORCID returns few PMIDs (≤2), the ORCID match itself might
-                # be wrong (common names). Verify UNC affiliation in that case.
-                # With many PMIDs, the ORCID identity is very likely correct, so
-                # trust it (faculty who left UNC still belong in our database).
-                verify = len(orcid_pmids) <= 2
-                pubs = pubmed_fetch_summaries(orcid_pmids[:15], search_term=name,
-                                              verify_affiliation=verify,
-                                              target_lastname=target_lastname)[:5]
-                if verify and not pubs:
-                    # The 1-2 ORCID papers didn't verify against UNC — the ORCID
-                    # match was probably the wrong person. Fall through to name search.
-                    print(f"    ORCID: few PMIDs failed UNC verification — likely wrong match, falling back")
-                    if orcid_family and orcid_given:
-                        clean_hint = f"{orcid_family} {orcid_given[0]}"
-                else:
-                    faculty_member.update({
-                        "pubmed_search": f"ORCID:{orcid_id}", "pubmed_count": len(orcid_pmids),
-                        "pubmed_verified": len(pubs), "pubmed_ambiguous": False, "publications": pubs
-                    })
-                    time.sleep(0.3)
-                    return faculty_member
-            # ORCID found but no PMIDs — use confirmed name for better search
-            elif orcid_family and orcid_given:
-                clean_hint = f"{orcid_family} {orcid_given[0]}"
-                print(f"    ORCID: no PMIDs, using confirmed name: '{clean_hint}'")
-        else:
-            print(f"    ORCID: no match found for '{name}'")
-
-    # ── 4 + 5. Profile hint → name search with fallbacks ─────────────────────
+    # ── 3. Name-based PubMed search (primary path for most faculty) ──────────
+    # Note: ORCID lookup was moved to a fallback (step 5) because calling it for
+    # every faculty member added ~2 API calls + 0.6s sleep each, making full
+    # runs time out. Now we try the cheaper name search first and only reach for
+    # ORCID when the name search yields nothing or looks ambiguous.
     if clean_hint and clean_hint.startswith("ORCID:"):
         initial_term = clean_hint
     elif clean_hint:
@@ -1651,11 +1613,8 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
     if recent_recruit:
         faculty_member["pubmed_recent_recruit"] = True
 
-    # Derive the real surname from the faculty name for affiliation matching —
-    # more reliable than re-parsing search_term (which mangles multi-word surnames).
     target_lastname = clean_name_for_pubmed(name)
 
-    # ── 6. Fetch summaries + Computed Authors upgrade ─────────────────────────
     pubs = []
     if result["ids"]:
         pubs = pubmed_fetch_summaries(
@@ -1667,13 +1626,52 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
         if not recent_recruit:
             pubs = _upgrade_with_computed_authors(faculty_member, pubs, search_term, target_lastname)
 
-    # Flag low-confidence matches: a single-initial search on a common surname
-    # that yielded few papers is inherently ambiguous (could be the wrong person).
+    # ── 4. ORCID fallback — only when name search was weak ────────────────────
+    # Trigger ORCID only if: (a) name search found nothing verified, or
+    # (b) we got very few results on a common surname (likely incomplete).
+    # This keeps ORCID off the critical path for the ~70% of faculty whose
+    # name search already works, while still rescuing the hard cases.
+    name_search_weak = (
+        len(pubs) == 0 or
+        (len(pubs) < 2 and target_lastname.split()[-1].lower() in AMBIGUOUS_LASTNAMES)
+    )
+    already_have_id_source = faculty_member.get("pubmed_search", "").startswith(
+        ("MyNCBI", "ORCID", "OVERRIDE", "ComputedAuthors"))
+
+    if name_search_weak and not already_have_id_source:
+        orcid_id, orcid_given, orcid_family = search_orcid_by_name(name)
+        time.sleep(0.2)
+        if orcid_id:
+            print(f"    ORCID fallback: found {orcid_id} for {orcid_given} {orcid_family}")
+            orcid_pmids, orcid_dois = fetch_pmids_via_orcid(orcid_id, since_year=2018)
+            time.sleep(0.2)
+            if not orcid_pmids and orcid_dois:
+                print(f"    ORCID: resolving {min(len(orcid_dois), 3)} DOIs...")
+                orcid_pmids = resolve_dois_to_pmids(orcid_dois, max_dois=3)
+            if orcid_pmids:
+                verify = len(orcid_pmids) <= 2
+                orcid_pubs = pubmed_fetch_summaries(orcid_pmids[:15], search_term=name,
+                                                    verify_affiliation=verify,
+                                                    target_lastname=target_lastname)[:5]
+                # Only replace name-search results if ORCID found MORE papers
+                if len(orcid_pubs) > len(pubs):
+                    print(f"    ORCID: {len(orcid_pubs)} papers (better than name search's {len(pubs)})")
+                    faculty_member.update({
+                        "pubmed_search": f"ORCID:{orcid_id}",
+                        "pubmed_count": len(orcid_pmids),
+                        "pubmed_verified": len(orcid_pubs),
+                        "pubmed_ambiguous": False,
+                        "publications": orcid_pubs,
+                    })
+                    time.sleep(PUBMED_SLEEP)
+                    return faculty_member
+
+    # Flag low-confidence matches: single-initial search on a common surname
     term_parts = search_term.replace("ComputedAuthors:", "").split()
-    primary_last = clean_name_for_pubmed(name).split()[-1].lower() if clean_name_for_pubmed(name) else ""
+    primary_last = target_lastname.split()[-1].lower() if target_lastname else ""
     single_initial = len(term_parts) >= 2 and len(term_parts[-1]) == 1
     low_confidence = (single_initial and primary_last in AMBIGUOUS_LASTNAMES
-                      and len(pubs) < 3 and not faculty_member.get("pubmed_search", "").startswith(("MyNCBI", "ORCID", "OVERRIDE")))
+                      and len(pubs) < 3 and not already_have_id_source)
 
     faculty_member.update({
         "pubmed_search": faculty_member.get("pubmed_search") or search_term,
@@ -1683,7 +1681,7 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
         "publications": pubs,
     })
     if low_confidence:
-        print(f"    ⚠ Low-confidence match for {name} (common surname + single initial) — flagged ambiguous")
+        print(f"    ⚠ Low-confidence match for {name} (common surname + single initial)")
     time.sleep(PUBMED_SLEEP)
     return faculty_member
 
@@ -1928,9 +1926,38 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
                        if any(dept_matches(dept_filter, d) for d in f.get("departments", [f.get("department", "")]))]
         departments_in_raw = [d for d in departments_in_raw if dept_matches(dept_filter, d)]
 
+    # ---- Resume support ----
+    # If a prior run checkpointed partial results to output_path, load them and
+    # skip faculty already enriched. This lets a timed-out run pick up where it
+    # left off instead of restarting from scratch. Match by name.
+    already_done = {}
+    if os.path.exists(output_path):
+        try:
+            with open(output_path) as f:
+                prev = json.load(f)
+            for pf in prev.get("faculty", []):
+                # Consider a faculty "done" if they have publications data attached
+                if "pubmed_verified" in pf or "publications" in pf:
+                    already_done[pf["name"].lower().strip()] = pf
+            if already_done:
+                print(f"Resume: found {len(already_done)} already-enriched faculty in {output_path}")
+        except Exception as e:
+            print(f"Resume: could not read prior output ({e}) — starting fresh")
+
     # ---- Step 3: PubMed enrichment ----
     print("\n=== Step 3: Enriching with PubMed ===")
     for i, f in enumerate(all_faculty):
+        name_key = f["name"].lower().strip()
+        # Skip if already enriched in a prior (checkpointed) run
+        if name_key in already_done:
+            prev = already_done[name_key]
+            for k in ("pubmed_search", "pubmed_count", "pubmed_verified",
+                      "pubmed_ambiguous", "publications", "nih_grants",
+                      "pubmed_recent_recruit"):
+                if k in prev:
+                    f[k] = prev[k]
+            continue
+
         print(f"  [{i+1}/{len(all_faculty)}] {f['name']}")
         try:
             enrich_faculty_with_pubmed(f, pubmed_string=f.get("pubmed_hint"))
