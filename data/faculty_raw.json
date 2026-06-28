@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T01:09:13.582810Z",
-  "total_faculty": 2711,
+  "generated_at": "2026-06-28T11:31:28.476303Z",
+  "total_faculty": 2780,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -1006,7 +1006,8 @@
       "role": "",
       "departments": [
         "Medicine \u2014 Gastroenterology & Hepatology"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/evan.dellon.1/bibliography/public"
     },
     {
       "name": "Sasha Deutsch-Link",
@@ -1033,7 +1034,8 @@
       "role": "",
       "departments": [
         "Medicine \u2014 Gastroenterology & Hepatology"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1paAsdAwemu5s/bibliography/public/;/public"
     },
     {
       "name": "Donna M. Evon",
@@ -1042,7 +1044,8 @@
       "role": "",
       "departments": [
         "Medicine \u2014 Gastroenterology & Hepatology"
-      ]
+      ],
+      "pubmed_hint": "evon d"
     },
     {
       "name": "Oren K. Fix",
@@ -1051,7 +1054,8 @@
       "role": "",
       "departments": [
         "Medicine \u2014 Gastroenterology & Hepatology"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1zYJcrT9BwN5g/bibliography/public"
     },
     {
       "name": "Michael W. Fried",
@@ -1078,7 +1082,8 @@
       "role": "",
       "departments": [
         "Medicine \u2014 Gastroenterology & Hepatology"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/simon.gray.1/bibliography/public"
     },
     {
       "name": "Sydney B. Greenberg",
@@ -1114,7 +1119,8 @@
       "role": "",
       "departments": [
         "Medicine \u2014 Gastroenterology & Hepatology"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/jonathan%20james.hansen.1/bibliography/public"
     },
     {
       "name": "Kelly E. Hathorn",
@@ -1668,7 +1674,8 @@
       "role": "",
       "departments": [
         "Medicine \u2014 Gastroenterology & Hepatology"
-      ]
+      ],
+      "pubmed_hint": "and Dean"
     },
     {
       "name": "William E. Whitehead",
@@ -1749,7 +1756,8 @@
       "role": "",
       "departments": [
         "Medicine \u2014 General Medicine & Clinical Epidemiology"
-      ]
+      ],
+      "pubmed_hint": "Long Covid"
     },
     {
       "name": "De-Vaughn Williams",
@@ -6783,15 +6791,6 @@
       ]
     },
     {
-      "name": "Patricia Owens",
-      "profile_url": "https://www.med.unc.edu/medicine/rheumatology-allergy-immunology/people/patricia-owens/",
-      "department": "Medicine \u2014 Rheumatology, Allergy & Immunology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Rheumatology, Allergy & Immunology"
-      ]
-    },
-    {
       "name": "Specialty Care",
       "profile_url": "",
       "department": "Pediatrics",
@@ -9574,33 +9573,830 @@
       ]
     },
     {
-      "name": "Kevin Calder",
-      "profile_url": "https://www.med.unc.edu/surgery/plastic/people/kevin-calder-md/",
-      "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
+      "name": "Caprice C. Greenberg",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/caprice-c-greenberg-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
       "role": "",
       "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Goro Ueda",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/goro-ueda-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Esteban Calderon",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/esteban-calderon-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Calderon E"
+    },
+    {
+      "name": "Melissa Chen",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/melissa-chen-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Chen M"
+    },
+    {
+      "name": "Chirag Desai",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/chirag-desai-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Emmanouil Giorgakis",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/emmanouil-giorgakis-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/emmanouil.giorgakis.1/bibliography/public"
+    },
+    {
+      "name": "Sorabh Kapoor",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/sorabh-kapoor-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Kapoor S"
+    },
+    {
+      "name": "Alexander H. Toledo",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/alexander-h-toledo-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Lori Chrisco",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/lori-chrisco-msn-rn-bc/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Booker T. King",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/booker-t-king/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Felicia N. Williams",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/felicia-n-williams-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Adam Akerman",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/adam-akerman-phd/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Abelardo DeAnda",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/abelardo-deanda-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Thomas M. Egan",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/thomas-m-egan-md-msc/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Jinny Ha",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/jinny-ha-md-mhs/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Benjamin E. Haithcock",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/benjamin-e-haithcock-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Jason M. Long",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/jason-m-long-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Aurelie Merlo",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/aurelie-merlo-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "merlo aurelie"
+    },
+    {
+      "name": "Gita Mody",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/gita-mody-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Nnamdi Nwaejike",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/nnamdi-nwaejike-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Ross M. Ungerleider",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/ross-m-ungerleider-md-mba/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "ungerleider ross"
+    },
+    {
+      "name": "Timothy M Farrell",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/timothy-m-farrell-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "farrell tm"
+    },
+    {
+      "name": "Maggie Hodges",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/maggie-hodges-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Hodges M*"
+    },
+    {
+      "name": "Muneera R. Kapadia",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/muneera-r-kapadia-md-mme/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Kapadia MR*"
+    },
+    {
+      "name": "Jonathan Stem",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/jonathan-stem-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Stem Jonathan*"
+    },
+    {
+      "name": "Samuel Ricardo Torres Landa Fernandez",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/samuel-ricardo-torres-landa-fernandez-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Matthew Eckert",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/matthew-eckert-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Eckert MJ*"
+    },
+    {
+      "name": "Jared Gallaher",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/jared-gallaher-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Daryhl Johnson",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/daryhl-johnson-ii-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Ian Kratzke",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/ian-kratzke-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Kratzke I*"
+    },
+    {
+      "name": "William Shihao Lao",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/william-lao-md-facs/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "John McClellan",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/john-mcclellan-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "McClellanJM*"
+    },
+    {
+      "name": "Anthony A. Meyer",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/anthony-a-meyer-md-phd/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Rachel Niehuus",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/rachel-niehuus-md-phd/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Jaclyn Portelli Tremont",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/jaclyn-tremont-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Lauren Raff",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/lauren-raff-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Trista Reid",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/trista-reid-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Steven Satterly",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/steven-satterly-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Sharon E. Schiro",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/sharon-e-schiro-phd/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Andrew Schneider",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/andrew-schneider-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Schneider AB*"
+    },
+    {
+      "name": "Jennifer Serfin",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/jennifer-serfin-md-facs/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Douglas Tyler",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/douglas-tyler-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Raghid Bitar",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/raghid-bitar-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Shannelle Campbell",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/shannelle-campbell-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Campbell S"
+    },
+    {
+      "name": "D. Wayne Overby",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/d-wayne-overby-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Overby DW"
+    },
+    {
+      "name": "Marc Whitman",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/marc-whitman-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Adesola Akinkuotu",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/adesola-akinkuotu-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Akinkuotu AC"
+    },
+    {
+      "name": "Clint Cappiello",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/clint-capiello-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Sean E. McLean",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/sean-e-mclean-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "mclean s"
+    },
+    {
+      "name": "Cathleen Mooney",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/cathleen-mooney-md-2/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Michael Phillips",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/michael-phillips-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "phillips mr"
+    },
+    {
+      "name": "Elisabeth Tracy",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/elisabeth-tracy-md-2/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Tracy ET"
+    },
+    {
+      "name": "Kevin Calder",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/kevin-calder-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
         "Surgery \u2014 Plastic & Reconstructive Surgery"
       ]
     },
     {
       "name": "Jennifer C. Carr",
-      "profile_url": "https://www.med.unc.edu/surgery/plastic/people/jennifer-c-carr/",
-      "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/jennifer-c-carr/",
+      "department": "Surgery \u2014 General Surgery",
       "role": "",
       "departments": [
+        "Surgery \u2014 General Surgery",
         "Surgery \u2014 Plastic & Reconstructive Surgery"
       ],
       "pubmed_hint": "Carr JC"
     },
     {
       "name": "Lynn Damitz",
-      "profile_url": "https://www.med.unc.edu/surgery/plastic/people/lynn-damitz-md/",
-      "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/lynn-damitz-md/",
+      "department": "Surgery \u2014 General Surgery",
       "role": "",
       "departments": [
+        "Surgery \u2014 General Surgery",
         "Surgery \u2014 Plastic & Reconstructive Surgery"
       ],
       "pubmed_hint": "damitz l"
+    },
+    {
+      "name": "Gregory Knoll",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/gregory-knoll-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Clara Lee",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/clara-lee-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Surgery \u2014 Plastic & Reconstructive Surgery",
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_hint": "Lee CN"
+    },
+    {
+      "name": "Del Mount",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/del-mount/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Adeyemi Ogunleye",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/adeyemi-yemi-ogunleye-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Surgery \u2014 Plastic & Reconstructive Surgery",
+        "Urology"
+      ],
+      "pubmed_hint": "Ogunleye AA*"
+    },
+    {
+      "name": "Katherine Rodby",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/katherine-rodby-md-facs/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Surgery \u2014 Plastic & Reconstructive Surgery"
+      ],
+      "pubmed_hint": "Rodby KA"
+    },
+    {
+      "name": "Kristalyn Gallagher",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/kristalyn-gallagher-do/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "gallagher k*"
+    },
+    {
+      "name": "Elizabeth Gleeson",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/elizabeth-gleeson-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Gleeson E*"
+    },
+    {
+      "name": "Conner Haase",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/conner-haase-md-2/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Hong Jin Kim",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/hong-jin-kim-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_hint": "kim h*"
+    },
+    {
+      "name": "Lawrence Kim",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/lawrence-kim-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Michael T. LeCompte",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/michael-t-lecompte-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "LeCompte MT*"
+    },
+    {
+      "name": "Michael O. Meyers",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/michael-o-meyers-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "meyers m*"
+    },
+    {
+      "name": "David W. Ollila",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/david-w-ollila-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "ollila d*"
+    },
+    {
+      "name": "Jessica Schumacher",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/jessica-schumacher-phd/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Julia Selfridge",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/julia-selfridge-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Philip M. Spanheimer",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/philip-m-spanheimer-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Karyn Stitzenberg",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/karyn-stitzenberg-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "stitzenberg k*"
+    },
+    {
+      "name": "Robert Torphy",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/robert-torphy-md-phd/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Jen Jen Yeh",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/jen-jen-yeh-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Christopher Bergen",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/christopher-bergen-dpm-facfas/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Daniel Calderon",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/daniel-calderon-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Andrew Collier",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/andrew-collier/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Deepali Darji",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/deepali-darji-dpm/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Darji D"
+    },
+    {
+      "name": "Mark A. Farber",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/mark-a-farber-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "farber ma"
+    },
+    {
+      "name": "Stephen Heisler",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/stephen-heisler-dpm-mhsa/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Howard Kashefsky",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/howard-kashefsky-dpm/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Blair A. Keagy",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/blair-a-keagy-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "keagy ba"
+    },
+    {
+      "name": "William Marston",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/william-marston-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "marston w"
+    },
+    {
+      "name": "Katharine McGinigle",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/katharine-mcginigle-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Luigi Pascarella",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/luigi-pascarella-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "Jacob Wood",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/jacob-wood-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Wood JC*"
     },
     {
       "name": "Gregory M. Knoll",
@@ -9612,17 +10408,6 @@
       ]
     },
     {
-      "name": "Clara Lee",
-      "profile_url": "https://www.med.unc.edu/surgery/plastic/people/clara-lee-md-mpp-facs/",
-      "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
-      "role": "",
-      "departments": [
-        "Surgery \u2014 Plastic & Reconstructive Surgery",
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Lee CN"
-    },
-    {
       "name": "Delora Mount",
       "profile_url": "https://www.med.unc.edu/surgery/plastic/people/delora-mount-md-facs-faap/",
       "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
@@ -9630,27 +10415,6 @@
       "departments": [
         "Surgery \u2014 Plastic & Reconstructive Surgery"
       ]
-    },
-    {
-      "name": "Adeyemi Ogunleye",
-      "profile_url": "https://www.med.unc.edu/surgery/plastic/people/adeyemi-yemi-ogunleye-md-sm/",
-      "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
-      "role": "",
-      "departments": [
-        "Surgery \u2014 Plastic & Reconstructive Surgery",
-        "Urology"
-      ],
-      "pubmed_hint": "Ogunleye AA*"
-    },
-    {
-      "name": "Katherine Rodby",
-      "profile_url": "https://www.med.unc.edu/surgery/plastic/people/katherine-rodby-md-facs/",
-      "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
-      "role": "",
-      "departments": [
-        "Surgery \u2014 Plastic & Reconstructive Surgery"
-      ],
-      "pubmed_hint": "Rodby KA"
     },
     {
       "name": "Renee E. Edkins",
@@ -17309,15 +18073,6 @@
       ]
     },
     {
-      "name": "Michael Gonzalez",
-      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/michael-gonzalez/",
-      "department": "Anesthesiology",
-      "role": "",
-      "departments": [
-        "Anesthesiology"
-      ]
-    },
-    {
       "name": "Samantha Gottlieb",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/samantha-gottlieb/",
       "department": "Anesthesiology",
@@ -17798,15 +18553,6 @@
     {
       "name": "Joseph Piscitello",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/joseph-piscitello/",
-      "department": "Anesthesiology",
-      "role": "",
-      "departments": [
-        "Anesthesiology"
-      ]
-    },
-    {
-      "name": "Sara Pittenger",
-      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/sara-pittenger/",
       "department": "Anesthesiology",
       "role": "",
       "departments": [
@@ -22295,16 +23041,6 @@
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1DurACX3IYL/bibliography/public"
     },
     {
-      "name": "Michael Iglesia",
-      "profile_url": "https://unclineberger.org/directory/michael-iglesia/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/michael.iglesia.1/bibliography/public"
-    },
-    {
       "name": "Rumey Ishizawar",
       "profile_url": "https://unclineberger.org/directory/rumey-ishizawar/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -22443,15 +23179,6 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "khan shahzad s"
-    },
-    {
-      "name": "Hong Jin Kim",
-      "profile_url": "https://unclineberger.org/directory/hong-jin-kim/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
     },
     {
       "name": "Lawrence T. Kim",
@@ -22844,16 +23571,6 @@
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/matthew%20ryen.lockett.1/bibliography/public"
     },
     {
-      "name": "Jason M. Long",
-      "profile_url": "https://unclineberger.org/directory/jason-m-long/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Jason M. Long"
-    },
-    {
       "name": "Michael I. Love",
       "profile_url": "https://unclineberger.org/directory/michael-love/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -23130,15 +23847,6 @@
     {
       "name": "Matthew I. Milowsky",
       "profile_url": "https://unclineberger.org/directory/matthew-i-milowsky/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Gita Mody",
-      "profile_url": "https://unclineberger.org/directory/gita-mody/",
       "department": "Lineberger Comprehensive Cancer Center",
       "role": "",
       "departments": [
@@ -24122,15 +24830,6 @@
       ]
     },
     {
-      "name": "Philip M. Spanheimer",
-      "profile_url": "https://unclineberger.org/directory/philip-m-spanheimer/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
       "name": "Lisa P. Spees",
       "profile_url": "https://unclineberger.org/directory/lisa-p-spees/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -24361,16 +25060,6 @@
       ]
     },
     {
-      "name": "Robert Torphy",
-      "profile_url": "https://unclineberger.org/directory/robert-torphy/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "robert torphy"
-    },
-    {
       "name": "Essie Torres",
       "profile_url": "https://unclineberger.org/directory/essie-torres/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -24451,16 +25140,6 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "Turner Kea"
-    },
-    {
-      "name": "Douglas Tyler",
-      "profile_url": "https://unclineberger.org/directory/douglas-tyler/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Douglas Tyler"
     },
     {
       "name": "William Valdar",
@@ -24786,15 +25465,6 @@
     {
       "name": "Ted Yanagihara",
       "profile_url": "https://unclineberger.org/directory/ted-yanagihara/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Jen Jen Yeh",
-      "profile_url": "https://unclineberger.org/directory/jen-jen-yeh/",
       "department": "Lineberger Comprehensive Cancer Center",
       "role": "",
       "departments": [
