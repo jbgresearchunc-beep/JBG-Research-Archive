@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-27T02:21:44.934766Z",
-  "total_faculty": 2711,
+  "generated_at": "2026-06-28T11:52:28.781642Z",
+  "total_faculty": 2780,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -3201,8 +3201,8 @@
       "departments": [
         "Medicine \u2014 Endocrinology & Metabolism"
       ],
-      "pubmed_count": 13,
       "pubmed_search": "ComputedAuthors:Kass Alex",
+      "pubmed_count": 13,
       "pubmed_verified": 2,
       "pubmed_ambiguous": false,
       "publications": [
@@ -3679,6 +3679,7 @@
       "departments": [
         "Medicine \u2014 Gastroenterology & Hepatology"
       ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/evan.dellon.1/bibliography/public",
       "pubmed_search": "MyNCBI:evan.dellon.1",
       "pubmed_count": 50,
       "pubmed_verified": 5,
@@ -3799,6 +3800,7 @@
       "departments": [
         "Medicine \u2014 Gastroenterology & Hepatology"
       ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1paAsdAwemu5s/bibliography/public/;/public",
       "pubmed_search": "MyNCBI:1paAsdAwemu5s",
       "pubmed_count": 20,
       "pubmed_verified": 5,
@@ -3845,6 +3847,7 @@
       "departments": [
         "Medicine \u2014 Gastroenterology & Hepatology"
       ],
+      "pubmed_hint": "evon d",
       "pubmed_search": "ORCID:0000-0002-1414-1846",
       "pubmed_count": 10,
       "pubmed_verified": 5,
@@ -3891,6 +3894,7 @@
       "departments": [
         "Medicine \u2014 Gastroenterology & Hepatology"
       ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1zYJcrT9BwN5g/bibliography/public",
       "pubmed_search": "MyNCBI:1zYJcrT9BwN5g",
       "pubmed_count": 50,
       "pubmed_verified": 5,
@@ -4029,6 +4033,7 @@
       "departments": [
         "Medicine \u2014 Gastroenterology & Hepatology"
       ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/simon.gray.1/bibliography/public",
       "pubmed_search": "MyNCBI:simon.gray.1",
       "pubmed_count": 11,
       "pubmed_verified": 5,
@@ -4177,6 +4182,7 @@
       "departments": [
         "Medicine \u2014 Gastroenterology & Hepatology"
       ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/jonathan%20james.hansen.1/bibliography/public",
       "pubmed_search": "MyNCBI:jonathan%20james.hansen.1",
       "pubmed_count": 41,
       "pubmed_verified": 5,
@@ -6286,6 +6292,7 @@
       "departments": [
         "Medicine \u2014 Gastroenterology & Hepatology"
       ],
+      "pubmed_hint": "and Dean",
       "pubmed_search": "Talley N",
       "pubmed_count": 1,
       "pubmed_verified": 0,
@@ -6621,6 +6628,7 @@
       "departments": [
         "Medicine \u2014 General Medicine & Clinical Epidemiology"
       ],
+      "pubmed_hint": "Long Covid",
       "pubmed_search": "King L",
       "pubmed_count": 8,
       "pubmed_verified": 0,
@@ -12341,8 +12349,8 @@
       "departments": [
         "Medicine \u2014 Hospital Medicine"
       ],
-      "pubmed_count": 3,
       "pubmed_search": "ComputedAuthors:Hemsey David",
+      "pubmed_count": 3,
       "pubmed_verified": 2,
       "pubmed_ambiguous": false,
       "publications": [
@@ -13340,8 +13348,8 @@
       "departments": [
         "Medicine \u2014 Hospital Medicine"
       ],
-      "pubmed_count": 3,
       "pubmed_search": "ComputedAuthors:Marucci Leonardo",
+      "pubmed_count": 3,
       "pubmed_verified": 3,
       "pubmed_ambiguous": false,
       "publications": [
@@ -15256,8 +15264,8 @@
       "departments": [
         "Medicine \u2014 Infectious Diseases"
       ],
-      "pubmed_count": 73,
       "pubmed_search": "ComputedAuthors:Herce ME",
+      "pubmed_count": 73,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -24955,53 +24963,6 @@
       "pubmed_ambiguous": true,
       "publications": [],
       "nih_grants": []
-    },
-    {
-      "name": "Patricia Owens",
-      "profile_url": "https://www.med.unc.edu/medicine/rheumatology-allergy-immunology/people/patricia-owens/",
-      "department": "Medicine \u2014 Rheumatology, Allergy & Immunology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Rheumatology, Allergy & Immunology"
-      ],
-      "pubmed_search": "Owens P",
-      "pubmed_count": 64,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42236100",
-          "title": "Emergency Department-initiated standard versus high-dose buprenorphine induction (ENVISION): a randomised clinical trial protocol.",
-          "journal": "BMJ Open",
-          "year": "2026"
-        },
-        {
-          "pmid": "41670966",
-          "title": "Emergency Department-Initiated Buprenorphine for Opioid Use Disorder: A Randomized Clinical Trial.",
-          "journal": "JAMA",
-          "year": "2026"
-        },
-        {
-          "pmid": "41205409",
-          "title": "Differential reactivity of bacillithiol, mycothiol and glutathione with nitroxyl (HNO): Structural determinants and potential biological implications.",
-          "journal": "Redox Biol",
-          "year": "2025"
-        },
-        {
-          "pmid": "41114926",
-          "title": "Validation of the STOP-bang tool and prevalence of undiagnosed obstructive sleep apnoea in an irish tertiary cardiology outpatient setting.",
-          "journal": "Ir J Med Sci",
-          "year": "2025"
-        },
-        {
-          "pmid": "40904648",
-          "title": "Iron Oxide Nanoparticle Uptake, Toxicity, and Steroidogenesis in Adrenocortical Carcinoma Cells Using a Multicellular in vitro Model.",
-          "journal": "Int J Nanomedicine",
-          "year": "2025"
-        }
-      ],
-      "nih_grants": [],
-      "pubmed_recent_recruit": true
     },
     {
       "name": "Specialty Care",
@@ -35334,11 +35295,1927 @@
       "nih_grants": []
     },
     {
-      "name": "Kevin Calder",
-      "profile_url": "https://www.med.unc.edu/surgery/plastic/people/kevin-calder-md/",
-      "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
+      "name": "Caprice C. Greenberg",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/caprice-c-greenberg-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
       "role": "",
       "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_count": 16,
+      "pubmed_search": "ComputedAuthors:Greenberg CC",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41145934",
+          "title": "Simultaneous Omission of Sentinel Lymph Node Biopsy and Radiation in Older Women with Early ER+ Breast Cancer.",
+          "journal": "Ann Surg Oncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40910740",
+          "title": "Surgical Coaching for Professional Development: A Case for Inclusion in the Continuing Certification Process.",
+          "journal": "J Am Coll Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "40200483",
+          "title": "Usability Assessment: The Foundation for Developing Surgical Video Review Systems.",
+          "journal": "Stud Health Technol Inform",
+          "year": "2025"
+        },
+        {
+          "pmid": "39786731",
+          "title": "What We Can Learn About Patient Safety While Driving to Work.",
+          "journal": "JAMA Oncol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39523128",
+          "title": "Engaging Multidisciplinary Teams to Develop Pragmatic Clinical Practice Guidelines to Support Management of Patients With High-Risk Breast Lesions.",
+          "journal": "Clin Breast Cancer",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Goro Ueda",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/goro-ueda-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Ueda Goro",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41617050",
+          "title": "Epstein-Barr virus-associated smooth muscle tumor of the liver in a kidney transplant recipient treated with hepatectomy.",
+          "journal": "J Gastrointest Surg",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Esteban Calderon",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/esteban-calderon-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Calderon E",
+      "pubmed_count": 20,
+      "pubmed_search": "ComputedAuthors:Calderon Esteban",
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41365130",
+          "title": "The expanding frontier: Global use of DCD livers from donors over 60&#xa0;years.",
+          "journal": "Transplant Rev (Orlando)",
+          "year": "2026"
+        },
+        {
+          "pmid": "41219041",
+          "title": "Increased use of older DCD donors in US liver transplantation.",
+          "journal": "HPB (Oxford)",
+          "year": "2026"
+        },
+        {
+          "pmid": "41104391",
+          "title": "Multiple center listing for organ transplantation in the United States: time to reform?",
+          "journal": "Front Transplant",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Melissa Chen",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/melissa-chen-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Chen M",
+      "pubmed_count": 19,
+      "pubmed_search": "ComputedAuthors:Chen Melissa",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41280335",
+          "title": "Fixing a Mismatch: The Case for Age-Aligned Kidney Allocation.",
+          "journal": "Transpl Int",
+          "year": "2025"
+        },
+        {
+          "pmid": "41219041",
+          "title": "Increased use of older DCD donors in US liver transplantation.",
+          "journal": "HPB (Oxford)",
+          "year": "2026"
+        },
+        {
+          "pmid": "41122031",
+          "title": "Deceased Donor Organ Donation in the United States: A Review of Current Practices and Future Directions.",
+          "journal": "Am Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41060064",
+          "title": "Pancreatic Calcification and Pathologic Fibrosis Score: Correlation With Islet Yield and Insulin Independence After Total Pancreatectomy With Islet Autotransplantation (TPIAT).",
+          "journal": "Pancreas",
+          "year": "2026"
+        },
+        {
+          "pmid": "40869642",
+          "title": "Pancreatogenic Type 3c Diabetes After Major Pancreatic Resections for Chronic Pancreatitis: A Single-Center Experience of More than 100 Surgical Cases.",
+          "journal": "J Clin Med",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Chirag Desai",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/chirag-desai-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_count": 20,
+      "pubmed_search": "ComputedAuthors:Desai Chirag",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42059812",
+          "title": "Sulbactam-durlobactam and cefiderocol combination treatment of Burkholderia cenocepacia-associated Fitz-Hugh-Curtis syndrome.",
+          "journal": "Antimicrob Agents Chemother",
+          "year": "2026"
+        },
+        {
+          "pmid": "41668911",
+          "title": "Neoadjuvant therapy in resectable and borderline resectable pancreatic cancer-safe but standard of care?",
+          "journal": "Gland Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41617050",
+          "title": "Epstein-Barr virus-associated smooth muscle tumor of the liver in a kidney transplant recipient treated with hepatectomy.",
+          "journal": "J Gastrointest Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41280335",
+          "title": "Fixing a Mismatch: The Case for Age-Aligned Kidney Allocation.",
+          "journal": "Transpl Int",
+          "year": "2025"
+        },
+        {
+          "pmid": "41219041",
+          "title": "Increased use of older DCD donors in US liver transplantation.",
+          "journal": "HPB (Oxford)",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Emmanouil Giorgakis",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/emmanouil-giorgakis-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/emmanouil.giorgakis.1/bibliography/public",
+      "pubmed_search": "MyNCBI:emmanouil.giorgakis.1",
+      "pubmed_count": 48,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42294094",
+          "title": "Transplantation of older DCD livers in the machine perfusion era: a U.S. cohort study.",
+          "journal": "Transpl Int",
+          "year": "2026"
+        },
+        {
+          "pmid": "42106985",
+          "title": "Machine Perfusion Preservation Highlights From the Congress of the European Society of Organ Transplantation 2025.",
+          "journal": "Artif Organs",
+          "year": "2026"
+        },
+        {
+          "pmid": "41524130",
+          "title": "Infections After Kidney Transplantation From Donors With HIV to Recipients With HIV.",
+          "journal": "Clin Infect Dis",
+          "year": "2026"
+        },
+        {
+          "pmid": "41820259",
+          "title": "Organ Preservation Trends in the era of Perfusion Technologies: Promotion of Global Warming or Back to the ice age?",
+          "journal": "Transplantation",
+          "year": "2026"
+        },
+        {
+          "pmid": "41817597",
+          "title": "Human antibody repertoire among kidney donors with and without HIV.",
+          "journal": "JCI Insight",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Sorabh Kapoor",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/sorabh-kapoor-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Kapoor S",
+      "pubmed_count": 16,
+      "pubmed_search": "ComputedAuthors:Kapoor Sorabh",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41996684",
+          "title": "Letter to the Editor: One size does not fit all-Reconstructing multiple bile ducts in right lobe liver transplantation.",
+          "journal": "Liver Transpl",
+          "year": "2026"
+        },
+        {
+          "pmid": "41974039",
+          "title": "Letter to the Editor: Safe use of living donor right liver graft with dual portal veins.",
+          "journal": "Liver Transpl",
+          "year": "2026"
+        },
+        {
+          "pmid": "41747150",
+          "title": "Letter to the Editor: Minimizing arterial injury and confirming arterial flow during normothermic machine perfusion.",
+          "journal": "Liver Transpl",
+          "year": "2026"
+        },
+        {
+          "pmid": "41705805",
+          "title": "Letter to the Editor: Importance of establishing anatomical and physiological portal inflow during liver transplant in the presence of portal vein thrombosis.",
+          "journal": "Liver Transpl",
+          "year": "2026"
+        },
+        {
+          "pmid": "41410375",
+          "title": "Domino Hepatectomy and Implantation With Innovative Outflow Reconstruction for an Adult Patient With Maple Syrup Urine Disease and Type 1 Diabetes Mellitus: Surgical Technique.",
+          "journal": "Exp Clin Transplant",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Alexander H. Toledo",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/alexander-h-toledo-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_count": 7,
+      "pubmed_search": "ComputedAuthors:Toledo AH",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41482558",
+          "title": "Lessons in public trust.",
+          "journal": "Nat Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "41455098",
+          "title": "Publish or Perish: Rethinking Productivity in Academic Surgery.",
+          "journal": "Am Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41280335",
+          "title": "Fixing a Mismatch: The Case for Age-Aligned Kidney Allocation.",
+          "journal": "Transpl Int",
+          "year": "2025"
+        },
+        {
+          "pmid": "41122031",
+          "title": "Deceased Donor Organ Donation in the United States: A Review of Current Practices and Future Directions.",
+          "journal": "Am Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "39216968",
+          "title": "Medical training: emotions, empathy, and belonging.",
+          "journal": "Lancet",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Lori Chrisco",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/lori-chrisco-msn-rn-bc/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_count": 15,
+      "pubmed_search": "ComputedAuthors:Chrisco Lori",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41354354",
+          "title": "Diagnostic sensitivity and specificity of mucosal involvement versus skin biopsy for Stevens-Johnson syndrome/toxic epidermal necrolysis.",
+          "journal": "J Am Acad Dermatol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40417993",
+          "title": "Burn Disasters in North Carolina: An Analysis of Four Major Incidents With a Look to the Future.",
+          "journal": "J Burn Care Res",
+          "year": "2025"
+        },
+        {
+          "pmid": "35647685",
+          "title": "Impact of Chronic Alcohol Use on Fluid Resuscitation in Burn Patients.",
+          "journal": "J Burn Care Res",
+          "year": "2022"
+        },
+        {
+          "pmid": "34794175",
+          "title": "Higher Admission Frailty Scores Predict Increased Mortality, Morbidity, and Healthcare Utilization in the Elderly Burn Population.",
+          "journal": "J Burn Care Res",
+          "year": "2022"
+        },
+        {
+          "pmid": "34057999",
+          "title": "In Patients with Lower Extremity Burns and Osteomyelitis, Diabetes Mellitus Increases Amputation Rate.",
+          "journal": "J Burn Care Res",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Booker T. King",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/booker-t-king/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_count": 5,
+      "pubmed_search": "ComputedAuthors:King BT",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40417993",
+          "title": "Burn Disasters in North Carolina: An Analysis of Four Major Incidents With a Look to the Future.",
+          "journal": "J Burn Care Res",
+          "year": "2025"
+        },
+        {
+          "pmid": "40112658",
+          "title": "Prazosin for the treatment of nightmares in hospitalized adult burn patients.",
+          "journal": "Burns",
+          "year": "2025"
+        },
+        {
+          "pmid": "38680439",
+          "title": "A Rare Case of Severe Burn Injury to the Oropharynx Caused by a Flare Gun.",
+          "journal": "Ann Burns Fire Disasters",
+          "year": "2023"
+        },
+        {
+          "pmid": "36802985",
+          "title": "Outcomes in Pediatric Burn Patients With Additional Trauma-Related Injuries.",
+          "journal": "Am Surg",
+          "year": "2023"
+        },
+        {
+          "pmid": "36420101",
+          "title": "COVID-induced toxic epidermal necrolysis in a 4-year-old female: a case report and literature review.",
+          "journal": "Int J Burns Trauma",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Felicia N. Williams",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/felicia-n-williams-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_count": 6,
+      "pubmed_search": "ComputedAuthors:Williams FN",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41576785",
+          "title": "Increased Prophylactic Enoxaparin Dosing Is Associated With Improved Achievement of Target anti-Xa Levels; Implementation of the Western Trauma Association Venous-Thromboembolism Guidelines.",
+          "journal": "J Surg Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "41354354",
+          "title": "Diagnostic sensitivity and specificity of mucosal involvement versus skin biopsy for Stevens-Johnson syndrome/toxic epidermal necrolysis.",
+          "journal": "J Am Acad Dermatol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40112658",
+          "title": "Prazosin for the treatment of nightmares in hospitalized adult burn patients.",
+          "journal": "Burns",
+          "year": "2025"
+        },
+        {
+          "pmid": "37059223",
+          "title": "Which trial do we need? Evaluation of systemic antibiotics as primary prophylaxis in mechanically ventilated patients with burn injuries.",
+          "journal": "Clin Microbiol Infect",
+          "year": "2023"
+        },
+        {
+          "pmid": "36682975",
+          "title": "Race, area deprivation index, and access to surgical burn care in a pediatric population in North Carolina.",
+          "journal": "Burns",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Adam Akerman",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/adam-akerman-phd/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_count": 18,
+      "pubmed_search": "ComputedAuthors:Akerman Adam",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41750306",
+          "title": "Thoracic Aortic Aneurysm Development Is Dependent on Membrane Type-1 Matrix Metalloproteinase Activity and Abundance.",
+          "journal": "Biomolecules",
+          "year": "2026"
+        },
+        {
+          "pmid": "38541774",
+          "title": "Paradoxical Changes: EMMPRIN Tissue and Plasma Levels in Marfan Syndrome-Related Thoracic Aortic Aneurysms.",
+          "journal": "J Clin Med",
+          "year": "2024"
+        },
+        {
+          "pmid": "38445249",
+          "title": "Plasma microrna quantification protocol.",
+          "journal": "Vessel Plus",
+          "year": "2023"
+        },
+        {
+          "pmid": "38337512",
+          "title": "New Directions in Diagnostics for Aortic Aneurysms: Biomarkers and Machine Learning.",
+          "journal": "J Clin Med",
+          "year": "2024"
+        },
+        {
+          "pmid": "37115777",
+          "title": "A standardized method for plasma extracellular vesicle isolation and size distribution analysis.",
+          "journal": "PLoS One",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Abelardo DeAnda",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/abelardo-deanda-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "DeAnda Abelardo",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Thomas M. Egan",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/thomas-m-egan-md-msc/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_count": 10,
+      "pubmed_search": "ComputedAuthors:Egan TM",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41548963",
+          "title": "Considerations for Endpoints in Lung Transplant Clinical Trials: Perspective on the ISHLT Consensus Statement.",
+          "journal": "J Heart Lung Transplant",
+          "year": "2026"
+        },
+        {
+          "pmid": "41400593",
+          "title": "Considerations for Endpoints in Lung Transplant Clinical Trials: An ISHLT Consensus Statement.",
+          "journal": "J Heart Lung Transplant",
+          "year": "2026"
+        },
+        {
+          "pmid": "40357143",
+          "title": "Characterizing random complex biological media by quantifying ultrasound multiple scattering.",
+          "journal": "Front Acoust",
+          "year": "2025"
+        },
+        {
+          "pmid": "39181521",
+          "title": "The relevance of the ethics statement of the ISHLT.",
+          "journal": "J Heart Lung Transplant",
+          "year": "2024"
+        },
+        {
+          "pmid": "39014011",
+          "title": "Lung quantitative ultrasound to stage and monitor interstitial lung diseases.",
+          "journal": "Sci Rep",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jinny Ha",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/jinny-ha-md-mhs/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Ha Jinny",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Benjamin E. Haithcock",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/benjamin-e-haithcock-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_count": 54,
+      "pubmed_search": "ComputedAuthors:Haithcock BE",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41920389",
+          "title": "Quality of life during electronic patient-reported outcome (ePRO) monitoring in thoracic surgery patients: a pilot randomized controlled trial.",
+          "journal": "Qual Life Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "41816471",
+          "title": "Survival after salvage pulmonary resection for non-small cell lung cancer: a national cancer database analysis.",
+          "journal": "J Thorac Dis",
+          "year": "2026"
+        },
+        {
+          "pmid": "41586995",
+          "title": "Preoperative embolization of dual arterial supply in extralobar pulmonary sequestration: a case report and literature review.",
+          "journal": "CVIR Endovasc",
+          "year": "2026"
+        },
+        {
+          "pmid": "39857988",
+          "title": "The Role of Metastasectomies and Immunotherapy in the Management of Melanoma Lung Metastases: An Analysis of the National Cancer Database.",
+          "journal": "Cancers (Basel)",
+          "year": "2025"
+        },
+        {
+          "pmid": "39831237",
+          "title": "Serious mental illness prolongs hospital admission following lung cancer resection.",
+          "journal": "J Thorac Dis",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jason M. Long",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/jason-m-long-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_search": "ComputedAuthors:Long J",
+      "pubmed_count": 52,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41920389",
+          "title": "Quality of life during electronic patient-reported outcome (ePRO) monitoring in thoracic surgery patients: a pilot randomized controlled trial.",
+          "journal": "Qual Life Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "41816471",
+          "title": "Survival after salvage pulmonary resection for non-small cell lung cancer: a national cancer database analysis.",
+          "journal": "J Thorac Dis",
+          "year": "2026"
+        },
+        {
+          "pmid": "41662187",
+          "title": "Robotic-assisted Left Pneumonectomy For Vanishing Lung Syndrome.",
+          "journal": "J Vis Exp",
+          "year": "2026"
+        },
+        {
+          "pmid": "40809202",
+          "title": "The impact of extended lymphadenectomy on survival in esophageal adenocarcinoma with complete pathologic response: a retrospective study.",
+          "journal": "J Thorac Dis",
+          "year": "2025"
+        },
+        {
+          "pmid": "39857988",
+          "title": "The Role of Metastasectomies and Immunotherapy in the Management of Melanoma Lung Metastases: An Analysis of the National Cancer Database.",
+          "journal": "Cancers (Basel)",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Aurelie Merlo",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/aurelie-merlo-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "merlo aurelie",
+      "pubmed_count": 6,
+      "pubmed_search": "ComputedAuthors:Merlo Aurelie",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42257609",
+          "title": "Surgical Sponge Vanishing Act: Failure of Radiofrequency Identification During Left Ventricular Assist Device Placement in a Cadaveric Model.",
+          "journal": "A A Pract",
+          "year": "2026"
+        },
+        {
+          "pmid": "41722892",
+          "title": "A Pressure Valve in the Allocation System: Understanding Out-of-Sequence Heart Allocation.",
+          "journal": "J Card Fail",
+          "year": "2026"
+        },
+        {
+          "pmid": "41151496",
+          "title": "The left ventricular assist device experience: Recipient and caregiver perception of stress differs.",
+          "journal": "Heart Lung",
+          "year": "2026"
+        },
+        {
+          "pmid": "40193584",
+          "title": "Relationship of PAD and Use of TMCS on Outcomes Post-LVAD: A Case Series of 197 Patients.",
+          "journal": "ASAIO J",
+          "year": "2025"
+        },
+        {
+          "pmid": "40144255",
+          "title": "Use of mechanical circulatory support and survival for heart and heart-kidney transplant recipients in the new allocation system.",
+          "journal": "JHLT Open",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Gita Mody",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/gita-mody-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_search": "ORCID:0000-0003-0218-6948",
+      "pubmed_count": 10,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "38771558",
+          "title": "Optimization of alert notifications in electronic patient-reported outcome (ePRO) remote symptom monitoring systems (AFT-39).",
+          "journal": "Qual Life Res",
+          "year": "2024"
+        },
+        {
+          "pmid": "38416222",
+          "title": "Use of patient-reported outcome measures after breast reconstruction in low- and middle-income countries: a scoping review.",
+          "journal": "J Patient Rep Outcomes",
+          "year": "2024"
+        },
+        {
+          "pmid": "36513843",
+          "title": "Barriers and facilitators to early-stage lung cancer care in the USA: a qualitative study.",
+          "journal": "Support Care Cancer",
+          "year": "2022"
+        },
+        {
+          "pmid": "38090305",
+          "title": "Bronchopleural fistula after lobectomy: who is at risk in the modern era?",
+          "journal": "J Thorac Dis",
+          "year": "2023"
+        },
+        {
+          "pmid": "36630104",
+          "title": "Disparities in thoracic surgical oncology.",
+          "journal": "J Surg Oncol",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Nnamdi Nwaejike",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/nnamdi-nwaejike-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "ORCID:0000-0002-0351-7270",
+      "pubmed_count": 4,
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "35733976",
+          "title": "Axillary intra-aortic balloon pump, biventricular assist device implantation and subsequent orthotopic heart transplantation in a patient with sickle cell trait.",
+          "journal": "J Surg Case Rep",
+          "year": "2022"
+        },
+        {
+          "pmid": "35535368",
+          "title": "Wound hematoma after radial artery harvest caused by digital blood pressure monitoring cuff.",
+          "journal": "J Card Surg",
+          "year": "2022"
+        },
+        {
+          "pmid": "33392511",
+          "title": "Emergency biventricular assist device implantation in a patient with suspected COVID-19 disease.",
+          "journal": "Anaesth Rep",
+          "year": "2020"
+        },
+        {
+          "pmid": "32633905",
+          "title": "Radial artery harvesting for total arterial revascularization.",
+          "journal": "Multimed Man Cardiothorac Surg",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Ross M. Ungerleider",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/ross-m-ungerleider-md-mba/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "ungerleider ross",
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Ungerleider RM",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41368426",
+          "title": "Senning procedure in a 4-month-old child with atrioventricular discordance and ventriculoarterial concordance.",
+          "journal": "JTCVS Tech",
+          "year": "2025"
+        },
+        {
+          "pmid": "39790602",
+          "title": "Long-Term Outcomes With Expanded Polytetrafluoroethylene Valved Conduits in Pediatric Patients.",
+          "journal": "Ann Thorac Surg Short Rep",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Timothy M Farrell",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/timothy-m-farrell-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "farrell tm",
+      "pubmed_count": 104,
+      "pubmed_search": "ComputedAuthors:Farrell TM",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42084021",
+          "title": "Evolution of the Morbidity and Mortality Conference in Surgery: From Codman to Contemporary Practice.",
+          "journal": "Am Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41977042",
+          "title": "Effectiveness of Adjunctive Measures to Limit Recurrence and Reoperation After Laparoscopic Repair of Large Paraesophageal Hernias: A Single-Institution Series.",
+          "journal": "J Clin Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "41123898",
+          "title": "Costs of Cutting Weight-An Economic Evaluation of GLP-1 Agonists vs Gastric Bypass.",
+          "journal": "JAMA Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "40400276",
+          "title": "Bariatric Surgery: Bridge for Ventral Hernia Repair?",
+          "journal": "Am Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "39418076",
+          "title": "Median Arcuate Ligament Syndrome: Where Are We Today?",
+          "journal": "Am Surg",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Maggie Hodges",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/maggie-hodges-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Hodges M*",
+      "pubmed_search": "Hodges M",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40122439",
+          "title": "Differences in pain regimens among nulliparous patients undergoing intrauterine device placement within a single health system.",
+          "journal": "Am J Obstet Gynecol",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Muneera R. Kapadia",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/muneera-r-kapadia-md-mme/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Kapadia MR*",
+      "pubmed_count": 32,
+      "pubmed_search": "ComputedAuthors:Kapadia MR",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42105701",
+          "title": "Colorectal dysplasia and malignancy outcomes in primary sclerosing cholangitis and inflammatory bowel disease requiring liver transplantation and colectomy: A multicenter study.",
+          "journal": "Surgery",
+          "year": "2026"
+        },
+        {
+          "pmid": "41985235",
+          "title": "Bias in Student Evaluations of Surgical Attendings: Role of Gender, Race, Age and Experience.",
+          "journal": "J Surg Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "41688467",
+          "title": "eQTL in diseased colon tissue identifies potential target genes associated with IBD.",
+          "journal": "Nat Commun",
+          "year": "2026"
+        },
+        {
+          "pmid": "41241445",
+          "title": "Management of Abdominal Crohn's Disease.",
+          "journal": "Surg Clin North Am",
+          "year": "2026"
+        },
+        {
+          "pmid": "40987233",
+          "title": "How I Do It: Avoiding the Cognitive Trap Fundamentals of Surgery Curriculum.",
+          "journal": "J Surg Educ",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jonathan Stem",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/jonathan-stem-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Stem Jonathan*",
+      "pubmed_count": 14,
+      "pubmed_search": "ComputedAuthors:Stem Jonathan",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41688467",
+          "title": "eQTL in diseased colon tissue identifies potential target genes associated with IBD.",
+          "journal": "Nat Commun",
+          "year": "2026"
+        },
+        {
+          "pmid": "41425104",
+          "title": "Preoperative Risk Stratification for Major Events.",
+          "journal": "Clin Colon Rectal Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "40316843",
+          "title": "Peristaltic contractility: another factor impacting IPAA function?",
+          "journal": "Int J Colorectal Dis",
+          "year": "2025"
+        },
+        {
+          "pmid": "39445658",
+          "title": "National Trends in the Creation of Diverting Ileostomy at the Time of Ileal Pouch-Anal Anastomosis in Adults With Ulcerative Colitis.",
+          "journal": "Am Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "39057152",
+          "title": "Disparities in Outcomes following Resection of Locally Advanced Rectal Cancer.",
+          "journal": "Curr Oncol",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Samuel Ricardo Torres Landa Fernandez",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/samuel-ricardo-torres-landa-fernandez-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Fernandez S",
+      "pubmed_count": 5,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Matthew Eckert",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/matthew-eckert-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Eckert MJ*",
+      "pubmed_count": 94,
+      "pubmed_search": "ComputedAuthors:Eckert Matthew",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40059696",
+          "title": "Nationwide estimates of potential lives saved with prehospital blood transfusions.",
+          "journal": "Transfusion",
+          "year": "2025"
+        },
+        {
+          "pmid": "39151929",
+          "title": "Who Says You can't go FAST at Night? Use of a Novel Ultrasound-Capable Night Vision Device for Prehospital Medical Personnel to Identify Noncompressible Truncal Hemorrhage.",
+          "journal": "Surg Innov",
+          "year": "2024"
+        },
+        {
+          "pmid": "38390471",
+          "title": "Developing the Ready Military Medical Force: military-specific training in Graduate Medical Education.",
+          "journal": "Trauma Surg Acute Care Open",
+          "year": "2024"
+        },
+        {
+          "pmid": "37635814",
+          "title": "A Surgeon's Guide to Machine Learning.",
+          "journal": "Ann Surg Open",
+          "year": "2021"
+        },
+        {
+          "pmid": "36970937",
+          "title": "Airborne! UAV delivery of blood products and medical logistics for combat zones.",
+          "journal": "Transfusion",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jared Gallaher",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/jared-gallaher-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Gallaher Jared",
+      "pubmed_count": 78,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42342483",
+          "title": "Outcomes in Obese Adult Venoarterial Extracorporeal Membrane Oxygenation: A Systematic Review.",
+          "journal": "J Cardiothorac Vasc Anesth",
+          "year": "2026"
+        },
+        {
+          "pmid": "42213865",
+          "title": "Identifying Low-Risk Trauma Patients for Blunt Cerebrovascular Injury: Evidence From the North Carolina Trauma Registry.",
+          "journal": "Am Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41576785",
+          "title": "Increased Prophylactic Enoxaparin Dosing Is Associated With Improved Achievement of Target anti-Xa Levels; Implementation of the Western Trauma Association Venous-Thromboembolism Guidelines.",
+          "journal": "J Surg Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "41512696",
+          "title": "Establishing a Mass Casualty Threshold in a Resource-Limited Hospital Setting: A Retrospective Analysis of a Trauma Registry From Malawi.",
+          "journal": "J Surg Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "41310488",
+          "title": "Esophageal cancer staging in Malawi: the feasibility of chest radiography and abdominal ultrasound for initial evaluation.",
+          "journal": "BMC Gastroenterol",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Daryhl Johnson",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/daryhl-johnson-ii-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Johnson Daryhl",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40279861",
+          "title": "Racial and ethnic disparities in discharge planning among trauma patients in the United States.",
+          "journal": "Am J Surg",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Ian Kratzke",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/ian-kratzke-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Kratzke I*",
+      "pubmed_count": 27,
+      "pubmed_search": "ComputedAuthors:Kratzke Ian",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41948472",
+          "title": "Small bowel obstruction patient education series: understanding trauma and emergency surgery conditions.",
+          "journal": "Trauma Surg Acute Care Open",
+          "year": "2026"
+        },
+        {
+          "pmid": "41576785",
+          "title": "Increased Prophylactic Enoxaparin Dosing Is Associated With Improved Achievement of Target anti-Xa Levels; Implementation of the Western Trauma Association Venous-Thromboembolism Guidelines.",
+          "journal": "J Surg Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "38412483",
+          "title": "Gender Differences in Autonomy Granted to Residents and Fellows During Procedural Training: A Systematic Review and Meta-Analysis.",
+          "journal": "Acad Med",
+          "year": "2024"
+        },
+        {
+          "pmid": "38089355",
+          "title": "Twelve Tips for Preparing a Surgical Discharge Summary: Enabling a Safe Discharge.",
+          "journal": "MedEdPublish (2016)",
+          "year": "2019"
+        },
+        {
+          "pmid": "37501309",
+          "title": "The Effect of Area Social Deprivation on Health Behavior and Health Care Utilization in an Adult Trauma Population.",
+          "journal": "Am Surg",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "William Shihao Lao",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/william-lao-md-facs/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Lao WS",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41983932",
+          "title": "Pedicled Gallbladder Serosal Patch for Complex Duodenal Perforation: Technical Description and Clinical Outcome.",
+          "journal": "Am Surg",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "John McClellan",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/john-mcclellan-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "McClellanJM*",
+      "pubmed_search": "ORCID:0000-0003-4853-0863",
+      "pubmed_count": 3,
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "36970937",
+          "title": "Airborne! UAV delivery of blood products and medical logistics for combat zones.",
+          "journal": "Transfusion",
+          "year": "2023"
+        },
+        {
+          "pmid": "32682016",
+          "title": "Safety code blue! Assessing the use of blue surgical sterilization wrap for homemade respirator masks during the COVID-19 crisis.",
+          "journal": "Am J Infect Control",
+          "year": "2021"
+        },
+        {
+          "pmid": "32769798",
+          "title": "Quality Assurance During a Global Pandemic: An Evaluation of Improvised Filter Materials for Healthcare Workers.",
+          "journal": "J Occup Environ Med",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Anthony A. Meyer",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/anthony-a-meyer-md-phd/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_count": 146,
+      "pubmed_search": "ComputedAuthors:Meyer AA",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "36802985",
+          "title": "Outcomes in Pediatric Burn Patients With Additional Trauma-Related Injuries.",
+          "journal": "Am Surg",
+          "year": "2023"
+        },
+        {
+          "pmid": "31931143",
+          "title": "Survey of the US Surgeon Workforce: Practice Characteristics, Job Satisfaction, and Reasons for Leaving Surgery.",
+          "journal": "J Am Coll Surg",
+          "year": "2020"
+        },
+        {
+          "pmid": "29710203",
+          "title": "Lack of Information on Surgical Care for Incarcerated Persons.",
+          "journal": "JAMA Surg",
+          "year": "2018"
+        },
+        {
+          "pmid": "26299487",
+          "title": "What Are the Indications for Resection After an Episode of Sigmoid Diverticulitis?",
+          "journal": "Adv Surg",
+          "year": "2015"
+        },
+        {
+          "pmid": "21944339",
+          "title": "Managing influence and conflict of interest with professionalism.",
+          "journal": "Am Surg",
+          "year": "2011"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Rachel Niehuus",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/rachel-niehuus-md-phd/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Niehuus Rachel",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Jaclyn Portelli Tremont",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/jaclyn-tremont-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Tremont JP",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40158489",
+          "title": "Bedside versus operating room tracheostomy: A cost-effectiveness and economic evaluation.",
+          "journal": "Am J Surg",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Lauren Raff",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/lauren-raff-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Raff Lauren",
+      "pubmed_count": 25,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42342483",
+          "title": "Outcomes in Obese Adult Venoarterial Extracorporeal Membrane Oxygenation: A Systematic Review.",
+          "journal": "J Cardiothorac Vasc Anesth",
+          "year": "2026"
+        },
+        {
+          "pmid": "42153388",
+          "title": "Nutrition and pharmacologic support to address metabolic demands following trauma: a narrative review.",
+          "journal": "JPEN J Parenter Enteral Nutr",
+          "year": "2026"
+        },
+        {
+          "pmid": "41717716",
+          "title": "Wernicke Encephalopathy Associated with Malabsorption in Degos Disease.",
+          "journal": "J Investig Med High Impact Case Rep",
+          "year": "2026"
+        },
+        {
+          "pmid": "41576785",
+          "title": "Increased Prophylactic Enoxaparin Dosing Is Associated With Improved Achievement of Target anti-Xa Levels; Implementation of the Western Trauma Association Venous-Thromboembolism Guidelines.",
+          "journal": "J Surg Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "38381243",
+          "title": "A Quality Improvement Project to Reduce Rapid Response System Inequities for Patients with Limited English Proficiency at a Quaternary Academic Medical Center.",
+          "journal": "J Gen Intern Med",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Trista Reid",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/trista-reid-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_count": 23,
+      "pubmed_search": "ComputedAuthors:Reid Trista",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40081312",
+          "title": "The effect of social determinants of health on patient outcomes in acute trauma: A systematic review.",
+          "journal": "Am J Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "36623963",
+          "title": "The role of ECMO in COVID-19 acute respiratory failure: Defining risk factors for mortality.",
+          "journal": "Am J Surg",
+          "year": "2023"
+        },
+        {
+          "pmid": "35968607",
+          "title": "Extracorporeal Membrane Oxygenation for Refractory Acute Respiratory Failure Following Traumatic Injury: Analysis of the National Trauma Data Bank (2007-2019).",
+          "journal": "Am Surg",
+          "year": "2023"
+        },
+        {
+          "pmid": "35592895",
+          "title": "Perceptions of Gender Disparities in Access to Surgical Care in Malawi: A Community Based Survey.",
+          "journal": "Am Surg",
+          "year": "2023"
+        },
+        {
+          "pmid": "35232604",
+          "title": "Posthospitalization outcomes after extracorporeal membrane oxygenation (ECMO) for COVID-19.",
+          "journal": "Surgery",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Steven Satterly",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/steven-satterly-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Satterly Steven",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Sharon E. Schiro",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/sharon-e-schiro-phd/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_count": 35,
+      "pubmed_search": "ComputedAuthors:Schiro SE",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42213865",
+          "title": "Identifying Low-Risk Trauma Patients for Blunt Cerebrovascular Injury: Evidence From the North Carolina Trauma Registry.",
+          "journal": "Am Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41791187",
+          "title": "Rural-urban differences in prehospital deaths due to injury in North Carolina.",
+          "journal": "Am J Emerg Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "40717529",
+          "title": "Statewide Discharge Data Supports Development of Inclusive Trauma System.",
+          "journal": "Am Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "40625307",
+          "title": "Violent and Nonviolent Trauma Patients, Recidivism Mortality: A Comparison.",
+          "journal": "Am Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "38917362",
+          "title": "Comparative analysis of injury identification using KABCO and ISS in linked North Carolina trauma registry and crash data.",
+          "journal": "Traffic Inj Prev",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Andrew Schneider",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/andrew-schneider-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Schneider AB*",
+      "pubmed_count": 33,
+      "pubmed_search": "ComputedAuthors:Schneider Andrew",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42153388",
+          "title": "Nutrition and pharmacologic support to address metabolic demands following trauma: a narrative review.",
+          "journal": "JPEN J Parenter Enteral Nutr",
+          "year": "2026"
+        },
+        {
+          "pmid": "41846201",
+          "title": "Trends and outcomes following diagnostic laparoscopy for blunt abdominal trauma in the United States.",
+          "journal": "Injury",
+          "year": "2026"
+        },
+        {
+          "pmid": "40279861",
+          "title": "Racial and ethnic disparities in discharge planning among trauma patients in the United States.",
+          "journal": "Am J Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "40189437",
+          "title": "Traumatic gallbladder injury and its treatment: Changing management of a rare injury.",
+          "journal": "Injury",
+          "year": "2025"
+        },
+        {
+          "pmid": "38759489",
+          "title": "An evaluation of the \"Obesity Paradox\" in isolated blunt abdominal trauma in the United States.",
+          "journal": "Injury",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jennifer Serfin",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/jennifer-serfin-md-facs/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Serfin Jennifer",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Douglas Tyler",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/douglas-tyler-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_search": "ORCID:0000-0002-7434-846X",
+      "pubmed_count": 3,
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39933421",
+          "title": "Impact of pre-existing cancer diagnoses on burn injury survival and morbidity.",
+          "journal": "Burns",
+          "year": "2025"
+        },
+        {
+          "pmid": "35417440",
+          "title": "Extracorporeal Membrane Oxygenation for Adult Patients With Neoplasms: Outcomes and Trend Over the Last 2 Decades.",
+          "journal": "ASAIO J",
+          "year": "2023"
+        },
+        {
+          "pmid": "33276456",
+          "title": "Colectomy among Fee-for-Service Medicare Enrollees Coded as DRG 330: A Potential Platform to Allow Consumer Cost Transparency?",
+          "journal": "Healthcare (Basel)",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Raghid Bitar",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/raghid-bitar-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Bitar Raghid",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Shannelle Campbell",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/shannelle-campbell-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Campbell S",
+      "pubmed_count": 6,
+      "pubmed_search": "ComputedAuthors:Campbell Shannelle",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41789188",
+          "title": "Perceptions of Academic Authorship in Medicine: A Multi-Specialty Survey of Physicians.",
+          "journal": "J Med Educ Curric Dev",
+          "year": "2026"
+        },
+        {
+          "pmid": "41253585",
+          "title": "Behind the mask: Industry payments and the persistent undervaluation of women surgeons.",
+          "journal": "Am J Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41050214",
+          "title": "Diversity in Gender, Race, and Specialty Among US Allopathic Medical School Leadership.",
+          "journal": "J Med Educ Curric Dev",
+          "year": "2025"
+        },
+        {
+          "pmid": "38609587",
+          "title": "Evaluation of 30-day outcomes for open ventral hernia repair using self-gripping versus nonself-gripping mesh.",
+          "journal": "Surg Endosc",
+          "year": "2024"
+        },
+        {
+          "pmid": "38025844",
+          "title": "Idiopathic Spontaneous Pneumoperitoneum and Call for a Multi-Institutional Database.",
+          "journal": "ACG Case Rep J",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "D. Wayne Overby",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/d-wayne-overby-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Overby DW",
+      "pubmed_count": 37,
+      "pubmed_search": "ComputedAuthors:Overby DW",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41044285",
+          "title": "Correction: SAGES guidelines for the use of intraoperative imaging of the common bile duct.",
+          "journal": "Surg Endosc",
+          "year": "2025"
+        },
+        {
+          "pmid": "40935939",
+          "title": "SAGES guidelines for the use of intraoperative imaging of the common bile duct.",
+          "journal": "Surg Endosc",
+          "year": "2025"
+        },
+        {
+          "pmid": "40855001",
+          "title": "Correction: Intraoperative imaging of the common bile duct: a systematic review.",
+          "journal": "Surg Endosc",
+          "year": "2025"
+        },
+        {
+          "pmid": "40634727",
+          "title": "Intraoperative imaging of the common bile duct: a systematic review.",
+          "journal": "Surg Endosc",
+          "year": "2025"
+        },
+        {
+          "pmid": "39920373",
+          "title": "Bariatric surgery and relevant comorbidities: a systematic review and meta-analysis.",
+          "journal": "Surg Endosc",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Marc Whitman",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/marc-whitman-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Whitman Marc",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Adesola Akinkuotu",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/adesola-akinkuotu-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Akinkuotu AC",
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Akinkuotu Adesola",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42127463",
+          "title": "Child Opportunity and Severity of Pediatric Acute Appendicitis: A Statewide Analysis.",
+          "journal": "J Surg Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "41284940",
+          "title": "Quantification of Cost Savings After Enhanced Recovery Pathway Implementation for Pediatric Colorectal Surgery.",
+          "journal": "Am Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41253585",
+          "title": "Behind the mask: Industry payments and the persistent undervaluation of women surgeons.",
+          "journal": "Am J Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41192954",
+          "title": "Maternal Health Literacy and Prenatal Learning Experiences Related to Diagnosis and Surgical Management: A Qualitative Study of Women With Pregnancies Associated With Surgically Correctable Congenital Anomalies.",
+          "journal": "Prenat Diagn",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Clint Cappiello",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/clint-capiello-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Cappiello Clint",
+      "pubmed_count": 2,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41966323",
+          "title": "Enhanced recovery protocols for pediatric colorectal surgery demonstrate cost-effectiveness: An economic analysis to support programmatic development.",
+          "journal": "J Pediatr Surg",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Sean E. McLean",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/sean-e-mclean-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "mclean s",
+      "pubmed_count": 57,
+      "pubmed_search": "ComputedAuthors:McLean SE",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42127463",
+          "title": "Child Opportunity and Severity of Pediatric Acute Appendicitis: A Statewide Analysis.",
+          "journal": "J Surg Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "41966323",
+          "title": "Enhanced recovery protocols for pediatric colorectal surgery demonstrate cost-effectiveness: An economic analysis to support programmatic development.",
+          "journal": "J Pediatr Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41284940",
+          "title": "Quantification of Cost Savings After Enhanced Recovery Pathway Implementation for Pediatric Colorectal Surgery.",
+          "journal": "Am Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41192954",
+          "title": "Maternal Health Literacy and Prenatal Learning Experiences Related to Diagnosis and Surgical Management: A Qualitative Study of Women With Pregnancies Associated With Surgically Correctable Congenital Anomalies.",
+          "journal": "Prenat Diagn",
+          "year": "2025"
+        },
+        {
+          "pmid": "41161378",
+          "title": "Reliability of external caliper-based measurements for identifying severe pectus excavatum: Results from a multi-institutional regional consortium.",
+          "journal": "J Pediatr Surg",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Cathleen Mooney",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/cathleen-mooney-md-2/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Mooney Cathleen",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41966323",
+          "title": "Enhanced recovery protocols for pediatric colorectal surgery demonstrate cost-effectiveness: An economic analysis to support programmatic development.",
+          "journal": "J Pediatr Surg",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Michael Phillips",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/michael-phillips-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "phillips mr",
+      "pubmed_search": "Phillips Michael",
+      "pubmed_count": 9,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40200483",
+          "title": "Usability Assessment: The Foundation for Developing Surgical Video Review Systems.",
+          "journal": "Stud Health Technol Inform",
+          "year": "2025"
+        },
+        {
+          "pmid": "37563003",
+          "title": "The Role of Diversion During Ileal Pouch Anal Anastomosis (IPAA) Creation in Pediatric Ulcerative Colitis.",
+          "journal": "J Pediatr Surg",
+          "year": "2023"
+        },
+        {
+          "pmid": "36846098",
+          "title": "Trends in Surgical Recurrence Among Pediatric Crohn's Disease Patients Using Administrative Claims Data.",
+          "journal": "Crohns Colitis 360",
+          "year": "2023"
+        },
+        {
+          "pmid": "35943199",
+          "title": "Re-Aiming Equity Evaluation in Clinical Decision Support: A Scoping Review of Equity Assessments in Surgical Decision Support Systems.",
+          "journal": "Ann Surg",
+          "year": "2023"
+        },
+        {
+          "pmid": "34321423",
+          "title": "Obesity Increases the Risk of Hospital Readmission Following Intestinal Surgery for Children With Crohn Disease.",
+          "journal": "J Pediatr Gastroenterol Nutr",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Elisabeth Tracy",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/elisabeth-tracy-md-2/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Tracy ET",
+      "pubmed_search": "Tracy Elisabeth",
+      "pubmed_count": 2,
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41284940",
+          "title": "Quantification of Cost Savings After Enhanced Recovery Pathway Implementation for Pediatric Colorectal Surgery.",
+          "journal": "Am Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "37857141",
+          "title": "Surgical Residents as Clerkship Scholars May Improve Student Perception of the Surgery Clerkship.",
+          "journal": "J Surg Res",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Kevin Calder",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/kevin-calder-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
         "Surgery \u2014 Plastic & Reconstructive Surgery"
       ],
       "pubmed_search": "ComputedAuthors:Calder K",
@@ -35363,10 +37240,11 @@
     },
     {
       "name": "Jennifer C. Carr",
-      "profile_url": "https://www.med.unc.edu/surgery/plastic/people/jennifer-c-carr/",
-      "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/jennifer-c-carr/",
+      "department": "Surgery \u2014 General Surgery",
       "role": "",
       "departments": [
+        "Surgery \u2014 General Surgery",
         "Surgery \u2014 Plastic & Reconstructive Surgery"
       ],
       "pubmed_hint": "Carr JC",
@@ -35404,10 +37282,11 @@
     },
     {
       "name": "Lynn Damitz",
-      "profile_url": "https://www.med.unc.edu/surgery/plastic/people/lynn-damitz-md/",
-      "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/lynn-damitz-md/",
+      "department": "Surgery \u2014 General Surgery",
       "role": "",
       "departments": [
+        "Surgery \u2014 General Surgery",
         "Surgery \u2014 Plastic & Reconstructive Surgery"
       ],
       "pubmed_hint": "damitz l",
@@ -35444,6 +37323,1100 @@
           "pmid": "38911577",
           "title": "Unveiling the Potential of AI in Plastic Surgery Education: A Comparative Study of Leading AI Platforms' Performance on In-training Examinations.",
           "journal": "Plast Reconstr Surg Glob Open",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Gregory Knoll",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/gregory-knoll-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "ORCID:0000-0003-1405-5435",
+      "pubmed_count": 3,
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "35590546",
+          "title": "Information transmission in recurrent networks: Consequences of network noise for synchronous and asynchronous signal encoding.",
+          "journal": "Phys Rev E",
+          "year": "2022"
+        },
+        {
+          "pmid": "35193262",
+          "title": "Critical current for giant Fano factor in neural models with bistable firing dynamics and implications for signal transmission.",
+          "journal": "Phys Rev E",
+          "year": "2022"
+        },
+        {
+          "pmid": "34003421",
+          "title": "Recurrence-mediated suprathreshold stochastic resonance.",
+          "journal": "J Comput Neurosci",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Clara Lee",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/clara-lee-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Surgery \u2014 Plastic & Reconstructive Surgery",
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_hint": "Lee CN",
+      "pubmed_search": "ComputedAuthors:Lee C",
+      "pubmed_count": 48,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42228313",
+          "title": "Building the Oncology Workforce: A Qualitative Evaluation of an Inter-Institutional Cancer Research Internship for Underrepresented Undergraduate Students.",
+          "journal": "J Cancer Educ",
+          "year": "2026"
+        },
+        {
+          "pmid": "41915024",
+          "title": "Building HOPE: operationalizing hybrid decentralized oncology clinical trials with community providers beyond traditional healthcare system networks.",
+          "journal": "Oncologist",
+          "year": "2026"
+        },
+        {
+          "pmid": "41911514",
+          "title": "Clinicogenomic Characteristics and Treatment Outcomes of Patients With Advanced ALK-Rearranged Squamous and Adenosquamous Non-Small Cell Lung Cancers.",
+          "journal": "JCO Precis Oncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41663549",
+          "title": "Symptomatic radiation necrosis after concurrent targeted therapy and stereotactic radiosurgery for brain metastases: a bicentric retrospective analysis.",
+          "journal": "J Neurooncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40991878",
+          "title": "Benchmarking the Current Landscape: Insights From an Association of American Cancer Institutes Survey on Academic Cancer Service Lines.",
+          "journal": "JCO Oncol Pract",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Del Mount",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/del-mount/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Mount Del",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Adeyemi Ogunleye",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/adeyemi-yemi-ogunleye-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Surgery \u2014 Plastic & Reconstructive Surgery",
+        "Urology"
+      ],
+      "pubmed_hint": "Ogunleye AA*",
+      "pubmed_search": "ComputedAuthors:Ogunleye A",
+      "pubmed_count": 38,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41418049",
+          "title": "Evaluating the Performance of Different Pedicles in Reduction Mammoplasty: A Comparative Analysis.",
+          "journal": "Ann Plast Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41344342",
+          "title": "Drain Use and Complications After Breast Reduction in A Five-Academic-Institution Cohort.",
+          "journal": "Plast Reconstr Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "41145120",
+          "title": "Local Capacity Building, Constraints, and Microsurgical Reconstruction in a Low-Resource Country: A Cross-sectional Study of Surgeons.",
+          "journal": "J Reconstr Microsurg",
+          "year": "2025"
+        },
+        {
+          "pmid": "40967193",
+          "title": "Lower extremity lymphedema after pelvic nodal dissection for urologic cancers is associated with metastatic recurrence.",
+          "journal": "Can Urol Assoc J",
+          "year": "2025"
+        },
+        {
+          "pmid": "40395087",
+          "title": "May-Thurner syndrome diagnosis and management with concurrent lymphedema.",
+          "journal": "Phlebology",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Katherine Rodby",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/katherine-rodby-md-facs/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Surgery \u2014 Plastic & Reconstructive Surgery"
+      ],
+      "pubmed_hint": "Rodby KA",
+      "pubmed_search": "ORCID:0000-0002-1518-1065",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39914237",
+          "title": "Reduction mammoplasty after abdominally-based free flap breast reconstruction: Indications, techniques, and outcomes.",
+          "journal": "J Plast Reconstr Aesthet Surg",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Kristalyn Gallagher",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/kristalyn-gallagher-do/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "gallagher k*",
+      "pubmed_count": 72,
+      "pubmed_search": "ComputedAuthors:Gallagher Kristalyn",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42018695",
+          "title": "Mammographic and Pathologic Appearance of Retained Superparamagnetic Iron Oxide.",
+          "journal": "J Breast Imaging",
+          "year": "2026"
+        },
+        {
+          "pmid": "41913021",
+          "title": "ASO Visual Abstract: Prospective Phase II Multicenter Trial of Ablation after Breast Lumpectomy Added To Extend (ABLATE) Intraoperative Margins for the Sole Local Treatment of Breast Cancer.",
+          "journal": "Ann Surg Oncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41832363",
+          "title": "Impact of Age on Use of Neoadjuvant Chemoimmunotherapy and Outcomes for Patients with Triple-Negative Breast Cancer.",
+          "journal": "Ann Surg Oncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41764128",
+          "title": "ASO Visual Abstract: Impact of Age on Use of Neoadjuvant Chemoimmunotherapy and Outcomes for Patients with Triple-Negative Breast Cancer.",
+          "journal": "Ann Surg Oncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41549218",
+          "title": "Prospective Phase II Multicenter Trial of Ablation after Breast Lumpectomy Added To Extend (ABLATE) Intraoperative Margins for the Sole Local Treatment of Breast Cancer.",
+          "journal": "Ann Surg Oncol",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Elizabeth Gleeson",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/elizabeth-gleeson-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Gleeson E*",
+      "pubmed_count": 11,
+      "pubmed_search": "ComputedAuthors:Gleeson Elizabeth",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41426309",
+          "title": "Patterns of care in pancreatic cancer radiotherapy: impact of facility volume on outcomes.",
+          "journal": "Front Oncol",
+          "year": "2025"
+        },
+        {
+          "pmid": "40563664",
+          "title": "Iterative Cytoreductive Surgery and HIPEC for Peritoneal Metastases from Primary Appendiceal and Colorectal Cancers: An Observational Study.",
+          "journal": "Cancers (Basel)",
+          "year": "2025"
+        },
+        {
+          "pmid": "40346434",
+          "title": "Minimally invasive vs. open radical cholecystectomy for gallbladder cancer: 30-day NSQIP outcomes analysis.",
+          "journal": "Surg Endosc",
+          "year": "2025"
+        },
+        {
+          "pmid": "40055078",
+          "title": "International differences in the selection and outcome of minimally invasive and open distal pancreatectomy: A transatlantic analysis.",
+          "journal": "Surgery",
+          "year": "2025"
+        },
+        {
+          "pmid": "39019733",
+          "title": "International differences in the selection and outcome of minimally invasive and open distal pancreatectomy: A transatlantic analysis.",
+          "journal": "Surgery",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Conner Haase",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/conner-haase-md-2/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Haase Conner",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Hong Jin Kim",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/hong-jin-kim-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_hint": "kim h*",
+      "pubmed_search": "ComputedAuthors:Kim H",
+      "pubmed_count": 146,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42291120",
+          "title": "Effects of dietary xylanase supplementation on growth performance and gut health of weaned pigs fed a high non-starch polysaccharides diet.",
+          "journal": "J Anim Sci Technol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42291111",
+          "title": "Complete genome sequence of Enterococcus faecium strain AJ_C_05 with potential characteristics to break down carbohydrates, applicable to livestock industry.",
+          "journal": "J Anim Sci Technol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42290789",
+          "title": "Life-stage differences in nutrient digestibility and physiological parameters in Sapsaree dogs.",
+          "journal": "Front Vet Sci",
+          "year": "2026"
+        },
+        {
+          "pmid": "41982989",
+          "title": "Modulation of microbial community and metabolism through Lactiplantibacillus argentoratensis AGMB00912 supplementation in weaning piglets.",
+          "journal": "J Anim Sci Technol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41826536",
+          "title": "Safety and Next-Generation Probiotic Potential of Mitsuokella multacida AGMB01124 Newly Isolated from Healthy Swine Feces.",
+          "journal": "Probiotics Antimicrob Proteins",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Lawrence Kim",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/lawrence-kim-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_count": 22,
+      "pubmed_search": "ComputedAuthors:Kim Lawrence",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41390550",
+          "title": "ASO Visual Abstract: Development of Entrustable Professional Activities for Complex General Surgical Oncology.",
+          "journal": "Ann Surg Oncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41243065",
+          "title": "ASO Author Reflections: Why are EPAs Being Adopted by Surgical Oncology?",
+          "journal": "Ann Surg Oncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41193824",
+          "title": "Development of Entrustable Professional Activities for Complex General Surgical Oncology.",
+          "journal": "Ann Surg Oncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41057208",
+          "title": "Investigating the association between incretin-based therapies and thyroid cancer incidence among US Medicare beneficiaries with diabetes.",
+          "journal": "BMJ Open Diabetes Res Care",
+          "year": "2025"
+        },
+        {
+          "pmid": "39168727",
+          "title": "Invited commentary on: YMSY-D-23-01181_R2. Overexpression of human DNA polymerase theta (POLQ) is a biomarker of aggressive and DNA repair-deficient papillary thyroid cancers.",
+          "journal": "Surgery",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Michael T. LeCompte",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/michael-t-lecompte-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "LeCompte MT*",
+      "pubmed_count": 10,
+      "pubmed_search": "ComputedAuthors:LeCompte MT",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41161766",
+          "title": "Partial hepatic volvulus and acute biliary obstruction.",
+          "journal": "BMJ Case Rep",
+          "year": "2025"
+        },
+        {
+          "pmid": "40813201",
+          "title": "Patient expectations about the oncologic benefit of pancreatectomy for pancreatic ductal adenocarcinoma.",
+          "journal": "HPB (Oxford)",
+          "year": "2025"
+        },
+        {
+          "pmid": "40346434",
+          "title": "Minimally invasive vs. open radical cholecystectomy for gallbladder cancer: 30-day NSQIP outcomes analysis.",
+          "journal": "Surg Endosc",
+          "year": "2025"
+        },
+        {
+          "pmid": "39980192",
+          "title": "Evaluation of the role of liver metastasectomy in the treatment of stage IV endometrial cancer.",
+          "journal": "J Gynecol Oncol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39831703",
+          "title": "Multi-Institutional Analysis of Pancreaticoduodenectomy for Nonfamilial Periampullary Adenoma: A Novel Risk Score to Guide Shared Decision-Making.",
+          "journal": "J Am Coll Surg",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Michael O. Meyers",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/michael-o-meyers-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "meyers m*",
+      "pubmed_count": 86,
+      "pubmed_search": "ComputedAuthors:Meyers MO",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42084393",
+          "title": "Breslow Thickness and Microsatellite Detection in Primary Cutaneous Melanoma: Implications for Oncologic Surgeons and Patients.",
+          "journal": "Am Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "39711008",
+          "title": "New Onset Diabetes in Pancreatic Adenocarcinoma Does Not Correlate With Molecular Subtype.",
+          "journal": "J Surg Oncol",
+          "year": "2025"
+        },
+        {
+          "pmid": "37650827",
+          "title": "Lymph node metastases in young patients with gastrointestinal stromal tumor: A nationwide analysis.",
+          "journal": "J Surg Oncol",
+          "year": "2023"
+        },
+        {
+          "pmid": "35534424",
+          "title": "Self-compassion training to improve well-being for surgical residents.",
+          "journal": "Explore (NY)",
+          "year": "2023"
+        },
+        {
+          "pmid": "34254329",
+          "title": "Socioeconomic factors in timing of esophagectomy and association with outcomes.",
+          "journal": "J Surg Oncol",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "David W. Ollila",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/david-w-ollila-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "ollila d*",
+      "pubmed_search": "Ollila DW",
+      "pubmed_count": 83,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42360644",
+          "title": "Implementing Paradigm Shifting Clinical Trials: Real-World Outcomes of Neoadjuvant Versus Adjuvant Immune Checkpoint Inhibitors in Advanced Melanoma Patients.",
+          "journal": "Ann Surg Oncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42084393",
+          "title": "Breslow Thickness and Microsatellite Detection in Primary Cutaneous Melanoma: Implications for Oncologic Surgeons and Patients.",
+          "journal": "Am Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41838356",
+          "title": "ASO Visual Abstract: Evaluation of Clinical Outcomes and Pattern of Recurrence in Patients With Cutaneous Melanoma and Sentinel Lymph Node Positivity Since the Publication of the MSLT-2 Trial.",
+          "journal": "Ann Surg Oncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41832363",
+          "title": "Impact of Age on Use of Neoadjuvant Chemoimmunotherapy and Outcomes for Patients with Triple-Negative Breast Cancer.",
+          "journal": "Ann Surg Oncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41746574",
+          "title": "Evaluation of Clinical Outcomes and Pattern of Recurrence in Patients with Cutaneous Melanoma and Sentinel Lymph Node Positivity Since the Publication of the MSLT-2 Trial.",
+          "journal": "Ann Surg Oncol",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jessica Schumacher",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/jessica-schumacher-phd/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_count": 101,
+      "pubmed_search": "ComputedAuthors:Schumacher Jessica",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41145934",
+          "title": "Simultaneous Omission of Sentinel Lymph Node Biopsy and Radiation in Older Women with Early ER+ Breast Cancer.",
+          "journal": "Ann Surg Oncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40770527",
+          "title": "Breast Surgeons' Perspectives of Telehealth Visits for Breast Clinic.",
+          "journal": "Ann Surg Oncol",
+          "year": "2025"
+        },
+        {
+          "pmid": "40450165",
+          "title": "Sentinel Node Biopsy Utilization in Wisconsin Women Undergoing Breast-Conserving Surgery for DCIS.",
+          "journal": "Ann Surg Oncol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39648229",
+          "title": "Engaging survivor and oncologist stakeholders to develop a patient-reported outcome assessment to use as a component of survivorship care.",
+          "journal": "Support Care Cancer",
+          "year": "2024"
+        },
+        {
+          "pmid": "39383199",
+          "title": "Posttreatment surveillance intensity and overall survival in prostate cancer survivors (AFT-30).",
+          "journal": "JNCI Cancer Spectr",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Julia Selfridge",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/julia-selfridge-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Selfridge Julia",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Philip M. Spanheimer",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/philip-m-spanheimer-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_search": "ORCID:0000-0001-8644-0178",
+      "pubmed_count": 4,
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42244741",
+          "title": "Non-Genetic Mechanisms of Fractional Resistance to Abemaciclib in Dedifferentiated Liposarcoma.",
+          "journal": "bioRxiv",
+          "year": "2026"
+        },
+        {
+          "pmid": "41785670",
+          "title": "Genomic landscape, immune microenvironment and survival in male versus female breast cancer.",
+          "journal": "ESMO Open",
+          "year": "2026"
+        },
+        {
+          "pmid": "40684017",
+          "title": "Predictors of Nodal Pathologic Complete Response After Neoadjuvant Chemotherapy in Breast Cancer.",
+          "journal": "Ann Surg Oncol",
+          "year": "2025"
+        },
+        {
+          "pmid": "41127930",
+          "title": "AI-Driven Variant Annotation for Precision Oncology in Breast Cancer.",
+          "journal": "Clin Transl Sci",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Karyn Stitzenberg",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/karyn-stitzenberg-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "stitzenberg k*",
+      "pubmed_count": 112,
+      "pubmed_search": "ComputedAuthors:Stitzenberg Karyn",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41066022",
+          "title": "Invited Editorial: Pushing the Limits for Organ Preservation.",
+          "journal": "Ann Surg Oncol",
+          "year": "2025"
+        },
+        {
+          "pmid": "40378775",
+          "title": "One cutoff is not enough: Assessing different area deprivation index cutoffs for insurance types on surgical Desirability of Outcome Ranking (DOOR).",
+          "journal": "Healthc (Amst)",
+          "year": "2025"
+        },
+        {
+          "pmid": "39603501",
+          "title": "Radiation Therapy for Rectal Cancer: An ASTRO Clinical Practice Guideline Focused Update.",
+          "journal": "Pract Radiat Oncol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39489064",
+          "title": "General Surgery Versus Integrated Surgical Sub-specialties: Predictors for Residency Match and Interview Invites Among Surgical Candidates.",
+          "journal": "J Surg Educ",
+          "year": "2025"
+        },
+        {
+          "pmid": "39096262",
+          "title": "Social determinants of health and hidradenitis suppurativa disease severity: a&#xa0;geocoded analysis.",
+          "journal": "Clin Exp Dermatol",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Robert Torphy",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/robert-torphy-md-phd/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_search": "Torphy R",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Jen Jen Yeh",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/jen-jen-yeh-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_search": "Yeh J",
+      "pubmed_count": 6,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Christopher Bergen",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/christopher-bergen-dpm-facfas/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Bergen Christopher",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Daniel Calderon",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/daniel-calderon-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Calderon D",
+      "pubmed_count": 2,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Andrew Collier",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/andrew-collier/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_search": "Collier A",
+      "pubmed_count": 2,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "33027565",
+          "title": "Covid-19, Ebola, and HIV - Leveraging Lessons to Maximize Impact.",
+          "journal": "N Engl J Med",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Deepali Darji",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/deepali-darji-dpm/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Darji D",
+      "pubmed_search": "Darji Deepali",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41856721",
+          "title": "Benefits of Multi-Disciplinary Limb Preservation Teams.",
+          "journal": "Clin Podiatr Med Surg",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Mark A. Farber",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/mark-a-farber-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "farber ma",
+      "pubmed_count": 45,
+      "pubmed_search": "ComputedAuthors:Farber MA",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42235838",
+          "title": "Impact of Renal Artery Diameter and Bridging Stent Length on Renal Outcomes of Patients Treated by Multi-Branch Endovascular Aortic Repair.",
+          "journal": "J Vasc Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "42229617",
+          "title": "An International, Multi-Specialty Consensus Document on the Optimal Management of Patients with Internal Carotid Artery Occlusion.",
+          "journal": "J Vasc Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41786008",
+          "title": "Long-term trends of quality of life in patients who undergo branched endovascular repair of pararenal and extent IV thoracoabdominal aortic aneurysms.",
+          "journal": "J Vasc Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41748036",
+          "title": "Residual aneurysm behavior is associated with aortic outcomes after fenestrated and branched endovascular aortic repair.",
+          "journal": "J Vasc Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41746172",
+          "title": "Predictors of failure to rescue after fenestrated-branched endovascular aortic repair of thoracoabdominal aortic aneurysms: Presented at the Thirty-seventh Annual Meeting of the European Society of Vascular Surgery, Belfast, Northern Ireland, September 26-29, 2023.",
+          "journal": "Eur J Vasc Endovasc Surg",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Stephen Heisler",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/stephen-heisler-dpm-mhsa/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_count": 6,
+      "pubmed_search": "ComputedAuthors:Heisler Stephen",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41346156",
+          "title": "A Multi-Centre, Randomised, Controlled Clinical Trial Assessing Cryopreserved Ultra-Thick Human Amniotic Membrane in the Treatment of Complex Diabetic Foot Ulcers.",
+          "journal": "Wound Repair Regen",
+          "year": "2025"
+        },
+        {
+          "pmid": "41071298",
+          "title": "Real-world outcomes of autologous whole blood clot therapy for venous leg ulcers.",
+          "journal": "J Wound Care",
+          "year": "2025"
+        },
+        {
+          "pmid": "38277629",
+          "title": "An open-label, proof-of-concept study assessing the effects of bromelain-based enzymatic debridement on biofilm and microbial loads in patients with venous leg ulcers and diabetic foot ulcers.",
+          "journal": "Wounds",
+          "year": "2023"
+        },
+        {
+          "pmid": "37534781",
+          "title": "Differential impact of missed initial wound clinic visit on 6-month wound healing by race/ethnicity among patients with chronic limb-threatening ischemia.",
+          "journal": "Wound Repair Regen",
+          "year": "2023"
+        },
+        {
+          "pmid": "34057999",
+          "title": "In Patients with Lower Extremity Burns and Osteomyelitis, Diabetes Mellitus Increases Amputation Rate.",
+          "journal": "J Burn Care Res",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Howard Kashefsky",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/howard-kashefsky-dpm/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Kashefsky Howard",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41746297",
+          "title": "The Effects of Walking Speed on Three-Dimensional Foot Rigidity and Multisegment Coordination.",
+          "journal": "J Biomech Eng",
+          "year": "2026"
+        },
+        {
+          "pmid": "41569817",
+          "title": "Form and Function: Stronger Toes and Shorter Heels Associate With Better Gait Performance.",
+          "journal": "J Appl Biomech",
+          "year": "2026"
+        },
+        {
+          "pmid": "39500307",
+          "title": "Foot-Ankle Mechanical Transmission: Age Effects and the Relation to Ankle Push-Off During Walking.",
+          "journal": "J Appl Biomech",
+          "year": "2024"
+        },
+        {
+          "pmid": "38871362",
+          "title": "An 18-Year-Old Man With a Great Toe Lesion.",
+          "journal": "Clin Infect Dis",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Blair A. Keagy",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/blair-a-keagy-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "keagy ba",
+      "pubmed_search": "Keagy BA",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "William Marston",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/william-marston-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "marston w",
+      "pubmed_count": 166,
+      "pubmed_search": "ComputedAuthors:Marston William",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40545194",
+          "title": "Frequency of left common iliac vein compression in asymptomatic adolescents and young adults.",
+          "journal": "J Vasc Surg Venous Lymphat Disord",
+          "year": "2025"
+        },
+        {
+          "pmid": "39947397",
+          "title": "Acute iliofemoral deep venous thrombosis in adolescents and young adults is associated with hypercoagulable states and a significant incidence of post-thrombotic syndrome.",
+          "journal": "J Vasc Surg Venous Lymphat Disord",
+          "year": "2025"
+        },
+        {
+          "pmid": "39536843",
+          "title": "Impact of preoperative risk factors on 5-year survival after fenestrated/branched endovascular aortic repair.",
+          "journal": "J Vasc Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "38608964",
+          "title": "Five-year outcomes of fenestrated and branched endovascular repair of complex aortic aneurysms based on aneurysm extent.",
+          "journal": "J Vasc Surg",
+          "year": "2024"
+        },
+        {
+          "pmid": "38570174",
+          "title": "Current outcomes following upper and lower extremity arterial trauma from the National Trauma Data Bank.",
+          "journal": "J Vasc Surg",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Katharine McGinigle",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/katharine-mcginigle-md-mph/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:McGinigle Katharine",
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42203082",
+          "title": "Thirty-day outcomes following transcarotid artery revascularization with integrated embolic protection: The PERFORMANCE III study.",
+          "journal": "J Vasc Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41214473",
+          "title": "Examination of Race and Ethnicity After Revascularization in the BEST-CLI Trial.",
+          "journal": "Ann Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "30116862",
+          "title": "The Reporting on ERAS Compliance, Outcomes, and Elements Research (RECOvER) Checklist: A Joint Statement by the ERAS&#xae; and ERAS&#xae; USA Societies.",
+          "journal": "World J Surg",
+          "year": "2019"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Luigi Pascarella",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/luigi-pascarella-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_count": 61,
+      "pubmed_search": "ComputedAuthors:Pascarella Luigi",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42269704",
+          "title": "Endovascular-first revascularization is as safe and efficacious as open-first revascularization for acute limb ischemia.",
+          "journal": "J Vasc Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "42235838",
+          "title": "Impact of Renal Artery Diameter and Bridging Stent Length on Renal Outcomes of Patients Treated by Multi-Branch Endovascular Aortic Repair.",
+          "journal": "J Vasc Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "40975219",
+          "title": "Peripheral Artery Disease Diagnosis is an Independent Predictor Factor for Reduced Long-Term Survival after Fenestrated/Branched Endovascular Aortic Repair.",
+          "journal": "Ann Vasc Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "40523707",
+          "title": "Diversity, equity, and inclusivity in vascular surgical education.",
+          "journal": "Semin Vasc Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "40447170",
+          "title": "Preoperative proteinuria is associated with higher mortality after fenestrated/branched aortic repair of complex anatomy aortic aneurysms.",
+          "journal": "J Vasc Surg",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jacob Wood",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/jacob-wood-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Wood JC*",
+      "pubmed_count": 14,
+      "pubmed_search": "ComputedAuthors:Wood Jacob",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40975219",
+          "title": "Peripheral Artery Disease Diagnosis is an Independent Predictor Factor for Reduced Long-Term Survival after Fenestrated/Branched Endovascular Aortic Repair.",
+          "journal": "Ann Vasc Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "40447170",
+          "title": "Preoperative proteinuria is associated with higher mortality after fenestrated/branched aortic repair of complex anatomy aortic aneurysms.",
+          "journal": "J Vasc Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "39536843",
+          "title": "Impact of preoperative risk factors on 5-year survival after fenestrated/branched endovascular aortic repair.",
+          "journal": "J Vasc Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "38994546",
+          "title": "Endovascular (stent-graft)-assisted open vascular anastomosis.",
+          "journal": "J Cardiovasc Surg (Torino)",
+          "year": "2024"
+        },
+        {
+          "pmid": "38608964",
+          "title": "Five-year outcomes of fenestrated and branched endovascular repair of complex aortic aneurysms based on aneurysm extent.",
+          "journal": "J Vasc Surg",
           "year": "2024"
         }
       ],
@@ -35490,54 +38463,6 @@
       "nih_grants": []
     },
     {
-      "name": "Clara Lee",
-      "profile_url": "https://www.med.unc.edu/surgery/plastic/people/clara-lee-md-mpp-facs/",
-      "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
-      "role": "",
-      "departments": [
-        "Surgery \u2014 Plastic & Reconstructive Surgery",
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Lee CN",
-      "pubmed_search": "ComputedAuthors:Lee C",
-      "pubmed_count": 48,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42228313",
-          "title": "Building the Oncology Workforce: A Qualitative Evaluation of an Inter-Institutional Cancer Research Internship for Underrepresented Undergraduate Students.",
-          "journal": "J Cancer Educ",
-          "year": "2026"
-        },
-        {
-          "pmid": "41915024",
-          "title": "Building HOPE: operationalizing hybrid decentralized oncology clinical trials with community providers beyond traditional healthcare system networks.",
-          "journal": "Oncologist",
-          "year": "2026"
-        },
-        {
-          "pmid": "41911514",
-          "title": "Clinicogenomic Characteristics and Treatment Outcomes of Patients With Advanced ALK-Rearranged Squamous and Adenosquamous Non-Small Cell Lung Cancers.",
-          "journal": "JCO Precis Oncol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41663549",
-          "title": "Symptomatic radiation necrosis after concurrent targeted therapy and stereotactic radiosurgery for brain metastases: a bicentric retrospective analysis.",
-          "journal": "J Neurooncol",
-          "year": "2026"
-        },
-        {
-          "pmid": "40991878",
-          "title": "Benchmarking the Current Landscape: Insights From an Association of American Cancer Institutes Survey on Academic Cancer Service Lines.",
-          "journal": "JCO Oncol Pract",
-          "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "Delora Mount",
       "profile_url": "https://www.med.unc.edu/surgery/plastic/people/delora-mount-md-facs-faap/",
       "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
@@ -35550,77 +38475,6 @@
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
       "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Adeyemi Ogunleye",
-      "profile_url": "https://www.med.unc.edu/surgery/plastic/people/adeyemi-yemi-ogunleye-md-sm/",
-      "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
-      "role": "",
-      "departments": [
-        "Surgery \u2014 Plastic & Reconstructive Surgery",
-        "Urology"
-      ],
-      "pubmed_hint": "Ogunleye AA*",
-      "pubmed_search": "ComputedAuthors:Ogunleye A",
-      "pubmed_count": 38,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41418049",
-          "title": "Evaluating the Performance of Different Pedicles in Reduction Mammoplasty: A Comparative Analysis.",
-          "journal": "Ann Plast Surg",
-          "year": "2026"
-        },
-        {
-          "pmid": "41344342",
-          "title": "Drain Use and Complications After Breast Reduction in A Five-Academic-Institution Cohort.",
-          "journal": "Plast Reconstr Surg",
-          "year": "2025"
-        },
-        {
-          "pmid": "41145120",
-          "title": "Local Capacity Building, Constraints, and Microsurgical Reconstruction in a Low-Resource Country: A Cross-sectional Study of Surgeons.",
-          "journal": "J Reconstr Microsurg",
-          "year": "2025"
-        },
-        {
-          "pmid": "40967193",
-          "title": "Lower extremity lymphedema after pelvic nodal dissection for urologic cancers is associated with metastatic recurrence.",
-          "journal": "Can Urol Assoc J",
-          "year": "2025"
-        },
-        {
-          "pmid": "40395087",
-          "title": "May-Thurner syndrome diagnosis and management with concurrent lymphedema.",
-          "journal": "Phlebology",
-          "year": "2026"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Katherine Rodby",
-      "profile_url": "https://www.med.unc.edu/surgery/plastic/people/katherine-rodby-md-facs/",
-      "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
-      "role": "",
-      "departments": [
-        "Surgery \u2014 Plastic & Reconstructive Surgery"
-      ],
-      "pubmed_hint": "Rodby KA",
-      "pubmed_search": "ORCID:0000-0002-1518-1065",
-      "pubmed_count": 1,
-      "pubmed_verified": 1,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "39914237",
-          "title": "Reduction mammoplasty after abdominally-based free flap breast reconstruction: Indications, techniques, and outcomes.",
-          "journal": "J Plast Reconstr Aesthet Surg",
-          "year": "2025"
-        }
-      ],
       "nih_grants": []
     },
     {
@@ -45971,8 +48825,8 @@
       "departments": [
         "Psychiatry"
       ],
-      "pubmed_count": 2,
       "pubmed_search": "ComputedAuthors:Ruebush Ellen",
+      "pubmed_count": 2,
       "pubmed_verified": 2,
       "pubmed_ambiguous": false,
       "publications": [
@@ -47249,8 +50103,8 @@
         "Psychiatry",
         "Lineberger Comprehensive Cancer Center"
       ],
-      "pubmed_count": 6,
       "pubmed_search": "ComputedAuthors:Swift Catherine",
+      "pubmed_count": 6,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -47360,8 +50214,8 @@
       "departments": [
         "Psychiatry"
       ],
-      "pubmed_count": 2,
       "pubmed_search": "ComputedAuthors:Ginley Caroline",
+      "pubmed_count": 2,
       "pubmed_verified": 2,
       "pubmed_ambiguous": false,
       "publications": [
@@ -59648,8 +62502,8 @@
       "departments": [
         "Pathology & Laboratory Medicine"
       ],
-      "pubmed_count": 98,
       "pubmed_search": "ComputedAuthors:Wobker Sara",
+      "pubmed_count": 98,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -62120,40 +64974,6 @@
       "nih_grants": []
     },
     {
-      "name": "Michael Gonzalez",
-      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/michael-gonzalez/",
-      "department": "Anesthesiology",
-      "role": "",
-      "departments": [
-        "Anesthesiology"
-      ],
-      "pubmed_search": "ComputedAuthors:Gonzalez M",
-      "pubmed_count": 3,
-      "pubmed_verified": 3,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "39287968",
-          "title": "Heart under Pressure: Intrathoracic Impact of Large Hiatal Hernia.",
-          "journal": "Anesthesiology",
-          "year": "2024"
-        },
-        {
-          "pmid": "39269908",
-          "title": "An Exploratory Analysis of ChatGPT Compared to Human Performance With the Anesthesiology Oral Board Examination: Initial Insights and Implications.",
-          "journal": "Anesth Analg",
-          "year": "2025"
-        },
-        {
-          "pmid": "36458106",
-          "title": "Quality of Recovery After Rotator Cuff Repair With Interscalene Liposomal Bupivacaine Versus Interscalene Nerve Catheter.",
-          "journal": "Orthop J Sports Med",
-          "year": "2022"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "Samantha Gottlieb",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/samantha-gottlieb/",
       "department": "Anesthesiology",
@@ -63916,46 +66736,6 @@
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
       "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Sara Pittenger",
-      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/sara-pittenger/",
-      "department": "Anesthesiology",
-      "role": "",
-      "departments": [
-        "Anesthesiology"
-      ],
-      "pubmed_search": "ComputedAuthors:Pittenger S",
-      "pubmed_count": 4,
-      "pubmed_verified": 4,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41368426",
-          "title": "Senning procedure in a 4-month-old child with atrioventricular discordance and ventriculoarterial concordance.",
-          "journal": "JTCVS Tech",
-          "year": "2025"
-        },
-        {
-          "pmid": "40827799",
-          "title": "Developing Comprehensive Nil Per Os Guidelines for the Pediatric Anesthesiologist in 2025.",
-          "journal": "A A Pract",
-          "year": "2025"
-        },
-        {
-          "pmid": "31784102",
-          "title": "Implementation of a pediatric enhanced recovery pathway decreases opioid utilization and shortens time to full feeding.",
-          "journal": "J Pediatr Surg",
-          "year": "2020"
-        },
-        {
-          "pmid": "25565076",
-          "title": "High-dose dexmedetomidine for noninvasive pediatric procedural sedation and discharge readiness.",
-          "journal": "Paediatr Anaesth",
-          "year": "2015"
-        }
-      ],
       "nih_grants": []
     },
     {
@@ -73650,8 +76430,8 @@
       "departments": [
         "Urology"
       ],
-      "pubmed_count": 22,
       "pubmed_search": "ComputedAuthors:Bjurlin Marc",
+      "pubmed_count": 22,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -74300,8 +77080,8 @@
       "departments": [
         "Urology"
       ],
-      "pubmed_count": 3,
       "pubmed_search": "ComputedAuthors:Ross Sherry",
+      "pubmed_count": 3,
       "pubmed_verified": 2,
       "pubmed_ambiguous": false,
       "publications": [
@@ -74452,8 +77232,8 @@
       "departments": [
         "Urology"
       ],
-      "pubmed_count": 3,
       "pubmed_search": "ComputedAuthors:Viprakasit Davis",
+      "pubmed_count": 3,
       "pubmed_verified": 3,
       "pubmed_ambiguous": false,
       "publications": [
@@ -74752,8 +77532,8 @@
         "Urology",
         "Lineberger Comprehensive Cancer Center"
       ],
-      "pubmed_count": 98,
       "pubmed_search": "ComputedAuthors:Wobker SE",
+      "pubmed_count": 98,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -74798,8 +77578,8 @@
       "departments": [
         "Physical Medicine & Rehabilitation"
       ],
-      "pubmed_count": 17,
       "pubmed_search": "ComputedAuthors:Baratta JM",
+      "pubmed_count": 17,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -74845,8 +77625,8 @@
         "Physical Medicine & Rehabilitation"
       ],
       "pubmed_hint": "Karla Thompson",
-      "pubmed_count": 19,
       "pubmed_search": "ComputedAuthors:Thompson K",
+      "pubmed_count": 19,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -76704,8 +79484,8 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ],
-      "pubmed_count": 8,
       "pubmed_search": "ComputedAuthors:Breen Matthew",
+      "pubmed_count": 8,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -77572,8 +80352,8 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ],
-      "pubmed_count": 18,
       "pubmed_search": "ComputedAuthors:Chai Shengjie",
+      "pubmed_count": 18,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -82018,53 +84798,6 @@
       "nih_grants": []
     },
     {
-      "name": "Michael Iglesia",
-      "profile_url": "https://unclineberger.org/directory/michael-iglesia/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/michael.iglesia.1/bibliography/public",
-      "pubmed_search": "MyNCBI:michael.iglesia.1",
-      "pubmed_count": 13,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "37961519",
-          "title": "Differential chromatin accessibility and transcriptional dynamics define breast cancer subtypes and their lineages.",
-          "journal": "bioRxiv",
-          "year": "2023"
-        },
-        {
-          "pmid": "37914932",
-          "title": "Epigenetic regulation during cancer transitions across 11 tumour types.",
-          "journal": "Nature",
-          "year": "2023"
-        },
-        {
-          "pmid": "36609389",
-          "title": "A phase II study of palbociclib plus letrozole plus trastuzumab as neoadjuvant treatment for clinical stages II and III ER+ HER2+ breast cancer (PALTAN).",
-          "journal": "NPJ Breast Cancer",
-          "year": "2023"
-        },
-        {
-          "pmid": "35995947",
-          "title": "Spatially restricted drivers and transitional cell populations cooperate with the microenvironment in untreated and chemo-resistant pancreatic cancer.",
-          "journal": "Nat Genet",
-          "year": "2022"
-        },
-        {
-          "pmid": "30089255",
-          "title": "Functional Annotation of ESR1 Gene Fusions in Estrogen Receptor-Positive Breast Cancer.",
-          "journal": "Cell Rep",
-          "year": "2018"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "Rumey Ishizawar",
       "profile_url": "https://unclineberger.org/directory/rumey-ishizawar/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -82245,8 +84978,8 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ],
-      "pubmed_count": 43,
       "pubmed_search": "ComputedAuthors:Jarstfer MB",
+      "pubmed_count": 43,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -82649,8 +85382,8 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "khan shahzad s",
-      "pubmed_count": 2,
       "pubmed_search": "ComputedAuthors:Khan S",
+      "pubmed_count": 2,
       "pubmed_verified": 2,
       "pubmed_ambiguous": false,
       "publications": [
@@ -82665,52 +85398,6 @@
           "title": "Characterization of genetically complex Collaborative Cross mouse strains that model divergent locomotor activating and reinforcing properties of cocaine.",
           "journal": "Psychopharmacology (Berl)",
           "year": "2020"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Hong Jin Kim",
-      "profile_url": "https://unclineberger.org/directory/hong-jin-kim/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_search": "ComputedAuthors:Kim H",
-      "pubmed_count": 146,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42291120",
-          "title": "Effects of dietary xylanase supplementation on growth performance and gut health of weaned pigs fed a high non-starch polysaccharides diet.",
-          "journal": "J Anim Sci Technol",
-          "year": "2026"
-        },
-        {
-          "pmid": "42291111",
-          "title": "Complete genome sequence of Enterococcus faecium strain AJ_C_05 with potential characteristics to break down carbohydrates, applicable to livestock industry.",
-          "journal": "J Anim Sci Technol",
-          "year": "2026"
-        },
-        {
-          "pmid": "42290789",
-          "title": "Life-stage differences in nutrient digestibility and physiological parameters in Sapsaree dogs.",
-          "journal": "Front Vet Sci",
-          "year": "2026"
-        },
-        {
-          "pmid": "41982989",
-          "title": "Modulation of microbial community and metabolism through Lactiplantibacillus argentoratensis AGMB00912 supplementation in weaning piglets.",
-          "journal": "J Anim Sci Technol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41826536",
-          "title": "Safety and Next-Generation Probiotic Potential of Mitsuokella multacida AGMB01124 Newly Isolated from Healthy Swine Feces.",
-          "journal": "Probiotics Antimicrob Proteins",
-          "year": "2026"
         }
       ],
       "nih_grants": []
@@ -82818,8 +85505,8 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "King Jasmine L",
-      "pubmed_count": 4,
       "pubmed_search": "ComputedAuthors:King J",
+      "pubmed_count": 4,
       "pubmed_verified": 4,
       "pubmed_ambiguous": false,
       "publications": [
@@ -83184,8 +85871,8 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ],
-      "pubmed_count": 91,
       "pubmed_search": "ComputedAuthors:Laederach Alain",
+      "pubmed_count": 91,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -84265,53 +86952,6 @@
       "nih_grants": []
     },
     {
-      "name": "Jason M. Long",
-      "profile_url": "https://unclineberger.org/directory/jason-m-long/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Jason M. Long",
-      "pubmed_search": "ComputedAuthors:Long J",
-      "pubmed_count": 52,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41920389",
-          "title": "Quality of life during electronic patient-reported outcome (ePRO) monitoring in thoracic surgery patients: a pilot randomized controlled trial.",
-          "journal": "Qual Life Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "41816471",
-          "title": "Survival after salvage pulmonary resection for non-small cell lung cancer: a national cancer database analysis.",
-          "journal": "J Thorac Dis",
-          "year": "2026"
-        },
-        {
-          "pmid": "41662187",
-          "title": "Robotic-assisted Left Pneumonectomy For Vanishing Lung Syndrome.",
-          "journal": "J Vis Exp",
-          "year": "2026"
-        },
-        {
-          "pmid": "40809202",
-          "title": "The impact of extended lymphadenectomy on survival in esophageal adenocarcinoma with complete pathologic response: a retrospective study.",
-          "journal": "J Thorac Dis",
-          "year": "2025"
-        },
-        {
-          "pmid": "39857988",
-          "title": "The Role of Metastasectomies and Immunotherapy in the Management of Melanoma Lung Metastases: An Analysis of the National Cancer Database.",
-          "journal": "Cancers (Basel)",
-          "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "Michael I. Love",
       "profile_url": "https://unclineberger.org/directory/michael-love/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -84526,8 +87166,8 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ],
-      "pubmed_count": 21,
       "pubmed_search": "ComputedAuthors:Manning Michelle",
+      "pubmed_count": 21,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -85363,52 +88003,6 @@
           "title": "A small-molecule inverse agonist of PPAR&#x3b3; for advanced solid tumors: a phase 1 trial.",
           "journal": "Nat Med",
           "year": "2026"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Gita Mody",
-      "profile_url": "https://unclineberger.org/directory/gita-mody/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_search": "ORCID:0000-0003-0218-6948",
-      "pubmed_count": 10,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "38771558",
-          "title": "Optimization of alert notifications in electronic patient-reported outcome (ePRO) remote symptom monitoring systems (AFT-39).",
-          "journal": "Qual Life Res",
-          "year": "2024"
-        },
-        {
-          "pmid": "38416222",
-          "title": "Use of patient-reported outcome measures after breast reconstruction in low- and middle-income countries: a scoping review.",
-          "journal": "J Patient Rep Outcomes",
-          "year": "2024"
-        },
-        {
-          "pmid": "36513843",
-          "title": "Barriers and facilitators to early-stage lung cancer care in the USA: a qualitative study.",
-          "journal": "Support Care Cancer",
-          "year": "2022"
-        },
-        {
-          "pmid": "38090305",
-          "title": "Bronchopleural fistula after lobectomy: who is at risk in the modern era?",
-          "journal": "J Thorac Dis",
-          "year": "2023"
-        },
-        {
-          "pmid": "36630104",
-          "title": "Disparities in thoracic surgical oncology.",
-          "journal": "J Surg Oncol",
-          "year": "2023"
         }
       ],
       "nih_grants": []
@@ -89574,46 +92168,6 @@
       "nih_grants": []
     },
     {
-      "name": "Philip M. Spanheimer",
-      "profile_url": "https://unclineberger.org/directory/philip-m-spanheimer/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_search": "ORCID:0000-0001-8644-0178",
-      "pubmed_count": 4,
-      "pubmed_verified": 4,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42244741",
-          "title": "Non-Genetic Mechanisms of Fractional Resistance to Abemaciclib in Dedifferentiated Liposarcoma.",
-          "journal": "bioRxiv",
-          "year": "2026"
-        },
-        {
-          "pmid": "41785670",
-          "title": "Genomic landscape, immune microenvironment and survival in male versus female breast cancer.",
-          "journal": "ESMO Open",
-          "year": "2026"
-        },
-        {
-          "pmid": "40684017",
-          "title": "Predictors of Nodal Pathologic Complete Response After Neoadjuvant Chemotherapy in Breast Cancer.",
-          "journal": "Ann Surg Oncol",
-          "year": "2025"
-        },
-        {
-          "pmid": "41127930",
-          "title": "AI-Driven Variant Annotation for Precision Oncology in Breast Cancer.",
-          "journal": "Clin Transl Sci",
-          "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "Lisa P. Spees",
       "profile_url": "https://unclineberger.org/directory/lisa-p-spees/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -90090,8 +92644,8 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ],
-      "pubmed_count": 39,
       "pubmed_search": "ComputedAuthors:Sun Xuezheng",
+      "pubmed_count": 39,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -90604,22 +93158,6 @@
       "nih_grants": []
     },
     {
-      "name": "Robert Torphy",
-      "profile_url": "https://unclineberger.org/directory/robert-torphy/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "robert torphy",
-      "pubmed_search": "Torphy R",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
       "name": "Essie Torres",
       "profile_url": "https://unclineberger.org/directory/essie-torres/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -90950,41 +93488,6 @@
           "title": "Participation in Electronic Patient-Reported Outcome Measures Collection as a Part of Routine Supportive Care Delivery in Oncology.",
           "journal": "JCO Oncol Pract",
           "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Douglas Tyler",
-      "profile_url": "https://unclineberger.org/directory/douglas-tyler/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Douglas Tyler",
-      "pubmed_search": "ORCID:0000-0002-7434-846X",
-      "pubmed_count": 3,
-      "pubmed_verified": 3,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "39933421",
-          "title": "Impact of pre-existing cancer diagnoses on burn injury survival and morbidity.",
-          "journal": "Burns",
-          "year": "2025"
-        },
-        {
-          "pmid": "35417440",
-          "title": "Extracorporeal Membrane Oxygenation for Adult Patients With Neoplasms: Outcomes and Trend Over the Last 2 Decades.",
-          "journal": "ASAIO J",
-          "year": "2023"
-        },
-        {
-          "pmid": "33276456",
-          "title": "Colectomy among Fee-for-Service Medicare Enrollees Coded as DRG 330: A Potential Platform to Allow Consumer Cost Transparency?",
-          "journal": "Healthcare (Basel)",
-          "year": "2020"
         }
       ],
       "nih_grants": []
@@ -91370,8 +93873,8 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "Office Phone",
-      "pubmed_count": 16,
       "pubmed_search": "ComputedAuthors:Watkins P",
+      "pubmed_count": 16,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -91910,8 +94413,8 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ],
-      "pubmed_count": 58,
       "pubmed_search": "ComputedAuthors:Willis Erik",
+      "pubmed_count": 58,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -92285,21 +94788,6 @@
       "pubmed_count": 0,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Jen Jen Yeh",
-      "profile_url": "https://unclineberger.org/directory/jen-jen-yeh/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_search": "Yeh J",
-      "pubmed_count": 6,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
       "publications": [],
       "nih_grants": []
     },
