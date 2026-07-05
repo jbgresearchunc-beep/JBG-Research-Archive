@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T11:52:28.781642Z",
-  "total_faculty": 2780,
+  "generated_at": "2026-07-05T12:24:26.705915Z",
+  "total_faculty": 2792,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -2138,52 +2138,6 @@
       "nih_grants": []
     },
     {
-      "name": "Jamie Diner",
-      "profile_url": "https://www.med.unc.edu/medicine/endocrinology-metabolism/people/jamie-diner-msn-fnp-c-rn-cde/",
-      "department": "Medicine \u2014 Endocrinology & Metabolism",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Endocrinology & Metabolism"
-      ],
-      "pubmed_search": "ComputedAuthors:Diner J",
-      "pubmed_count": 33,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42221402",
-          "title": "Use of Automated Insulin Delivery Systems in the Immediate Postpartum Period.",
-          "journal": "AACE Endocrinol Diabetes",
-          "year": "2026"
-        },
-        {
-          "pmid": "41925680",
-          "title": "Comparison of the Continuous Glucose Monitoring Profiles of Four Glucose-Lowering Medications in the GRADE Randomized Trial.",
-          "journal": "Diabetes Care",
-          "year": "2026"
-        },
-        {
-          "pmid": "41557987",
-          "title": "Medication Adherence in the Glycemia Reduction Approaches in Diabetes: A Comparative Effectiveness Study (GRADE).",
-          "journal": "Diabetes Care",
-          "year": "2026"
-        },
-        {
-          "pmid": "41432725",
-          "title": "Differential Longitudinal Effects of Glucose-Lowering Medications on Glucagon and C-peptide Responses in the Glycemia Reduction Approaches in Diabetes: A Comparative Effectiveness Study (GRADE).",
-          "journal": "Diabetes Care",
-          "year": "2026"
-        },
-        {
-          "pmid": "40986645",
-          "title": "Differences in Prevalence and Incidence of Electrocardiogram Abnormalities and Cardiovascular Autonomic Neuropathy Among Randomized Glucose-Lowering Treatments in Early Type 2 Diabetes: The Glycemia Reduction Approaches in Diabetes (GRADE) Cohort.",
-          "journal": "Diabetes Care",
-          "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "John B. Buse",
       "profile_url": "https://www.med.unc.edu/medicine/endocrinology-metabolism/people/john-buse-md-phd/",
       "department": "Medicine \u2014 Endocrinology & Metabolism",
@@ -2734,21 +2688,6 @@
       "nih_grants": []
     },
     {
-      "name": "Kevin Cheung",
-      "profile_url": "https://www.med.unc.edu/medicine/endocrinology-metabolism/people/kevin-cheung-msn-fnp-c/",
-      "department": "Medicine \u2014 Endocrinology & Metabolism",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Endocrinology & Metabolism"
-      ],
-      "pubmed_search": "Cheung K",
-      "pubmed_count": 1,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
       "name": "Jasmine Dawson",
       "profile_url": "https://www.med.unc.edu/medicine/endocrinology-metabolism/people/jasmine-dawson-msn-fnp-c/",
       "department": "Medicine \u2014 Endocrinology & Metabolism",
@@ -3074,10 +3013,8 @@
       "department": "Medicine \u2014 Endocrinology & Metabolism",
       "role": "",
       "departments": [
-        "Medicine \u2014 Endocrinology & Metabolism",
-        "Neurosurgery"
+        "Medicine \u2014 Endocrinology & Metabolism"
       ],
-      "pubmed_hint": "Kargi AY",
       "pubmed_search": "ORCID:0000-0003-1907-6569",
       "pubmed_count": 5,
       "pubmed_verified": 5,
@@ -6188,6 +6125,52 @@
       "nih_grants": []
     },
     {
+      "name": "Olafur S. Palsson",
+      "profile_url": "https://www.med.unc.edu/medicine/gi/people/olafur-s-palsson-psyd/",
+      "department": "Medicine \u2014 Gastroenterology & Hepatology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Gastroenterology & Hepatology"
+      ],
+      "pubmed_count": 201,
+      "pubmed_search": "ComputedAuthors:Palsson OS",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42226494",
+          "title": "Prevalence and Impact of Disorders of Gut-Brain Interaction in France: Results From the Rome Foundation Global Epidemiology Study.",
+          "journal": "Neurogastroenterol Motil",
+          "year": "2026"
+        },
+        {
+          "pmid": "42206638",
+          "title": "Prevalence and Burden of Fatigue Across Disorders of Gut-Brain Interaction: Results From the Rome Foundation Global Epidemiology Study.",
+          "journal": "Aliment Pharmacol Ther",
+          "year": "2026"
+        },
+        {
+          "pmid": "42101741",
+          "title": "Distinct pain profiles across irritable bowel syndrome subtypes: results from the Rome Foundation Global Epidemiology Study.",
+          "journal": "Intern Emerg Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "42083911",
+          "title": "Comparative Study on Burden, Features and Determinants of Disorders of Gut-Brain Interaction Between Southern Europe and the Rest of Continent: Results From the Rome Foundation Global Epidemiology Study.",
+          "journal": "United European Gastroenterol J",
+          "year": "2026"
+        },
+        {
+          "pmid": "42060042",
+          "title": "Burden, features and factor associated with disorders of gut-brain axis in Italy: results from the Rome foundation global epidemiology study.",
+          "journal": "Intern Emerg Med",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
       "name": "Martin Poleski",
       "profile_url": "https://www.med.unc.edu/medicine/gi/people/martin-poleski-md/",
       "department": "Medicine \u2014 Gastroenterology & Hepatology",
@@ -7747,28 +7730,6 @@
       "nih_grants": []
     },
     {
-      "name": "Carrie Palmer",
-      "profile_url": "https://www.med.unc.edu/medicine/im/people/carrie-palmer/",
-      "department": "Medicine \u2014 General Medicine & Clinical Epidemiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 General Medicine & Clinical Epidemiology"
-      ],
-      "pubmed_search": "ORCID:0000-0003-4358-0466",
-      "pubmed_count": 1,
-      "pubmed_verified": 1,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "35383542",
-          "title": "An interprofessional experience preparing a collaborative workforce to care for older adults.",
-          "journal": "Gerontol Geriatr Educ",
-          "year": "2023"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "Alfred Rabinovich",
       "profile_url": "https://www.med.unc.edu/medicine/im/people/alfred-rabinovich-md-ms/",
       "department": "Medicine \u2014 General Medicine & Clinical Epidemiology",
@@ -8376,53 +8337,6 @@
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
       "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Julianne M. O\u2019Daniel",
-      "profile_url": "https://www.med.unc.edu/medicine/im/people/julianne-m-odaniel-ms-cgc/",
-      "department": "Medicine \u2014 General Medicine & Clinical Epidemiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 General Medicine & Clinical Epidemiology"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/julianne.o'daniel.1/bibliography/public",
-      "pubmed_search": "MyNCBI:julianne.o'daniel.1",
-      "pubmed_count": 48,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41147825",
-          "title": "Direct-to-Consumer Genetic Testing.",
-          "journal": "NEJM Evid",
-          "year": "2025"
-        },
-        {
-          "pmid": "41149469",
-          "title": "Impact of COVID-19 on Universal Tumor Screening, Referral Rates and Attendance at Cancer Genetic Counseling at a Safety-Net University Hospital.",
-          "journal": "Curr Oncol",
-          "year": "2025"
-        },
-        {
-          "pmid": "40258355",
-          "title": "Age-Based Genomic Screening: Pediatric Providers' Perspectives on Implementation.",
-          "journal": "Public Health Genomics",
-          "year": "2025"
-        },
-        {
-          "pmid": "40100039",
-          "title": "How people undergoing genomic sequencing interpret and react to varied secondary findings with limited actionability.",
-          "journal": "Per Med",
-          "year": "2025"
-        },
-        {
-          "pmid": "40144343",
-          "title": "Community Collaboration in Public Health Genetic Literacy: Methods for Co-Designing Educational Resources for Equitable Genomics Research and Practice.",
-          "journal": "Public Health Genomics",
-          "year": "2025"
-        }
-      ],
       "nih_grants": []
     },
     {
@@ -9922,34 +9836,6 @@
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
       "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Debra Bynum",
-      "profile_url": "https://www.med.unc.edu/medicine/geriatrics/people/debra-bynum/",
-      "department": "Medicine \u2014 Geriatric Medicine",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Geriatric Medicine"
-      ],
-      "pubmed_search": "ComputedAuthors:bynum d",
-      "pubmed_count": 2,
-      "pubmed_verified": 2,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "38357052",
-          "title": "Outcomes of the Internal Medicine Supplemental Application: Preliminary Data on the 2022-2023 Match.",
-          "journal": "Cureus",
-          "year": "2024"
-        },
-        {
-          "pmid": "37350479",
-          "title": "Leadership and Impostor Syndrome in Surgery.",
-          "journal": "J Am Coll Surg",
-          "year": "2023"
-        }
-      ],
       "nih_grants": []
     },
     {
@@ -11857,6 +11743,28 @@
       "nih_grants": []
     },
     {
+      "name": "Bejal Kikani",
+      "profile_url": "https://www.med.unc.edu/medicine/hematology/people/bejal-kikani/",
+      "department": "Medicine \u2014 Hematology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hematology"
+      ],
+      "pubmed_search": "Kikani Bejal",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41279338",
+          "title": "Disruption of Marrow Microenvironments in Chronic Lymphocytic Leukemia by High-Resolution Synchrotron Micro-Computed Tomography.",
+          "journal": "bioRxiv",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
       "name": "Deborah Stephens",
       "profile_url": "https://www.med.unc.edu/medicine/hematology/people/deborah-stephens-do/",
       "department": "Medicine \u2014 Hematology",
@@ -12181,21 +12089,6 @@
       ],
       "nih_grants": [],
       "pubmed_recent_recruit": true
-    },
-    {
-      "name": "Gabe Blanchard",
-      "profile_url": "https://www.med.unc.edu/medicine/hematology/people/gabe-blanchard-rn-msn-agnp-c/",
-      "department": "Medicine \u2014 Hematology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Hematology"
-      ],
-      "pubmed_search": "Blanchard Gabe",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
     },
     {
       "name": "Laura Blanchard",
@@ -13555,6 +13448,21 @@
       "nih_grants": []
     },
     {
+      "name": "Damodar Naidu Penigalapati",
+      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/damodar-naidu-penigalapati-mbbs-md/",
+      "department": "Medicine \u2014 Hospital Medicine",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hospital Medicine"
+      ],
+      "pubmed_search": "Penigalapati Damodar",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
       "name": "Lindsey Phillips",
       "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/lindsey-phillips-md/",
       "department": "Medicine \u2014 Hospital Medicine",
@@ -13933,6 +13841,21 @@
         "Medicine \u2014 Hospital Medicine"
       ],
       "pubmed_search": "Raines Dana",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Cherie Ann Somera",
+      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/cherie-ann-somera-fnp-bc/",
+      "department": "Medicine \u2014 Hospital Medicine",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hospital Medicine"
+      ],
+      "pubmed_search": "Somera Cherie",
       "pubmed_count": 0,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
@@ -17472,6 +17395,21 @@
       "nih_grants": []
     },
     {
+      "name": "Trina Pugh",
+      "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/trina-pugh/",
+      "department": "Medicine \u2014 Nephrology & Hypertension",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Nephrology & Hypertension"
+      ],
+      "pubmed_search": "Pugh Trina",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
       "name": "Ryan Bonner",
       "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/ryan-bonner-md-2/",
       "department": "Medicine \u2014 Nephrology & Hypertension",
@@ -18904,21 +18842,6 @@
       "nih_grants": []
     },
     {
-      "name": "Connie Gilet",
-      "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/connie-gilet-msn-rn-anp-bc/",
-      "department": "Medicine \u2014 Nephrology & Hypertension",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Nephrology & Hypertension"
-      ],
-      "pubmed_search": "Gilet Connie",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
       "name": "Lazarina Baez Marinez",
       "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/lazarina-baez-martinez-np/",
       "department": "Medicine \u2014 Nephrology & Hypertension",
@@ -19142,6 +19065,7 @@
       "departments": [
         "Medicine \u2014 Nephrology & Hypertension"
       ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/anita.yang.1/bibliography/public",
       "pubmed_search": "ORCID:0000-0002-2788-3160",
       "pubmed_count": 2,
       "pubmed_verified": 2,
@@ -19178,6 +19102,21 @@
       "nih_grants": []
     },
     {
+      "name": "Taylor Harbin",
+      "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/taylor-harbin/",
+      "department": "Medicine \u2014 Nephrology & Hypertension",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Nephrology & Hypertension"
+      ],
+      "pubmed_search": "Harbin Taylor",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
       "name": "Savannah Harris",
       "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/savannah-harris/",
       "department": "Medicine \u2014 Nephrology & Hypertension",
@@ -19200,14 +19139,75 @@
       "nih_grants": []
     },
     {
-      "name": "Twanisha Haynes",
-      "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/twanisha-haynes/",
+      "name": "Agnes Kokot",
+      "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/agnes-kokot-2/",
       "department": "Medicine \u2014 Nephrology & Hypertension",
       "role": "",
       "departments": [
         "Medicine \u2014 Nephrology & Hypertension"
       ],
-      "pubmed_search": "Haynes Twanisha",
+      "pubmed_search": "Kokot A",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Belissa Lee",
+      "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/belissa-lee-cpc-2/",
+      "department": "Medicine \u2014 Nephrology & Hypertension",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Nephrology & Hypertension"
+      ],
+      "pubmed_count": 5,
+      "pubmed_search": "ComputedAuthors:Lee B",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42165604",
+          "title": "Surgical Nuances of Performing a Lumbar Kyphectomy for Rigid Sagittal Plane Deformity: A 2D Operative Video.",
+          "journal": "Oper Neurosurg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41563789",
+          "title": "Association Between Preoperative D-dimer and Venous Thromboembolism Risk in Patients with Spine Tumors.",
+          "journal": "Spine (Phila Pa 1976)",
+          "year": "2026"
+        },
+        {
+          "pmid": "41343818",
+          "title": "Diagnostic challenges of the neurofibroma-malignant peripheral nerve sheath tumor spectrum in neurofibromatosis type 1: illustrative case.",
+          "journal": "J Neurosurg Case Lessons",
+          "year": "2025"
+        },
+        {
+          "pmid": "40753669",
+          "title": "Current state of intraoperative neuromonitoring of the facial nerve during skull base surgery: A systematic review.",
+          "journal": "J Clin Neurosci",
+          "year": "2025"
+        },
+        {
+          "pmid": "39777189",
+          "title": "An overview of intramedullary spinal cord metastases accompanied by a 2D intraoperative video.",
+          "journal": "Surg Neurol Int",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Debra Morrow",
+      "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/debra-morrow/",
+      "department": "Medicine \u2014 Nephrology & Hypertension",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Nephrology & Hypertension"
+      ],
+      "pubmed_search": "Morrow Debra",
       "pubmed_count": 0,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
@@ -19227,6 +19227,52 @@
       "pubmed_verified": 0,
       "pubmed_ambiguous": true,
       "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Jessica Nelson",
+      "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/jessica-nelson-2/",
+      "department": "Medicine \u2014 Nephrology & Hypertension",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Nephrology & Hypertension"
+      ],
+      "pubmed_count": 75,
+      "pubmed_search": "ComputedAuthors:Nelson J",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42018762",
+          "title": "A New Type of Nonsuppressible Viremia Produced by HIV-Infected Macrophage.",
+          "journal": "J Infect Dis",
+          "year": "2026"
+        },
+        {
+          "pmid": "40304150",
+          "title": "Cryo-EM Structure of HIV-1 Reverse Transcriptase with N-Phenyl-1-(phenylsulfonyl)-1H-1,2,4-triazol-3-amine: A New HIV-1 Non-nucleoside Inhibitor.",
+          "journal": "ACS Infect Dis",
+          "year": "2025"
+        },
+        {
+          "pmid": "37970785",
+          "title": "Evaluation of self-directed specimen collection for chlamydia and gonorrhea testing among people who use drugs.",
+          "journal": "Int J STD AIDS",
+          "year": "2024"
+        },
+        {
+          "pmid": "37877275",
+          "title": "Vaginal microbiome, antiretroviral concentrations, and HIV genital shedding in the setting of hormonal contraception initiation in Malawi.",
+          "journal": "AIDS",
+          "year": "2023"
+        },
+        {
+          "pmid": "37130343",
+          "title": "N-Phenyl-1-(phenylsulfonyl)-1H-1,2,4-triazol-3-amine as a New Class of HIV-1 Non-nucleoside Reverse Transcriptase Inhibitor.",
+          "journal": "J Med Chem",
+          "year": "2023"
+        }
+      ],
       "nih_grants": []
     },
     {
@@ -19931,52 +19977,6 @@
       "nih_grants": []
     },
     {
-      "name": "Jingquan Jia",
-      "profile_url": "https://www.med.unc.edu/medicine/oncology/people/jingquan-caron-jia-md-phd/",
-      "department": "Medicine \u2014 Oncology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Oncology"
-      ],
-      "pubmed_search": "ComputedAuthors:Jia Jingquan",
-      "pubmed_count": 24,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41872254",
-          "title": "Monitoring treatment response using an ultra-sensitive ctDNA assay in advanced esophagogastric cancer patients.",
-          "journal": "Sci Rep",
-          "year": "2026"
-        },
-        {
-          "pmid": "40453415",
-          "title": "Exploring the Role of Patient Preferences in Hepatocellular Carcinoma Treatment Decisions: A Qualitative Study.",
-          "journal": "MDM Policy Pract",
-          "year": "2025"
-        },
-        {
-          "pmid": "40282441",
-          "title": "Initial Experience with Single-Session Resin-Based Transarterial Radioembolization Mapping and Treatment of Small Hepatocellular Carcinomas.",
-          "journal": "Cancers (Basel)",
-          "year": "2025"
-        },
-        {
-          "pmid": "39764133",
-          "title": "Ultra-sensitive, tumor-informed ctDNA profiling in pembrolizumab-treated esophagogastric cancer patients predicts clinical responses.",
-          "journal": "Res Sq",
-          "year": "2024"
-        },
-        {
-          "pmid": "39652198",
-          "title": "A Phase 2 study of Savolitinib in Patients with MET Amplified Metastatic Colorectal Cancer.",
-          "journal": "J Gastrointest Cancer",
-          "year": "2024"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "Ashwin Somasundaram",
       "profile_url": "https://www.med.unc.edu/medicine/oncology/people/ashwin-somasundaram-md/",
       "department": "Medicine \u2014 Oncology",
@@ -20499,53 +20499,6 @@
         }
       ],
       "nih_grants": []
-    },
-    {
-      "name": "Susan Boulton",
-      "profile_url": "https://www.med.unc.edu/medicine/oncology/people/susan-boulton/",
-      "department": "Medicine \u2014 Oncology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Oncology"
-      ],
-      "pubmed_search": "Boulton S",
-      "pubmed_count": 34,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41853563",
-          "title": "Harnessing oncogenic signaling to enhance oncolytic virotherapy: Lessons from EPAC-encoding vaccinia virus.",
-          "journal": "Mol Ther Oncol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41571294",
-          "title": "Oncolytic vaccinia virus encoding constitutively active EPAC remodels the tumor microenvironment to enhance therapeutic efficacy with chemotherapy and surgery.",
-          "journal": "J Immunother Cancer",
-          "year": "2026"
-        },
-        {
-          "pmid": "40921952",
-          "title": "Resonance assignments of asymmetric tetrameric platelet factor 4 (PF4).",
-          "journal": "Biomol NMR Assign",
-          "year": "2025"
-        },
-        {
-          "pmid": "39609558",
-          "title": "Antibiotic-mediated selection of randomly mutagenized and cytokine-expressing oncolytic viruses.",
-          "journal": "Nat Biomed Eng",
-          "year": "2025"
-        },
-        {
-          "pmid": "39179564",
-          "title": "Complementary dual-virus strategy drives synthetic target and cognate T-cell engager expression for endogenous-antigen agnostic immunotherapy.",
-          "journal": "Nat Commun",
-          "year": "2024"
-        }
-      ],
-      "nih_grants": [],
-      "pubmed_recent_recruit": true
     },
     {
       "name": "Morgan Gwynn",
@@ -21603,28 +21556,6 @@
       "nih_grants": []
     },
     {
-      "name": "Ashley Henderson",
-      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/henderson/",
-      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Pulmonary Diseases & Critical Care"
-      ],
-      "pubmed_search": "ComputedAuthors:Henderson A",
-      "pubmed_count": 1,
-      "pubmed_verified": 1,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "36654063",
-          "title": "Modeling effects of matrix heterogeneity on population persistence at the patch-level.",
-          "journal": "Math Biosci Eng",
-          "year": "2022"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "Brent W. Kinder",
       "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/brent-kinder-md-ms/",
       "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
@@ -21694,6 +21625,29 @@
           "pmid": "33769944",
           "title": "SARS-CoV-2 Infection in Health Care Personnel and Their Household Contacts at a Tertiary Academic Medical Center: Protocol for a Longitudinal Cohort Study.",
           "journal": "JMIR Res Protoc",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Benjamin J. Sines",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/benjamin-j-sines-md-mscr/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/benjamin.sines.1/bibliography/public",
+      "pubmed_search": "MyNCBI:benjamin.sines.1",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "33555777",
+          "title": "Outcomes of Patients With Coronavirus Disease 2019 Receiving Organ Support Therapies: The International Viral Infection and Respiratory Illness Universal Study Registry.",
+          "journal": "Crit Care Med",
           "year": "2021"
         }
       ],
@@ -22213,6 +22167,28 @@
       "nih_grants": []
     },
     {
+      "name": "Ashley Henderson",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/henderson/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
+      ],
+      "pubmed_search": "ComputedAuthors:Henderson A",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "36654063",
+          "title": "Modeling effects of matrix heterogeneity on population persistence at the patch-level.",
+          "journal": "Math Biosci Eng",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
       "name": "Kunal Jakharia",
       "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/kunal-jakharia-md/",
       "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
@@ -22684,29 +22660,6 @@
           "title": "A Novel Co-Culture Model Reveals Enhanced CFTR Rescue in Primary Cystic Fibrosis Airway Epithelial Cultures with Persistent Pseudomonas aeruginosa Infection.",
           "journal": "Cells",
           "year": "2023"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Benjamin J. Sines",
-      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/benjamin-j-sines-md-mscr/",
-      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Pulmonary Diseases & Critical Care"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/benjamin.sines.1/bibliography/public",
-      "pubmed_search": "MyNCBI:benjamin.sines.1",
-      "pubmed_count": 1,
-      "pubmed_verified": 1,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "33555777",
-          "title": "Outcomes of Patients With Coronavirus Disease 2019 Receiving Organ Support Therapies: The International Viral Infection and Respiratory Illness Universal Study Registry.",
-          "journal": "Crit Care Med",
-          "year": "2021"
         }
       ],
       "nih_grants": []
@@ -24961,6 +24914,21 @@
       "pubmed_count": 3,
       "pubmed_verified": 0,
       "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Patricia Owens",
+      "profile_url": "https://www.med.unc.edu/medicine/rheumatology-allergy-immunology/people/patricia-owens/",
+      "department": "Medicine \u2014 Rheumatology, Allergy & Immunology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Rheumatology, Allergy & Immunology"
+      ],
+      "pubmed_search": "Owens Patricia",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
       "publications": [],
       "nih_grants": []
     },
@@ -27592,6 +27560,21 @@
           "year": "2023"
         }
       ],
+      "nih_grants": []
+    },
+    {
+      "name": "Alison Manikowski",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/alison-manikowski-psyd/",
+      "department": "Pediatrics",
+      "role": "Hemonc Brain Tumor Psych",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "Manikowski Alison",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -35295,6 +35278,21 @@
       "nih_grants": []
     },
     {
+      "name": "Charlotte Weaver",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/charlotte-weaver-ms/",
+      "department": "Pediatrics",
+      "role": "Admin",
+      "departments": [
+        "Pediatrics"
+      ],
+      "pubmed_search": "Weaver C",
+      "pubmed_count": 2,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
       "name": "Caprice C. Greenberg",
       "profile_url": "https://www.med.unc.edu/surgery/directory/caprice-c-greenberg-md-mph/",
       "department": "Surgery \u2014 General Surgery",
@@ -35302,8 +35300,8 @@
       "departments": [
         "Surgery \u2014 General Surgery"
       ],
-      "pubmed_count": 16,
       "pubmed_search": "ComputedAuthors:Greenberg CC",
+      "pubmed_count": 16,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -35371,8 +35369,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "Calderon E",
-      "pubmed_count": 20,
       "pubmed_search": "ComputedAuthors:Calderon Esteban",
+      "pubmed_count": 20,
       "pubmed_verified": 3,
       "pubmed_ambiguous": false,
       "publications": [
@@ -35406,8 +35404,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "Chen M",
-      "pubmed_count": 19,
       "pubmed_search": "ComputedAuthors:Chen Melissa",
+      "pubmed_count": 19,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -35452,8 +35450,8 @@
       "departments": [
         "Surgery \u2014 General Surgery"
       ],
-      "pubmed_count": 20,
       "pubmed_search": "ComputedAuthors:Desai Chirag",
+      "pubmed_count": 20,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -35546,8 +35544,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "Kapoor S",
-      "pubmed_count": 16,
       "pubmed_search": "ComputedAuthors:Kapoor Sorabh",
+      "pubmed_count": 16,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -35592,8 +35590,8 @@
       "departments": [
         "Surgery \u2014 General Surgery"
       ],
-      "pubmed_count": 7,
       "pubmed_search": "ComputedAuthors:Toledo AH",
+      "pubmed_count": 7,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -35631,52 +35629,6 @@
       "nih_grants": []
     },
     {
-      "name": "Lori Chrisco",
-      "profile_url": "https://www.med.unc.edu/surgery/directory/lori-chrisco-msn-rn-bc/",
-      "department": "Surgery \u2014 General Surgery",
-      "role": "",
-      "departments": [
-        "Surgery \u2014 General Surgery"
-      ],
-      "pubmed_count": 15,
-      "pubmed_search": "ComputedAuthors:Chrisco Lori",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41354354",
-          "title": "Diagnostic sensitivity and specificity of mucosal involvement versus skin biopsy for Stevens-Johnson syndrome/toxic epidermal necrolysis.",
-          "journal": "J Am Acad Dermatol",
-          "year": "2026"
-        },
-        {
-          "pmid": "40417993",
-          "title": "Burn Disasters in North Carolina: An Analysis of Four Major Incidents With a Look to the Future.",
-          "journal": "J Burn Care Res",
-          "year": "2025"
-        },
-        {
-          "pmid": "35647685",
-          "title": "Impact of Chronic Alcohol Use on Fluid Resuscitation in Burn Patients.",
-          "journal": "J Burn Care Res",
-          "year": "2022"
-        },
-        {
-          "pmid": "34794175",
-          "title": "Higher Admission Frailty Scores Predict Increased Mortality, Morbidity, and Healthcare Utilization in the Elderly Burn Population.",
-          "journal": "J Burn Care Res",
-          "year": "2022"
-        },
-        {
-          "pmid": "34057999",
-          "title": "In Patients with Lower Extremity Burns and Osteomyelitis, Diabetes Mellitus Increases Amputation Rate.",
-          "journal": "J Burn Care Res",
-          "year": "2021"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "Booker T. King",
       "profile_url": "https://www.med.unc.edu/surgery/directory/booker-t-king/",
       "department": "Surgery \u2014 General Surgery",
@@ -35684,8 +35636,8 @@
       "departments": [
         "Surgery \u2014 General Surgery"
       ],
-      "pubmed_count": 5,
       "pubmed_search": "ComputedAuthors:King BT",
+      "pubmed_count": 5,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -35730,8 +35682,8 @@
       "departments": [
         "Surgery \u2014 General Surgery"
       ],
-      "pubmed_count": 6,
       "pubmed_search": "ComputedAuthors:Williams FN",
+      "pubmed_count": 6,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -35776,8 +35728,8 @@
       "departments": [
         "Surgery \u2014 General Surgery"
       ],
-      "pubmed_count": 18,
       "pubmed_search": "ComputedAuthors:Akerman Adam",
+      "pubmed_count": 18,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -35837,8 +35789,8 @@
       "departments": [
         "Surgery \u2014 General Surgery"
       ],
-      "pubmed_count": 10,
       "pubmed_search": "ComputedAuthors:Egan TM",
+      "pubmed_count": 10,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -35898,8 +35850,8 @@
       "departments": [
         "Surgery \u2014 General Surgery"
       ],
-      "pubmed_count": 54,
       "pubmed_search": "ComputedAuthors:Haithcock BE",
+      "pubmed_count": 54,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -35992,8 +35944,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "merlo aurelie",
-      "pubmed_count": 6,
       "pubmed_search": "ComputedAuthors:Merlo Aurelie",
+      "pubmed_count": 6,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -36126,8 +36078,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "ungerleider ross",
-      "pubmed_count": 3,
       "pubmed_search": "ComputedAuthors:Ungerleider RM",
+      "pubmed_count": 3,
       "pubmed_verified": 2,
       "pubmed_ambiguous": false,
       "publications": [
@@ -36155,8 +36107,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "farrell tm",
-      "pubmed_count": 104,
       "pubmed_search": "ComputedAuthors:Farrell TM",
+      "pubmed_count": 104,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -36225,8 +36177,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "Kapadia MR*",
-      "pubmed_count": 32,
       "pubmed_search": "ComputedAuthors:Kapadia MR",
+      "pubmed_count": 32,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -36272,8 +36224,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "Stem Jonathan*",
-      "pubmed_count": 14,
       "pubmed_search": "ComputedAuthors:Stem Jonathan",
+      "pubmed_count": 14,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -36334,8 +36286,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "Eckert MJ*",
-      "pubmed_count": 94,
       "pubmed_search": "ComputedAuthors:Eckert Matthew",
+      "pubmed_count": 94,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -36449,8 +36401,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "Kratzke I*",
-      "pubmed_count": 27,
       "pubmed_search": "ComputedAuthors:Kratzke Ian",
+      "pubmed_count": 27,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -36552,8 +36504,8 @@
       "departments": [
         "Surgery \u2014 General Surgery"
       ],
-      "pubmed_count": 146,
       "pubmed_search": "ComputedAuthors:Meyer AA",
+      "pubmed_count": 146,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -36681,8 +36633,8 @@
       "departments": [
         "Surgery \u2014 General Surgery"
       ],
-      "pubmed_count": 23,
       "pubmed_search": "ComputedAuthors:Reid Trista",
+      "pubmed_count": 23,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -36742,8 +36694,8 @@
       "departments": [
         "Surgery \u2014 General Surgery"
       ],
-      "pubmed_count": 35,
       "pubmed_search": "ComputedAuthors:Schiro SE",
+      "pubmed_count": 35,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -36789,8 +36741,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "Schneider AB*",
-      "pubmed_count": 33,
       "pubmed_search": "ComputedAuthors:Schneider Andrew",
+      "pubmed_count": 33,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -36901,8 +36853,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "Campbell S",
-      "pubmed_count": 6,
       "pubmed_search": "ComputedAuthors:Campbell Shannelle",
+      "pubmed_count": 6,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -36948,8 +36900,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "Overby DW",
-      "pubmed_count": 37,
       "pubmed_search": "ComputedAuthors:Overby DW",
+      "pubmed_count": 37,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -37010,8 +36962,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "Akinkuotu AC",
-      "pubmed_count": 4,
       "pubmed_search": "ComputedAuthors:Akinkuotu Adesola",
+      "pubmed_count": 4,
       "pubmed_verified": 4,
       "pubmed_ambiguous": false,
       "publications": [
@@ -37073,8 +37025,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "mclean s",
-      "pubmed_count": 57,
       "pubmed_search": "ComputedAuthors:McLean SE",
+      "pubmed_count": 57,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -37508,8 +37460,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "gallagher k*",
-      "pubmed_count": 72,
       "pubmed_search": "ComputedAuthors:Gallagher Kristalyn",
+      "pubmed_count": 72,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -37555,8 +37507,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "Gleeson E*",
-      "pubmed_count": 11,
       "pubmed_search": "ComputedAuthors:Gleeson Elizabeth",
+      "pubmed_count": 11,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -37664,8 +37616,8 @@
       "departments": [
         "Surgery \u2014 General Surgery"
       ],
-      "pubmed_count": 22,
       "pubmed_search": "ComputedAuthors:Kim Lawrence",
+      "pubmed_count": 22,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -37711,8 +37663,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "LeCompte MT*",
-      "pubmed_count": 10,
       "pubmed_search": "ComputedAuthors:LeCompte MT",
+      "pubmed_count": 10,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -37758,8 +37710,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "meyers m*",
-      "pubmed_count": 86,
       "pubmed_search": "ComputedAuthors:Meyers MO",
+      "pubmed_count": 86,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -37851,8 +37803,8 @@
       "departments": [
         "Surgery \u2014 General Surgery"
       ],
-      "pubmed_count": 101,
       "pubmed_search": "ComputedAuthors:Schumacher Jessica",
+      "pubmed_count": 101,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -37954,8 +37906,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "stitzenberg k*",
-      "pubmed_count": 112,
       "pubmed_search": "ComputedAuthors:Stitzenberg Karyn",
+      "pubmed_count": 112,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -38108,8 +38060,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "farber ma",
-      "pubmed_count": 45,
       "pubmed_search": "ComputedAuthors:Farber MA",
+      "pubmed_count": 45,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -38154,8 +38106,8 @@
       "departments": [
         "Surgery \u2014 General Surgery"
       ],
-      "pubmed_count": 6,
       "pubmed_search": "ComputedAuthors:Heisler Stephen",
+      "pubmed_count": 6,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -38200,8 +38152,8 @@
       "departments": [
         "Surgery \u2014 General Surgery"
       ],
-      "pubmed_count": 4,
       "pubmed_search": "ComputedAuthors:Kashefsky Howard",
+      "pubmed_count": 4,
       "pubmed_verified": 4,
       "pubmed_ambiguous": false,
       "publications": [
@@ -38257,8 +38209,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "marston w",
-      "pubmed_count": 166,
       "pubmed_search": "ComputedAuthors:Marston William",
+      "pubmed_count": 166,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -38303,8 +38255,8 @@
       "departments": [
         "Surgery \u2014 General Surgery"
       ],
-      "pubmed_count": 3,
       "pubmed_search": "ComputedAuthors:McGinigle Katharine",
+      "pubmed_count": 3,
       "pubmed_verified": 3,
       "pubmed_ambiguous": false,
       "publications": [
@@ -38337,8 +38289,8 @@
       "departments": [
         "Surgery \u2014 General Surgery"
       ],
-      "pubmed_count": 61,
       "pubmed_search": "ComputedAuthors:Pascarella Luigi",
+      "pubmed_count": 61,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -38384,8 +38336,8 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "Wood JC*",
-      "pubmed_count": 14,
       "pubmed_search": "ComputedAuthors:Wood Jacob",
+      "pubmed_count": 14,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
@@ -39255,6 +39207,400 @@
       "nih_grants": []
     },
     {
+      "name": "Melanie Zhang",
+      "profile_url": "https://www.med.unc.edu/psych/people/melanie-zhang-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_count": 11,
+      "pubmed_search": "ComputedAuthors:Zhang M",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42217541",
+          "title": "Suppression of endogenous alpha power predicts clinical response to 10&#x202f;Hz tACS in major depressive disorder: A double-blind randomized controlled trial.",
+          "journal": "Brain Stimul",
+          "year": "2026"
+        },
+        {
+          "pmid": "41605337",
+          "title": "Establishing naturalistic brain stimulation targeting aperiodic EEG features: Transcranial endogenous current stimulation (tECS).",
+          "journal": "Brain Stimul",
+          "year": "2026"
+        },
+        {
+          "pmid": "37579998",
+          "title": "Cross-attractor modeling of resting-state functional connectivity in psychiatric disorders.",
+          "journal": "Neuroimage",
+          "year": "2023"
+        },
+        {
+          "pmid": "37397880",
+          "title": "Temporal Mapper: Transition networks in simulated and real neural dynamics.",
+          "journal": "Netw Neurosci",
+          "year": "2023"
+        },
+        {
+          "pmid": "37139573",
+          "title": "Day-to-day individual alpha frequency variability measured by a mobile EEG device relates to anxiety.",
+          "journal": "Eur J Neurosci",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Erin Wildermuth",
+      "profile_url": "https://www.med.unc.edu/psych/people/erin-wildermuth-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Wildermuth Erin",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Caleb Thomas",
+      "profile_url": "https://www.med.unc.edu/psych/people/caleb-thomas-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Thomas C",
+      "pubmed_count": 27,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "37922420",
+          "title": "Quinoline Compounds Targeting the c-Ring of ATP Synthase Inhibit Drug-Resistant Pseudomonas aeruginosa.",
+          "journal": "ACS Infect Dis",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Riti Srivastava",
+      "profile_url": "https://www.med.unc.edu/psych/people/riti-srivastava-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Srivastava R",
+      "pubmed_count": 2,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Austin Spitz",
+      "profile_url": "https://www.med.unc.edu/psych/people/austin-spitz-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Spitz A",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Louisa Smitherman",
+      "profile_url": "https://www.med.unc.edu/psych/people/louisa-smitherman-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Smitherman Louisa",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Angelica Pham",
+      "profile_url": "https://www.med.unc.edu/psych/people/angelica-pham-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Pham A",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Amarachukwu Nwangwu",
+      "profile_url": "https://www.med.unc.edu/psych/people/amarachukwu-nwangwu-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Nwangwu Amarachukwu",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Jaewon Moon",
+      "profile_url": "https://www.med.unc.edu/psych/people/jaewon-moon-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Moon Jaewon",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41024675",
+          "title": "Evidence-Based Footwear Recommendations for Older Adults: Enhancing Mobility, Comfort, and Fall Prevention.",
+          "journal": "J Am Geriatr Soc",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Morgan Mathis",
+      "profile_url": "https://www.med.unc.edu/psych/people/morgan-mathis-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Mathis Morgan",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Aaria Malhotra",
+      "profile_url": "https://www.med.unc.edu/psych/people/aaria-malhotra-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Malhotra A",
+      "pubmed_count": 17,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "30346242",
+          "title": "Haloperidol and Ziprasidone for Treatment of Delirium in Critical Illness.",
+          "journal": "N Engl J Med",
+          "year": "2018"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Joshua Lopez",
+      "profile_url": "https://www.med.unc.edu/psych/people/joshua-lopez-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Lopez Joshua",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41850490",
+          "title": "Selective impact on regulatory T cells with sustained functional phenotypes by the interleukin-2 mutein VIS171 in a nonhuman primate model.",
+          "journal": "Am J Transplant",
+          "year": "2026"
+        },
+        {
+          "pmid": "39024163",
+          "title": "Development of PainFace software to simplify, standardize, and scale up mouse grimace analyses.",
+          "journal": "Pain",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jasmine Liu",
+      "profile_url": "https://www.med.unc.edu/psych/people/jasmine-liu-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Liu J",
+      "pubmed_count": 523,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42362731",
+          "title": "Plasma heparan sulfate structural variation and phenotypic heterogeneity in pediatric Acute Respiratory Distress Syndrome.",
+          "journal": "Sci Rep",
+          "year": "2026"
+        },
+        {
+          "pmid": "42273163",
+          "title": "Using GeoAI and machine learning tools for consistent high-resolution land cover mapping based on time-series NAIP imagery.",
+          "journal": "Landsc Ecol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42209655",
+          "title": "Quantitative LC-MS/MS profiling reveals aberrant chondroitin sulfate in Alzheimer's disease.",
+          "journal": "Commun Biol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42148555",
+          "title": "Heparan sulfate promotes autoactivation of procathepsin K by destabilizing the propeptide-catalytic domain interaction.",
+          "journal": "Biochem J",
+          "year": "2026"
+        },
+        {
+          "pmid": "42147147",
+          "title": "Plasma Heparan Sulfate Structural Variation and Phenotypic Heterogeneity in Pediatric Acute Respiratory Distress Syndrome.",
+          "journal": "Res Sq",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Gabrielle Hyde",
+      "profile_url": "https://www.med.unc.edu/psych/people/gabrielle-hyde-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Hyde G",
+      "pubmed_count": 2,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Stormy Foster-Palmer",
+      "profile_url": "https://www.med.unc.edu/psych/people/stormy-foster-palmer-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Foster-Palmer Stormy",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Matthew Busse",
+      "profile_url": "https://www.med.unc.edu/psych/people/matthew-busse-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Busse Matthew",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Erica Browne",
+      "profile_url": "https://www.med.unc.edu/psych/people/erica-browne-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Browne Erica",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40594178",
+          "title": "Tough talks COVID-19 (TT-C) digital health intervention: multistate randomized controlled trial.",
+          "journal": "Sci Rep",
+          "year": "2025"
+        },
+        {
+          "pmid": "29506195",
+          "title": "Demographic and Operational Factors Predicting Study Completion in a Multisite Case-Control Study of Preschool Children.",
+          "journal": "Am J Epidemiol",
+          "year": "2018"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Amanda Block",
+      "profile_url": "https://www.med.unc.edu/psych/people/amanda-block-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Block Amanda",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Mac Schauman",
+      "profile_url": "https://www.med.unc.edu/psych/people/mac-schauman-lcmhc-a/",
+      "department": "Psychiatry",
+      "role": "Cecmh",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Schauman Mac",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
       "name": "Meredith Bucher",
       "profile_url": "https://www.med.unc.edu/psych/people/meredith-bucher-phd/",
       "department": "Psychiatry",
@@ -39754,28 +40100,6 @@
       "nih_grants": []
     },
     {
-      "name": "Pam Beiler",
-      "profile_url": "https://www.med.unc.edu/psych/people/pam-beiler-msw-lcsw/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
-      ],
-      "pubmed_search": "ComputedAuthors:Beiler P",
-      "pubmed_count": 1,
-      "pubmed_verified": 1,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "31424266",
-          "title": "The Mood, Mother, and Infant Study: Associations Between Maternal Mood in Pregnancy and Breastfeeding Outcome.",
-          "journal": "Breastfeed Med",
-          "year": "2019"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "Lizette Lopez",
       "profile_url": "https://www.med.unc.edu/psych/people/lizette-lopez-msw-lcsw-aphsw-c/",
       "department": "Psychiatry",
@@ -40225,7 +40549,7 @@
       "name": "Jackie Zhu",
       "profile_url": "https://www.med.unc.edu/psych/people/jackie-zhu-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ],
@@ -40271,7 +40595,7 @@
       "name": "Allison Tipton",
       "profile_url": "https://www.med.unc.edu/psych/people/allison-tipton-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ],
@@ -40293,7 +40617,7 @@
       "name": "Forrest Smith",
       "profile_url": "https://www.med.unc.edu/psych/people/forrest-smith-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ],
@@ -40339,7 +40663,7 @@
       "name": "Caroline Sachse",
       "profile_url": "https://www.med.unc.edu/psych/people/caroline-sachse-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ],
@@ -40354,7 +40678,7 @@
       "name": "Anna Rupp",
       "profile_url": "https://www.med.unc.edu/psych/people/anna-rupp-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ],
@@ -40388,7 +40712,7 @@
       "name": "Carin Papendorp",
       "profile_url": "https://www.med.unc.edu/psych/people/carin-papendorp-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ],
@@ -40416,7 +40740,7 @@
       "name": "Jessyca Naegele",
       "profile_url": "https://www.med.unc.edu/psych/people/jessyca-naegele-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ],
@@ -40463,7 +40787,7 @@
       "name": "Rachel Motamed",
       "profile_url": "https://www.med.unc.edu/psych/people/rachel-motamed-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ],
@@ -40478,7 +40802,7 @@
       "name": "Meghan Mallya",
       "profile_url": "https://www.med.unc.edu/psych/people/meghan-mallya-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ],
@@ -40512,7 +40836,7 @@
       "name": "Kara Lopez-Lengowski",
       "profile_url": "https://www.med.unc.edu/psych/people/kara-lopez-lengowski-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ],
@@ -40534,7 +40858,7 @@
       "name": "Katharine King",
       "profile_url": "https://www.med.unc.edu/psych/people/katharine-king-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ],
@@ -40568,7 +40892,7 @@
       "name": "Caellaigh Kimpston",
       "profile_url": "https://www.med.unc.edu/psych/people/caellaigh-kimpston-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ],
@@ -40590,7 +40914,7 @@
       "name": "Meher Kalkat",
       "profile_url": "https://www.med.unc.edu/psych/people/meher-kalkat-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ],
@@ -40612,7 +40936,7 @@
       "name": "Kaylen Holmes",
       "profile_url": "https://www.med.unc.edu/psych/people/kaylen-holmes-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ],
@@ -40627,7 +40951,7 @@
       "name": "Hailey Daly",
       "profile_url": "https://www.med.unc.edu/psych/people/hailey-daly-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ],
@@ -40649,7 +40973,7 @@
       "name": "Samantha Gallahan",
       "profile_url": "https://www.med.unc.edu/psych/people/samantha-gallahan-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ],
@@ -40672,7 +40996,7 @@
       "name": "Taseya Coleman",
       "profile_url": "https://www.med.unc.edu/psych/people/taseya-coleman-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ],
@@ -40718,7 +41042,7 @@
       "name": "Blair Carnes",
       "profile_url": "https://www.med.unc.edu/psych/people/blair-carnes-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ],
@@ -40733,7 +41057,7 @@
       "name": "David L. Penn",
       "profile_url": "https://www.med.unc.edu/psych/people/david-l-penn-phd/",
       "department": "Psychiatry",
-      "role": "Faculty",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ],
@@ -40879,6 +41203,21 @@
         "Psychiatry"
       ],
       "pubmed_search": "Dohnert Heidi",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Eden Garmon",
+      "profile_url": "https://www.med.unc.edu/psych/people/eden-garmon-lcsw/",
+      "department": "Psychiatry",
+      "role": "Clinician",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Garmon Eden",
       "pubmed_count": 0,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
@@ -41433,6 +41772,28 @@
           "title": "Brain network connectivity during peer evaluation in adolescent females: Associations with age, pubertal hormones, timing, and status.",
           "journal": "Dev Cogn Neurosci",
           "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jody Bennett",
+      "profile_url": "https://www.med.unc.edu/psych/people/jody-bennett/",
+      "department": "Psychiatry",
+      "role": "Cecmh",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Bennett Jody",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41114782",
+          "title": "The Homeless Outreach Behavioral Screen (HOBS): A Brief Scale for Identifying Need for Mental Health Evaluation Among Unsheltered Populations.",
+          "journal": "Community Ment Health J",
+          "year": "2026"
         }
       ],
       "nih_grants": []
@@ -42579,52 +42940,6 @@
       "nih_grants": []
     },
     {
-      "name": "Stephanie Russell",
-      "profile_url": "https://www.med.unc.edu/psych/people/stephanie-russell-lcmhc/",
-      "department": "Psychiatry",
-      "role": "Child-Adolescent-Psychiatry",
-      "departments": [
-        "Psychiatry"
-      ],
-      "pubmed_search": "ComputedAuthors:RUSSELL S",
-      "pubmed_count": 86,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41289300",
-          "title": "The associations of premorbid social isolation and social support with self-rated health and heart failure outcomes in the atherosclerosis risk in communities (ARIC) Study.",
-          "journal": "PLoS One",
-          "year": "2025"
-        },
-        {
-          "pmid": "38426319",
-          "title": "Metabolomic Association and Risk Prediction With Heart Failure in Older Adults.",
-          "journal": "Circ Heart Fail",
-          "year": "2024"
-        },
-        {
-          "pmid": "37321700",
-          "title": "Pregnancy and Left Ventricular Assist Devices in the Post Roe v Wade Era.",
-          "journal": "J Card Fail",
-          "year": "2023"
-        },
-        {
-          "pmid": "37245143",
-          "title": "The 2023 International Society for Heart and Lung Transplantation Guidelines for Mechanical Circulatory Support: A 10- Year Update.",
-          "journal": "J Heart Lung Transplant",
-          "year": "2023"
-        },
-        {
-          "pmid": "36277316",
-          "title": "Ambulatory Management of Worsening Heart Failure: Current Strategies and Future Directions.",
-          "journal": "Heart Int",
-          "year": "2021"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "Stephanie Brennan",
       "profile_url": "https://www.med.unc.edu/psych/people/stephanie-brennan-md/",
       "department": "Psychiatry",
@@ -42644,6 +42959,21 @@
           "year": "2019"
         }
       ],
+      "nih_grants": []
+    },
+    {
+      "name": "Stacy Smith",
+      "profile_url": "https://www.med.unc.edu/psych/people/stacy-smith-med/",
+      "department": "Psychiatry",
+      "role": "Cecmh",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Smith Stacy",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -42673,6 +43003,21 @@
       "pubmed_count": 0,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Shouqiang Ye",
+      "profile_url": "https://www.med.unc.edu/psych/people/shouqiang-ye-ms-2/",
+      "department": "Psychiatry",
+      "role": "Faculty",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Ye Shouqiang",
+      "pubmed_count": 2,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
       "publications": [],
       "nih_grants": []
     },
@@ -43689,7 +44034,7 @@
       "name": "Rachel Taylor",
       "profile_url": "https://www.med.unc.edu/psych/people/rachel-taylor-msw/",
       "department": "Psychiatry",
-      "role": "Clinician",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ],
@@ -45618,7 +45963,7 @@
       "name": "Kelsey Ludwig",
       "profile_url": "https://www.med.unc.edu/psych/people/kelsey-ludwig-phd/",
       "department": "Psychiatry",
-      "role": "Clinician",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ],
@@ -45940,7 +46285,7 @@
       "name": "Kaitlin Boyle",
       "profile_url": "https://www.med.unc.edu/psych/people/kaitlin-boyle-md/",
       "department": "Psychiatry",
-      "role": "Clinician",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ],
@@ -46546,52 +46891,6 @@
       "nih_grants": []
     },
     {
-      "name": "Sonyia Richardson",
-      "profile_url": "https://www.med.unc.edu/psych/people/sonyia-richardson-ph-d-l-c-s-w/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
-      ],
-      "pubmed_search": "ORCID:0000-0002-6026-5401",
-      "pubmed_count": 6,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41403887",
-          "title": "School Connectedness and Suicidal Ideation Among Black Youth: A Latent Class Analysis.",
-          "journal": "School Ment Health",
-          "year": "2025"
-        },
-        {
-          "pmid": "38718976",
-          "title": "Factors Associated With Suicide Risk Behavior Outcomes Among Black Middle School Adolescents.",
-          "journal": "J Am Acad Child Adolesc Psychiatry",
-          "year": "2024"
-        },
-        {
-          "pmid": "38095815",
-          "title": "Factors Associated with Suicide Risk Behavior Outcomes Among Black High School Adolescents.",
-          "journal": "J Community Health",
-          "year": "2024"
-        },
-        {
-          "pmid": "38429617",
-          "title": "Informing Equitable Prevention Practices: A Statewide Disaggregated Analysis of Suicide for Ethnoracially Minoritized Adolescents.",
-          "journal": "Prev Sci",
-          "year": "2024"
-        },
-        {
-          "pmid": "38411883",
-          "title": "The Capacity-to-Serve Model as a Data-Driven Process for Provider Capacity Management in Outpatient Community Mental Health.",
-          "journal": "Community Ment Health J",
-          "year": "2024"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "Jessica Girault",
       "profile_url": "https://www.med.unc.edu/psych/people/jessica-girault-phd/",
       "department": "Psychiatry",
@@ -46748,7 +47047,7 @@
       "name": "Jennifer Nieri",
       "profile_url": "https://www.med.unc.edu/psych/people/jennifer-nieri-msw-lcsw/",
       "department": "Psychiatry",
-      "role": "Faculty",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ],
@@ -47123,207 +47422,10 @@
       "pubmed_recent_recruit": true
     },
     {
-      "name": "Rebecca Yoon",
-      "profile_url": "https://www.med.unc.edu/psych/people/rebecca-yoon-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ],
-      "pubmed_search": "Yoon R",
-      "pubmed_count": 61,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42339633",
-          "title": "Cross-Pollinators and Boundary Spanners: Contributions of Ontario Health Team Fellows to Quality Improvement and Evaluation Capacity for Health Systems.",
-          "journal": "Healthc Q",
-          "year": "2026"
-        },
-        {
-          "pmid": "42163246",
-          "title": "A paradigm shift for health equity in implementation science.",
-          "journal": "BMC Health Serv Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "42077020",
-          "title": "Trauma-Informed Organizational and Leadership Practices to Support Workforce Mental Health: A Rapid Evidence Synthesis.",
-          "journal": "Nurs Leadersh (Tor Ont)",
-          "year": "2026"
-        },
-        {
-          "pmid": "41996312",
-          "title": "Co-Design of strategies to enhance access to Virtual Urgent Care models by equity-deserving populations.",
-          "journal": "PLOS Digit Health",
-          "year": "2026"
-        },
-        {
-          "pmid": "41956593",
-          "title": "Identifying the protective and risk factors of perinatal depression and anxiety: A cross-sectional study of Black women in the Greater Toronto Area.",
-          "journal": "Arch Psychiatr Nurs",
-          "year": "2026"
-        }
-      ],
-      "nih_grants": [],
-      "pubmed_recent_recruit": true
-    },
-    {
-      "name": "Hayden Torres",
-      "profile_url": "https://www.med.unc.edu/psych/people/hayden-torres-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ],
-      "pubmed_search": "Torres Hayden",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Daniel Sheinbein",
-      "profile_url": "https://www.med.unc.edu/psych/people/daniel-sheinbein-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ],
-      "pubmed_search": "ORCID:0000-0002-2079-5037",
-      "pubmed_count": 2,
-      "pubmed_verified": 2,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "32312691",
-          "title": "Borderline Personality Traits Are Not Correlated With Brain Structure in Two Large Samples.",
-          "journal": "Biol Psychiatry Cogn Neurosci Neuroimaging",
-          "year": "2020"
-        },
-        {
-          "pmid": "30990254",
-          "title": "Factors associated with depression and anxiety symptoms among children seeking treatment for obesity: A social-ecological approach.",
-          "journal": "Pediatr Obes",
-          "year": "2019"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Natasha Saric",
-      "profile_url": "https://www.med.unc.edu/psych/people/natasha-saric-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ],
-      "pubmed_search": "Saric N",
-      "pubmed_count": 16,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41764392",
-          "title": "Cracking the code - an integrated wastewater-based approach for a more comprehensive assessment of current trends in cocaine and crack use in Switzerland.",
-          "journal": "J Water Health",
-          "year": "2026"
-        },
-        {
-          "pmid": "41683322",
-          "title": "Association Between Attitude Toward a Healthy Lifestyle, Lifestyle Behaviors, Sociodemographic Characteristics, and Body Mass Index: A Cross-Sectional Study.",
-          "journal": "Nutrients",
-          "year": "2026"
-        },
-        {
-          "pmid": "41650985",
-          "title": "[A novel mutation causing adult Alexander disease presenting as cervical spine tumor].",
-          "journal": "Fortschr Neurol Psychiatr",
-          "year": "2026"
-        },
-        {
-          "pmid": "41206528",
-          "title": "Mesenchymal Stromal Cells Mitigate Prolonged Cardiopulmonary Bypass-Induced Neuroinflammation.",
-          "journal": "Interdiscip Cardiovasc Thorac Surg",
-          "year": "2025"
-        },
-        {
-          "pmid": "39651246",
-          "title": "Ciliopathy interacts with neonatal anesthesia to cause non-apoptotic caspase-mediated motor deficits.",
-          "journal": "bioRxiv",
-          "year": "2024"
-        }
-      ],
-      "nih_grants": [],
-      "pubmed_recent_recruit": true
-    },
-    {
-      "name": "Neil Robinson",
-      "profile_url": "https://www.med.unc.edu/psych/people/neil-robinson-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ],
-      "pubmed_search": "Robinson N",
-      "pubmed_count": 2,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Daniela Ramirez",
-      "profile_url": "https://www.med.unc.edu/psych/people/daniela-ramirez-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ],
-      "pubmed_search": "Ramirez D",
-      "pubmed_count": 9,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Esther Miah",
-      "profile_url": "https://www.med.unc.edu/psych/people/esther-miah-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ],
-      "pubmed_search": "Miah Esther",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Nicholas Horswill",
-      "profile_url": "https://www.med.unc.edu/psych/people/nicholas-horswill-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ],
-      "pubmed_search": "Horswill Nicholas",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
       "name": "Rachel Harrison",
       "profile_url": "https://www.med.unc.edu/psych/people/rachel-harrison-md/",
       "department": "Psychiatry",
-      "role": "Pgy4",
+      "role": "Clinician",
       "departments": [
         "Psychiatry"
       ],
@@ -47345,7 +47447,7 @@
       "name": "Alex Gertner",
       "profile_url": "https://www.med.unc.edu/psych/people/alex-gertner-md-phd/",
       "department": "Psychiatry",
-      "role": "Pgy4",
+      "role": "Clinician",
       "departments": [
         "Psychiatry"
       ],
@@ -47367,7 +47469,7 @@
       "name": "Joseph Dayaa",
       "profile_url": "https://www.med.unc.edu/psych/people/joseph-dayaa-md/",
       "department": "Psychiatry",
-      "role": "Pgy4",
+      "role": "",
       "departments": [
         "Psychiatry"
       ],
@@ -47382,7 +47484,7 @@
       "name": "Justin Coley",
       "profile_url": "https://www.med.unc.edu/psych/people/justin-coley-md/",
       "department": "Psychiatry",
-      "role": "Pgy4",
+      "role": "",
       "departments": [
         "Psychiatry"
       ],
@@ -47394,94 +47496,10 @@
       "nih_grants": []
     },
     {
-      "name": "Angela Clayborne",
-      "profile_url": "https://www.med.unc.edu/psych/people/angela-clayborne-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ],
-      "pubmed_search": "Clayborne Angela",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Kritika Chugh",
-      "profile_url": "https://www.med.unc.edu/psych/people/kritika-chugh-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ],
-      "pubmed_search": "ORCID:0009-0000-0022-2381",
-      "pubmed_count": 1,
-      "pubmed_verified": 1,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41204087",
-          "title": "Revealing the spectrum of extended-core gene variation in the Escherichia coli pan-genome.",
-          "journal": "BMC Genomics",
-          "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Michael Buchholz",
-      "profile_url": "https://www.med.unc.edu/psych/people/michael-buchholz-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ],
-      "pubmed_search": "Buchholz M",
-      "pubmed_count": 123,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42334716",
-          "title": "Transitional Life Events in Friedreich Ataxia: Differential Age at Onset Perspectives.",
-          "journal": "Cerebellum",
-          "year": "2026"
-        },
-        {
-          "pmid": "42301528",
-          "title": "Cerebellar cognitive-affective syndrome in Friedreich Ataxia.",
-          "journal": "J Neurol",
-          "year": "2026"
-        },
-        {
-          "pmid": "42174309",
-          "title": "A Patient-Reported Outcome Measure of Communication Difficulties in Friedreich Ataxia: COMATAX.",
-          "journal": "Cerebellum",
-          "year": "2026"
-        },
-        {
-          "pmid": "41907864",
-          "title": "Novel small molecule targeting PgQC reduces Porphyromonas gingivalis virulence.",
-          "journal": "Front Oral Health",
-          "year": "2026"
-        },
-        {
-          "pmid": "41851807",
-          "title": "Protocol of a dyadic, app-supported collaborative care intervention trial for informal caregivers of people living with dementia-the multi-center living@home study.",
-          "journal": "Trials",
-          "year": "2026"
-        }
-      ],
-      "nih_grants": [],
-      "pubmed_recent_recruit": true
-    },
-    {
       "name": "Nicole Pecoraro",
       "profile_url": "https://www.med.unc.edu/psych/people/nicole-pecoraro-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ],
@@ -47496,7 +47514,7 @@
       "name": "Liv Weiner",
       "profile_url": "https://www.med.unc.edu/psych/people/liv-weiner-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ],
@@ -47511,7 +47529,7 @@
       "name": "Trey Sickler",
       "profile_url": "https://www.med.unc.edu/psych/people/trey-sickler-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ],
@@ -47526,7 +47544,7 @@
       "name": "Lars Sheridan",
       "profile_url": "https://www.med.unc.edu/psych/people/lars-sheridan-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ],
@@ -47541,7 +47559,7 @@
       "name": "Chandler Melton",
       "profile_url": "https://www.med.unc.edu/psych/people/chandler-melton-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ],
@@ -47563,7 +47581,7 @@
       "name": "Jack McKenzie",
       "profile_url": "https://www.med.unc.edu/psych/people/jack-mckenzie-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ],
@@ -47578,7 +47596,7 @@
       "name": "Ainsley Mann",
       "profile_url": "https://www.med.unc.edu/psych/people/ainsley-mann-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ],
@@ -47600,7 +47618,7 @@
       "name": "Yaw Kumi-Ansu",
       "profile_url": "https://www.med.unc.edu/psych/people/yaw-kumi-ansu-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ],
@@ -47623,7 +47641,7 @@
       "name": "Taylor Kleyn",
       "profile_url": "https://www.med.unc.edu/psych/people/taylor-kleyn-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ],
@@ -47646,7 +47664,7 @@
       "name": "Rachel Hianik",
       "profile_url": "https://www.med.unc.edu/psych/people/rachel-hianik-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ],
@@ -47692,7 +47710,7 @@
       "name": "Krisandra Hardy",
       "profile_url": "https://www.med.unc.edu/psych/people/krisandra-hardy-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ],
@@ -47707,7 +47725,7 @@
       "name": "Annette French",
       "profile_url": "https://www.med.unc.edu/psych/people/annette-french-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ],
@@ -47753,7 +47771,7 @@
       "name": "Katelyn Einloth",
       "profile_url": "https://www.med.unc.edu/psych/people/katelyn-einloth-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ],
@@ -47775,7 +47793,7 @@
       "name": "Uma Dieffenbach",
       "profile_url": "https://www.med.unc.edu/psych/people/uma-dieffenbach-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ],
@@ -47790,7 +47808,7 @@
       "name": "Gabrielle Cummings",
       "profile_url": "https://www.med.unc.edu/psych/people/gabrielle-cummings-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ],
@@ -47818,7 +47836,7 @@
       "name": "Quin Brown",
       "profile_url": "https://www.med.unc.edu/psych/people/quin-brown-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ],
@@ -47833,7 +47851,7 @@
       "name": "Tommy Baumel",
       "profile_url": "https://www.med.unc.edu/psych/people/tommy-baumel-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ],
@@ -47848,7 +47866,7 @@
       "name": "Jenna Wasserman",
       "profile_url": "https://www.med.unc.edu/psych/people/jenna-wasserman-md/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ],
@@ -47870,7 +47888,7 @@
       "name": "Katarina Swaim",
       "profile_url": "https://www.med.unc.edu/psych/people/katarina-swaim-md/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ],
@@ -47885,7 +47903,7 @@
       "name": "Brianna Simmons",
       "profile_url": "https://www.med.unc.edu/psych/people/brianna-simmons-md/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ],
@@ -47925,7 +47943,7 @@
       "name": "Julia Scher",
       "profile_url": "https://www.med.unc.edu/psych/people/julia-scher/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ],
@@ -47940,7 +47958,7 @@
       "name": "Sonali Parmar",
       "profile_url": "https://www.med.unc.edu/psych/people/sonali-parmar/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ],
@@ -47955,7 +47973,7 @@
       "name": "Darshana Panda",
       "profile_url": "https://www.med.unc.edu/psych/people/darshana-panda/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ],
@@ -47989,7 +48007,7 @@
       "name": "Natalya Brooks",
       "profile_url": "https://www.med.unc.edu/psych/people/natalya-brooks/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ],
@@ -48004,7 +48022,7 @@
       "name": "Morgan Mooty",
       "profile_url": "https://www.med.unc.edu/psych/people/morgan-mooty/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ],
@@ -48019,7 +48037,7 @@
       "name": "Andrea Cortez",
       "profile_url": "https://www.med.unc.edu/psych/people/andrea-mcwilliams-md/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ],
@@ -48034,7 +48052,7 @@
       "name": "Melanie Marcille",
       "profile_url": "https://www.med.unc.edu/psych/people/melanie-marcille-md/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ],
@@ -48081,7 +48099,7 @@
       "name": "Scott MacDonald",
       "profile_url": "https://www.med.unc.edu/psych/people/scott-macdonald-md/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ],
@@ -48096,7 +48114,7 @@
       "name": "Edward Lin",
       "profile_url": "https://www.med.unc.edu/psych/people/edward-lin-md/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ],
@@ -48111,7 +48129,7 @@
       "name": "Megan LeFevre",
       "profile_url": "https://www.med.unc.edu/psych/people/megan-lefevre-do/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ],
@@ -48126,7 +48144,7 @@
       "name": "Catrina Crawford",
       "profile_url": "https://www.med.unc.edu/psych/people/katrina-crawford-md/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ],
@@ -48160,7 +48178,7 @@
       "name": "Mariel Colon-Leyva",
       "profile_url": "https://www.med.unc.edu/psych/people/mariel-colon-leyva/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ],
@@ -48175,7 +48193,7 @@
       "name": "Audrey Chong",
       "profile_url": "https://www.med.unc.edu/psych/people/audrey-chong/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ],
@@ -48197,7 +48215,7 @@
       "name": "Shelby Carvalho",
       "profile_url": "https://www.med.unc.edu/psych/people/shelby-carvalho-md/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ],
@@ -48243,7 +48261,7 @@
       "name": "Cheyenne Bricken",
       "profile_url": "https://www.med.unc.edu/psych/people/cheyenne-bricken-md/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ],
@@ -48524,7 +48542,7 @@
       "name": "Felice Reddy",
       "profile_url": "https://www.med.unc.edu/psych/people/felice-reddy-phd/",
       "department": "Psychiatry",
-      "role": "Faculty",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ],
@@ -48667,7 +48685,7 @@
       "name": "Emily Parsons",
       "profile_url": "https://www.med.unc.edu/psych/people/emily-parsons-psyd/",
       "department": "Psychiatry",
-      "role": "Clinician",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ],
@@ -48815,34 +48833,6 @@
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
       "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Ellen Ruebush",
-      "profile_url": "https://www.med.unc.edu/psych/people/ellen-ruebush-msw/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
-      ],
-      "pubmed_search": "ComputedAuthors:Ruebush Ellen",
-      "pubmed_count": 2,
-      "pubmed_verified": 2,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "32213994",
-          "title": "A Lean Quality Improvement Initiative to Enhance Tobacco Use Treatment in a Cancer Hospital.",
-          "journal": "Int J Environ Res Public Health",
-          "year": "2020"
-        },
-        {
-          "pmid": "32204529",
-          "title": "Using a Family Systems Approach to Treat Tobacco Use among Cancer Patients.",
-          "journal": "Int J Environ Res Public Health",
-          "year": "2020"
-        }
-      ],
       "nih_grants": []
     },
     {
@@ -49287,7 +49277,7 @@
       "name": "Diana Perkins",
       "profile_url": "https://www.med.unc.edu/psych/people/diana-perkins-md-mph/",
       "department": "Psychiatry",
-      "role": "Faculty",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ],
@@ -49890,52 +49880,6 @@
       "nih_grants": []
     },
     {
-      "name": "Christine Murray",
-      "profile_url": "https://www.med.unc.edu/psych/people/christine-murray-ms/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
-      ],
-      "pubmed_search": "ComputedAuthors:Murray C",
-      "pubmed_count": 6,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42152177",
-          "title": "\"I feel like you should buy an umbrella before it starts raining\": Caregiver Perspectives on Illness Inflection Points in COPD.",
-          "journal": "Ann Am Thorac Soc",
-          "year": "2026"
-        },
-        {
-          "pmid": "42055730",
-          "title": "Navigating Dual Burdens: Financial Burdens and Travel Burdens Among Rural-Dwelling Cancer Survivors.",
-          "journal": "Cancer Control",
-          "year": "2026"
-        },
-        {
-          "pmid": "41556721",
-          "title": "Association of Multi-Level LGBTQ+ Stigma and Hypervigilance With Health Outcomes Among LGBTQ+ Cancer Caregivers.",
-          "journal": "Psychooncology",
-          "year": "2026"
-        },
-        {
-          "pmid": "41534014",
-          "title": "Implementation Challenges of a Multi-Center Financial Navigation Intervention: A Qualitative Analysis of Operational Process Data.",
-          "journal": "Cancer Control",
-          "year": "2026"
-        },
-        {
-          "pmid": "41525507",
-          "title": "Crowdsourcing Cancer Survivors' Perspectives on the Use of Artificial Intelligence and Automation in Financial Hardship Interventions.",
-          "journal": "JCO Oncol Pract",
-          "year": "2026"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "Christine Flicek",
       "profile_url": "https://www.med.unc.edu/psych/people/christine-flicek-md/",
       "department": "Psychiatry",
@@ -50000,52 +49944,6 @@
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
       "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Charissa Gray",
-      "profile_url": "https://www.med.unc.edu/psych/people/charissa-gray-mph-msw/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
-      ],
-      "pubmed_search": "ComputedAuthors:Gray C",
-      "pubmed_count": 47,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42021853",
-          "title": "Cash transfers relax climate-induced mobility constraints in Kenya.",
-          "journal": "Popul Environ",
-          "year": "2026"
-        },
-        {
-          "pmid": "41181348",
-          "title": "Climatic Variability and Internal Migration in Asia: Evidence from Big Microdata.",
-          "journal": "Popul Dev Rev",
-          "year": "2024"
-        },
-        {
-          "pmid": "40060030",
-          "title": "Environmental change, aquatic conditions, and household food security: Evidence from Lake Malawi.",
-          "journal": "Popul Environ",
-          "year": "2025"
-        },
-        {
-          "pmid": "39917283",
-          "title": "Heat and Drought Reduce Subnational Population Growth in the Global Tropics.",
-          "journal": "Popul Environ",
-          "year": "2023"
-        },
-        {
-          "pmid": "38442166",
-          "title": "Temperature anomalies undermine the health of reproductive-age women in low- and middle-income countries.",
-          "journal": "Proc Natl Acad Sci U S A",
-          "year": "2024"
-        }
-      ],
       "nih_grants": []
     },
     {
@@ -50839,7 +50737,7 @@
       "name": "Austin Hall",
       "profile_url": "https://www.med.unc.edu/psych/people/austin-hall-md/",
       "department": "Psychiatry",
-      "role": "Cecmh",
+      "role": "Administration",
       "departments": [
         "Psychiatry"
       ],
@@ -51106,46 +51004,6 @@
       "nih_grants": []
     },
     {
-      "name": "Anna Rose Wilson",
-      "profile_url": "https://www.med.unc.edu/psych/people/anna-rose-wilson-msw/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
-      ],
-      "pubmed_search": "ComputedAuthors:Wilson A",
-      "pubmed_count": 4,
-      "pubmed_verified": 4,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "39949705",
-          "title": "A Community-Engaged Oral History Study as a Tool for Understanding Environmental Justice Aspects of Human Exposures to Hazardous Waste Thermal Treatment Emissions in Colfax, LA.",
-          "journal": "Environ Justice",
-          "year": "2024"
-        },
-        {
-          "pmid": "38313002",
-          "title": "Oral histories document community mobilisation to participate in decision-making regarding a hazardous waste thermal treatment facility.",
-          "journal": "Local Environ",
-          "year": "2024"
-        },
-        {
-          "pmid": "35757155",
-          "title": "A Community-Integrated Geographic Information System Study of Air Pollution Exposure Impacts in Colfax, LA.",
-          "journal": "Local Environ",
-          "year": "2022"
-        },
-        {
-          "pmid": "1428889",
-          "title": "Characterization of radioactive petroleum piping scale with an evaluation of subsequent land contamination.",
-          "journal": "Health Phys",
-          "year": "1992"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "Angela Ning",
       "profile_url": "https://www.med.unc.edu/psych/people/angela-ning-md/",
       "department": "Psychiatry",
@@ -51220,6 +51078,21 @@
           "year": "2023"
         }
       ],
+      "nih_grants": []
+    },
+    {
+      "name": "Amanda Sullivan",
+      "profile_url": "https://www.med.unc.edu/psych/people/amanda-sullivan-msw/",
+      "department": "Psychiatry",
+      "role": "Clinician",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Sullivan A",
+      "pubmed_count": 4,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -51347,7 +51220,7 @@
       "name": "Donald Rosenstein",
       "profile_url": "https://www.med.unc.edu/psych/people/donald-rosenstein-md/",
       "department": "Psychiatry",
-      "role": "Administration",
+      "role": "Clinician",
       "departments": [
         "Psychiatry"
       ],
@@ -51489,7 +51362,7 @@
       "name": "John Gilmore",
       "profile_url": "https://www.med.unc.edu/psych/people/john-gilmore-md/",
       "department": "Psychiatry",
-      "role": "Administration",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ],
@@ -51623,6 +51496,21 @@
           "year": "2023"
         }
       ],
+      "nih_grants": []
+    },
+    {
+      "name": "Karon Dawkins",
+      "profile_url": "https://www.med.unc.edu/psych/people/karon-dawkins-md/",
+      "department": "Psychiatry",
+      "role": "Administration",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_search": "Dawkins Karon",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -51945,21 +51833,6 @@
           "year": "1983"
         }
       ],
-      "nih_grants": []
-    },
-    {
-      "name": "Asantewaa Yamoah",
-      "profile_url": "https://www.med.unc.edu/psych/people/asantewaa-yamoah/",
-      "department": "Psychiatry",
-      "role": "Child-Adolescent-Psychiatry",
-      "departments": [
-        "Psychiatry"
-      ],
-      "pubmed_search": "Yamoah A",
-      "pubmed_count": 1,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
-      "publications": [],
       "nih_grants": []
     },
     {
@@ -52608,7 +52481,7 @@
       "name": "Hollins Clark",
       "profile_url": "https://www.med.unc.edu/obgyn/people/hollins-clark-md/",
       "department": "Obstetrics & Gynecology",
-      "role": "Placenta-Accreta-Staff",
+      "role": "",
       "departments": [
         "Obstetrics & Gynecology"
       ],
@@ -53387,21 +53260,6 @@
       "nih_grants": []
     },
     {
-      "name": "Lyn Filip",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/lyn-filip-rn-bsn-ocn/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Department-Of-Obstetrics-And-Gynecology",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ],
-      "pubmed_search": "Filip Lyn",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
       "name": "Kristin Tully",
       "profile_url": "https://www.med.unc.edu/obgyn/people/kristin-tully/",
       "department": "Obstetrics & Gynecology",
@@ -53873,6 +53731,21 @@
           "year": "2026"
         }
       ],
+      "nih_grants": []
+    },
+    {
+      "name": "Antonia Decker",
+      "profile_url": "https://www.med.unc.edu/obgyn/people/antonia-decker/",
+      "department": "Obstetrics & Gynecology",
+      "role": "Department-Clinical-Providers",
+      "departments": [
+        "Obstetrics & Gynecology"
+      ],
+      "pubmed_search": "Decker A",
+      "pubmed_count": 2,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -56619,52 +56492,6 @@
       "nih_grants": []
     },
     {
-      "name": "Emily Hardisty",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/emily-hardisty/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Department-Clinical-Providers",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ],
-      "pubmed_search": "ComputedAuthors:Hardisty E",
-      "pubmed_count": 31,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42248756",
-          "title": "Prenatal Diagnosis and Novel Therapeutics in Treatment of Genetic Conditions: Challenges and Opportunities.",
-          "journal": "Clin Ther",
-          "year": "2026"
-        },
-        {
-          "pmid": "39666984",
-          "title": "Pregnancy in People With Cystic Fibrosis Treated With Highly Effective Modulator Therapy.",
-          "journal": "Obstet Gynecol",
-          "year": "2025"
-        },
-        {
-          "pmid": "39389935",
-          "title": "Novel Missense Variant in the SMARCD1 Gene as the Cause of Coffin-Siris Syndrome 11 in a Fetus With Ambiguous Genitalia and Multiple Dysmorphic Features.",
-          "journal": "Prenat Diagn",
-          "year": "2024"
-        },
-        {
-          "pmid": "36690925",
-          "title": "Diagnostic yield and psychological outcomes among women pursuing trio-exome sequencing: Do women with recurrent anomalous fetal phenotypes experience more negative psychological outcomes?",
-          "journal": "Prenat Diagn",
-          "year": "2023"
-        },
-        {
-          "pmid": "36588184",
-          "title": "Understanding the experiences and perspectives of prenatal screening among a diverse cohort.",
-          "journal": "Prenat Diagn",
-          "year": "2023"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "William Goodnight",
       "profile_url": "https://www.med.unc.edu/obgyn/people/william-goodnight/",
       "department": "Obstetrics & Gynecology",
@@ -57602,49 +57429,18 @@
       "nih_grants": []
     },
     {
-      "name": "Samah Ali",
-      "profile_url": "https://www.med.unc.edu/pathology/directory/samah-ali-mbbs/",
+      "name": "Parisa Amirifar",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/parisa-amirifar-phd/",
       "department": "Pathology & Laboratory Medicine",
       "role": "",
       "departments": [
         "Pathology & Laboratory Medicine"
       ],
-      "pubmed_search": "Ali S",
-      "pubmed_count": 23,
-      "pubmed_verified": 5,
+      "pubmed_search": "Amirifar Parisa",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
       "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42348368",
-          "title": "\"This Program has Given Me the Proper Nutrition that I Deserve\": Participant Perspective on a Medically Tailored Meal Intervention.",
-          "journal": "J Prim Care Community Health",
-          "year": "2026"
-        },
-        {
-          "pmid": "41919373",
-          "title": "Designing Medically Tailored Meal Interventions: The Food as Medicine for Families (FAME-F) Factorial Randomized Clinical Trial.",
-          "journal": "Circ Popul Health Outcomes",
-          "year": "2026"
-        },
-        {
-          "pmid": "41802939",
-          "title": "Driving Time and Single-Visit Long-Acting Reversible Contraception Provision in North Carolina.",
-          "journal": "N C Med J",
-          "year": "2025"
-        },
-        {
-          "pmid": "40014313",
-          "title": "Medicaid Spending and Health-Related Social Needs in the North Carolina Healthy Opportunities Pilots Program.",
-          "journal": "JAMA",
-          "year": "2025"
-        },
-        {
-          "pmid": "37986166",
-          "title": "TNF- &#x3b1; from the Proximal Nephron Exacerbates Aristolochic Acid Nephropathy.",
-          "journal": "Kidney360",
-          "year": "2024"
-        }
-      ],
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -57931,40 +57727,6 @@
       ],
       "nih_grants": [],
       "pubmed_recent_recruit": true
-    },
-    {
-      "name": "Surekha Bantumilli",
-      "profile_url": "https://www.med.unc.edu/pathology/directory/surekha-bantumilli-md/",
-      "department": "Pathology & Laboratory Medicine",
-      "role": "",
-      "departments": [
-        "Pathology & Laboratory Medicine"
-      ],
-      "pubmed_search": "ORCID:0000-0002-3213-6688",
-      "pubmed_count": 3,
-      "pubmed_verified": 3,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41933232",
-          "title": "The double threat: imaging manifestations of thoracic sarcoidosis with miliary nodules and myocardial involvement with radiologic-pathologic correlation.",
-          "journal": "Int J Cardiovasc Imaging",
-          "year": "2026"
-        },
-        {
-          "pmid": "39328930",
-          "title": "Vulvar Lymphangioma Arising in the Setting of May-Thurner Syndrome.",
-          "journal": "Case Rep Vasc Med",
-          "year": "2024"
-        },
-        {
-          "pmid": "35929756",
-          "title": "A case of osteoclastic variant of anaplastic thyroid carcinoma: Diagnostic and prognostic marker studies by cytology.",
-          "journal": "Diagn Cytopathol",
-          "year": "2022"
-        }
-      ],
-      "nih_grants": []
     },
     {
       "name": "Janet Baranello",
@@ -58318,6 +58080,21 @@
       "nih_grants": []
     },
     {
+      "name": "Megan Check",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/megan-check-phd/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ],
+      "pubmed_search": "Check Megan",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
       "name": "Benjamin Cho",
       "profile_url": "https://www.med.unc.edu/pathology/directory/benjamin-cho-md/",
       "department": "Pathology & Laboratory Medicine",
@@ -58399,6 +58176,52 @@
       "pubmed_recent_recruit": true
     },
     {
+      "name": "Alyssa Cozzo",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/alyssa-cozzo-md/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ],
+      "pubmed_search": "ORCID:0000-0001-6690-4748",
+      "pubmed_count": 7,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40231562",
+          "title": "Weight Loss Reverses the Effects of Aging and Obesity on Mammary Tumor Immunosuppression and Progression.",
+          "journal": "Cancer Prev Res (Phila)",
+          "year": "2025"
+        },
+        {
+          "pmid": "38786030",
+          "title": "Exogenous Metabolic Modulators Improve Response to Carboplatin in Triple-Negative Breast Cancer.",
+          "journal": "Cells",
+          "year": "2024"
+        },
+        {
+          "pmid": "37427108",
+          "title": "You complete me: tumor cell-myeloid cell nuclear fusion as a facilitator of organ-specific metastasis.",
+          "journal": "Front Oncol",
+          "year": "2023"
+        },
+        {
+          "pmid": "36686775",
+          "title": "Separate and combined effects of advanced age and obesity on mammary adipose inflammation, immunosuppression and tumor progression in mouse models of triple negative breast cancer.",
+          "journal": "Front Oncol",
+          "year": "2022"
+        },
+        {
+          "pmid": "33224954",
+          "title": "Dietary Energy Modulation and Autophagy: Exploiting Metabolic Vulnerabilities to Starve Cancer.",
+          "journal": "Front Cell Dev Biol",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
       "name": "Shelby Currier",
       "profile_url": "https://www.med.unc.edu/pathology/directory/shelby-currier-paascp/",
       "department": "Pathology & Laboratory Medicine",
@@ -58441,6 +58264,21 @@
       ],
       "nih_grants": [],
       "pubmed_recent_recruit": true
+    },
+    {
+      "name": "Sarah Davidson",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/sarah-davidson-md/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ],
+      "pubmed_search": "Davidson S",
+      "pubmed_count": 4,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
     },
     {
       "name": "Georgette A. Dent",
@@ -58508,6 +58346,21 @@
           "year": "2022"
         }
       ],
+      "nih_grants": []
+    },
+    {
+      "name": "Masoud Edalati",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/masoud-edalati-md/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ],
+      "pubmed_search": "Edalati Masoud",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -58685,6 +58538,21 @@
         "Pathology & Laboratory Medicine"
       ],
       "pubmed_search": "Feudale Jessie",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Helen Files",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/helen-files-md/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ],
+      "pubmed_search": "Files Helen",
       "pubmed_count": 0,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
@@ -58918,21 +58786,6 @@
           "year": "2017"
         }
       ],
-      "nih_grants": []
-    },
-    {
-      "name": "Felix Medrano Garcia",
-      "profile_url": "https://www.med.unc.edu/pathology/directory/felix-medrano-garcia-md/",
-      "department": "Pathology & Laboratory Medicine",
-      "role": "",
-      "departments": [
-        "Pathology & Laboratory Medicine"
-      ],
-      "pubmed_search": "Garcia F",
-      "pubmed_count": 1,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
-      "publications": [],
       "nih_grants": []
     },
     {
@@ -59288,6 +59141,21 @@
       "pubmed_count": 0,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Isabella Holmes",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/isabella-holmes-do/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ],
+      "pubmed_search": "Holmes I",
+      "pubmed_count": 3,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
       "publications": [],
       "nih_grants": []
     },
@@ -60116,6 +59984,21 @@
       "nih_grants": []
     },
     {
+      "name": "Jessica Lavergne",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/jessica-lavergne-md/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ],
+      "pubmed_search": "Lavergne Jessica",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
       "name": "Nalin Leelatian",
       "profile_url": "https://www.med.unc.edu/pathology/directory/nalin-leelatian-md-phd/",
       "department": "Pathology & Laboratory Medicine",
@@ -60379,17 +60262,17 @@
       "nih_grants": []
     },
     {
-      "name": "Joseph Maniaci",
-      "profile_url": "https://www.med.unc.edu/pathology/directory/joseph-maniaci/",
+      "name": "Stephen Markwalter",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/stephen-markwalter/",
       "department": "Pathology & Laboratory Medicine",
       "role": "",
       "departments": [
         "Pathology & Laboratory Medicine"
       ],
-      "pubmed_search": "Maniaci J",
-      "pubmed_count": 1,
+      "pubmed_search": "Markwalter Stephen",
+      "pubmed_count": 0,
       "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
+      "pubmed_ambiguous": false,
       "publications": [],
       "nih_grants": []
     },
@@ -61001,6 +60884,21 @@
       "nih_grants": []
     },
     {
+      "name": "Karson Pettit",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/karson-pettit-md/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ],
+      "pubmed_search": "Pettit K",
+      "pubmed_count": 4,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
       "name": "Andre Phelan",
       "profile_url": "https://www.med.unc.edu/pathology/directory/aphelan/",
       "department": "Pathology & Laboratory Medicine",
@@ -61012,6 +60910,21 @@
       "pubmed_count": 3,
       "pubmed_verified": 0,
       "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Trevor Phelps",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/trevor-phelps-md/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ],
+      "pubmed_search": "Phelps Trevor",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
       "publications": [],
       "nih_grants": []
     },
@@ -61706,6 +61619,21 @@
       "nih_grants": []
     },
     {
+      "name": "Christian Spieldenner",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/christian-spieldenner-md/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ],
+      "pubmed_search": "Spieldenner Christian",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
       "name": "Haley St. John",
       "profile_url": "https://www.med.unc.edu/pathology/directory/haley-st-john/",
       "department": "Pathology & Laboratory Medicine",
@@ -61849,40 +61777,6 @@
       "pubmed_recent_recruit": true
     },
     {
-      "name": "Haley Taylor",
-      "profile_url": "https://www.med.unc.edu/pathology/directory/haley-taylor-md/",
-      "department": "Pathology & Laboratory Medicine",
-      "role": "",
-      "departments": [
-        "Pathology & Laboratory Medicine"
-      ],
-      "pubmed_search": "ComputedAuthors:Taylor H",
-      "pubmed_count": 3,
-      "pubmed_verified": 3,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42248450",
-          "title": "Conserved Residues in the G&#x3b1; interface show subtype specificity in G&#x3b2;&#x3b3; coupling.",
-          "journal": "J Biol Chem",
-          "year": "2026"
-        },
-        {
-          "pmid": "42058131",
-          "title": "An unforgiving sequela: recurrent radiation-associated sarcoma of the vulva.",
-          "journal": "Gynecol Oncol Rep",
-          "year": "2026"
-        },
-        {
-          "pmid": "41659539",
-          "title": "Conserved Residues in the G&#x3b1; interface show subtype specificity in G&#x3b2;&#x3b3; coupling.",
-          "journal": "bioRxiv",
-          "year": "2026"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "Joan Taylor",
       "profile_url": "https://www.med.unc.edu/pathology/directory/taylorjm/",
       "department": "Pathology & Laboratory Medicine",
@@ -61924,6 +61818,52 @@
           "title": "\"It's not just HIV anymore\": A qualitative exploration of health, research, community and mental health priorities of long-term survivors of HIV in the United States.",
           "journal": "AIDS Care",
           "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Leigh Thorne",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/lthorne/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ],
+      "pubmed_count": 68,
+      "pubmed_search": "ComputedAuthors:Thorne Leigh",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "35857635",
+          "title": "SARS-CoV-2 infection produces chronic pulmonary epithelial and immune cell dysfunction with fibrosis in mice.",
+          "journal": "Sci Transl Med",
+          "year": "2022"
+        },
+        {
+          "pmid": "35816430",
+          "title": "Prevalence and Mechanisms of Mucus Accumulation in COVID-19 Lung Disease.",
+          "journal": "Am J Respir Crit Care Med",
+          "year": "2022"
+        },
+        {
+          "pmid": "35217407",
+          "title": "Protease-anti-protease compartmentalization in SARS-CoV-2 ARDS: Therapeutic implications.",
+          "journal": "EBioMedicine",
+          "year": "2022"
+        },
+        {
+          "pmid": "35129287",
+          "title": "Plastic bronchitis: Autopsy findings in the sudden death of a healthy pediatric patient with sickle cell disease.",
+          "journal": "Pediatr Blood Cancer",
+          "year": "2022"
+        },
+        {
+          "pmid": "34179214",
+          "title": "Fatal Pediatric COVID-19 Case With Seizures and Fulminant Cerebral Edema.",
+          "journal": "Child Neurol Open",
+          "year": "2021"
         }
       ],
       "nih_grants": []
@@ -62034,34 +61974,6 @@
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
       "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Vorapat Vorapanya",
-      "profile_url": "https://www.med.unc.edu/pathology/directory/pat-vorapanya/",
-      "department": "Pathology & Laboratory Medicine",
-      "role": "",
-      "departments": [
-        "Pathology & Laboratory Medicine"
-      ],
-      "pubmed_search": "ComputedAuthors:Vorapanya Vorapat",
-      "pubmed_count": 2,
-      "pubmed_verified": 2,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "39712301",
-          "title": "Development of a remote implementation support strategy to enhance integration of depression treatment into primary care settings in rural India.",
-          "journal": "Front Public Health",
-          "year": "2024"
-        },
-        {
-          "pmid": "37904491",
-          "title": "ESSENCE: An Implementation Research Program to Scale Up Depression Care in Rural Communities.",
-          "journal": "Psychiatr Serv",
-          "year": "2024"
-        }
-      ],
       "nih_grants": []
     },
     {
@@ -62181,6 +62093,34 @@
           "title": "Recommendations for Clinical CYP2C19 Genotyping Allele Selection: A Report of the Association for Molecular Pathology.",
           "journal": "J Mol Diagn",
           "year": "2018"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Susan Weiss",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/susanmw/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ],
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Weiss Susan",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "36480499",
+          "title": "Evaluation of a COVID-19 convalescent plasma program at a U.S. academic medical center.",
+          "journal": "PLoS One",
+          "year": "2022"
+        },
+        {
+          "pmid": "32924007",
+          "title": "Cold agglutinin syndrome as a complication of Covid-19 in two cases.",
+          "journal": "Clin Infect Pract",
+          "year": "2020"
         }
       ],
       "nih_grants": []
@@ -62377,29 +62317,6 @@
         }
       ],
       "nih_grants": []
-    },
-    {
-      "name": "John Willis Jr",
-      "profile_url": "https://www.med.unc.edu/pathology/directory/john-willis-jr-md/",
-      "department": "Pathology & Laboratory Medicine",
-      "role": "",
-      "departments": [
-        "Pathology & Laboratory Medicine"
-      ],
-      "pubmed_search": "JR J",
-      "pubmed_count": 1,
-      "pubmed_verified": 1,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "33377673",
-          "title": "[Simultaneous laparoscopic bilateral nephrectomy as a preparation for kidney transplantation in patients with autosomal dominant polycystic kidney disease].",
-          "journal": "Urologiia",
-          "year": "2020"
-        }
-      ],
-      "nih_grants": [],
-      "pubmed_recent_recruit": true
     },
     {
       "name": "Sally Willoughby",
@@ -63038,21 +62955,6 @@
       "nih_grants": []
     },
     {
-      "name": "Specialty Procedures",
-      "profile_url": "",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ],
-      "pubmed_search": "Procedures Specialty",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
       "name": "Jean L. Wright",
       "profile_url": "https://www.med.unc.edu/radonc/directory/jean-wright/",
       "department": "Radiation Oncology",
@@ -63235,98 +63137,6 @@
           "title": "Providing Nicotine Replacement Therapy in Focus Groups.",
           "journal": "Nicotine Tob Res",
           "year": "2018"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Michael Repka",
-      "profile_url": "https://www.med.unc.edu/radonc/directory/michael-repka/",
-      "department": "Radiation Oncology",
-      "role": "",
-      "departments": [
-        "Radiation Oncology"
-      ],
-      "pubmed_search": "ComputedAuthors:Repka M",
-      "pubmed_count": 31,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "39263446",
-          "title": "Hippocampal-Sparing Radiation Therapy in Primary Sinonasal and Cutaneous Tumors of the Head and Neck.",
-          "journal": "Adv Radiat Oncol",
-          "year": "2024"
-        },
-        {
-          "pmid": "39131874",
-          "title": "Factors Influencing Patient Decision-Making in the Treatment of Muscle-Invasive Bladder Cancer.",
-          "journal": "Bladder Cancer",
-          "year": "2024"
-        },
-        {
-          "pmid": "39113632",
-          "title": "Poor Prognosis among Radiation-Associated Bladder Cancer Is Defined by Clinicogenomic Features.",
-          "journal": "Cancer Res Commun",
-          "year": "2024"
-        },
-        {
-          "pmid": "38636587",
-          "title": "Target Delineation in Postoperative Radiation Therapy for Head and Neck Cancer After Flap Reconstruction.",
-          "journal": "Pract Radiat Oncol",
-          "year": "2024"
-        },
-        {
-          "pmid": "38585005",
-          "title": "Prognostic utility of biopsy-based PTEN and ERG status on biochemical progression and overall survival after SBRT for localized prostate cancer.",
-          "journal": "Front Oncol",
-          "year": "2024"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Trevor Royce",
-      "profile_url": "https://www.med.unc.edu/radonc/directory/trevor-royce/",
-      "department": "Radiation Oncology",
-      "role": "",
-      "departments": [
-        "Radiation Oncology"
-      ],
-      "pubmed_search": "ComputedAuthors:Royce T",
-      "pubmed_count": 127,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41671529",
-          "title": "Development and Validation of a Computational Histology Artificial Intelligence-Powered Predictive Biomarker for Selection of Chemotherapy in Advanced Pancreatic Cancer.",
-          "journal": "J Clin Oncol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41506597",
-          "title": "Electron Field Shaping with a Three-dimensional-printed, Tungsten-infused Multileaf Collimator: A Practical, Low-cost, Reusable, and Customizable Alternative to Traditional Cutouts.",
-          "journal": "Pract Radiat Oncol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41253707",
-          "title": "NTCP model guided whole brain radiation re-planning to reduce risk of acute xerostomia and dry eye.",
-          "journal": "J Appl Clin Med Phys",
-          "year": "2025"
-        },
-        {
-          "pmid": "41237352",
-          "title": "RadOncRAG: A Novel Retrieval-Augmented Generation Framework Improves Large Language Model Benchmark Performance in Radiation Oncology.",
-          "journal": "JCO Clin Cancer Inform",
-          "year": "2025"
-        },
-        {
-          "pmid": "40998484",
-          "title": "In Reply to Chen.",
-          "journal": "Int J Radiat Oncol Biol Phys",
-          "year": "2025"
         }
       ],
       "nih_grants": []
@@ -64093,6 +63903,40 @@
       "nih_grants": []
     },
     {
+      "name": "Brian Barrick",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/brian-barrick/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ],
+      "pubmed_count": 7,
+      "pubmed_search": "ComputedAuthors:Barrick Brian",
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "30550470",
+          "title": "Total Intravenous Anesthetic Versus Inhaled Anesthetic: Pick Your Poison.",
+          "journal": "Anesth Analg",
+          "year": "2019"
+        },
+        {
+          "pmid": "29126684",
+          "title": "A Tale of Three Surgeries: Management of a Massive Recurrent Mycotic Aortic Pseudoaneurysm.",
+          "journal": "J Cardiothorac Vasc Anesth",
+          "year": "2018"
+        },
+        {
+          "pmid": "26142364",
+          "title": "Aortic Valve Thrombus in a Patient With an Extracorporeal Left Ventricular Assist Device: The Dilemma of Management.",
+          "journal": "J Cardiothorac Vasc Anesth",
+          "year": "2016"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
       "name": "Meena Bhatia",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/meena-bhatia/",
       "department": "Anesthesiology",
@@ -64320,52 +64164,6 @@
           "title": "Family Comes First: A Pilot Study of the Incorporation of Social Support Into Resident Well-being.",
           "journal": "J Educ Perioper Med",
           "year": "2020"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Fei Chen",
-      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/fei-chen/",
-      "department": "Anesthesiology",
-      "role": "",
-      "departments": [
-        "Anesthesiology"
-      ],
-      "pubmed_search": "ComputedAuthors:Chen F",
-      "pubmed_count": 63,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41982264",
-          "title": "A Comparative Analysis of Human and AI-Augmented Feedback in Anesthesiology Education.",
-          "journal": "J Educ Perioper Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "41962000",
-          "title": "Educating Anesthesiology Residents and Their Support Persons to Improve Understanding and Increase Wellness: A Multisite Study.",
-          "journal": "Anesth Analg",
-          "year": "2026"
-        },
-        {
-          "pmid": "41650300",
-          "title": "Professionalism Perceptions: A Comparison of Anesthesiology Trainees and Attendings.",
-          "journal": "Anesthesiology",
-          "year": "2026"
-        },
-        {
-          "pmid": "41637743",
-          "title": "Evaluating Perspectives on Empathy in Anesthesiology Trainees: A Mixed-Methods Study of Pre-Anesthesia Encounters.",
-          "journal": "Anesth Analg",
-          "year": "2026"
-        },
-        {
-          "pmid": "41637742",
-          "title": "National Study of Milestone Evaluation Differences by Gender and Race in Anesthesiology Residency Training.",
-          "journal": "Anesth Analg",
-          "year": "2026"
         }
       ],
       "nih_grants": []
@@ -64974,6 +64772,34 @@
       "nih_grants": []
     },
     {
+      "name": "Michael Gonzalez",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/michael-gonzalez/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ],
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Gonzalez Michael",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39287968",
+          "title": "Heart under Pressure: Intrathoracic Impact of Large Hiatal Hernia.",
+          "journal": "Anesthesiology",
+          "year": "2024"
+        },
+        {
+          "pmid": "36458106",
+          "title": "Quality of Recovery After Rotator Cuff Repair With Interscalene Liposomal Bupivacaine Versus Interscalene Nerve Catheter.",
+          "journal": "Orthop J Sports Med",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
       "name": "Samantha Gottlieb",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/samantha-gottlieb/",
       "department": "Anesthesiology",
@@ -65494,21 +65320,6 @@
       "nih_grants": []
     },
     {
-      "name": "Hannah Jennings-Davis",
-      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/hannah-jennings-davis/",
-      "department": "Anesthesiology",
-      "role": "",
-      "departments": [
-        "Anesthesiology"
-      ],
-      "pubmed_search": "Jennings-Davis Hannah",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
       "name": "Samiat Jinadu",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/samiat-jinadu/",
       "department": "Anesthesiology",
@@ -65792,6 +65603,21 @@
       "nih_grants": []
     },
     {
+      "name": "Alexander Levine",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/alexander-levine/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ],
+      "pubmed_search": "Levine A",
+      "pubmed_count": 5,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
       "name": "Sarah Linnstaedt",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/sarah-linnstaedt/",
       "department": "Anesthesiology",
@@ -65943,6 +65769,21 @@
           "year": "2012"
         }
       ],
+      "nih_grants": []
+    },
+    {
+      "name": "Herman Luther",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/herman-luther/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ],
+      "pubmed_search": "Luther Herman",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -66353,6 +66194,21 @@
       "nih_grants": []
     },
     {
+      "name": "Al Melvin",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/al-melvin/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ],
+      "pubmed_search": "Melvin A",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
       "name": "Maya Mendelaw",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/maya-mendelaw/",
       "department": "Anesthesiology",
@@ -66514,21 +66370,6 @@
       "pubmed_count": 1,
       "pubmed_verified": 0,
       "pubmed_ambiguous": true,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Millicent Olawale",
-      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/millicent-olawale/",
-      "department": "Anesthesiology",
-      "role": "",
-      "departments": [
-        "Anesthesiology"
-      ],
-      "pubmed_search": "Olawale Millicent",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
       "publications": [],
       "nih_grants": []
     },
@@ -66736,6 +66577,46 @@
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
       "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Sara Pittenger",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/sara-pittenger/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ],
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Pittenger Sara",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41368426",
+          "title": "Senning procedure in a 4-month-old child with atrioventricular discordance and ventriculoarterial concordance.",
+          "journal": "JTCVS Tech",
+          "year": "2025"
+        },
+        {
+          "pmid": "40827799",
+          "title": "Developing Comprehensive Nil Per Os Guidelines for the Pediatric Anesthesiologist in 2025.",
+          "journal": "A A Pract",
+          "year": "2025"
+        },
+        {
+          "pmid": "31784102",
+          "title": "Implementation of a pediatric enhanced recovery pathway decreases opioid utilization and shortens time to full feeding.",
+          "journal": "J Pediatr Surg",
+          "year": "2020"
+        },
+        {
+          "pmid": "25565076",
+          "title": "High-dose dexmedetomidine for noninvasive pediatric procedural sedation and discharge readiness.",
+          "journal": "Paediatr Anaesth",
+          "year": "2015"
+        }
+      ],
       "nih_grants": []
     },
     {
@@ -67220,46 +67101,6 @@
       "pubmed_recent_recruit": true
     },
     {
-      "name": "Sally Stander",
-      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/sally-stander/",
-      "department": "Anesthesiology",
-      "role": "",
-      "departments": [
-        "Anesthesiology"
-      ],
-      "pubmed_search": "ComputedAuthors:Stander S",
-      "pubmed_count": 4,
-      "pubmed_verified": 4,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "35680176",
-          "title": "Single-pass needle trajectory for lateral femoral cutaneous nerve and PENG blocks, and caution to avoid injury.",
-          "journal": "Reg Anesth Pain Med",
-          "year": "2022"
-        },
-        {
-          "pmid": "35594724",
-          "title": "Flexor digitorum plane block: A novel approach to median and ulnar nerve blockade.",
-          "journal": "J Clin Anesth",
-          "year": "2022"
-        },
-        {
-          "pmid": "35248937",
-          "title": "The road not taken: An investigation of injectate spread between the thoracic paravertebral space and the quadratus lumborum.",
-          "journal": "J Clin Anesth",
-          "year": "2022"
-        },
-        {
-          "pmid": "22301381",
-          "title": "Acute-onset dyspnea and superior vena cava syndrome during dialysis.",
-          "journal": "J Cardiothorac Vasc Anesth",
-          "year": "2012"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "Marjorie Stiegler",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/marjorie-stiegler/",
       "department": "Anesthesiology",
@@ -67373,6 +67214,52 @@
           "title": "Intrathecal dexmedetomidine for cesarean delivery and postoperative outcomes: a single-center retrospective cohort study (2019-2020).",
           "journal": "Int J Obstet Anesth",
           "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Emily Teeter",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/emily-teeter/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ],
+      "pubmed_count": 10,
+      "pubmed_search": "ComputedAuthors:Teeter Emily",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41846213",
+          "title": "Enhanced Recovery After Cardiac Surgery: Society of Cardiovascular Anesthesiologists (SCA) and American Society of Anesthesiologists (ASA) Membership Survey.",
+          "journal": "J Cardiothorac Vasc Anesth",
+          "year": "2026"
+        },
+        {
+          "pmid": "37802689",
+          "title": "The Year in Thoracic Anesthesia: Selected Highlights from 2022.",
+          "journal": "J Cardiothorac Vasc Anesth",
+          "year": "2024"
+        },
+        {
+          "pmid": "37788388",
+          "title": "Development and Publication of Clinical Practice Parameters, Reviews, and Meta-analyses: A Report From the Society of Cardiovascular Anesthesiologists Presidential Task Force.",
+          "journal": "Anesth Analg",
+          "year": "2024"
+        },
+        {
+          "pmid": "36220681",
+          "title": "The Year in Thoracic Anesthesia: Selected Highlights From 2021.",
+          "journal": "J Cardiothorac Vasc Anesth",
+          "year": "2022"
+        },
+        {
+          "pmid": "34053812",
+          "title": "The Year in Thoracic Anesthesia: Selected Highlights From 2020.",
+          "journal": "J Cardiothorac Vasc Anesth",
+          "year": "2021"
         }
       ],
       "nih_grants": []
@@ -74353,6 +74240,40 @@
       "nih_grants": []
     },
     {
+      "name": "Amelia F. Drake",
+      "profile_url": "https://www.med.unc.edu/ent/directory/amelia-f-drake-md-facs/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pubmed_search": "ComputedAuthors:Drake A",
+      "pubmed_count": 3,
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40827055",
+          "title": "The Role of Surgical Timing and Distance Traveled for Care for Patients Born With Cleft Palate.",
+          "journal": "Cleft Palate Craniofac J",
+          "year": "2026"
+        },
+        {
+          "pmid": "38197022",
+          "title": "Effects of 3D Airway Geometry on the Airflow of Adults with Cleft Lip and Palate and Obstructive Sleep Apnea: A Functional Imaging Study.",
+          "journal": "Sleep Sci",
+          "year": "2023"
+        },
+        {
+          "pmid": "9066286",
+          "title": "Equilibrium, kinetics, diffusion and self-association of proteins at membrane surfaces: measurement by total internal reflection fluorescence microscopy.",
+          "journal": "Photochem Photobiol",
+          "year": "1997"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
       "name": "Carlton J. Zdanski",
       "profile_url": "https://www.med.unc.edu/ent/directory/carlton-j-zdanski-md-facs/",
       "department": "Otolaryngology / Head & Neck Surgery",
@@ -74394,40 +74315,6 @@
           "title": "A Rare Case of Severe Burn Injury to the Oropharynx Caused by a Flare Gun.",
           "journal": "Ann Burns Fire Disasters",
           "year": "2023"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Amelia F. Drake",
-      "profile_url": "https://www.med.unc.edu/ent/directory/amelia-f-drake-md-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pubmed_search": "ComputedAuthors:Drake A",
-      "pubmed_count": 3,
-      "pubmed_verified": 3,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "40827055",
-          "title": "The Role of Surgical Timing and Distance Traveled for Care for Patients Born With Cleft Palate.",
-          "journal": "Cleft Palate Craniofac J",
-          "year": "2026"
-        },
-        {
-          "pmid": "38197022",
-          "title": "Effects of 3D Airway Geometry on the Airflow of Adults with Cleft Lip and Palate and Obstructive Sleep Apnea: A Functional Imaging Study.",
-          "journal": "Sleep Sci",
-          "year": "2023"
-        },
-        {
-          "pmid": "9066286",
-          "title": "Equilibrium, kinetics, diffusion and self-association of proteins at membrane surfaces: measurement by total internal reflection fluorescence microscopy.",
-          "journal": "Photochem Photobiol",
-          "year": "1997"
         }
       ],
       "nih_grants": []
@@ -75147,6 +75034,53 @@
       "nih_grants": []
     },
     {
+      "name": "Nicholas J. Thompson",
+      "profile_url": "https://www.med.unc.edu/ent/directory/nicholas-thompson-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/nicholas.thompson.1/bibliography/public",
+      "pubmed_search": "MyNCBI:nicholas.thompson.1",
+      "pubmed_count": 33,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39666742",
+          "title": "Cochlear Implantation With Sporadic Inner Ear Schwannomas: Outcomes in 106 Patients From an International Multi-Institutional Study.",
+          "journal": "Otol Neurotol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39951662",
+          "title": "Effects of Insertion Depth and Modiolar Proximity on Cochlear Implant Speech Recognition Outcomes With a Precurved Electrode Array.",
+          "journal": "Otol Neurotol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39514427",
+          "title": "Comparing Cochlear Implant Outcomes in 100 Patients With Sporadic Vestibular Schwannoma Managed With Observation, Radiosurgery, or Microsurgery: A Multi-Institutional Review.",
+          "journal": "Otol Neurotol",
+          "year": "2024"
+        },
+        {
+          "pmid": "39206702",
+          "title": "Benefits of Cochlear Implantation for Older Adults With Asymmetric Hearing Loss.",
+          "journal": "Laryngoscope",
+          "year": "2025"
+        },
+        {
+          "pmid": "39165094",
+          "title": "Speech Recognition and Subjective Hearing Abilities for Electric-Acoustic Stimulation Users With Unilateral Hearing Loss.",
+          "journal": "Otol Neurotol",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
       "name": "Tram Tran",
       "profile_url": "https://www.med.unc.edu/ent/directory/bao-tram-tran-fnp/",
       "department": "Otolaryngology / Head & Neck Surgery",
@@ -75723,21 +75657,6 @@
       ],
       "nih_grants": [],
       "pubmed_recent_recruit": true
-    },
-    {
-      "name": "Kyra Dorgeloh",
-      "profile_url": "https://www.med.unc.edu/ophth/directory/kyra-dorgeloh-od-faao/",
-      "department": "Ophthalmology",
-      "role": "",
-      "departments": [
-        "Ophthalmology"
-      ],
-      "pubmed_search": "Dorgeloh Kyra",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
     },
     {
       "name": "David Fleischman",
@@ -76469,6 +76388,40 @@
       "nih_grants": []
     },
     {
+      "name": "Sophie Adams",
+      "profile_url": "https://www.med.unc.edu/urology/directory/sophie-adams/",
+      "department": "Urology",
+      "role": "",
+      "departments": [
+        "Urology"
+      ],
+      "pubmed_search": "Adams S",
+      "pubmed_count": 11,
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39286616",
+          "title": "TNF Promoter Hypomethylation Is Associated With Mucosal Inflammation in IBD and Anti-TNF Response.",
+          "journal": "Gastro Hep Adv",
+          "year": "2024"
+        },
+        {
+          "pmid": "34932961",
+          "title": "Transforming a neural circuit to function without oxygen and glucose delivery.",
+          "journal": "Curr Biol",
+          "year": "2021"
+        },
+        {
+          "pmid": "33175586",
+          "title": "Neuromodulation or energy failure? Metabolic limitations silence network output in the hypoxic amphibian brainstem.",
+          "journal": "Am J Physiol Regul Integr Comp Physiol",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
       "name": "Hans Arora",
       "profile_url": "https://www.med.unc.edu/urology/directory/hans-arora/",
       "department": "Urology",
@@ -76892,21 +76845,6 @@
       "nih_grants": []
     },
     {
-      "name": "Kathryn Harrawood",
-      "profile_url": "https://www.med.unc.edu/urology/directory/kathryn-harrawood/",
-      "department": "Urology",
-      "role": "",
-      "departments": [
-        "Urology"
-      ],
-      "pubmed_search": "Harrawood Kathryn",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
       "name": "David Johnson",
       "profile_url": "https://www.med.unc.edu/urology/directory/david-johnson/",
       "department": "Urology",
@@ -76932,6 +76870,21 @@
           "year": "2023"
         }
       ],
+      "nih_grants": []
+    },
+    {
+      "name": "Elizabeth Kwenda",
+      "profile_url": "https://www.med.unc.edu/urology/directory/elizabeth-kwenda/",
+      "department": "Urology",
+      "role": "",
+      "departments": [
+        "Urology"
+      ],
+      "pubmed_search": "Kwenda Elizabeth",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -77571,94 +77524,71 @@
       "nih_grants": []
     },
     {
-      "name": "John Michael Baratta",
-      "profile_url": "https://www.med.unc.edu/phyrehab/directory/johnmichael-baratta/",
+      "name": "Jessica Barnhill",
+      "profile_url": "https://www.med.unc.edu/phyrehab/directory/jbarnhil/",
       "department": "Physical Medicine & Rehabilitation",
       "role": "",
       "departments": [
         "Physical Medicine & Rehabilitation"
       ],
-      "pubmed_search": "ComputedAuthors:Baratta JM",
-      "pubmed_count": 17,
+      "pubmed_hint": "Jessica Barnhill",
+      "pubmed_count": 16,
+      "pubmed_search": "ComputedAuthors:Barnhill Jessica",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "41554396",
-          "title": "Characterization of Lower Extremity Pain in Ambulatory Individuals After Stroke.",
-          "journal": "Arch Phys Med Rehabil",
+          "pmid": "42371634",
+          "title": "Mindfulness-Based Group Medical Visits for Persons With Chronic Low Back Pain: A Randomized Clinical Trial.",
+          "journal": "JAMA Intern Med",
           "year": "2026"
         },
         {
-          "pmid": "41541086",
-          "title": "Empowering stroke survivors beyond inpatient rehabilitation: the STRIDE program.",
-          "journal": "Front Stroke",
-          "year": "2023"
+          "pmid": "41481603",
+          "title": "A protocol for using rapid qualitative techniques to incorporate multi-level stakeholder feedback in a pragmatic clinical trial of mindfulness for chronic low back pain.",
+          "journal": "PLoS One",
+          "year": "2026"
         },
         {
-          "pmid": "41357034",
-          "title": "Exploring the Effects of Pemivibart Monoclonal Antibody Infusion in Long COVID: A Case Series Offering Initial Clinical Insights.",
-          "journal": "Cureus",
+          "pmid": "40891220",
+          "title": "Prevalence of Chronic Overlapping Pain Conditions in Participants With Chronic Low Back Pain Enrolled in a Pragmatic Trial of Mindfulness-Based Stress Reduction.",
+          "journal": "Eur J Pain",
           "year": "2025"
         },
         {
-          "pmid": "40953059",
-          "title": "Effect of Paxlovid treatment during acute COVID-19 on Long COVID onset: An EHR-based target trial emulation from the N3C and RECOVER consortia.",
-          "journal": "PLoS Med",
+          "pmid": "40487859",
+          "title": "Increasing Equity Within Randomized Control Trials: A Qualitative Analysis of Focus Groups From a Multi-Site, Pragmatic Clinical Trial.",
+          "journal": "Glob Adv Integr Med Health",
           "year": "2025"
         },
         {
-          "pmid": "40858480",
-          "title": "Re-engineering a machine learning phenotype to adapt to the changing COVID-19 landscape: a machine learning modelling study from the N3C and RECOVER consortia.",
-          "journal": "Lancet Digit Health",
+          "pmid": "40162193",
+          "title": "The Hidden Complexity of Virtual Mindfulness-Based Group Medical Visits: Comfort, Challenge, and the Influence of Social Determinants of Health.",
+          "journal": "Glob Adv Integr Med Health",
           "year": "2025"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Karla Thompson",
-      "profile_url": "https://www.med.unc.edu/phyrehab/directory/karla-thompson/",
+      "name": "Kristopher Karvelas",
+      "profile_url": "https://www.med.unc.edu/phyrehab/directory/kristopher-karvelas/",
       "department": "Physical Medicine & Rehabilitation",
       "role": "",
       "departments": [
         "Physical Medicine & Rehabilitation"
       ],
-      "pubmed_hint": "Karla Thompson",
-      "pubmed_search": "ComputedAuthors:Thompson K",
-      "pubmed_count": 19,
-      "pubmed_verified": 5,
+      "pubmed_hint": "Kristopher Karvelas",
+      "pubmed_search": "Karvelas K",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "41817486",
-          "title": "Did Rural Emergency Hospital Converters Avoid Closure?",
-          "journal": "Ann Emerg Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "41603423",
-          "title": "Fixed-to-total cost ratio is predictive of rural hospital financial distress and closures.",
-          "journal": "J Rural Health",
-          "year": "2026"
-        },
-        {
-          "pmid": "41359417",
-          "title": "Acute Care Utilization in Medicaid Enrollees Differs by Patient Rurality, Race, and Ethnicity.",
-          "journal": "Med Care",
-          "year": "2026"
-        },
-        {
-          "pmid": "41199485",
-          "title": "The impact of the removal of the low-wage index hospital policy on urban and rural hospitals.",
-          "journal": "J Rural Health",
-          "year": "2025"
-        },
-        {
-          "pmid": "39731350",
-          "title": "Medicare Advantage and rural hospital profitability.",
-          "journal": "J Rural Health",
-          "year": "2025"
+          "pmid": "37828973",
+          "title": "Integrative medical group visits for patients with chronic pain: results of a pilot single-site hybrid implementation-effectiveness feasibility study.",
+          "journal": "Front Pain Res (Lausanne)",
+          "year": "2023"
         }
       ],
       "nih_grants": []
@@ -80788,52 +80718,6 @@
       "nih_grants": []
     },
     {
-      "name": "Frank Conlon",
-      "profile_url": "https://unclineberger.org/directory/frank-conlon/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_search": "ORCID:0000-0002-5027-0397",
-      "pubmed_count": 8,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "40270023",
-          "title": "Sex-specific response to A1BG loss results in female dilated cardiomyopathy.",
-          "journal": "Biol Sex Differ",
-          "year": "2025"
-        },
-        {
-          "pmid": "40799140",
-          "title": "TBX5 and CHD4 Coordinately Activate Atrial Cardiomyocyte Genes to Maintain Cardiac Rhythm Homeostasis.",
-          "journal": "Circulation",
-          "year": "2025"
-        },
-        {
-          "pmid": "40605499",
-          "title": "The Interplay of Ontogeny and Phylogeny at the Transcriptome Level of the Tetrapod Heart.",
-          "journal": "J Exp Zool B Mol Dev Evol",
-          "year": "2025"
-        },
-        {
-          "pmid": "39772608",
-          "title": "X-Chromosome-Linked miRNAs Regulate Sex Differences in Cardiac Physiology.",
-          "journal": "Circ Res",
-          "year": "2025"
-        },
-        {
-          "pmid": "38619323",
-          "title": "CHD4 and SMYD1 repress common transcriptional programs in the developing heart.",
-          "journal": "Development",
-          "year": "2024"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "Jean Cook",
       "profile_url": "https://unclineberger.org/directory/jean-g-cook/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -81899,52 +81783,6 @@
       "nih_grants": []
     },
     {
-      "name": "Robert J. Duronio",
-      "profile_url": "https://unclineberger.org/directory/robert-j-duronio/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_search": "ORCID:0000-0001-6469-6965",
-      "pubmed_count": 16,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "40397569",
-          "title": "Cell-cycle-regulated transcriptional pausing of Drosophila replication-dependent histone genes.",
-          "journal": "Mol Biol Cell",
-          "year": "2025"
-        },
-        {
-          "pmid": "39718563",
-          "title": "Directed stochasticity: Building biomolecular condensates in the right place.",
-          "journal": "J Cell Biol",
-          "year": "2025"
-        },
-        {
-          "pmid": "39562140",
-          "title": "Evidence for dual roles of histone H3 lysine 4 in antagonizing Polycomb group function and promoting target gene expression.",
-          "journal": "Genes Dev",
-          "year": "2024"
-        },
-        {
-          "pmid": "39039029",
-          "title": "Redesigning the Drosophila histone gene cluster: an improved genetic platform for spatiotemporal manipulation of histone function.",
-          "journal": "Genetics",
-          "year": "2024"
-        },
-        {
-          "pmid": "38866557",
-          "title": "Drosophila melanogaster Set8 and L(3)mbt function in gene expression independently of histone H4 lysine 20 methylation.",
-          "journal": "Genes Dev",
-          "year": "2024"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "Shelton Earp",
       "profile_url": "https://unclineberger.org/directory/h-shelton-earp/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -82884,52 +82722,6 @@
           "title": "Financial Assistance Processes and Mechanisms in Rural and Nonrural Oncology Care Settings.",
           "journal": "JCO Oncol Pract",
           "year": "2022"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Karen M. Gil",
-      "profile_url": "https://unclineberger.org/directory/karen-m-gil/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_search": "ComputedAuthors:Gil K",
-      "pubmed_count": 110,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "35960897",
-          "title": "Intensity-Modulated Radiation Therapy Reduces Patient-Reported Chronic Toxicity Compared With Conventional Pelvic Radiation Therapy: Updated Results of a Phase III Trial.",
-          "journal": "J Clin Oncol",
-          "year": "2022"
-        },
-        {
-          "pmid": "32114513",
-          "title": "Patient-reported outcomes at discontinuation of anti-angiogenesis therapy in the randomized trial of chemotherapy with bevacizumab for advanced cervical cancer: an NRG Oncology Group study.",
-          "journal": "Int J Gynecol Cancer",
-          "year": "2020"
-        },
-        {
-          "pmid": "32073955",
-          "title": "Improvement in Patient-Reported Outcomes With Intensity-Modulated Radiotherapy (RT) Compared With Standard RT: A Report From the NRG Oncology RTOG 1203 Study.",
-          "journal": "J Clin Oncol",
-          "year": "2020"
-        },
-        {
-          "pmid": "31104905",
-          "title": "Expanded validation of the EPIC bowel and urinary domains for use in women with gynecologic cancer undergoing postoperative radiotherapy.",
-          "journal": "Gynecol Oncol",
-          "year": "2019"
-        },
-        {
-          "pmid": "29989857",
-          "title": "Patient-Reported Toxicity During Pelvic Intensity-Modulated Radiation Therapy: NRG Oncology-RTOG 1203.",
-          "journal": "J Clin Oncol",
-          "year": "2018"
         }
       ],
       "nih_grants": []
@@ -84798,6 +84590,53 @@
       "nih_grants": []
     },
     {
+      "name": "Michael Iglesia",
+      "profile_url": "https://unclineberger.org/directory/michael-iglesia/",
+      "department": "Lineberger Comprehensive Cancer Center",
+      "role": "",
+      "departments": [
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/michael.iglesia.1/bibliography/public",
+      "pubmed_search": "MyNCBI:michael.iglesia.1",
+      "pubmed_count": 13,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "37961519",
+          "title": "Differential chromatin accessibility and transcriptional dynamics define breast cancer subtypes and their lineages.",
+          "journal": "bioRxiv",
+          "year": "2023"
+        },
+        {
+          "pmid": "37914932",
+          "title": "Epigenetic regulation during cancer transitions across 11 tumour types.",
+          "journal": "Nature",
+          "year": "2023"
+        },
+        {
+          "pmid": "36609389",
+          "title": "A phase II study of palbociclib plus letrozole plus trastuzumab as neoadjuvant treatment for clinical stages II and III ER+ HER2+ breast cancer (PALTAN).",
+          "journal": "NPJ Breast Cancer",
+          "year": "2023"
+        },
+        {
+          "pmid": "35995947",
+          "title": "Spatially restricted drivers and transitional cell populations cooperate with the microenvironment in untreated and chemo-resistant pancreatic cancer.",
+          "journal": "Nat Genet",
+          "year": "2022"
+        },
+        {
+          "pmid": "30089255",
+          "title": "Functional Annotation of ESR1 Gene Fusions in Estrogen Receptor-Positive Breast Cancer.",
+          "journal": "Cell Rep",
+          "year": "2018"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
       "name": "Rumey Ishizawar",
       "profile_url": "https://unclineberger.org/directory/rumey-ishizawar/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -85369,35 +85208,6 @@
           "title": "Barriers to Patient Inclusivity in GeoHealth Platforms: Usability Testing Insights.",
           "journal": "Stud Health Technol Inform",
           "year": "2026"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Shahzad Khan",
-      "profile_url": "https://unclineberger.org/directory/shahzad-khan/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "khan shahzad s",
-      "pubmed_search": "ComputedAuthors:Khan S",
-      "pubmed_count": 2,
-      "pubmed_verified": 2,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41143948",
-          "title": "Genetic mapping in collaborative cross mouse strains identifies loci that affect initial sensitivity to cocaine.",
-          "journal": "Psychopharmacology (Berl)",
-          "year": "2025"
-        },
-        {
-          "pmid": "31897574",
-          "title": "Characterization of genetically complex Collaborative Cross mouse strains that model divergent locomotor activating and reinforcing properties of cocaine.",
-          "journal": "Psychopharmacology (Berl)",
-          "year": "2020"
         }
       ],
       "nih_grants": []
@@ -86001,21 +85811,6 @@
           "year": "2025"
         }
       ],
-      "nih_grants": []
-    },
-    {
-      "name": "Jefferson Lansford",
-      "profile_url": "https://unclineberger.org/directory/jefferson-lansford/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_search": "Lansford J",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
       "nih_grants": []
     },
     {
@@ -86999,6 +86794,53 @@
       "nih_grants": []
     },
     {
+      "name": "Jennifer L. Lund",
+      "profile_url": "https://unclineberger.org/directory/jennifer-lund/",
+      "department": "Lineberger Comprehensive Cancer Center",
+      "role": "",
+      "departments": [
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1zIfcqiKRRckm/bibliography/public",
+      "pubmed_search": "MyNCBI:1zIfcqiKRRckm",
+      "pubmed_count": 50,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41954601",
+          "title": "Impacts of Hurricane-Related Flooding on Time to Initial Cancer-Directed Treatment in North Carolina.",
+          "journal": "Cancer Epidemiol Biomarkers Prev",
+          "year": "2026"
+        },
+        {
+          "pmid": "41885380",
+          "title": "Exploring Clinical Pathways to a Metastatic Lung Cancer Diagnosis: A Latent Class Analysis Using North Carolina Multipayer Claims Data.",
+          "journal": "Cancer Epidemiol Biomarkers Prev",
+          "year": "2026"
+        },
+        {
+          "pmid": "41875911",
+          "title": "Prediction models for overall survival and all-cause mortality risk in older adults with cancer: a systematic review.",
+          "journal": "Lancet Healthy Longev",
+          "year": "2026"
+        },
+        {
+          "pmid": "41645621",
+          "title": "Quantitative bias analyses to address measurement error in time-to-event endpoints.",
+          "journal": "Am J Epidemiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41263674",
+          "title": "Burden and Impact of Frailty and Comorbidity in Individuals Screened for Lung Cancer.",
+          "journal": "Cancer Epidemiol Biomarkers Prev",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
       "name": "Mary Lee MacKichan",
       "profile_url": "https://unclineberger.org/directory/mary-lee-mackichan/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -87345,53 +87187,6 @@
       "nih_grants": []
     },
     {
-      "name": "J. S. Marron",
-      "profile_url": "https://unclineberger.org/directory/j-s-marron/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1zs-cpM4Rlbc7i/bibliography/public",
-      "pubmed_search": "MyNCBI:1zs-cpM4Rlbc7i",
-      "pubmed_count": 46,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "37952058",
-          "title": "Predicting early breast cancer recurrence from histopathological images in the Carolina Breast Cancer Study.",
-          "journal": "NPJ Breast Cancer",
-          "year": "2023"
-        },
-        {
-          "pmid": "38046186",
-          "title": "PAIRWISE NONLINEAR DEPENDENCE ANALYSIS OF GENOMIC DATA.",
-          "journal": "Ann Appl Stat",
-          "year": "2023"
-        },
-        {
-          "pmid": "37672882",
-          "title": "Supervised Risk Predictor of Breast Cancer Based on Intrinsic Subtypes.",
-          "journal": "J Clin Oncol",
-          "year": "2023"
-        },
-        {
-          "pmid": "37330471",
-          "title": "The Poisson distribution model fits UMI-based single-cell RNA-sequencing data.",
-          "journal": "BMC Bioinformatics",
-          "year": "2023"
-        },
-        {
-          "pmid": "37007972",
-          "title": "Invention of 3Mint for feature grouping and scoring in multi-omics.",
-          "journal": "Front Genet",
-          "year": "2023"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
       "name": "Barbara Alvarez Martin",
       "profile_url": "https://unclineberger.org/directory/barbara-alvarez-martin/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -87505,21 +87300,6 @@
           "year": "2023"
         }
       ],
-      "nih_grants": []
-    },
-    {
-      "name": "Libby McClure",
-      "profile_url": "https://unclineberger.org/directory/libby-mcclure/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_search": "McClure Libby",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
       "nih_grants": []
     },
     {
@@ -88604,6 +88384,21 @@
       "nih_grants": []
     },
     {
+      "name": "Michael Nolan",
+      "profile_url": "https://unclineberger.org/directory/michael-nolan/",
+      "department": "Lineberger Comprehensive Cancer Center",
+      "role": "",
+      "departments": [
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_search": "Nolan M",
+      "pubmed_count": 2,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
       "name": "Kala Nwachukwu",
       "profile_url": "https://unclineberger.org/directory/kala-nwachukwu/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -89605,21 +89400,6 @@
       "nih_grants": []
     },
     {
-      "name": "Tim Poe",
-      "profile_url": "https://unclineberger.org/unccn/directory/tim-poe/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_search": "Poe T",
-      "pubmed_count": 2,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
       "name": "Barry M. Popkin",
       "profile_url": "https://unclineberger.org/directory/barry-popkin/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -89779,6 +89559,21 @@
           "year": "2024"
         }
       ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jeremy Purvis",
+      "profile_url": "https://unclineberger.org/directory/jeremy-purvis/",
+      "department": "Lineberger Comprehensive Cancer Center",
+      "role": "",
+      "departments": [
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_search": "Purvis Jeremy",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
       "nih_grants": []
     },
     {
@@ -90328,6 +90123,40 @@
       "nih_grants": []
     },
     {
+      "name": "Micheler Richardson",
+      "profile_url": "https://unclineberger.org/directory/micheler-richardson/",
+      "department": "Lineberger Comprehensive Cancer Center",
+      "role": "",
+      "departments": [
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Richardson M",
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "35786891",
+          "title": "Locking and Unlocking Thrombin Function Using Immunoquiescent Nucleic Acid Nanoparticles with Regulated Retention In Vivo.",
+          "journal": "Nano Lett",
+          "year": "2022"
+        },
+        {
+          "pmid": "33513786",
+          "title": "Induction of Cytokines by Nucleic Acid Nanoparticles (NANPs) Depends on the Type of Delivery Carrier.",
+          "journal": "Molecules",
+          "year": "2021"
+        },
+        {
+          "pmid": "30517685",
+          "title": "RNA-DNA fibers and polygons with controlled immunorecognition activate RNAi, FRET and transcriptional regulation of NF-&#x3ba;B in human cells.",
+          "journal": "Nucleic Acids Res",
+          "year": "2019"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
       "name": "Imran Rizvi",
       "profile_url": "https://unclineberger.org/directory/imran-rizvi/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -90550,53 +90379,6 @@
           "title": "Lessening the Impact of Financial Toxicity (LIFT): a protocol for a multi-site, single-arm trial examining the effect of financial navigation on financial toxicity in adult patients with cancer in rural and non-rural settings.",
           "journal": "Trials",
           "year": "2022"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Donald L. Rosenstein",
-      "profile_url": "https://unclineberger.org/directory/donald-rosenstein/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/donald.rosenstein.1/bibliography/public",
-      "pubmed_search": "MyNCBI:donald.rosenstein.1",
-      "pubmed_count": 50,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "39745895",
-          "title": "An intersectional analysis of behavioral financial hardship and healthcare utilization among lesbian, gay, bisexual, transgender, queer, plus cancer survivors.",
-          "journal": "J Natl Cancer Inst",
-          "year": "2025"
-        },
-        {
-          "pmid": "39761128",
-          "title": "Discrimination, Violence, Mental Health, and Substance Use by Age and Cancer History Among LGBTQ+ Individuals.",
-          "journal": "J Adolesc Young Adult Oncol",
-          "year": "2025"
-        },
-        {
-          "pmid": "40516028",
-          "title": "\"How am I Going to Live? How am I Going to Pay Rent?\": A Mixed Methods Investigation of Employment, Stigma, and Financial Hardship Among LGBTQ+ Cancer Caregivers.",
-          "journal": "Cancer Control",
-          "year": "2025"
-        },
-        {
-          "pmid": "39763133",
-          "title": "A Pilot Randomized Controlled Trial of Families Addressing Cancer Together for Parents With Cancer: Feasibility, Acceptability, and Preliminary Effects.",
-          "journal": "Psychooncology",
-          "year": "2025"
-        },
-        {
-          "pmid": "39793544",
-          "title": "Interventions to Address Cancer-Related Financial Hardship: A Scoping Review and Call to Action.",
-          "journal": "JCO Oncol Pract",
-          "year": "2025"
         }
       ],
       "nih_grants": []
@@ -92862,6 +92644,52 @@
       "nih_grants": []
     },
     {
+      "name": "Joan M. Taylor",
+      "profile_url": "https://unclineberger.org/directory/joan-m-taylor/",
+      "department": "Lineberger Comprehensive Cancer Center",
+      "role": "",
+      "departments": [
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_count": 66,
+      "pubmed_search": "ComputedAuthors:Taylor JM",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39562682",
+          "title": "GRAF1 deficiency leads to defective brown adipose tissue differentiation and thermogenic response.",
+          "journal": "Sci Rep",
+          "year": "2024"
+        },
+        {
+          "pmid": "38855880",
+          "title": "ARHGAP26/GRAF1 orchestrates actin remodeling and membrane dynamics to drive mitochondrial clearance and promote fuel flexibility.",
+          "journal": "Autophagy",
+          "year": "2024"
+        },
+        {
+          "pmid": "38474413",
+          "title": "GRAF1 Acts as a Downstream Mediator of Parkin to Regulate Mitophagy in Cardiomyocytes.",
+          "journal": "Cells",
+          "year": "2024"
+        },
+        {
+          "pmid": "38196614",
+          "title": "GRAF1 Regulates Brown and Beige Adipose Differentiation and Function.",
+          "journal": "Res Sq",
+          "year": "2023"
+        },
+        {
+          "pmid": "38081847",
+          "title": "GRAF1 integrates PINK1-Parkin signaling and actin dynamics to mediate cardiac mitochondrial homeostasis.",
+          "journal": "Nat Commun",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
       "name": "Jessica Thaxton",
       "profile_url": "https://unclineberger.org/directory/jessica-thaxton/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -94160,6 +93988,52 @@
       "nih_grants": []
     },
     {
+      "name": "Stephanie Wheeler",
+      "profile_url": "https://unclineberger.org/directory/stephanie-wheeler/",
+      "department": "Lineberger Comprehensive Cancer Center",
+      "role": "",
+      "departments": [
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_count": 7,
+      "pubmed_search": "ComputedAuthors:Wheeler Stephanie",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41761655",
+          "title": "Identifying the Core Functions of a Health Insurance Literacy Program for Adolescent and Young Adult Cancer Survivors.",
+          "journal": "J Adolesc Young Adult Oncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41297271",
+          "title": "Symptom-related care and diagnoses before ovarian cancer detection: Patterns and differences by cancer stage.",
+          "journal": "Gynecol Oncol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40846803",
+          "title": "Impact of motivational interviewing on psychosocial and symptom outcomes during breast cancer endocrine therapy.",
+          "journal": "Support Care Cancer",
+          "year": "2025"
+        },
+        {
+          "pmid": "39621782",
+          "title": "A latent class assessment of healthcare access factors and disparities in breast cancer care timeliness.",
+          "journal": "PLoS Med",
+          "year": "2024"
+        },
+        {
+          "pmid": "38864681",
+          "title": "National survey of patient perspectives on cost discussions among recipients of copay assistance.",
+          "journal": "Oncologist",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
       "name": "Angelique Whitehurst",
       "profile_url": "https://unclineberger.org/directory/angelique-whitehurst/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -94447,53 +94321,6 @@
           "title": "Implementation of oral health evidence-based practices in early care education settings across the U.S. during different COVID-19 periods.",
           "journal": "PLoS One",
           "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Samuel Wolff",
-      "profile_url": "https://unclineberger.org/directory/samuel-wolff/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/sam.wolff.2/bibliography/public",
-      "pubmed_search": "MyNCBI:sam.wolff.2",
-      "pubmed_count": 15,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "39670390",
-          "title": "Spherical Manifolds Capture Drug-Induced Changes in Tumor Cell Cycle Behavior.",
-          "journal": "Pac Symp Biocomput",
-          "year": "2025"
-        },
-        {
-          "pmid": "40115747",
-          "title": "TRIP13 protects pancreatic cancer cells against intrinsic and therapy-induced DNA replication stress.",
-          "journal": "NAR Cancer",
-          "year": "2025"
-        },
-        {
-          "pmid": "39024113",
-          "title": "APC/C prevents a noncanonical order of cyclin/CDK activity to maintain CDK4/6 inhibitor-induced arrest.",
-          "journal": "Proc Natl Acad Sci U S A",
-          "year": "2024"
-        },
-        {
-          "pmid": "38553455",
-          "title": "DELVE: feature selection for preserving biological trajectories in single-cell data.",
-          "journal": "Nat Commun",
-          "year": "2024"
-        },
-        {
-          "pmid": "38324568",
-          "title": "Cell cycle plasticity underlies fractional resistance to palbociclib in ER+/HER2- breast tumor cells.",
-          "journal": "Proc Natl Acad Sci U S A",
-          "year": "2024"
         }
       ],
       "nih_grants": []
