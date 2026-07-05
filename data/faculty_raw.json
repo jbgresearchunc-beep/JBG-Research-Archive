@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-28T11:31:28.476303Z",
-  "total_faculty": 2780,
+  "generated_at": "2026-07-05T12:03:35.097581Z",
+  "total_faculty": 2792,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -549,15 +549,6 @@
       ]
     },
     {
-      "name": "Jamie Diner",
-      "profile_url": "https://www.med.unc.edu/medicine/endocrinology-metabolism/people/jamie-diner-msn-fnp-c-rn-cde/",
-      "department": "Medicine \u2014 Endocrinology & Metabolism",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Endocrinology & Metabolism"
-      ]
-    },
-    {
       "name": "John B. Buse",
       "profile_url": "https://www.med.unc.edu/medicine/endocrinology-metabolism/people/john-buse-md-phd/",
       "department": "Medicine \u2014 Endocrinology & Metabolism",
@@ -742,15 +733,6 @@
       ]
     },
     {
-      "name": "Kevin Cheung",
-      "profile_url": "https://www.med.unc.edu/medicine/endocrinology-metabolism/people/kevin-cheung-msn-fnp-c/",
-      "department": "Medicine \u2014 Endocrinology & Metabolism",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Endocrinology & Metabolism"
-      ]
-    },
-    {
       "name": "Jasmine Dawson",
       "profile_url": "https://www.med.unc.edu/medicine/endocrinology-metabolism/people/jasmine-dawson-msn-fnp-c/",
       "department": "Medicine \u2014 Endocrinology & Metabolism",
@@ -847,10 +829,8 @@
       "department": "Medicine \u2014 Endocrinology & Metabolism",
       "role": "",
       "departments": [
-        "Medicine \u2014 Endocrinology & Metabolism",
-        "Neurosurgery"
-      ],
-      "pubmed_hint": "Kargi AY"
+        "Medicine \u2014 Endocrinology & Metabolism"
+      ]
     },
     {
       "name": "Sue Kirkman",
@@ -1641,6 +1621,15 @@
       ]
     },
     {
+      "name": "Olafur S. Palsson",
+      "profile_url": "https://www.med.unc.edu/medicine/gi/people/olafur-s-palsson-psyd/",
+      "department": "Medicine \u2014 Gastroenterology & Hepatology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Gastroenterology & Hepatology"
+      ]
+    },
+    {
       "name": "Martin Poleski",
       "profile_url": "https://www.med.unc.edu/medicine/gi/people/martin-poleski-md/",
       "department": "Medicine \u2014 Gastroenterology & Hepatology",
@@ -2056,15 +2045,6 @@
       ]
     },
     {
-      "name": "Carrie Palmer",
-      "profile_url": "https://www.med.unc.edu/medicine/im/people/carrie-palmer/",
-      "department": "Medicine \u2014 General Medicine & Clinical Epidemiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 General Medicine & Clinical Epidemiology"
-      ]
-    },
-    {
       "name": "Alfred Rabinovich",
       "profile_url": "https://www.med.unc.edu/medicine/im/people/alfred-rabinovich-md-ms/",
       "department": "Medicine \u2014 General Medicine & Clinical Epidemiology",
@@ -2244,16 +2224,6 @@
       "departments": [
         "Medicine \u2014 General Medicine & Clinical Epidemiology"
       ]
-    },
-    {
-      "name": "Julianne M. O\u2019Daniel",
-      "profile_url": "https://www.med.unc.edu/medicine/im/people/julianne-m-odaniel-ms-cgc/",
-      "department": "Medicine \u2014 General Medicine & Clinical Epidemiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 General Medicine & Clinical Epidemiology"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/julianne.o'daniel.1/bibliography/public"
     },
     {
       "name": "Zahra Saadat Girnary",
@@ -2688,15 +2658,6 @@
       "departments": [
         "Medicine \u2014 Geriatric Medicine",
         "Medicine \u2014 Hospital Medicine"
-      ]
-    },
-    {
-      "name": "Debra Bynum",
-      "profile_url": "https://www.med.unc.edu/medicine/geriatrics/people/debra-bynum/",
-      "department": "Medicine \u2014 Geriatric Medicine",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Geriatric Medicine"
       ]
     },
     {
@@ -3198,6 +3159,15 @@
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/christopher.jensen.1/bibliography/public"
     },
     {
+      "name": "Bejal Kikani",
+      "profile_url": "https://www.med.unc.edu/medicine/hematology/people/bejal-kikani/",
+      "department": "Medicine \u2014 Hematology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hematology"
+      ]
+    },
+    {
       "name": "Deborah Stephens",
       "profile_url": "https://www.med.unc.edu/medicine/hematology/people/deborah-stephens-do/",
       "department": "Medicine \u2014 Hematology",
@@ -3276,15 +3246,6 @@
     {
       "name": "Ahmad Askar",
       "profile_url": "https://www.med.unc.edu/medicine/hematology/people/ahmad-askar-pa-c/",
-      "department": "Medicine \u2014 Hematology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Hematology"
-      ]
-    },
-    {
-      "name": "Gabe Blanchard",
-      "profile_url": "https://www.med.unc.edu/medicine/hematology/people/gabe-blanchard-rn-msn-agnp-c/",
       "department": "Medicine \u2014 Hematology",
       "role": "",
       "departments": [
@@ -3726,6 +3687,15 @@
       ]
     },
     {
+      "name": "Damodar Naidu Penigalapati",
+      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/damodar-naidu-penigalapati-mbbs-md/",
+      "department": "Medicine \u2014 Hospital Medicine",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hospital Medicine"
+      ]
+    },
+    {
       "name": "Lindsey Phillips",
       "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/lindsey-phillips-md/",
       "department": "Medicine \u2014 Hospital Medicine",
@@ -3863,6 +3833,15 @@
     {
       "name": "Dana Raines",
       "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/dana-raines-agacnp-bc/",
+      "department": "Medicine \u2014 Hospital Medicine",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hospital Medicine"
+      ]
+    },
+    {
+      "name": "Cherie Ann Somera",
+      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/cherie-ann-somera-fnp-bc/",
       "department": "Medicine \u2014 Hospital Medicine",
       "role": "",
       "departments": [
@@ -4752,6 +4731,15 @@
       ]
     },
     {
+      "name": "Trina Pugh",
+      "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/trina-pugh/",
+      "department": "Medicine \u2014 Nephrology & Hypertension",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Nephrology & Hypertension"
+      ]
+    },
+    {
       "name": "Ryan Bonner",
       "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/ryan-bonner-md-2/",
       "department": "Medicine \u2014 Nephrology & Hypertension",
@@ -5166,15 +5154,6 @@
       ]
     },
     {
-      "name": "Connie Gilet",
-      "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/connie-gilet-msn-rn-anp-bc/",
-      "department": "Medicine \u2014 Nephrology & Hypertension",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Nephrology & Hypertension"
-      ]
-    },
-    {
       "name": "Lazarina Baez Marinez",
       "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/lazarina-baez-martinez-np/",
       "department": "Medicine \u2014 Nephrology & Hypertension",
@@ -5235,11 +5214,21 @@
       "role": "",
       "departments": [
         "Medicine \u2014 Nephrology & Hypertension"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/anita.yang.1/bibliography/public"
     },
     {
       "name": "Katie Barnes",
       "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/katie-barnes/",
+      "department": "Medicine \u2014 Nephrology & Hypertension",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Nephrology & Hypertension"
+      ]
+    },
+    {
+      "name": "Taylor Harbin",
+      "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/taylor-harbin/",
       "department": "Medicine \u2014 Nephrology & Hypertension",
       "role": "",
       "departments": [
@@ -5256,8 +5245,26 @@
       ]
     },
     {
-      "name": "Twanisha Haynes",
-      "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/twanisha-haynes/",
+      "name": "Agnes Kokot",
+      "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/agnes-kokot-2/",
+      "department": "Medicine \u2014 Nephrology & Hypertension",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Nephrology & Hypertension"
+      ]
+    },
+    {
+      "name": "Belissa Lee",
+      "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/belissa-lee-cpc-2/",
+      "department": "Medicine \u2014 Nephrology & Hypertension",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Nephrology & Hypertension"
+      ]
+    },
+    {
+      "name": "Debra Morrow",
+      "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/debra-morrow/",
       "department": "Medicine \u2014 Nephrology & Hypertension",
       "role": "",
       "departments": [
@@ -5267,6 +5274,15 @@
     {
       "name": "Rochelle Moser",
       "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/rochelle-moser/",
+      "department": "Medicine \u2014 Nephrology & Hypertension",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Nephrology & Hypertension"
+      ]
+    },
+    {
+      "name": "Jessica Nelson",
+      "profile_url": "https://www.med.unc.edu/medicine/nephrology-hypertension/people/jessica-nelson-2/",
       "department": "Medicine \u2014 Nephrology & Hypertension",
       "role": "",
       "departments": [
@@ -5449,15 +5465,6 @@
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/michael.iglesia.1/bibliography/public"
     },
     {
-      "name": "Jingquan Jia",
-      "profile_url": "https://www.med.unc.edu/medicine/oncology/people/jingquan-caron-jia-md-phd/",
-      "department": "Medicine \u2014 Oncology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Oncology"
-      ]
-    },
-    {
       "name": "Ashwin Somasundaram",
       "profile_url": "https://www.med.unc.edu/medicine/oncology/people/ashwin-somasundaram-md/",
       "department": "Medicine \u2014 Oncology",
@@ -5578,15 +5585,6 @@
         "Urology"
       ],
       "pubmed_hint": "in Virology"
-    },
-    {
-      "name": "Susan Boulton",
-      "profile_url": "https://www.med.unc.edu/medicine/oncology/people/susan-boulton/",
-      "department": "Medicine \u2014 Oncology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Oncology"
-      ]
     },
     {
       "name": "Morgan Gwynn",
@@ -5871,15 +5869,6 @@
       ]
     },
     {
-      "name": "Ashley Henderson",
-      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/henderson/",
-      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Pulmonary Diseases & Critical Care"
-      ]
-    },
-    {
       "name": "Brent W. Kinder",
       "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/brent-kinder-md-ms/",
       "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
@@ -5897,6 +5886,16 @@
         "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1bWh9V3waQh5F/bibliography/public"
+    },
+    {
+      "name": "Benjamin J. Sines",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/benjamin-j-sines-md-mscr/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/benjamin.sines.1/bibliography/public"
     },
     {
       "name": "Wayne Anderson",
@@ -6003,6 +6002,15 @@
     {
       "name": "Robert Hagan",
       "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/hagan/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
+      ]
+    },
+    {
+      "name": "Ashley Henderson",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/henderson/",
       "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "departments": [
@@ -6130,16 +6138,6 @@
       "departments": [
         "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
-    },
-    {
-      "name": "Benjamin J. Sines",
-      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/benjamin-j-sines-md-mscr/",
-      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Pulmonary Diseases & Critical Care"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/benjamin.sines.1/bibliography/public"
     },
     {
       "name": "William Tyler Smith",
@@ -6784,6 +6782,15 @@
     {
       "name": "Nadalie Harris",
       "profile_url": "https://www.med.unc.edu/medicine/rheumatology-allergy-immunology/people/nadalie-harris-mha/",
+      "department": "Medicine \u2014 Rheumatology, Allergy & Immunology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Rheumatology, Allergy & Immunology"
+      ]
+    },
+    {
+      "name": "Patricia Owens",
+      "profile_url": "https://www.med.unc.edu/medicine/rheumatology-allergy-immunology/people/patricia-owens/",
       "department": "Medicine \u2014 Rheumatology, Allergy & Immunology",
       "role": "",
       "departments": [
@@ -7684,6 +7691,15 @@
       "profile_url": "https://www.med.unc.edu/pediatrics/people/nadia-hoekstra-md/",
       "department": "Pediatrics",
       "role": "Pulm",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Alison Manikowski",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/alison-manikowski-psyd/",
+      "department": "Pediatrics",
+      "role": "Hemonc Brain Tumor Psych",
       "departments": [
         "Pediatrics"
       ]
@@ -9573,6 +9589,15 @@
       ]
     },
     {
+      "name": "Charlotte Weaver",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/charlotte-weaver-ms/",
+      "department": "Pediatrics",
+      "role": "Admin",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
       "name": "Caprice C. Greenberg",
       "profile_url": "https://www.med.unc.edu/surgery/directory/caprice-c-greenberg-md-mph/",
       "department": "Surgery \u2014 General Surgery",
@@ -9642,15 +9667,6 @@
     {
       "name": "Alexander H. Toledo",
       "profile_url": "https://www.med.unc.edu/surgery/directory/alexander-h-toledo-md/",
-      "department": "Surgery \u2014 General Surgery",
-      "role": "",
-      "departments": [
-        "Surgery \u2014 General Surgery"
-      ]
-    },
-    {
-      "name": "Lori Chrisco",
-      "profile_url": "https://www.med.unc.edu/surgery/directory/lori-chrisco-msn-rn-bc/",
       "department": "Surgery \u2014 General Surgery",
       "role": "",
       "departments": [
@@ -10678,6 +10694,177 @@
       ]
     },
     {
+      "name": "Melanie Zhang",
+      "profile_url": "https://www.med.unc.edu/psych/people/melanie-zhang-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Erin Wildermuth",
+      "profile_url": "https://www.med.unc.edu/psych/people/erin-wildermuth-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Caleb Thomas",
+      "profile_url": "https://www.med.unc.edu/psych/people/caleb-thomas-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Riti Srivastava",
+      "profile_url": "https://www.med.unc.edu/psych/people/riti-srivastava-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Austin Spitz",
+      "profile_url": "https://www.med.unc.edu/psych/people/austin-spitz-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Louisa Smitherman",
+      "profile_url": "https://www.med.unc.edu/psych/people/louisa-smitherman-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Angelica Pham",
+      "profile_url": "https://www.med.unc.edu/psych/people/angelica-pham-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Amarachukwu Nwangwu",
+      "profile_url": "https://www.med.unc.edu/psych/people/amarachukwu-nwangwu-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Jaewon Moon",
+      "profile_url": "https://www.med.unc.edu/psych/people/jaewon-moon-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Morgan Mathis",
+      "profile_url": "https://www.med.unc.edu/psych/people/morgan-mathis-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Aaria Malhotra",
+      "profile_url": "https://www.med.unc.edu/psych/people/aaria-malhotra-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Joshua Lopez",
+      "profile_url": "https://www.med.unc.edu/psych/people/joshua-lopez-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Jasmine Liu",
+      "profile_url": "https://www.med.unc.edu/psych/people/jasmine-liu-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Gabrielle Hyde",
+      "profile_url": "https://www.med.unc.edu/psych/people/gabrielle-hyde-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Stormy Foster-Palmer",
+      "profile_url": "https://www.med.unc.edu/psych/people/stormy-foster-palmer-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Matthew Busse",
+      "profile_url": "https://www.med.unc.edu/psych/people/matthew-busse-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Erica Browne",
+      "profile_url": "https://www.med.unc.edu/psych/people/erica-browne-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Amanda Block",
+      "profile_url": "https://www.med.unc.edu/psych/people/amanda-block-md/",
+      "department": "Psychiatry",
+      "role": "Pgy1",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Mac Schauman",
+      "profile_url": "https://www.med.unc.edu/psych/people/mac-schauman-lcmhc-a/",
+      "department": "Psychiatry",
+      "role": "Cecmh",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
       "name": "Meredith Bucher",
       "profile_url": "https://www.med.unc.edu/psych/people/meredith-bucher-phd/",
       "department": "Psychiatry",
@@ -10797,15 +10984,6 @@
     {
       "name": "Susan Girdler",
       "profile_url": "https://www.med.unc.edu/psych/people/susan-girdler-phd-fabmr/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
-      "name": "Pam Beiler",
-      "profile_url": "https://www.med.unc.edu/psych/people/pam-beiler-msw-lcsw/",
       "department": "Psychiatry",
       "role": "Clinician",
       "departments": [
@@ -10961,7 +11139,7 @@
       "name": "Jackie Zhu",
       "profile_url": "https://www.med.unc.edu/psych/people/jackie-zhu-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ]
@@ -10970,7 +11148,7 @@
       "name": "Allison Tipton",
       "profile_url": "https://www.med.unc.edu/psych/people/allison-tipton-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ]
@@ -10979,7 +11157,7 @@
       "name": "Forrest Smith",
       "profile_url": "https://www.med.unc.edu/psych/people/forrest-smith-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ]
@@ -10988,7 +11166,7 @@
       "name": "Caroline Sachse",
       "profile_url": "https://www.med.unc.edu/psych/people/caroline-sachse-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ]
@@ -10997,7 +11175,7 @@
       "name": "Anna Rupp",
       "profile_url": "https://www.med.unc.edu/psych/people/anna-rupp-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ]
@@ -11006,7 +11184,7 @@
       "name": "Carin Papendorp",
       "profile_url": "https://www.med.unc.edu/psych/people/carin-papendorp-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ]
@@ -11015,7 +11193,7 @@
       "name": "Jessyca Naegele",
       "profile_url": "https://www.med.unc.edu/psych/people/jessyca-naegele-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ]
@@ -11024,7 +11202,7 @@
       "name": "Rachel Motamed",
       "profile_url": "https://www.med.unc.edu/psych/people/rachel-motamed-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ]
@@ -11033,7 +11211,7 @@
       "name": "Meghan Mallya",
       "profile_url": "https://www.med.unc.edu/psych/people/meghan-mallya-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ]
@@ -11042,7 +11220,7 @@
       "name": "Kara Lopez-Lengowski",
       "profile_url": "https://www.med.unc.edu/psych/people/kara-lopez-lengowski-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ]
@@ -11051,7 +11229,7 @@
       "name": "Katharine King",
       "profile_url": "https://www.med.unc.edu/psych/people/katharine-king-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ]
@@ -11060,7 +11238,7 @@
       "name": "Caellaigh Kimpston",
       "profile_url": "https://www.med.unc.edu/psych/people/caellaigh-kimpston-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ]
@@ -11069,7 +11247,7 @@
       "name": "Meher Kalkat",
       "profile_url": "https://www.med.unc.edu/psych/people/meher-kalkat-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ]
@@ -11078,7 +11256,7 @@
       "name": "Kaylen Holmes",
       "profile_url": "https://www.med.unc.edu/psych/people/kaylen-holmes-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ]
@@ -11087,7 +11265,7 @@
       "name": "Hailey Daly",
       "profile_url": "https://www.med.unc.edu/psych/people/hailey-daly-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ]
@@ -11096,7 +11274,7 @@
       "name": "Samantha Gallahan",
       "profile_url": "https://www.med.unc.edu/psych/people/samantha-gallahan-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ]
@@ -11105,7 +11283,7 @@
       "name": "Taseya Coleman",
       "profile_url": "https://www.med.unc.edu/psych/people/taseya-coleman-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ]
@@ -11114,7 +11292,7 @@
       "name": "Blair Carnes",
       "profile_url": "https://www.med.unc.edu/psych/people/blair-carnes-md/",
       "department": "Psychiatry",
-      "role": "Pgy1",
+      "role": "Pgy2",
       "departments": [
         "Psychiatry"
       ]
@@ -11123,7 +11301,7 @@
       "name": "David L. Penn",
       "profile_url": "https://www.med.unc.edu/psych/people/david-l-penn-phd/",
       "department": "Psychiatry",
-      "role": "Faculty",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ]
@@ -11160,6 +11338,15 @@
       "profile_url": "https://www.med.unc.edu/psych/people/heidi-dohnert-lcsw-lcas-css/",
       "department": "Psychiatry",
       "role": "Cecmh",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Eden Garmon",
+      "profile_url": "https://www.med.unc.edu/psych/people/eden-garmon-lcsw/",
+      "department": "Psychiatry",
+      "role": "Clinician",
       "departments": [
         "Psychiatry"
       ]
@@ -11313,6 +11500,15 @@
       "profile_url": "https://www.med.unc.edu/psych/people/andrea-pelletier-baldelli-phd/",
       "department": "Psychiatry",
       "role": "Chaamp",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Jody Bennett",
+      "profile_url": "https://www.med.unc.edu/psych/people/jody-bennett/",
+      "department": "Psychiatry",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ]
@@ -11671,8 +11867,8 @@
       ]
     },
     {
-      "name": "Stephanie Russell",
-      "profile_url": "https://www.med.unc.edu/psych/people/stephanie-russell-lcmhc/",
+      "name": "Stephanie Brennan",
+      "profile_url": "https://www.med.unc.edu/psych/people/stephanie-brennan-md/",
       "department": "Psychiatry",
       "role": "Child-Adolescent-Psychiatry",
       "departments": [
@@ -11680,10 +11876,10 @@
       ]
     },
     {
-      "name": "Stephanie Brennan",
-      "profile_url": "https://www.med.unc.edu/psych/people/stephanie-brennan-md/",
+      "name": "Stacy Smith",
+      "profile_url": "https://www.med.unc.edu/psych/people/stacy-smith-med/",
       "department": "Psychiatry",
-      "role": "Child-Adolescent-Psychiatry",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ]
@@ -11700,6 +11896,15 @@
     {
       "name": "Signe Naftel",
       "profile_url": "https://www.med.unc.edu/psych/people/signe-naftel-phd/",
+      "department": "Psychiatry",
+      "role": "Faculty",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Shouqiang Ye",
+      "profile_url": "https://www.med.unc.edu/psych/people/shouqiang-ye-ms-2/",
       "department": "Psychiatry",
       "role": "Faculty",
       "departments": [
@@ -12000,7 +12205,7 @@
       "name": "Rachel Taylor",
       "profile_url": "https://www.med.unc.edu/psych/people/rachel-taylor-msw/",
       "department": "Psychiatry",
-      "role": "Clinician",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ]
@@ -12570,7 +12775,7 @@
       "name": "Kelsey Ludwig",
       "profile_url": "https://www.med.unc.edu/psych/people/kelsey-ludwig-phd/",
       "department": "Psychiatry",
-      "role": "Clinician",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ]
@@ -12669,7 +12874,7 @@
       "name": "Kaitlin Boyle",
       "profile_url": "https://www.med.unc.edu/psych/people/kaitlin-boyle-md/",
       "department": "Psychiatry",
-      "role": "Clinician",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ]
@@ -12829,15 +13034,6 @@
       ]
     },
     {
-      "name": "Sonyia Richardson",
-      "profile_url": "https://www.med.unc.edu/psych/people/sonyia-richardson-ph-d-l-c-s-w/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
       "name": "Jessica Girault",
       "profile_url": "https://www.med.unc.edu/psych/people/jessica-girault-phd/",
       "department": "Psychiatry",
@@ -12877,7 +13073,7 @@
       "name": "Jennifer Nieri",
       "profile_url": "https://www.med.unc.edu/psych/people/jennifer-nieri-msw-lcsw/",
       "department": "Psychiatry",
-      "role": "Faculty",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ]
@@ -13037,82 +13233,10 @@
       ]
     },
     {
-      "name": "Rebecca Yoon",
-      "profile_url": "https://www.med.unc.edu/psych/people/rebecca-yoon-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
-      "name": "Hayden Torres",
-      "profile_url": "https://www.med.unc.edu/psych/people/hayden-torres-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
-      "name": "Daniel Sheinbein",
-      "profile_url": "https://www.med.unc.edu/psych/people/daniel-sheinbein-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
-      "name": "Natasha Saric",
-      "profile_url": "https://www.med.unc.edu/psych/people/natasha-saric-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
-      "name": "Neil Robinson",
-      "profile_url": "https://www.med.unc.edu/psych/people/neil-robinson-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
-      "name": "Daniela Ramirez",
-      "profile_url": "https://www.med.unc.edu/psych/people/daniela-ramirez-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
-      "name": "Esther Miah",
-      "profile_url": "https://www.med.unc.edu/psych/people/esther-miah-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
-      "name": "Nicholas Horswill",
-      "profile_url": "https://www.med.unc.edu/psych/people/nicholas-horswill-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
       "name": "Rachel Harrison",
       "profile_url": "https://www.med.unc.edu/psych/people/rachel-harrison-md/",
       "department": "Psychiatry",
-      "role": "Pgy4",
+      "role": "Clinician",
       "departments": [
         "Psychiatry"
       ]
@@ -13121,7 +13245,7 @@
       "name": "Alex Gertner",
       "profile_url": "https://www.med.unc.edu/psych/people/alex-gertner-md-phd/",
       "department": "Psychiatry",
-      "role": "Pgy4",
+      "role": "Clinician",
       "departments": [
         "Psychiatry"
       ]
@@ -13130,7 +13254,7 @@
       "name": "Joseph Dayaa",
       "profile_url": "https://www.med.unc.edu/psych/people/joseph-dayaa-md/",
       "department": "Psychiatry",
-      "role": "Pgy4",
+      "role": "",
       "departments": [
         "Psychiatry"
       ]
@@ -13139,34 +13263,7 @@
       "name": "Justin Coley",
       "profile_url": "https://www.med.unc.edu/psych/people/justin-coley-md/",
       "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
-      "name": "Angela Clayborne",
-      "profile_url": "https://www.med.unc.edu/psych/people/angela-clayborne-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
-      "name": "Kritika Chugh",
-      "profile_url": "https://www.med.unc.edu/psych/people/kritika-chugh-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
-      "name": "Michael Buchholz",
-      "profile_url": "https://www.med.unc.edu/psych/people/michael-buchholz-md/",
-      "department": "Psychiatry",
-      "role": "Pgy4",
+      "role": "",
       "departments": [
         "Psychiatry"
       ]
@@ -13175,7 +13272,7 @@
       "name": "Nicole Pecoraro",
       "profile_url": "https://www.med.unc.edu/psych/people/nicole-pecoraro-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ]
@@ -13184,7 +13281,7 @@
       "name": "Liv Weiner",
       "profile_url": "https://www.med.unc.edu/psych/people/liv-weiner-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ]
@@ -13193,7 +13290,7 @@
       "name": "Trey Sickler",
       "profile_url": "https://www.med.unc.edu/psych/people/trey-sickler-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ]
@@ -13202,7 +13299,7 @@
       "name": "Lars Sheridan",
       "profile_url": "https://www.med.unc.edu/psych/people/lars-sheridan-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ]
@@ -13211,7 +13308,7 @@
       "name": "Chandler Melton",
       "profile_url": "https://www.med.unc.edu/psych/people/chandler-melton-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ]
@@ -13220,7 +13317,7 @@
       "name": "Jack McKenzie",
       "profile_url": "https://www.med.unc.edu/psych/people/jack-mckenzie-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ]
@@ -13229,7 +13326,7 @@
       "name": "Ainsley Mann",
       "profile_url": "https://www.med.unc.edu/psych/people/ainsley-mann-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ]
@@ -13238,7 +13335,7 @@
       "name": "Yaw Kumi-Ansu",
       "profile_url": "https://www.med.unc.edu/psych/people/yaw-kumi-ansu-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ]
@@ -13247,7 +13344,7 @@
       "name": "Taylor Kleyn",
       "profile_url": "https://www.med.unc.edu/psych/people/taylor-kleyn-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ]
@@ -13256,7 +13353,7 @@
       "name": "Rachel Hianik",
       "profile_url": "https://www.med.unc.edu/psych/people/rachel-hianik-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ]
@@ -13265,7 +13362,7 @@
       "name": "Krisandra Hardy",
       "profile_url": "https://www.med.unc.edu/psych/people/krisandra-hardy-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ]
@@ -13274,7 +13371,7 @@
       "name": "Annette French",
       "profile_url": "https://www.med.unc.edu/psych/people/annette-french-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ]
@@ -13283,7 +13380,7 @@
       "name": "Katelyn Einloth",
       "profile_url": "https://www.med.unc.edu/psych/people/katelyn-einloth-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ]
@@ -13292,7 +13389,7 @@
       "name": "Uma Dieffenbach",
       "profile_url": "https://www.med.unc.edu/psych/people/uma-dieffenbach-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ]
@@ -13301,7 +13398,7 @@
       "name": "Gabrielle Cummings",
       "profile_url": "https://www.med.unc.edu/psych/people/gabrielle-cummings-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ]
@@ -13310,7 +13407,7 @@
       "name": "Quin Brown",
       "profile_url": "https://www.med.unc.edu/psych/people/quin-brown-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ]
@@ -13319,7 +13416,7 @@
       "name": "Tommy Baumel",
       "profile_url": "https://www.med.unc.edu/psych/people/tommy-baumel-md/",
       "department": "Psychiatry",
-      "role": "Pgy3",
+      "role": "Pgy4",
       "departments": [
         "Psychiatry"
       ]
@@ -13328,7 +13425,7 @@
       "name": "Jenna Wasserman",
       "profile_url": "https://www.med.unc.edu/psych/people/jenna-wasserman-md/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ]
@@ -13337,7 +13434,7 @@
       "name": "Katarina Swaim",
       "profile_url": "https://www.med.unc.edu/psych/people/katarina-swaim-md/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ]
@@ -13346,7 +13443,7 @@
       "name": "Brianna Simmons",
       "profile_url": "https://www.med.unc.edu/psych/people/brianna-simmons-md/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ]
@@ -13355,7 +13452,7 @@
       "name": "Julia Scher",
       "profile_url": "https://www.med.unc.edu/psych/people/julia-scher/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ]
@@ -13364,7 +13461,7 @@
       "name": "Sonali Parmar",
       "profile_url": "https://www.med.unc.edu/psych/people/sonali-parmar/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ]
@@ -13373,7 +13470,7 @@
       "name": "Darshana Panda",
       "profile_url": "https://www.med.unc.edu/psych/people/darshana-panda/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ]
@@ -13382,7 +13479,7 @@
       "name": "Natalya Brooks",
       "profile_url": "https://www.med.unc.edu/psych/people/natalya-brooks/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ]
@@ -13391,7 +13488,7 @@
       "name": "Morgan Mooty",
       "profile_url": "https://www.med.unc.edu/psych/people/morgan-mooty/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ]
@@ -13400,7 +13497,7 @@
       "name": "Andrea Cortez",
       "profile_url": "https://www.med.unc.edu/psych/people/andrea-mcwilliams-md/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ]
@@ -13409,7 +13506,7 @@
       "name": "Melanie Marcille",
       "profile_url": "https://www.med.unc.edu/psych/people/melanie-marcille-md/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ]
@@ -13418,7 +13515,7 @@
       "name": "Scott MacDonald",
       "profile_url": "https://www.med.unc.edu/psych/people/scott-macdonald-md/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ]
@@ -13427,7 +13524,7 @@
       "name": "Edward Lin",
       "profile_url": "https://www.med.unc.edu/psych/people/edward-lin-md/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ]
@@ -13436,7 +13533,7 @@
       "name": "Megan LeFevre",
       "profile_url": "https://www.med.unc.edu/psych/people/megan-lefevre-do/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ]
@@ -13445,7 +13542,7 @@
       "name": "Catrina Crawford",
       "profile_url": "https://www.med.unc.edu/psych/people/katrina-crawford-md/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ]
@@ -13454,7 +13551,7 @@
       "name": "Mariel Colon-Leyva",
       "profile_url": "https://www.med.unc.edu/psych/people/mariel-colon-leyva/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ]
@@ -13463,7 +13560,7 @@
       "name": "Audrey Chong",
       "profile_url": "https://www.med.unc.edu/psych/people/audrey-chong/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ]
@@ -13472,7 +13569,7 @@
       "name": "Shelby Carvalho",
       "profile_url": "https://www.med.unc.edu/psych/people/shelby-carvalho-md/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ]
@@ -13481,7 +13578,7 @@
       "name": "Cheyenne Bricken",
       "profile_url": "https://www.med.unc.edu/psych/people/cheyenne-bricken-md/",
       "department": "Psychiatry",
-      "role": "Pgy2",
+      "role": "Pgy3",
       "departments": [
         "Psychiatry"
       ]
@@ -13562,7 +13659,7 @@
       "name": "Felice Reddy",
       "profile_url": "https://www.med.unc.edu/psych/people/felice-reddy-phd/",
       "department": "Psychiatry",
-      "role": "Faculty",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ]
@@ -13625,7 +13722,7 @@
       "name": "Emily Parsons",
       "profile_url": "https://www.med.unc.edu/psych/people/emily-parsons-psyd/",
       "department": "Psychiatry",
-      "role": "Clinician",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ]
@@ -13653,15 +13750,6 @@
       "profile_url": "https://www.med.unc.edu/psych/people/elliot-silverstein-jd-phd-abpp/",
       "department": "Psychiatry",
       "role": "Child-Adolescent-Psychiatry",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
-      "name": "Ellen Ruebush",
-      "profile_url": "https://www.med.unc.edu/psych/people/ellen-ruebush-msw/",
-      "department": "Psychiatry",
-      "role": "Clinician",
       "departments": [
         "Psychiatry"
       ]
@@ -13805,7 +13893,7 @@
       "name": "Diana Perkins",
       "profile_url": "https://www.med.unc.edu/psych/people/diana-perkins-md-mph/",
       "department": "Psychiatry",
-      "role": "Faculty",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ]
@@ -13973,15 +14061,6 @@
       ]
     },
     {
-      "name": "Christine Murray",
-      "profile_url": "https://www.med.unc.edu/psych/people/christine-murray-ms/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
       "name": "Christine Flicek",
       "profile_url": "https://www.med.unc.edu/psych/people/christine-flicek-md/",
       "department": "Psychiatry",
@@ -14011,15 +14090,6 @@
     {
       "name": "Charity Wijetunga",
       "profile_url": "https://www.med.unc.edu/psych/people/charity-wijetunga-jd-phd/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
-      "name": "Charissa Gray",
-      "profile_url": "https://www.med.unc.edu/psych/people/charissa-gray-mph-msw/",
       "department": "Psychiatry",
       "role": "Clinician",
       "departments": [
@@ -14283,7 +14353,7 @@
       "name": "Austin Hall",
       "profile_url": "https://www.med.unc.edu/psych/people/austin-hall-md/",
       "department": "Psychiatry",
-      "role": "Cecmh",
+      "role": "Administration",
       "departments": [
         "Psychiatry"
       ]
@@ -14343,15 +14413,6 @@
       ]
     },
     {
-      "name": "Anna Rose Wilson",
-      "profile_url": "https://www.med.unc.edu/psych/people/anna-rose-wilson-msw/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
       "name": "Angela Ning",
       "profile_url": "https://www.med.unc.edu/psych/people/angela-ning-md/",
       "department": "Psychiatry",
@@ -14374,6 +14435,15 @@
       "profile_url": "https://www.med.unc.edu/psych/people/amanda-tow-md-phd/",
       "department": "Psychiatry",
       "role": "Child-Adolescent-Psychiatry",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Amanda Sullivan",
+      "profile_url": "https://www.med.unc.edu/psych/people/amanda-sullivan-msw/",
+      "department": "Psychiatry",
+      "role": "Clinician",
       "departments": [
         "Psychiatry"
       ]
@@ -14427,7 +14497,7 @@
       "name": "Donald Rosenstein",
       "profile_url": "https://www.med.unc.edu/psych/people/donald-rosenstein-md/",
       "department": "Psychiatry",
-      "role": "Administration",
+      "role": "Clinician",
       "departments": [
         "Psychiatry"
       ]
@@ -14463,7 +14533,7 @@
       "name": "John Gilmore",
       "profile_url": "https://www.med.unc.edu/psych/people/john-gilmore-md/",
       "department": "Psychiatry",
-      "role": "Administration",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ],
@@ -14487,6 +14557,15 @@
         "Psychiatry"
       ],
       "pubmed_hint": "Gaynes BN"
+    },
+    {
+      "name": "Karon Dawkins",
+      "profile_url": "https://www.med.unc.edu/psych/people/karon-dawkins-md/",
+      "department": "Psychiatry",
+      "role": "Administration",
+      "departments": [
+        "Psychiatry"
+      ]
     },
     {
       "name": "Julie Crimmins",
@@ -14575,15 +14654,6 @@
       "profile_url": "https://www.med.unc.edu/psych/people/william-smith/",
       "department": "Psychiatry",
       "role": "Cecmh",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
-      "name": "Asantewaa Yamoah",
-      "profile_url": "https://www.med.unc.edu/psych/people/asantewaa-yamoah/",
-      "department": "Psychiatry",
-      "role": "Child-Adolescent-Psychiatry",
       "departments": [
         "Psychiatry"
       ]
@@ -14818,7 +14888,7 @@
       "name": "Hollins Clark",
       "profile_url": "https://www.med.unc.edu/obgyn/people/hollins-clark-md/",
       "department": "Obstetrics & Gynecology",
-      "role": "Placenta-Accreta-Staff",
+      "role": "",
       "departments": [
         "Obstetrics & Gynecology"
       ]
@@ -15016,15 +15086,6 @@
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1xQdgt61ppxkU/bibliography/public"
     },
     {
-      "name": "Lyn Filip",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/lyn-filip-rn-bsn-ocn/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Department-Of-Obstetrics-And-Gynecology",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
       "name": "Kristin Tully",
       "profile_url": "https://www.med.unc.edu/obgyn/people/kristin-tully/",
       "department": "Obstetrics & Gynecology",
@@ -15144,6 +15205,15 @@
     {
       "name": "Anne Z. Steiner",
       "profile_url": "https://www.med.unc.edu/obgyn/people/anne-z-steiner-md/",
+      "department": "Obstetrics & Gynecology",
+      "role": "Department-Clinical-Providers",
+      "departments": [
+        "Obstetrics & Gynecology"
+      ]
+    },
+    {
+      "name": "Antonia Decker",
+      "profile_url": "https://www.med.unc.edu/obgyn/people/antonia-decker/",
       "department": "Obstetrics & Gynecology",
       "role": "Department-Clinical-Providers",
       "departments": [
@@ -15845,15 +15915,6 @@
       ]
     },
     {
-      "name": "Emily Hardisty",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/emily-hardisty/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Department-Clinical-Providers",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
       "name": "William Goodnight",
       "profile_url": "https://www.med.unc.edu/obgyn/people/william-goodnight/",
       "department": "Obstetrics & Gynecology",
@@ -16097,8 +16158,8 @@
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/maria%20m..aleman.1/bibliography/public"
     },
     {
-      "name": "Samah Ali",
-      "profile_url": "https://www.med.unc.edu/pathology/directory/samah-ali-mbbs/",
+      "name": "Parisa Amirifar",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/parisa-amirifar-phd/",
       "department": "Pathology & Laboratory Medicine",
       "role": "",
       "departments": [
@@ -16166,15 +16227,6 @@
     {
       "name": "Alexandra Balaban",
       "profile_url": "https://www.med.unc.edu/pathology/directory/alexandra-balaban-md/",
-      "department": "Pathology & Laboratory Medicine",
-      "role": "",
-      "departments": [
-        "Pathology & Laboratory Medicine"
-      ]
-    },
-    {
-      "name": "Surekha Bantumilli",
-      "profile_url": "https://www.med.unc.edu/pathology/directory/surekha-bantumilli-md/",
       "department": "Pathology & Laboratory Medicine",
       "role": "",
       "departments": [
@@ -16291,6 +16343,15 @@
       ]
     },
     {
+      "name": "Megan Check",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/megan-check-phd/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ]
+    },
+    {
       "name": "Benjamin Cho",
       "profile_url": "https://www.med.unc.edu/pathology/directory/benjamin-cho-md/",
       "department": "Pathology & Laboratory Medicine",
@@ -16302,6 +16363,15 @@
     {
       "name": "Steven Cotten",
       "profile_url": "https://www.med.unc.edu/pathology/directory/swcotten/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ]
+    },
+    {
+      "name": "Alyssa Cozzo",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/alyssa-cozzo-md/",
       "department": "Pathology & Laboratory Medicine",
       "role": "",
       "departments": [
@@ -16327,6 +16397,15 @@
       ]
     },
     {
+      "name": "Sarah Davidson",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/sarah-davidson-md/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ]
+    },
+    {
       "name": "Georgette A. Dent",
       "profile_url": "https://www.med.unc.edu/pathology/directory/gdent/",
       "department": "Pathology & Laboratory Medicine",
@@ -16338,6 +16417,15 @@
     {
       "name": "Leslie G. Dodd",
       "profile_url": "https://www.med.unc.edu/pathology/directory/ldodd/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ]
+    },
+    {
+      "name": "Masoud Edalati",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/masoud-edalati-md/",
       "department": "Pathology & Laboratory Medicine",
       "role": "",
       "departments": [
@@ -16401,6 +16489,15 @@
       ]
     },
     {
+      "name": "Helen Files",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/helen-files-md/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ]
+    },
+    {
       "name": "Grant Fischer",
       "profile_url": "https://www.med.unc.edu/pathology/directory/grant-fischer-md-phd/",
       "department": "Pathology & Laboratory Medicine",
@@ -16449,15 +16546,6 @@
         "Pathology & Laboratory Medicine"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1n92kwMroxqIXI/bibliography/public"
-    },
-    {
-      "name": "Felix Medrano Garcia",
-      "profile_url": "https://www.med.unc.edu/pathology/directory/felix-medrano-garcia-md/",
-      "department": "Pathology & Laboratory Medicine",
-      "role": "",
-      "departments": [
-        "Pathology & Laboratory Medicine"
-      ]
     },
     {
       "name": "Nneka M. George",
@@ -16554,6 +16642,15 @@
     {
       "name": "Tracy M. Heenan",
       "profile_url": "https://www.med.unc.edu/pathology/directory/tmh/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ]
+    },
+    {
+      "name": "Isabella Holmes",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/isabella-holmes-do/",
       "department": "Pathology & Laboratory Medicine",
       "role": "",
       "departments": [
@@ -16766,6 +16863,15 @@
       ]
     },
     {
+      "name": "Jessica Lavergne",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/jessica-lavergne-md/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ]
+    },
+    {
       "name": "Nalin Leelatian",
       "profile_url": "https://www.med.unc.edu/pathology/directory/nalin-leelatian-md-phd/",
       "department": "Pathology & Laboratory Medicine",
@@ -16829,8 +16935,8 @@
       ]
     },
     {
-      "name": "Joseph Maniaci",
-      "profile_url": "https://www.med.unc.edu/pathology/directory/joseph-maniaci/",
+      "name": "Stephen Markwalter",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/stephen-markwalter/",
       "department": "Pathology & Laboratory Medicine",
       "role": "",
       "departments": [
@@ -16986,8 +17092,26 @@
       "pubmed_hint": "Distinguished Professor"
     },
     {
+      "name": "Karson Pettit",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/karson-pettit-md/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ]
+    },
+    {
       "name": "Andre Phelan",
       "profile_url": "https://www.med.unc.edu/pathology/directory/aphelan/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ]
+    },
+    {
+      "name": "Trevor Phelps",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/trevor-phelps-md/",
       "department": "Pathology & Laboratory Medicine",
       "role": "",
       "departments": [
@@ -17158,6 +17282,15 @@
       ]
     },
     {
+      "name": "Christian Spieldenner",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/christian-spieldenner-md/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ]
+    },
+    {
       "name": "Haley St. John",
       "profile_url": "https://www.med.unc.edu/pathology/directory/haley-st-john/",
       "department": "Pathology & Laboratory Medicine",
@@ -17194,8 +17327,8 @@
       ]
     },
     {
-      "name": "Haley Taylor",
-      "profile_url": "https://www.med.unc.edu/pathology/directory/haley-taylor-md/",
+      "name": "Joan Taylor",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/taylorjm/",
       "department": "Pathology & Laboratory Medicine",
       "role": "",
       "departments": [
@@ -17203,8 +17336,8 @@
       ]
     },
     {
-      "name": "Joan Taylor",
-      "profile_url": "https://www.med.unc.edu/pathology/directory/taylorjm/",
+      "name": "Leigh Thorne",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/lthorne/",
       "department": "Pathology & Laboratory Medicine",
       "role": "",
       "departments": [
@@ -17240,15 +17373,6 @@
       ]
     },
     {
-      "name": "Vorapat Vorapanya",
-      "profile_url": "https://www.med.unc.edu/pathology/directory/pat-vorapanya/",
-      "department": "Pathology & Laboratory Medicine",
-      "role": "",
-      "departments": [
-        "Pathology & Laboratory Medicine"
-      ]
-    },
-    {
       "name": "Haofei Wang",
       "profile_url": "https://www.med.unc.edu/pathology/directory/haofei-wang-phd/",
       "department": "Pathology & Laboratory Medicine",
@@ -17270,6 +17394,15 @@
     {
       "name": "Karen E. Weck",
       "profile_url": "https://www.med.unc.edu/pathology/directory/kweck/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ]
+    },
+    {
+      "name": "Susan Weiss",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/susanmw/",
       "department": "Pathology & Laboratory Medicine",
       "role": "",
       "departments": [
@@ -17327,15 +17460,6 @@
     {
       "name": "Scott Williams",
       "profile_url": "https://www.med.unc.edu/pathology/directory/sew/",
-      "department": "Pathology & Laboratory Medicine",
-      "role": "",
-      "departments": [
-        "Pathology & Laboratory Medicine"
-      ]
-    },
-    {
-      "name": "John Willis Jr",
-      "profile_url": "https://www.med.unc.edu/pathology/directory/john-willis-jr-md/",
       "department": "Pathology & Laboratory Medicine",
       "role": "",
       "departments": [
@@ -17553,15 +17677,6 @@
       ]
     },
     {
-      "name": "Specialty Procedures",
-      "profile_url": "",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
       "name": "Jean L. Wright",
       "profile_url": "https://www.med.unc.edu/radonc/directory/jean-wright/",
       "department": "Radiation Oncology",
@@ -17598,24 +17713,6 @@
       "departments": [
         "Radiation Oncology",
         "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Michael Repka",
-      "profile_url": "https://www.med.unc.edu/radonc/directory/michael-repka/",
-      "department": "Radiation Oncology",
-      "role": "",
-      "departments": [
-        "Radiation Oncology"
-      ]
-    },
-    {
-      "name": "Trevor Royce",
-      "profile_url": "https://www.med.unc.edu/radonc/directory/trevor-royce/",
-      "department": "Radiation Oncology",
-      "role": "",
-      "departments": [
-        "Radiation Oncology"
       ]
     },
     {
@@ -17820,6 +17917,15 @@
       ]
     },
     {
+      "name": "Brian Barrick",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/brian-barrick/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ]
+    },
+    {
       "name": "Meena Bhatia",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/meena-bhatia/",
       "department": "Anesthesiology",
@@ -17885,15 +17991,6 @@
     {
       "name": "Ty Bullard",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/ty-bullard/",
-      "department": "Anesthesiology",
-      "role": "",
-      "departments": [
-        "Anesthesiology"
-      ]
-    },
-    {
-      "name": "Fei Chen",
-      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/fei-chen/",
       "department": "Anesthesiology",
       "role": "",
       "departments": [
@@ -18073,6 +18170,15 @@
       ]
     },
     {
+      "name": "Michael Gonzalez",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/michael-gonzalez/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ]
+    },
+    {
       "name": "Samantha Gottlieb",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/samantha-gottlieb/",
       "department": "Anesthesiology",
@@ -18209,15 +18315,6 @@
       ]
     },
     {
-      "name": "Hannah Jennings-Davis",
-      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/hannah-jennings-davis/",
-      "department": "Anesthesiology",
-      "role": "",
-      "departments": [
-        "Anesthesiology"
-      ]
-    },
-    {
       "name": "Samiat Jinadu",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/samiat-jinadu/",
       "department": "Anesthesiology",
@@ -18290,6 +18387,15 @@
       ]
     },
     {
+      "name": "Alexander Levine",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/alexander-levine/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ]
+    },
+    {
       "name": "Sarah Linnstaedt",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/sarah-linnstaedt/",
       "department": "Anesthesiology",
@@ -18319,6 +18425,15 @@
     {
       "name": "Concetta Lupa",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/concetta-lupa/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ]
+    },
+    {
+      "name": "Herman Luther",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/herman-luther/",
       "department": "Anesthesiology",
       "role": "",
       "departments": [
@@ -18434,6 +18549,15 @@
       ]
     },
     {
+      "name": "Al Melvin",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/al-melvin/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ]
+    },
+    {
       "name": "Maya Mendelaw",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/maya-mendelaw/",
       "department": "Anesthesiology",
@@ -18481,15 +18605,6 @@
     {
       "name": "Kimberley Nichols",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/kimberley-nichols/",
-      "department": "Anesthesiology",
-      "role": "",
-      "departments": [
-        "Anesthesiology"
-      ]
-    },
-    {
-      "name": "Millicent Olawale",
-      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/millicent-olawale/",
       "department": "Anesthesiology",
       "role": "",
       "departments": [
@@ -18553,6 +18668,15 @@
     {
       "name": "Joseph Piscitello",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/joseph-piscitello/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ]
+    },
+    {
+      "name": "Sara Pittenger",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/sara-pittenger/",
       "department": "Anesthesiology",
       "role": "",
       "departments": [
@@ -18686,15 +18810,6 @@
       ]
     },
     {
-      "name": "Sally Stander",
-      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/sally-stander/",
-      "department": "Anesthesiology",
-      "role": "",
-      "departments": [
-        "Anesthesiology"
-      ]
-    },
-    {
       "name": "Marjorie Stiegler",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/marjorie-stiegler/",
       "department": "Anesthesiology",
@@ -18724,6 +18839,15 @@
     {
       "name": "Elisa Takalo",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/elisa-lund/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ]
+    },
+    {
+      "name": "Emily Teeter",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/emily-teeter/",
       "department": "Anesthesiology",
       "role": "",
       "departments": [
@@ -20496,8 +20620,8 @@
       ]
     },
     {
-      "name": "Carlton J. Zdanski",
-      "profile_url": "https://www.med.unc.edu/ent/directory/carlton-j-zdanski-md-facs/",
+      "name": "Amelia F. Drake",
+      "profile_url": "https://www.med.unc.edu/ent/directory/amelia-f-drake-md-facs/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20505,8 +20629,8 @@
       ]
     },
     {
-      "name": "Amelia F. Drake",
-      "profile_url": "https://www.med.unc.edu/ent/directory/amelia-f-drake-md-facs/",
+      "name": "Carlton J. Zdanski",
+      "profile_url": "https://www.med.unc.edu/ent/directory/carlton-j-zdanski-md-facs/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20677,6 +20801,16 @@
       ]
     },
     {
+      "name": "Nicholas J. Thompson",
+      "profile_url": "https://www.med.unc.edu/ent/directory/nicholas-thompson-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/nicholas.thompson.1/bibliography/public"
+    },
+    {
       "name": "Tram Tran",
       "profile_url": "https://www.med.unc.edu/ent/directory/bao-tram-tran-fnp/",
       "department": "Otolaryngology / Head & Neck Surgery",
@@ -20824,15 +20958,6 @@
     {
       "name": "Beatrice Y. Brewington",
       "profile_url": "https://www.med.unc.edu/ophth/directory/beatrice-y-brewington-md/",
-      "department": "Ophthalmology",
-      "role": "",
-      "departments": [
-        "Ophthalmology"
-      ]
-    },
-    {
-      "name": "Kyra Dorgeloh",
-      "profile_url": "https://www.med.unc.edu/ophth/directory/kyra-dorgeloh-od-faao/",
       "department": "Ophthalmology",
       "role": "",
       "departments": [
@@ -21056,6 +21181,15 @@
       ]
     },
     {
+      "name": "Sophie Adams",
+      "profile_url": "https://www.med.unc.edu/urology/directory/sophie-adams/",
+      "department": "Urology",
+      "role": "",
+      "departments": [
+        "Urology"
+      ]
+    },
+    {
       "name": "Hans Arora",
       "profile_url": "https://www.med.unc.edu/urology/directory/hans-arora/",
       "department": "Urology",
@@ -21185,8 +21319,8 @@
       ]
     },
     {
-      "name": "Kathryn Harrawood",
-      "profile_url": "https://www.med.unc.edu/urology/directory/kathryn-harrawood/",
+      "name": "David Johnson",
+      "profile_url": "https://www.med.unc.edu/urology/directory/david-johnson/",
       "department": "Urology",
       "role": "",
       "departments": [
@@ -21194,8 +21328,8 @@
       ]
     },
     {
-      "name": "David Johnson",
-      "profile_url": "https://www.med.unc.edu/urology/directory/david-johnson/",
+      "name": "Elizabeth Kwenda",
+      "profile_url": "https://www.med.unc.edu/urology/directory/elizabeth-kwenda/",
       "department": "Urology",
       "role": "",
       "departments": [
@@ -21385,23 +21519,24 @@
       ]
     },
     {
-      "name": "John Michael Baratta",
-      "profile_url": "https://www.med.unc.edu/phyrehab/directory/johnmichael-baratta/",
-      "department": "Physical Medicine & Rehabilitation",
-      "role": "",
-      "departments": [
-        "Physical Medicine & Rehabilitation"
-      ]
-    },
-    {
-      "name": "Karla Thompson",
-      "profile_url": "https://www.med.unc.edu/phyrehab/directory/karla-thompson/",
+      "name": "Jessica Barnhill",
+      "profile_url": "https://www.med.unc.edu/phyrehab/directory/jbarnhil/",
       "department": "Physical Medicine & Rehabilitation",
       "role": "",
       "departments": [
         "Physical Medicine & Rehabilitation"
       ],
-      "pubmed_hint": "Karla Thompson"
+      "pubmed_hint": "Jessica Barnhill"
+    },
+    {
+      "name": "Kristopher Karvelas",
+      "profile_url": "https://www.med.unc.edu/phyrehab/directory/kristopher-karvelas/",
+      "department": "Physical Medicine & Rehabilitation",
+      "role": "",
+      "departments": [
+        "Physical Medicine & Rehabilitation"
+      ],
+      "pubmed_hint": "Kristopher Karvelas"
     },
     {
       "name": "Erin Laurie",
@@ -22123,15 +22258,6 @@
       ]
     },
     {
-      "name": "Frank Conlon",
-      "profile_url": "https://unclineberger.org/directory/frank-conlon/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
       "name": "Jean Cook",
       "profile_url": "https://unclineberger.org/directory/jean-g-cook/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -22376,15 +22502,6 @@
       ]
     },
     {
-      "name": "Robert J. Duronio",
-      "profile_url": "https://unclineberger.org/directory/robert-j-duronio/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
       "name": "Shelton Earp",
       "profile_url": "https://unclineberger.org/directory/h-shelton-earp/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -22595,15 +22712,6 @@
     {
       "name": "Mindy Gellin",
       "profile_url": "https://unclineberger.org/directory/mindy-gellin/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Karen M. Gil",
-      "profile_url": "https://unclineberger.org/directory/karen-m-gil/",
       "department": "Lineberger Comprehensive Cancer Center",
       "role": "",
       "departments": [
@@ -23041,6 +23149,16 @@
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1DurACX3IYL/bibliography/public"
     },
     {
+      "name": "Michael Iglesia",
+      "profile_url": "https://unclineberger.org/directory/michael-iglesia/",
+      "department": "Lineberger Comprehensive Cancer Center",
+      "role": "",
+      "departments": [
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/michael.iglesia.1/bibliography/public"
+    },
+    {
       "name": "Rumey Ishizawar",
       "profile_url": "https://unclineberger.org/directory/rumey-ishizawar/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -23169,16 +23287,6 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ]
-    },
-    {
-      "name": "Shahzad Khan",
-      "profile_url": "https://unclineberger.org/directory/shahzad-khan/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "khan shahzad s"
     },
     {
       "name": "Lawrence T. Kim",
@@ -23316,15 +23424,6 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1beau9tUDaoQt/bibliography/public"
-    },
-    {
-      "name": "Jefferson Lansford",
-      "profile_url": "https://unclineberger.org/directory/jefferson-lansford/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
     },
     {
       "name": "Olivia D. Lara",
@@ -23581,6 +23680,16 @@
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/michael.love.2/bibliography/public"
     },
     {
+      "name": "Jennifer L. Lund",
+      "profile_url": "https://unclineberger.org/directory/jennifer-lund/",
+      "department": "Lineberger Comprehensive Cancer Center",
+      "role": "",
+      "departments": [
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1zIfcqiKRRckm/bibliography/public"
+    },
+    {
       "name": "Mary Lee MacKichan",
       "profile_url": "https://unclineberger.org/directory/mary-lee-mackichan/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -23674,16 +23783,6 @@
       ]
     },
     {
-      "name": "J. S. Marron",
-      "profile_url": "https://unclineberger.org/directory/j-s-marron/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1zs-cpM4Rlbc7i/bibliography/public"
-    },
-    {
       "name": "Barbara Alvarez Martin",
       "profile_url": "https://unclineberger.org/directory/barbara-alvarez-martin/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -23730,15 +23829,6 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "McCauley HA"
-    },
-    {
-      "name": "Libby McClure",
-      "profile_url": "https://unclineberger.org/directory/libby-mcclure/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
     },
     {
       "name": "Robert K. McGinty",
@@ -24002,6 +24092,15 @@
       ]
     },
     {
+      "name": "Michael Nolan",
+      "profile_url": "https://unclineberger.org/directory/michael-nolan/",
+      "department": "Lineberger Comprehensive Cancer Center",
+      "role": "",
+      "departments": [
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
       "name": "Kala Nwachukwu",
       "profile_url": "https://unclineberger.org/directory/kala-nwachukwu/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -24253,15 +24352,6 @@
       "pubmed_hint": "planey arrianna"
     },
     {
-      "name": "Tim Poe",
-      "profile_url": "https://unclineberger.org/unccn/directory/tim-poe/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
       "name": "Barry M. Popkin",
       "profile_url": "https://unclineberger.org/directory/barry-popkin/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -24298,6 +24388,15 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/kevin.pruitt.1/bibliography/public"
+    },
+    {
+      "name": "Jeremy Purvis",
+      "profile_url": "https://unclineberger.org/directory/jeremy-purvis/",
+      "department": "Lineberger Comprehensive Cancer Center",
+      "role": "",
+      "departments": [
+        "Lineberger Comprehensive Cancer Center"
+      ]
     },
     {
       "name": "Yuliya Pylayeva-Gupta",
@@ -24431,6 +24530,15 @@
       ]
     },
     {
+      "name": "Micheler Richardson",
+      "profile_url": "https://unclineberger.org/directory/micheler-richardson/",
+      "department": "Lineberger Comprehensive Cancer Center",
+      "role": "",
+      "departments": [
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
       "name": "Imran Rizvi",
       "profile_url": "https://unclineberger.org/directory/imran-rizvi/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -24477,16 +24585,6 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ]
-    },
-    {
-      "name": "Donald L. Rosenstein",
-      "profile_url": "https://unclineberger.org/directory/donald-rosenstein/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/donald.rosenstein.1/bibliography/public"
     },
     {
       "name": "Bryan Roth",
@@ -24987,6 +25085,15 @@
       ]
     },
     {
+      "name": "Joan M. Taylor",
+      "profile_url": "https://unclineberger.org/directory/joan-m-taylor/",
+      "department": "Lineberger Comprehensive Cancer Center",
+      "role": "",
+      "departments": [
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
       "name": "Jessica Thaxton",
       "profile_url": "https://unclineberger.org/directory/jessica-thaxton/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -25303,6 +25410,15 @@
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/18qwyszRhux/bibliography/public"
     },
     {
+      "name": "Stephanie Wheeler",
+      "profile_url": "https://unclineberger.org/directory/stephanie-wheeler/",
+      "department": "Lineberger Comprehensive Cancer Center",
+      "role": "",
+      "departments": [
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
       "name": "Angelique Whitehurst",
       "profile_url": "https://unclineberger.org/directory/angelique-whitehurst/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -25376,16 +25492,6 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ]
-    },
-    {
-      "name": "Samuel Wolff",
-      "profile_url": "https://unclineberger.org/directory/samuel-wolff/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/sam.wolff.2/bibliography/public"
     },
     {
       "name": "William A. Wood",
