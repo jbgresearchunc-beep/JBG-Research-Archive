@@ -17,6 +17,13 @@ from datetime import datetime
 from html.parser import HTMLParser
 
 # ---------------------------------------------------------------------------
+# Pipeline version — bump this whenever enrichment logic changes so that
+# scheduled full runs re-enrich everyone instead of resuming stale results.
+# The resume logic only skips faculty whose stored version matches this.
+# ---------------------------------------------------------------------------
+PIPELINE_VERSION = "2026.07.06-orcid-fallback-v2"
+
+# ---------------------------------------------------------------------------
 # HTML helpers
 # ---------------------------------------------------------------------------
 
@@ -195,7 +202,16 @@ NON_NAME_PATTERNS = re.compile(
     r"adolescent care|complex.*diagnostic|development.*behavior|"
     r"child maltreatment|genetics.*metabolism|hematology.*sickle|"
     r"developmental therapeutics|thompson laboratory|vogt laboratory|"
-    r"pandya|darville)\b",
+    r"pandya|darville)\b|"
+
+    # Section/nav headers that slipped through (seen in Peds/Neuro/OBGYN/Psych/Radiology)
+    r"\b(specialty care|quality\s*&?\s*safety|making a referral|"
+    r"making an appointment|impactful publications|social media|"
+    r"aviso de practicas privadas|practicas privadas|patient care|"
+    r"clinical trials|our providers|our team|meet the team|"
+    r"support groups|refer a patient|request an appointment|"
+    r"transitioning to adult|resident documents|"
+    r"our locations|contact us|for patients|for providers)\b",
 
     re.IGNORECASE
 )
@@ -1536,6 +1552,10 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
     name = faculty_member["name"]
     raw_hint = pubmed_string or ""
 
+    # Stamp the pipeline version so version-aware resume knows this record
+    # was enriched by the current code, not a stale prior run.
+    faculty_member["pipeline_version"] = PIPELINE_VERSION
+
     # ── 1. Manual override ────────────────────────────────────────────────────
     if raw_hint.startswith("OVERRIDE:"):
         search_term = raw_hint.replace("OVERRIDE:", "").strip()
@@ -1926,21 +1946,31 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
                        if any(dept_matches(dept_filter, d) for d in f.get("departments", [f.get("department", "")]))]
         departments_in_raw = [d for d in departments_in_raw if dept_matches(dept_filter, d)]
 
-    # ---- Resume support ----
-    # If a prior run checkpointed partial results to output_path, load them and
-    # skip faculty already enriched. This lets a timed-out run pick up where it
-    # left off instead of restarting from scratch. Match by name.
+    # ---- Resume support (version-aware) ----
+    # If a prior run wrote results to output_path, we can skip faculty already
+    # enriched — but ONLY if they were enriched by the CURRENT pipeline version.
+    # This prevents the stale-data bug: a scheduled full run after a code change
+    # must re-enrich everyone, while a timed-out run resuming minutes later
+    # (same version) correctly skips completed work.
     already_done = {}
+    stale_skipped = 0
     if os.path.exists(output_path):
         try:
             with open(output_path) as f:
                 prev = json.load(f)
             for pf in prev.get("faculty", []):
-                # Consider a faculty "done" if they have publications data attached
-                if "pubmed_verified" in pf or "publications" in pf:
+                if "pubmed_verified" not in pf and "publications" not in pf:
+                    continue
+                if pf.get("pipeline_version") == PIPELINE_VERSION:
                     already_done[pf["name"].lower().strip()] = pf
+                else:
+                    stale_skipped += 1
             if already_done:
-                print(f"Resume: found {len(already_done)} already-enriched faculty in {output_path}")
+                print(f"Resume: {len(already_done)} faculty already enriched "
+                      f"by current pipeline v{PIPELINE_VERSION} — will skip those")
+            if stale_skipped:
+                print(f"Resume: {stale_skipped} faculty have OLD pipeline version "
+                      f"— will RE-ENRICH with current logic")
         except Exception as e:
             print(f"Resume: could not read prior output ({e}) — starting fresh")
 
@@ -1948,12 +1978,12 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
     print("\n=== Step 3: Enriching with PubMed ===")
     for i, f in enumerate(all_faculty):
         name_key = f["name"].lower().strip()
-        # Skip if already enriched in a prior (checkpointed) run
+        # Skip only if enriched by the CURRENT pipeline version
         if name_key in already_done:
             prev = already_done[name_key]
             for k in ("pubmed_search", "pubmed_count", "pubmed_verified",
                       "pubmed_ambiguous", "publications", "nih_grants",
-                      "pubmed_recent_recruit"):
+                      "pubmed_recent_recruit", "pipeline_version"):
                 if k in prev:
                     f[k] = prev[k]
             continue
@@ -1969,6 +1999,7 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
             f.setdefault("pubmed_verified", 0)
             f.setdefault("pubmed_ambiguous", False)
             f.setdefault("publications", [])
+            f["pipeline_version"] = PIPELINE_VERSION
         time.sleep(PUBMED_SLEEP)
 
         # Periodic checkpoint: save progress every 100 faculty so a late
