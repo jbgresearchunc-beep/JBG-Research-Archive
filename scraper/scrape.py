@@ -1940,11 +1940,26 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
     all_faculty = raw["faculty"]
     departments_in_raw = raw.get("departments", [])
 
-    # Optionally filter to a single department
+    # Optionally filter to a single department. Load the config so we can match
+    # against department short names (e.g. "ENT" → "Otolaryngology...") — without
+    # this, a filter like "ENT" matches nothing because it's not a word in the
+    # full department name. This bug silently produced 0-faculty enrichment runs.
     if dept_filter:
+        dept_short_map = {}
+        try:
+            with open(config_path) as cf:
+                cfg = json.load(cf)
+            dept_short_map = {d["name"]: d.get("short", "") for d in cfg["departments"]}
+        except Exception:
+            pass
+
+        def _dept_ok(dept_name):
+            return dept_matches(dept_filter, dept_name, dept_short_map.get(dept_name, ""))
+
         all_faculty = [f for f in all_faculty
-                       if any(dept_matches(dept_filter, d) for d in f.get("departments", [f.get("department", "")]))]
-        departments_in_raw = [d for d in departments_in_raw if dept_matches(dept_filter, d)]
+                       if any(_dept_ok(d) for d in f.get("departments", [f.get("department", "")]))]
+        departments_in_raw = [d for d in departments_in_raw if _dept_ok(d)]
+        print(f"Filter '{dept_filter}': {len(all_faculty)} faculty in {len(departments_in_raw)} department(s)")
 
     # ---- Resume support (version-aware) ----
     # If a prior run wrote results to output_path, we can skip faculty already
