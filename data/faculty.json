@@ -1,6 +1,1796 @@
 {
-  "generated_at": "2026-07-07T00:00:02.818634Z",
-  "total_faculty": 0,
-  "departments": [],
-  "faculty": []
+  "generated_at": "2026-07-07T00:09:09.560952Z",
+  "total_faculty": 46,
+  "departments": [
+    "Otolaryngology / Head & Neck Surgery"
+  ],
+  "faculty": [
+    {
+      "name": "Wendell G. Yarbrough",
+      "profile_url": "https://www.med.unc.edu/ent/directory/wendell-g-yarbrough-md-mmhc-facs/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Yarbrough WG",
+      "pubmed_count": 45,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42024417",
+          "title": "Sustained Locoregional Control With Deintensified Chemoradiotherapy for HPV Oropharyngeal Carcinoma.",
+          "journal": "JAMA Otolaryngol Head Neck Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "40018983",
+          "title": "The Role of Immunotherapy in Salivary Gland Cancer: A Systematic Review.",
+          "journal": "Ear Nose Throat J",
+          "year": "2025"
+        },
+        {
+          "pmid": "39430853",
+          "title": "Comparison of surgical margins and adjuvant therapy for head and neck cancer by hospital type.",
+          "journal": "Transl Cancer Res",
+          "year": "2024"
+        },
+        {
+          "pmid": "39154570",
+          "title": "Transoral robotic surgery for pediatric upper airway pathology: An institutional update.",
+          "journal": "Int J Pediatr Otorhinolaryngol",
+          "year": "2024"
+        },
+        {
+          "pmid": "38982149",
+          "title": "Molecular characterization of the salivary adenoid cystic carcinoma immune landscape by anatomic subsites.",
+          "journal": "Sci Rep",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Robert L. Ferris",
+      "profile_url": "https://www.med.unc.edu/ent/directory/robert-l-ferris-md-phd/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Ferris RL",
+      "pubmed_count": 17,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42347893",
+          "title": "Tumoral and Systemic Immune Correlates of Response to Concurrent Pembrolizumab and Chemoradiotherapy in Patients with Resected High-Risk Head and Neck Squamous Cell Carcinoma.",
+          "journal": "Clin Cancer Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "42244525",
+          "title": "ATR kinase inhibitors induce mitochondrial fission in CD8+ T cells and impair immune memory in vivo.",
+          "journal": "bioRxiv",
+          "year": "2026"
+        },
+        {
+          "pmid": "41785014",
+          "title": "Preexisting TCR Clones Drive Major Pathologic Responses in Patients with HNSCC Treated with Dual Immune Checkpoint Inhibitors.",
+          "journal": "Clin Cancer Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "41467574",
+          "title": "A Multi-Year Collaborative Curriculum Improves Multidisciplinary Team Members' Ability to Comprehensively Care for Patients With Squamous Cell Carcinoma of the Head and Neck.",
+          "journal": "Ear Nose Throat J",
+          "year": "2025"
+        },
+        {
+          "pmid": "41148139",
+          "title": "Trends in the Use of Neoadjuvant Systemic Therapy for Head and Neck Squamous Cell Carcinoma.",
+          "journal": "JAMA Netw Open",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Mihir R. Patel",
+      "profile_url": "https://www.med.unc.edu/ent/directory/mihir-patel-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 58,
+      "pubmed_search": "ComputedAuthors:Patel MR",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42372348",
+          "title": "Clinical Patterns and Appropriateness of Apixaban Dosing in Patients With Atrial Fibrillation.",
+          "journal": "JACC Adv",
+          "year": "2026"
+        },
+        {
+          "pmid": "42172031",
+          "title": "Messaging Modality and Content for Recruitment of Research Participants: A Randomized Clinical Trial.",
+          "journal": "JAMA Netw Open",
+          "year": "2026"
+        },
+        {
+          "pmid": "42060306",
+          "title": "Audiovisual Augmentation of Electronic Consent to Improve Consent Rates and Comprehension: A Randomized Clinical Trial.",
+          "journal": "JAMA Netw Open",
+          "year": "2026"
+        },
+        {
+          "pmid": "41979878",
+          "title": "Performance of PREVENT Cardiovascular Risk in Electronic Health Record-Based Clinical Practice.",
+          "journal": "JAMA Netw Open",
+          "year": "2026"
+        },
+        {
+          "pmid": "41534986",
+          "title": "IVUS, OCT, or Angiography as Guidance for PCI in Complex Coronary Artery Lesions: Network Meta-Analysis of Randomized Controlled Trials.",
+          "journal": "JACC Cardiovasc Interv",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jeffrey M. Blumberg",
+      "profile_url": "https://www.med.unc.edu/ent/directory/jeffrey-blumberg-md-facs/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 34,
+      "pubmed_search": "ComputedAuthors:Blumberg JM",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42024417",
+          "title": "Sustained Locoregional Control With Deintensified Chemoradiotherapy for HPV Oropharyngeal Carcinoma.",
+          "journal": "JAMA Otolaryngol Head Neck Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "40789224",
+          "title": "Laryngo-pharyngeal-vertebral extirpation: a radical multidisciplinary surgical approach to managing complications from oropharyngeal squamous cell carcinoma treatment. Illustrative case.",
+          "journal": "J Neurosurg Case Lessons",
+          "year": "2025"
+        },
+        {
+          "pmid": "39430853",
+          "title": "Comparison of surgical margins and adjuvant therapy for head and neck cancer by hospital type.",
+          "journal": "Transl Cancer Res",
+          "year": "2024"
+        },
+        {
+          "pmid": "38013109",
+          "title": "Technical Nuances of Anterior Column Construction for the Treatment of Osteomyelitis-Induced Cervical Kyphoscoliotic Deformity: An Operative Video Illustration.",
+          "journal": "World Neurosurg",
+          "year": "2024"
+        },
+        {
+          "pmid": "37767817",
+          "title": "Effect of distance of treatment center on survival for HPV-negative head and neck cancer patients.",
+          "journal": "Head Neck",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "C. Alessandra Colaianni",
+      "profile_url": "https://www.med.unc.edu/ent/directory/c-alessandra-colaianni-md-mphil/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pubmed_hint": "colaianni ca",
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_recent_recruit": true,
+      "pubmed_search": "Colaianni CA",
+      "pubmed_count": 17,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39749757",
+          "title": "Postoperative Implementation of Virtual Reality and Wearable Devices: Opportunities and Challenges.",
+          "journal": "Laryngoscope",
+          "year": "2025"
+        },
+        {
+          "pmid": "39039710",
+          "title": "Primary tracheal adenoid cystic carcinoma: A case report and analysis of the tumor immune microenvironment using single cell RNA sequencing.",
+          "journal": "Head Neck",
+          "year": "2024"
+        },
+        {
+          "pmid": "38739098",
+          "title": "Patterns of virtual reality and Fitbit wearable activity device use after skull base surgery.",
+          "journal": "Int Forum Allergy Rhinol",
+          "year": "2024"
+        },
+        {
+          "pmid": "38647231",
+          "title": "Recurrent Peritonsillar Abscess Caused by Vaginal Flora: A Common Problem From a Unique Source.",
+          "journal": "Ear Nose Throat J",
+          "year": "2024"
+        },
+        {
+          "pmid": "37714781",
+          "title": "Parathyroidectomy: An Operative Guide.",
+          "journal": "Otolaryngol Clin North Am",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Rachelle Gish-Johnson",
+      "profile_url": "https://www.med.unc.edu/ent/directory/rachelle-gish-johnson-fnp-c/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Gish-Johnson Rachelle",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Trevor G. Hackman",
+      "profile_url": "https://www.med.unc.edu/ent/directory/trevor-g-hackman-md-facs/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 119,
+      "pubmed_search": "ComputedAuthors:Hackman TG",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42324840",
+          "title": "Timing of Postoperative Radiotherapy and Outcomes in Oropharyngeal Squamous Cell Carcinoma.",
+          "journal": "Head Neck",
+          "year": "2026"
+        },
+        {
+          "pmid": "42024417",
+          "title": "Sustained Locoregional Control With Deintensified Chemoradiotherapy for HPV Oropharyngeal Carcinoma.",
+          "journal": "JAMA Otolaryngol Head Neck Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41980861",
+          "title": "Early Identification of Gastrostomy Tube Placement in the Surgical Treatment of Head and Neck Cancer.",
+          "journal": "Head Neck",
+          "year": "2026"
+        },
+        {
+          "pmid": "41920764",
+          "title": "Development of a Clinical Assay to Guide Patient Therapy in HPV-Associated Head and Neck Cancer.",
+          "journal": "Clin Cancer Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "41085063",
+          "title": "Post-Radiation Microbiological Changes in Osteoradionecrosis: Investigating the Microbial Landscape.",
+          "journal": "Otolaryngol Head Neck Surg",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Caitlin Heredia",
+      "profile_url": "https://www.med.unc.edu/ent/directory/caitlin-heredia-pa-c/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Heredia C",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Catherine J. Lumley",
+      "profile_url": "https://www.med.unc.edu/ent/directory/catherine-lumley-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 19,
+      "pubmed_search": "ComputedAuthors:Lumley CJ",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42024417",
+          "title": "Sustained Locoregional Control With Deintensified Chemoradiotherapy for HPV Oropharyngeal Carcinoma.",
+          "journal": "JAMA Otolaryngol Head Neck Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "39430853",
+          "title": "Comparison of surgical margins and adjuvant therapy for head and neck cancer by hospital type.",
+          "journal": "Transl Cancer Res",
+          "year": "2024"
+        },
+        {
+          "pmid": "37767817",
+          "title": "Effect of distance of treatment center on survival for HPV-negative head and neck cancer patients.",
+          "journal": "Head Neck",
+          "year": "2023"
+        },
+        {
+          "pmid": "37395170",
+          "title": "A phase 2 study of neoadjuvant chemotherapy plus durvalumab in resectable locally advanced head and neck squamous cell carcinoma.",
+          "journal": "Cancer",
+          "year": "2023"
+        },
+        {
+          "pmid": "36651328",
+          "title": "Osseointegration and Bone Resorption of Scapula Tip Free Flaps in Mandibular Reconstruction.",
+          "journal": "Laryngoscope",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Hannah Eadie Reid",
+      "profile_url": "https://www.med.unc.edu/ent/directory/hannah-eadie-reid-np/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Reid Hannah",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Travis P. Schrank",
+      "profile_url": "https://www.med.unc.edu/ent/directory/travis-p-schrank-md-phd/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 40,
+      "pubmed_search": "ComputedAuthors:Schrank TP",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41920764",
+          "title": "Development of a Clinical Assay to Guide Patient Therapy in HPV-Associated Head and Neck Cancer.",
+          "journal": "Clin Cancer Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "41827693",
+          "title": "GARD: Genomic Data-Based Drug Repurposing in Head and Neck Cancer with Large Language Model Validation.",
+          "journal": "Cancers (Basel)",
+          "year": "2026"
+        },
+        {
+          "pmid": "41648300",
+          "title": "GARD: Genomic Data based Drug Repurposing in Head and Neck Cancer with Large Language Model Validation.",
+          "journal": "bioRxiv",
+          "year": "2026"
+        },
+        {
+          "pmid": "40069922",
+          "title": "Tumor-intrinsic and immune-related features associated with treatment failure in human papillomavirus-related oropharyngeal cancer.",
+          "journal": "J Natl Cancer Inst",
+          "year": "2025"
+        },
+        {
+          "pmid": "39574723",
+          "title": "Association of oropharyngeal cancer recurrence with tumor-intrinsic and immune-mediated sequelae of reduced genomic instability.",
+          "journal": "bioRxiv",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Amelia F. Drake",
+      "profile_url": "https://www.med.unc.edu/ent/directory/amelia-f-drake-md-facs/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 15,
+      "pubmed_search": "ComputedAuthors:Drake AF",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42272149",
+          "title": "Women Pioneers in Laryngology: The First Female Fellows of the American Laryngological Association.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        },
+        {
+          "pmid": "41101814",
+          "title": "Treatment Needs of Adult Patients with Cleft Lip and Palate.",
+          "journal": "Facial Plast Surg Clin North Am",
+          "year": "2025"
+        },
+        {
+          "pmid": "41004638",
+          "title": "Are There Morphophysiological Airway Alterations in Syndromic Craniosynostosis? A 3D Computed Tomography and CFD Analysis.",
+          "journal": "Cleft Palate Craniofac J",
+          "year": "2026"
+        },
+        {
+          "pmid": "40751513",
+          "title": "Epidemiologic Assessment and Quality of Life Impact of Sinonasal Disease in Cleft Lip and Palate.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        },
+        {
+          "pmid": "40623155",
+          "title": "Embarking on a Treatment Journey: Experiences of Caregivers of Young Children With Craniofacial Microsomia.",
+          "journal": "J Craniofac Surg",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Carlton J. Zdanski",
+      "profile_url": "https://www.med.unc.edu/ent/directory/carlton-j-zdanski-md-facs/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 93,
+      "pubmed_search": "ComputedAuthors:Zdanski CJ",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41202474",
+          "title": "4D-computed tomography in the evaluation of dynamic tracheal obstruction in children: A case series.",
+          "journal": "Int J Pediatr Otorhinolaryngol",
+          "year": "2025"
+        },
+        {
+          "pmid": "40771834",
+          "title": "Method for retrospective, respiratory-gated, anatomical optical coherence tomography for airway wall elastography.",
+          "journal": "J Biomed Opt",
+          "year": "2025"
+        },
+        {
+          "pmid": "40621167",
+          "title": "In vivo assessment of airway wall compliance during inhalation injury response using anatomical optical coherence elastography.",
+          "journal": "J Biomed Opt",
+          "year": "2025"
+        },
+        {
+          "pmid": "39154570",
+          "title": "Transoral robotic surgery for pediatric upper airway pathology: An institutional update.",
+          "journal": "Int J Pediatr Otorhinolaryngol",
+          "year": "2024"
+        },
+        {
+          "pmid": "38680439",
+          "title": "A Rare Case of Severe Burn Injury to the Oropharynx Caused by a Flare Gun.",
+          "journal": "Ann Burns Fire Disasters",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Lauren A. Leeper",
+      "profile_url": "https://www.med.unc.edu/ent/directory/lauren-a-leeper-md-facs/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Leeper L",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40827055",
+          "title": "The Role of Surgical Timing and Distance Traveled for Care for Patients Born With Cleft Palate.",
+          "journal": "Cleft Palate Craniofac J",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Victoria James",
+      "profile_url": "https://www.med.unc.edu/ent/directory/victoria-claire-james-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "James Victoria",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Wade McClain",
+      "profile_url": "https://www.med.unc.edu/ent/directory/wade-mcclain-do/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 7,
+      "pubmed_search": "ComputedAuthors:McClain Wade",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "38521722",
+          "title": "Pediatric Dysphagia.",
+          "journal": "Otolaryngol Clin North Am",
+          "year": "2024"
+        },
+        {
+          "pmid": "33019881",
+          "title": "Multi-institutional Evaluation of Radiologic Findings Associated With Pediatric Congenital Idiopathic Bilateral Vocal Fold Dysfunction.",
+          "journal": "Otolaryngol Head Neck Surg",
+          "year": "2021"
+        },
+        {
+          "pmid": "32363047",
+          "title": "Extramedullary Hematopoiesis in the Sinonasal Cavity: A Case Report and Review of the Literature.",
+          "journal": "Allergy Rhinol (Providence)",
+          "year": "2020"
+        },
+        {
+          "pmid": "29900688",
+          "title": "Outpatient management and surgeon specialty for thyroglossal duct cyst excision: A retrospective analysis of 377 patients and 30-day outcomes in the American College of Surgeons NSQIP-P Database.",
+          "journal": "Clin Otolaryngol",
+          "year": "2018"
+        },
+        {
+          "pmid": "29696657",
+          "title": "Surgical simulation and applicant perception in otolaryngology residency interviews.",
+          "journal": "Laryngoscope",
+          "year": "2018"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Courtney McDonough",
+      "profile_url": "https://www.med.unc.edu/ent/directory/courtney-mcdonough-pa-c/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "McDonough Courtney",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "J. Madison Clark",
+      "profile_url": "https://www.med.unc.edu/ent/directory/j-madison-clark-md-facs/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Clark JM",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40311083",
+          "title": "A 45-Year-Old Woman with New Breast Cancer Is Found to Have Organizing Pneumonia: Should She Proceed with Immunotherapy?",
+          "journal": "Ann Am Thorac Soc",
+          "year": "2025"
+        },
+        {
+          "pmid": "39281842",
+          "title": "Near fatal case of mirvetuximab soravtansine-gynx induced interstitial lung disease and a review of the primary literature.",
+          "journal": "Gynecol Oncol Rep",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Virginia Drake",
+      "profile_url": "https://www.med.unc.edu/ent/directory/virginia-ginny-drake-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 24,
+      "pubmed_search": "ComputedAuthors:Drake Virginia",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40923666",
+          "title": "Free Gracilis Muscle Transfer in the Nerve-Depleted Patient: Reconsidering the Deep Temporal Nerve.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        },
+        {
+          "pmid": "40875999",
+          "title": "Changes in Smile Symmetry and Perceived Emotions in Patients with Facial Synkinesis after Depressor Anguli Oris Myectomy: A Long-Term Follow-up Study.",
+          "journal": "Facial Plast Surg Aesthet Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "40875996",
+          "title": "Invited Commentary on: \"Role of Perinasal Musculature in Ipsilateral Nasal Obstruction During Synkinesis Progression,\" by Boyce et al.",
+          "journal": "Facial Plast Surg Aesthet Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "39659254",
+          "title": "The Lip Lift Island Flap: A Novel Technique for Nasal Sill and Columella Reconstruction.",
+          "journal": "Facial Plast Surg Aesthet Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "39552273",
+          "title": "Quantifying the Effect of the Cross-Facial Nerve Graft on the Nonparalyzed Side.",
+          "journal": "Otolaryngol Head Neck Surg",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Brian S. Jewett",
+      "profile_url": "https://www.med.unc.edu/ent/directory/brian-s-jewett-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Jewett B",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Matthew Q. Miller",
+      "profile_url": "https://www.med.unc.edu/ent/directory/matthew-q-miller-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 32,
+      "pubmed_search": "ComputedAuthors:Miller MQ",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42321963",
+          "title": "International and Multispecialty Expert Consensus on Standardization of Facial Reanimation Surgical Outcomes Reporting.",
+          "journal": "Facial Plast Surg Aesthet Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "41738514",
+          "title": "Analyzing the Readability of Facial Paralysis Patient-Reported Outcome Measures.",
+          "journal": "J Otolaryngol Head Neck Surg",
+          "year": "2026"
+        },
+        {
+          "pmid": "41460602",
+          "title": "Invited Commentary on: \"Selective Neurectomy Outcomes in Patients with Synkinesis: The First 56 Consecutive Primary Cases with Minimum 1 Year Follow-Up,\" by Ozucer and Yilmaz.",
+          "journal": "Facial Plast Surg Aesthet Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "40923666",
+          "title": "Free Gracilis Muscle Transfer in the Nerve-Depleted Patient: Reconsidering the Deep Temporal Nerve.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        },
+        {
+          "pmid": "40876007",
+          "title": "Collaboration: The Past, Present, and Future of Facial Nerve Research.",
+          "journal": "Facial Plast Surg Aesthet Med",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Brent A. Senior",
+      "profile_url": "https://www.med.unc.edu/ent/directory/brent-a-senior-md-facs-fars/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 220,
+      "pubmed_search": "ComputedAuthors:Senior BA",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42206878",
+          "title": "Effects of Sinonasal Mucus Debridement on Nasal Nitric Oxide in Primary Ciliary Dyskinesia.",
+          "journal": "Int Forum Allergy Rhinol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42095030",
+          "title": "Assessing Olfactory Bulb Infiltration and Morphological Changes in Olfactory Neuroblastoma Using Magnetic Resonance Imaging.",
+          "journal": "J Neurol Surg B Skull Base",
+          "year": "2026"
+        },
+        {
+          "pmid": "41868650",
+          "title": "EUFOREA summit in Brussels 2025: inspiring the future of allergy and respiratory care.",
+          "journal": "Front Allergy",
+          "year": "2026"
+        },
+        {
+          "pmid": "41830161",
+          "title": "Determining the Minimal Clinically Important Difference of the 40-Item Smell Identification Test in People With Cystic Fibrosis.",
+          "journal": "Int Forum Allergy Rhinol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41808973",
+          "title": "Endoscopic Transnasal Approach for Deep Lateral Orbital Decompression: A Cadaver Study.",
+          "journal": "J Neurol Surg B Skull Base",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Brian D. Thorp",
+      "profile_url": "https://www.med.unc.edu/ent/directory/brian-d-thorp-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 133,
+      "pubmed_search": "ComputedAuthors:Thorp BD",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42206878",
+          "title": "Effects of Sinonasal Mucus Debridement on Nasal Nitric Oxide in Primary Ciliary Dyskinesia.",
+          "journal": "Int Forum Allergy Rhinol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42095030",
+          "title": "Assessing Olfactory Bulb Infiltration and Morphological Changes in Olfactory Neuroblastoma Using Magnetic Resonance Imaging.",
+          "journal": "J Neurol Surg B Skull Base",
+          "year": "2026"
+        },
+        {
+          "pmid": "41808973",
+          "title": "Endoscopic Transnasal Approach for Deep Lateral Orbital Decompression: A Cadaver Study.",
+          "journal": "J Neurol Surg B Skull Base",
+          "year": "2026"
+        },
+        {
+          "pmid": "41789188",
+          "title": "Perceptions of Academic Authorship in Medicine: A Multi-Specialty Survey of Physicians.",
+          "journal": "J Med Educ Curric Dev",
+          "year": "2026"
+        },
+        {
+          "pmid": "41708939",
+          "title": "Social Vulnerability and Quality of Life in Chronic Rhinosinusitis.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Charles S. Ebert",
+      "profile_url": "https://www.med.unc.edu/ent/directory/charles-s-ebert-jr-md-mph-fars-faaoa-facs/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 156,
+      "pubmed_search": "ComputedAuthors:Ebert CS",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42206878",
+          "title": "Effects of Sinonasal Mucus Debridement on Nasal Nitric Oxide in Primary Ciliary Dyskinesia.",
+          "journal": "Int Forum Allergy Rhinol",
+          "year": "2026"
+        },
+        {
+          "pmid": "42095030",
+          "title": "Assessing Olfactory Bulb Infiltration and Morphological Changes in Olfactory Neuroblastoma Using Magnetic Resonance Imaging.",
+          "journal": "J Neurol Surg B Skull Base",
+          "year": "2026"
+        },
+        {
+          "pmid": "41808973",
+          "title": "Endoscopic Transnasal Approach for Deep Lateral Orbital Decompression: A Cadaver Study.",
+          "journal": "J Neurol Surg B Skull Base",
+          "year": "2026"
+        },
+        {
+          "pmid": "41708939",
+          "title": "Social Vulnerability and Quality of Life in Chronic Rhinosinusitis.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        },
+        {
+          "pmid": "41537742",
+          "title": "Assessment of Lifetime Inhalational Exposure Burden and Associations With Chronic Rhinosinusitis.",
+          "journal": "Int Forum Allergy Rhinol",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Adam J. Kimple",
+      "profile_url": "https://www.med.unc.edu/ent/directory/adam-j-kimple-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/adam.kimple.1/bibliography/public",
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "MyNCBI:adam.kimple.1",
+      "pubmed_count": 40,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42206878",
+          "title": "Effects of Sinonasal Mucus Debridement on Nasal Nitric Oxide in Primary Ciliary Dyskinesia.",
+          "journal": "Int Forum Allergy Rhinol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41708939",
+          "title": "Social Vulnerability and Quality of Life in Chronic Rhinosinusitis.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        },
+        {
+          "pmid": "41548201",
+          "title": "Species-Level Characterization of the Nasal Microbiome in Various Disease States Utilizing Third-Generation Sequencing.",
+          "journal": "Int Forum Allergy Rhinol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41537742",
+          "title": "Assessment of Lifetime Inhalational Exposure Burden and Associations With Chronic Rhinosinusitis.",
+          "journal": "Int Forum Allergy Rhinol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40995952",
+          "title": "Effects of Elexacaftor/Tezacaftor/Ivacaftor on the Sinonasal Airspace in Cystic Fibrosis.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Cristine Klatt-Cromwell",
+      "profile_url": "https://www.med.unc.edu/ent/directory/cristine-klatt-cromwell-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Klatt-Cromwell Cristine",
+      "pubmed_count": 19,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42206878",
+          "title": "Effects of Sinonasal Mucus Debridement on Nasal Nitric Oxide in Primary Ciliary Dyskinesia.",
+          "journal": "Int Forum Allergy Rhinol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41708939",
+          "title": "Social Vulnerability and Quality of Life in Chronic Rhinosinusitis.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        },
+        {
+          "pmid": "40411258",
+          "title": "A Review of Postoperative Care Following Endoscopic Sinus Surgery for Chronic Rhinosinusitis.",
+          "journal": "Ear Nose Throat J",
+          "year": "2025"
+        },
+        {
+          "pmid": "40351876",
+          "title": "June 4: International Skull Base Surgery Day.",
+          "journal": "J Neurol Surg B Skull Base",
+          "year": "2025"
+        },
+        {
+          "pmid": "40135775",
+          "title": "June 4: International Skull Base Surgery Day.",
+          "journal": "Int Forum Allergy Rhinol",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Meghan Norris",
+      "profile_url": "https://www.med.unc.edu/ent/directory/meghan-norris-ms-mspas-pa-c/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 17,
+      "pubmed_search": "ComputedAuthors:Norris Meghan",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40371719",
+          "title": "Abridging the 22-Item Sino-Nasal Outcome Test (SNOT-22) in People With Cystic Fibrosis: Limiting Survey Burden.",
+          "journal": "Int Forum Allergy Rhinol",
+          "year": "2025"
+        },
+        {
+          "pmid": "40156369",
+          "title": "Olfaction, Eating Preference, and Quality of Life in Cystic Fibrosis Chronic Rhinosinusitis.",
+          "journal": "Laryngoscope",
+          "year": "2025"
+        },
+        {
+          "pmid": "39228880",
+          "title": "Minimally Invasive Transnasal Approach to the Anteromedial Temporal Fossa and Lateral Sphenoid Using a Novel Landmark between Periorbita and Periosteum of the Pterygopalatine Fossa: A Cadaveric Study.",
+          "journal": "J Neurol Surg B Skull Base",
+          "year": "2024"
+        },
+        {
+          "pmid": "38967583",
+          "title": "Impact of sociodemographic status and sex on chronic rhinosinusitis and olfaction in people with cystic fibrosis.",
+          "journal": "Int Forum Allergy Rhinol",
+          "year": "2024"
+        },
+        {
+          "pmid": "38634358",
+          "title": "Predictors of Sinonasal Improvement After Highly Effective Modulator Therapy in Adults with Cystic Fibrosis.",
+          "journal": "Laryngoscope",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jackson Vuncannon",
+      "profile_url": "https://www.med.unc.edu/ent/directory/jackson-vuncannon-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Vuncannon Jackson",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42296555",
+          "title": "Invasive sellar extraventricular neurocytoma: illustrative case.",
+          "journal": "J Neurosurg Case Lessons",
+          "year": "2026"
+        },
+        {
+          "pmid": "41537742",
+          "title": "Assessment of Lifetime Inhalational Exposure Burden and Associations With Chronic Rhinosinusitis.",
+          "journal": "Int Forum Allergy Rhinol",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Kevin D. Brown",
+      "profile_url": "https://www.med.unc.edu/ent/directory/kevin-d-brown-md-phd/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 123,
+      "pubmed_search": "ComputedAuthors:Brown KD",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42049500",
+          "title": "Electrode Contacts in the Functional Hearing Region for Pediatric Cochlear Implant Recipients.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        },
+        {
+          "pmid": "41981750",
+          "title": "Association of Total Cochlear Volume and Initial Hearing Preservation With a Straight Electrode Array.",
+          "journal": "Otol Neurotol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41796981",
+          "title": "Cochlear Implant Recipients With Electrodes in the Acoustic Region: Long-Term Hearing Preservation.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        },
+        {
+          "pmid": "41792877",
+          "title": "Attrition in Cochlear Implant Research: Sociodemographic, Audiologic, and Performance Variables.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        },
+        {
+          "pmid": "41696991",
+          "title": "Preoperative Imaging for Cochlear Implantation: A Global Consensus.",
+          "journal": "Otolaryngol Head Neck Surg",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Matthew M. Dedmon",
+      "profile_url": "https://www.med.unc.edu/ent/directory/matthew-m-dedmon-md-phd/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 62,
+      "pubmed_search": "ComputedAuthors:Dedmon MM",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41796981",
+          "title": "Cochlear Implant Recipients With Electrodes in the Acoustic Region: Long-Term Hearing Preservation.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        },
+        {
+          "pmid": "41020290",
+          "title": "Association of Tonotopic Mismatch and Cochlear Implant Use on Outcomes for Adults With Unilateral Hearing Loss.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        },
+        {
+          "pmid": "40423677",
+          "title": "Association of Tonotopic Mismatch With the Speech Recognition of Cochlear Implant Users With Unilateral Hearing Loss.",
+          "journal": "Otol Neurotol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39965258",
+          "title": "Elective Versus Corrective Cochlear Implant Revision Surgery of Legacy Internal Devices.",
+          "journal": "Otol Neurotol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39206702",
+          "title": "Benefits of Cochlear Implantation for Older Adults With Asymmetric Hearing Loss.",
+          "journal": "Laryngoscope",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "A. Morgan Selleck",
+      "profile_url": "https://www.med.unc.edu/ent/directory/anne-morgan-selleck-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Selleck AM",
+      "pubmed_count": 28,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42391975",
+          "title": "Cochlear size variation in a large-scale international multicentre cohort.",
+          "journal": "Hear Res",
+          "year": "2026"
+        },
+        {
+          "pmid": "41796981",
+          "title": "Cochlear Implant Recipients With Electrodes in the Acoustic Region: Long-Term Hearing Preservation.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        },
+        {
+          "pmid": "40423677",
+          "title": "Association of Tonotopic Mismatch With the Speech Recognition of Cochlear Implant Users With Unilateral Hearing Loss.",
+          "journal": "Otol Neurotol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39666828",
+          "title": "American Cochlear Implant Alliance Position Statement on Newborn Congenital Cytomegalovirus Screening.",
+          "journal": "Otolaryngol Head Neck Surg",
+          "year": "2025"
+        },
+        {
+          "pmid": "39575925",
+          "title": "Scala Tympani Volume Influences Initial 6-Month Hearing Preservation With Lateral Wall Electrode Arrays.",
+          "journal": "Laryngoscope",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Nicholas J. Thompson",
+      "profile_url": "https://www.med.unc.edu/ent/directory/nicholas-thompson-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/nicholas.thompson.1/bibliography/public",
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "MyNCBI:nicholas.thompson.1",
+      "pubmed_count": 33,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39666742",
+          "title": "Cochlear Implantation With Sporadic Inner Ear Schwannomas: Outcomes in 106 Patients From an International Multi-Institutional Study.",
+          "journal": "Otol Neurotol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39951662",
+          "title": "Effects of Insertion Depth and Modiolar Proximity on Cochlear Implant Speech Recognition Outcomes With a Precurved Electrode Array.",
+          "journal": "Otol Neurotol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39514427",
+          "title": "Comparing Cochlear Implant Outcomes in 100 Patients With Sporadic Vestibular Schwannoma Managed With Observation, Radiosurgery, or Microsurgery: A Multi-Institutional Review.",
+          "journal": "Otol Neurotol",
+          "year": "2024"
+        },
+        {
+          "pmid": "39206702",
+          "title": "Benefits of Cochlear Implantation for Older Adults With Asymmetric Hearing Loss.",
+          "journal": "Laryngoscope",
+          "year": "2025"
+        },
+        {
+          "pmid": "39165094",
+          "title": "Speech Recognition and Subjective Hearing Abilities for Electric-Acoustic Stimulation Users With Unilateral Hearing Loss.",
+          "journal": "Otol Neurotol",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Tram Tran",
+      "profile_url": "https://www.med.unc.edu/ent/directory/bao-tram-tran-fnp/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 4,
+      "pubmed_search": "ComputedAuthors:Tran T",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41415802",
+          "title": "Mind-Body Interventions for Comorbid Sleep and Gastrointestinal Concerns.",
+          "journal": "Curr Sleep Med Rep",
+          "year": "2025"
+        },
+        {
+          "pmid": "40306434",
+          "title": "Body- and Fitness-Related Shame Helps Explain the Association Between Internalized Weight Bias and Orthorexia Symptoms Among North American Female Yoga Professionals.",
+          "journal": "J Acad Nutr Diet",
+          "year": "2025"
+        },
+        {
+          "pmid": "37812940",
+          "title": "Pilot feasibility and acceptability trial of BE REAL's BodyKind: A universal school-based body image intervention for adolescents.",
+          "journal": "Body Image",
+          "year": "2023"
+        },
+        {
+          "pmid": "32285451",
+          "title": "Parents, friends and immigrant youths' academic engagement: A mediation analysis.",
+          "journal": "Int J Psychol",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Christine E. DeMason",
+      "profile_url": "https://www.med.unc.edu/ent/directory/christine-e-demason-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 18,
+      "pubmed_search": "ComputedAuthors:DeMason CE",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41698881",
+          "title": "Gender and Academic Rank Disparities in Electronic Health Record Burden Among Otolaryngologists.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        },
+        {
+          "pmid": "41537742",
+          "title": "Assessment of Lifetime Inhalational Exposure Burden and Associations With Chronic Rhinosinusitis.",
+          "journal": "Int Forum Allergy Rhinol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41111614",
+          "title": "Promoting ENT-erest: Evaluating the Effect of Early, Focused Exposure to Otolaryngology.",
+          "journal": "OTO Open",
+          "year": "2025"
+        },
+        {
+          "pmid": "41105574",
+          "title": "Otolaryngology Residency Application Trends and Match Outcomes at a Large Academic Medical Center.",
+          "journal": "ORL J Otorhinolaryngol Relat Spec",
+          "year": "2025"
+        },
+        {
+          "pmid": "40799177",
+          "title": "Incidence of Occult Malignancy Diagnosed on Histopathology in Routine Adult Tonsillectomies.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Ann Q. Bogard",
+      "profile_url": "https://www.med.unc.edu/ent/directory/ann-q-bogard-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Bogard AQ",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Doris Lin",
+      "profile_url": "https://www.med.unc.edu/ent/directory/doris-lin-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 14,
+      "pubmed_search": "ComputedAuthors:Lin Doris",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41541996",
+          "title": "An Initial Diagnosis of Acquired Hemophilia A in an Elderly Male With a Neck Hematoma.",
+          "journal": "Cureus",
+          "year": "2025"
+        },
+        {
+          "pmid": "40799177",
+          "title": "Incidence of Occult Malignancy Diagnosed on Histopathology in Routine Adult Tonsillectomies.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Robert A. Buckmire",
+      "profile_url": "https://www.med.unc.edu/ent/directory/robert-a-buckmire-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 44,
+      "pubmed_search": "ComputedAuthors:Buckmire RA",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41257416",
+          "title": "Missed Opportunities: Laryngologists and Lung Cancer Screening in Early Glottic Cancer Patients.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        },
+        {
+          "pmid": "41111614",
+          "title": "Promoting ENT-erest: Evaluating the Effect of Early, Focused Exposure to Otolaryngology.",
+          "journal": "OTO Open",
+          "year": "2025"
+        },
+        {
+          "pmid": "40985511",
+          "title": "Variables Affecting Time to Airway Improvement After Endoscopic Management of Subglottic Stenosis.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        },
+        {
+          "pmid": "40379555",
+          "title": "Office-Based Laryngology.",
+          "journal": "Otolaryngol Clin North Am",
+          "year": "2025"
+        },
+        {
+          "pmid": "39985365",
+          "title": "In Response to Novel Image-Guided Simulator for Transcervical Intralaryngeal Injection Training.",
+          "journal": "Laryngoscope",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Rupali N. Shah",
+      "profile_url": "https://www.med.unc.edu/ent/directory/rupali-pali-n-shah-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 51,
+      "pubmed_search": "ComputedAuthors:Shah RN",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41257416",
+          "title": "Missed Opportunities: Laryngologists and Lung Cancer Screening in Early Glottic Cancer Patients.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        },
+        {
+          "pmid": "41111614",
+          "title": "Promoting ENT-erest: Evaluating the Effect of Early, Focused Exposure to Otolaryngology.",
+          "journal": "OTO Open",
+          "year": "2025"
+        },
+        {
+          "pmid": "41075694",
+          "title": "Laryngeal sarcoid: Clinical presentation, management, and outcomes at a tertiary care center.",
+          "journal": "Am J Otolaryngol",
+          "year": "2025"
+        },
+        {
+          "pmid": "40985511",
+          "title": "Variables Affecting Time to Airway Improvement After Endoscopic Management of Subglottic Stenosis.",
+          "journal": "Laryngoscope",
+          "year": "2026"
+        },
+        {
+          "pmid": "40379555",
+          "title": "Office-Based Laryngology.",
+          "journal": "Otolaryngol Clin North Am",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Lisa Park",
+      "profile_url": "https://www.med.unc.edu/ent/directory/lisa-park-aud/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/lisa.park.1/bibliography/public",
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "MyNCBI:lisa.park.1",
+      "pubmed_count": 35,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "36879386",
+          "title": "Two-Year Outcomes of Cochlear Implant Use for Children With Unilateral Hearing Loss: Benefits and Comparison to Children With Normal Hearing.",
+          "journal": "Ear Hear",
+          "year": "2023"
+        },
+        {
+          "pmid": "36001854",
+          "title": "Younger Age at Cochlear Implant Activation Results in Improved Auditory Skill Development for Children With Congenital Deafness.",
+          "journal": "J Speech Lang Hear Res",
+          "year": "2022"
+        },
+        {
+          "pmid": "35820072",
+          "title": "Frequency Mapping of a Precurved Electrode Array in the Internal Auditory Canal for a Pediatric Cochlear Implant Recipient.",
+          "journal": "Otol Neurotol",
+          "year": "2022"
+        },
+        {
+          "pmid": "35344959",
+          "title": "Cochlear Nerve Deficiency in Pediatric Unilateral Hearing Loss and Asymmetric Hearing Loss.",
+          "journal": "Audiol Neurootol",
+          "year": "2022"
+        },
+        {
+          "pmid": "35213890",
+          "title": "American Cochlear Implant Alliance Task Force Guidelines for Clinical Assessment and Management of Cochlear Implantation in Children With Single-Sided Deafness.",
+          "journal": "Ear Hear",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Melissa Anderson",
+      "profile_url": "https://www.med.unc.edu/ent/directory/melissa-anderson/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Anderson Melissa",
+      "pubmed_count": 1,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": true,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Erika Gagnon",
+      "profile_url": "https://www.med.unc.edu/ent/directory/erika-gagnon-aud-ccc-a/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 11,
+      "pubmed_search": "ComputedAuthors:Gagnon Erika",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42348847",
+          "title": "The Pediatric Cochlear Implant Use Questionnaire: Assessing Habits and Barriers to Use.",
+          "journal": "Otol Neurotol",
+          "year": "2026"
+        },
+        {
+          "pmid": "39815407",
+          "title": "Benefits of Cochlear Implantation and Hearing Preservation for Children With Preoperative Functional Hearing: A Prospective Clinical Trial.",
+          "journal": "Ear Hear",
+          "year": "2025"
+        },
+        {
+          "pmid": "39133830",
+          "title": "Factors Influencing Pediatric Cochlear Implant Use.",
+          "journal": "Am J Audiol",
+          "year": "2024"
+        },
+        {
+          "pmid": "37250696",
+          "title": "Factors that influence outcomes and device use for pediatric cochlear implant recipients with unilateral hearing loss.",
+          "journal": "Front Hum Neurosci",
+          "year": "2023"
+        },
+        {
+          "pmid": "34912165",
+          "title": "The Limitations of FDA Criteria: Inconsistencies with Clinical Practice, Findings, and Adult Criteria as a Barrier to Pediatric Implantation.",
+          "journal": "Semin Hear",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Natalie Giduz",
+      "profile_url": "https://www.med.unc.edu/ent/directory/natalie-giduz-msw-lcswa/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 5,
+      "pubmed_search": "ComputedAuthors:Giduz Natalie",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "36308520",
+          "title": "Impacts of anterior-posterior jaw disproportions on speech of dentofacial disharmony patients.",
+          "journal": "Eur J Orthod",
+          "year": "2023"
+        },
+        {
+          "pmid": "35903399",
+          "title": "Impacts of Skeletal Anterior Open Bite Malocclusion on Speech.",
+          "journal": "FACE (Thousand Oaks)",
+          "year": "2022"
+        },
+        {
+          "pmid": "35875421",
+          "title": "Validating Spectral Moment Analysis as a Quantitative Measure of Speech Distortions in Speakers With Class III Malocclusions.",
+          "journal": "Perspect ASHA Spec Interest Groups",
+          "year": "2022"
+        },
+        {
+          "pmid": "35039202",
+          "title": "Orthodontic loading activates cell-specific autophagy in a force-dependent manner.",
+          "journal": "Am J Orthod Dentofacial Orthop",
+          "year": "2022"
+        },
+        {
+          "pmid": "34562076",
+          "title": "Orthognathic speech pathology: impacts of Class III malocclusion on speech.",
+          "journal": "Eur J Orthod",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Sandra Hancock",
+      "profile_url": "https://www.med.unc.edu/ent/directory/sandra-hancock-ms-ccc-slp-lsls-cert-avt/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Hancock S",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "37932128",
+          "title": "Influence of BMI percentile on craniofacial morphology and development in adolescents,Part II: elevated BMI is associated with larger final facial dimensions.",
+          "journal": "Eur J Orthod",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Lillian Henderson",
+      "profile_url": "https://www.med.unc.edu/ent/directory/lillian-henderson-msp-ccc-slp-lsls-cert-avt/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 8,
+      "pubmed_search": "ComputedAuthors:Henderson Lillian",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39815407",
+          "title": "Benefits of Cochlear Implantation and Hearing Preservation for Children With Preoperative Functional Hearing: A Prospective Clinical Trial.",
+          "journal": "Ear Hear",
+          "year": "2025"
+        },
+        {
+          "pmid": "29023243",
+          "title": "Pediatric Auditory Brainstem Implantation: Surgical, Electrophysiologic, and Behavioral Outcomes.",
+          "journal": "Ear Hear",
+          "year": "2018"
+        },
+        {
+          "pmid": "28968281",
+          "title": "The Electrically Evoked Auditory Change Complex Evoked by Temporal Gaps Using Cochlear Implants or Auditory Brainstem Implants in Children With Cochlear Nerve Deficiency.",
+          "journal": "Ear Hear",
+          "year": "2018"
+        },
+        {
+          "pmid": "27635521",
+          "title": "Proceedings of the Annual Symposium of the American Cochlear Implant Alliance.",
+          "journal": "Cochlear Implants Int",
+          "year": "2016"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Erin Thompson",
+      "profile_url": "https://www.med.unc.edu/ent/directory/erin-thompson-ms-ccc-slp-lsls-cert-avt/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Thompson Erin",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "31721595",
+          "title": "Age at Full-Time Use Predicts Language Outcomes Better Than Age of Surgery in Children Who Use Cochlear Implants.",
+          "journal": "Am J Audiol",
+          "year": "2019"
+        },
+        {
+          "pmid": "23805595",
+          "title": "Atrial septal defect.",
+          "journal": "JAAPA",
+          "year": "2013"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jennifer Woodard",
+      "profile_url": "https://www.med.unc.edu/ent/directory/jennifer-woodard-aud-ccc-a/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 18,
+      "pubmed_search": "ComputedAuthors:Woodard Jennifer",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41977033",
+          "title": "Determinants of Cochlear Implant Evaluation Completion and Uptake in Children.",
+          "journal": "J Clin Med",
+          "year": "2026"
+        },
+        {
+          "pmid": "38887094",
+          "title": "Safety and Early Outcomes of Cochlear Implantation of Nucleus Devices in Infants: A Multi-Centre Study.",
+          "journal": "Trends Hear",
+          "year": "2024"
+        },
+        {
+          "pmid": "33352551",
+          "title": "Delaying Cochlear Implantation Impacts Postoperative Speech Perception of Nontraditional Pediatric Candidates.",
+          "journal": "Audiol Neurootol",
+          "year": "2021"
+        },
+        {
+          "pmid": "30741907",
+          "title": "Hearing Preservation in Pediatric Recipients of Cochlear Implants.",
+          "journal": "Otol Neurotol",
+          "year": "2019"
+        },
+        {
+          "pmid": "27098767",
+          "title": "The effect of interdevice interval on speech perception performance among bilateral, pediatric cochlear implant recipients.",
+          "journal": "Laryngoscope",
+          "year": "2016"
+        }
+      ],
+      "nih_grants": []
+    }
+  ]
 }
