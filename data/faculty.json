@@ -1,1370 +1,1739 @@
 {
-  "generated_at": "2026-07-07T00:09:09.560952Z",
-  "total_faculty": 46,
+  "generated_at": "2026-07-07T00:14:56.551959Z",
+  "total_faculty": 47,
   "departments": [
-    "Otolaryngology / Head & Neck Surgery"
+    "Medicine \u2014 Cardiology"
   ],
   "faculty": [
     {
-      "name": "Wendell G. Yarbrough",
-      "profile_url": "https://www.med.unc.edu/ent/directory/wendell-g-yarbrough-md-mmhc-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "George Stouffer",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/rick-stouffer/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ],
       "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_search": "Yarbrough WG",
-      "pubmed_count": 45,
+      "pubmed_search": "Stouffer George",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Essraa Bayoumi",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/essraa-bayoumi-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Bayoumi Essraa",
+      "pubmed_count": 0,
+      "pubmed_verified": 0,
+      "pubmed_ambiguous": false,
+      "publications": [],
+      "nih_grants": []
+    },
+    {
+      "name": "Matthew A. Cavender",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/matthew-cavender/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Cavender MA",
+      "pubmed_count": 70,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "42024417",
-          "title": "Sustained Locoregional Control With Deintensified Chemoradiotherapy for HPV Oropharyngeal Carcinoma.",
-          "journal": "JAMA Otolaryngol Head Neck Surg",
+          "pmid": "42394388",
+          "title": "Importance of Hypercortisolism in BP Control, Cardiovascular Risk and in Patients With Difficult-to-Control Hypertension: An Overview for Primary Care Physicians.",
+          "journal": "Diabetes Obes Metab",
           "year": "2026"
         },
         {
-          "pmid": "40018983",
-          "title": "The Role of Immunotherapy in Salivary Gland Cancer: A Systematic Review.",
-          "journal": "Ear Nose Throat J",
-          "year": "2025"
+          "pmid": "42348714",
+          "title": "Lipid-Lowering Treatment Patterns and Risk of Subsequent Cardiovascular Outcomes in Patients with Recent Coronary Revascularization.",
+          "journal": "Crit Pathw Cardiol",
+          "year": "2026"
         },
         {
-          "pmid": "39430853",
-          "title": "Comparison of surgical margins and adjuvant therapy for head and neck cancer by hospital type.",
-          "journal": "Transl Cancer Res",
-          "year": "2024"
+          "pmid": "42201285",
+          "title": "Roadmap to Revitalizing Academic Cardiovascular Medicine: A Perspective From the Association of Professors of Cardiology (APC) Emerging Leaders Group.",
+          "journal": "J Am Coll Cardiol",
+          "year": "2026"
         },
         {
-          "pmid": "39154570",
-          "title": "Transoral robotic surgery for pediatric upper airway pathology: An institutional update.",
-          "journal": "Int J Pediatr Otorhinolaryngol",
-          "year": "2024"
+          "pmid": "41627802",
+          "title": "Oral Semaglutide and Heart Failure Outcomes in Persons With Type 2 Diabetes: A Secondary Analysis of the SOUL Randomized Clinical Trial.",
+          "journal": "JAMA Intern Med",
+          "year": "2026"
         },
         {
-          "pmid": "38982149",
-          "title": "Molecular characterization of the salivary adenoid cystic carcinoma immune landscape by anatomic subsites.",
-          "journal": "Sci Rep",
-          "year": "2024"
+          "pmid": "41424277",
+          "title": "Public Reporting and Risk Aversion: Robust Risk Adjustment Is the Cure.",
+          "journal": "Circ Cardiovasc Interv",
+          "year": "2026"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Robert L. Ferris",
-      "profile_url": "https://www.med.unc.edu/ent/directory/robert-l-ferris-md-phd/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Patricia Pat-Yue Chang",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/patricia-chang/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ],
       "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_search": "Ferris RL",
-      "pubmed_count": 17,
+      "pubmed_count": 132,
+      "pubmed_search": "ComputedAuthors:Chang Patricia",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "42347893",
-          "title": "Tumoral and Systemic Immune Correlates of Response to Concurrent Pembrolizumab and Chemoradiotherapy in Patients with Resected High-Risk Head and Neck Squamous Cell Carcinoma.",
-          "journal": "Clin Cancer Res",
+          "pmid": "42007011",
+          "title": "The relationship of fatigue, cardiac structure and function, and outcomes in heart failure: The ARIC study.",
+          "journal": "Am Heart J Plus",
           "year": "2026"
         },
         {
-          "pmid": "42244525",
-          "title": "ATR kinase inhibitors induce mitochondrial fission in CD8+ T cells and impair immune memory in vivo.",
-          "journal": "bioRxiv",
-          "year": "2026"
-        },
-        {
-          "pmid": "41785014",
-          "title": "Preexisting TCR Clones Drive Major Pathologic Responses in Patients with HNSCC Treated with Dual Immune Checkpoint Inhibitors.",
-          "journal": "Clin Cancer Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "41467574",
-          "title": "A Multi-Year Collaborative Curriculum Improves Multidisciplinary Team Members' Ability to Comprehensively Care for Patients With Squamous Cell Carcinoma of the Head and Neck.",
-          "journal": "Ear Nose Throat J",
-          "year": "2025"
-        },
-        {
-          "pmid": "41148139",
-          "title": "Trends in the Use of Neoadjuvant Systemic Therapy for Head and Neck Squamous Cell Carcinoma.",
-          "journal": "JAMA Netw Open",
-          "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Mihir R. Patel",
-      "profile_url": "https://www.med.unc.edu/ent/directory/mihir-patel-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 58,
-      "pubmed_search": "ComputedAuthors:Patel MR",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42372348",
-          "title": "Clinical Patterns and Appropriateness of Apixaban Dosing in Patients With Atrial Fibrillation.",
+          "pmid": "41609288",
+          "title": "Imaging and Cardiac Biomarker Associations With Preclinical Heart Failure Stage B to C Progression.",
           "journal": "JACC Adv",
           "year": "2026"
         },
         {
-          "pmid": "42172031",
-          "title": "Messaging Modality and Content for Recruitment of Research Participants: A Randomized Clinical Trial.",
-          "journal": "JAMA Netw Open",
-          "year": "2026"
-        },
-        {
-          "pmid": "42060306",
-          "title": "Audiovisual Augmentation of Electronic Consent to Improve Consent Rates and Comprehension: A Randomized Clinical Trial.",
-          "journal": "JAMA Netw Open",
-          "year": "2026"
-        },
-        {
-          "pmid": "41979878",
-          "title": "Performance of PREVENT Cardiovascular Risk in Electronic Health Record-Based Clinical Practice.",
-          "journal": "JAMA Netw Open",
-          "year": "2026"
-        },
-        {
-          "pmid": "41534986",
-          "title": "IVUS, OCT, or Angiography as Guidance for PCI in Complex Coronary Artery Lesions: Network Meta-Analysis of Randomized Controlled Trials.",
-          "journal": "JACC Cardiovasc Interv",
-          "year": "2026"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Jeffrey M. Blumberg",
-      "profile_url": "https://www.med.unc.edu/ent/directory/jeffrey-blumberg-md-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 34,
-      "pubmed_search": "ComputedAuthors:Blumberg JM",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42024417",
-          "title": "Sustained Locoregional Control With Deintensified Chemoradiotherapy for HPV Oropharyngeal Carcinoma.",
-          "journal": "JAMA Otolaryngol Head Neck Surg",
-          "year": "2026"
-        },
-        {
-          "pmid": "40789224",
-          "title": "Laryngo-pharyngeal-vertebral extirpation: a radical multidisciplinary surgical approach to managing complications from oropharyngeal squamous cell carcinoma treatment. Illustrative case.",
-          "journal": "J Neurosurg Case Lessons",
+          "pmid": "41144704",
+          "title": "Outcomes and Tolerability of Early Mammalian Target of Rapamycin Inhibitor Initiation for Renal Sparing in Heart Transplant Recipients.",
+          "journal": "Clin Transplant",
           "year": "2025"
         },
         {
-          "pmid": "39430853",
-          "title": "Comparison of surgical margins and adjuvant therapy for head and neck cancer by hospital type.",
-          "journal": "Transl Cancer Res",
-          "year": "2024"
-        },
-        {
-          "pmid": "38013109",
-          "title": "Technical Nuances of Anterior Column Construction for the Treatment of Osteomyelitis-Induced Cervical Kyphoscoliotic Deformity: An Operative Video Illustration.",
-          "journal": "World Neurosurg",
-          "year": "2024"
-        },
-        {
-          "pmid": "37767817",
-          "title": "Effect of distance of treatment center on survival for HPV-negative head and neck cancer patients.",
-          "journal": "Head Neck",
-          "year": "2023"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "C. Alessandra Colaianni",
-      "profile_url": "https://www.med.unc.edu/ent/directory/c-alessandra-colaianni-md-mphil/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pubmed_hint": "colaianni ca",
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_recent_recruit": true,
-      "pubmed_search": "Colaianni CA",
-      "pubmed_count": 17,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "39749757",
-          "title": "Postoperative Implementation of Virtual Reality and Wearable Devices: Opportunities and Challenges.",
-          "journal": "Laryngoscope",
+          "pmid": "40516213",
+          "title": "Differential Associations of Cardiac, Pulmonary, Arterial, and Muscle Physiological Parameters and Biomarkers With the Incidence of HFpEF and HFrEF.",
+          "journal": "JACC Heart Fail",
           "year": "2025"
         },
         {
-          "pmid": "39039710",
-          "title": "Primary tracheal adenoid cystic carcinoma: A case report and analysis of the tumor immune microenvironment using single cell RNA sequencing.",
-          "journal": "Head Neck",
-          "year": "2024"
-        },
-        {
-          "pmid": "38739098",
-          "title": "Patterns of virtual reality and Fitbit wearable activity device use after skull base surgery.",
-          "journal": "Int Forum Allergy Rhinol",
-          "year": "2024"
-        },
-        {
-          "pmid": "38647231",
-          "title": "Recurrent Peritonsillar Abscess Caused by Vaginal Flora: A Common Problem From a Unique Source.",
-          "journal": "Ear Nose Throat J",
-          "year": "2024"
-        },
-        {
-          "pmid": "37714781",
-          "title": "Parathyroidectomy: An Operative Guide.",
-          "journal": "Otolaryngol Clin North Am",
-          "year": "2024"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Rachelle Gish-Johnson",
-      "profile_url": "https://www.med.unc.edu/ent/directory/rachelle-gish-johnson-fnp-c/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_search": "Gish-Johnson Rachelle",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Trevor G. Hackman",
-      "profile_url": "https://www.med.unc.edu/ent/directory/trevor-g-hackman-md-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 119,
-      "pubmed_search": "ComputedAuthors:Hackman TG",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42324840",
-          "title": "Timing of Postoperative Radiotherapy and Outcomes in Oropharyngeal Squamous Cell Carcinoma.",
-          "journal": "Head Neck",
-          "year": "2026"
-        },
-        {
-          "pmid": "42024417",
-          "title": "Sustained Locoregional Control With Deintensified Chemoradiotherapy for HPV Oropharyngeal Carcinoma.",
-          "journal": "JAMA Otolaryngol Head Neck Surg",
-          "year": "2026"
-        },
-        {
-          "pmid": "41980861",
-          "title": "Early Identification of Gastrostomy Tube Placement in the Surgical Treatment of Head and Neck Cancer.",
-          "journal": "Head Neck",
-          "year": "2026"
-        },
-        {
-          "pmid": "41920764",
-          "title": "Development of a Clinical Assay to Guide Patient Therapy in HPV-Associated Head and Neck Cancer.",
-          "journal": "Clin Cancer Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "41085063",
-          "title": "Post-Radiation Microbiological Changes in Osteoradionecrosis: Investigating the Microbial Landscape.",
-          "journal": "Otolaryngol Head Neck Surg",
-          "year": "2026"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Caitlin Heredia",
-      "profile_url": "https://www.med.unc.edu/ent/directory/caitlin-heredia-pa-c/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_search": "Heredia C",
-      "pubmed_count": 1,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Catherine J. Lumley",
-      "profile_url": "https://www.med.unc.edu/ent/directory/catherine-lumley-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 19,
-      "pubmed_search": "ComputedAuthors:Lumley CJ",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42024417",
-          "title": "Sustained Locoregional Control With Deintensified Chemoradiotherapy for HPV Oropharyngeal Carcinoma.",
-          "journal": "JAMA Otolaryngol Head Neck Surg",
-          "year": "2026"
-        },
-        {
-          "pmid": "39430853",
-          "title": "Comparison of surgical margins and adjuvant therapy for head and neck cancer by hospital type.",
-          "journal": "Transl Cancer Res",
-          "year": "2024"
-        },
-        {
-          "pmid": "37767817",
-          "title": "Effect of distance of treatment center on survival for HPV-negative head and neck cancer patients.",
-          "journal": "Head Neck",
-          "year": "2023"
-        },
-        {
-          "pmid": "37395170",
-          "title": "A phase 2 study of neoadjuvant chemotherapy plus durvalumab in resectable locally advanced head and neck squamous cell carcinoma.",
-          "journal": "Cancer",
-          "year": "2023"
-        },
-        {
-          "pmid": "36651328",
-          "title": "Osseointegration and Bone Resorption of Scapula Tip Free Flaps in Mandibular Reconstruction.",
-          "journal": "Laryngoscope",
-          "year": "2023"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Hannah Eadie Reid",
-      "profile_url": "https://www.med.unc.edu/ent/directory/hannah-eadie-reid-np/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_search": "Reid Hannah",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Travis P. Schrank",
-      "profile_url": "https://www.med.unc.edu/ent/directory/travis-p-schrank-md-phd/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 40,
-      "pubmed_search": "ComputedAuthors:Schrank TP",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41920764",
-          "title": "Development of a Clinical Assay to Guide Patient Therapy in HPV-Associated Head and Neck Cancer.",
-          "journal": "Clin Cancer Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "41827693",
-          "title": "GARD: Genomic Data-Based Drug Repurposing in Head and Neck Cancer with Large Language Model Validation.",
-          "journal": "Cancers (Basel)",
-          "year": "2026"
-        },
-        {
-          "pmid": "41648300",
-          "title": "GARD: Genomic Data based Drug Repurposing in Head and Neck Cancer with Large Language Model Validation.",
-          "journal": "bioRxiv",
-          "year": "2026"
-        },
-        {
-          "pmid": "40069922",
-          "title": "Tumor-intrinsic and immune-related features associated with treatment failure in human papillomavirus-related oropharyngeal cancer.",
-          "journal": "J Natl Cancer Inst",
-          "year": "2025"
-        },
-        {
-          "pmid": "39574723",
-          "title": "Association of oropharyngeal cancer recurrence with tumor-intrinsic and immune-mediated sequelae of reduced genomic instability.",
-          "journal": "bioRxiv",
-          "year": "2024"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Amelia F. Drake",
-      "profile_url": "https://www.med.unc.edu/ent/directory/amelia-f-drake-md-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 15,
-      "pubmed_search": "ComputedAuthors:Drake AF",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42272149",
-          "title": "Women Pioneers in Laryngology: The First Female Fellows of the American Laryngological Association.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        },
-        {
-          "pmid": "41101814",
-          "title": "Treatment Needs of Adult Patients with Cleft Lip and Palate.",
-          "journal": "Facial Plast Surg Clin North Am",
-          "year": "2025"
-        },
-        {
-          "pmid": "41004638",
-          "title": "Are There Morphophysiological Airway Alterations in Syndromic Craniosynostosis? A 3D Computed Tomography and CFD Analysis.",
-          "journal": "Cleft Palate Craniofac J",
-          "year": "2026"
-        },
-        {
-          "pmid": "40751513",
-          "title": "Epidemiologic Assessment and Quality of Life Impact of Sinonasal Disease in Cleft Lip and Palate.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        },
-        {
-          "pmid": "40623155",
-          "title": "Embarking on a Treatment Journey: Experiences of Caregivers of Young Children With Craniofacial Microsomia.",
-          "journal": "J Craniofac Surg",
+          "pmid": "39779181",
+          "title": "Association of Fatigue Subtype With Outcomes in Adults with Prevalent Heart&#xa0;Failure: The ARIC Study.",
+          "journal": "JACC Heart Fail",
           "year": "2025"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Carlton J. Zdanski",
-      "profile_url": "https://www.med.unc.edu/ent/directory/carlton-j-zdanski-md-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Anil K. Gehi",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/anil-k-gehi-md/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ],
       "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 93,
-      "pubmed_search": "ComputedAuthors:Zdanski CJ",
+      "pubmed_search": "Gehi AK",
+      "pubmed_count": 38,
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "41202474",
-          "title": "4D-computed tomography in the evaluation of dynamic tracheal obstruction in children: A case series.",
-          "journal": "Int J Pediatr Otorhinolaryngol",
-          "year": "2025"
+          "pmid": "42019585",
+          "title": "Reconsidering anticoagulation strategies around cardioversion of atrial fibrillation: time to move beyond the dogma?",
+          "journal": "Trends Cardiovasc Med",
+          "year": "2026"
         },
         {
-          "pmid": "40771834",
-          "title": "Method for retrospective, respiratory-gated, anatomical optical coherence tomography for airway wall elastography.",
-          "journal": "J Biomed Opt",
-          "year": "2025"
+          "pmid": "41954555",
+          "title": "Pulse Self-Exam for Atrial Fibrillation Screening: A Randomized Controlled Trial.",
+          "journal": "JACC Clin Electrophysiol",
+          "year": "2026"
         },
         {
-          "pmid": "40621167",
-          "title": "In vivo assessment of airway wall compliance during inhalation injury response using anatomical optical coherence elastography.",
-          "journal": "J Biomed Opt",
-          "year": "2025"
+          "pmid": "41686025",
+          "title": "Disentangling the Bidirectional Relationship of Atrial Fibrillation and Coronary Events.",
+          "journal": "Circ Popul Health Outcomes",
+          "year": "2026"
         },
         {
-          "pmid": "39154570",
-          "title": "Transoral robotic surgery for pediatric upper airway pathology: An institutional update.",
-          "journal": "Int J Pediatr Otorhinolaryngol",
-          "year": "2024"
+          "pmid": "41631745",
+          "title": "Assessing Potential Benefit of Stroke Prophylaxis Therapy in Atrial Fibrillation and Atrial Flutter Using a Novel Competing Risk Scoring Tool.",
+          "journal": "J Am Heart Assoc",
+          "year": "2026"
         },
         {
-          "pmid": "38680439",
-          "title": "A Rare Case of Severe Burn Injury to the Oropharynx Caused by a Flare Gun.",
-          "journal": "Ann Burns Fire Disasters",
-          "year": "2023"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Lauren A. Leeper",
-      "profile_url": "https://www.med.unc.edu/ent/directory/lauren-a-leeper-md-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_search": "Leeper L",
-      "pubmed_count": 1,
-      "pubmed_verified": 1,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "40827055",
-          "title": "The Role of Surgical Timing and Distance Traveled for Care for Patients Born With Cleft Palate.",
-          "journal": "Cleft Palate Craniofac J",
+          "pmid": "40850588",
+          "title": "Differences in stroke risk among patients with atrial fibrillation and heart failure subtypes.",
+          "journal": "Heart Rhythm",
           "year": "2026"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Victoria James",
-      "profile_url": "https://www.med.unc.edu/ent/directory/victoria-claire-james-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Susan C. Gilchrist",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/susan-c-gilchrist-md-ms/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ],
       "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_search": "James Victoria",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Wade McClain",
-      "profile_url": "https://www.med.unc.edu/ent/directory/wade-mcclain-do/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 7,
-      "pubmed_search": "ComputedAuthors:McClain Wade",
-      "pubmed_verified": 5,
+      "pubmed_count": 45,
+      "pubmed_search": "ComputedAuthors:Gilchrist SC",
+      "pubmed_verified": 2,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "38521722",
-          "title": "Pediatric Dysphagia.",
-          "journal": "Otolaryngol Clin North Am",
-          "year": "2024"
+          "pmid": "42322372",
+          "title": "Early anthracycline cardiotoxicity in adolescents and young adults with sarcoma: a prospective echocardiographic study.",
+          "journal": "ESC Heart Fail",
+          "year": "2026"
         },
         {
-          "pmid": "33019881",
-          "title": "Multi-institutional Evaluation of Radiologic Findings Associated With Pediatric Congenital Idiopathic Bilateral Vocal Fold Dysfunction.",
-          "journal": "Otolaryngol Head Neck Surg",
-          "year": "2021"
-        },
-        {
-          "pmid": "32363047",
-          "title": "Extramedullary Hematopoiesis in the Sinonasal Cavity: A Case Report and Review of the Literature.",
-          "journal": "Allergy Rhinol (Providence)",
-          "year": "2020"
-        },
-        {
-          "pmid": "29900688",
-          "title": "Outpatient management and surgeon specialty for thyroglossal duct cyst excision: A retrospective analysis of 377 patients and 30-day outcomes in the American College of Surgeons NSQIP-P Database.",
-          "journal": "Clin Otolaryngol",
-          "year": "2018"
-        },
-        {
-          "pmid": "29696657",
-          "title": "Surgical simulation and applicant perception in otolaryngology residency interviews.",
-          "journal": "Laryngoscope",
-          "year": "2018"
+          "pmid": "41973938",
+          "title": "Physical Activity Monitoring in Adolescents and Young Adults With Cancer: Observational Feasibility Study.",
+          "journal": "JMIR Cancer",
+          "year": "2026"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Courtney McDonough",
-      "profile_url": "https://www.med.unc.edu/ent/directory/courtney-mcdonough-pa-c/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Charles Hicks",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/charles-hicks/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_search": "McDonough Courtney",
-      "pubmed_count": 0,
-      "pubmed_verified": 0,
-      "pubmed_ambiguous": false,
-      "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "J. Madison Clark",
-      "profile_url": "https://www.med.unc.edu/ent/directory/j-madison-clark-md-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ],
       "pipeline_version": "2026.07.06-orcid-fallback-v2",
       "pubmed_count": 3,
-      "pubmed_search": "ComputedAuthors:Clark JM",
-      "pubmed_verified": 2,
+      "pubmed_search": "ComputedAuthors:Hicks Charles",
+      "pubmed_verified": 3,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "40311083",
-          "title": "A 45-Year-Old Woman with New Breast Cancer Is Found to Have Organizing Pneumonia: Should She Proceed with Immunotherapy?",
-          "journal": "Ann Am Thorac Soc",
+          "pmid": "36136321",
+          "title": "Association of QTc Formula With the Clinical Management of Patients With Cancer.",
+          "journal": "JAMA Oncol",
+          "year": "2022"
+        },
+        {
+          "pmid": "34026499",
+          "title": "Atrial dysrhythmias due to extrinsic left atrial compression by an esophageal stent.",
+          "journal": "HeartRhythm Case Rep",
+          "year": "2021"
+        },
+        {
+          "pmid": "31310577",
+          "title": "Trials and Tribulations of Corrected QT Interval Monitoring in Oncology: Rationale for a Practice-Changing Standardized Approach.",
+          "journal": "J Clin Oncol",
+          "year": "2019"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Alan Lee Hinderliter",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/alan-lee-hinderliter-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_hint": "Hinderliter A",
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 270,
+      "pubmed_search": "ComputedAuthors:Hinderliter Alan",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41677801",
+          "title": "Mitochondrial Haplogroups and Left Ventricular Diastolic Dysfunction in People Living With and Without HIV.",
+          "journal": "J Infect Dis",
+          "year": "2026"
+        },
+        {
+          "pmid": "41555820",
+          "title": "Lifestyle, sleep quality, and cognitive function in resistant hypertension: One-year follow-up from the TRIUMPH trial.",
+          "journal": "J Alzheimers Dis",
+          "year": "2026"
+        },
+        {
+          "pmid": "41406195",
+          "title": "Incidence of Elevated Inpatient Blood Pressure and Hypertensive Emergencies.",
+          "journal": "Hypertension",
+          "year": "2026"
+        },
+        {
+          "pmid": "40244915",
+          "title": "Incidence of Statin Initiation Among People With and Without HIV in the United States: A Prospective Observational Study.",
+          "journal": "Clin Infect Dis",
           "year": "2025"
         },
         {
-          "pmid": "39281842",
-          "title": "Near fatal case of mirvetuximab soravtansine-gynx induced interstitial lung disease and a review of the primary literature.",
-          "journal": "Gynecol Oncol Rep",
+          "pmid": "38715254",
+          "title": "Depressive symptoms are associated with clinical outcomes in heart failure with reduced ejection fraction.",
+          "journal": "ESC Heart Fail",
           "year": "2024"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Virginia Drake",
-      "profile_url": "https://www.med.unc.edu/ent/directory/virginia-ginny-drake-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Adam Moskowitz",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/adam-moskowitz/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ],
       "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 24,
-      "pubmed_search": "ComputedAuthors:Drake Virginia",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "40923666",
-          "title": "Free Gracilis Muscle Transfer in the Nerve-Depleted Patient: Reconsidering the Deep Temporal Nerve.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        },
-        {
-          "pmid": "40875999",
-          "title": "Changes in Smile Symmetry and Perceived Emotions in Patients with Facial Synkinesis after Depressor Anguli Oris Myectomy: A Long-Term Follow-up Study.",
-          "journal": "Facial Plast Surg Aesthet Med",
-          "year": "2025"
-        },
-        {
-          "pmid": "40875996",
-          "title": "Invited Commentary on: \"Role of Perinasal Musculature in Ipsilateral Nasal Obstruction During Synkinesis Progression,\" by Boyce et al.",
-          "journal": "Facial Plast Surg Aesthet Med",
-          "year": "2025"
-        },
-        {
-          "pmid": "39659254",
-          "title": "The Lip Lift Island Flap: A Novel Technique for Nasal Sill and Columella Reconstruction.",
-          "journal": "Facial Plast Surg Aesthet Med",
-          "year": "2025"
-        },
-        {
-          "pmid": "39552273",
-          "title": "Quantifying the Effect of the Cross-Facial Nerve Graft on the Nonparalyzed Side.",
-          "journal": "Otolaryngol Head Neck Surg",
-          "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Brian S. Jewett",
-      "profile_url": "https://www.med.unc.edu/ent/directory/brian-s-jewett-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_search": "Jewett B",
-      "pubmed_count": 1,
+      "pubmed_search": "Moskowitz A",
+      "pubmed_count": 3,
       "pubmed_verified": 0,
       "pubmed_ambiguous": true,
       "publications": [],
       "nih_grants": []
     },
     {
-      "name": "Matthew Q. Miller",
-      "profile_url": "https://www.med.unc.edu/ent/directory/matthew-q-miller-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Tim Nichols",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/tim-nichols/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 32,
-      "pubmed_search": "ComputedAuthors:Miller MQ",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42321963",
-          "title": "International and Multispecialty Expert Consensus on Standardization of Facial Reanimation Surgical Outcomes Reporting.",
-          "journal": "Facial Plast Surg Aesthet Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "41738514",
-          "title": "Analyzing the Readability of Facial Paralysis Patient-Reported Outcome Measures.",
-          "journal": "J Otolaryngol Head Neck Surg",
-          "year": "2026"
-        },
-        {
-          "pmid": "41460602",
-          "title": "Invited Commentary on: \"Selective Neurectomy Outcomes in Patients with Synkinesis: The First 56 Consecutive Primary Cases with Minimum 1 Year Follow-Up,\" by Ozucer and Yilmaz.",
-          "journal": "Facial Plast Surg Aesthet Med",
-          "year": "2025"
-        },
-        {
-          "pmid": "40923666",
-          "title": "Free Gracilis Muscle Transfer in the Nerve-Depleted Patient: Reconsidering the Deep Temporal Nerve.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        },
-        {
-          "pmid": "40876007",
-          "title": "Collaboration: The Past, Present, and Future of Facial Nerve Research.",
-          "journal": "Facial Plast Surg Aesthet Med",
-          "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Brent A. Senior",
-      "profile_url": "https://www.med.unc.edu/ent/directory/brent-a-senior-md-facs-fars/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 220,
-      "pubmed_search": "ComputedAuthors:Senior BA",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42206878",
-          "title": "Effects of Sinonasal Mucus Debridement on Nasal Nitric Oxide in Primary Ciliary Dyskinesia.",
-          "journal": "Int Forum Allergy Rhinol",
-          "year": "2026"
-        },
-        {
-          "pmid": "42095030",
-          "title": "Assessing Olfactory Bulb Infiltration and Morphological Changes in Olfactory Neuroblastoma Using Magnetic Resonance Imaging.",
-          "journal": "J Neurol Surg B Skull Base",
-          "year": "2026"
-        },
-        {
-          "pmid": "41868650",
-          "title": "EUFOREA summit in Brussels 2025: inspiring the future of allergy and respiratory care.",
-          "journal": "Front Allergy",
-          "year": "2026"
-        },
-        {
-          "pmid": "41830161",
-          "title": "Determining the Minimal Clinically Important Difference of the 40-Item Smell Identification Test in People With Cystic Fibrosis.",
-          "journal": "Int Forum Allergy Rhinol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41808973",
-          "title": "Endoscopic Transnasal Approach for Deep Lateral Orbital Decompression: A Cadaver Study.",
-          "journal": "J Neurol Surg B Skull Base",
-          "year": "2026"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Brian D. Thorp",
-      "profile_url": "https://www.med.unc.edu/ent/directory/brian-d-thorp-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 133,
-      "pubmed_search": "ComputedAuthors:Thorp BD",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42206878",
-          "title": "Effects of Sinonasal Mucus Debridement on Nasal Nitric Oxide in Primary Ciliary Dyskinesia.",
-          "journal": "Int Forum Allergy Rhinol",
-          "year": "2026"
-        },
-        {
-          "pmid": "42095030",
-          "title": "Assessing Olfactory Bulb Infiltration and Morphological Changes in Olfactory Neuroblastoma Using Magnetic Resonance Imaging.",
-          "journal": "J Neurol Surg B Skull Base",
-          "year": "2026"
-        },
-        {
-          "pmid": "41808973",
-          "title": "Endoscopic Transnasal Approach for Deep Lateral Orbital Decompression: A Cadaver Study.",
-          "journal": "J Neurol Surg B Skull Base",
-          "year": "2026"
-        },
-        {
-          "pmid": "41789188",
-          "title": "Perceptions of Academic Authorship in Medicine: A Multi-Specialty Survey of Physicians.",
-          "journal": "J Med Educ Curric Dev",
-          "year": "2026"
-        },
-        {
-          "pmid": "41708939",
-          "title": "Social Vulnerability and Quality of Life in Chronic Rhinosinusitis.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Charles S. Ebert",
-      "profile_url": "https://www.med.unc.edu/ent/directory/charles-s-ebert-jr-md-mph-fars-faaoa-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 156,
-      "pubmed_search": "ComputedAuthors:Ebert CS",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42206878",
-          "title": "Effects of Sinonasal Mucus Debridement on Nasal Nitric Oxide in Primary Ciliary Dyskinesia.",
-          "journal": "Int Forum Allergy Rhinol",
-          "year": "2026"
-        },
-        {
-          "pmid": "42095030",
-          "title": "Assessing Olfactory Bulb Infiltration and Morphological Changes in Olfactory Neuroblastoma Using Magnetic Resonance Imaging.",
-          "journal": "J Neurol Surg B Skull Base",
-          "year": "2026"
-        },
-        {
-          "pmid": "41808973",
-          "title": "Endoscopic Transnasal Approach for Deep Lateral Orbital Decompression: A Cadaver Study.",
-          "journal": "J Neurol Surg B Skull Base",
-          "year": "2026"
-        },
-        {
-          "pmid": "41708939",
-          "title": "Social Vulnerability and Quality of Life in Chronic Rhinosinusitis.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        },
-        {
-          "pmid": "41537742",
-          "title": "Assessment of Lifetime Inhalational Exposure Burden and Associations With Chronic Rhinosinusitis.",
-          "journal": "Int Forum Allergy Rhinol",
-          "year": "2026"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Adam J. Kimple",
-      "profile_url": "https://www.med.unc.edu/ent/directory/adam-j-kimple-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/adam.kimple.1/bibliography/public",
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_search": "MyNCBI:adam.kimple.1",
-      "pubmed_count": 40,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42206878",
-          "title": "Effects of Sinonasal Mucus Debridement on Nasal Nitric Oxide in Primary Ciliary Dyskinesia.",
-          "journal": "Int Forum Allergy Rhinol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41708939",
-          "title": "Social Vulnerability and Quality of Life in Chronic Rhinosinusitis.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        },
-        {
-          "pmid": "41548201",
-          "title": "Species-Level Characterization of the Nasal Microbiome in Various Disease States Utilizing Third-Generation Sequencing.",
-          "journal": "Int Forum Allergy Rhinol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41537742",
-          "title": "Assessment of Lifetime Inhalational Exposure Burden and Associations With Chronic Rhinosinusitis.",
-          "journal": "Int Forum Allergy Rhinol",
-          "year": "2026"
-        },
-        {
-          "pmid": "40995952",
-          "title": "Effects of Elexacaftor/Tezacaftor/Ivacaftor on the Sinonasal Airspace in Cystic Fibrosis.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Cristine Klatt-Cromwell",
-      "profile_url": "https://www.med.unc.edu/ent/directory/cristine-klatt-cromwell-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_search": "Klatt-Cromwell Cristine",
-      "pubmed_count": 19,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42206878",
-          "title": "Effects of Sinonasal Mucus Debridement on Nasal Nitric Oxide in Primary Ciliary Dyskinesia.",
-          "journal": "Int Forum Allergy Rhinol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41708939",
-          "title": "Social Vulnerability and Quality of Life in Chronic Rhinosinusitis.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        },
-        {
-          "pmid": "40411258",
-          "title": "A Review of Postoperative Care Following Endoscopic Sinus Surgery for Chronic Rhinosinusitis.",
-          "journal": "Ear Nose Throat J",
-          "year": "2025"
-        },
-        {
-          "pmid": "40351876",
-          "title": "June 4: International Skull Base Surgery Day.",
-          "journal": "J Neurol Surg B Skull Base",
-          "year": "2025"
-        },
-        {
-          "pmid": "40135775",
-          "title": "June 4: International Skull Base Surgery Day.",
-          "journal": "Int Forum Allergy Rhinol",
-          "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Meghan Norris",
-      "profile_url": "https://www.med.unc.edu/ent/directory/meghan-norris-ms-mspas-pa-c/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 17,
-      "pubmed_search": "ComputedAuthors:Norris Meghan",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "40371719",
-          "title": "Abridging the 22-Item Sino-Nasal Outcome Test (SNOT-22) in People With Cystic Fibrosis: Limiting Survey Burden.",
-          "journal": "Int Forum Allergy Rhinol",
-          "year": "2025"
-        },
-        {
-          "pmid": "40156369",
-          "title": "Olfaction, Eating Preference, and Quality of Life in Cystic Fibrosis Chronic Rhinosinusitis.",
-          "journal": "Laryngoscope",
-          "year": "2025"
-        },
-        {
-          "pmid": "39228880",
-          "title": "Minimally Invasive Transnasal Approach to the Anteromedial Temporal Fossa and Lateral Sphenoid Using a Novel Landmark between Periorbita and Periosteum of the Pterygopalatine Fossa: A Cadaveric Study.",
-          "journal": "J Neurol Surg B Skull Base",
-          "year": "2024"
-        },
-        {
-          "pmid": "38967583",
-          "title": "Impact of sociodemographic status and sex on chronic rhinosinusitis and olfaction in people with cystic fibrosis.",
-          "journal": "Int Forum Allergy Rhinol",
-          "year": "2024"
-        },
-        {
-          "pmid": "38634358",
-          "title": "Predictors of Sinonasal Improvement After Highly Effective Modulator Therapy in Adults with Cystic Fibrosis.",
-          "journal": "Laryngoscope",
-          "year": "2024"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Jackson Vuncannon",
-      "profile_url": "https://www.med.unc.edu/ent/directory/jackson-vuncannon-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 2,
-      "pubmed_search": "ComputedAuthors:Vuncannon Jackson",
-      "pubmed_verified": 2,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42296555",
-          "title": "Invasive sellar extraventricular neurocytoma: illustrative case.",
-          "journal": "J Neurosurg Case Lessons",
-          "year": "2026"
-        },
-        {
-          "pmid": "41537742",
-          "title": "Assessment of Lifetime Inhalational Exposure Burden and Associations With Chronic Rhinosinusitis.",
-          "journal": "Int Forum Allergy Rhinol",
-          "year": "2026"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Kevin D. Brown",
-      "profile_url": "https://www.med.unc.edu/ent/directory/kevin-d-brown-md-phd/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 123,
-      "pubmed_search": "ComputedAuthors:Brown KD",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42049500",
-          "title": "Electrode Contacts in the Functional Hearing Region for Pediatric Cochlear Implant Recipients.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        },
-        {
-          "pmid": "41981750",
-          "title": "Association of Total Cochlear Volume and Initial Hearing Preservation With a Straight Electrode Array.",
-          "journal": "Otol Neurotol",
-          "year": "2026"
-        },
-        {
-          "pmid": "41796981",
-          "title": "Cochlear Implant Recipients With Electrodes in the Acoustic Region: Long-Term Hearing Preservation.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        },
-        {
-          "pmid": "41792877",
-          "title": "Attrition in Cochlear Implant Research: Sociodemographic, Audiologic, and Performance Variables.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        },
-        {
-          "pmid": "41696991",
-          "title": "Preoperative Imaging for Cochlear Implantation: A Global Consensus.",
-          "journal": "Otolaryngol Head Neck Surg",
-          "year": "2026"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Matthew M. Dedmon",
-      "profile_url": "https://www.med.unc.edu/ent/directory/matthew-m-dedmon-md-phd/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 62,
-      "pubmed_search": "ComputedAuthors:Dedmon MM",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41796981",
-          "title": "Cochlear Implant Recipients With Electrodes in the Acoustic Region: Long-Term Hearing Preservation.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        },
-        {
-          "pmid": "41020290",
-          "title": "Association of Tonotopic Mismatch and Cochlear Implant Use on Outcomes for Adults With Unilateral Hearing Loss.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        },
-        {
-          "pmid": "40423677",
-          "title": "Association of Tonotopic Mismatch With the Speech Recognition of Cochlear Implant Users With Unilateral Hearing Loss.",
-          "journal": "Otol Neurotol",
-          "year": "2025"
-        },
-        {
-          "pmid": "39965258",
-          "title": "Elective Versus Corrective Cochlear Implant Revision Surgery of Legacy Internal Devices.",
-          "journal": "Otol Neurotol",
-          "year": "2025"
-        },
-        {
-          "pmid": "39206702",
-          "title": "Benefits of Cochlear Implantation for Older Adults With Asymmetric Hearing Loss.",
-          "journal": "Laryngoscope",
-          "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "A. Morgan Selleck",
-      "profile_url": "https://www.med.unc.edu/ent/directory/anne-morgan-selleck-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_search": "Selleck AM",
-      "pubmed_count": 28,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42391975",
-          "title": "Cochlear size variation in a large-scale international multicentre cohort.",
-          "journal": "Hear Res",
-          "year": "2026"
-        },
-        {
-          "pmid": "41796981",
-          "title": "Cochlear Implant Recipients With Electrodes in the Acoustic Region: Long-Term Hearing Preservation.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        },
-        {
-          "pmid": "40423677",
-          "title": "Association of Tonotopic Mismatch With the Speech Recognition of Cochlear Implant Users With Unilateral Hearing Loss.",
-          "journal": "Otol Neurotol",
-          "year": "2025"
-        },
-        {
-          "pmid": "39666828",
-          "title": "American Cochlear Implant Alliance Position Statement on Newborn Congenital Cytomegalovirus Screening.",
-          "journal": "Otolaryngol Head Neck Surg",
-          "year": "2025"
-        },
-        {
-          "pmid": "39575925",
-          "title": "Scala Tympani Volume Influences Initial 6-Month Hearing Preservation With Lateral Wall Electrode Arrays.",
-          "journal": "Laryngoscope",
-          "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Nicholas J. Thompson",
-      "profile_url": "https://www.med.unc.edu/ent/directory/nicholas-thompson-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/nicholas.thompson.1/bibliography/public",
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_search": "MyNCBI:nicholas.thompson.1",
-      "pubmed_count": 33,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "39666742",
-          "title": "Cochlear Implantation With Sporadic Inner Ear Schwannomas: Outcomes in 106 Patients From an International Multi-Institutional Study.",
-          "journal": "Otol Neurotol",
-          "year": "2025"
-        },
-        {
-          "pmid": "39951662",
-          "title": "Effects of Insertion Depth and Modiolar Proximity on Cochlear Implant Speech Recognition Outcomes With a Precurved Electrode Array.",
-          "journal": "Otol Neurotol",
-          "year": "2025"
-        },
-        {
-          "pmid": "39514427",
-          "title": "Comparing Cochlear Implant Outcomes in 100 Patients With Sporadic Vestibular Schwannoma Managed With Observation, Radiosurgery, or Microsurgery: A Multi-Institutional Review.",
-          "journal": "Otol Neurotol",
-          "year": "2024"
-        },
-        {
-          "pmid": "39206702",
-          "title": "Benefits of Cochlear Implantation for Older Adults With Asymmetric Hearing Loss.",
-          "journal": "Laryngoscope",
-          "year": "2025"
-        },
-        {
-          "pmid": "39165094",
-          "title": "Speech Recognition and Subjective Hearing Abilities for Electric-Acoustic Stimulation Users With Unilateral Hearing Loss.",
-          "journal": "Otol Neurotol",
-          "year": "2024"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Tram Tran",
-      "profile_url": "https://www.med.unc.edu/ent/directory/bao-tram-tran-fnp/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ],
       "pipeline_version": "2026.07.06-orcid-fallback-v2",
       "pubmed_count": 4,
-      "pubmed_search": "ComputedAuthors:Tran T",
+      "pubmed_search": "ComputedAuthors:Nichols Tim",
       "pubmed_verified": 4,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "41415802",
-          "title": "Mind-Body Interventions for Comorbid Sleep and Gastrointestinal Concerns.",
-          "journal": "Curr Sleep Med Rep",
-          "year": "2025"
+          "pmid": "41904110",
+          "title": "Corrigendum to 'Lack of factor VIII detection in humans and dogs with an intron 22 inversion challenges hypothesis regarding inhibitor risk' [Journal of Thrombosis and Haemostasis. Volume 22, Issue 12, December 2024, Pages 3415-3430].",
+          "journal": "J Thromb Haemost",
+          "year": "2026"
         },
         {
-          "pmid": "40306434",
-          "title": "Body- and Fitness-Related Shame Helps Explain the Association Between Internalized Weight Bias and Orthorexia Symptoms Among North American Female Yoga Professionals.",
-          "journal": "J Acad Nutr Diet",
-          "year": "2025"
+          "pmid": "41608029",
+          "title": "Treatment of canine hemophilia A via intraosseous delivery of a platelet-specific factor VIII-lentiviral vector.",
+          "journal": "Blood Vessel Thromb Hemost",
+          "year": "2026"
         },
         {
-          "pmid": "37812940",
-          "title": "Pilot feasibility and acceptability trial of BE REAL's BodyKind: A universal school-based body image intervention for adolescents.",
-          "journal": "Body Image",
+          "pmid": "39233012",
+          "title": "Lack of factor VIII detection in humans and dogs with an intron 22 inversion challenges hypothesis regarding inhibitor risk.",
+          "journal": "J Thromb Haemost",
+          "year": "2024"
+        },
+        {
+          "pmid": "38479150",
+          "title": "Shear shock wave injury in vivo: High frame-rate ultrasound observation and histological assessment.",
+          "journal": "J Biomech",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Joseph S. Rossi",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/joe-rossi/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 64,
+      "pubmed_search": "ComputedAuthors:Rossi JS",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42138382",
+          "title": "Impact of CYP2C19 and CYP3A4 Inhibitor Use on Clopidogrel Clinical Effectiveness in CYP2C19 Genotyped Patients Undergoing Percutaneous Coronary Intervention.",
+          "journal": "Clin Pharmacol Ther",
+          "year": "2026"
+        },
+        {
+          "pmid": "41656940",
+          "title": "Repositioning of a Protek Duo Temporary Right Ventricular Assist Device Using Balloon-Assisted Tracking Technique.",
+          "journal": "Catheter Cardiovasc Interv",
+          "year": "2026"
+        },
+        {
+          "pmid": "41638031",
+          "title": "Impact of Area-Level Socioeconomic Deprivation on Post-PCI Outcomes Stratified by P2Y12 Inhibitor Therapy.",
+          "journal": "JACC Adv",
+          "year": "2026"
+        },
+        {
+          "pmid": "40875095",
+          "title": "Impact of Race on Profiles of Platelet Reactivity and Clinical Outcomes in Clopidogrel-Treated Participants.",
+          "journal": "Clin Pharmacol Ther",
+          "year": "2026"
+        },
+        {
+          "pmid": "40611487",
+          "title": "CYP2C19 Phenotype, P2Y12 Inhibitor Selection, and Clinical Outcomes in Patients on Maintenance Clopidogrel Therapy.",
+          "journal": "J Am Heart Assoc",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "John P. Vavalle",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/john-p-vavalle-md-mhs/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 118,
+      "pubmed_search": "ComputedAuthors:Vavalle JP",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42164732",
+          "title": "Gradients after transcatheter aortic valve replacements are impacted by both body mass index and valve size: a retrospective cohort study.",
+          "journal": "Cardiovasc Diagn Ther",
+          "year": "2026"
+        },
+        {
+          "pmid": "39177555",
+          "title": "3-Year Outcomes of Balloon-Expandable&#xa0;Valves: 20-mm vs Larger Valves (&#x2265;23&#xa0;mm).",
+          "journal": "JACC Cardiovasc Interv",
+          "year": "2024"
+        },
+        {
+          "pmid": "38472629",
+          "title": "Cerebral Embolic Protection Devices for Transcatheter Aortic Valve Replacement: Review of the Literature and Future Perspectives.",
+          "journal": "Curr Cardiol Rep",
+          "year": "2024"
+        },
+        {
+          "pmid": "36934550",
+          "title": "Contemporary Trends in Acute Myocardial Infarction in the American Indian/Alaska Native U.S. Population, 2000 to 2018.",
+          "journal": "Am J Cardiol",
           "year": "2023"
         },
         {
-          "pmid": "32285451",
-          "title": "Parents, friends and immigrant youths' academic engagement: A mediation analysis.",
-          "journal": "Int J Psychol",
+          "pmid": "36895300",
+          "title": "Successful aortic valve replacement by overexpanding a SAPIEN transcatheter heart valve for a large aortic annulus (&gt;900&#x2005;mm2): a case report.",
+          "journal": "Eur Heart J Case Rep",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Thelsa Thomas Weickert",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/thelsa-thomas-weickert-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 11,
+      "pubmed_search": "ComputedAuthors:Weickert Thelsa",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42349531",
+          "title": "THE SOCIETY OF CRITICAL CARE CARDIOLOGY - RATIONALE, BLUEPRINT, AND LESSONS LEARNED IN THE CREATION OF A NEW MULTIDISCIPLINARY PROFESSIONAL ORGANIZATION.",
+          "journal": "Am Heart J",
+          "year": "2026"
+        },
+        {
+          "pmid": "39963223",
+          "title": "LAD Occlusion From Alcohol Reflux During Alcohol Septal Ablation.",
+          "journal": "JACC Case Rep",
+          "year": "2025"
+        },
+        {
+          "pmid": "39691889",
+          "title": "Unmasking Primary Carnitine Deficiency&#xa0;as a Mimic of Hypertrophic&#xa0;Cardiomyopathy.",
+          "journal": "JACC Case Rep",
+          "year": "2024"
+        },
+        {
+          "pmid": "39647785",
+          "title": "Left ventricular hypertrophy and ventricular ectopy in mitral valve prolapse.",
+          "journal": "Int J Cardiol",
+          "year": "2025"
+        },
+        {
+          "pmid": "38823669",
+          "title": "Prevalence and predictors of mitral annular disjunction and ventricular ectopy in mitral valve prolapse.",
+          "journal": "Heart Rhythm",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Kevin A. Friede",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kevin-a-friede-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 17,
+      "pubmed_search": "ComputedAuthors:Friede KA",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41656940",
+          "title": "Repositioning of a Protek Duo Temporary Right Ventricular Assist Device Using Balloon-Assisted Tracking Technique.",
+          "journal": "Catheter Cardiovasc Interv",
+          "year": "2026"
+        },
+        {
+          "pmid": "40459439",
+          "title": "CYP2C19 Polymorphisms and Clinical Outcomes Following Percutaneous Coronary Intervention in the Million Veteran Program.",
+          "journal": "Clin Pharmacol Ther",
+          "year": "2025"
+        },
+        {
+          "pmid": "37961335",
+          "title": "CYP2C19 Polymorphisms and Clinical Outcomes Following Percutaneous Coronary Intervention (PCI) in the Million Veterans Program.",
+          "journal": "medRxiv",
+          "year": "2023"
+        },
+        {
+          "pmid": "37303270",
+          "title": "An Introductory Tutorial on Cardiovascular Pharmacogenetics for Healthcare Providers.",
+          "journal": "Clin Pharmacol Ther",
+          "year": "2023"
+        },
+        {
+          "pmid": "36825458",
+          "title": "Safety and efficacy of intracoronary thrombolytic agents during primary percutaneous coronary intervention for STEMI.",
+          "journal": "Expert Rev Cardiovasc Ther",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Anthony J. Mazzella",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/anthony-mazzella/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1ZI-nziyYG5Q5/bibliography/public",
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "MyNCBI:1ZI-nziyYG5Q5",
+      "pubmed_count": 31,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41631745",
+          "title": "Assessing Potential Benefit of Stroke Prophylaxis Therapy in Atrial Fibrillation and Atrial Flutter Using a Novel Competing Risk Scoring Tool.",
+          "journal": "J Am Heart Assoc",
+          "year": "2026"
+        },
+        {
+          "pmid": "40850588",
+          "title": "Differences in stroke risk among patients with atrial fibrillation and heart failure subtypes.",
+          "journal": "Heart Rhythm",
+          "year": "2026"
+        },
+        {
+          "pmid": "40543857",
+          "title": "Determining the optimal age cutoff to investigate for cardiac sarcoidosis in patients with complete heart block.",
+          "journal": "Heart Rhythm",
+          "year": "2026"
+        },
+        {
+          "pmid": "39968777",
+          "title": "Atrial Fibrillation Treatment Pathway in the Emergency Department Reduces Median 30-Day Health Service Charges.",
+          "journal": "J Am Heart Assoc",
+          "year": "2025"
+        },
+        {
+          "pmid": "39759433",
+          "title": "Effects of Extreme Humidity and Heat on Ventricular Arrhythmia Risk in Patients With Cardiac Devices.",
+          "journal": "JACC Adv",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Joseph A. Sivak",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/joseph-a-sivak-md-facc/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 18,
+      "pubmed_search": "ComputedAuthors:Sivak JA",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41973411",
+          "title": "Real-World Outcomes of Transcatheter Tricuspid Valve Replacement: Analysis From the STS/ACC TVT Registry.",
+          "journal": "JAMA",
+          "year": "2026"
+        },
+        {
+          "pmid": "39691889",
+          "title": "Unmasking Primary Carnitine Deficiency&#xa0;as a Mimic of Hypertrophic&#xa0;Cardiomyopathy.",
+          "journal": "JACC Case Rep",
+          "year": "2024"
+        },
+        {
+          "pmid": "38223706",
+          "title": "Coronary CTA identification of a super-dominant right coronary artery in a child case report.",
+          "journal": "Heliyon",
+          "year": "2024"
+        },
+        {
+          "pmid": "33644518",
+          "title": "Successful MitraClip Implantation in a Barlow's Valve: A Feasible Alternative?",
+          "journal": "CASE (Phila)",
+          "year": "2021"
+        },
+        {
+          "pmid": "33117933",
+          "title": "Loeffler Endocarditis as a Manifestation of Paraneoplastic Hypereosinophilia.",
+          "journal": "CASE (Phila)",
           "year": "2020"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Christine E. DeMason",
-      "profile_url": "https://www.med.unc.edu/ent/directory/christine-e-demason-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Cody Deen",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/cody-deen/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ],
       "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 18,
-      "pubmed_search": "ComputedAuthors:DeMason CE",
+      "pubmed_search": "Deen Cody",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "32320043",
+          "title": "Off-label Use of Direct Oral Anticoagulants Compared With Warfarin for Left Ventricular Thrombi.",
+          "journal": "JAMA Cardiol",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Casey Gazda",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/casey-adams/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 5,
+      "pubmed_search": "ComputedAuthors:Gazda Casey",
       "pubmed_verified": 5,
       "pubmed_ambiguous": false,
       "publications": [
         {
-          "pmid": "41698881",
-          "title": "Gender and Academic Rank Disparities in Electronic Health Record Burden Among Otolaryngologists.",
-          "journal": "Laryngoscope",
+          "pmid": "42348714",
+          "title": "Lipid-Lowering Treatment Patterns and Risk of Subsequent Cardiovascular Outcomes in Patients with Recent Coronary Revascularization.",
+          "journal": "Crit Pathw Cardiol",
           "year": "2026"
         },
         {
-          "pmid": "41537742",
-          "title": "Assessment of Lifetime Inhalational Exposure Burden and Associations With Chronic Rhinosinusitis.",
-          "journal": "Int Forum Allergy Rhinol",
+          "pmid": "38223706",
+          "title": "Coronary CTA identification of a super-dominant right coronary artery in a child case report.",
+          "journal": "Heliyon",
+          "year": "2024"
+        },
+        {
+          "pmid": "35860774",
+          "title": "Cardiac lymphoma presenting as bradyarrhythmia.",
+          "journal": "HeartRhythm Case Rep",
+          "year": "2022"
+        },
+        {
+          "pmid": "33644518",
+          "title": "Successful MitraClip Implantation in a Barlow's Valve: A Feasible Alternative?",
+          "journal": "CASE (Phila)",
+          "year": "2021"
+        },
+        {
+          "pmid": "33117933",
+          "title": "Loeffler Endocarditis as a Manifestation of Paraneoplastic Hypereosinophilia.",
+          "journal": "CASE (Phila)",
+          "year": "2020"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Stephanie Falk Martin",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/stephanie-falk-martin/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 16,
+      "pubmed_search": "ComputedAuthors:Martin Stephanie",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42214682",
+          "title": "Concordant Women, Infants, and Children Staff and Pediatrician Recommendations Associated with Improved Breastfeeding.",
+          "journal": "J Nutr",
           "year": "2026"
         },
         {
-          "pmid": "41111614",
-          "title": "Promoting ENT-erest: Evaluating the Effect of Early, Focused Exposure to Otolaryngology.",
-          "journal": "OTO Open",
+          "pmid": "42175649",
+          "title": "\"There Was no Break\": A Qualitative Analysis of Mothers' Experiences With Labor Induction.",
+          "journal": "Birth",
+          "year": "2026"
+        },
+        {
+          "pmid": "41321059",
+          "title": "Blood pressure is associated with ultra-processed food intake in a sex- and age-specific manner during the transition to adulthood in Cebu, Philippines.",
+          "journal": "Br J Nutr",
+          "year": "2026"
+        },
+        {
+          "pmid": "41281798",
+          "title": "Early life grandmother caregiving trajectories and child development: a longitudinal study.",
+          "journal": "Int J Behav Dev",
           "year": "2025"
         },
         {
-          "pmid": "41105574",
-          "title": "Otolaryngology Residency Application Trends and Match Outcomes at a Large Academic Medical Center.",
-          "journal": "ORL J Otorhinolaryngol Relat Spec",
-          "year": "2025"
-        },
-        {
-          "pmid": "40799177",
-          "title": "Incidence of Occult Malignancy Diagnosed on Histopathology in Routine Adult Tonsillectomies.",
-          "journal": "Laryngoscope",
+          "pmid": "40886099",
+          "title": "A Mixed Methods Analysis of Factors That Influence the Diet Quality and Decision-Making of Adolescent Girls in an Urban Informal Settlement in Kenya.",
+          "journal": "Matern Child Nutr",
           "year": "2026"
         }
       ],
       "nih_grants": []
     },
     {
-      "name": "Ann Q. Bogard",
-      "profile_url": "https://www.med.unc.edu/ent/directory/ann-q-bogard-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "S. Peter Sheng",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/s-peter-sheng-md-mph/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ],
       "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_search": "Bogard AQ",
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Sheng SP",
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "30663494",
+          "title": "In-Hospital Outcomes After Transcatheter Versus Surgical Aortic Valve Replacement in Octogenarians.",
+          "journal": "J Am Heart Assoc",
+          "year": "2019"
+        },
+        {
+          "pmid": "29198984",
+          "title": "Relation of an Echocardiographic-Based Cardiac Calcium Score to Mitral Stenosis Severity and Coronary Artery Disease in Patients with Severe Aortic Stenosis.",
+          "journal": "Am J Cardiol",
+          "year": "2018"
+        },
+        {
+          "pmid": "23143806",
+          "title": "Xenon neuroprotection in experimental stroke: interactions with hypothermia and intracerebral hemorrhage.",
+          "journal": "Anesthesiology",
+          "year": "2012"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Ross Joseph Simpson",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/ross-simpson/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Simpson Ross",
+      "pubmed_count": 2,
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40711632",
+          "title": "Physician Perceptions, Knowledge, and Implementation of Lipid-Lowering Guidelines in the USA.",
+          "journal": "J Gen Intern Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "30622198",
+          "title": "Predictors of 30-Day Return Following an Emergency Department Visit for Older Adults.",
+          "journal": "N C Med J",
+          "year": "2019"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Nora Tolbert",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/nora-tolbert-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Tolbert Nora",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "35509276",
+          "title": "Impact of Federal, State, and Local Housing Policies on Disparities in Cardiovascular Disease in Black/African American Men and Women: From Policy to Pathways to Biology.",
+          "journal": "Front Cardiovasc Med",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Robert C. Wirka",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/robert-c-wirka-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 33,
+      "pubmed_search": "ComputedAuthors:Wirka RC",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41844614",
+          "title": "Vascular smooth muscle cell state trajectories mediate molecular mechanisms of coronary disease risk.",
+          "journal": "Nat Commun",
+          "year": "2026"
+        },
+        {
+          "pmid": "41086809",
+          "title": "A cell and transcriptome atlas of human arterial vasculature.",
+          "journal": "Cell Genom",
+          "year": "2025"
+        },
+        {
+          "pmid": "39552248",
+          "title": "Atheroma transcriptomics identifies ARNTL as a smooth muscle cell regulator and with clinical and genetic data improves risk stratification.",
+          "journal": "Eur Heart J",
+          "year": "2025"
+        },
+        {
+          "pmid": "38152886",
+          "title": "Comprehensive Integration of Multiple Single-Cell Transcriptomic Data Sets Defines Distinct Cell Populations and Their Phenotypic Changes in Murine Atherosclerosis.",
+          "journal": "Arterioscler Thromb Vasc Biol",
+          "year": "2024"
+        },
+        {
+          "pmid": "36852690",
+          "title": "Discovery of Transacting Long Noncoding RNAs That Regulate Smooth Muscle Cell Phenotype.",
+          "journal": "Circ Res",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Matthew Baker",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/matthew-baker-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_hint": "including biventricular",
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Baker Matthew",
+      "pubmed_count": 3,
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "39321401",
+          "title": "Gene-Specific Effects on Brain Volume and Cognition of TMEM106B in Frontotemporal Lobar Degeneration.",
+          "journal": "Neurology",
+          "year": "2024"
+        },
+        {
+          "pmid": "30562101",
+          "title": "Atrial Fibrillation Thermographic and Endoscopic Monitoring of Patients: Safety Algorithm for the Esophagus: AF TEMP-SAFE Study.",
+          "journal": "Circ Arrhythm Electrophysiol",
+          "year": "2018"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Prabhat Kumar",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/prabhat-kumar-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_hint": "including biventricular",
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 16,
+      "pubmed_search": "ComputedAuthors:Kumar Prabhat",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "31487007",
+          "title": "Approach to Management of Premature Ventricular Contractions.",
+          "journal": "Curr Treat Options Cardiovasc Med",
+          "year": "2019"
+        },
+        {
+          "pmid": "29759689",
+          "title": "Comparison of Single-Coil and Dual-Coil&#xa0;Implantable Defibrillators: A Meta-Analysis.",
+          "journal": "JACC Clin Electrophysiol",
+          "year": "2017"
+        },
+        {
+          "pmid": "29141846",
+          "title": "Atrial Substrate Modification for Atrial Fibrillation: Striving to Get Smarter.",
+          "journal": "Circ Arrhythm Electrophysiol",
+          "year": "2017"
+        },
+        {
+          "pmid": "28496775",
+          "title": "Atrial Fibrillation and Metabolic Syndrome: Understanding the Connection.",
+          "journal": "J Atr Fibrillation",
+          "year": "2012"
+        },
+        {
+          "pmid": "28491567",
+          "title": "Adjusting voltage criteria can unmask conducting channels in a patient with arrhythmogenic right ventricular cardiomyopathy and ventricular tachycardia.",
+          "journal": "HeartRhythm Case Rep",
+          "year": "2015"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Lindsey A. Rosman",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/lindsey-a-rosman-phd/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1v_wlxkYMf_EnH/bibliography/public",
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "MyNCBI:1v_wlxkYMf_EnH",
+      "pubmed_count": 43,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41895321",
+          "title": "Atrial fibrillation density as a biomarker for ischaemic stroke risk prediction.",
+          "journal": "Eur Heart J",
+          "year": "2026"
+        },
+        {
+          "pmid": "41631745",
+          "title": "Assessing Potential Benefit of Stroke Prophylaxis Therapy in Atrial Fibrillation and Atrial Flutter Using a Novel Competing Risk Scoring Tool.",
+          "journal": "J Am Heart Assoc",
+          "year": "2026"
+        },
+        {
+          "pmid": "41524886",
+          "title": "Machine learning versus logistic regression for propensity score estimation: a trial emulation benchmarked against the PARADIGM-HF randomized trial.",
+          "journal": "Eur J Epidemiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "40585154",
+          "title": "Machine Learning Versus Logistic Regression for Propensity Score Estimation: A Benchmark Trial Emulation Against the PARADIGM-HF Randomized Trial.",
+          "journal": "medRxiv",
+          "year": "2025"
+        },
+        {
+          "pmid": "40850588",
+          "title": "Differences in stroke risk among patients with atrial fibrillation and heart failure subtypes.",
+          "journal": "Heart Rhythm",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Faisal F. Syed",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/faisal-f-syed-m-b-ch-b/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 8,
+      "pubmed_search": "ComputedAuthors:Syed FF",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42201285",
+          "title": "Roadmap to Revitalizing Academic Cardiovascular Medicine: A Perspective From the Association of Professors of Cardiology (APC) Emerging Leaders Group.",
+          "journal": "J Am Coll Cardiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "41232275",
+          "title": "Short-term repeatability of artificial intelligence estimated electrocardiographic age.",
+          "journal": "J Electrocardiol",
+          "year": "2025"
+        },
+        {
+          "pmid": "41177318",
+          "title": "Cardiac sympathetic denervation for refractory ventricular arrhythmias in patients with inherited cardiomyopathies.",
+          "journal": "Heart Rhythm",
+          "year": "2025"
+        },
+        {
+          "pmid": "40471768",
+          "title": "MYL4 Identifies Intramural Anatomy of Purkinje Fibers in Human Hearts.",
+          "journal": "JACC Clin Electrophysiol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39973752",
+          "title": "Characteristics of Patients With the Arrhythmogenic Mitral Valve Prolapse Syndrome and Sudden Cardiac Arrest and Sustained Ventricular Arrhythmias.",
+          "journal": "Circ Arrhythm Electrophysiol",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Carlos A. Espinoza",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/carlos-a-espinoza-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_recent_recruit": true,
+      "pubmed_search": "Espinoza CA",
+      "pubmed_count": 7,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41383124",
+          "title": "Autoregulation of the MET receptor tyrosine kinase by its intracellular juxtamembrane domain.",
+          "journal": "Biochem J",
+          "year": "2025"
+        },
+        {
+          "pmid": "41285767",
+          "title": "A genome-wide CRISPR screen identifies the TNRC18 gene locus as a regulator of inflammatory signaling.",
+          "journal": "Nat Commun",
+          "year": "2025"
+        },
+        {
+          "pmid": "40784448",
+          "title": "Nootropic benzothiazoles promote dendritic spine formation by targeting fascin-1.",
+          "journal": "J Biol Chem",
+          "year": "2025"
+        },
+        {
+          "pmid": "39356796",
+          "title": "G3BP isoforms differentially affect stress granule assembly and gene expression during cellular stress.",
+          "journal": "Mol Biol Cell",
+          "year": "2024"
+        },
+        {
+          "pmid": "39268701",
+          "title": "Conserved regulatory motifs in the juxtamembrane domain and kinase N-lobe revealed through deep mutational scanning of the MET receptor tyrosine kinase domain.",
+          "journal": "Elife",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jeffrey Lawrence Klein",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/jeffrey-lawrence-klein/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 8,
+      "pubmed_search": "ComputedAuthors:Klein JL",
+      "pubmed_verified": 3,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "35860774",
+          "title": "Cardiac lymphoma presenting as bradyarrhythmia.",
+          "journal": "HeartRhythm Case Rep",
+          "year": "2022"
+        },
+        {
+          "pmid": "34419565",
+          "title": "Coronary Artery Calcifications and Cardiac Risk After Radiation Therapy for Stage III Lung Cancer.",
+          "journal": "Int J Radiat Oncol Biol Phys",
+          "year": "2022"
+        },
+        {
+          "pmid": "29370468",
+          "title": "Association of ambulatory blood pressure variability with coronary artery calcium.",
+          "journal": "J Clin Hypertens (Greenwich)",
+          "year": "2018"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Peter Mason",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/peter-mason-md-mph/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/peter.mason.3/bibliography/public",
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "MyNCBI:peter.mason.3",
+      "pubmed_count": 17,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40693288",
+          "title": "Percutaneous Transapical Bioprosthetic Leaflet Modification Facilitated Transfemoral Valve-in-Surgical Bioprosthetic Transcatheter Aortic Valve Replacement: Undermining Iatrogenic Coronary Obstruction With Radiofrequency Needle (UNICORN).",
+          "journal": "Catheter Cardiovasc Interv",
+          "year": "2025"
+        },
+        {
+          "pmid": "40335561",
+          "title": "Influence of boundary conditions and blood rheology on indices of wall shear stress from IVUS-based patient-specific stented coronary artery simulations.",
+          "journal": "Sci Rep",
+          "year": "2025"
+        },
+        {
+          "pmid": "38660790",
+          "title": "The Tricuspid Valve: A Review of Pathology, Imaging, and Current Treatment Options: A Scientific Statement From the American Heart Association.",
+          "journal": "Circulation",
+          "year": "2024"
+        },
+        {
+          "pmid": "38584521",
+          "title": "Novel valve-in-surgical bioprosthetic transcatheter aortic valve replacement: Undermining iatrogenic coronary obstruction with radiofrequency needle (UNICORN).",
+          "journal": "Catheter Cardiovasc Interv",
+          "year": "2024"
+        },
+        {
+          "pmid": "38112086",
+          "title": "Cardiac Catheterization Laboratory Management of the Comatose Adult Patient With an Out-of-Hospital Cardiac Arrest: A Scientific Statement From the American Heart Association.",
+          "journal": "Circulation",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Sheetal Patel",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sheetal-patel-do/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Patel Sheetal",
+      "pubmed_count": 4,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "38385918",
+          "title": "A Phantom Echocardiographic Figure-of-Eight Image From Disc-Structured Occluder Can Be Artifactual and Truly Ominous.",
+          "journal": "JACC Cardiovasc Interv",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Sameer Prasada",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sameer-prasada-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Prasada Sameer",
+      "pubmed_count": 2,
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41209121",
+          "title": "Interpretation of Discordance Between Non-Hyperemic Pressure Ratios and Fractional Flow Reserve: Potential Mechanisms and Clinical Implications.",
+          "journal": "Rev Cardiovasc Med",
+          "year": "2025"
+        },
+        {
+          "pmid": "38761963",
+          "title": "Atherectomy and Peri-Procedural Myocardial Injury-When Does It Matter?",
+          "journal": "Am J Cardiol",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Sudhir Prasada",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sudhir-prasada-md-facc/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Prasada Sudhir",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "34984346",
+          "title": "Mucopolysaccharidosis Type I Diagnosed by Aortic and Mitral Valve Replacement.",
+          "journal": "JACC Case Rep",
+          "year": "2021"
+        },
+        {
+          "pmid": "33738407",
+          "title": "A case report of an STEMI mimicker in a patient presenting with haemoptysis and chest pain with metastatic myocardial infiltration and left ventricular mural thrombi.",
+          "journal": "Eur Heart J Case Rep",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Sidney C. Smith",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sidney-smith/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 36,
+      "pubmed_search": "ComputedAuthors:Smith SC",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41563260",
+          "title": "A New Risk Score Based on Machine Learning in Patients with Acute Heart Failure: The ML-HF score.",
+          "journal": "Arq Bras Cardiol",
+          "year": "2025"
+        },
+        {
+          "pmid": "39602126",
+          "title": "How Can We Increase the Utilization of Evidence-Based Medication After Myocardial Infarction?",
+          "journal": "JAMA Netw Open",
+          "year": "2024"
+        },
+        {
+          "pmid": "38939645",
+          "title": "Preventive Cardiology in High-Risk Adolescents and Young Adults: Is the Current Training Sufficient?",
+          "journal": "JACC Adv",
+          "year": "2024"
+        },
+        {
+          "pmid": "38055374",
+          "title": "A Nationwide Initiative to Improve Cardiology Quality: The Best Practice in Cardiology Program in Brazil.",
+          "journal": "Arq Bras Cardiol",
+          "year": "2023"
+        },
+        {
+          "pmid": "36659616",
+          "title": "2018 update of expert consensus statement on antiplatelet therapy in East Asian patients with ACS or undergoing PCI.",
+          "journal": "Sci Bull (Beijing)",
+          "year": "2019"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Michael Yeung",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/michael-yeung-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 5,
+      "pubmed_search": "ComputedAuthors:Yeung Michael",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41072988",
+          "title": "Uncorrected Tetralogy of Fallot With Pulmonary Atresia in an Adult.",
+          "journal": "JACC Case Rep",
+          "year": "2025"
+        },
+        {
+          "pmid": "39963223",
+          "title": "LAD Occlusion From Alcohol Reflux During Alcohol Septal Ablation.",
+          "journal": "JACC Case Rep",
+          "year": "2025"
+        },
+        {
+          "pmid": "39295521",
+          "title": "An Unusual Culprit: Syncope in an Adolescent With Congenital Left Main Coronary Artery Atresia.",
+          "journal": "World J Pediatr Congenit Heart Surg",
+          "year": "2024"
+        },
+        {
+          "pmid": "38344889",
+          "title": "To flip or not: Case series of coronary angioplasty in patients with right-sided heart.",
+          "journal": "Catheter Cardiovasc Interv",
+          "year": "2024"
+        },
+        {
+          "pmid": "37743147",
+          "title": "Does Sex Matter in Percutaneous Coronary Intervention of Chronic Total Occlusions?",
+          "journal": "Am J Cardiol",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Ruihai Zhou",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/ruihai-zhou-md-msc-facc-rpvi/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 2,
+      "pubmed_search": "ComputedAuthors:Zhou Ruihai",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42106324",
+          "title": "Multi-omics integration predicts the incidence of 17 diseases in the UK Biobank.",
+          "journal": "Nat Commun",
+          "year": "2026"
+        },
+        {
+          "pmid": "40799968",
+          "title": "Multi-omics integration predicts 17 disease incidences in the UK Biobank.",
+          "journal": "medRxiv",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Kirkwood Adams",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kirkwood-adams/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 3,
+      "pubmed_search": "ComputedAuthors:Adams Kirkwood",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "38569758",
+          "title": "Efficacy and Safety of Dapagliflozin in Patients With Acute Heart&#xa0;Failure.",
+          "journal": "J Am Coll Cardiol",
+          "year": "2024"
+        },
+        {
+          "pmid": "29803780",
+          "title": "Strength in Numbers: A Team-Based Approach to Managing Patients with Hyponatremia.",
+          "journal": "Am J Med",
+          "year": "2018"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "David C. Ishizawar",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/david-c-ishizawar-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_recent_recruit": true,
+      "pubmed_search": "Ishizawar DC",
+      "pubmed_count": 2,
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "34262695",
+          "title": "Successful treatment of pulmonary hypertension following hematopoietic stem cell transplant with a single oral tadalafil: a case report.",
+          "journal": "Pulm Circ",
+          "year": "2021"
+        },
+        {
+          "pmid": "29199910",
+          "title": "Impact of four times daily dosing of oral treprostinil on tolerability and daily dose achieved in pulmonary hypertension.",
+          "journal": "Pulm Circ",
+          "year": "2018"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Brian Colwell Jensen",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/brian-jensen/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 49,
+      "pubmed_search": "ComputedAuthors:Jensen Brian",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42345523",
+          "title": "The nuclear receptor ROR-alpha is a putative novel myogenic regulator of the cardiomyocyte transcriptome, including the alpha-1A adrenergic receptor.",
+          "journal": "Am J Physiol Heart Circ Physiol",
+          "year": "2026"
+        },
+        {
+          "pmid": "39936506",
+          "title": "Multifaceted roles of neutrophils in cardiac disease.",
+          "journal": "J Leukoc Biol",
+          "year": "2025"
+        },
+        {
+          "pmid": "37961903",
+          "title": "Novel Pan-ERR Agonists Ameliorate Heart Failure Through Enhancing Cardiac Fatty Acid Metabolism and Mitochondrial Function.",
+          "journal": "Circulation",
+          "year": "2024"
+        },
+        {
+          "pmid": "35242549",
+          "title": "Refractory ventricular arrhythmia in a patient with Lamin A/C (LMNA) cardiomyopathy successfully treated with thoracic bilateral stellate ganglionectomy.",
+          "journal": "HeartRhythm Case Rep",
+          "year": "2022"
+        },
+        {
+          "pmid": "35170492",
+          "title": "Adrenergic Receptor Regulation of Mitochondrial Function in Cardiomyocytes.",
+          "journal": "J Cardiovasc Pharmacol",
+          "year": "2022"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Tammy I. Long",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/tammy-i-long-agnp-msn-rn-ccrn/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 34,
+      "pubmed_search": "ComputedAuthors:Long T",
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41930411",
+          "title": "CRISPR/Cas9 Editing of the Wheat Iron Sensor TaHRZ1 Confirms Its Conserved Role in Iron Homeostasis and Allocation in Grains.",
+          "journal": "Plant Cell Environ",
+          "year": "2026"
+        },
+        {
+          "pmid": "41266392",
+          "title": "Iron deficiency changes regulatory mechanisms governing sieve element cell differentiation.",
+          "journal": "Nat Commun",
+          "year": "2025"
+        },
+        {
+          "pmid": "40662954",
+          "title": "John Matthew McDowell: A Visionary Leader in Molecular Oomycete-Plant Interactions and a Wonderful Mentor and Friend to Many.",
+          "journal": "Mol Plant Microbe Interact",
+          "year": "2025"
+        },
+        {
+          "pmid": "40298432",
+          "title": "Integrative spatial transcriptomic analysis pinpoints the role of the ferroxidase, TaMCO3, in wheat root tip iron mobilization.",
+          "journal": "Plant J",
+          "year": "2025"
+        },
+        {
+          "pmid": "38284514",
+          "title": "The Black American experience: Answering the global challenge of broadening participation in STEM/agriculture.",
+          "journal": "Plant Cell",
+          "year": "2024"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "William Mostertz",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/william-tripp-mostertz-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Mostertz William",
+      "pubmed_count": 1,
+      "pubmed_verified": 1,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40193584",
+          "title": "Relationship of PAD and Use of TMCS on Outcomes Post-LVAD: A Case Series of 197 Patients.",
+          "journal": "ASAIO J",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Gordon R. Reeves",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/gordon-r-reeves-md-mpt/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1rmG4DkkTlb/bibliography/public",
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "MyNCBI:1rmG4DkkTlb",
+      "pubmed_count": 50,
+      "pubmed_verified": 5,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "41812966",
+          "title": "Physical rehabilitation for older patients with acute HFpEF (REHAB-HFpEF) trial: Design and rationale.",
+          "journal": "Am Heart J",
+          "year": "2026"
+        },
+        {
+          "pmid": "41500239",
+          "title": "Circulating Biomarkers as Predictors of Improvement in Physical Function in Hospitalized Older Adults With Geriatric Syndromes: Findings From the REHAB-HF Trial.",
+          "journal": "Circ Heart Fail",
+          "year": "2026"
+        },
+        {
+          "pmid": "40096906",
+          "title": "Impact of Embedded Interdisciplinary Heart Failure Teams on Achieving Guideline-Directed Medical Therapy Within Community-Based Cardiology Practices.",
+          "journal": "J Card Fail",
+          "year": "2026"
+        },
+        {
+          "pmid": "40088229",
+          "title": "Exercise Training for Patients With Heart Failure: The Details Matter.",
+          "journal": "JACC Heart Fail",
+          "year": "2025"
+        },
+        {
+          "pmid": "39945061",
+          "title": "Functional Sarcopenia and Physical Rehabilitation Response in Older Adults Hospitalized for Acute Heart Failure: A Secondary Analysis of the REHAB-HF Trial.",
+          "journal": "Circ Heart Fail",
+          "year": "2025"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Mason Sanders",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/mason-sanders-md__trashed/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 5,
+      "pubmed_search": "ComputedAuthors:Sanders Mason",
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42097529",
+          "title": "Microaxial Flow Pumps in Heart Failure-Related Cardiogenic Shock-From Hemodynamic Mechanisms to Clinical Applications: A State-of-the-Art Review.",
+          "journal": "J Card Fail",
+          "year": "2026"
+        },
+        {
+          "pmid": "35860774",
+          "title": "Cardiac lymphoma presenting as bradyarrhythmia.",
+          "journal": "HeartRhythm Case Rep",
+          "year": "2022"
+        },
+        {
+          "pmid": "34386266",
+          "title": "Evaluation and Management of Heart Block After Transcatheter Aortic Valve Replacement.",
+          "journal": "Card Fail Rev",
+          "year": "2021"
+        },
+        {
+          "pmid": "32857905",
+          "title": "Predicting need for pacemaker implantation early and late after transcatheter aortic valve implantation.",
+          "journal": "Catheter Cardiovasc Interv",
+          "year": "2021"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Jenna N. Skowronski",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/jenna-n-skowronski-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_count": 10,
+      "pubmed_search": "ComputedAuthors:Skowronski J",
+      "pubmed_verified": 2,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "42132713",
+          "title": "Bridging the Gap Between Genetic Cardiomyopathies and Pregnancy.",
+          "journal": "JACC Adv",
+          "year": "2026"
+        },
+        {
+          "pmid": "41903908",
+          "title": "Social Determinants of Health and Outcomes in Hospitalized Patients with Heart Failure With Preserved Ejection Fraction.",
+          "journal": "J Card Fail",
+          "year": "2026"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Elizabeth Volz",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/elizabeth-volz-md-facc/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Volz Elizabeth",
+      "pubmed_count": 4,
+      "pubmed_verified": 4,
+      "pubmed_ambiguous": false,
+      "publications": [
+        {
+          "pmid": "40957369",
+          "title": "Hypertensive Disorders of Pregnancy in Patients With Cardiac Disease: Risk and Impact on Delivery Timing.",
+          "journal": "JACC Adv",
+          "year": "2025"
+        },
+        {
+          "pmid": "39209062",
+          "title": "Misclassification of Pulmonary Hypertension With Current Hemodynamic Criteria.",
+          "journal": "Chest",
+          "year": "2025"
+        },
+        {
+          "pmid": "38492641",
+          "title": "Postpartum care in a cardio-obstetric clinic after preterm preeclampsia: patient and healthcare provider perspectives.",
+          "journal": "Am J Obstet Gynecol MFM",
+          "year": "2024"
+        },
+        {
+          "pmid": "37328050",
+          "title": "Translating Pressure Into Practice: Operational Characteristics of Ambulatory Hemodynamic Monitoring Program in the United States.",
+          "journal": "J Card Fail",
+          "year": "2023"
+        }
+      ],
+      "nih_grants": []
+    },
+    {
+      "name": "Barbara Reid-Mills",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/barbara-reid-mills/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pipeline_version": "2026.07.06-orcid-fallback-v2",
+      "pubmed_search": "Reid-Mills Barbara",
       "pubmed_count": 0,
       "pubmed_verified": 0,
       "pubmed_ambiguous": false,
@@ -1372,424 +1741,19 @@
       "nih_grants": []
     },
     {
-      "name": "Doris Lin",
-      "profile_url": "https://www.med.unc.edu/ent/directory/doris-lin-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Kimberly Stinnett",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kimberly-stinnett/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ],
       "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 14,
-      "pubmed_search": "ComputedAuthors:Lin Doris",
-      "pubmed_verified": 2,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41541996",
-          "title": "An Initial Diagnosis of Acquired Hemophilia A in an Elderly Male With a Neck Hematoma.",
-          "journal": "Cureus",
-          "year": "2025"
-        },
-        {
-          "pmid": "40799177",
-          "title": "Incidence of Occult Malignancy Diagnosed on Histopathology in Routine Adult Tonsillectomies.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Robert A. Buckmire",
-      "profile_url": "https://www.med.unc.edu/ent/directory/robert-a-buckmire-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 44,
-      "pubmed_search": "ComputedAuthors:Buckmire RA",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41257416",
-          "title": "Missed Opportunities: Laryngologists and Lung Cancer Screening in Early Glottic Cancer Patients.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        },
-        {
-          "pmid": "41111614",
-          "title": "Promoting ENT-erest: Evaluating the Effect of Early, Focused Exposure to Otolaryngology.",
-          "journal": "OTO Open",
-          "year": "2025"
-        },
-        {
-          "pmid": "40985511",
-          "title": "Variables Affecting Time to Airway Improvement After Endoscopic Management of Subglottic Stenosis.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        },
-        {
-          "pmid": "40379555",
-          "title": "Office-Based Laryngology.",
-          "journal": "Otolaryngol Clin North Am",
-          "year": "2025"
-        },
-        {
-          "pmid": "39985365",
-          "title": "In Response to Novel Image-Guided Simulator for Transcervical Intralaryngeal Injection Training.",
-          "journal": "Laryngoscope",
-          "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Rupali N. Shah",
-      "profile_url": "https://www.med.unc.edu/ent/directory/rupali-pali-n-shah-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 51,
-      "pubmed_search": "ComputedAuthors:Shah RN",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41257416",
-          "title": "Missed Opportunities: Laryngologists and Lung Cancer Screening in Early Glottic Cancer Patients.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        },
-        {
-          "pmid": "41111614",
-          "title": "Promoting ENT-erest: Evaluating the Effect of Early, Focused Exposure to Otolaryngology.",
-          "journal": "OTO Open",
-          "year": "2025"
-        },
-        {
-          "pmid": "41075694",
-          "title": "Laryngeal sarcoid: Clinical presentation, management, and outcomes at a tertiary care center.",
-          "journal": "Am J Otolaryngol",
-          "year": "2025"
-        },
-        {
-          "pmid": "40985511",
-          "title": "Variables Affecting Time to Airway Improvement After Endoscopic Management of Subglottic Stenosis.",
-          "journal": "Laryngoscope",
-          "year": "2026"
-        },
-        {
-          "pmid": "40379555",
-          "title": "Office-Based Laryngology.",
-          "journal": "Otolaryngol Clin North Am",
-          "year": "2025"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Lisa Park",
-      "profile_url": "https://www.med.unc.edu/ent/directory/lisa-park-aud/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/lisa.park.1/bibliography/public",
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_search": "MyNCBI:lisa.park.1",
-      "pubmed_count": 35,
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "36879386",
-          "title": "Two-Year Outcomes of Cochlear Implant Use for Children With Unilateral Hearing Loss: Benefits and Comparison to Children With Normal Hearing.",
-          "journal": "Ear Hear",
-          "year": "2023"
-        },
-        {
-          "pmid": "36001854",
-          "title": "Younger Age at Cochlear Implant Activation Results in Improved Auditory Skill Development for Children With Congenital Deafness.",
-          "journal": "J Speech Lang Hear Res",
-          "year": "2022"
-        },
-        {
-          "pmid": "35820072",
-          "title": "Frequency Mapping of a Precurved Electrode Array in the Internal Auditory Canal for a Pediatric Cochlear Implant Recipient.",
-          "journal": "Otol Neurotol",
-          "year": "2022"
-        },
-        {
-          "pmid": "35344959",
-          "title": "Cochlear Nerve Deficiency in Pediatric Unilateral Hearing Loss and Asymmetric Hearing Loss.",
-          "journal": "Audiol Neurootol",
-          "year": "2022"
-        },
-        {
-          "pmid": "35213890",
-          "title": "American Cochlear Implant Alliance Task Force Guidelines for Clinical Assessment and Management of Cochlear Implantation in Children With Single-Sided Deafness.",
-          "journal": "Ear Hear",
-          "year": "2022"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Melissa Anderson",
-      "profile_url": "https://www.med.unc.edu/ent/directory/melissa-anderson/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_search": "Anderson Melissa",
-      "pubmed_count": 1,
+      "pubmed_search": "Stinnett Kimberly",
+      "pubmed_count": 0,
       "pubmed_verified": 0,
-      "pubmed_ambiguous": true,
+      "pubmed_ambiguous": false,
       "publications": [],
-      "nih_grants": []
-    },
-    {
-      "name": "Erika Gagnon",
-      "profile_url": "https://www.med.unc.edu/ent/directory/erika-gagnon-aud-ccc-a/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 11,
-      "pubmed_search": "ComputedAuthors:Gagnon Erika",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "42348847",
-          "title": "The Pediatric Cochlear Implant Use Questionnaire: Assessing Habits and Barriers to Use.",
-          "journal": "Otol Neurotol",
-          "year": "2026"
-        },
-        {
-          "pmid": "39815407",
-          "title": "Benefits of Cochlear Implantation and Hearing Preservation for Children With Preoperative Functional Hearing: A Prospective Clinical Trial.",
-          "journal": "Ear Hear",
-          "year": "2025"
-        },
-        {
-          "pmid": "39133830",
-          "title": "Factors Influencing Pediatric Cochlear Implant Use.",
-          "journal": "Am J Audiol",
-          "year": "2024"
-        },
-        {
-          "pmid": "37250696",
-          "title": "Factors that influence outcomes and device use for pediatric cochlear implant recipients with unilateral hearing loss.",
-          "journal": "Front Hum Neurosci",
-          "year": "2023"
-        },
-        {
-          "pmid": "34912165",
-          "title": "The Limitations of FDA Criteria: Inconsistencies with Clinical Practice, Findings, and Adult Criteria as a Barrier to Pediatric Implantation.",
-          "journal": "Semin Hear",
-          "year": "2021"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Natalie Giduz",
-      "profile_url": "https://www.med.unc.edu/ent/directory/natalie-giduz-msw-lcswa/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 5,
-      "pubmed_search": "ComputedAuthors:Giduz Natalie",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "36308520",
-          "title": "Impacts of anterior-posterior jaw disproportions on speech of dentofacial disharmony patients.",
-          "journal": "Eur J Orthod",
-          "year": "2023"
-        },
-        {
-          "pmid": "35903399",
-          "title": "Impacts of Skeletal Anterior Open Bite Malocclusion on Speech.",
-          "journal": "FACE (Thousand Oaks)",
-          "year": "2022"
-        },
-        {
-          "pmid": "35875421",
-          "title": "Validating Spectral Moment Analysis as a Quantitative Measure of Speech Distortions in Speakers With Class III Malocclusions.",
-          "journal": "Perspect ASHA Spec Interest Groups",
-          "year": "2022"
-        },
-        {
-          "pmid": "35039202",
-          "title": "Orthodontic loading activates cell-specific autophagy in a force-dependent manner.",
-          "journal": "Am J Orthod Dentofacial Orthop",
-          "year": "2022"
-        },
-        {
-          "pmid": "34562076",
-          "title": "Orthognathic speech pathology: impacts of Class III malocclusion on speech.",
-          "journal": "Eur J Orthod",
-          "year": "2022"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Sandra Hancock",
-      "profile_url": "https://www.med.unc.edu/ent/directory/sandra-hancock-ms-ccc-slp-lsls-cert-avt/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_search": "Hancock S",
-      "pubmed_count": 1,
-      "pubmed_verified": 1,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "37932128",
-          "title": "Influence of BMI percentile on craniofacial morphology and development in adolescents,Part II: elevated BMI is associated with larger final facial dimensions.",
-          "journal": "Eur J Orthod",
-          "year": "2024"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Lillian Henderson",
-      "profile_url": "https://www.med.unc.edu/ent/directory/lillian-henderson-msp-ccc-slp-lsls-cert-avt/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 8,
-      "pubmed_search": "ComputedAuthors:Henderson Lillian",
-      "pubmed_verified": 4,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "39815407",
-          "title": "Benefits of Cochlear Implantation and Hearing Preservation for Children With Preoperative Functional Hearing: A Prospective Clinical Trial.",
-          "journal": "Ear Hear",
-          "year": "2025"
-        },
-        {
-          "pmid": "29023243",
-          "title": "Pediatric Auditory Brainstem Implantation: Surgical, Electrophysiologic, and Behavioral Outcomes.",
-          "journal": "Ear Hear",
-          "year": "2018"
-        },
-        {
-          "pmid": "28968281",
-          "title": "The Electrically Evoked Auditory Change Complex Evoked by Temporal Gaps Using Cochlear Implants or Auditory Brainstem Implants in Children With Cochlear Nerve Deficiency.",
-          "journal": "Ear Hear",
-          "year": "2018"
-        },
-        {
-          "pmid": "27635521",
-          "title": "Proceedings of the Annual Symposium of the American Cochlear Implant Alliance.",
-          "journal": "Cochlear Implants Int",
-          "year": "2016"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Erin Thompson",
-      "profile_url": "https://www.med.unc.edu/ent/directory/erin-thompson-ms-ccc-slp-lsls-cert-avt/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 3,
-      "pubmed_search": "ComputedAuthors:Thompson Erin",
-      "pubmed_verified": 2,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "31721595",
-          "title": "Age at Full-Time Use Predicts Language Outcomes Better Than Age of Surgery in Children Who Use Cochlear Implants.",
-          "journal": "Am J Audiol",
-          "year": "2019"
-        },
-        {
-          "pmid": "23805595",
-          "title": "Atrial septal defect.",
-          "journal": "JAAPA",
-          "year": "2013"
-        }
-      ],
-      "nih_grants": []
-    },
-    {
-      "name": "Jennifer Woodard",
-      "profile_url": "https://www.med.unc.edu/ent/directory/jennifer-woodard-aud-ccc-a/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pipeline_version": "2026.07.06-orcid-fallback-v2",
-      "pubmed_count": 18,
-      "pubmed_search": "ComputedAuthors:Woodard Jennifer",
-      "pubmed_verified": 5,
-      "pubmed_ambiguous": false,
-      "publications": [
-        {
-          "pmid": "41977033",
-          "title": "Determinants of Cochlear Implant Evaluation Completion and Uptake in Children.",
-          "journal": "J Clin Med",
-          "year": "2026"
-        },
-        {
-          "pmid": "38887094",
-          "title": "Safety and Early Outcomes of Cochlear Implantation of Nucleus Devices in Infants: A Multi-Centre Study.",
-          "journal": "Trends Hear",
-          "year": "2024"
-        },
-        {
-          "pmid": "33352551",
-          "title": "Delaying Cochlear Implantation Impacts Postoperative Speech Perception of Nontraditional Pediatric Candidates.",
-          "journal": "Audiol Neurootol",
-          "year": "2021"
-        },
-        {
-          "pmid": "30741907",
-          "title": "Hearing Preservation in Pediatric Recipients of Cochlear Implants.",
-          "journal": "Otol Neurotol",
-          "year": "2019"
-        },
-        {
-          "pmid": "27098767",
-          "title": "The effect of interdevice interval on speech perception performance among bilateral, pediatric cochlear implant recipients.",
-          "journal": "Laryngoscope",
-          "year": "2016"
-        }
-      ],
       "nih_grants": []
     }
   ]
