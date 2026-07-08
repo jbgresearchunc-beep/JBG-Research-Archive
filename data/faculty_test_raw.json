@@ -1,0 +1,427 @@
+{
+  "generated_at": "2026-07-08T00:54:30.461741Z",
+  "total_faculty": 46,
+  "departments": [
+    "Otolaryngology / Head & Neck Surgery"
+  ],
+  "faculty": [
+    {
+      "name": "Wendell G. Yarbrough",
+      "profile_url": "https://www.med.unc.edu/ent/directory/wendell-g-yarbrough-md-mmhc-facs/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Robert L. Ferris",
+      "profile_url": "https://www.med.unc.edu/ent/directory/robert-l-ferris-md-phd/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Mihir R. Patel",
+      "profile_url": "https://www.med.unc.edu/ent/directory/mihir-patel-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Jeffrey M. Blumberg",
+      "profile_url": "https://www.med.unc.edu/ent/directory/jeffrey-blumberg-md-facs/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "C. Alessandra Colaianni",
+      "profile_url": "https://www.med.unc.edu/ent/directory/c-alessandra-colaianni-md-mphil/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pubmed_hint": "colaianni ca"
+    },
+    {
+      "name": "Rachelle Gish-Johnson",
+      "profile_url": "https://www.med.unc.edu/ent/directory/rachelle-gish-johnson-fnp-c/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Trevor G. Hackman",
+      "profile_url": "https://www.med.unc.edu/ent/directory/trevor-g-hackman-md-facs/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Caitlin Heredia",
+      "profile_url": "https://www.med.unc.edu/ent/directory/caitlin-heredia-pa-c/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Catherine J. Lumley",
+      "profile_url": "https://www.med.unc.edu/ent/directory/catherine-lumley-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Hannah Eadie Reid",
+      "profile_url": "https://www.med.unc.edu/ent/directory/hannah-eadie-reid-np/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Travis P. Schrank",
+      "profile_url": "https://www.med.unc.edu/ent/directory/travis-p-schrank-md-phd/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Amelia F. Drake",
+      "profile_url": "https://www.med.unc.edu/ent/directory/amelia-f-drake-md-facs/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Carlton J. Zdanski",
+      "profile_url": "https://www.med.unc.edu/ent/directory/carlton-j-zdanski-md-facs/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Lauren A. Leeper",
+      "profile_url": "https://www.med.unc.edu/ent/directory/lauren-a-leeper-md-facs/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Victoria James",
+      "profile_url": "https://www.med.unc.edu/ent/directory/victoria-claire-james-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Wade McClain",
+      "profile_url": "https://www.med.unc.edu/ent/directory/wade-mcclain-do/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Courtney McDonough",
+      "profile_url": "https://www.med.unc.edu/ent/directory/courtney-mcdonough-pa-c/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "J. Madison Clark",
+      "profile_url": "https://www.med.unc.edu/ent/directory/j-madison-clark-md-facs/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Virginia Drake",
+      "profile_url": "https://www.med.unc.edu/ent/directory/virginia-ginny-drake-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Brian S. Jewett",
+      "profile_url": "https://www.med.unc.edu/ent/directory/brian-s-jewett-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Matthew Q. Miller",
+      "profile_url": "https://www.med.unc.edu/ent/directory/matthew-q-miller-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Brent A. Senior",
+      "profile_url": "https://www.med.unc.edu/ent/directory/brent-a-senior-md-facs-fars/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Brian D. Thorp",
+      "profile_url": "https://www.med.unc.edu/ent/directory/brian-d-thorp-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Charles S. Ebert",
+      "profile_url": "https://www.med.unc.edu/ent/directory/charles-s-ebert-jr-md-mph-fars-faaoa-facs/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Adam J. Kimple",
+      "profile_url": "https://www.med.unc.edu/ent/directory/adam-j-kimple-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/adam.kimple.1/bibliography/public"
+    },
+    {
+      "name": "Cristine Klatt-Cromwell",
+      "profile_url": "https://www.med.unc.edu/ent/directory/cristine-klatt-cromwell-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Meghan Norris",
+      "profile_url": "https://www.med.unc.edu/ent/directory/meghan-norris-ms-mspas-pa-c/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Jackson Vuncannon",
+      "profile_url": "https://www.med.unc.edu/ent/directory/jackson-vuncannon-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Kevin D. Brown",
+      "profile_url": "https://www.med.unc.edu/ent/directory/kevin-d-brown-md-phd/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Matthew M. Dedmon",
+      "profile_url": "https://www.med.unc.edu/ent/directory/matthew-m-dedmon-md-phd/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "A. Morgan Selleck",
+      "profile_url": "https://www.med.unc.edu/ent/directory/anne-morgan-selleck-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Nicholas J. Thompson",
+      "profile_url": "https://www.med.unc.edu/ent/directory/nicholas-thompson-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/nicholas.thompson.1/bibliography/public"
+    },
+    {
+      "name": "Tram Tran",
+      "profile_url": "https://www.med.unc.edu/ent/directory/bao-tram-tran-fnp/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Christine E. DeMason",
+      "profile_url": "https://www.med.unc.edu/ent/directory/christine-e-demason-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Ann Q. Bogard",
+      "profile_url": "https://www.med.unc.edu/ent/directory/ann-q-bogard-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Doris Lin",
+      "profile_url": "https://www.med.unc.edu/ent/directory/doris-lin-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Robert A. Buckmire",
+      "profile_url": "https://www.med.unc.edu/ent/directory/robert-a-buckmire-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Rupali N. Shah",
+      "profile_url": "https://www.med.unc.edu/ent/directory/rupali-pali-n-shah-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Lisa Park",
+      "profile_url": "https://www.med.unc.edu/ent/directory/lisa-park-aud/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/lisa.park.1/bibliography/public"
+    },
+    {
+      "name": "Melissa Anderson",
+      "profile_url": "https://www.med.unc.edu/ent/directory/melissa-anderson/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Erika Gagnon",
+      "profile_url": "https://www.med.unc.edu/ent/directory/erika-gagnon-aud-ccc-a/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Natalie Giduz",
+      "profile_url": "https://www.med.unc.edu/ent/directory/natalie-giduz-msw-lcswa/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Sandra Hancock",
+      "profile_url": "https://www.med.unc.edu/ent/directory/sandra-hancock-ms-ccc-slp-lsls-cert-avt/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Lillian Henderson",
+      "profile_url": "https://www.med.unc.edu/ent/directory/lillian-henderson-msp-ccc-slp-lsls-cert-avt/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Erin Thompson",
+      "profile_url": "https://www.med.unc.edu/ent/directory/erin-thompson-ms-ccc-slp-lsls-cert-avt/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Jennifer Woodard",
+      "profile_url": "https://www.med.unc.edu/ent/directory/jennifer-woodard-aud-ccc-a/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    }
+  ]
+}
