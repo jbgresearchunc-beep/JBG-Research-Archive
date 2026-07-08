@@ -1,426 +1,447 @@
 {
-  "generated_at": "2026-07-08T00:54:30.461741Z",
-  "total_faculty": 46,
+  "generated_at": "2026-07-08T01:04:48.204817Z",
+  "total_faculty": 48,
   "departments": [
-    "Otolaryngology / Head & Neck Surgery"
+    "Medicine \u2014 Cardiology"
   ],
   "faculty": [
     {
-      "name": "Wendell G. Yarbrough",
-      "profile_url": "https://www.med.unc.edu/ent/directory/wendell-g-yarbrough-md-mmhc-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "George Stouffer",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/rick-stouffer/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Robert L. Ferris",
-      "profile_url": "https://www.med.unc.edu/ent/directory/robert-l-ferris-md-phd/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Essraa Bayoumi",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/essraa-bayoumi-md/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Mihir R. Patel",
-      "profile_url": "https://www.med.unc.edu/ent/directory/mihir-patel-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Matthew A. Cavender",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/matthew-cavender/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Jeffrey M. Blumberg",
-      "profile_url": "https://www.med.unc.edu/ent/directory/jeffrey-blumberg-md-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Patricia Pat-Yue Chang",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/patricia-chang/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "C. Alessandra Colaianni",
-      "profile_url": "https://www.med.unc.edu/ent/directory/c-alessandra-colaianni-md-mphil/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Anil K. Gehi",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/anil-k-gehi-md/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Susan C. Gilchrist",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/susan-c-gilchrist-md-ms/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Charles Hicks",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/charles-hicks/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Alan Lee Hinderliter",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/alan-lee-hinderliter-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
       ],
-      "pubmed_hint": "colaianni ca"
+      "pubmed_hint": "Hinderliter A"
     },
     {
-      "name": "Rachelle Gish-Johnson",
-      "profile_url": "https://www.med.unc.edu/ent/directory/rachelle-gish-johnson-fnp-c/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Adam Moskowitz",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/adam-moskowitz/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Trevor G. Hackman",
-      "profile_url": "https://www.med.unc.edu/ent/directory/trevor-g-hackman-md-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Tim Nichols",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/tim-nichols/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Caitlin Heredia",
-      "profile_url": "https://www.med.unc.edu/ent/directory/caitlin-heredia-pa-c/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Joseph S. Rossi",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/joe-rossi/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Catherine J. Lumley",
-      "profile_url": "https://www.med.unc.edu/ent/directory/catherine-lumley-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "John P. Vavalle",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/john-p-vavalle-md-mhs/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Hannah Eadie Reid",
-      "profile_url": "https://www.med.unc.edu/ent/directory/hannah-eadie-reid-np/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Thelsa Thomas Weickert",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/thelsa-thomas-weickert-md/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Travis P. Schrank",
-      "profile_url": "https://www.med.unc.edu/ent/directory/travis-p-schrank-md-phd/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Kevin A. Friede",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kevin-a-friede-md/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Amelia F. Drake",
-      "profile_url": "https://www.med.unc.edu/ent/directory/amelia-f-drake-md-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Anthony J. Mazzella",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/anthony-mazzella/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Carlton J. Zdanski",
-      "profile_url": "https://www.med.unc.edu/ent/directory/carlton-j-zdanski-md-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Lauren A. Leeper",
-      "profile_url": "https://www.med.unc.edu/ent/directory/lauren-a-leeper-md-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Victoria James",
-      "profile_url": "https://www.med.unc.edu/ent/directory/victoria-claire-james-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Wade McClain",
-      "profile_url": "https://www.med.unc.edu/ent/directory/wade-mcclain-do/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Courtney McDonough",
-      "profile_url": "https://www.med.unc.edu/ent/directory/courtney-mcdonough-pa-c/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "J. Madison Clark",
-      "profile_url": "https://www.med.unc.edu/ent/directory/j-madison-clark-md-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Virginia Drake",
-      "profile_url": "https://www.med.unc.edu/ent/directory/virginia-ginny-drake-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Brian S. Jewett",
-      "profile_url": "https://www.med.unc.edu/ent/directory/brian-s-jewett-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Matthew Q. Miller",
-      "profile_url": "https://www.med.unc.edu/ent/directory/matthew-q-miller-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Brent A. Senior",
-      "profile_url": "https://www.med.unc.edu/ent/directory/brent-a-senior-md-facs-fars/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Brian D. Thorp",
-      "profile_url": "https://www.med.unc.edu/ent/directory/brian-d-thorp-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Charles S. Ebert",
-      "profile_url": "https://www.med.unc.edu/ent/directory/charles-s-ebert-jr-md-mph-fars-faaoa-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Adam J. Kimple",
-      "profile_url": "https://www.med.unc.edu/ent/directory/adam-j-kimple-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/adam.kimple.1/bibliography/public"
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1ZI-nziyYG5Q5/bibliography/public"
     },
     {
-      "name": "Cristine Klatt-Cromwell",
-      "profile_url": "https://www.med.unc.edu/ent/directory/cristine-klatt-cromwell-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Joseph A. Sivak",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/joseph-a-sivak-md-facc/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Meghan Norris",
-      "profile_url": "https://www.med.unc.edu/ent/directory/meghan-norris-ms-mspas-pa-c/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Cody Deen",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/cody-deen/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Jackson Vuncannon",
-      "profile_url": "https://www.med.unc.edu/ent/directory/jackson-vuncannon-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Casey Gazda",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/casey-adams/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Kevin D. Brown",
-      "profile_url": "https://www.med.unc.edu/ent/directory/kevin-d-brown-md-phd/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Stephanie Falk Martin",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/stephanie-falk-martin/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Matthew M. Dedmon",
-      "profile_url": "https://www.med.unc.edu/ent/directory/matthew-m-dedmon-md-phd/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "S. Peter Sheng",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/s-peter-sheng-md-mph/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "A. Morgan Selleck",
-      "profile_url": "https://www.med.unc.edu/ent/directory/anne-morgan-selleck-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Ross Joseph Simpson",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/ross-simpson/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Nicholas J. Thompson",
-      "profile_url": "https://www.med.unc.edu/ent/directory/nicholas-thompson-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Nora Tolbert",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/nora-tolbert-md/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Robert C. Wirka",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/robert-c-wirka-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Matthew Baker",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/matthew-baker-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
       ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/nicholas.thompson.1/bibliography/public"
+      "pubmed_hint": "including biventricular"
     },
     {
-      "name": "Tram Tran",
-      "profile_url": "https://www.med.unc.edu/ent/directory/bao-tram-tran-fnp/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Prabhat Kumar",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/prabhat-kumar-md/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Christine E. DeMason",
-      "profile_url": "https://www.med.unc.edu/ent/directory/christine-e-demason-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Ann Q. Bogard",
-      "profile_url": "https://www.med.unc.edu/ent/directory/ann-q-bogard-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Doris Lin",
-      "profile_url": "https://www.med.unc.edu/ent/directory/doris-lin-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Robert A. Buckmire",
-      "profile_url": "https://www.med.unc.edu/ent/directory/robert-a-buckmire-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Rupali N. Shah",
-      "profile_url": "https://www.med.unc.edu/ent/directory/rupali-pali-n-shah-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Lisa Park",
-      "profile_url": "https://www.med.unc.edu/ent/directory/lisa-park-aud/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/lisa.park.1/bibliography/public"
+      "pubmed_hint": "including biventricular"
     },
     {
-      "name": "Melissa Anderson",
-      "profile_url": "https://www.med.unc.edu/ent/directory/melissa-anderson/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Lindsey A. Rosman",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/lindsey-a-rosman-phd/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1v_wlxkYMf_EnH/bibliography/public"
+    },
+    {
+      "name": "Faisal F. Syed",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/faisal-f-syed-m-b-ch-b/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Erika Gagnon",
-      "profile_url": "https://www.med.unc.edu/ent/directory/erika-gagnon-aud-ccc-a/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Carlos A. Espinoza",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/carlos-a-espinoza-md/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Natalie Giduz",
-      "profile_url": "https://www.med.unc.edu/ent/directory/natalie-giduz-msw-lcswa/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Jeffrey Lawrence Klein",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/jeffrey-lawrence-klein/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Sandra Hancock",
-      "profile_url": "https://www.med.unc.edu/ent/directory/sandra-hancock-ms-ccc-slp-lsls-cert-avt/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Peter Mason",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/peter-mason-md-mph/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/peter.mason.3/bibliography/public"
+    },
+    {
+      "name": "Sheetal Patel",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sheetal-patel-do/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Lillian Henderson",
-      "profile_url": "https://www.med.unc.edu/ent/directory/lillian-henderson-msp-ccc-slp-lsls-cert-avt/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Sameer Prasada",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sameer-prasada-md/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Erin Thompson",
-      "profile_url": "https://www.med.unc.edu/ent/directory/erin-thompson-ms-ccc-slp-lsls-cert-avt/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Sudhir Prasada",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sudhir-prasada-md-facc/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Jennifer Woodard",
-      "profile_url": "https://www.med.unc.edu/ent/directory/jennifer-woodard-aud-ccc-a/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Sidney C. Smith",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sidney-smith/",
+      "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Michael Yeung",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/michael-yeung-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Ruihai Zhou",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/ruihai-zhou-md-msc-facc-rpvi/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Kirkwood Adams",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kirkwood-adams/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "David C. Ishizawar",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/david-c-ishizawar-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Brian Colwell Jensen",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/brian-jensen/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "William Mostertz",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/william-tripp-mostertz-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Gordon R. Reeves",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/gordon-r-reeves-md-mpt/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1rmG4DkkTlb/bibliography/public"
+    },
+    {
+      "name": "Mason Sanders",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/mason-sanders-md__trashed/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Jenna N. Skowronski",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/jenna-n-skowronski-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Elizabeth Volz",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/elizabeth-volz-md-facc/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Barbara Reid-Mills",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/barbara-reid-mills/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Kimberly Stinnett",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kimberly-stinnett/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Elias Wen",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/elias-wen/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Sherry Wimberley",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sherry-wimberley/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
       ]
     }
   ]
