@@ -815,8 +815,26 @@ function firstLastShort(name) {
 
 async function init() {
   try {
-    const resp = await fetch("data/faculty.json");
-    if (!resp.ok) throw new Error("Could not load faculty data");
+    // Allow previewing a department-test run (data/faculty_test.json) by
+    // visiting the site with ?dataset=test — without this, the site always
+    // loads the real production data/faculty.json. This lets a quick
+    // department-filtered test run be checked immediately, instead of
+    // waiting for a full ~2hr production run just to see new features.
+    const params = new URLSearchParams(window.location.search);
+    const useTest = params.get("dataset") === "test";
+    const dataFile = useTest ? "data/faculty_test.json" : "data/faculty.json";
+
+    if (useTest) {
+      const banner = document.createElement("div");
+      banner.style.cssText =
+        "background:#fef3e2;color:#92580a;text-align:center;font-size:0.8rem;" +
+        "font-weight:600;padding:6px 1rem;";
+      banner.textContent = "⚠ Viewing TEST dataset (data/faculty_test.json) — not the live production data";
+      document.body.insertBefore(banner, document.body.firstChild);
+    }
+
+    const resp = await fetch(dataFile);
+    if (!resp.ok) throw new Error(`Could not load faculty data (${dataFile})`);
     const data = await resp.json();
 
     ALL_FACULTY = data.faculty || [];
@@ -840,7 +858,7 @@ async function init() {
     if (data.generated_at) {
       const d = new Date(data.generated_at);
       document.getElementById("updatedLabel").textContent =
-        "Data updated " + d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+        (useTest ? "[TEST] " : "") + "Data updated " + d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
     }
 
     document.getElementById("loadingMsg").style.display = "none";
