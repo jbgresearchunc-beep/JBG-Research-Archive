@@ -23,6 +23,15 @@ from html.parser import HTMLParser
 # ---------------------------------------------------------------------------
 PIPELINE_VERSION = "2026.07.06-orcid-fallback-v2"
 
+# How many years back to search for publications. Rolling, not a fixed year —
+# recalculated from the actual run date each time so it stays current
+# (e.g. run in 2027 searches 2022-2027, not a stale 2018 cutoff).
+PUBLICATION_WINDOW_YEARS = 5
+
+
+def pubmed_start_year():
+    return datetime.utcnow().year - PUBLICATION_WINDOW_YEARS
+
 # ---------------------------------------------------------------------------
 # HTML helpers
 # ---------------------------------------------------------------------------
@@ -922,13 +931,16 @@ def search_orcid_by_name(name):
     return None, None, None
 
 
-def fetch_pmids_via_orcid(orcid_id, since_year=2018):
+def fetch_pmids_via_orcid(orcid_id, since_year=None):
     """
-    Fetch PMIDs from ORCID works API for a given ORCID iD.
+    Fetch PMIDs from ORCID works API for a given ORCID iD, filtered to the
+    rolling publication window (default: last PUBLICATION_WINDOW_YEARS years).
     Also returns DOIs for works that don't have PMIDs, so we can
     look them up in PubMed via doi[AID].
     Returns (pmids, dois) — both lists sorted recent-first.
     """
+    if since_year is None:
+        since_year = pubmed_start_year()
     url = f"https://pub.orcid.org/v3.0/{orcid_id}/works"
     data = fetch_json(url)
     if not data:
@@ -1067,20 +1079,24 @@ def build_pubmed_search_string(name):
     return f"{last} {first_parts[0]}"
 
 
-def pubmed_search(search_term, affiliation="University of North Carolina", max_results=5):
+def pubmed_search(search_term, affiliation="University of North Carolina", max_results=300):
     """
-    Query PubMed and return list of PMIDs.
+    Query PubMed and return list of PMIDs from the last PUBLICATION_WINDOW_YEARS.
     search_term: either a name-based string like 'Doe JA' or an ORCID.
+    max_results defaults to 300 (was 5) so we capture a person's full recent
+    publication list, not just a handful — PubMed's esearch returns this in
+    ONE request regardless of size, so this doesn't add extra round trips.
     """
     current_year = datetime.utcnow().year
+    start_year = pubmed_start_year()
     if search_term.startswith("ORCID:"):
         orcid = search_term.replace("ORCID:", "")
-        query = f'{orcid}[auid] AND "{affiliation}"[Affiliation] AND ("2018"[PDAT] : "{current_year}"[PDAT])'
+        query = f'{orcid}[auid] AND "{affiliation}"[Affiliation] AND ("{start_year}"[PDAT] : "{current_year}"[PDAT])'
     elif affiliation:
-        query = f'"{search_term}"[Author] AND "{affiliation}"[Affiliation] AND ("2018"[PDAT] : "{current_year}"[PDAT])'
+        query = f'"{search_term}"[Author] AND "{affiliation}"[Affiliation] AND ("{start_year}"[PDAT] : "{current_year}"[PDAT])'
     else:
         # No affiliation filter — used as last resort for recently recruited faculty
-        query = f'"{search_term}"[Author] AND ("2018"[PDAT] : "{current_year}"[PDAT])'
+        query = f'"{search_term}"[Author] AND ("{start_year}"[PDAT] : "{current_year}"[PDAT])'
 
     params = urllib.parse.urlencode({
         "db": "pubmed",
@@ -1156,7 +1172,7 @@ def _surname_tokens(name_or_term):
     return candidates
 
 
-def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term="", target_lastname=None):
+def _pubmed_fetch_summaries_batch(pmids, verify_affiliation=True, search_term="", target_lastname=None):
     """
     Fetch article details for a list of PMIDs.
     Uses efetch (XML) to get affiliation data, then filters to only
@@ -1307,6 +1323,39 @@ def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term="", targe
     return pubs
 
 
+def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term="", target_lastname=None):
+    """
+    Public entry point — fetches full publication details for a list of PMIDs,
+    chunking into batches of 200 (NCBI's recommended per-request limit) for
+    very prolific authors. Most faculty need only one batch/request; only the
+    handful of people with 200+ recent papers trigger extra requests.
+    Results are sorted by year, most recent first.
+    """
+    if not pmids:
+        return []
+
+    CHUNK_SIZE = 200
+    all_pubs = []
+    for i in range(0, len(pmids), CHUNK_SIZE):
+        chunk = pmids[i:i + CHUNK_SIZE]
+        chunk_pubs = _pubmed_fetch_summaries_batch(
+            chunk, verify_affiliation=verify_affiliation,
+            search_term=search_term, target_lastname=target_lastname
+        )
+        all_pubs.extend(chunk_pubs)
+        if i + CHUNK_SIZE < len(pmids):
+            time.sleep(PUBMED_SLEEP)  # be polite between chunked requests
+
+    # Sort most-recent-first; treat missing/unparseable years as oldest
+    def _year_key(p):
+        try:
+            return int(p.get("year") or 0)
+        except (TypeError, ValueError):
+            return 0
+    all_pubs.sort(key=_year_key, reverse=True)
+    return all_pubs
+
+
 def pubmed_fetch_summaries_fallback(pmids):
     """Fallback using esummary — basic affiliation check via affiliationlist field."""
     params = urllib.parse.urlencode({
@@ -1433,7 +1482,7 @@ def _pubmed_name_search_with_fallbacks(name, initial_term):
       3. Single-initial fallback (e.g. 'Hanks Brent' → 'Hanks B')
       4. No-affiliation search (catches recent recruits at prior institutions)
     """
-    result = pubmed_search(initial_term, max_results=15)
+    result = pubmed_search(initial_term, max_results=300)
     if result["count"] > 0:
         return initial_term, result, False
 
@@ -1445,7 +1494,7 @@ def _pubmed_name_search_with_fallbacks(name, initial_term):
         initials = "".join(p[0] for p in parts[:-1] if p and p[0].isalpha())
         fallback = f"{last} {initials}"
         if fallback != initial_term:
-            r = pubmed_search(fallback, max_results=15)
+            r = pubmed_search(fallback, max_results=300)
             if r["count"] > 0:
                 print(f"    Fallback: '{initial_term}' → '{fallback}' ({r['count']} results)")
                 return fallback, r, False
@@ -1455,7 +1504,7 @@ def _pubmed_name_search_with_fallbacks(name, initial_term):
     if len(hint_parts) == 2 and len(hint_parts[1]) > 1:
         alt = f"{hint_parts[0]} {hint_parts[1][0]}"
         if alt != initial_term:
-            r = pubmed_search(alt, max_results=15)
+            r = pubmed_search(alt, max_results=300)
             if r["count"] > 0:
                 print(f"    Fallback (hint initial): '{initial_term}' → '{alt}' ({r['count']} results)")
                 return alt, r, False
@@ -1470,7 +1519,7 @@ def _pubmed_name_search_with_fallbacks(name, initial_term):
             if len(two_initials) >= 2:
                 two_init = f"{term_parts[0]} {two_initials}"
                 if two_init != initial_term:
-                    r = pubmed_search(two_init, max_results=15)
+                    r = pubmed_search(two_init, max_results=300)
                     if r["count"] > 0:
                         print(f"    Fallback (two initials): '{initial_term}' → '{two_init}' ({r['count']} results)")
                         return two_init, r, False
@@ -1479,12 +1528,33 @@ def _pubmed_name_search_with_fallbacks(name, initial_term):
     term_parts = initial_term.split()
     has_initials = len(term_parts) >= 2 and len(term_parts[-1]) <= 2 and term_parts[-1].isalpha()
     if has_initials:
-        r = pubmed_search(initial_term, affiliation="", max_results=15)
+        r = pubmed_search(initial_term, affiliation="", max_results=300)
         if r["count"] > 0:
             print(f"    No-affiliation fallback: '{initial_term}' found {r['count']} results (recent recruit?)")
             return initial_term, r, True
 
     return initial_term, {"count": 0, "ids": []}, False
+
+
+def _filter_recent_pubs(pubs):
+    """
+    Keep only publications within the rolling PUBLICATION_WINDOW_YEARS window.
+    Needed for paths that don't filter by date in their query (Computed Authors,
+    MyNCBI, ORCID) — the name-search path already filters via PDAT in the query,
+    but this makes the final publications list consistent across all sources.
+    Papers with no parseable year are kept (often "ahead of print" articles,
+    which are current by definition).
+    """
+    start_year = pubmed_start_year()
+    kept = []
+    for p in pubs:
+        try:
+            y = int(p.get("year") or 0)
+        except (TypeError, ValueError):
+            y = 0
+        if y == 0 or y >= start_year:
+            kept.append(p)
+    return kept
 
 
 def _upgrade_with_computed_authors(faculty_member, pubs, search_term, target_lastname=None):
@@ -1525,12 +1595,15 @@ def _upgrade_with_computed_authors(faculty_member, pubs, search_term, target_las
     # Verify CA results still have UNC affiliation for the target author.
     # CA disambiguates by authorship but doesn't guarantee UNC — without this
     # check, a correct-but-non-UNC cluster (someone who left UNC) gets attached.
-    ca_pubs = pubmed_fetch_summaries(ca_pmids[:20], search_term=search_term,
+    # Fetch details for ALL PMIDs in the cluster (chunked internally for large
+    # clusters), then keep only those within the rolling publication window.
+    ca_pubs = pubmed_fetch_summaries(ca_pmids, search_term=search_term,
                                      verify_affiliation=True, target_lastname=target_lastname)
+    ca_pubs = _filter_recent_pubs(ca_pubs)
     if len(ca_pubs) >= 2:
         faculty_member["pubmed_count"] = ca_count
         faculty_member["pubmed_search"] = f"ComputedAuthors:{search_term}"
-        return ca_pubs[:5]
+        return ca_pubs
     # CA cluster didn't verify against UNC — keep the original verified pubs
     print(f"    Computed Authors: cluster failed UNC re-verification ({len(ca_pubs)} confirmed) — keeping original")
     return pubs
@@ -1567,13 +1640,14 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
             })
             return faculty_member
         print(f"    Using manual override: '{search_term}'")
-        result = pubmed_search(search_term, max_results=15)
+        result = pubmed_search(search_term)
         print(f"    PubMed: {name} → '{search_term}' ({result['count']} results)")
         pubs = []
         if result["ids"]:
-            pubs = pubmed_fetch_summaries(result["ids"][:15], search_term=search_term,
-                                          verify_affiliation=False)[:5]
-            pubs = _upgrade_with_computed_authors(faculty_member, pubs, search_term)
+            pubs = pubmed_fetch_summaries(result["ids"], search_term=search_term,
+                                          verify_affiliation=False)
+            pubs = _upgrade_with_computed_authors(faculty_member, pubs, search_term,
+                                                   target_lastname=clean_name_for_pubmed(name))
         faculty_member.update({
             "pubmed_search": faculty_member.get("pubmed_search") or search_term,
             "pubmed_count": faculty_member.get("pubmed_count") or result["count"],
@@ -1589,15 +1663,16 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
         bib_url = clean_hint.replace("MYNCBI:", "")
         author_id = bib_url.rstrip("/").split("/myncbi/")[-1].split("/")[0]
         print(f"    MyNCBI: fetching bibliography for '{author_id}'")
-        pmids, count = fetch_pmids_by_author_id(author_id, max_results=100)
+        pmids, count = fetch_pmids_by_author_id(author_id, max_results=300)
         print(f"    MyNCBI: found {count} PMIDs on bibliography page")
         if pmids:
             # The MyNCBI bibliography is the faculty member's own curated list,
             # so we trust it and skip UNC affiliation re-verification (which would
             # otherwise drop papers whose per-author affiliation lists a prior or
-            # collaborating institution).
-            pubs = pubmed_fetch_summaries(pmids[:15], search_term=name,
-                                          verify_affiliation=False)[:5]
+            # collaborating institution). We do still restrict to the rolling
+            # publication window so the list stays current.
+            pubs = pubmed_fetch_summaries(pmids, search_term=name, verify_affiliation=False)
+            pubs = _filter_recent_pubs(pubs)
             faculty_member.update({
                 "pubmed_search": f"MyNCBI:{author_id}", "pubmed_count": count,
                 "pubmed_verified": len(pubs), "pubmed_ambiguous": False, "publications": pubs
@@ -1638,11 +1713,11 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
     pubs = []
     if result["ids"]:
         pubs = pubmed_fetch_summaries(
-            result["ids"][:15],
+            result["ids"],
             search_term=search_term,
             verify_affiliation=not recent_recruit,
             target_lastname=target_lastname,
-        )[:5]
+        )
         if not recent_recruit:
             pubs = _upgrade_with_computed_authors(faculty_member, pubs, search_term, target_lastname)
 
@@ -1663,16 +1738,16 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
         time.sleep(0.2)
         if orcid_id:
             print(f"    ORCID fallback: found {orcid_id} for {orcid_given} {orcid_family}")
-            orcid_pmids, orcid_dois = fetch_pmids_via_orcid(orcid_id, since_year=2018)
+            orcid_pmids, orcid_dois = fetch_pmids_via_orcid(orcid_id)  # uses rolling window default
             time.sleep(0.2)
             if not orcid_pmids and orcid_dois:
                 print(f"    ORCID: resolving {min(len(orcid_dois), 3)} DOIs...")
                 orcid_pmids = resolve_dois_to_pmids(orcid_dois, max_dois=3)
             if orcid_pmids:
                 verify = len(orcid_pmids) <= 2
-                orcid_pubs = pubmed_fetch_summaries(orcid_pmids[:15], search_term=name,
+                orcid_pubs = pubmed_fetch_summaries(orcid_pmids, search_term=name,
                                                     verify_affiliation=verify,
-                                                    target_lastname=target_lastname)[:5]
+                                                    target_lastname=target_lastname)
                 # Only replace name-search results if ORCID found MORE papers
                 if len(orcid_pubs) > len(pubs):
                     print(f"    ORCID: {len(orcid_pubs)} papers (better than name search's {len(pubs)})")
