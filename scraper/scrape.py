@@ -1744,7 +1744,19 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
                 print(f"    ORCID: resolving {min(len(orcid_dois), 3)} DOIs...")
                 orcid_pmids = resolve_dois_to_pmids(orcid_dois, max_dois=3)
             if orcid_pmids:
-                verify = len(orcid_pmids) <= 2
+                # Always re-verify UNC affiliation for brand-new ORCID accounts
+                # (0009- prefix = registered ~2023+), regardless of paper count.
+                # New accounts are inherently less trustworthy — a common name
+                # can still match the wrong "new" account, and a thin/new record
+                # gives verification less to catch a bad match against. Older
+                # accounts (0000-/0001-/0002-/0003-) with 3+ papers are still
+                # trusted without re-verification, since a real name+paper-count
+                # match against an established record is very unlikely to be wrong.
+                is_new_orcid_account = orcid_id.startswith("0009-")
+                verify = len(orcid_pmids) <= 2 or is_new_orcid_account
+                if is_new_orcid_account and len(orcid_pmids) > 2:
+                    print(f"    ORCID: new account ({orcid_id[:9]}...) — verifying "
+                          f"affiliation despite {len(orcid_pmids)} papers found")
                 orcid_pubs = pubmed_fetch_summaries(orcid_pmids, search_term=name,
                                                     verify_affiliation=verify,
                                                     target_lastname=target_lastname)
@@ -1760,6 +1772,13 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
                     })
                     time.sleep(PUBMED_SLEEP)
                     return faculty_member
+                elif is_new_orcid_account and len(orcid_pubs) == 0 and len(orcid_pmids) > 0:
+                    # New account claimed papers but NONE verified against UNC —
+                    # likely a wrong-person match. Don't silently fall through
+                    # with an unrelated ORCID search string; flag as ambiguous
+                    # so the frontend shows the "needs verification" badge.
+                    print(f"    ORCID: new account's papers failed UNC verification — likely wrong match")
+                    faculty_member["pubmed_ambiguous"] = True
 
     # Flag low-confidence matches: single-initial search on a common surname
     term_parts = search_term.replace("ComputedAuthors:", "").split()
