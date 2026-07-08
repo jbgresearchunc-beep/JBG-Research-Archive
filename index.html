@@ -515,7 +515,8 @@ function initials(name) {
 }
 
 function escapeHtml(s) {
-  return (s || "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  return (s || "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;").replace(/'/g,"&#39;");
 }
 
 function renderCard(f) {
@@ -584,7 +585,7 @@ function renderCard(f) {
             <li>${escapeHtml(c.name)} <span class="shared-count">(${c.shared_papers} shared paper${c.shared_papers === 1 ? "" : "s"})</span></li>
           `).join("")}
         </ul>
-        <button class="network-btn" onclick="openNetworkModal(${JSON.stringify(f.name)})">View network</button>
+        <button class="network-btn" data-network-name="${escapeHtml(f.name)}">View network</button>
       </div>`;
   }
 
@@ -669,6 +670,16 @@ document.addEventListener("click", (e) => {
 });
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeNetworkModal();
+});
+
+// Delegated click for "View network" buttons — attached once on the grid
+// container so it works for every card even as applyFilters() re-renders
+// the grid's innerHTML. Using data-network-name (not inline onclick) avoids
+// HTML-attribute quoting issues with names, since the whole name string
+// never has to be embedded inside a JS call within an HTML attribute.
+document.getElementById("grid").addEventListener("click", (e) => {
+  const btn = e.target.closest(".network-btn");
+  if (btn) openNetworkModal(btn.dataset.networkName);
 });
 
 function centerOn(name) {
