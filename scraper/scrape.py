@@ -709,9 +709,12 @@ def is_lineberger_clinical(html):
 
     # The department line on Lineberger profiles looks like:
     # "MD, PhD\nAssociate Professor, Radiation Oncology, Biochemistry and Biophysics"
-    # It appears near the top of the page body, after the name.
-    # We grab the first 1500 chars to catch it reliably.
-    snippet = text[:1500].lower()
+    # It appears near the top of the page body, after the name — but a fixed
+    # prefix window is fragile to page template changes (extra nav/header
+    # markup pushes this text further down, silently breaking the check for
+    # ~everyone at once, as happened in the 2026-07-12 run). Scan the full
+    # page text instead of truncating.
+    snippet = text.lower()
 
     # If any clinical dept keyword appears, keep them
     for dept in LINEBERGER_CLINICAL_DEPTS:
@@ -747,7 +750,13 @@ def is_trainee_profile(html):
 
     text = re.sub(r"<[^>]+>", " ", html)
     text = re.sub(r"\s+", " ", text)
-    snippet = text[:3000]
+    # Previously this only scanned the first 3000 chars. That's fragile to
+    # any page-template change (extra header/nav markup pushes the actual
+    # credential/title text further down the page) and was the root cause
+    # of the 2026-07-12 run wrongly excluding 2,916 of 3,030 scraped
+    # faculty — including division chiefs and endowed professors — as
+    # having "no faculty credentials". Scan the full page text instead.
+    snippet = text
 
     # If they have a clear attending/faculty title, keep them
     if ATTENDING_PROFILE_PATTERN.search(snippet):
@@ -1998,6 +2007,19 @@ def scrape_only(config_path="scraper/departments.json",
             if ps:
                 print(f"  {f['name']}: found '{ps}'")
                 f["pubmed_hint"] = ps
+        else:
+            # No profile_url and none could be constructed — previously this
+            # meant the credential check was skipped entirely and the entry
+            # was auto-kept, which is how unlinked nav/junk text (plain-text
+            # strings with no <a> tag, e.g. "General Obstetrics", "Vice
+            # Chair") ended up in the final faculty list unfiltered. A real
+            # faculty member scraped from a UNC SOM directory page should
+            # almost always have (or be able to construct) a profile link,
+            # so treat the absence of one as unverifiable and exclude.
+            print(f"  {f['name']} ({f.get('department')}): excluded (no profile link — unverifiable)")
+            f["_exclude"] = True
+            trainees_removed.append(f["name"])
+            continue
 
     if trainees_removed:
         all_faculty = [f for f in all_faculty if not f.get("_exclude")]
@@ -2142,6 +2164,40 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
     else:
         for f in all_faculty:
             f["nih_grants"] = []
+
+    # ---- Safety guard: refuse to silently overwrite good data with a
+    # catastrophically shrunken run. This is what let the 2026-07-12 run
+    # replace ~2,900+ previously-enriched faculty with just 114 after a
+    # Step 2 exclusion bug wrongly dropped almost everyone — without this
+    # guard, that bad output gets committed and the prior good data is gone.
+    # Only applies to full (no dept_filter) runs, since a filtered run is
+    # expected to have far fewer faculty than the full committed dataset.
+    if not dept_filter and os.path.exists(output_path):
+        try:
+            with open(output_path) as pf:
+                prev_output = json.load(pf)
+            prev_total = prev_output.get("total_faculty", 0)
+        except Exception:
+            prev_total = 0
+        DROP_THRESHOLD = 0.6  # refuse if new count is under 60% of previous
+        if prev_total > 50 and len(all_faculty) < prev_total * DROP_THRESHOLD:
+            fail_path = output_path.replace(".json", "_FAILED_RUN.json")
+            output = {
+                "generated_at": datetime.utcnow().isoformat() + "Z",
+                "total_faculty": len(all_faculty),
+                "departments": departments_in_raw,
+                "faculty": all_faculty,
+            }
+            os.makedirs(os.path.dirname(fail_path) or ".", exist_ok=True)
+            with open(fail_path, "w") as f:
+                json.dump(output, f, indent=2)
+            print(f"\n⚠️  REFUSING TO WRITE {output_path}")
+            print(f"  Previous run had {prev_total} faculty; this run only has "
+                  f"{len(all_faculty)} ({len(all_faculty)/prev_total:.0%}).")
+            print(f"  This looks like a pipeline failure, not real attrition.")
+            print(f"  Suspect output written to {fail_path} for inspection instead.")
+            print(f"  {output_path} was left untouched.")
+            sys.exit(1)
 
     # Write final output
     output = {
