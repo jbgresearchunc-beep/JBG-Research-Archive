@@ -19,6 +19,7 @@ Usage:
 import json
 import argparse
 import re
+import itertools
 import unicodedata
 from collections import defaultdict, Counter
 
@@ -67,19 +68,40 @@ def _name_loose_key(name):
 
 def _name_initial_key(name):
     """
-    Loosest key: first-initial + last token only. Catches variants where
-    the first name was scraped as just an initial somewhere, e.g.
-    'Joshua Zeidner' vs 'J Zeidner' or 'J. Zeidner'. Only used paired with
-    a department match (see build_identity_map) — first-initial + last
-    name alone is genuinely ambiguous for common surnames (there could be
-    a real 'James Zeidner' and 'Joshua Zeidner' both on staff), so this is
-    the last resort after exact and full-first-name matches have failed.
+    First-initial + last token only. Used only to generate *candidate*
+    pairs for the initial-tier match in build_identity_map — on its own
+    this is not enough evidence (see that function's docstring), so every
+    candidate pair generated from this key also has to pass a shared-
+    publication check before being merged.
     """
     key = _name_dedup_key(name)
     tokens = [t for t in key.split(" ") if t]
     if len(tokens) < 2:
         return key
     return f"{tokens[0][0]} {tokens[-1]}"
+
+
+def _own_pmids(f):
+    """Set of this faculty member's own publication PMIDs."""
+    return {p.get("pmid") for p in (f.get("publications") or []) if p.get("pmid")}
+
+
+class _UnionFind:
+    """Minimal union-find (disjoint set) with path compression, used to
+    merge faculty_list indices that resolve to the same real person."""
+    def __init__(self, n):
+        self.parent = list(range(n))
+
+    def find(self, x):
+        while self.parent[x] != x:
+            self.parent[x] = self.parent[self.parent[x]]
+            x = self.parent[x]
+        return x
+
+    def union(self, a, b):
+        ra, rb = self.find(a), self.find(b)
+        if ra != rb:
+            self.parent[ra] = rb
 
 
 def build_identity_map(faculty_list):
@@ -90,56 +112,79 @@ def build_identity_map(faculty_list):
     entries (same person, slightly different name formatting) from showing
     up as separate nodes in the collaborator network.
 
-    Three-tier matching, most to least strict:
-      1. Exact normalized name match (punctuation/accent/case differences)
+    Matching, most to least strict — each tier only unions two records
+    when there's real evidence they're the same person, not just a name
+    coincidence:
+      0. Same non-empty profile_url — the strongest possible signal, two
+         records pointing at the literal same profile page.
+      1. Exact normalized name match (punctuation/accent/case differences).
       2. Loose first+last-name match, gated on matching department (catches
-         middle-initial variants, e.g. 'Culley C. Carson' vs 'Culley Carson')
-      3. First-initial+last-name match, gated on matching department
-         (catches a first name scraped as just an initial somewhere, e.g.
-         'Joshua Zeidner' vs 'J Zeidner'). This is the riskiest tier since
-         two different real people can share an initial+surname — the
-         department gate is what keeps it reasonably safe, but it's worth
-         spot-checking the printed merge log after a run.
+         middle-initial variants, e.g. 'Culley C. Carson' vs 'Culley Carson').
+      3. First-initial+last-name match, gated on matching department AND
+         requiring the two records to share at least one of their OWN
+         publication PMIDs. This replaces an earlier version that matched
+         on name spelling alone (initial + same department) — that turned
+         out to have a very high false-merge rate in practice (e.g. it
+         wrongly merged 'Sameer Prasada' with 'Sudhir Prasada', and
+         'J. Keith Smith' with 'Jennifer S. Smith' — different people who
+         simply share a surname and department). Requiring a shared PMID
+         means this tier now only fires on actual data-backed evidence:
+         two different people essentially never share their own papers,
+         while the same person enriched under two name variants very
+         often does.
 
     Returns: (index_to_key, key_to_representative_index, dupes_found)
     """
-    index_to_key = {}
-    key_to_best_index = {}      # exact key -> index
-    loose_to_key = {}           # (loose key, department) -> exact key it resolved to
-    initial_to_key = {}         # (initial key, department) -> exact key it resolved to
-    dupes_found = []
+    n = len(faculty_list)
+    uf = _UnionFind(n)
+
+    exact_buckets = defaultdict(list)
+    loose_buckets = defaultdict(list)
+    initial_buckets = defaultdict(list)
+    url_buckets = defaultdict(list)
 
     for i, f in enumerate(faculty_list):
         name = f.get("name", "")
         dept = f.get("department", "")
-        exact_key = _name_dedup_key(name)
-        loose_key = (_name_loose_key(name), dept)
-        initial_key = (_name_initial_key(name), dept)
+        url = (f.get("profile_url") or "").strip()
+        exact_buckets[_name_dedup_key(name)].append(i)
+        loose_buckets[(_name_loose_key(name), dept)].append(i)
+        initial_buckets[(_name_initial_key(name), dept)].append(i)
+        if url:
+            url_buckets[url].append(i)
 
-        if exact_key in key_to_best_index:
-            resolved_key = exact_key
-            match_kind = "exact"
-        elif loose_key in loose_to_key:
-            resolved_key = loose_to_key[loose_key]
-            match_kind = "loose (same dept)"
-        elif initial_key in initial_to_key:
-            resolved_key = initial_to_key[initial_key]
-            match_kind = "initial (same dept)"
-        else:
-            resolved_key = exact_key
-            match_kind = None
+    dupes_found = []
 
-        index_to_key[i] = resolved_key
+    def _merge_bucket(bucket, match_kind, require_shared_pmid=False):
+        for indices in bucket.values():
+            if len(indices) < 2:
+                continue
+            for a, b in itertools.combinations(indices, 2):
+                if require_shared_pmid:
+                    if not (_own_pmids(faculty_list[a]) & _own_pmids(faculty_list[b])):
+                        continue
+                if uf.find(a) != uf.find(b):
+                    uf.union(a, b)
+                    dupes_found.append((faculty_list[a]["name"], faculty_list[b]["name"], match_kind))
 
-        if match_kind is None:
-            key_to_best_index[resolved_key] = i
-            loose_to_key[loose_key] = resolved_key
-            initial_to_key[initial_key] = resolved_key
-        else:
-            existing_i = key_to_best_index[resolved_key]
-            if _name_quality(name) > _name_quality(faculty_list[existing_i]["name"]):
-                key_to_best_index[resolved_key] = i
-            dupes_found.append((faculty_list[existing_i]["name"], name, match_kind))
+    _merge_bucket(url_buckets, "profile_url")
+    _merge_bucket(exact_buckets, "exact")
+    _merge_bucket(loose_buckets, "loose (same dept)")
+    _merge_bucket(initial_buckets, "initial (same dept + shared pub)", require_shared_pmid=True)
+
+    # Pick a representative index per merged group — the cleanest name.
+    group_to_indices = defaultdict(list)
+    for i in range(n):
+        group_to_indices[uf.find(i)].append(i)
+
+    index_to_key = {}
+    key_to_best_index = {}
+    for root, indices in group_to_indices.items():
+        best = max(indices, key=lambda i: _name_quality(faculty_list[i]["name"]))
+        key = _name_dedup_key(faculty_list[best]["name"]) + f"#{best}"
+        key_to_best_index[key] = best
+        for i in indices:
+            index_to_key[i] = key
 
     return index_to_key, key_to_best_index, dupes_found
 
