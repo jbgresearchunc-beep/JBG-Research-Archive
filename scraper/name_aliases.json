@@ -1,0 +1,6 @@
+{
+  "_comment": "Manual name-alias list for build_collaborators.py. Maps known duplicate name variants (same real person, scraped/enriched under different name spellings) to one canonical display name. Add an entry here whenever you spot a duplicate collaborator node in the network view that the automatic matching (profile_url / exact / loose-with-shared-department) didn't catch -- this is expected for same-initial or cross-department collisions, which can't be reliably auto-detected. Keys are matched case/punctuation/accent-insensitively, so you only need one entry per distinct spelling you've actually seen, not every possible formatting variant.",
+  "j zeidner": "Joshua F. Zeidner",
+  "joshua zeidner": "Joshua F. Zeidner",
+  "benjamin vincent": "Benjamin Garrett Vincent"
+}
