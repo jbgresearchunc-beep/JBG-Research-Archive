@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-14T13:29:09.110136Z",
-  "total_faculty": 2767,
+  "generated_at": "2026-07-15T02:22:14.893760Z",
+  "total_faculty": 2772,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -1289,8 +1289,62 @@
       "pubmed_hint": "Advanced Endoscopy"
     },
     {
+      "name": "Trevor S. Barlowe",
+      "profile_url": "https://www.med.unc.edu/medicine/gi/people/trevor-s-barlowe-md/",
+      "department": "Medicine \u2014 Gastroenterology & Hepatology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Gastroenterology & Hepatology"
+      ]
+    },
+    {
       "name": "Tyler Culpepper",
       "profile_url": "https://www.med.unc.edu/medicine/gi/people/tyler-culpepper-md-phd/",
+      "department": "Medicine \u2014 Gastroenterology & Hepatology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Gastroenterology & Hepatology"
+      ]
+    },
+    {
+      "name": "Ellen Green",
+      "profile_url": "https://www.med.unc.edu/medicine/gi/people/ellen-green-md-phd/",
+      "department": "Medicine \u2014 Gastroenterology & Hepatology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Gastroenterology & Hepatology"
+      ]
+    },
+    {
+      "name": "Taylor Karl",
+      "profile_url": "https://www.med.unc.edu/medicine/gi/people/taylor-karl-md/",
+      "department": "Medicine \u2014 Gastroenterology & Hepatology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Gastroenterology & Hepatology"
+      ]
+    },
+    {
+      "name": "Vivian Lee",
+      "profile_url": "https://www.med.unc.edu/medicine/gi/people/vivian-lee-md-msc-ms/",
+      "department": "Medicine \u2014 Gastroenterology & Hepatology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Gastroenterology & Hepatology"
+      ]
+    },
+    {
+      "name": "Albert Manudhane",
+      "profile_url": "https://www.med.unc.edu/medicine/gi/people/albert-manudhane-md/",
+      "department": "Medicine \u2014 Gastroenterology & Hepatology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Gastroenterology & Hepatology"
+      ]
+    },
+    {
+      "name": "Brandon M. Shore",
+      "profile_url": "https://www.med.unc.edu/medicine/gi/people/brandon-shore-md/",
       "department": "Medicine \u2014 Gastroenterology & Hepatology",
       "role": "",
       "departments": [
@@ -4582,15 +4636,6 @@
     {
       "name": "Mari Chiles",
       "profile_url": "https://www.med.unc.edu/medicine/people/mari-chiles-md/",
-      "department": "Medicine \u2014 Nephrology & Hypertension",
-      "role": "Main-Dom",
-      "departments": [
-        "Medicine \u2014 Nephrology & Hypertension"
-      ]
-    },
-    {
-      "name": "Constance Chen",
-      "profile_url": "https://www.med.unc.edu/medicine/people/constance-chen-md-ms/",
       "department": "Medicine \u2014 Nephrology & Hypertension",
       "role": "Main-Dom",
       "departments": [
