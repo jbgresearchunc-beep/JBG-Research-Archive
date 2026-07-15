@@ -19,6 +19,8 @@
       --accent-green-text: #1a6e35;
       --accent-amber-bg: #fef3e2;
       --accent-amber-text: #92580a;
+      --accent-purple-bg: #f1e9fb;
+      --accent-purple-text: #6b3fa0;
       --radius: 10px;
       --radius-sm: 6px;
     }
@@ -108,6 +110,22 @@
       outline: none;
     }
     select:focus { border-color: var(--carolina-blue); }
+    .toggle-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.83rem;
+      color: var(--text);
+      white-space: nowrap;
+      cursor: pointer;
+      user-select: none;
+    }
+    .toggle-wrap input[type="checkbox"] {
+      width: 15px;
+      height: 15px;
+      accent-color: var(--carolina-blue);
+      cursor: pointer;
+    }
     .count-label {
       font-size: 0.8rem;
       color: var(--muted);
@@ -135,9 +153,13 @@
       flex-direction: column;
       gap: 0.75rem;
       transition: box-shadow 0.15s;
+      position: relative;
     }
     .card:hover {
       box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    }
+    .card.has-student-coauthor {
+      border-color: #d8c3ee;
     }
     .card-header {
       display: flex;
@@ -156,6 +178,26 @@
       font-weight: 700;
       font-size: 0.85rem;
       flex-shrink: 0;
+      position: relative;
+    }
+    /* Small graduation-cap badge overlaid on the avatar for anyone who has
+       published with a JBG Research Day medical student — this is the
+       "specific symbol" marker requested, visible at a glance without
+       needing to expand the card. */
+    .avatar .grad-badge {
+      position: absolute;
+      bottom: -3px;
+      right: -3px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--accent-purple-text);
+      border: 2px solid var(--surface);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      line-height: 1;
     }
     .card-name {
       font-size: 0.95rem;
@@ -192,6 +234,10 @@
     .badge-nih {
       background: var(--accent-green-bg);
       color: var(--accent-green-text);
+    }
+    .badge-student {
+      background: var(--accent-purple-bg);
+      color: var(--accent-purple-text);
     }
 
     .pubs-label {
@@ -285,6 +331,28 @@
       cursor: pointer;
     }
     .network-btn:hover { background: #d8ebfa; }
+
+    /* Student co-authors block */
+    .students-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--accent-purple-text);
+      margin-bottom: 4px;
+    }
+    .students-list {
+      list-style: none;
+      font-size: 0.8rem;
+    }
+    .students-list li {
+      padding: 2px 0;
+      color: var(--text);
+    }
+    .students-list .shared-count {
+      color: var(--muted);
+      font-size: 0.75rem;
+    }
 
     .empty {
       grid-column: 1 / -1;
@@ -413,6 +481,16 @@
     .net-node.collab:hover .net-node-circle {
       fill: #d8ebfa;
     }
+    .net-node-grad-badge circle {
+      fill: var(--accent-purple-text);
+      stroke: var(--surface);
+      stroke-width: 2;
+    }
+    .net-node-grad-badge text {
+      font-size: 9px;
+      fill: white;
+      pointer-events: none;
+    }
     .net-edge-label {
       font-size: 9.5px;
       fill: var(--muted);
@@ -429,6 +507,26 @@
       font-size: 0.72rem;
       color: var(--muted);
       margin-top: 0.5rem;
+    }
+    .network-legend {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    .network-legend .swatch {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--accent-purple-text);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8px;
+      color: white;
     }
     .modal-profile-link {
       display: inline-block;
@@ -469,7 +567,12 @@
   <select id="sortBy" onchange="applyFilters()">
     <option value="name">Sort: Name A–Z</option>
     <option value="pubs">Sort: Most publications</option>
+    <option value="students">Sort: Most student co-authors</option>
   </select>
+  <label class="toggle-wrap">
+    <input type="checkbox" id="studentOnlyFilter" onchange="applyFilters()">
+    🎓 Published with students only
+  </label>
   <span class="count-label" id="countLabel"></span>
 </div>
 
@@ -482,6 +585,7 @@
   Data sourced from <a href="https://pubmed.ncbi.nlm.nih.gov" target="_blank">PubMed</a> and
   <a href="https://reporter.nih.gov" target="_blank">NIH RePORTER</a>.
   Faculty lists scraped from UNC SOM department pages.
+  🎓 marks faculty who have published with a JBG Research Day medical student.
   Updated weekly · Built by JBG Research Society ·
   <a href="https://github.com/YOUR-ORG/unc-research-explorer" target="_blank">GitHub</a>
 </footer>
@@ -499,6 +603,9 @@
       <a class="modal-profile-link" id="netProfileLink" href="#" target="_blank" style="display:none;">View full profile ↗</a>
     </div>
     <div class="network-hint">Click a collaborator to explore their network</div>
+    <div class="network-legend" id="netLegend" style="display:none;">
+      <span class="swatch">🎓</span> Published with a Research Day student
+    </div>
   </div>
 </div>
 
@@ -524,6 +631,8 @@ function renderCard(f) {
   const pubs = (f.publications || []).slice(0, 4);
   const grants = (f.nih_grants || []).slice(0, 2);
   const collaborators = f.collaborators || [];
+  const studentCoauthors = f.student_coauthors || [];
+  const hasStudents = !!f.has_student_coauthor;
   const allDepts = f.departments || [f.department];
   const deptShort = allDepts.map(d => d.split("—").pop().trim()).join(" · ");
 
@@ -536,10 +645,19 @@ function renderCard(f) {
   const nihBadge = grants.length > 0
     ? `<span class="badge badge-nih">🏛 NIH funded</span>`
     : "";
+  const studentBadge = hasStudents
+    ? `<span class="badge badge-student">🎓 ${f.student_coauthor_count} student co-author${f.student_coauthor_count === 1 ? "" : "s"}</span>`
+    : "";
 
   const nameLink = f.profile_url
     ? `<a href="${escapeHtml(f.profile_url)}" target="_blank">${escapeHtml(f.name)}</a>`
     : escapeHtml(f.name);
+
+  // Small graduation-cap marker overlaid on the avatar circle — the "at a
+  // glance, no need to expand the card" symbol for a student-coauthor match.
+  const gradBadge = hasStudents
+    ? `<span class="grad-badge" title="Published with ${f.student_coauthor_count} JBG Research Day student${f.student_coauthor_count === 1 ? "" : "s"}">🎓</span>`
+    : "";
 
   let pubsHtml = "";
   if (pubs.length > 0) {
@@ -589,10 +707,23 @@ function renderCard(f) {
       </div>`;
   }
 
+  let studentsHtml = "";
+  if (studentCoauthors.length > 0) {
+    studentsHtml = `
+      <div>
+        <div class="students-label">🎓 Research Day student co-authors</div>
+        <ul class="students-list">
+          ${studentCoauthors.slice(0, 5).map(s => `
+            <li>${escapeHtml(s.student)} <span class="shared-count">(${s.shared_papers} shared paper${s.shared_papers === 1 ? "" : "s"})</span></li>
+          `).join("")}
+        </ul>
+      </div>`;
+  }
+
   return `
-    <div class="card" data-dept="${escapeHtml(f.department)}" data-name="${escapeHtml(f.name)}">
+    <div class="card${hasStudents ? " has-student-coauthor" : ""}" data-dept="${escapeHtml(f.department)}" data-name="${escapeHtml(f.name)}">
       <div class="card-header">
-        <div class="avatar">${init}</div>
+        <div class="avatar">${init}${gradBadge}</div>
         <div>
           <div class="card-name">${nameLink}</div>
           <div class="card-meta">${escapeHtml(deptShort)}${f.role ? " · " + escapeHtml(f.role) : ""}</div>
@@ -603,10 +734,11 @@ function renderCard(f) {
           ? f.departments
           : [f.department]
         ).map(d => `<span class="badge badge-dept">${escapeHtml(d)}</span>`).join("")}
-        ${pubBadge}${nihBadge}
+        ${pubBadge}${nihBadge}${studentBadge}
       </div>
       ${pubsHtml}
       ${grantsHtml}
+      ${studentsHtml}
       ${collabsHtml}
     </div>`;
 }
@@ -615,22 +747,27 @@ function applyFilters() {
   const query = document.getElementById("searchInput").value.toLowerCase().trim();
   const dept = document.getElementById("deptFilter").value;
   const sort = document.getElementById("sortBy").value;
+  const studentOnly = document.getElementById("studentOnlyFilter").checked;
 
   let filtered = ALL_FACULTY.filter(f => {
     const allDepts = f.departments && f.departments.length ? f.departments : [f.department];
     if (dept && !allDepts.includes(dept)) return false;
+    if (studentOnly && !f.has_student_coauthor) return false;
     if (!query) return true;
     const haystack = [
       f.name,
       f.role,
       (f.publications || []).map(p => p.title + " " + p.journal).join(" "),
       (f.nih_grants || []).map(g => g.title).join(" "),
+      (f.student_coauthors || []).map(s => s.student).join(" "),
     ].join(" ").toLowerCase();
     return haystack.includes(query);
   });
 
   if (sort === "pubs") {
     filtered.sort((a, b) => (b.pubmed_verified || b.pubmed_count || 0) - (a.pubmed_verified || a.pubmed_count || 0));
+  } else if (sort === "students") {
+    filtered.sort((a, b) => (b.student_coauthor_count || 0) - (a.student_coauthor_count || 0));
   } else {
     filtered.sort((a, b) => a.name.localeCompare(b.name));
   }
@@ -717,6 +854,7 @@ function renderNetwork(name) {
   const wrap = document.getElementById("netSvgWrap");
   const emptyMsg = document.getElementById("netEmptyMsg");
   const profileLink = document.getElementById("netProfileLink");
+  const legend = document.getElementById("netLegend");
 
   renderBreadcrumb();
 
@@ -726,6 +864,7 @@ function renderNetwork(name) {
     wrap.innerHTML = "";
     emptyMsg.innerHTML = `<div class="network-empty">No data found for this person.</div>`;
     profileLink.style.display = "none";
+    legend.style.display = "none";
     return;
   }
 
@@ -745,6 +884,7 @@ function renderNetwork(name) {
   if (collaborators.length === 0) {
     wrap.innerHTML = "";
     emptyMsg.innerHTML = `<div class="network-empty">No collaborators found in our database for this person.</div>`;
+    legend.style.display = "none";
     return;
   }
   emptyMsg.innerHTML = "";
@@ -767,13 +907,21 @@ function renderNetwork(name) {
   const n = collaborators.length;
   const nodes = collaborators.map((c, i) => {
     const angle = (i / n) * 2 * Math.PI - Math.PI / 2;
+    const collabPerson = FACULTY_BY_NAME[c.name];
     return {
       name: c.name,
       shared: c.shared_papers,
+      hasStudents: !!(collabPerson && collabPerson.has_student_coauthor),
       x: cx + orbitR * Math.cos(angle),
       y: cy + orbitR * Math.sin(angle),
     };
   });
+
+  // Show the legend whenever the center node or any visible collaborator
+  // carries the student-coauthor marker, so it doesn't clutter networks
+  // where it's irrelevant.
+  const anyStudentMarker = !!person.has_student_coauthor || nodes.some(nd => nd.hasStudents);
+  legend.style.display = anyStudentMarker ? "flex" : "none";
 
   let svg = `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">`;
 
@@ -793,6 +941,12 @@ function renderNetwork(name) {
       <circle class="net-node-circle" cx="${cx}" cy="${cy}" r="${centerR}" />
       <text x="${cx}" y="${cy + 4}">${escapeHtml(centerInit)}</text>
     </g>`;
+  if (person.has_student_coauthor) {
+    svg += `<g class="net-node-grad-badge" transform="translate(${cx + centerR * 0.68}, ${cy + centerR * 0.68})">
+        <circle r="9" />
+        <text x="0" y="3" text-anchor="middle">🎓</text>
+      </g>`;
+  }
   svg += `<text class="net-node-label" x="${cx}" y="${cy + centerR + 16}" font-weight="700">${escapeHtml(firstLastShort(person.name))}</text>`;
 
   // Collaborator nodes
@@ -802,6 +956,12 @@ function renderNetwork(name) {
         <circle class="net-node-circle" cx="${node.x}" cy="${node.y}" r="${nodeR}" />
         <text x="${node.x}" y="${node.y + 4}">${escapeHtml(init)}</text>
       </g>`;
+    if (node.hasStudents) {
+      svg += `<g class="net-node-grad-badge" transform="translate(${node.x + nodeR * 0.68}, ${node.y + nodeR * 0.68})">
+          <circle r="8" />
+          <text x="0" y="3" text-anchor="middle">🎓</text>
+        </g>`;
+    }
     svg += `<text class="net-node-label" x="${node.x}" y="${node.y + nodeR + 14}">${escapeHtml(firstLastShort(node.name))}</text>`;
   });
 
