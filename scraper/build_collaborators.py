@@ -66,26 +66,6 @@ def _name_loose_key(name):
     return f"{tokens[0]} {tokens[-1]}"
 
 
-def _name_initial_key(name):
-    """
-    First-initial + last token only. Used only to generate *candidate*
-    pairs for the initial-tier match in build_identity_map — on its own
-    this is not enough evidence (see that function's docstring), so every
-    candidate pair generated from this key also has to pass a shared-
-    publication check before being merged.
-    """
-    key = _name_dedup_key(name)
-    tokens = [t for t in key.split(" ") if t]
-    if len(tokens) < 2:
-        return key
-    return f"{tokens[0][0]} {tokens[-1]}"
-
-
-def _own_pmids(f):
-    """Set of this faculty member's own publication PMIDs."""
-    return {p.get("pmid") for p in (f.get("publications") or []) if p.get("pmid")}
-
-
 class _UnionFind:
     """Minimal union-find (disjoint set) with path compression, used to
     merge faculty_list indices that resolve to the same real person."""
@@ -104,7 +84,7 @@ class _UnionFind:
             self.parent[ra] = rb
 
 
-def build_identity_map(faculty_list):
+def build_identity_map(faculty_list, name_aliases=None):
     """
     Map every faculty_list index to a canonical identity key, and pick one
     representative index per canonical key (the one with the cleanest name)
@@ -112,67 +92,89 @@ def build_identity_map(faculty_list):
     entries (same person, slightly different name formatting) from showing
     up as separate nodes in the collaborator network.
 
-    Matching, most to least strict — each tier only unions two records
-    when there's real evidence they're the same person, not just a name
-    coincidence:
-      0. Same non-empty profile_url — the strongest possible signal, two
+    Matching, most to least trusted:
+      0. Manual alias list (name_aliases), if provided — see
+         load_name_aliases(). This is the ONLY mechanism for resolving
+         same-initial name collisions like 'Joshua Zeidner' vs 'J Zeidner'.
+         An earlier version tried to auto-detect these by requiring the two
+         records to share a publication PMID, but that turned out to be
+         unreliable in both directions: it produced false merges (two
+         different colleagues who genuinely co-authored a paper together
+         — the very relationship this feature is meant to surface — look
+         identical to 'same person, two name spellings' under a shared-PMID
+         test), AND it missed real duplicates whose own publication lists
+         happened not to overlap (e.g. enriched via two different PubMed
+         paths). There's no reliable automatic signal for this case, so it
+         needs a human to confirm it once via the alias file.
+      1. Same non-empty profile_url — the strongest automatic signal, two
          records pointing at the literal same profile page.
-      1. Exact normalized name match (punctuation/accent/case differences).
-      2. Loose first+last-name match, gated on matching department (catches
-         middle-initial variants, e.g. 'Culley C. Carson' vs 'Culley Carson').
-      3. First-initial+last-name match, gated on matching department AND
-         requiring the two records to share at least one of their OWN
-         publication PMIDs. This replaces an earlier version that matched
-         on name spelling alone (initial + same department) — that turned
-         out to have a very high false-merge rate in practice (e.g. it
-         wrongly merged 'Sameer Prasada' with 'Sudhir Prasada', and
-         'J. Keith Smith' with 'Jennifer S. Smith' — different people who
-         simply share a surname and department). Requiring a shared PMID
-         means this tier now only fires on actual data-backed evidence:
-         two different people essentially never share their own papers,
-         while the same person enriched under two name variants very
-         often does.
+      2. Exact normalized name match (punctuation/accent/case differences).
+      3. Loose first+last-name match, gated on the two records sharing at
+         least one department in common (checking the full `departments`
+         list, not just the primary `department` string — duplicate
+         entries usually arise BECAUSE someone was scraped from two
+         different department pages, e.g. their home department and
+         Lineberger, so requiring the single primary department to match
+         exactly blocks exactly the cases this tier exists to catch).
 
     Returns: (index_to_key, key_to_representative_index, dupes_found)
     """
+    name_aliases = name_aliases or {}
     n = len(faculty_list)
     uf = _UnionFind(n)
 
+    def _depts(f):
+        ds = f.get("departments") or [f.get("department", "")]
+        return set(d for d in ds if d)
+
+    alias_buckets = defaultdict(list)
     exact_buckets = defaultdict(list)
     loose_buckets = defaultdict(list)
-    initial_buckets = defaultdict(list)
     url_buckets = defaultdict(list)
 
     for i, f in enumerate(faculty_list):
         name = f.get("name", "")
-        dept = f.get("department", "")
         url = (f.get("profile_url") or "").strip()
-        exact_buckets[_name_dedup_key(name)].append(i)
-        loose_buckets[(_name_loose_key(name), dept)].append(i)
-        initial_buckets[(_name_initial_key(name), dept)].append(i)
+        exact_key = _name_dedup_key(name)
+
+        # Every entry buckets under its resolved canonical name — defaulting
+        # to its own name if it has no explicit alias. This matters because
+        # the canonical spelling itself (e.g. 'Benjamin Garrett Vincent')
+        # needs to land in the same bucket as its aliased short forms (e.g.
+        # 'Benjamin Vincent' -> 'Benjamin Garrett Vincent') for the union to
+        # actually connect them — only bucketing the aliased side leaves the
+        # canonical-spelling record in a bucket of its own.
+        alias_target = name_aliases.get(exact_key, name)
+        alias_buckets[_name_dedup_key(alias_target)].append(i)
+
+        exact_buckets[exact_key].append(i)
+        loose_buckets[_name_loose_key(name)].append(i)
         if url:
             url_buckets[url].append(i)
 
     dupes_found = []
 
-    def _merge_bucket(bucket, match_kind, require_shared_pmid=False):
+    def _merge_bucket(bucket, match_kind, require_dept_overlap=False):
         for indices in bucket.values():
             if len(indices) < 2:
                 continue
             for a, b in itertools.combinations(indices, 2):
-                if require_shared_pmid:
-                    if not (_own_pmids(faculty_list[a]) & _own_pmids(faculty_list[b])):
+                if require_dept_overlap:
+                    if not (_depts(faculty_list[a]) & _depts(faculty_list[b])):
                         continue
                 if uf.find(a) != uf.find(b):
                     uf.union(a, b)
                     dupes_found.append((faculty_list[a]["name"], faculty_list[b]["name"], match_kind))
 
+    _merge_bucket(alias_buckets, "manual alias")
     _merge_bucket(url_buckets, "profile_url")
     _merge_bucket(exact_buckets, "exact")
-    _merge_bucket(loose_buckets, "loose (same dept)")
-    _merge_bucket(initial_buckets, "initial (same dept + shared pub)", require_shared_pmid=True)
+    _merge_bucket(loose_buckets, "loose (shared dept)", require_dept_overlap=True)
 
-    # Pick a representative index per merged group — the cleanest name.
+    # Pick a representative index per merged group. If any member of the
+    # group has an explicit alias pointing at a canonical name, trust that
+    # over the auto-picked "cleanest" name — the user told us what it
+    # should be.
     group_to_indices = defaultdict(list)
     for i in range(n):
         group_to_indices[uf.find(i)].append(i)
@@ -180,8 +182,19 @@ def build_identity_map(faculty_list):
     index_to_key = {}
     key_to_best_index = {}
     for root, indices in group_to_indices.items():
-        best = max(indices, key=lambda i: _name_quality(faculty_list[i]["name"]))
-        key = _name_dedup_key(faculty_list[best]["name"]) + f"#{best}"
+        alias_names = {
+            name_aliases[_name_dedup_key(faculty_list[i]["name"])]
+            for i in indices
+            if _name_dedup_key(faculty_list[i]["name"]) in name_aliases
+        }
+        if alias_names:
+            canonical_name = sorted(alias_names, key=len, reverse=True)[0]
+            best = indices[0]
+            key = _name_dedup_key(canonical_name) + f"#{root}"
+            faculty_list[best]["_display_name_override"] = canonical_name
+        else:
+            best = max(indices, key=lambda i: _name_quality(faculty_list[i]["name"]))
+            key = _name_dedup_key(faculty_list[best]["name"]) + f"#{best}"
         key_to_best_index[key] = best
         for i in indices:
             index_to_key[i] = key
@@ -232,7 +245,7 @@ def build_collaborator_index(faculty_list, index_to_key):
     return pair_counts, shared_pmid_count
 
 
-def attach_collaborators(faculty_list, top_n=5):
+def attach_collaborators(faculty_list, top_n=5, name_aliases=None):
     """
     Compute and attach a `collaborators` field to every faculty dict in place.
     Duplicate entries for the same real person (leftover from before the
@@ -240,7 +253,7 @@ def attach_collaborators(faculty_list, top_n=5):
     onto one canonical identity before counting, so they can't show up as
     two separate nodes for the same collaborator in the network view.
     """
-    index_to_key, key_to_best_index, dupes_found = build_identity_map(faculty_list)
+    index_to_key, key_to_best_index, dupes_found = build_identity_map(faculty_list, name_aliases=name_aliases)
     if dupes_found:
         print(f"  Found {len(dupes_found)} duplicate faculty entr{'y' if len(dupes_found)==1 else 'ies'} "
               f"(same person, different name formatting) — merging for collaborator counting:")
@@ -263,7 +276,8 @@ def attach_collaborators(faculty_list, top_n=5):
         ranked = sorted(counts.items(), key=lambda kv: kv[1], reverse=True)[:top_n]
         f["collaborators"] = [
             {
-                "name": faculty_list[key_to_best_index[other_key]]["name"],
+                "name": faculty_list[key_to_best_index[other_key]].get("_display_name_override")
+                        or faculty_list[key_to_best_index[other_key]]["name"],
                 "shared_papers": count,
             }
             for other_key, count in ranked
@@ -278,11 +292,44 @@ def attach_collaborators(faculty_list, top_n=5):
     }
 
 
+def load_name_aliases(path):
+    """
+    Load a manual name-alias file: a JSON object mapping known duplicate
+    name variants to one canonical display name, e.g.:
+
+        {
+          "j zeidner": "Joshua F. Zeidner",
+          "joshua zeidner": "Joshua F. Zeidner",
+          "benjamin vincent": "Benjamin Garrett Vincent"
+        }
+
+    Keys are matched after the same normalization used everywhere else
+    (accents/punctuation/case stripped), so 'J. Zeidner', 'j zeidner', and
+    'J Zeidner' all resolve the same way — you don't need an entry for
+    every possible formatting variant, just one per name variant you've
+    actually seen.
+
+    This exists because same-initial name collisions (e.g. 'Joshua
+    Zeidner' vs 'J Zeidner') can't be reliably resolved automatically —
+    see build_identity_map()'s docstring for why. Returns {} if the file
+    doesn't exist (this feature is opt-in, not required).
+    """
+    try:
+        with open(path) as f:
+            raw = json.load(f)
+    except FileNotFoundError:
+        return {}
+    return {_name_dedup_key(k): v for k, v in raw.items() if not k.startswith("_")}
+
+
 def main():
     parser = argparse.ArgumentParser(description="Build research collaborator networks")
     parser.add_argument("--input", default="data/faculty.json")
     parser.add_argument("--output", default="data/faculty.json")
     parser.add_argument("--top-n", type=int, default=5)
+    parser.add_argument("--aliases", default="scraper/name_aliases.json",
+                         help="Manual name-alias file for resolving name collisions "
+                              "that can't be detected automatically (see load_name_aliases)")
     args = parser.parse_args()
 
     with open(args.input) as f:
@@ -291,12 +338,21 @@ def main():
     faculty_list = data.get("faculty", [])
     print(f"Loaded {len(faculty_list)} faculty from {args.input}")
 
-    stats = attach_collaborators(faculty_list, top_n=args.top_n)
+    name_aliases = load_name_aliases(args.aliases)
+    if name_aliases:
+        print(f"Loaded {len(name_aliases)} name alias(es) from {args.aliases}")
+
+    stats = attach_collaborators(faculty_list, top_n=args.top_n, name_aliases=name_aliases)
 
     print(f"Shared publications found (2+ of our faculty as co-authors): {stats['shared_pmid_count']}")
     print(f"Faculty with at least one collaborator: {stats['faculty_with_collaborators']} / {stats['total_faculty']}")
     if stats["duplicate_identities_merged"]:
         print(f"Duplicate identities merged during collaborator counting: {stats['duplicate_identities_merged']}")
+
+    # Drop the internal display-name-override scratch field before writing
+    # — it's only used during this computation, not part of the schema.
+    for f in faculty_list:
+        f.pop("_display_name_override", None)
 
     with open(args.output, "w") as f:
         json.dump(data, f, indent=2)
