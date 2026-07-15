@@ -8,12 +8,21 @@ person: their top 5 most-frequent co-authors *within our own database*
 (i.e. other UNC faculty we've scraped and enriched), ranked by how many
 shared publications appear in both people's publication lists.
 
+It also adds a `student_coauthors` field (JBG Research Day medical-student
+roster cross-reference) — see attach_student_coauthors() below. This piggybacks
+on the same identity-dedup map as the faculty collaborator computation, so a
+faculty member with leftover duplicate entries (e.g. "Clara Lee" and
+"Clara Lee, ,") gets one consistent student-match count instead of it being
+split (or double-counted) across the duplicates.
+
 Scope note: this only surfaces collaborations between two people who are
 both in faculty.json. It cannot show a UNC researcher's external
 collaborators at other institutions, since we don't have their data.
 
 Usage:
     python scraper/build_collaborators.py --input data/faculty.json --output data/faculty.json
+    python scraper/build_collaborators.py --input data/faculty.json --output data/faculty.json \
+        --students scraper/student_researchers.json
 """
 
 import json
@@ -64,6 +73,41 @@ def _name_loose_key(name):
     if len(tokens) < 2:
         return key
     return f"{tokens[0]} {tokens[-1]}"
+
+
+# Matches trailing credential letters sometimes appended to an author string
+# (not PubMed's own AuthorList format, but defensive in case the student
+# roster or a fallback source includes them), e.g. "James Hardy, BS"
+_CREDENTIAL_SUFFIX = re.compile(
+    r",?\s*\b(BS|BA|MD|PhD|MS|MPH|DO|PharmD|RN|NP)\b\.?$", re.IGNORECASE
+)
+
+
+def _student_match_key(name):
+    """
+    Normalize a name to a 'first last' matching key for student-roster
+    cross-referencing: strip credential suffixes, accents, punctuation,
+    drop middle names/initials, lowercase. Deliberately coarser than
+    _name_dedup_key (which is for merging near-identical faculty name
+    variants) — this needs to collapse "James Hardy" / "James R. Hardy" /
+    "Hardy, James" down to the same key. Returns None if fewer than 2
+    tokens remain (can't safely match on a single token).
+    """
+    if not name:
+        return None
+    name = _CREDENTIAL_SUFFIX.sub("", name)
+    key = _name_dedup_key(name)
+    tokens = [t for t in key.split(" ") if t]
+    if len(tokens) < 2:
+        return None
+    return f"{tokens[0]} {tokens[-1]}"
+
+
+def _is_initials_only(token):
+    """True for bare-initial tokens like 'J' or 'J.' — too ambiguous to
+    match against a student roster (PubMed's esummary fallback format is
+    'Hardy J', not a full first name)."""
+    return len(re.sub(r"\.", "", token)) <= 1
 
 
 class _UnionFind:
@@ -252,6 +296,10 @@ def attach_collaborators(faculty_list, top_n=5, name_aliases=None):
     scrape-side dedup fix, e.g. 'Clara Lee' vs 'Clara Lee, ,') are collapsed
     onto one canonical identity before counting, so they can't show up as
     two separate nodes for the same collaborator in the network view.
+
+    Returns (stats, index_to_key, key_to_best_index) — the identity map is
+    handed back so attach_student_coauthors() can reuse it instead of
+    recomputing (and potentially disagreeing on) faculty identity merges.
     """
     index_to_key, key_to_best_index, dupes_found = build_identity_map(faculty_list, name_aliases=name_aliases)
     if dupes_found:
@@ -284,12 +332,13 @@ def attach_collaborators(faculty_list, top_n=5, name_aliases=None):
         ]
         with_collaborators += 1
 
-    return {
+    stats = {
         "total_faculty": len(faculty_list),
         "faculty_with_collaborators": with_collaborators,
         "shared_pmid_count": shared_pmid_count,
         "duplicate_identities_merged": len(dupes_found),
     }
+    return stats, index_to_key, key_to_best_index
 
 
 def load_name_aliases(path):
@@ -322,6 +371,89 @@ def load_name_aliases(path):
     return {_name_dedup_key(k): v for k, v in raw.items() if not k.startswith("_")}
 
 
+def load_student_roster(path):
+    """
+    Load the JBG Research Day medical-student roster (a flat JSON list of
+    display names, e.g. student_researchers.json). Returns a dict mapping
+    _student_match_key(name) -> the cleanest display-name variant seen for
+    that key, or {} if the file doesn't exist (this feature is opt-in).
+    """
+    try:
+        with open(path) as f:
+            raw = json.load(f)
+    except FileNotFoundError:
+        return {}
+    idx = {}
+    for name in raw:
+        key = _student_match_key(name)
+        if not key:
+            continue
+        # Prefer the more complete-looking variant if two roster entries
+        # collapse to the same key (e.g. "Adelaide Cooke" vs
+        # "Adelaide Rosalie Cooke" both -> "adelaide cooke").
+        if key not in idx or _name_quality(name) > _name_quality(idx[key]):
+            idx[key] = name
+    return idx
+
+
+def attach_student_coauthors(faculty_list, student_idx, index_to_key, key_to_best_index):
+    """
+    Compute and attach `has_student_coauthor`, `student_coauthor_count`, and
+    `student_coauthors` to every faculty dict in place, by cross-referencing
+    each publication's `authors` list (requires scrape.py's author-list
+    capture — publications enriched before that will simply have no
+    `authors` field and contribute no matches) against student_idx.
+
+    Reuses the same canonical-identity map as attach_collaborators() so a
+    faculty member's publications spread across duplicate leftover entries
+    are matched as one person, and every duplicate entry for that person
+    ends up with the same (correct, non-double-counted) result — the same
+    guarantee attach_collaborators() gives for the faculty-to-faculty graph.
+    """
+    # canonical_key -> {student_match_key: shared_paper_count}
+    key_matches = defaultdict(lambda: defaultdict(int))
+    skipped_ambiguous = 0
+    faculty_missing_author_data = 0
+
+    for i, f in enumerate(faculty_list):
+        key = index_to_key[i]
+        pubs = f.get("publications", []) or []
+        if pubs and not any("authors" in p for p in pubs):
+            faculty_missing_author_data += 1
+        for pub in pubs:
+            for a in pub.get("authors", []) or []:
+                first_tok = a.split()[0] if a.split() else ""
+                if _is_initials_only(first_tok):
+                    skipped_ambiguous += 1
+                    continue
+                mkey = _student_match_key(a)
+                if mkey and mkey in student_idx:
+                    key_matches[key][mkey] += 1
+
+    flagged = 0
+    for i, f in enumerate(faculty_list):
+        key = index_to_key[i]
+        matches = key_matches.get(key)
+        if matches:
+            flagged += 1
+            f["has_student_coauthor"] = True
+            f["student_coauthor_count"] = len(matches)
+            f["student_coauthors"] = [
+                {"student": student_idx[mkey], "shared_papers": count}
+                for mkey, count in sorted(matches.items(), key=lambda kv: -kv[1])
+            ]
+        else:
+            f["has_student_coauthor"] = False
+            f["student_coauthor_count"] = 0
+            f["student_coauthors"] = []
+
+    return {
+        "faculty_flagged": flagged,
+        "skipped_ambiguous_authors": skipped_ambiguous,
+        "faculty_missing_author_data": faculty_missing_author_data,
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(description="Build research collaborator networks")
     parser.add_argument("--input", default="data/faculty.json")
@@ -330,6 +462,11 @@ def main():
     parser.add_argument("--aliases", default="scraper/name_aliases.json",
                          help="Manual name-alias file for resolving name collisions "
                               "that can't be detected automatically (see load_name_aliases)")
+    parser.add_argument("--students", default=None,
+                         help="Path to student_researchers.json (JBG Research Day roster). "
+                              "If omitted, student co-author flagging is skipped entirely "
+                              "and existing has_student_coauthor/student_coauthors fields "
+                              "(if any) are left untouched.")
     args = parser.parse_args()
 
     with open(args.input) as f:
@@ -342,12 +479,31 @@ def main():
     if name_aliases:
         print(f"Loaded {len(name_aliases)} name alias(es) from {args.aliases}")
 
-    stats = attach_collaborators(faculty_list, top_n=args.top_n, name_aliases=name_aliases)
+    stats, index_to_key, key_to_best_index = attach_collaborators(
+        faculty_list, top_n=args.top_n, name_aliases=name_aliases
+    )
 
     print(f"Shared publications found (2+ of our faculty as co-authors): {stats['shared_pmid_count']}")
     print(f"Faculty with at least one collaborator: {stats['faculty_with_collaborators']} / {stats['total_faculty']}")
     if stats["duplicate_identities_merged"]:
         print(f"Duplicate identities merged during collaborator counting: {stats['duplicate_identities_merged']}")
+
+    if args.students:
+        student_idx = load_student_roster(args.students)
+        print(f"Loaded {len(student_idx)} student(s) from {args.students}")
+        student_stats = attach_student_coauthors(faculty_list, student_idx, index_to_key, key_to_best_index)
+        print(f"Faculty flagged with a matched student co-author: {student_stats['faculty_flagged']}")
+        if student_stats["skipped_ambiguous_authors"]:
+            print(f"Skipped {student_stats['skipped_ambiguous_authors']} initials-only author "
+                  f"tokens (too ambiguous to match, e.g. 'Hardy J')")
+        if student_stats["faculty_missing_author_data"]:
+            print(f"WARNING: {student_stats['faculty_missing_author_data']} faculty had publications "
+                  f"with no 'authors' field — re-run scrape.py's enrich step with the "
+                  f"author-list capture (pipeline_version 2026.07.14-author-lists-v1 or later) "
+                  f"before student matches can be found for them.")
+    else:
+        print("No --students roster given — skipping student co-author flagging "
+              "(existing has_student_coauthor fields, if any, left as-is).")
 
     # Drop the internal display-name-override scratch field before writing
     # — it's only used during this computation, not part of the schema.
