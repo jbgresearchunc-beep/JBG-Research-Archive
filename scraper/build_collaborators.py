@@ -65,6 +65,23 @@ def _name_loose_key(name):
     return f"{tokens[0]} {tokens[-1]}"
 
 
+def _name_initial_key(name):
+    """
+    Loosest key: first-initial + last token only. Catches variants where
+    the first name was scraped as just an initial somewhere, e.g.
+    'Joshua Zeidner' vs 'J Zeidner' or 'J. Zeidner'. Only used paired with
+    a department match (see build_identity_map) — first-initial + last
+    name alone is genuinely ambiguous for common surnames (there could be
+    a real 'James Zeidner' and 'Joshua Zeidner' both on staff), so this is
+    the last resort after exact and full-first-name matches have failed.
+    """
+    key = _name_dedup_key(name)
+    tokens = [t for t in key.split(" ") if t]
+    if len(tokens) < 2:
+        return key
+    return f"{tokens[0][0]} {tokens[-1]}"
+
+
 def build_identity_map(faculty_list):
     """
     Map every faculty_list index to a canonical identity key, and pick one
@@ -73,17 +90,23 @@ def build_identity_map(faculty_list):
     entries (same person, slightly different name formatting) from showing
     up as separate nodes in the collaborator network.
 
-    Two-tier matching, same logic as the scrape-side dedup fix:
+    Three-tier matching, most to least strict:
       1. Exact normalized name match (punctuation/accent/case differences)
       2. Loose first+last-name match, gated on matching department (catches
-         middle-initial variants without risking merging two different
-         real people who share a first+last name in different departments)
+         middle-initial variants, e.g. 'Culley C. Carson' vs 'Culley Carson')
+      3. First-initial+last-name match, gated on matching department
+         (catches a first name scraped as just an initial somewhere, e.g.
+         'Joshua Zeidner' vs 'J Zeidner'). This is the riskiest tier since
+         two different real people can share an initial+surname — the
+         department gate is what keeps it reasonably safe, but it's worth
+         spot-checking the printed merge log after a run.
 
     Returns: (index_to_key, key_to_representative_index, dupes_found)
     """
     index_to_key = {}
     key_to_best_index = {}      # exact key -> index
     loose_to_key = {}           # (loose key, department) -> exact key it resolved to
+    initial_to_key = {}         # (initial key, department) -> exact key it resolved to
     dupes_found = []
 
     for i, f in enumerate(faculty_list):
@@ -91,6 +114,7 @@ def build_identity_map(faculty_list):
         dept = f.get("department", "")
         exact_key = _name_dedup_key(name)
         loose_key = (_name_loose_key(name), dept)
+        initial_key = (_name_initial_key(name), dept)
 
         if exact_key in key_to_best_index:
             resolved_key = exact_key
@@ -98,6 +122,9 @@ def build_identity_map(faculty_list):
         elif loose_key in loose_to_key:
             resolved_key = loose_to_key[loose_key]
             match_kind = "loose (same dept)"
+        elif initial_key in initial_to_key:
+            resolved_key = initial_to_key[initial_key]
+            match_kind = "initial (same dept)"
         else:
             resolved_key = exact_key
             match_kind = None
@@ -107,6 +134,7 @@ def build_identity_map(faculty_list):
         if match_kind is None:
             key_to_best_index[resolved_key] = i
             loose_to_key[loose_key] = resolved_key
+            initial_to_key[initial_key] = resolved_key
         else:
             existing_i = key_to_best_index[resolved_key]
             if _name_quality(name) > _name_quality(faculty_list[existing_i]["name"]):
