@@ -1,5 +1,4 @@
 name: Rebuild Collaborator Network
-
 on:
   workflow_dispatch:
     inputs:
@@ -7,28 +6,24 @@ on:
         description: "Number of top collaborators to keep per person"
         required: false
         default: "5"
-
 jobs:
   rebuild:
     runs-on: ubuntu-latest
     timeout-minutes: 15
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
-      - name: Rebuild collaborators from existing data/faculty.json
+      - name: Rebuild collaborators + student co-author flags from existing data/faculty.json
         run: |
           python scraper/build_collaborators.py \
             --input data/faculty.json \
             --output data/faculty.json \
-            --top-n ${{ github.event.inputs.top_n }}
-
+            --top-n ${{ github.event.inputs.top_n }} \
+            --students scraper/student_researchers.json
       - name: Check output
         run: |
           python -c "
@@ -38,14 +33,15 @@ jobs:
           print(f'Total faculty: {d[\"total_faculty\"]}')
           with_collab = sum(1 for f in d['faculty'] if f.get('collaborators'))
           print(f'Faculty with collaborators: {with_collab}')
+          flagged = sum(1 for f in d['faculty'] if f.get('has_student_coauthor'))
+          print(f'Faculty flagged with student co-authors: {flagged}')
           "
-
       - name: Commit and push updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/faculty.json
-          git diff --staged --quiet || git commit -m "Rebuild collaborator network (dedup fix) [$(date -u '+%Y-%m-%d')]"
+          git diff --staged --quiet || git commit -m "Rebuild collaborator network + student co-author flags [$(date -u '+%Y-%m-%d')]"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
