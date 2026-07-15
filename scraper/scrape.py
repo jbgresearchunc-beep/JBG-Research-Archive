@@ -21,7 +21,7 @@ from html.parser import HTMLParser
 # scheduled full runs re-enrich everyone instead of resuming stale results.
 # The resume logic only skips faculty whose stored version matches this.
 # ---------------------------------------------------------------------------
-PIPELINE_VERSION = "2026.07.06-orcid-fallback-v2"
+PIPELINE_VERSION = "2026.07.14-author-lists-v1"
 
 # How many years back to search for publications. Rolling, not a fixed year —
 # recalculated from the actual run date each time so it stays current
@@ -1268,6 +1268,33 @@ def _pubmed_fetch_summaries_batch(pmids, verify_affiliation=True, search_term=""
         # We check both and require the TARGET author's last name to appear
         # in a UNC-affiliated author block where possible.
 
+        # Extract full author list for this article — needed to cross-reference
+        # against non-faculty co-authors (e.g. medical student researchers) who
+        # will never appear as their own faculty record. Order preserved as
+        # PubMed lists them (author order matters for byline position later).
+        authors = []
+        for auth_block in re.findall(r"<Author[^>]*>(.*?)</Author>", article_xml, re.DOTALL):
+            last_m = re.search(r"<LastName>(.*?)</LastName>", auth_block)
+            fore_m = re.search(r"<ForeName>(.*?)</ForeName>", auth_block)
+            init_m = re.search(r"<Initials>(.*?)</Initials>", auth_block)
+            collective_m = re.search(r"<CollectiveName>(.*?)</CollectiveName>", auth_block, re.DOTALL)
+            if last_m:
+                last = re.sub(r"<[^>]+>", "", last_m.group(1)).strip()
+                first = ""
+                if fore_m:
+                    first = re.sub(r"<[^>]+>", "", fore_m.group(1)).strip()
+                elif init_m:
+                    first = re.sub(r"<[^>]+>", "", init_m.group(1)).strip()
+                full = f"{first} {last}".strip() if first else last
+                if full:
+                    authors.append(full)
+            elif collective_m:
+                # Group/consortium authorship line — not a person, keep for
+                # completeness but matching logic should skip these.
+                coll = re.sub(r"<[^>]+>", "", collective_m.group(1)).strip()
+                if coll:
+                    authors.append(coll)
+
         if verify_affiliation:
             # Collect all author blocks with their affiliations
             author_blocks = re.findall(r"<Author[^>]*>(.*?)</Author>", article_xml, re.DOTALL)
@@ -1327,6 +1354,7 @@ def _pubmed_fetch_summaries_batch(pmids, verify_affiliation=True, search_term=""
                 "title": title,
                 "journal": journal,
                 "year": year,
+                "authors": authors,
             })
 
     return pubs
@@ -1390,11 +1418,16 @@ def pubmed_fetch_summaries_fallback(pmids):
             if aff_list and not affiliation_is_unc(aff_text):
                 continue
             title = re.sub(r"<[^>]+>", "", art.get("title", "")).strip()
+            # esummary's "authors" field is a list of {"name": "Last IN"} dicts
+            # (initials only, no full first name — coarser than efetch's XML,
+            # but this path only runs when efetch itself failed).
+            authors = [a.get("name", "").strip() for a in art.get("authors", []) if a.get("name")]
             pubs.append({
                 "pmid": pmid,
                 "title": title,
                 "journal": art.get("source", ""),
                 "year": (art.get("pubdate", "") or "")[:4],
+                "authors": authors,
             })
         return pubs
     except Exception as e:
