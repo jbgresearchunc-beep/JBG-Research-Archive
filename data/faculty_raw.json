@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-15T02:22:14.893760Z",
-  "total_faculty": 2772,
+  "generated_at": "2026-07-19T10:43:36.687777Z",
+  "total_faculty": 2752,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -899,6 +899,16 @@
       ]
     },
     {
+      "name": "Trevor S. Barlowe",
+      "profile_url": "https://www.med.unc.edu/medicine/gi/people/trevor-s-barlowe-md-mcsr/",
+      "department": "Medicine \u2014 Gastroenterology & Hepatology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Gastroenterology & Hepatology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/trevor.barlowe.1/bibliography/public"
+    },
+    {
       "name": "Edward L. Barnes",
       "profile_url": "https://www.med.unc.edu/medicine/gi/people/edward-l-barnes-md-mph/",
       "department": "Medicine \u2014 Gastroenterology & Hepatology",
@@ -1287,69 +1297,6 @@
         "Medicine \u2014 Gastroenterology & Hepatology"
       ],
       "pubmed_hint": "Advanced Endoscopy"
-    },
-    {
-      "name": "Trevor S. Barlowe",
-      "profile_url": "https://www.med.unc.edu/medicine/gi/people/trevor-s-barlowe-md/",
-      "department": "Medicine \u2014 Gastroenterology & Hepatology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Gastroenterology & Hepatology"
-      ]
-    },
-    {
-      "name": "Tyler Culpepper",
-      "profile_url": "https://www.med.unc.edu/medicine/gi/people/tyler-culpepper-md-phd/",
-      "department": "Medicine \u2014 Gastroenterology & Hepatology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Gastroenterology & Hepatology"
-      ]
-    },
-    {
-      "name": "Ellen Green",
-      "profile_url": "https://www.med.unc.edu/medicine/gi/people/ellen-green-md-phd/",
-      "department": "Medicine \u2014 Gastroenterology & Hepatology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Gastroenterology & Hepatology"
-      ]
-    },
-    {
-      "name": "Taylor Karl",
-      "profile_url": "https://www.med.unc.edu/medicine/gi/people/taylor-karl-md/",
-      "department": "Medicine \u2014 Gastroenterology & Hepatology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Gastroenterology & Hepatology"
-      ]
-    },
-    {
-      "name": "Vivian Lee",
-      "profile_url": "https://www.med.unc.edu/medicine/gi/people/vivian-lee-md-msc-ms/",
-      "department": "Medicine \u2014 Gastroenterology & Hepatology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Gastroenterology & Hepatology"
-      ]
-    },
-    {
-      "name": "Albert Manudhane",
-      "profile_url": "https://www.med.unc.edu/medicine/gi/people/albert-manudhane-md/",
-      "department": "Medicine \u2014 Gastroenterology & Hepatology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Gastroenterology & Hepatology"
-      ]
-    },
-    {
-      "name": "Brandon M. Shore",
-      "profile_url": "https://www.med.unc.edu/medicine/gi/people/brandon-shore-md/",
-      "department": "Medicine \u2014 Gastroenterology & Hepatology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Gastroenterology & Hepatology"
-      ]
     },
     {
       "name": "Martha Bausch",
@@ -3245,6 +3192,15 @@
       ]
     },
     {
+      "name": "Nidhi Agrawal",
+      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/nidhi-agrawal-md/",
+      "department": "Medicine \u2014 Hospital Medicine",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hospital Medicine"
+      ]
+    },
+    {
       "name": "Danielle Aldrich",
       "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/danielle-aldrich-md/",
       "department": "Medicine \u2014 Hospital Medicine",
@@ -3464,6 +3420,15 @@
     {
       "name": "Jennifer McEntee",
       "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/jennifer-mcentee-md/",
+      "department": "Medicine \u2014 Hospital Medicine",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hospital Medicine"
+      ]
+    },
+    {
+      "name": "Wagma Mirzoy",
+      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/wagma-mirzoy-md/",
       "department": "Medicine \u2014 Hospital Medicine",
       "role": "",
       "departments": [
@@ -4355,6 +4320,15 @@
       ]
     },
     {
+      "name": "Jeremy Nel",
+      "profile_url": "https://www.med.unc.edu/medicine/infdis/people/jeremy-nel/",
+      "department": "Medicine \u2014 Infectious Diseases",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Infectious Diseases"
+      ]
+    },
+    {
       "name": "Ann M Collins",
       "profile_url": "https://www.med.unc.edu/medicine/infdis/people/ann-m-collins-pa-c/",
       "department": "Medicine \u2014 Infectious Diseases",
@@ -4373,6 +4347,15 @@
       ]
     },
     {
+      "name": "Susan Hulse",
+      "profile_url": "https://www.med.unc.edu/medicine/infdis/people/susan-hulse-pa-c/",
+      "department": "Medicine \u2014 Infectious Diseases",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Infectious Diseases"
+      ]
+    },
+    {
       "name": "Eric Langhans",
       "profile_url": "https://www.med.unc.edu/medicine/infdis/people/eric-langhans-pa-c-mhs/",
       "department": "Medicine \u2014 Infectious Diseases",
@@ -4384,15 +4367,6 @@
     {
       "name": "Lars Stephenson",
       "profile_url": "https://www.med.unc.edu/medicine/infdis/people/lars-stephenson-agnp-dnp/",
-      "department": "Medicine \u2014 Infectious Diseases",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Infectious Diseases"
-      ]
-    },
-    {
-      "name": "Felicia Casagrande",
-      "profile_url": "https://www.med.unc.edu/medicine/infdis/people/felicia-casagrande/",
       "department": "Medicine \u2014 Infectious Diseases",
       "role": "",
       "departments": [
@@ -4874,15 +4848,6 @@
       "profile_url": "https://www.med.unc.edu/medicine/people/samuel-raines-md/",
       "department": "Medicine \u2014 Nephrology & Hypertension",
       "role": "Pgy-24",
-      "departments": [
-        "Medicine \u2014 Nephrology & Hypertension"
-      ]
-    },
-    {
-      "name": "Savannah Taylor",
-      "profile_url": "https://www.med.unc.edu/medicine/people/savannah-taylor-md-phd/",
-      "department": "Medicine \u2014 Nephrology & Hypertension",
-      "role": "All-Faculty-Profiles",
       "departments": [
         "Medicine \u2014 Nephrology & Hypertension"
       ]
@@ -7102,15 +7067,6 @@
       ]
     },
     {
-      "name": "Paige Noreen",
-      "profile_url": "https://www.med.unc.edu/pediatrics/people/paige-noreen-md/",
-      "department": "Pediatrics",
-      "role": "Pulm",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
       "name": "Catherine Habashy",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/catherine-habashy-md-mph/",
       "department": "Pediatrics",
@@ -7175,6 +7131,16 @@
       "role": "Emerg",
       "departments": [
         "Pediatrics"
+      ]
+    },
+    {
+      "name": "Emily Cox",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/emily-cox-do/",
+      "department": "Pediatrics",
+      "role": "Npm",
+      "departments": [
+        "Pediatrics",
+        "Psychiatry"
       ]
     },
     {
@@ -7911,15 +7877,6 @@
     {
       "name": "Maimoona Zariwala",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/maimoona-zariwala-phd/",
-      "department": "Pediatrics",
-      "role": "Pulm",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Lawrence Ostrowski",
-      "profile_url": "https://www.med.unc.edu/pediatrics/people/lawrence-ostrowski-phd/",
       "department": "Pediatrics",
       "role": "Pulm",
       "departments": [
@@ -9989,6 +9946,15 @@
       "role": "",
       "departments": [
         "Surgery \u2014 Plastic & Reconstructive Surgery"
+      ]
+    },
+    {
+      "name": "Alexius Brandveen",
+      "profile_url": "https://www.med.unc.edu/psych/people/alexius-brandveen-lcswa/",
+      "department": "Psychiatry",
+      "role": "Cecmh",
+      "departments": [
+        "Psychiatry"
       ]
     },
     {
@@ -13053,15 +13019,6 @@
       ]
     },
     {
-      "name": "Emily Cox",
-      "profile_url": "https://www.med.unc.edu/psych/people/emily-cox-msw-lcsw/",
-      "department": "Psychiatry",
-      "role": "Child-Adolescent-Psychiatry",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
       "name": "Emil Cornea",
       "profile_url": "https://www.med.unc.edu/psych/people/emil-cornea-phd/",
       "department": "Psychiatry",
@@ -14026,6 +13983,15 @@
       "role": "Child-Adolescent-Psychiatry",
       "departments": [
         "Psychiatry"
+      ]
+    },
+    {
+      "name": "Baggio A. Evangelista",
+      "profile_url": "https://www.med.unc.edu/neurology/people/baggio-a-evangelista-phd/",
+      "department": "Neurology",
+      "role": "Faculty-Researcher",
+      "departments": [
+        "Neurology"
       ]
     },
     {
@@ -15055,15 +15021,6 @@
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1xQdgt61ppxkU/bibliography/public"
     },
     {
-      "name": "Lyn Filip",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/lyn-filip-rn-bsn-ocn/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Department-Of-Obstetrics-And-Gynecology",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
       "name": "Kristin Tully",
       "profile_url": "https://www.med.unc.edu/obgyn/people/kristin-tully/",
       "department": "Obstetrics & Gynecology",
@@ -15407,7 +15364,7 @@
       "name": "Fan Lee",
       "profile_url": "https://www.med.unc.edu/obgyn/people/fan-lee/",
       "department": "Obstetrics & Gynecology",
-      "role": "Class-Of-2020",
+      "role": "",
       "departments": [
         "Obstetrics & Gynecology"
       ]
@@ -15416,7 +15373,7 @@
       "name": "Meredith Newton",
       "profile_url": "https://www.med.unc.edu/obgyn/people/meredith-newton-md",
       "department": "Obstetrics & Gynecology",
-      "role": "Class-Of-2020",
+      "role": "",
       "departments": [
         "Obstetrics & Gynecology"
       ]
@@ -15476,136 +15433,10 @@
       ]
     },
     {
-      "name": "Christine Field",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/christine-field/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Class-Of-2022",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
-      "name": "Ashley Appiagyei",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/ashley-appiagyei/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Class-Of-2022",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
-      "name": "Austin Johnson",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/austin-johnson/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Class-Of-2022",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
-      "name": "Celeste Green",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/celeste-green/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Class-Of-2022",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
-      "name": "John Recknagel",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/john-recknagel/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Class-Of-2022",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
-      "name": "David Mysona",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/david-mysona/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Class-Of-2022",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
-      "name": "R. Gina Silverstein",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/r-gina-silverstein/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Class-Of-2022",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
-      "name": "Casey Rosser",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/casey-rosser/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Class-Of-2021",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
-      "name": "Matthew Givens",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/matthew-givens/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Class-Of-2021",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
-      "name": "Anna Fleischman",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/anna-fleischman/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Class-Of-2021",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
-      "name": "Michelle Ertel",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/michelle-ertel/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Class-Of-2021",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
-      "name": "Preston Edge",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/preston-edge/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Class-Of-2021",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
-      "name": "Tara Brenner",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/tara-brenner/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Class-Of-2021",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
-      "name": "Susie Ahn",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/susie-ahn/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Class-Of-2021",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
       "name": "Brittany Papworth",
       "profile_url": "https://www.med.unc.edu/obgyn/people/brittany-papworth/",
       "department": "Obstetrics & Gynecology",
-      "role": "Class-Of-2020",
+      "role": "",
       "departments": [
         "Obstetrics & Gynecology"
       ]
@@ -15614,7 +15445,7 @@
       "name": "Susan Dalton",
       "profile_url": "https://www.med.unc.edu/obgyn/people/susan-dalton/",
       "department": "Obstetrics & Gynecology",
-      "role": "Class-Of-2020",
+      "role": "",
       "departments": [
         "Obstetrics & Gynecology"
       ]
@@ -15623,7 +15454,7 @@
       "name": "Ariel Cohen",
       "profile_url": "https://www.med.unc.edu/obgyn/people/ariel-cohen/",
       "department": "Obstetrics & Gynecology",
-      "role": "Class-Of-2020",
+      "role": "",
       "departments": [
         "Obstetrics & Gynecology"
       ]
@@ -15632,7 +15463,7 @@
       "name": "Majdouline Asher",
       "profile_url": "https://www.med.unc.edu/obgyn/people/majdouline-asher/",
       "department": "Obstetrics & Gynecology",
-      "role": "Class-Of-2020",
+      "role": "",
       "departments": [
         "Obstetrics & Gynecology"
       ]
@@ -15759,15 +15590,6 @@
     {
       "name": "Kavita Arora",
       "profile_url": "https://www.med.unc.edu/obgyn/people/kavita-arora/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Department-Clinical-Providers",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
-      "name": "Wesley Fowler Jr",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/wesley-fowler/",
       "department": "Obstetrics & Gynecology",
       "role": "Department-Clinical-Providers",
       "departments": [
@@ -16965,6 +16787,15 @@
     {
       "name": "Erica Sparkenbaugh",
       "profile_url": "https://www.med.unc.edu/pathology/directory/sparkenbaugh/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ]
+    },
+    {
+      "name": "Brian Spurlock",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/brian-spurlock-phd/",
       "department": "Pathology & Laboratory Medicine",
       "role": "",
       "departments": [
@@ -18614,7 +18445,7 @@
     },
     {
       "name": "Margaret Coates",
-      "profile_url": "https://www.med.unc.edu/derm/directory/margaret-coates-md-2/",
+      "profile_url": "https://www.med.unc.edu/derm/directory/margaret-coates-md/",
       "department": "Dermatology",
       "role": "",
       "departments": [
@@ -20119,17 +19950,7 @@
     },
     {
       "name": "Wendell G. Yarbrough",
-      "profile_url": "https://www.med.unc.edu/ent/directory/wendell-g-yarbrough-md-mmhc-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery",
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Robert L. Ferris",
-      "profile_url": "https://www.med.unc.edu/ent/directory/robert-l-ferris-md-phd/",
+      "profile_url": "https://www.med.unc.edu/ent/people/wendell-g-yarbrough-md-mmhc-facs/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20139,7 +19960,7 @@
     },
     {
       "name": "Mihir R. Patel",
-      "profile_url": "https://www.med.unc.edu/ent/directory/mihir-patel-md/",
+      "profile_url": "https://www.med.unc.edu/ent/people/mihir-r-patel-md/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20147,28 +19968,18 @@
       ]
     },
     {
-      "name": "Jeffrey M. Blumberg",
-      "profile_url": "https://www.med.unc.edu/ent/directory/jeffrey-blumberg-md-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "C. Alessandra Colaianni",
-      "profile_url": "https://www.med.unc.edu/ent/directory/c-alessandra-colaianni-md-mphil/",
+      "name": "Robert L. Ferris",
+      "profile_url": "https://www.med.unc.edu/ent/people/robert-l-ferris-md-phd/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
         "Otolaryngology / Head & Neck Surgery",
         "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "colaianni ca"
+      ]
     },
     {
-      "name": "Rachelle Gish-Johnson",
-      "profile_url": "https://www.med.unc.edu/ent/directory/rachelle-gish-johnson-fnp-c/",
+      "name": "Jeffrey M. Blumberg",
+      "profile_url": "https://www.med.unc.edu/ent/people/jeffrey-m-blumberg-md-facs-2/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20177,16 +19988,7 @@
     },
     {
       "name": "Trevor G. Hackman",
-      "profile_url": "https://www.med.unc.edu/ent/directory/trevor-g-hackman-md-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Caitlin Heredia",
-      "profile_url": "https://www.med.unc.edu/ent/directory/caitlin-heredia-pa-c/",
+      "profile_url": "https://www.med.unc.edu/ent/people/trevor-g-hackman-md-facs/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20195,16 +19997,7 @@
     },
     {
       "name": "Catherine J. Lumley",
-      "profile_url": "https://www.med.unc.edu/ent/directory/catherine-lumley-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Hannah Eadie Reid",
-      "profile_url": "https://www.med.unc.edu/ent/directory/hannah-eadie-reid-np/",
+      "profile_url": "https://www.med.unc.edu/ent/people/catherine-j-lumley-md/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20213,7 +20006,7 @@
     },
     {
       "name": "Travis P. Schrank",
-      "profile_url": "https://www.med.unc.edu/ent/directory/travis-p-schrank-md-phd/",
+      "profile_url": "https://www.med.unc.edu/ent/people/travis-p-schrank-md-phd/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20221,8 +20014,36 @@
       ]
     },
     {
-      "name": "Amelia F. Drake",
-      "profile_url": "https://www.med.unc.edu/ent/directory/amelia-f-drake-md-facs/",
+      "name": "C. Alessandra Colaianni",
+      "profile_url": "https://www.med.unc.edu/ent/people/c-alessandra-colaianni-md-mphil/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Hannah Eadie Reid",
+      "profile_url": "https://www.med.unc.edu/ent/people/hannah-eadie-reid-np/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Rachelle Gish-Johnson",
+      "profile_url": "https://www.med.unc.edu/ent/people/rachelle-gish-johnson-fnp-c/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Caitlin Heredia",
+      "profile_url": "https://www.med.unc.edu/ent/people/caitlin-heredia-pa-c/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20231,7 +20052,7 @@
     },
     {
       "name": "Carlton J. Zdanski",
-      "profile_url": "https://www.med.unc.edu/ent/directory/carlton-j-zdanski-md-facs/",
+      "profile_url": "https://www.med.unc.edu/ent/people/carlton-j-zdanski-md-faap-facs/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20239,8 +20060,8 @@
       ]
     },
     {
-      "name": "Lauren A. Leeper",
-      "profile_url": "https://www.med.unc.edu/ent/directory/lauren-a-leeper-md-facs/",
+      "name": "Amelia F. Drake",
+      "profile_url": "https://www.med.unc.edu/ent/people/amelia-f-drake-md-facs/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20249,7 +20070,16 @@
     },
     {
       "name": "Victoria James",
-      "profile_url": "https://www.med.unc.edu/ent/directory/victoria-claire-james-md/",
+      "profile_url": "https://www.med.unc.edu/ent/people/victoria-claire-james-md/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Lauren A. Leeper",
+      "profile_url": "https://www.med.unc.edu/ent/people/lauren-a-leeper-md-facs-2/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20258,7 +20088,7 @@
     },
     {
       "name": "Wade McClain",
-      "profile_url": "https://www.med.unc.edu/ent/directory/wade-mcclain-do/",
+      "profile_url": "https://www.med.unc.edu/ent/people/wade-mcclain-do/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20267,7 +20097,7 @@
     },
     {
       "name": "Courtney McDonough",
-      "profile_url": "https://www.med.unc.edu/ent/directory/courtney-mcdonough-pa-c/",
+      "profile_url": "https://www.med.unc.edu/ent/people/courtney-mcdonough-pa-c/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20276,7 +20106,7 @@
     },
     {
       "name": "J. Madison Clark",
-      "profile_url": "https://www.med.unc.edu/ent/directory/j-madison-clark-md-facs/",
+      "profile_url": "https://www.med.unc.edu/ent/people/j-madison-clark-md-facs/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20285,16 +20115,7 @@
     },
     {
       "name": "Virginia Drake",
-      "profile_url": "https://www.med.unc.edu/ent/directory/virginia-ginny-drake-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Brian S. Jewett",
-      "profile_url": "https://www.med.unc.edu/ent/directory/brian-s-jewett-md/",
+      "profile_url": "https://www.med.unc.edu/ent/people/virginia-drake-md/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20303,7 +20124,7 @@
     },
     {
       "name": "Matthew Q. Miller",
-      "profile_url": "https://www.med.unc.edu/ent/directory/matthew-q-miller-md/",
+      "profile_url": "https://www.med.unc.edu/ent/people/matthew-q-miller-md/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20312,7 +20133,7 @@
     },
     {
       "name": "Brent A. Senior",
-      "profile_url": "https://www.med.unc.edu/ent/directory/brent-a-senior-md-facs-fars/",
+      "profile_url": "https://www.med.unc.edu/ent/people/brent-a-senior-md-facs-fars/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20321,7 +20142,7 @@
     },
     {
       "name": "Brian D. Thorp",
-      "profile_url": "https://www.med.unc.edu/ent/directory/brian-d-thorp-md/",
+      "profile_url": "https://www.med.unc.edu/ent/people/brian-d-thorp-md-facs-fars/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20330,7 +20151,7 @@
     },
     {
       "name": "Charles S. Ebert",
-      "profile_url": "https://www.med.unc.edu/ent/directory/charles-s-ebert-jr-md-mph-fars-faaoa-facs/",
+      "profile_url": "https://www.med.unc.edu/ent/people/charles-s-ebert-jr-md-mph-fars-faaoa-facs/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20339,17 +20160,16 @@
     },
     {
       "name": "Adam J. Kimple",
-      "profile_url": "https://www.med.unc.edu/ent/directory/adam-j-kimple-md/",
+      "profile_url": "https://www.med.unc.edu/ent/people/adam-j-kimple-md-phd-facs-fars/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
         "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/adam.kimple.1/bibliography/public"
+      ]
     },
     {
       "name": "Cristine Klatt-Cromwell",
-      "profile_url": "https://www.med.unc.edu/ent/directory/cristine-klatt-cromwell-md/",
+      "profile_url": "https://www.med.unc.edu/ent/people/cristine-klatt-cromwell-md/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20358,16 +20178,7 @@
     },
     {
       "name": "Meghan Norris",
-      "profile_url": "https://www.med.unc.edu/ent/directory/meghan-norris-ms-mspas-pa-c/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Jackson Vuncannon",
-      "profile_url": "https://www.med.unc.edu/ent/directory/jackson-vuncannon-md/",
+      "profile_url": "https://www.med.unc.edu/ent/people/meghan-norris-ms-mspas-pa-c/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20376,16 +20187,17 @@
     },
     {
       "name": "Kevin D. Brown",
-      "profile_url": "https://www.med.unc.edu/ent/directory/kevin-d-brown-md-phd/",
+      "profile_url": "https://www.med.unc.edu/ent/people/kevin-d-brown-md-phd/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
         "Otolaryngology / Head & Neck Surgery"
-      ]
+      ],
+      "pubmed_hint": "CUHL trial"
     },
     {
       "name": "Matthew M. Dedmon",
-      "profile_url": "https://www.med.unc.edu/ent/directory/matthew-m-dedmon-md-phd/",
+      "profile_url": "https://www.med.unc.edu/ent/people/matthew-m-dedmon-md-phd/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20394,7 +20206,7 @@
     },
     {
       "name": "A. Morgan Selleck",
-      "profile_url": "https://www.med.unc.edu/ent/directory/anne-morgan-selleck-md/",
+      "profile_url": "https://www.med.unc.edu/ent/people/a-morgan-selleck-md/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20403,7 +20215,7 @@
     },
     {
       "name": "Nicholas J. Thompson",
-      "profile_url": "https://www.med.unc.edu/ent/directory/nicholas-thompson-md/",
+      "profile_url": "https://www.med.unc.edu/ent/people/nicholas-j-thompson-md/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20413,7 +20225,7 @@
     },
     {
       "name": "Tram Tran",
-      "profile_url": "https://www.med.unc.edu/ent/directory/bao-tram-tran-fnp/",
+      "profile_url": "https://www.med.unc.edu/ent/people/tram-tran-fnp/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20422,7 +20234,7 @@
     },
     {
       "name": "Christine E. DeMason",
-      "profile_url": "https://www.med.unc.edu/ent/directory/christine-e-demason-md/",
+      "profile_url": "https://www.med.unc.edu/ent/people/christine-e-demason-md-2/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20431,7 +20243,7 @@
     },
     {
       "name": "Ann Q. Bogard",
-      "profile_url": "https://www.med.unc.edu/ent/directory/ann-q-bogard-md/",
+      "profile_url": "https://www.med.unc.edu/ent/people/ann-q-bogard-md/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20440,7 +20252,7 @@
     },
     {
       "name": "Doris Lin",
-      "profile_url": "https://www.med.unc.edu/ent/directory/doris-lin-md/",
+      "profile_url": "https://www.med.unc.edu/ent/people/doris-lin-md/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20449,7 +20261,7 @@
     },
     {
       "name": "Robert A. Buckmire",
-      "profile_url": "https://www.med.unc.edu/ent/directory/robert-a-buckmire-md/",
+      "profile_url": "https://www.med.unc.edu/ent/people/robert-a-buckmire-md/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20458,7 +20270,7 @@
     },
     {
       "name": "Rupali N. Shah",
-      "profile_url": "https://www.med.unc.edu/ent/directory/rupali-pali-n-shah-md/",
+      "profile_url": "https://www.med.unc.edu/ent/people/rupali-pali-n-shah-md/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20467,7 +20279,7 @@
     },
     {
       "name": "Lisa Park",
-      "profile_url": "https://www.med.unc.edu/ent/directory/lisa-park-aud/",
+      "profile_url": "https://www.med.unc.edu/ent/people/lisa-park-aud/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20477,7 +20289,7 @@
     },
     {
       "name": "Melissa Anderson",
-      "profile_url": "https://www.med.unc.edu/ent/directory/melissa-anderson/",
+      "profile_url": "https://www.med.unc.edu/ent/people/melissa-anderson-aud-ccc-a-2/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20486,7 +20298,7 @@
     },
     {
       "name": "Erika Gagnon",
-      "profile_url": "https://www.med.unc.edu/ent/directory/erika-gagnon-aud-ccc-a/",
+      "profile_url": "https://www.med.unc.edu/ent/people/erika-gagnon-aud-ccc-a/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20495,7 +20307,7 @@
     },
     {
       "name": "Natalie Giduz",
-      "profile_url": "https://www.med.unc.edu/ent/directory/natalie-giduz-msw-lcswa/",
+      "profile_url": "https://www.med.unc.edu/ent/people/natalie-giduz-msw-lcswa/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20504,7 +20316,7 @@
     },
     {
       "name": "Sandra Hancock",
-      "profile_url": "https://www.med.unc.edu/ent/directory/sandra-hancock-ms-ccc-slp-lsls-cert-avt/",
+      "profile_url": "https://www.med.unc.edu/ent/people/sandra-hancock-ms-ccc-slp-lsls-cert-avt-2/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20513,7 +20325,7 @@
     },
     {
       "name": "Lillian Henderson",
-      "profile_url": "https://www.med.unc.edu/ent/directory/lillian-henderson-msp-ccc-slp-lsls-cert-avt/",
+      "profile_url": "https://www.med.unc.edu/ent/people/lillian-henderson-msp-ccc-slp-lsls-cert-avt/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20522,7 +20334,7 @@
     },
     {
       "name": "Erin Thompson",
-      "profile_url": "https://www.med.unc.edu/ent/directory/erin-thompson-ms-ccc-slp-lsls-cert-avt/",
+      "profile_url": "https://www.med.unc.edu/ent/people/erin-thompson-ms-ccc-slp-lsls-cert-avt-2/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20531,7 +20343,7 @@
     },
     {
       "name": "Jennifer Woodard",
-      "profile_url": "https://www.med.unc.edu/ent/directory/jennifer-woodard-aud-ccc-a/",
+      "profile_url": "https://www.med.unc.edu/ent/people/jennifer-woodard-aud-ccc-a/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20802,6 +20614,15 @@
     {
       "name": "Hans Arora",
       "profile_url": "https://www.med.unc.edu/urology/directory/hans-arora/",
+      "department": "Urology",
+      "role": "",
+      "departments": [
+        "Urology"
+      ]
+    },
+    {
+      "name": "Levi Bowers",
+      "profile_url": "https://www.med.unc.edu/urology/directory/levi-bowers/",
       "department": "Urology",
       "role": "",
       "departments": [
