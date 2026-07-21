@@ -113,7 +113,8 @@ jobs:
         run: |
           python scraper/build_collaborators.py \
             --input ${{ steps.paths.outputs.out }} \
-            --output ${{ steps.paths.outputs.out }}
+            --output ${{ steps.paths.outputs.out }} \
+            --students scraper/student_researchers.json
 
       - name: Check output
         if: ${{ github.event.inputs.scrape_only != 'true' }}
@@ -125,6 +126,10 @@ jobs:
           print(f'Total faculty: {d[\"total_faculty\"]}')
           print(f'Departments: {len(d[\"departments\"])}')
           print(f'Generated at: {d[\"generated_at\"]}')
+          with_collab = sum(1 for f in d['faculty'] if f.get('collaborators'))
+          print(f'Faculty with collaborators: {with_collab}')
+          flagged = sum(1 for f in d['faculty'] if f.get('has_student_coauthor'))
+          print(f'Faculty flagged with student co-authors: {flagged}')
           "
 
       - name: Commit and push updated data
