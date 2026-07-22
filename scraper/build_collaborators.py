@@ -341,6 +341,119 @@ def attach_collaborators(faculty_list, top_n=5, name_aliases=None):
     return stats, index_to_key, key_to_best_index
 
 
+def merge_duplicate_faculty(faculty_list, index_to_key, key_to_best_index):
+    """
+    Collapse duplicate raw faculty entries (same real person, scraped from
+    multiple department pages) into ONE record per canonical identity — this
+    is what makes the frontend show one card per person instead of one card
+    per department page they were scraped from.
+
+    Must be called AFTER attach_collaborators()/attach_student_coauthors(),
+    since those already compute the correct per-canonical-key results and
+    write the SAME values onto every duplicate entry — this function just
+    picks one of those (identical) values rather than recomputing anything.
+
+    Per merged person:
+      - departments: union of every department seen across their duplicate
+        entries, in first-seen order
+      - department_profiles: [{department, profile_url}] — each department
+        paired with the specific profile URL it was scraped from, so the
+        frontend can render a separate clickable link per department
+        instead of collapsing to one URL (a real person can have a
+        genuinely different bio page per department, e.g. a Hematology
+        page and a separate Lineberger page)
+      - publications: union across all duplicate entries, deduped by PMID
+        (different name-variant PubMed searches can turn up slightly
+        different but overlapping results — union is more complete, not
+        just deduped)
+      - nih_grants: union, deduped by (title, fiscal_year)
+      - pubmed_count / pubmed_verified: recomputed as len(merged
+        publications) so the badge count always matches what's actually
+        listed on the card, rather than carrying over one duplicate's
+        possibly-stale count
+      - collaborators / has_student_coauthor / student_coauthor_count /
+        student_coauthors: copied as-is from any one duplicate (they're
+        already identical across the group)
+
+    Returns a new list of merged faculty dicts (does not mutate faculty_list).
+    """
+    groups = defaultdict(list)
+    for i, key in index_to_key.items():
+        groups[key].append(i)
+
+    merged_list = []
+    for key, indices in groups.items():
+        best_i = key_to_best_index[key]
+        best = faculty_list[best_i]
+
+        departments = []
+        dept_profiles = {}
+        role = ""
+        for i in indices:
+            f = faculty_list[i]
+            f_depts = f.get("departments") or [f.get("department", "")]
+            f_depts = [d for d in f_depts if d]
+            url = (f.get("profile_url") or "").strip()
+            for d in f_depts:
+                if d not in departments:
+                    departments.append(d)
+                if url and d not in dept_profiles:
+                    dept_profiles[d] = url
+            if not role and f.get("role"):
+                role = f["role"]
+
+        pubs_merged = []
+        seen_pmids = set()
+        for i in indices:
+            for p in faculty_list[i].get("publications") or []:
+                pmid = p.get("pmid")
+                if pmid:
+                    if pmid in seen_pmids:
+                        continue
+                    seen_pmids.add(pmid)
+                pubs_merged.append(p)
+
+        grants_merged = []
+        seen_grants = set()
+        for i in indices:
+            for g in faculty_list[i].get("nih_grants") or []:
+                gkey = (g.get("title", ""), g.get("fiscal_year", ""))
+                if gkey in seen_grants:
+                    continue
+                seen_grants.add(gkey)
+                grants_merged.append(g)
+
+        # At least one duplicate being "ambiguous" only still matters if the
+        # merge didn't actually resolve any publications — once we have real
+        # merged publications, the ambiguity concern is moot.
+        any_ambiguous = any(faculty_list[i].get("pubmed_ambiguous") for i in indices)
+
+        merged_list.append({
+            "name": best.get("_display_name_override") or best["name"],
+            "profile_url": best.get("profile_url", ""),
+            "department": departments[0] if departments else "",
+            "departments": departments,
+            "department_profiles": [
+                {"department": d, "profile_url": dept_profiles.get(d, "")}
+                for d in departments
+            ],
+            "role": role,
+            "pipeline_version": best.get("pipeline_version", ""),
+            "pubmed_search": best.get("pubmed_search", ""),
+            "pubmed_count": len(pubs_merged),
+            "pubmed_verified": len(pubs_merged),
+            "pubmed_ambiguous": any_ambiguous and len(pubs_merged) == 0,
+            "publications": pubs_merged,
+            "nih_grants": grants_merged,
+            "collaborators": best.get("collaborators", []),
+            "has_student_coauthor": best.get("has_student_coauthor", False),
+            "student_coauthor_count": best.get("student_coauthor_count", 0),
+            "student_coauthors": best.get("student_coauthors", []),
+        })
+
+    return merged_list
+
+
 def load_name_aliases(path):
     """
     Load a manual name-alias file: a JSON object mapping known duplicate
@@ -467,6 +580,10 @@ def main():
                               "If omitted, student co-author flagging is skipped entirely "
                               "and existing has_student_coauthor/student_coauthors fields "
                               "(if any) are left untouched.")
+    parser.add_argument("--keep-duplicates", action="store_true",
+                         help="Skip merge_duplicate_faculty() and leave one raw entry per "
+                              "scraped department page (old behavior) instead of collapsing "
+                              "to one card per real person. Off by default.")
     args = parser.parse_args()
 
     with open(args.input) as f:
@@ -505,10 +622,22 @@ def main():
         print("No --students roster given — skipping student co-author flagging "
               "(existing has_student_coauthor fields, if any, left as-is).")
 
-    # Drop the internal display-name-override scratch field before writing
-    # — it's only used during this computation, not part of the schema.
-    for f in faculty_list:
-        f.pop("_display_name_override", None)
+    if args.keep_duplicates:
+        print("--keep-duplicates set — leaving one raw entry per scraped department "
+              "page (not collapsing to one card per real person).")
+        # Drop the internal display-name-override scratch field before writing
+        # — it's only used during this computation, not part of the schema.
+        for f in faculty_list:
+            f.pop("_display_name_override", None)
+        data["faculty"] = faculty_list
+        data["total_faculty"] = len(faculty_list)
+    else:
+        merged_list = merge_duplicate_faculty(faculty_list, index_to_key, key_to_best_index)
+        print(f"Merged {len(faculty_list)} raw scraped entries into "
+              f"{len(merged_list)} unique faculty records "
+              f"({len(faculty_list) - len(merged_list)} duplicate entries collapsed).")
+        data["faculty"] = merged_list
+        data["total_faculty"] = len(merged_list)
 
     with open(args.output, "w") as f:
         json.dump(data, f, indent=2)
