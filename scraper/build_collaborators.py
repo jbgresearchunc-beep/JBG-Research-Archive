@@ -525,6 +525,13 @@ def attach_student_coauthors(faculty_list, student_idx, index_to_key, key_to_bes
     """
     # canonical_key -> {student_match_key: shared_paper_count}
     key_matches = defaultdict(lambda: defaultdict(int))
+    # canonical_key -> set of PMIDs already counted, so a paper independently
+    # found by TWO duplicate raw entries for the same real person (e.g. one
+    # entry scraped from a Hematology page, one from Lineberger, each doing
+    # its own PubMed search and both correctly turning up the same paper)
+    # only increments the shared-paper count once, not once per duplicate
+    # entry it happens to appear on.
+    counted_pmids = defaultdict(set)
     skipped_ambiguous = 0
     faculty_missing_author_data = 0
 
@@ -534,6 +541,8 @@ def attach_student_coauthors(faculty_list, student_idx, index_to_key, key_to_bes
         if pubs and not any("authors" in p for p in pubs):
             faculty_missing_author_data += 1
         for pub in pubs:
+            pmid = pub.get("pmid")
+            has_student_match_in_this_pub = False
             for a in pub.get("authors", []) or []:
                 first_tok = a.split()[0] if a.split() else ""
                 if _is_initials_only(first_tok):
@@ -541,7 +550,15 @@ def attach_student_coauthors(faculty_list, student_idx, index_to_key, key_to_bes
                     continue
                 mkey = _student_match_key(a)
                 if mkey and mkey in student_idx:
+                    if pmid and pmid in counted_pmids[key]:
+                        # Already counted this exact paper for this person
+                        # via a different duplicate entry — skip to avoid
+                        # double-counting the same real publication.
+                        continue
                     key_matches[key][mkey] += 1
+                    has_student_match_in_this_pub = True
+            if pmid and has_student_match_in_this_pub:
+                counted_pmids[key].add(pmid)
 
     flagged = 0
     for i, f in enumerate(faculty_list):
