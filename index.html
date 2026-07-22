@@ -227,6 +227,14 @@
       background: #f0f1f3;
       color: #4b5563;
     }
+    a.badge-dept {
+      text-decoration: none;
+      cursor: pointer;
+    }
+    a.badge-dept:hover {
+      background: #e2e5ea;
+      color: var(--carolina-blue);
+    }
     .badge-pubmed {
       background: var(--accent-blue-bg);
       color: var(--accent-blue-text);
@@ -626,6 +634,26 @@ function escapeHtml(s) {
     .replace(/"/g,"&quot;").replace(/'/g,"&#39;");
 }
 
+// Each department badge links out to that specific department's own
+// profile page (e.g. a person merged from two department scrapes gets two
+// separate clickable badges, "Lineberger ↗" and "Hematology ↗", each going
+// to the actual page they were scraped from — not one shared/arbitrary
+// link). Falls back to plain non-clickable badges for any data that
+// predates department_profiles (e.g. an older faculty.json still using
+// --keep-duplicates, or a stale cached file).
+function renderDeptBadges(f) {
+  if (f.department_profiles && f.department_profiles.length > 0) {
+    return f.department_profiles.map(dp => {
+      const label = escapeHtml(dp.department) + (dp.profile_url ? " ↗" : "");
+      return dp.profile_url
+        ? `<a class="badge badge-dept" href="${escapeHtml(dp.profile_url)}" target="_blank">${label}</a>`
+        : `<span class="badge badge-dept">${escapeHtml(dp.department)}</span>`;
+    }).join("");
+  }
+  const depts = (f.departments && f.departments.length > 1) ? f.departments : [f.department];
+  return depts.map(d => `<span class="badge badge-dept">${escapeHtml(d)}</span>`).join("");
+}
+
 function renderCard(f) {
   const init = initials(f.name);
   const pubs = (f.publications || []).slice(0, 4);
@@ -730,10 +758,7 @@ function renderCard(f) {
         </div>
       </div>
       <div class="badges">
-        ${(f.departments && f.departments.length > 1
-          ? f.departments
-          : [f.department]
-        ).map(d => `<span class="badge badge-dept">${escapeHtml(d)}</span>`).join("")}
+        ${renderDeptBadges(f)}
         ${pubBadge}${nihBadge}${studentBadge}
       </div>
       ${pubsHtml}
