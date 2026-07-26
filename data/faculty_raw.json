@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-19T10:43:36.687777Z",
-  "total_faculty": 2752,
+  "generated_at": "2026-07-26T07:11:43.340376Z",
+  "total_faculty": 2754,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -2717,6 +2717,15 @@
       "pubmed_hint": "Hematologic Neoplasm"
     },
     {
+      "name": "Caroline King",
+      "profile_url": "https://www.med.unc.edu/medicine/hematology/people/caroline-king-msn-agnp-c/",
+      "department": "Medicine \u2014 Hematology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hematology"
+      ]
+    },
+    {
       "name": "Mika Kuroki",
       "profile_url": "https://www.med.unc.edu/medicine/hematology/people/mika-kuroki-dnp-agnp-c-ocn/",
       "department": "Medicine \u2014 Hematology",
@@ -3384,15 +3393,6 @@
     {
       "name": "Jaydeep J.S. Lamba",
       "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/jaydeep-j-s-lamba-md-phd/",
-      "department": "Medicine \u2014 Hospital Medicine",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Hospital Medicine"
-      ]
-    },
-    {
-      "name": "Robert Lampman",
-      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/robert-lampman/",
       "department": "Medicine \u2014 Hospital Medicine",
       "role": "",
       "departments": [
@@ -9949,6 +9949,15 @@
       ]
     },
     {
+      "name": "Alex Gertner",
+      "profile_url": "https://www.med.unc.edu/psych/people/alex-gertner-md-phd/",
+      "department": "Psychiatry",
+      "role": "Clinician",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
       "name": "Alexius Brandveen",
       "profile_url": "https://www.med.unc.edu/psych/people/alexius-brandveen-lcswa/",
       "department": "Psychiatry",
@@ -12533,15 +12542,6 @@
       ]
     },
     {
-      "name": "Alex Gertner",
-      "profile_url": "https://www.med.unc.edu/psych/people/alex-gertner-md-phd/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
       "name": "Joseph Dayaa",
       "profile_url": "https://www.med.unc.edu/psych/people/joseph-dayaa-md/",
       "department": "Psychiatry",
@@ -14829,6 +14829,15 @@
       ]
     },
     {
+      "name": "Jennifer Bushman Gilner",
+      "profile_url": "https://www.med.unc.edu/obgyn/people/jennifer-bushman-gilner-md-phd/",
+      "department": "Obstetrics & Gynecology",
+      "role": "Department-Of-Obstetrics-And-Gynecology",
+      "departments": [
+        "Obstetrics & Gynecology"
+      ]
+    },
+    {
       "name": "Hollins Clark",
       "profile_url": "https://www.med.unc.edu/obgyn/people/hollins-clark-md/",
       "department": "Obstetrics & Gynecology",
@@ -14896,6 +14905,15 @@
       "profile_url": "https://www.med.unc.edu/obgyn/people/elizabeth-cates-whnp-bc-anp-bc/",
       "department": "Obstetrics & Gynecology",
       "role": "Department-Of-Obstetrics-And-Gynecology",
+      "departments": [
+        "Obstetrics & Gynecology"
+      ]
+    },
+    {
+      "name": "Divya P. Mallampati",
+      "profile_url": "https://www.med.unc.edu/obgyn/people/divya-p-mallampati-md-mph/",
+      "department": "Obstetrics & Gynecology",
+      "role": "Cardiovascular-Care",
       "departments": [
         "Obstetrics & Gynecology"
       ]
@@ -15093,8 +15111,8 @@
       ]
     },
     {
-      "name": "Alexandria Kraus",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/alexandria-kraus/",
+      "name": "Maura Jones",
+      "profile_url": "https://www.med.unc.edu/obgyn/people/maura-jones/",
       "department": "Obstetrics & Gynecology",
       "role": "Department-Clinical-Providers",
       "departments": [
@@ -15102,8 +15120,8 @@
       ]
     },
     {
-      "name": "Thomas Ivester",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/thomas-ivester/",
+      "name": "Alexandria Kraus",
+      "profile_url": "https://www.med.unc.edu/obgyn/people/alexandria-kraus/",
       "department": "Obstetrics & Gynecology",
       "role": "Department-Clinical-Providers",
       "departments": [
@@ -15328,15 +15346,6 @@
       "profile_url": "https://www.med.unc.edu/obgyn/people/joanne-garrett/",
       "department": "Obstetrics & Gynecology",
       "role": "Complex-Family-Planning",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
-      "name": "Robert Strauss",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/robert-strauss/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Department-Clinical-Providers",
       "departments": [
         "Obstetrics & Gynecology"
       ]
@@ -15931,6 +15940,15 @@
     {
       "name": "Srihari Chari",
       "profile_url": "https://www.med.unc.edu/obgyn/people/srihari-chari/",
+      "department": "Obstetrics & Gynecology",
+      "role": "",
+      "departments": [
+        "Obstetrics & Gynecology"
+      ]
+    },
+    {
+      "name": "Jes Morse",
+      "profile_url": "https://www.med.unc.edu/obgyn/people/jes-morse/",
       "department": "Obstetrics & Gynecology",
       "role": "",
       "departments": [
@@ -18587,6 +18605,15 @@
       ]
     },
     {
+      "name": "Veronica Ibrahim",
+      "profile_url": "https://www.med.unc.edu/derm/directory/veronica-ibrahim/",
+      "department": "Dermatology",
+      "role": "",
+      "departments": [
+        "Dermatology"
+      ]
+    },
+    {
       "name": "Elise Kidder",
       "profile_url": "https://www.med.unc.edu/derm/directory/elise-kidder-pa-2/",
       "department": "Dermatology",
@@ -20069,8 +20096,8 @@
       ]
     },
     {
-      "name": "Victoria James",
-      "profile_url": "https://www.med.unc.edu/ent/people/victoria-claire-james-md/",
+      "name": "Lauren A. Leeper",
+      "profile_url": "https://www.med.unc.edu/ent/people/lauren-a-leeper-md-facs-2/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20078,8 +20105,8 @@
       ]
     },
     {
-      "name": "Lauren A. Leeper",
-      "profile_url": "https://www.med.unc.edu/ent/people/lauren-a-leeper-md-facs-2/",
+      "name": "Victoria James",
+      "profile_url": "https://www.med.unc.edu/ent/people/victoria-claire-james-md/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20115,7 +20142,16 @@
     },
     {
       "name": "Virginia Drake",
-      "profile_url": "https://www.med.unc.edu/ent/people/virginia-drake-md/",
+      "profile_url": "https://www.med.unc.edu/ent/people/virginia-drake-md-2/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Brian S. Jewett",
+      "profile_url": "https://www.med.unc.edu/ent/people/brian-s-jewett-md/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20196,8 +20232,8 @@
       "pubmed_hint": "CUHL trial"
     },
     {
-      "name": "Matthew M. Dedmon",
-      "profile_url": "https://www.med.unc.edu/ent/people/matthew-m-dedmon-md-phd/",
+      "name": "A. Morgan Selleck",
+      "profile_url": "https://www.med.unc.edu/ent/people/a-morgan-selleck-md/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20205,8 +20241,8 @@
       ]
     },
     {
-      "name": "A. Morgan Selleck",
-      "profile_url": "https://www.med.unc.edu/ent/people/a-morgan-selleck-md/",
+      "name": "Matthew M. Dedmon",
+      "profile_url": "https://www.med.unc.edu/ent/people/matthew-m-dedmon-md-phd/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20289,7 +20325,7 @@
     },
     {
       "name": "Melissa Anderson",
-      "profile_url": "https://www.med.unc.edu/ent/people/melissa-anderson-aud-ccc-a-2/",
+      "profile_url": "https://www.med.unc.edu/ent/people/melissa-anderson-aud-ccc-a/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
@@ -20932,8 +20968,8 @@
       ]
     },
     {
-      "name": "Joshua Alexander",
-      "profile_url": "https://www.med.unc.edu/phyrehab/directory/joshua-alexander/",
+      "name": "Raj Telhan",
+      "profile_url": "https://www.med.unc.edu/phyrehab/directory/raj-telhan/",
       "department": "Physical Medicine & Rehabilitation",
       "role": "",
       "departments": [
@@ -21142,15 +21178,6 @@
         "Physical Medicine & Rehabilitation"
       ],
       "pubmed_hint": "Lee Shuping"
-    },
-    {
-      "name": "Raj Telhan",
-      "profile_url": "https://www.med.unc.edu/phyrehab/directory/raj-telhan/",
-      "department": "Physical Medicine & Rehabilitation",
-      "role": "",
-      "departments": [
-        "Physical Medicine & Rehabilitation"
-      ]
     },
     {
       "name": "Theodore Yip",
@@ -25079,16 +25106,6 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ]
-    },
-    {
-      "name": "Angelique Whitehurst",
-      "profile_url": "https://unclineberger.org/directory/angelique-whitehurst/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Office Phone"
     },
     {
       "name": "Jason Kyle Whitmire",
