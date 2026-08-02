@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-26T07:11:43.340376Z",
-  "total_faculty": 2754,
+  "generated_at": "2026-08-02T07:18:00.037956Z",
+  "total_faculty": 2759,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -2599,15 +2599,6 @@
     {
       "name": "Micah Mooberry",
       "profile_url": "https://www.med.unc.edu/medicine/hematology/people/micah-mooberry-md/",
-      "department": "Medicine \u2014 Hematology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Hematology"
-      ]
-    },
-    {
-      "name": "Cheila Moore",
-      "profile_url": "https://www.med.unc.edu/medicine/hematology/people/cheila-moore/",
       "department": "Medicine \u2014 Hematology",
       "role": "",
       "departments": [
@@ -6418,6 +6409,51 @@
       ]
     },
     {
+      "name": "Claire Hailey",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/claire-hailey-md/",
+      "department": "Pediatrics",
+      "role": "Hosp",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Elise Hickman",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/elise-hickman-phd/",
+      "department": "Pediatrics",
+      "role": "Ai",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Adenike Animasaun",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/adenike-animasaun-md/",
+      "department": "Pediatrics",
+      "role": "Emerg",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Sindhura Kodali",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/sindhura-kodali-md/",
+      "department": "Pediatrics",
+      "role": "Cmep",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Ahmad Sami",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/ahmad-sami-md/",
+      "department": "Pediatrics",
+      "role": "Gi",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
       "name": "Ryan Barbaro",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/ryan-barbaro-md-ms/",
       "department": "Pediatrics",
@@ -7134,6 +7170,15 @@
       ]
     },
     {
+      "name": "Christian Hochhalter",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/christian-hochhalter-md/",
+      "department": "Pediatrics",
+      "role": "Gi",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
       "name": "Emily Cox",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/emily-cox-do/",
       "department": "Pediatrics",
@@ -7166,15 +7211,6 @@
       "profile_url": "https://www.med.unc.edu/pediatrics/people/alexandra-borst-md/",
       "department": "Pediatrics",
       "role": "Hemonc",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Elizabeth Armstrong",
-      "profile_url": "https://www.med.unc.edu/pediatrics/people/elizabeth-armstrong-md/",
-      "department": "Pediatrics",
-      "role": "Gpam",
       "departments": [
         "Pediatrics"
       ]
@@ -7342,15 +7378,6 @@
       ]
     },
     {
-      "name": "Katherine MacDonald",
-      "profile_url": "https://www.med.unc.edu/pediatrics/people/katherine-macdonald-md-mph/",
-      "department": "Pediatrics",
-      "role": "Gpam",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
       "name": "Alison Kavanaugh",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/alison-kavanaugh-md/",
       "department": "Pediatrics",
@@ -7418,6 +7445,15 @@
       "profile_url": "https://www.med.unc.edu/pediatrics/people/kori-flower/",
       "department": "Pediatrics",
       "role": "Gpam",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Dena Lowing",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/dena-lowing-md/",
+      "department": "Pediatrics",
+      "role": "Hosp",
       "departments": [
         "Pediatrics"
       ]
@@ -9757,6 +9793,15 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "marston w"
+    },
+    {
+      "name": "Kyle Mauk",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/kyle-mauk-dpm-facfas/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
     },
     {
       "name": "Katharine McGinigle",
@@ -14765,16 +14810,6 @@
       ]
     },
     {
-      "name": "Dominique Higgins",
-      "profile_url": "https://www.med.unc.edu/neurosurgery/directory/dominique-higgins-md-phd/",
-      "department": "Neurosurgery",
-      "role": "",
-      "departments": [
-        "Neurosurgery",
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
       "name": "Kevin Carneiro",
       "profile_url": "https://www.med.unc.edu/neurosurgery/directory/kevin-carneiro-do/",
       "department": "Neurosurgery",
@@ -14826,6 +14861,16 @@
       "role": "",
       "departments": [
         "Obstetrics & Gynecology"
+      ]
+    },
+    {
+      "name": "Kari Hacker",
+      "profile_url": "https://www.med.unc.edu/obgyn/people/kari-hacker-md-phd/",
+      "department": "Obstetrics & Gynecology",
+      "role": "Department-Of-Obstetrics-And-Gynecology",
+      "departments": [
+        "Obstetrics & Gynecology",
+        "Lineberger Comprehensive Cancer Center"
       ]
     },
     {
@@ -17060,6 +17105,15 @@
       "departments": [
         "Pathology & Laboratory Medicine",
         "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Qiang Zhu",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/qiangzhu/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
       ]
     },
     {
@@ -22454,15 +22508,6 @@
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1lId60MyFtsQT/bibliography/public"
     },
     {
-      "name": "Sherette Godfrey",
-      "profile_url": "https://unclineberger.org/directory/sherette-godfrey/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
       "name": "Shelley Golden",
       "profile_url": "https://unclineberger.org/directory/shelley-golden/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -22595,16 +22640,6 @@
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/stephanie.gupton.1/bibliography/public"
     },
     {
-      "name": "Kari Hacker",
-      "profile_url": "https://unclineberger.org/directory/kari-hacker/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1Jam7pJ4py9Ag/bibliography/public"
-    },
-    {
       "name": "Trevor Hackman",
       "profile_url": "https://unclineberger.org/directory/trevor-hackman/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -22723,6 +22758,16 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ]
+    },
+    {
+      "name": "Dominique Higgins",
+      "profile_url": "https://unclineberger.org/directory/dominique-higgins/",
+      "department": "Lineberger Comprehensive Cancer Center",
+      "role": "",
+      "departments": [
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1zio6X9J2Cv15B/bibliography/public"
     },
     {
       "name": "Chris Hilliard",
