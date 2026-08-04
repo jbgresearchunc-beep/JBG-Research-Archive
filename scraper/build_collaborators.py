@@ -26,6 +26,7 @@ Usage:
 """
 
 import json
+import os
 import argparse
 import re
 import itertools
@@ -366,7 +367,6 @@ def merge_duplicate_faculty(faculty_list, index_to_key, key_to_best_index):
         (different name-variant PubMed searches can turn up slightly
         different but overlapping results — union is more complete, not
         just deduped)
-      - nih_grants: union, deduped by (title, fiscal_year)
       - pubmed_count / pubmed_verified: recomputed as len(merged
         publications) so the badge count always matches what's actually
         listed on the card, rather than carrying over one duplicate's
@@ -413,16 +413,6 @@ def merge_duplicate_faculty(faculty_list, index_to_key, key_to_best_index):
                     seen_pmids.add(pmid)
                 pubs_merged.append(p)
 
-        grants_merged = []
-        seen_grants = set()
-        for i in indices:
-            for g in faculty_list[i].get("nih_grants") or []:
-                gkey = (g.get("title", ""), g.get("fiscal_year", ""))
-                if gkey in seen_grants:
-                    continue
-                seen_grants.add(gkey)
-                grants_merged.append(g)
-
         # At least one duplicate being "ambiguous" only still matters if the
         # merge didn't actually resolve any publications — once we have real
         # merged publications, the ambiguity concern is moot.
@@ -444,7 +434,6 @@ def merge_duplicate_faculty(faculty_list, index_to_key, key_to_best_index):
             "pubmed_verified": len(pubs_merged),
             "pubmed_ambiguous": any_ambiguous and len(pubs_merged) == 0,
             "publications": pubs_merged,
-            "nih_grants": grants_merged,
             "collaborators": best.get("collaborators", []),
             "has_student_coauthor": best.get("has_student_coauthor", False),
             "student_coauthor_count": best.get("student_coauthor_count", 0),
@@ -584,6 +573,65 @@ def attach_student_coauthors(faculty_list, student_idx, index_to_key, key_to_bes
     }
 
 
+def trim_for_publishing(faculty_list, max_pubs=0, max_authors=0):
+    """
+    Shrink the published faculty.json without losing anything the site shows.
+
+    Every visitor to the site downloads this file, so its size is page-load
+    time. The uncapped file is ~13.6 MB (~3.6 MB gzipped), and the two things
+    driving that are (a) prolific faculty carrying up to 238 publications and
+    (b) consortium papers carrying up to 634 author names.
+
+    BOTH caps default to off. This function exists as an escape hatch for if
+    the payload ever becomes a real problem, not as normal behaviour — the
+    default path here is a no-op.
+
+    Capping authors was tried and reverted. Capping at 12 saved only ~0.55 MB
+    gzipped, but 31% of publications have more than 12 authors, and on those
+    papers the faculty member whose card you are reading was cut from their
+    own author list 48% of the time. It also cut the LAST author on every
+    long paper — the senior/PI position, which is the most informative slot
+    on the page for a student sizing up a mentor. Medical students appear in
+    the middle of author lists rather than at the ends, so the cap hid
+    precisely the people this site exists to surface.
+
+    Publications are likewise uncapped: the full verified list is the
+    substance of what a student is looking for, and it backs the site's
+    keyword search, so capping it would silently make older work
+    unsearchable.
+
+    When max_authors IS set, the extras are dropped and the true total is
+    recorded as `n_authors` so the frontend can say how many are hidden
+    rather than implying a short author list.
+
+    IMPORTANT: call this AFTER attach_collaborators() and
+    attach_student_coauthors(). Both read the complete publication and author
+    lists, and the student cross-reference in particular needs every author of
+    every paper — trimming first would silently drop student matches on
+    long-author-list papers, which is exactly the kind of silent failure this
+    pipeline has been bitten by before.
+
+    `pubmed_verified` is deliberately NOT recalculated: it reports how many
+    publications were verified for that person, which stays true even though
+    only the most recent max_pubs are shipped to the browser.
+    """
+    pubs_dropped = 0
+    authors_dropped = 0
+    for f in faculty_list:
+        pubs = f.get("publications") or []
+        if len(pubs) > max_pubs:
+            pubs_dropped += len(pubs) - max_pubs
+            pubs = pubs[:max_pubs]
+            f["publications"] = pubs
+        for p in pubs:
+            authors = p.get("authors") or []
+            if len(authors) > max_authors:
+                authors_dropped += len(authors) - max_authors
+                p["n_authors"] = len(authors)
+                p["authors"] = authors[:max_authors]
+    return {"publications_trimmed": pubs_dropped, "authors_trimmed": authors_dropped}
+
+
 def main():
     parser = argparse.ArgumentParser(description="Build research collaborator networks")
     parser.add_argument("--input", default="data/faculty.json")
@@ -597,6 +645,22 @@ def main():
                               "If omitted, student co-author flagging is skipped entirely "
                               "and existing has_student_coauthor/student_coauthors fields "
                               "(if any) are left untouched.")
+    parser.add_argument("--max-pubs", type=int, default=0,
+                         help="Cap publications per faculty in the published JSON "
+                              "(newest first). Default 0 = no cap: a faculty member's "
+                              "full verified publication list is valuable to students "
+                              "and also feeds the site's keyword search, so we ship all "
+                              "of it. Set a number only if payload size becomes a problem.")
+    parser.add_argument("--max-authors", type=int, default=0,
+                         help="Cap authors per publication in the published JSON, "
+                              "recording the true total as n_authors. Default 0 = "
+                              "no cap; capping cuts the senior author and often the "
+                              "faculty member themself. Set only if payload size "
+                              "becomes a real problem.")
+    parser.add_argument("--indent", type=int, default=0,
+                         help="Pretty-print the output JSON with this indent. "
+                              "Default 0 (compact) — the file is browser-read only "
+                              "and indenting adds ~50%% to every visitor's download.")
     parser.add_argument("--keep-duplicates", action="store_true",
                          help="Skip merge_duplicate_faculty() and leave one raw entry per "
                               "scraped department page (old behavior) instead of collapsing "
@@ -656,9 +720,37 @@ def main():
         data["faculty"] = merged_list
         data["total_faculty"] = len(merged_list)
 
+    # Trim last — collaborator counting and student matching above both need
+    # the complete publication and author lists.
+    if args.max_pubs or args.max_authors:
+        trim_stats = trim_for_publishing(
+            data["faculty"],
+            max_pubs=args.max_pubs or 10**9,
+            max_authors=args.max_authors or 10**9,
+        )
+        print(f"Trimmed for publishing: dropped {trim_stats['publications_trimmed']} "
+              f"older publication(s) beyond --max-pubs={args.max_pubs} and "
+              f"{trim_stats['authors_trimmed']} author name(s) beyond "
+              f"--max-authors={args.max_authors} (true totals preserved as n_authors)")
+
+    # Written compact, not indent=2. This file is only ever read by the
+    # browser, and pretty-printing 2,666 records adds roughly 50% pure
+    # whitespace to something every visitor downloads (and that gets
+    # committed to git every week). Use --indent 2 if you need to eyeball it.
     with open(args.output, "w") as f:
-        json.dump(data, f, indent=2)
-    print(f"Written to {args.output}")
+        if args.indent:
+            json.dump(data, f, indent=args.indent)
+        else:
+            json.dump(data, f, separators=(",", ":"))
+    size_mb = os.path.getsize(args.output) / 1e6
+    print(f"Written to {args.output} ({size_mb:.1f} MB)")
+    # Uncompressed size. GitHub Pages serves this gzipped, which cuts it by
+    # roughly 70%, so the number that matters to a visitor is ~0.3x this.
+    # Threshold is set well above the normal uncapped size (~13 MB) so it
+    # only fires if something has genuinely gotten out of hand.
+    if size_mb > 25:
+        print(f"⚠ {args.output} is {size_mb:.1f} MB uncompressed — every site visitor "
+              f"downloads this file. Consider --max-pubs / --max-authors.")
 
 
 if __name__ == "__main__":
