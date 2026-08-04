@@ -666,7 +666,7 @@ function renderCard(f) {
 
   const verifiedCount = f.pubmed_verified || f.pubmed_count || 0;
   const pubBadge = verifiedCount > 0
-    ? `<span class="badge badge-pubmed">📄 ${verifiedCount} verified publications</span>`
+    ? `<span class="badge badge-pubmed">📄 ${verifiedCount} UNC-verified publications</span>`
     : (f.pubmed_ambiguous
         ? `<span class="badge" style="background:#FEF3E2;color:#92580A">⚠ Publications need verification</span>`
         : "");
