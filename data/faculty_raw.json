@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T07:18:00.037956Z",
+  "generated_at": "2026-08-04T15:39:19.843819Z",
   "total_faculty": 2759,
   "departments": [
     "Medicine \u2014 Cardiology",
@@ -1979,6 +1979,15 @@
     {
       "name": "Carol Carden",
       "profile_url": "https://www.med.unc.edu/medicine/im/people/carol-carden/",
+      "department": "Medicine \u2014 General Medicine & Clinical Epidemiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 General Medicine & Clinical Epidemiology"
+      ]
+    },
+    {
+      "name": "Anthony Golka",
+      "profile_url": "https://www.med.unc.edu/medicine/im/people/anthony-golka-ms-gc/",
       "department": "Medicine \u2014 General Medicine & Clinical Epidemiology",
       "role": "",
       "departments": [
@@ -6733,15 +6742,6 @@
       ]
     },
     {
-      "name": "Elisabeth Leong",
-      "profile_url": "https://www.med.unc.edu/pediatrics/people/elisabeth-leong-do-mscr/",
-      "department": "Pediatrics",
-      "role": "Down Provider",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
       "name": "Kate Westmoreland",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/kate-westmoreland-md/",
       "department": "Pediatrics",
@@ -7998,15 +7998,6 @@
       "profile_url": "https://www.med.unc.edu/pediatrics/people/nicole-stephenson-md/",
       "department": "Pediatrics",
       "role": "Pulm",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Terry L. Noah",
-      "profile_url": "https://www.med.unc.edu/pediatrics/people/terry-l-noah-md/",
-      "department": "Pediatrics",
-      "role": "Airway",
       "departments": [
         "Pediatrics"
       ]
@@ -9991,6 +9982,15 @@
       "role": "",
       "departments": [
         "Surgery \u2014 Plastic & Reconstructive Surgery"
+      ]
+    },
+    {
+      "name": "Michael Weber",
+      "profile_url": "https://www.med.unc.edu/psych/people/michael-weber-md/",
+      "department": "Psychiatry",
+      "role": "Clinician",
+      "departments": [
+        "Psychiatry"
       ]
     },
     {
@@ -20441,6 +20441,16 @@
       ]
     },
     {
+      "name": "Benjamin J. Frankfort",
+      "profile_url": "https://www.med.unc.edu/ophth/directory/benjamin-j-frankfort-mdphd/",
+      "department": "Ophthalmology",
+      "role": "",
+      "departments": [
+        "Ophthalmology"
+      ],
+      "pubmed_hint": "Frankfort B"
+    },
+    {
       "name": "David A. Belyea",
       "profile_url": "https://www.med.unc.edu/ophth/directory/david-a-belyea-md-mba-faao-facs/",
       "department": "Ophthalmology",
@@ -22533,16 +22543,6 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ]
-    },
-    {
-      "name": "Shawn Gomez",
-      "profile_url": "https://unclineberger.org/directory/shawn-gomez/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "gomez shawn"
     },
     {
       "name": "Paul Googe",
