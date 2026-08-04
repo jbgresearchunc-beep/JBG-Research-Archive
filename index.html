@@ -61,6 +61,98 @@
       text-align: right;
     }
 
+    /* Data-quality notice. Dismissible, with an optional "don't show again"
+       that persists in localStorage. Two safeguards keep the disclaimer from
+       disappearing for good: the same text lives permanently in the footer,
+       and an "About this data" button in the controls bar reopens this panel
+       at any time. NOTICE_VERSION below is bumped whenever the wording changes
+       materially, which re-shows the notice to people who dismissed an older
+       version. */
+    .notice {
+      background: var(--accent-amber-bg);
+      color: var(--accent-amber-text);
+      border-bottom: 1px solid #f0dcbc;
+      padding: 0.6rem 2rem;
+      font-size: 0.8rem;
+      line-height: 1.5;
+    }
+    .notice-summary {
+      cursor: pointer;
+      font-weight: 600;
+      list-style: none;
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+    }
+    .notice-summary::-webkit-details-marker { display: none; }
+    .notice-summary::after {
+      content: "Read more";
+      font-weight: 600;
+      text-decoration: underline;
+      margin-left: auto;
+      white-space: nowrap;
+      opacity: 0.85;
+    }
+    .notice details[open] .notice-summary::after { content: "Show less"; }
+    .notice-summary:focus-visible { outline: 2px solid var(--accent-amber-text); outline-offset: 2px; }
+    .notice-body {
+      margin-top: 0.5rem;
+      font-weight: 400;
+      max-width: 70ch;
+    }
+    .notice-body ul { margin: 0.35rem 0 0.35rem 1.1rem; }
+    .notice-body li { margin-bottom: 0.2rem; }
+    .notice a { color: inherit; font-weight: 600; }
+    .notice-actions {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      margin-top: 0.55rem;
+    }
+    .notice-actions button {
+      font-family: inherit;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: var(--radius-sm);
+      border: 1px solid transparent;
+      padding: 3px 10px;
+      color: var(--accent-amber-text);
+      background: rgba(146, 88, 10, 0.10);
+    }
+    .notice-actions button:hover { background: rgba(146, 88, 10, 0.18); }
+    .notice-actions .notice-never {
+      background: none;
+      padding-left: 0;
+      padding-right: 0;
+      text-decoration: underline;
+      font-weight: 500;
+      opacity: 0.85;
+    }
+    .notice-actions .notice-never:hover { background: none; opacity: 1; }
+    .notice-actions button:focus-visible {
+      outline: 2px solid var(--accent-amber-text);
+      outline-offset: 2px;
+    }
+
+    .about-data-btn {
+      font-family: inherit;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent-amber-text);
+      background: var(--accent-amber-bg);
+      border: 1px solid #f0dcbc;
+      border-radius: var(--radius-sm);
+      padding: 0.45rem 0.7rem;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .about-data-btn:hover { background: #fdebd0; }
+    .about-data-btn:focus-visible {
+      outline: 2px solid var(--accent-amber-text);
+      outline-offset: 2px;
+    }
+
     .controls-bar {
       background: var(--surface);
       border-bottom: 1px solid var(--border);
@@ -239,10 +331,6 @@
       background: var(--accent-blue-bg);
       color: var(--accent-blue-text);
     }
-    .badge-nih {
-      background: var(--accent-green-bg);
-      color: var(--accent-green-text);
-    }
     .badge-student {
       background: var(--accent-purple-bg);
       color: var(--accent-purple-text);
@@ -271,10 +359,38 @@
       text-decoration: none;
     }
     .pub-title a:hover { color: var(--carolina-blue); }
+    .pub-authors {
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-top: 2px;
+      line-height: 1.35;
+    }
+    .pub-authors-more {
+      color: var(--accent-blue-text);
+      font-weight: 600;
+      white-space: nowrap;
+    }
     .pub-journal {
       font-size: 0.72rem;
       color: var(--muted);
       margin-top: 1px;
+    }
+    .pubs-toggle {
+      margin-top: 6px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--accent-blue-text);
+      background: none;
+      border: none;
+      padding: 2px 0;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    .pubs-toggle:hover { color: var(--carolina-blue); }
+    .pubs-toggle:focus-visible {
+      outline: 2px solid var(--carolina-blue);
+      outline-offset: 2px;
+      border-radius: 2px;
     }
     .no-pubs {
       font-size: 0.8rem;
@@ -282,28 +398,6 @@
       font-style: italic;
     }
 
-    .grants-label {
-      font-size: 0.72rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: var(--muted);
-      margin-bottom: 4px;
-    }
-    .grant {
-      font-size: 0.78rem;
-      padding: 4px 8px;
-      background: var(--accent-green-bg);
-      border-radius: var(--radius-sm);
-      color: var(--accent-green-text);
-      margin-bottom: 4px;
-      line-height: 1.35;
-    }
-    .grant-year {
-      font-size: 0.7rem;
-      opacity: 0.7;
-      margin-top: 1px;
-    }
 
     /* Collaborators */
     .collabs-label {
@@ -546,7 +640,7 @@
     .modal-profile-link:hover { text-decoration: underline; }
 
     @media (max-width: 600px) {
-      header, .controls-bar, main { padding-left: 1rem; padding-right: 1rem; }
+      header, .controls-bar, main, .notice { padding-left: 1rem; padding-right: 1rem; }
       .grid { grid-template-columns: 1fr; }
     }
   </style>
@@ -561,6 +655,38 @@
   <div class="spacer"></div>
   <div class="updated" id="updatedLabel"></div>
 </header>
+
+<div class="notice" id="dataNotice" hidden>
+  <details>
+    <summary class="notice-summary">
+      <span>⚠</span>
+      <span>This list is compiled automatically and may be incomplete.</span>
+    </summary>
+    <div class="notice-body">
+      <p>Faculty names are gathered by a script that reads public UNC School of Medicine
+      department pages, then matches each name against PubMed. That means:</p>
+      <ul>
+        <li><strong>People are missing.</strong> Anyone whose department page the script
+        can't read, or who joined since the last weekly update, won't appear here.</li>
+        <li><strong>"No indexed publications" often means we couldn't match the name</strong> —
+        not that someone hasn't published. Common surnames and name changes are especially
+        hard to match.</li>
+        <li><strong>Publications may be attributed to the wrong person.</strong> Name
+        matching is imperfect, particularly for common surnames.</li>
+        <li><strong>Titles and departments may be out of date</strong> relative to the
+        department's own page, which is always the authoritative source.</li>
+      </ul>
+      <p>Before reaching out to a potential mentor, check their department profile and
+      PubMed directly. If something here is wrong about you, or you'd like your entry
+      removed, email <a href="mailto:jgbresearch@unc.edu">jgbresearch@unc.edu</a> — we'll
+      fix or remove it, no explanation needed.</p>
+    </div>
+  </details>
+  <div class="notice-actions">
+    <button type="button" id="noticeDismiss">Got it</button>
+    <button type="button" id="noticeNeverShow" class="notice-never">Don't show this again</button>
+  </div>
+</div>
 
 <div class="controls-bar">
   <div class="search-wrap">
@@ -581,6 +707,7 @@
     <input type="checkbox" id="studentOnlyFilter" onchange="applyFilters()">
     🎓 Published with students only
   </label>
+  <button type="button" class="about-data-btn" id="aboutDataBtn">⚠ About this data</button>
   <span class="count-label" id="countLabel"></span>
 </div>
 
@@ -590,12 +717,18 @@
 </main>
 
 <footer>
-  Data sourced from <a href="https://pubmed.ncbi.nlm.nih.gov" target="_blank">PubMed</a> and
-  <a href="https://reporter.nih.gov" target="_blank">NIH RePORTER</a>.
-  Faculty lists scraped from UNC SOM department pages.
+  Publication data from <a href="https://pubmed.ncbi.nlm.nih.gov" target="_blank">PubMed</a>.
+  Faculty lists compiled automatically from public UNC School of Medicine department pages.
   🎓 marks faculty who have published with a JBG Research Day medical student.
-  Updated weekly · Built by JBG Research Society ·
-  <a href="https://github.com/YOUR-ORG/unc-research-explorer" target="_blank">GitHub</a>
+  <br>
+  This is a student-run project of the JBG Research Society. It is not an official
+  UNC School of Medicine directory and is not endorsed by or affiliated with the University.
+  <br>
+  <strong>Something wrong, or want your entry removed?</strong>
+  Email <a href="mailto:jgbresearch@unc.edu">jgbresearch@unc.edu</a> and we'll correct or
+  remove it — no explanation needed.
+  <br>
+  Updated weekly · <a href="https://github.com/smmaingi/unc-research-explorer" target="_blank">Source code</a>
 </footer>
 
 <!-- Research network modal -->
@@ -624,8 +757,9 @@ let FACULTY_BY_NAME = {};
 let NET_TRAIL = []; // breadcrumb trail of names for the network modal
 
 function initials(name) {
-  const parts = name.trim().split(/\s+/);
-  if (parts.length < 2) return name.slice(0, 2).toUpperCase();
+  const parts = (name || "").trim().split(/\s+/).filter(Boolean);
+  if (parts.length === 0) return "?";
+  if (parts.length < 2) return parts[0].slice(0, 2).toUpperCase();
   return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
 }
 
@@ -654,10 +788,43 @@ function renderDeptBadges(f) {
   return depts.map(d => `<span class="badge badge-dept">${escapeHtml(d)}</span>`).join("");
 }
 
+// Author lists are capped in the published data (see trim_for_publishing in
+// build_collaborators.py) so the file every visitor downloads stays reasonable.
+// When a paper was truncated, `n_authors` holds the true total so we can say
+// how many are hidden rather than silently implying a short author list.
+function renderAuthors(p) {
+  const authors = p.authors || [];
+  if (authors.length === 0) return "";
+  const shown = authors.map(escapeHtml).join(", ");
+  const hidden = (p.n_authors || authors.length) - authors.length;
+  const more = hidden > 0
+    ? ` <span class="pub-authors-more">+${hidden} more</span>`
+    : "";
+  return `<div class="pub-authors">${shown}${more}</div>`;
+}
+
+// Number of publications shown on a collapsed card. The DATA is uncapped —
+// every verified publication ships in faculty.json and is keyword-searchable —
+// but rendering all ~26,000 of them across 2,600+ cards at once would make the
+// grid crawl. So we render this many up front and fill in the rest on demand.
+const PUBS_COLLAPSED = 4;
+
+function renderPubItems(pubs) {
+  return pubs.map(p => `
+    <li class="pub">
+      <div class="pub-title">
+        <a href="https://pubmed.ncbi.nlm.nih.gov/${escapeHtml(p.pmid)}/" target="_blank">
+          ${escapeHtml(p.title)}
+        </a>
+      </div>
+      ${renderAuthors(p)}
+      <div class="pub-journal">${escapeHtml(p.journal)}${p.year ? " · " + p.year : ""}</div>
+    </li>`).join("");
+}
+
 function renderCard(f) {
   const init = initials(f.name);
-  const pubs = (f.publications || []).slice(0, 4);
-  const grants = (f.nih_grants || []).slice(0, 2);
+  const allPubs = f.publications || [];
   const collaborators = f.collaborators || [];
   const studentCoauthors = f.student_coauthors || [];
   const hasStudents = !!f.has_student_coauthor;
@@ -670,9 +837,6 @@ function renderCard(f) {
     : (f.pubmed_ambiguous
         ? `<span class="badge" style="background:#FEF3E2;color:#92580A">⚠ Publications need verification</span>`
         : "");
-  const nihBadge = grants.length > 0
-    ? `<span class="badge badge-nih">🏛 NIH funded</span>`
-    : "";
   const studentBadge = hasStudents
     ? `<span class="badge badge-student">🎓 ${f.student_coauthor_count} student co-author${f.student_coauthor_count === 1 ? "" : "s"}</span>`
     : "";
@@ -688,37 +852,18 @@ function renderCard(f) {
     : "";
 
   let pubsHtml = "";
-  if (pubs.length > 0) {
+  if (allPubs.length > 0) {
+    const hidden = allPubs.length - PUBS_COLLAPSED;
     pubsHtml = `
       <div>
-        <div class="pubs-label">Recent publications</div>
-        <ul class="pubs-list">
-          ${pubs.map(p => `
-            <li class="pub">
-              <div class="pub-title">
-                <a href="https://pubmed.ncbi.nlm.nih.gov/${escapeHtml(p.pmid)}/" target="_blank">
-                  ${escapeHtml(p.title)}
-                </a>
-              </div>
-              <div class="pub-journal">${escapeHtml(p.journal)}${p.year ? " · " + p.year : ""}</div>
-            </li>`).join("")}
+        <div class="pubs-label">Publications${allPubs.length > PUBS_COLLAPSED ? ` · ${allPubs.length} verified` : ""}</div>
+        <ul class="pubs-list" data-pubs-for="${escapeHtml(f.name)}">
+          ${renderPubItems(allPubs.slice(0, PUBS_COLLAPSED))}
         </ul>
+        ${hidden > 0 ? `<button class="pubs-toggle" data-pubs-toggle="${escapeHtml(f.name)}" data-expanded="false">Show all ${allPubs.length} publications</button>` : ""}
       </div>`;
   } else {
     pubsHtml = `<div class="no-pubs">No indexed publications found via PubMed</div>`;
-  }
-
-  let grantsHtml = "";
-  if (grants.length > 0) {
-    grantsHtml = `
-      <div>
-        <div class="grants-label">Active NIH grants</div>
-        ${grants.map(g => `
-          <div class="grant">
-            ${escapeHtml(g.title)}
-            ${g.fiscal_year ? `<div class="grant-year">FY${g.fiscal_year}</div>` : ""}
-          </div>`).join("")}
-      </div>`;
   }
 
   let collabsHtml = "";
@@ -759,10 +904,9 @@ function renderCard(f) {
       </div>
       <div class="badges">
         ${renderDeptBadges(f)}
-        ${pubBadge}${nihBadge}${studentBadge}
+        ${pubBadge}${studentBadge}
       </div>
       ${pubsHtml}
-      ${grantsHtml}
       ${studentsHtml}
       ${collabsHtml}
     </div>`;
@@ -783,7 +927,6 @@ function applyFilters() {
       f.name,
       f.role,
       (f.publications || []).map(p => p.title + " " + p.journal).join(" "),
-      (f.nih_grants || []).map(g => g.title).join(" "),
       (f.student_coauthors || []).map(s => s.student).join(" "),
     ].join(" ").toLowerCase();
     return haystack.includes(query);
@@ -812,6 +955,63 @@ function applyFilters() {
     grid.innerHTML = filtered.map(renderCard).join("");
   }
 }
+
+/* ---------------- Data-quality notice ---------------- */
+
+// Bump this whenever the notice text changes in a way people should re-read.
+// Anyone who chose "Don't show this again" against an older version will see
+// the new one once.
+const NOTICE_VERSION = 1;
+const NOTICE_KEY = "unc-re-notice-dismissed-version";
+
+// localStorage throws in private-browsing modes and some embedded webviews.
+// Failing closed (showing the notice) is the safe direction for a disclaimer.
+function noticeSuppressed() {
+  try {
+    return parseInt(localStorage.getItem(NOTICE_KEY), 10) >= NOTICE_VERSION;
+  } catch (e) {
+    return false;
+  }
+}
+
+function suppressNoticePermanently() {
+  try {
+    localStorage.setItem(NOTICE_KEY, String(NOTICE_VERSION));
+  } catch (e) {
+    /* Storage unavailable — the notice will simply reappear next visit. */
+  }
+}
+
+function hideNotice() {
+  document.getElementById("dataNotice").hidden = true;
+}
+
+function showNotice(expand) {
+  const el = document.getElementById("dataNotice");
+  el.hidden = false;
+  if (expand) {
+    const details = el.querySelector("details");
+    if (details) details.open = true;
+    el.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+}
+
+function initNotice() {
+  if (!noticeSuppressed()) showNotice(false);
+
+  document.getElementById("noticeDismiss").addEventListener("click", hideNotice);
+  document.getElementById("noticeNeverShow").addEventListener("click", () => {
+    suppressNoticePermanently();
+    hideNotice();
+  });
+  // Always reachable, so dismissing is never irreversible.
+  document.getElementById("aboutDataBtn").addEventListener("click", () => {
+    const el = document.getElementById("dataNotice");
+    if (el.hidden) showNotice(true); else hideNotice();
+  });
+}
+
+initNotice();
 
 /* ---------------- Research network modal ---------------- */
 
@@ -842,6 +1042,28 @@ document.addEventListener("keydown", (e) => {
 document.getElementById("grid").addEventListener("click", (e) => {
   const btn = e.target.closest(".network-btn");
   if (btn) openNetworkModal(btn.dataset.networkName);
+
+  // Expand/collapse a card's publication list. The full list is already in
+  // memory (faculty.json ships every verified publication) — we just don't
+  // paint it until asked, so the initial grid render stays fast.
+  const toggle = e.target.closest(".pubs-toggle");
+  if (toggle) {
+    const name = toggle.dataset.pubsToggle;
+    const person = FACULTY_BY_NAME[name];
+    const list = document.querySelector(`.pubs-list[data-pubs-for="${CSS.escape(name)}"]`);
+    if (!person || !list) return;
+    const pubs = person.publications || [];
+    const expanded = toggle.dataset.expanded === "true";
+    if (expanded) {
+      list.innerHTML = renderPubItems(pubs.slice(0, PUBS_COLLAPSED));
+      toggle.dataset.expanded = "false";
+      toggle.textContent = `Show all ${pubs.length} publications`;
+    } else {
+      list.innerHTML = renderPubItems(pubs);
+      toggle.dataset.expanded = "true";
+      toggle.textContent = "Show fewer";
+    }
+  }
 });
 
 function centerOn(name) {
@@ -1002,8 +1224,8 @@ function renderNetwork(name) {
 function firstLastShort(name) {
   // Shorten long names for the small label under each node, e.g.
   // "Christine E. DeMason" -> "C. DeMason"
-  const parts = name.trim().split(/\s+/);
-  if (parts.length <= 2) return name;
+  const parts = (name || "").trim().split(/\s+/).filter(Boolean);
+  if (parts.length <= 2) return name || "";
   const first = parts[0];
   const last = parts[parts.length - 1];
   return `${first[0]}. ${last}`;
