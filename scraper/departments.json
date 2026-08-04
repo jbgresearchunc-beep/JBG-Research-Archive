@@ -179,7 +179,12 @@
     {
       "name": "Orthopaedics",
       "short": "Orthopaedics",
-      "url": "https://www.med.unc.edu/ortho/about-us/faculty/"
+      "_note": "The /about-us/faculty/ page only renders the first alphabetical page (B-D, 10 people). Actual profiles live under /ortho/directory/, which is a paginated archive - listing it first lets the auto-pagination in scrape_only() walk /page/2/, /page/3/, ... The old URL is kept as a fallback in case the directory archive moves.",
+      "urls": [
+        "https://www.med.unc.edu/ortho/directory/",
+        "https://www.med.unc.edu/ortho/about-us/faculty/"
+      ],
+      "profile_base": "https://www.med.unc.edu/ortho/directory"
     },
     {
       "name": "Otolaryngology / Head & Neck Surgery",
