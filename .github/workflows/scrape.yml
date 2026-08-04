@@ -9,16 +9,12 @@ on:
         description: "TEST a single department (e.g. 'Cardiology', 'ENT'). Writes to faculty_test.json, does NOT touch the real data. Leave blank for a full production run."
         required: false
         default: ""
-      skip_nih:
-        description: "Skip NIH RePORTER step to save time"
-        required: false
-        default: "false"
       scrape_only:
-        description: "Only run Steps 1+2 (scrape + profile visits), skip PubMed/NIH"
+        description: "Only run Steps 1+2 (scrape + profile visits), skip PubMed"
         required: false
         default: "false"
       enrich_only:
-        description: "Only run Steps 3+4 (PubMed + NIH) using existing faculty_raw.json"
+        description: "Only run Step 3 (PubMed) using existing faculty_raw.json"
         required: false
         default: "false"
 
@@ -85,30 +81,24 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Step 3+4 — PubMed and NIH enrichment
+      - name: Step 3 — PubMed enrichment
         if: ${{ github.event.inputs.scrape_only != 'true' }}
         env:
           NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
           DEPT_FILTER: ${{ github.event.inputs.department_filter }}
-          SKIP_NIH: ${{ github.event.inputs.skip_nih }}
         run: |
           DEPT_ARG=""
           if [ -n "$DEPT_FILTER" ]; then
             DEPT_ARG="--dept $DEPT_FILTER"
-          fi
-          NIH_ARG=""
-          if [ "$SKIP_NIH" = "true" ]; then
-            NIH_ARG="--skip-nih"
           fi
           python scraper/scrape.py \
             --config scraper/departments.json \
             --raw-output ${{ steps.paths.outputs.raw }} \
             --output ${{ steps.paths.outputs.out }} \
             --enrich-only \
-            $NIH_ARG \
             $DEPT_ARG
 
-      - name: Step 5 — Build research collaborator networks
+      - name: Step 4 — Build research collaborator networks
         if: ${{ github.event.inputs.scrape_only != 'true' }}
         run: |
           python scraper/build_collaborators.py \
