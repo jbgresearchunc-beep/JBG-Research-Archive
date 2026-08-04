@@ -370,6 +370,23 @@
       font-weight: 600;
       white-space: nowrap;
     }
+    .authors-more {
+      font-family: inherit;
+      font-size: inherit;
+      color: var(--accent-blue-text);
+      font-weight: 600;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .authors-more:hover { text-decoration: underline; }
+    .authors-more:focus-visible {
+      outline: 2px solid var(--carolina-blue);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
     .pub-journal {
       font-size: 0.72rem;
       color: var(--muted);
@@ -788,21 +805,6 @@ function renderDeptBadges(f) {
   return depts.map(d => `<span class="badge badge-dept">${escapeHtml(d)}</span>`).join("");
 }
 
-// Author lists are capped in the published data (see trim_for_publishing in
-// build_collaborators.py) so the file every visitor downloads stays reasonable.
-// When a paper was truncated, `n_authors` holds the true total so we can say
-// how many are hidden rather than silently implying a short author list.
-function renderAuthors(p) {
-  const authors = p.authors || [];
-  if (authors.length === 0) return "";
-  const shown = authors.map(escapeHtml).join(", ");
-  const hidden = (p.n_authors || authors.length) - authors.length;
-  const more = hidden > 0
-    ? ` <span class="pub-authors-more">+${hidden} more</span>`
-    : "";
-  return `<div class="pub-authors">${shown}${more}</div>`;
-}
-
 // Number of publications shown on a collapsed card. The DATA is uncapped —
 // every verified publication ships in faculty.json and is keyword-searchable —
 // but rendering all ~26,000 of them across 2,600+ cards at once would make the
@@ -820,6 +822,37 @@ function renderPubItems(pubs) {
       ${renderAuthors(p)}
       <div class="pub-journal">${escapeHtml(p.journal)}${p.year ? " · " + p.year : ""}</div>
     </li>`).join("");
+}
+
+// Every author of every publication ships in faculty.json — nothing is
+// dropped server-side, because the faculty member themself and the senior
+// (last) author both routinely sit deep in a long list. But a 634-author
+// consortium paper would be a wall of text on a card, so the limit lives
+// here in the display: show the first few, keep the rest in the DOM behind
+// a toggle. `n_authors` is only present if someone ran the build with
+// --max-authors, in which case those names genuinely aren't available.
+const AUTHORS_COLLAPSED = 10;
+
+function renderAuthors(p) {
+  const authors = p.authors || [];
+  if (authors.length === 0) return "";
+  const shown = authors.slice(0, AUTHORS_COLLAPSED).map(escapeHtml).join(", ");
+
+  // Names trimmed out of the data entirely (only when --max-authors was set).
+  const trimmedAway = (p.n_authors || authors.length) - authors.length;
+  const trimmedNote = trimmedAway > 0
+    ? `<span class="pub-authors-more"> +${trimmedAway} more</span>`
+    : "";
+
+  if (authors.length <= AUTHORS_COLLAPSED) {
+    return `<div class="pub-authors">${shown}${trimmedNote}</div>`;
+  }
+
+  const rest = authors.slice(AUTHORS_COLLAPSED).map(escapeHtml).join(", ");
+  const hidden = authors.length - AUTHORS_COLLAPSED;
+  return `<div class="pub-authors">${shown}<span class="authors-rest" hidden>, ${rest}</span>` +
+    `<button type="button" class="authors-more" data-expanded="false">, +${hidden} more</button>` +
+    `${trimmedNote}</div>`;
 }
 
 function renderCard(f) {
@@ -1046,6 +1079,22 @@ document.getElementById("grid").addEventListener("click", (e) => {
   // Expand/collapse a card's publication list. The full list is already in
   // memory (faculty.json ships every verified publication) — we just don't
   // paint it until asked, so the initial grid render stays fast.
+  // Expand a long author list in place.
+  const authorsBtn = e.target.closest(".authors-more");
+  if (authorsBtn) {
+    const wrap = authorsBtn.parentElement;
+    const rest = wrap.querySelector(".authors-rest");
+    if (rest) {
+      const expanded = authorsBtn.dataset.expanded === "true";
+      rest.hidden = expanded;
+      authorsBtn.dataset.expanded = expanded ? "false" : "true";
+      authorsBtn.textContent = expanded
+        ? `, +${rest.textContent.split(", ").filter(Boolean).length} more`
+        : " show fewer";
+    }
+    return;
+  }
+
   const toggle = e.target.closest(".pubs-toggle");
   if (toggle) {
     const name = toggle.dataset.pubsToggle;
