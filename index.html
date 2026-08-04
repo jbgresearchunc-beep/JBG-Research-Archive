@@ -718,6 +718,10 @@
     <option value="students">Sort: Most student co-authors</option>
   </select>
   <label class="toggle-wrap">
+    <input type="checkbox" id="hasPubsFilter" onchange="applyFilters()">
+    📄 Has UNC-verified publications
+  </label>
+  <label class="toggle-wrap">
     <input type="checkbox" id="studentOnlyFilter" onchange="applyFilters()">
     🎓 Published with students only
   </label>
@@ -947,8 +951,13 @@ function applyFilters() {
   const dept = document.getElementById("deptFilter").value;
   const sort = document.getElementById("sortBy").value;
   const studentOnly = document.getElementById("studentOnlyFilter").checked;
+  const hasPubsOnly = document.getElementById("hasPubsFilter").checked;
 
-  let filtered = ALL_FACULTY.filter(f => {
+  // Applied in two passes so we can tell the user exactly how many people the
+  // publications filter is hiding *within their current search and department*,
+  // rather than a fixed site-wide number that would be wrong the moment they
+  // filter to one department.
+  let matched = ALL_FACULTY.filter(f => {
     const allDepts = f.departments && f.departments.length ? f.departments : [f.department];
     if (dept && !allDepts.includes(dept)) return false;
     if (studentOnly && !f.has_student_coauthor) return false;
@@ -962,6 +971,16 @@ function applyFilters() {
     return haystack.includes(query);
   });
 
+  // A faculty member with zero publications is usually a NAME-MATCHING
+  // FAILURE, not someone who hasn't published — the chief of a division can
+  // land here because PubMed indexes them by initials. So this filter hides
+  // them from the default view rather than removing them from the data, and
+  // the count below always says how many are being hidden.
+  const withoutPubs = matched.filter(f => !(f.publications || []).length).length;
+  let filtered = hasPubsOnly
+    ? matched.filter(f => (f.publications || []).length > 0)
+    : matched;
+
   if (sort === "pubs") {
     filtered.sort((a, b) => (b.pubmed_verified || b.pubmed_count || 0) - (a.pubmed_verified || a.pubmed_count || 0));
   } else if (sort === "students") {
@@ -972,8 +991,11 @@ function applyFilters() {
 
   VISIBLE_FACULTY = filtered;
   const grid = document.getElementById("grid");
+  const hiddenNote = (hasPubsOnly && withoutPubs > 0)
+    ? ` · ${withoutPubs.toLocaleString()} hidden`
+    : "";
   document.getElementById("countLabel").textContent =
-    `${filtered.length} of ${ALL_FACULTY.length} faculty`;
+    `${filtered.length.toLocaleString()} of ${ALL_FACULTY.length.toLocaleString()} faculty${hiddenNote}`;
 
   if (filtered.length === 0) {
     grid.innerHTML = `
@@ -1073,9 +1095,6 @@ document.getElementById("grid").addEventListener("click", (e) => {
   const btn = e.target.closest(".network-btn");
   if (btn) openNetworkModal(btn.dataset.networkName);
 
-  // Expand/collapse a card's publication list. The full list is already in
-  // memory (faculty.json ships every verified publication) — we just don't
-  // paint it until asked, so the initial grid render stays fast.
   // Expand a long author list in place.
   const authorsBtn = e.target.closest(".authors-more");
   if (authorsBtn) {
@@ -1092,6 +1111,9 @@ document.getElementById("grid").addEventListener("click", (e) => {
     return;
   }
 
+  // Expand/collapse a card's publication list. The full list is already in
+  // memory (faculty.json ships every verified publication) — we just don't
+  // paint it until asked, so the initial grid render stays fast.
   const toggle = e.target.closest(".pubs-toggle");
   if (toggle) {
     const name = toggle.dataset.pubsToggle;
