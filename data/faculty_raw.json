@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-04T15:39:19.843819Z",
-  "total_faculty": 2759,
+  "generated_at": "2026-08-09T05:43:21.408088Z",
+  "total_faculty": 2762,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -352,6 +352,15 @@
     {
       "name": "Sidney C. Smith",
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sidney-smith/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Zachary S. Tugaoen",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/zachary-s-tugaoen-md/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
@@ -3284,6 +3293,15 @@
     {
       "name": "Courtney Detwiler",
       "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/courtney-detwiler/",
+      "department": "Medicine \u2014 Hospital Medicine",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hospital Medicine"
+      ]
+    },
+    {
+      "name": "Maggie Fennell",
+      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/maggie-fennell-md/",
       "department": "Medicine \u2014 Hospital Medicine",
       "role": "",
       "departments": [
@@ -6418,6 +6436,15 @@
       ]
     },
     {
+      "name": "Stephanie Martinez",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/stephanie-martinez-md/",
+      "department": "Pediatrics",
+      "role": "Npm",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
       "name": "Claire Hailey",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/claire-hailey-md/",
       "department": "Pediatrics",
@@ -9503,8 +9530,7 @@
       "department": "Surgery \u2014 General Surgery",
       "role": "",
       "departments": [
-        "Surgery \u2014 General Surgery",
-        "Surgery \u2014 Plastic & Reconstructive Surgery"
+        "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "Carr JC"
     },
@@ -9850,15 +9876,6 @@
       ]
     },
     {
-      "name": "Renee E. Edkins",
-      "profile_url": "https://www.med.unc.edu/surgery/plastic/people/renee-e-edkins-dnp-ma-anp-c/",
-      "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
-      "role": "",
-      "departments": [
-        "Surgery \u2014 Plastic & Reconstructive Surgery"
-      ]
-    },
-    {
       "name": "Payton Leonhardt",
       "profile_url": "https://www.med.unc.edu/surgery/plastic/people/payton-leonhardt-pa-c/",
       "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
@@ -9982,6 +9999,24 @@
       "role": "",
       "departments": [
         "Surgery \u2014 Plastic & Reconstructive Surgery"
+      ]
+    },
+    {
+      "name": "Reaven Coney",
+      "profile_url": "https://www.med.unc.edu/psych/people/reaven-coney/",
+      "department": "Psychiatry",
+      "role": "Cecmh",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
+      "name": "Rachel Harrison",
+      "profile_url": "https://www.med.unc.edu/psych/people/rachel-harrison-md/",
+      "department": "Psychiatry",
+      "role": "Clinician",
+      "departments": [
+        "Psychiatry"
       ]
     },
     {
@@ -12571,15 +12606,6 @@
     {
       "name": "Glenna Osborne",
       "profile_url": "https://www.med.unc.edu/psych/people/glenna-osborne-med/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
-      "name": "Rachel Harrison",
-      "profile_url": "https://www.med.unc.edu/psych/people/rachel-harrison-md/",
       "department": "Psychiatry",
       "role": "Clinician",
       "departments": [
@@ -16508,6 +16534,15 @@
       ]
     },
     {
+      "name": "Katerina Kearns",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/katerina-kearns-md/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ]
+    },
+    {
       "name": "Staci Keene",
       "profile_url": "https://www.med.unc.edu/pathology/directory/sak5n/",
       "department": "Pathology & Laboratory Medicine",
@@ -17529,15 +17564,6 @@
       ]
     },
     {
-      "name": "Randall Coombs",
-      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/randall-coombs/",
-      "department": "Anesthesiology",
-      "role": "",
-      "departments": [
-        "Anesthesiology"
-      ]
-    },
-    {
       "name": "David Creighton",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/david-creighton/",
       "department": "Anesthesiology",
@@ -18368,17 +18394,8 @@
       ]
     },
     {
-      "name": "Joan Tran",
-      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/joan-tran/",
-      "department": "Anesthesiology",
-      "role": "",
-      "departments": [
-        "Anesthesiology"
-      ]
-    },
-    {
-      "name": "Marcus Vranes",
-      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/marcus-vranes/",
+      "name": "Uma Vaidyanathan",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/uma-vaidyanathan/",
       "department": "Anesthesiology",
       "role": "",
       "departments": [
@@ -19949,6 +19966,15 @@
       ]
     },
     {
+      "name": "Blake Barton",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/blake-barton-md/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
       "name": "David J. Berkoff",
       "profile_url": "https://www.med.unc.edu/ortho/directory/berkoff/",
       "department": "Orthopaedics",
@@ -19969,6 +19995,15 @@
     {
       "name": "April Berndt",
       "profile_url": "https://www.med.unc.edu/ortho/directory/berndt/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Travis Bryan",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/travis-bryan-do/",
       "department": "Orthopaedics",
       "role": "",
       "departments": [
@@ -20005,24 +20040,6 @@
     {
       "name": "R. Alexander Creighton",
       "profile_url": "https://www.med.unc.edu/ortho/directory/creighton/",
-      "department": "Orthopaedics",
-      "role": "",
-      "departments": [
-        "Orthopaedics"
-      ]
-    },
-    {
-      "name": "Amanda Dombrowski",
-      "profile_url": "https://www.med.unc.edu/ortho/directory/dombrowski/",
-      "department": "Orthopaedics",
-      "role": "",
-      "departments": [
-        "Orthopaedics"
-      ]
-    },
-    {
-      "name": "Reid W. Draeger",
-      "profile_url": "https://www.med.unc.edu/ortho/directory/draeger/",
       "department": "Orthopaedics",
       "role": "",
       "departments": [
@@ -20561,6 +20578,15 @@
     {
       "name": "Sinthu Ranjan",
       "profile_url": "https://www.med.unc.edu/ophth/directory/sinthu-ranjan-md/",
+      "department": "Ophthalmology",
+      "role": "",
+      "departments": [
+        "Ophthalmology"
+      ]
+    },
+    {
+      "name": "Ozge Sarac",
+      "profile_url": "https://www.med.unc.edu/ophth/directory/ozge-sarac/",
       "department": "Ophthalmology",
       "role": "",
       "departments": [
