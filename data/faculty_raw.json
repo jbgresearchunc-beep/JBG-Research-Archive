@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-09T05:43:21.408088Z",
-  "total_faculty": 2762,
+  "generated_at": "2026-08-16T05:09:26.610630Z",
+  "total_faculty": 2770,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -2923,16 +2923,6 @@
       ]
     },
     {
-      "name": "Christopher Dittus",
-      "profile_url": "https://www.med.unc.edu/medicine/hematology/people/christopher-dittus-do-mph/",
-      "department": "Medicine \u2014 Hematology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Hematology",
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
       "name": "Natalie Grover",
       "profile_url": "https://www.med.unc.edu/medicine/hematology/people/natalie-grover-md/",
       "department": "Medicine \u2014 Hematology",
@@ -4673,24 +4663,6 @@
       ]
     },
     {
-      "name": "Teresa Benvenuti",
-      "profile_url": "https://www.med.unc.edu/medicine/people/teresa-benvenuti-md/",
-      "department": "Medicine \u2014 Nephrology & Hypertension",
-      "role": "Main-Dom",
-      "departments": [
-        "Medicine \u2014 Nephrology & Hypertension"
-      ]
-    },
-    {
-      "name": "Neha Arora",
-      "profile_url": "https://www.med.unc.edu/medicine/people/neha-arora-md-mba/",
-      "department": "Medicine \u2014 Nephrology & Hypertension",
-      "role": "Main-Dom",
-      "departments": [
-        "Medicine \u2014 Nephrology & Hypertension"
-      ]
-    },
-    {
       "name": "John Sweeney",
       "profile_url": "https://www.med.unc.edu/medicine/people/john-sweeney-md/",
       "department": "Medicine \u2014 Nephrology & Hypertension",
@@ -4848,15 +4820,6 @@
       "profile_url": "https://www.med.unc.edu/medicine/people/emily-parks-md/",
       "department": "Medicine \u2014 Nephrology & Hypertension",
       "role": "Pgy-24",
-      "departments": [
-        "Medicine \u2014 Nephrology & Hypertension"
-      ]
-    },
-    {
-      "name": "Michael Rudloff",
-      "profile_url": "https://www.med.unc.edu/medicine/people/michael-rudloff-md-phd/",
-      "department": "Medicine \u2014 Nephrology & Hypertension",
-      "role": "All-Faculty-Profiles",
       "departments": [
         "Medicine \u2014 Nephrology & Hypertension"
       ]
@@ -6433,6 +6396,24 @@
       "role": "",
       "departments": [
         "Medicine \u2014 Rheumatology, Allergy & Immunology"
+      ]
+    },
+    {
+      "name": "Michael Thompson",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/michael-thompson-md-phd/",
+      "department": "Pediatrics",
+      "role": "Endo",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Molly DeCristo",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/molly-decristo-md/",
+      "department": "Pediatrics",
+      "role": "Hosp",
+      "departments": [
+        "Pediatrics"
       ]
     },
     {
@@ -9736,6 +9717,16 @@
       ]
     },
     {
+      "name": "Ehsan Benrashid",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/ehsahn-benrashid-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ],
+      "pubmed_hint": "Benrashid E"
+    },
+    {
       "name": "Christopher Bergen",
       "profile_url": "https://www.med.unc.edu/surgery/directory/christopher-bergen-dpm-facfas/",
       "department": "Surgery \u2014 General Surgery",
@@ -9999,6 +9990,15 @@
       "role": "",
       "departments": [
         "Surgery \u2014 Plastic & Reconstructive Surgery"
+      ]
+    },
+    {
+      "name": "Siera Nie",
+      "profile_url": "https://www.med.unc.edu/psych/people/siera-nie-msw-lcsw-a/",
+      "department": "Psychiatry",
+      "role": "Cecmh",
+      "departments": [
+        "Psychiatry"
       ]
     },
     {
@@ -17009,7 +17009,8 @@
       "departments": [
         "Pathology & Laboratory Medicine",
         "Lineberger Comprehensive Cancer Center"
-      ]
+      ],
+      "pubmed_hint": "Weissman BE"
     },
     {
       "name": "Herbert Whinna",
@@ -19303,6 +19304,24 @@
       ]
     },
     {
+      "name": "Joseph Cefalu",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/joseph-cefalu-md-ms/",
+      "department": "Family Medicine",
+      "role": "",
+      "departments": [
+        "Family Medicine"
+      ]
+    },
+    {
+      "name": "Thevy Chai",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/thevy-chai-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "departments": [
+        "Family Medicine"
+      ]
+    },
+    {
       "name": "Wunian Chen",
       "profile_url": "https://www.med.unc.edu/fammed/directory/wunian-chen-md-omd-lac/",
       "department": "Family Medicine",
@@ -19314,6 +19333,15 @@
     {
       "name": "Ellen Chetwynd",
       "profile_url": "https://www.med.unc.edu/fammed/directory/ellen-chetwynd-phd-mph-ibclc/",
+      "department": "Family Medicine",
+      "role": "",
+      "departments": [
+        "Family Medicine"
+      ]
+    },
+    {
+      "name": "Jessica Cody",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/jessica-cody-md/",
       "department": "Family Medicine",
       "role": "",
       "departments": [
@@ -19373,6 +19401,15 @@
       "departments": [
         "Family Medicine",
         "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Shanti Eranti",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/shanti-eranti-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "departments": [
+        "Family Medicine"
       ]
     },
     {
@@ -19467,6 +19504,15 @@
       ]
     },
     {
+      "name": "Stephanie Hodges",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/stephanie-hodges-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "departments": [
+        "Family Medicine"
+      ]
+    },
+    {
       "name": "Allison Hollowell",
       "profile_url": "https://www.med.unc.edu/fammed/directory/allison-hollowell-md-2/",
       "department": "Family Medicine",
@@ -19514,6 +19560,15 @@
     {
       "name": "LeRon Jackson",
       "profile_url": "https://www.med.unc.edu/fammed/directory/leron-jackson-md-mph/",
+      "department": "Family Medicine",
+      "role": "",
+      "departments": [
+        "Family Medicine"
+      ]
+    },
+    {
+      "name": "Daniel Jobe",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/daniel-jobe-md/",
       "department": "Family Medicine",
       "role": "",
       "departments": [
@@ -19884,8 +19939,26 @@
       ]
     },
     {
+      "name": "Amy Stanfield",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/amy-stanfield-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "departments": [
+        "Family Medicine"
+      ]
+    },
+    {
       "name": "Liza Straub",
       "profile_url": "https://www.med.unc.edu/fammed/directory/liza-straub-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "departments": [
+        "Family Medicine"
+      ]
+    },
+    {
+      "name": "Kyle Tamminga",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/kyle-tamminga-md/",
       "department": "Family Medicine",
       "role": "",
       "departments": [
@@ -19927,6 +20000,15 @@
       "departments": [
         "Family Medicine",
         "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Catherine Walsh",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/catherine-walsh-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "departments": [
+        "Family Medicine"
       ]
     },
     {
@@ -20002,6 +20084,15 @@
       ]
     },
     {
+      "name": "Thomas Brickner",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/thomas-brickner-md/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
       "name": "Travis Bryan",
       "profile_url": "https://www.med.unc.edu/ortho/directory/travis-bryan-do/",
       "department": "Orthopaedics",
@@ -20031,15 +20122,6 @@
     {
       "name": "Andrew T. Chen",
       "profile_url": "https://www.med.unc.edu/ortho/directory/chen/",
-      "department": "Orthopaedics",
-      "role": "",
-      "departments": [
-        "Orthopaedics"
-      ]
-    },
-    {
-      "name": "R. Alexander Creighton",
-      "profile_url": "https://www.med.unc.edu/ortho/directory/creighton/",
       "department": "Orthopaedics",
       "role": "",
       "departments": [
@@ -23435,16 +23517,6 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ]
-    },
-    {
-      "name": "Matthew Ryen Lockett",
-      "profile_url": "https://unclineberger.org/directory/matthew-lockett/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/matthew%20ryen.lockett.1/bibliography/public"
     },
     {
       "name": "Michael I. Love",
