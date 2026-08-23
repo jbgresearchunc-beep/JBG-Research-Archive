@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-16T05:09:26.610630Z",
-  "total_faculty": 2770,
+  "generated_at": "2026-08-23T05:12:12.861541Z",
+  "total_faculty": 2772,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -2319,6 +2319,15 @@
     {
       "name": "Stacey Sokol",
       "profile_url": "https://www.med.unc.edu/medicine/geriatrics/people/stacey-sokol-bsw/",
+      "department": "Medicine \u2014 Geriatric Medicine",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Geriatric Medicine"
+      ]
+    },
+    {
+      "name": "Isaiah Bell",
+      "profile_url": "https://www.med.unc.edu/medicine/geriatrics/people/isaiah-bell-dnp-rn-agnp-c/",
       "department": "Medicine \u2014 Geriatric Medicine",
       "role": "",
       "departments": [
@@ -6297,16 +6306,6 @@
       ]
     },
     {
-      "name": "Sofija Volertas",
-      "profile_url": "https://www.med.unc.edu/medicine/rheumatology-allergy-immunology/people/sofija-volertas/",
-      "department": "Medicine \u2014 Rheumatology, Allergy & Immunology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Rheumatology, Allergy & Immunology"
-      ],
-      "pubmed_hint": "allergic rhinitis"
-    },
-    {
       "name": "Nortin M Hadler",
       "profile_url": "https://www.med.unc.edu/medicine/rheumatology-allergy-immunology/people/nortin-m-hadler/",
       "department": "Medicine \u2014 Rheumatology, Allergy & Immunology",
@@ -6396,6 +6395,15 @@
       "role": "",
       "departments": [
         "Medicine \u2014 Rheumatology, Allergy & Immunology"
+      ]
+    },
+    {
+      "name": "Chris Iskander",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/chris-iskander-md-mph/",
+      "department": "Pediatrics",
+      "role": "Card",
+      "departments": [
+        "Pediatrics"
       ]
     },
     {
@@ -18397,6 +18405,15 @@
     {
       "name": "Uma Vaidyanathan",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/uma-vaidyanathan/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ]
+    },
+    {
+      "name": "Damon Wallace",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/damon-wallace-2/",
       "department": "Anesthesiology",
       "role": "",
       "departments": [
