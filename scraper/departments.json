@@ -141,7 +141,21 @@
     {
       "name": "Radiology",
       "short": "Radiology",
-      "url": "https://www.med.unc.edu/radiology/about/our-people/faculty/",
+      "_note": "FIXED Aug 2026. The old URL (/about/our-people/faculty/) is JS-rendered: it returns ZERO people to requests+BeautifulSoup. The 7 'faculty' it previously produced were nav-menu links (Types of Exams, Orange County, Annual Reports, etc.), all of which were silently dropped in Step 2 \u2014 so Radiology was contributing nothing to the dataset. The /division/<slug>/ pages render server-side with real profile links. Verified: neuroradiology, abdominal-imaging, leadership. Other slugs match the Clinical Subspecialties list in the site sidebar. If a division is renamed, the URL 404s silently \u2014 re-check against the footer sitemap (/radiology/sitemap/) when counts drop. 'radiological-sciences-faculty' is a Type rather than a subspecialty; drop it if it 404s.",
+      "urls": [
+        "https://www.med.unc.edu/radiology/division/leadership/",
+        "https://www.med.unc.edu/radiology/division/abdominal-imaging/",
+        "https://www.med.unc.edu/radiology/division/breast-imaging/",
+        "https://www.med.unc.edu/radiology/division/cardiothoracic-imaging/",
+        "https://www.med.unc.edu/radiology/division/emergency-imaging/",
+        "https://www.med.unc.edu/radiology/division/interventional-radiology/",
+        "https://www.med.unc.edu/radiology/division/molecular-imaging-and-therapeutics/",
+        "https://www.med.unc.edu/radiology/division/musculoskeletal-imaging/",
+        "https://www.med.unc.edu/radiology/division/neurointerventional-radiology/",
+        "https://www.med.unc.edu/radiology/division/neuroradiology/",
+        "https://www.med.unc.edu/radiology/division/pediatric-imaging/",
+        "https://www.med.unc.edu/radiology/division/radiological-sciences-faculty/"
+      ],
       "profile_base": "https://www.med.unc.edu/radiology/people"
     },
     {
@@ -179,10 +193,14 @@
     {
       "name": "Orthopaedics",
       "short": "Orthopaedics",
-      "_note": "The /about-us/faculty/ page only renders the first alphabetical page (B-D, 10 people). Actual profiles live under /ortho/directory/, which is a paginated archive - listing it first lets the auto-pagination in scrape_only() walk /page/2/, /page/3/, ... The old URL is kept as a fallback in case the directory archive moves.",
+      "_note": "FIXED Aug 2026. The listing paginates with a ?cpage=N QUERY PARAM, not /page/N/ path segments \u2014 auto-pagination in scrape_only() cannot walk it, so the 6 pages are enumerated manually here. ~55 people as of Aug 2026 (10 per page, 5 on the last). RE-CHECK THE PAGE COUNT periodically: if Ortho grows to a 7th page it will be missed silently. Do NOT re-add /ortho/directory/ \u2014 it is the parent path for individual profiles, not a paginated archive, and the 5 'faculty' it returned were nav-menu links.",
       "urls": [
-        "https://www.med.unc.edu/ortho/directory/",
-        "https://www.med.unc.edu/ortho/about-us/faculty/"
+        "https://www.med.unc.edu/ortho/about-us/faculty/",
+        "https://www.med.unc.edu/ortho/about-us/faculty/?cpage=2",
+        "https://www.med.unc.edu/ortho/about-us/faculty/?cpage=3",
+        "https://www.med.unc.edu/ortho/about-us/faculty/?cpage=4",
+        "https://www.med.unc.edu/ortho/about-us/faculty/?cpage=5",
+        "https://www.med.unc.edu/ortho/about-us/faculty/?cpage=6"
       ],
       "profile_base": "https://www.med.unc.edu/ortho/directory"
     },
