@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-27T01:15:30.898708Z",
-  "total_faculty": 2874,
+  "generated_at": "2026-08-27T13:43:56.869321Z",
+  "total_faculty": 2912,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -14336,7 +14336,8 @@
       "department": "Neurology",
       "role": "Comprehensive-Stroke-Center-Core-Team",
       "departments": [
-        "Neurology"
+        "Neurology",
+        "Radiology"
       ]
     },
     {
@@ -16130,7 +16131,8 @@
       "department": "Pathology & Laboratory Medicine",
       "role": "",
       "departments": [
-        "Pathology & Laboratory Medicine"
+        "Pathology & Laboratory Medicine",
+        "Radiology"
       ]
     },
     {
@@ -17246,6 +17248,70 @@
       ]
     },
     {
+      "name": "Naiim Ali",
+      "profile_url": "https://www.med.unc.edu/radiology/people/naiim-ali-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Ersan Altun",
+      "profile_url": "https://www.med.unc.edu/radiology/people/ersan-altun/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology",
+        "Urology"
+      ]
+    },
+    {
+      "name": "Kingsley Asiedu",
+      "profile_url": "https://www.med.unc.edu/radiology/people/kingsley-asiedu-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Alexandra K. Banathy",
+      "profile_url": "https://www.med.unc.edu/radiology/people/alexandra-alex-k-banathy/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Bilal Battal",
+      "profile_url": "https://www.med.unc.edu/radiology/people/bilal-battal/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Melania Bula",
+      "profile_url": "https://www.med.unc.edu/radiology/people/melania-bula/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Charles T. Burke",
+      "profile_url": "https://www.med.unc.edu/radiology/people/charles-t-burke/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
       "name": "Lauren M.B. Burke",
       "profile_url": "https://www.med.unc.edu/radiology/people/lauren-m-b-burke/",
       "department": "Radiology",
@@ -17264,6 +17330,60 @@
       ]
     },
     {
+      "name": "Andrew Campbell",
+      "profile_url": "https://www.med.unc.edu/radiology/people/andrew-campbell/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Jnana Aditya Challa",
+      "profile_url": "https://www.med.unc.edu/radiology/people/aditya-jnana-challa-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Wei-Tang Chang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/wei-tang-chang/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Meghan R. Clark",
+      "profile_url": "https://www.med.unc.edu/radiology/people/meghan-r-clark-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Minh-Tri Dang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/minh-tri-tri-dang/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Eran Dayan",
+      "profile_url": "https://www.med.unc.edu/radiology/people/eran-dayan/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
       "name": "Mariana DeFreitas",
       "profile_url": "https://www.med.unc.edu/radiology/people/mariana-defreitas/",
       "department": "Radiology",
@@ -17273,8 +17393,73 @@
       ]
     },
     {
+      "name": "Sarah DeRycke",
+      "profile_url": "https://www.med.unc.edu/radiology/people/sarah-derycke-2/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
       "name": "Lane Donnelly",
       "profile_url": "https://www.med.unc.edu/radiology/people/lane-donnelly/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Lourens du Pisanie",
+      "profile_url": "https://www.med.unc.edu/radiology/people/lourens-du-pisanie-jr/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Uzay Emir",
+      "profile_url": "https://www.med.unc.edu/radiology/people/uzay-emir-phd/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Courtney Evron",
+      "profile_url": "https://www.med.unc.edu/radiology/people/courtney-evron/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Romuald Ferre",
+      "profile_url": "https://www.med.unc.edu/radiology/people/romuald-ferre-md-frcpc-fsbi/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Josephine Finazzo",
+      "profile_url": "https://www.med.unc.edu/radiology/people/josephine-finazzo/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Lynn A. Fordham",
+      "profile_url": "https://www.med.unc.edu/radiology/people/lynn-a-fordham/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -17310,6 +17495,24 @@
       ]
     },
     {
+      "name": "Rebecca Hansen",
+      "profile_url": "https://www.med.unc.edu/radiology/people/rebecca-hansen-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Bryan Harris",
+      "profile_url": "https://www.med.unc.edu/radiology/people/bryan-harris/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
       "name": "Todd R. Hazelton",
       "profile_url": "https://www.med.unc.edu/radiology/people/todd-r-hazelton/",
       "department": "Radiology",
@@ -17328,8 +17531,35 @@
       ]
     },
     {
+      "name": "Li-Ming Hsu",
+      "profile_url": "https://www.med.unc.edu/radiology/people/li-ming-hsu/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Dan Hu",
+      "profile_url": "https://www.med.unc.edu/radiology/people/dan-hu-phd/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
       "name": "Benjamin Huang",
       "profile_url": "https://www.med.unc.edu/radiology/people/benjamin-huang/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Veronica Hudson",
+      "profile_url": "https://www.med.unc.edu/radiology/people/veronica-hudson-pa-c/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -17347,8 +17577,8 @@
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1DGxebrP9GtQD/bibliography/public"
     },
     {
-      "name": "Naiim Ali",
-      "profile_url": "https://www.med.unc.edu/radiology/people/naiim-ali-md/",
+      "name": "W. Brian Hyslop",
+      "profile_url": "https://www.med.unc.edu/radiology/people/w-brian-hyslop/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -17356,28 +17586,44 @@
       ]
     },
     {
-      "name": "Ersan Altun",
-      "profile_url": "https://www.med.unc.edu/radiology/people/ersan-altun/",
+      "name": "Marija Ivanovic",
+      "profile_url": "https://www.med.unc.edu/radiology/people/marija-ivanovic/",
       "department": "Radiology",
       "role": "",
       "departments": [
-        "Radiology",
-        "Urology"
+        "Radiology"
       ]
     },
     {
-      "name": "Josephine Finazzo",
-      "profile_url": "https://www.med.unc.edu/radiology/people/josephine-finazzo/",
+      "name": "Kistner Yvonne Javorski",
+      "profile_url": "https://www.med.unc.edu/radiology/people/kistner-yvonne-javorski-mrs-r-r-a-rtr/",
       "department": "Radiology",
       "role": "",
       "departments": [
-        "Radiology",
-        "Lineberger Comprehensive Cancer Center"
+        "Radiology"
       ]
     },
     {
-      "name": "W. Brian Hyslop",
-      "profile_url": "https://www.med.unc.edu/radiology/people/w-brian-hyslop/",
+      "name": "Tony Jeanmenne",
+      "profile_url": "https://www.med.unc.edu/radiology/people/tony-jeanmenne-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Valerie Jewells",
+      "profile_url": "https://www.med.unc.edu/radiology/people/valerie-jewells/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Yuli Jiang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/yuli-david-jiang-md/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -17405,217 +17651,17 @@
       ]
     },
     {
-      "name": "Ellie R. Lee",
-      "profile_url": "https://www.med.unc.edu/radiology/people/ellie-r-lee/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Matthew A. Mauro",
-      "profile_url": "https://www.med.unc.edu/radiology/people/matthew-a-mauro/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Kristen Olinger",
-      "profile_url": "https://www.med.unc.edu/radiology/people/kristen-olinger/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Samuel Ostrum",
-      "profile_url": "https://www.med.unc.edu/radiology/people/samuel-ostrum-md/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Dustin Rea",
-      "profile_url": "https://www.med.unc.edu/radiology/people/dustin-rea/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Romuald Ferre",
-      "profile_url": "https://www.med.unc.edu/radiology/people/romuald-ferre-md-frcpc-fsbi/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Cherie M. Kuzmiak",
-      "profile_url": "https://www.med.unc.edu/radiology/people/cherie-m-kuzmiak/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ],
-      "pubmed_hint": "Kuzmiak CM"
-    },
-    {
-      "name": "Carrie Anne Orlikowski",
-      "profile_url": "https://www.med.unc.edu/radiology/people/carrie-anne-orlikowski-md/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Mark Rynties",
-      "profile_url": "https://www.med.unc.edu/radiology/people/mark-rynties/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Andrea Senter",
-      "profile_url": "https://www.med.unc.edu/radiology/people/andrea-andi-senter-md/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Genevieve A. Woodard",
-      "profile_url": "https://www.med.unc.edu/radiology/people/genevieve-a-woodard/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology",
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Behrooz Masuodi",
-      "profile_url": "https://www.med.unc.edu/radiology/people/behrooz-masuodi-md/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Joe Vimal Raj",
-      "profile_url": "https://www.med.unc.edu/radiology/people/joe-vimal-raj-mbbs-md/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Muthu Sakthivel",
-      "profile_url": "https://www.med.unc.edu/radiology/people/muthu-sakthivel/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Yildiz Sengul",
-      "profile_url": "https://www.med.unc.edu/radiology/people/yildiz-sengul/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Alexandra K. Banathy",
-      "profile_url": "https://www.med.unc.edu/radiology/people/alexandra-alex-k-banathy/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Charles T. Burke",
-      "profile_url": "https://www.med.unc.edu/radiology/people/charles-t-burke/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Meghan R. Clark",
-      "profile_url": "https://www.med.unc.edu/radiology/people/meghan-r-clark-md/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Sarah DeRycke",
-      "profile_url": "https://www.med.unc.edu/radiology/people/sarah-derycke-2/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Lourens du Pisanie",
-      "profile_url": "https://www.med.unc.edu/radiology/people/lourens-du-pisanie-jr/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Courtney Evron",
-      "profile_url": "https://www.med.unc.edu/radiology/people/courtney-evron/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Bryan Harris",
-      "profile_url": "https://www.med.unc.edu/radiology/people/bryan-harris/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Veronica Hudson",
-      "profile_url": "https://www.med.unc.edu/radiology/people/veronica-hudson-pa-c/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
       "name": "Nicole Keefe",
       "profile_url": "https://www.med.unc.edu/radiology/people/nicole-keefe/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Bahram Kiani",
+      "profile_url": "https://www.med.unc.edu/radiology/people/bahram-bobby-kiani-mha-md/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -17642,35 +17688,18 @@
       ]
     },
     {
-      "name": "David M. Mauro",
-      "profile_url": "https://www.med.unc.edu/radiology/people/david-m-mauro/",
+      "name": "Cherie M. Kuzmiak",
+      "profile_url": "https://www.med.unc.edu/radiology/people/cherie-m-kuzmiak/",
       "department": "Radiology",
       "role": "",
       "departments": [
         "Radiology"
-      ]
+      ],
+      "pubmed_hint": "Kuzmiak CM"
     },
     {
-      "name": "Bilal Battal",
-      "profile_url": "https://www.med.unc.edu/radiology/people/bilal-battal/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Andrew Campbell",
-      "profile_url": "https://www.med.unc.edu/radiology/people/andrew-campbell/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Valerie Jewells",
-      "profile_url": "https://www.med.unc.edu/radiology/people/valerie-jewells/",
+      "name": "Ellie R. Lee",
+      "profile_url": "https://www.med.unc.edu/radiology/people/ellie-r-lee/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -17688,8 +17717,292 @@
       ]
     },
     {
+      "name": "Gang Li",
+      "profile_url": "https://www.med.unc.edu/radiology/people/gang-li/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Guoshi Li",
+      "profile_url": "https://www.med.unc.edu/radiology/people/guoshi-li/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Tengfei Li",
+      "profile_url": "https://www.med.unc.edu/radiology/people/tengfei-li/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Zibo Li",
+      "profile_url": "https://www.med.unc.edu/radiology/people/zibo-li/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Weili Lin",
+      "profile_url": "https://www.med.unc.edu/radiology/people/weili-lin/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Mingxia Liu",
+      "profile_url": "https://www.med.unc.edu/radiology/people/mingxia-liu/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Behrooz Masuodi",
+      "profile_url": "https://www.med.unc.edu/radiology/people/behrooz-masuodi-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "David M. Mauro",
+      "profile_url": "https://www.med.unc.edu/radiology/people/david-m-mauro/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Matthew A. Mauro",
+      "profile_url": "https://www.med.unc.edu/radiology/people/matthew-a-mauro/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
       "name": "Kassie McCullagh",
       "profile_url": "https://www.med.unc.edu/radiology/people/kassie-mccullagh/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Blaine T. Mischen",
+      "profile_url": "https://www.med.unc.edu/radiology/people/blaine-t-mischen-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Priya Mody",
+      "profile_url": "https://www.med.unc.edu/radiology/people/priya-mody/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Eric Muir",
+      "profile_url": "https://www.med.unc.edu/radiology/people/eric-muir/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "John Nazarian",
+      "profile_url": "https://www.med.unc.edu/radiology/people/john-nazarian/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Sarah J. Nyante",
+      "profile_url": "https://www.med.unc.edu/radiology/people/sarah-j-nyante/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Jorge Oldan",
+      "profile_url": "https://www.med.unc.edu/radiology/people/jorgeoldan/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Kristen Olinger",
+      "profile_url": "https://www.med.unc.edu/radiology/people/kristen-olinger/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Carrie Anne Orlikowski",
+      "profile_url": "https://www.med.unc.edu/radiology/people/carrie-anne-orlikowski-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Samuel Ostrum",
+      "profile_url": "https://www.med.unc.edu/radiology/people/samuel-ostrum-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Virginie Papadopoulou",
+      "profile_url": "https://www.med.unc.edu/radiology/people/virginie-papadopoulou-phd/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Avni Patel",
+      "profile_url": "https://www.med.unc.edu/radiology/people/avni-patel-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "William W. Pryor",
+      "profile_url": "https://www.med.unc.edu/radiology/people/william-will-w-pryor/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Joe Vimal Raj",
+      "profile_url": "https://www.med.unc.edu/radiology/people/joe-vimal-raj-mbbs-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Junaid Raja",
+      "profile_url": "https://www.med.unc.edu/radiology/people/junaid-raja-md-msph-ms-facp/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Dustin Rea",
+      "profile_url": "https://www.med.unc.edu/radiology/people/dustin-rea/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Mark Rynties",
+      "profile_url": "https://www.med.unc.edu/radiology/people/mark-rynties/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Muthu Sakthivel",
+      "profile_url": "https://www.med.unc.edu/radiology/people/muthu-sakthivel/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Gloria Salazar",
+      "profile_url": "https://www.med.unc.edu/radiology/people/gloria-salazar/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Jennifer Schroeder",
+      "profile_url": "https://www.med.unc.edu/radiology/people/jennifer-schroeder/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Cody Schwartz",
+      "profile_url": "https://www.med.unc.edu/radiology/people/cody-schwartz/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Yildiz Sengul",
+      "profile_url": "https://www.med.unc.edu/radiology/people/yildiz-sengul/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Andrea Senter",
+      "profile_url": "https://www.med.unc.edu/radiology/people/andrea-andi-senter-md/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -17707,8 +18020,8 @@
       ]
     },
     {
-      "name": "Carlos Zamora",
-      "profile_url": "https://www.med.unc.edu/radiology/people/carlos-zamora/",
+      "name": "Sten Solander",
+      "profile_url": "https://www.med.unc.edu/radiology/people/sten-solander/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -17716,8 +18029,8 @@
       ]
     },
     {
-      "name": "Melania Bula",
-      "profile_url": "https://www.med.unc.edu/radiology/people/melania-bula/",
+      "name": "Bradley Spieler",
+      "profile_url": "https://www.med.unc.edu/radiology/people/bradley-spieler-md/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -17725,35 +18038,8 @@
       ]
     },
     {
-      "name": "Lynn A. Fordham",
-      "profile_url": "https://www.med.unc.edu/radiology/people/lynn-a-fordham/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Rebecca Hansen",
-      "profile_url": "https://www.med.unc.edu/radiology/people/rebecca-hansen-md/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Kistner Yvonne Javorski",
-      "profile_url": "https://www.med.unc.edu/radiology/people/kistner-yvonne-javorski-mrs-r-r-a-rtr/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "William W. Pryor",
-      "profile_url": "https://www.med.unc.edu/radiology/people/william-will-w-pryor/",
+      "name": "Danielle Stevens",
+      "profile_url": "https://www.med.unc.edu/radiology/people/danielle-stevens-phd/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -17763,6 +18049,154 @@
     {
       "name": "Marcelo Takahashi",
       "profile_url": "https://www.med.unc.edu/radiology/people/marcelo-takahashi/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Cagdas Topel",
+      "profile_url": "https://www.med.unc.edu/radiology/people/cagdas-topel-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Alex Villalobos",
+      "profile_url": "https://www.med.unc.edu/radiology/people/alex-villalobos/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Joshua Wallace",
+      "profile_url": "https://www.med.unc.edu/radiology/people/joshua-wallace-md-mph/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Hui Wang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/hui-wang-phd/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Li Wang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/li-wang/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Emily Ware",
+      "profile_url": "https://www.med.unc.edu/radiology/people/emily-ware/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Emily J. Werder",
+      "profile_url": "https://www.med.unc.edu/radiology/people/emily-j-werder-phd/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Genevieve A. Woodard",
+      "profile_url": "https://www.med.unc.edu/radiology/people/genevieve-a-woodard/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Zhanhong Wu",
+      "profile_url": "https://www.med.unc.edu/radiology/people/zhanhong-wu/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Zhengwang Wu",
+      "profile_url": "https://www.med.unc.edu/radiology/people/zhangweng-wu/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Pew-Thian Yap",
+      "profile_url": "https://www.med.unc.edu/radiology/people/pew-thian-yap/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Chris Young",
+      "profile_url": "https://www.med.unc.edu/radiology/people/chris-young/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Hyeon Yu",
+      "profile_url": "https://www.med.unc.edu/radiology/people/hyeon-yu/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Hong Yuan",
+      "profile_url": "https://www.med.unc.edu/radiology/people/hong-yuan/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Carlos Zamora",
+      "profile_url": "https://www.med.unc.edu/radiology/people/carlos-zamora/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Leina Zerey",
+      "profile_url": "https://www.med.unc.edu/radiology/people/leina-zerey-md/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -23405,15 +23839,6 @@
       ]
     },
     {
-      "name": "Uzay Emir",
-      "profile_url": "https://unclineberger.org/directory/uzay-emir/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
       "name": "Lawrence S. Engel",
       "profile_url": "https://unclineberger.org/directory/lawrence-engel/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -24385,15 +24810,6 @@
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/jun.li.13/bibliography/public"
     },
     {
-      "name": "Zibo Li",
-      "profile_url": "https://unclineberger.org/directory/zibo-li/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
       "name": "Danyu Lin",
       "profile_url": "https://unclineberger.org/directory/danyu-lin/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -24401,16 +24817,6 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ]
-    },
-    {
-      "name": "Weili Lin",
-      "profile_url": "https://unclineberger.org/directory/weili-lin/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Office Phone"
     },
     {
       "name": "Jonathan Lindsey",
@@ -24430,16 +24836,6 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ]
-    },
-    {
-      "name": "Mingxia Liu",
-      "profile_url": "https://unclineberger.org/directory/mingxia-liu/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1nK86LHhhixkX/bibliography/public"
     },
     {
       "name": "Pengda Liu",
@@ -24918,15 +25314,6 @@
       ]
     },
     {
-      "name": "Sarah J. Nyante",
-      "profile_url": "https://unclineberger.org/directory/sarah-nyante/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
       "name": "Lori O'Brien",
       "profile_url": "https://unclineberger.org/directory/lori-obrien/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -24954,16 +25341,6 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ]
-    },
-    {
-      "name": "Jorge Oldan",
-      "profile_url": "https://unclineberger.org/directory/jorge-oldan/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "jorge oldan"
     },
     {
       "name": "Amy L. Oldenburg",
@@ -26332,15 +26709,6 @@
       ]
     },
     {
-      "name": "Zhanhong Wu",
-      "profile_url": "https://unclineberger.org/directory/zhanhong-wu/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
       "name": "Shan Yan",
       "profile_url": "https://unclineberger.org/directory/shan-yan/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -26358,25 +26726,6 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ]
-    },
-    {
-      "name": "Hyeon Yu",
-      "profile_url": "https://www.med.unc.edu/radiology/directory/hyeon-yu/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Hong Yuan",
-      "profile_url": "https://unclineberger.org/directory/hong-yuan/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/hong.yuan.1/bibliography/public"
     },
     {
       "name": "David A. Zaharoff",
