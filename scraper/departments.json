@@ -141,20 +141,20 @@
     {
       "name": "Radiology",
       "short": "Radiology",
-      "_note": "FIXED Aug 2026. The old URL (/about/our-people/faculty/) is JS-rendered: it returns ZERO people to requests+BeautifulSoup. The 7 'faculty' it previously produced were nav-menu links (Types of Exams, Orange County, Annual Reports, etc.), all of which were silently dropped in Step 2 \u2014 so Radiology was contributing nothing to the dataset. The /division/<slug>/ pages render server-side with real profile links. Verified: neuroradiology, abdominal-imaging, leadership. Other slugs match the Clinical Subspecialties list in the site sidebar. If a division is renamed, the URL 404s silently \u2014 re-check against the footer sitemap (/radiology/sitemap/) when counts drop. 'radiological-sciences-faculty' is a Type rather than a subspecialty; drop it if it 404s.",
+      "_note": "FIXED Aug 2026 (v2). /about/our-people/faculty/ is JS-rendered and returns ZERO people to requests+BS4 \u2014 the 7 it once 'found' were nav links. The server-rendered source is the ud_division taxonomy archive at /division/<slug>/. Per-subspecialty slugs truncate at 12 per page (e.g. 'leadership' has 37 members but the archive shows 12), so we use the catch-all term 'all-faculty' (111 members as of Aug 2026 = clinical subspecialties + radiological sciences) and enumerate its pages. 10 pages expected; 12 listed for headroom \u2014 surplus pages 404 loudly, which is fine. NOTE: auto-pagination in scrape.py only fires on URLs ending in /directory/, so it will NOT walk this archive by itself. To re-check counts: https://www.med.unc.edu/radiology/wp-json/wp/v2/ud_division?per_page=100&_fields=slug,name,count",
       "urls": [
-        "https://www.med.unc.edu/radiology/division/leadership/",
-        "https://www.med.unc.edu/radiology/division/abdominal-imaging/",
-        "https://www.med.unc.edu/radiology/division/breast-imaging/",
-        "https://www.med.unc.edu/radiology/division/cardiothoracic-imaging/",
-        "https://www.med.unc.edu/radiology/division/emergency-imaging/",
-        "https://www.med.unc.edu/radiology/division/interventional-radiology/",
-        "https://www.med.unc.edu/radiology/division/molecular-imaging-and-therapeutics/",
-        "https://www.med.unc.edu/radiology/division/musculoskeletal-imaging/",
-        "https://www.med.unc.edu/radiology/division/neurointerventional-radiology/",
-        "https://www.med.unc.edu/radiology/division/neuroradiology/",
-        "https://www.med.unc.edu/radiology/division/pediatric-imaging/",
-        "https://www.med.unc.edu/radiology/division/radiological-sciences-faculty/"
+        "https://www.med.unc.edu/radiology/division/all-faculty/",
+        "https://www.med.unc.edu/radiology/division/all-faculty/page/2/",
+        "https://www.med.unc.edu/radiology/division/all-faculty/page/3/",
+        "https://www.med.unc.edu/radiology/division/all-faculty/page/4/",
+        "https://www.med.unc.edu/radiology/division/all-faculty/page/5/",
+        "https://www.med.unc.edu/radiology/division/all-faculty/page/6/",
+        "https://www.med.unc.edu/radiology/division/all-faculty/page/7/",
+        "https://www.med.unc.edu/radiology/division/all-faculty/page/8/",
+        "https://www.med.unc.edu/radiology/division/all-faculty/page/9/",
+        "https://www.med.unc.edu/radiology/division/all-faculty/page/10/",
+        "https://www.med.unc.edu/radiology/division/all-faculty/page/11/",
+        "https://www.med.unc.edu/radiology/division/all-faculty/page/12/"
       ],
       "profile_base": "https://www.med.unc.edu/radiology/people"
     },
@@ -193,7 +193,7 @@
     {
       "name": "Orthopaedics",
       "short": "Orthopaedics",
-      "_note": "FIXED Aug 2026. The listing paginates with a ?cpage=N QUERY PARAM, not /page/N/ path segments \u2014 auto-pagination in scrape_only() cannot walk it, so the 6 pages are enumerated manually here. ~55 people as of Aug 2026 (10 per page, 5 on the last). RE-CHECK THE PAGE COUNT periodically: if Ortho grows to a 7th page it will be missed silently. Do NOT re-add /ortho/directory/ \u2014 it is the parent path for individual profiles, not a paginated archive, and the 5 'faculty' it returned were nav-menu links.",
+      "_note": "FIXED Aug 2026. The listing paginates with a ?cpage=N QUERY PARAM, not /page/N/ path segments \u2014 auto-pagination in scrape.py only fires on URLs ending in /directory/ so it cannot walk it, so the 6 pages are enumerated manually here. ~55 people as of Aug 2026 (10 per page, 5 on the last). RE-CHECK THE PAGE COUNT periodically: if Ortho grows to a 7th page it will be missed silently. Do NOT re-add /ortho/directory/ \u2014 it is the parent path for individual profiles, not a paginated archive, and the 5 'faculty' it returned were nav-menu links.",
       "urls": [
         "https://www.med.unc.edu/ortho/about-us/faculty/",
         "https://www.med.unc.edu/ortho/about-us/faculty/?cpage=2",
