@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-23T05:12:12.861541Z",
-  "total_faculty": 2772,
+  "generated_at": "2026-08-27T01:15:30.898708Z",
+  "total_faculty": 2874,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -180,7 +180,8 @@
       "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Cardiology",
+        "Radiology"
       ]
     },
     {
@@ -207,7 +208,8 @@
       "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Cardiology",
+        "Radiology"
       ]
     },
     {
@@ -309,7 +311,8 @@
       "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Cardiology",
+        "Radiology"
       ]
     },
     {
@@ -6398,6 +6401,33 @@
       ]
     },
     {
+      "name": "Rachel Fazenbaker",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/rachel-fazenbaker-md/",
+      "department": "Pediatrics",
+      "role": "Wilm Npm Clin Pro",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "M. Camille Haywood",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/m-camille-haywood-md/",
+      "department": "Pediatrics",
+      "role": "Wilm Hosp Clin Pro",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Taylor Welch",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/taylor-welch-md/",
+      "department": "Pediatrics",
+      "role": "Wilm",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
       "name": "Chris Iskander",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/chris-iskander-md-mph/",
       "department": "Pediatrics",
@@ -9862,7 +9892,8 @@
       "department": "Surgery \u2014 Plastic & Reconstructive Surgery",
       "role": "",
       "departments": [
-        "Surgery \u2014 Plastic & Reconstructive Surgery"
+        "Surgery \u2014 Plastic & Reconstructive Surgery",
+        "Orthopaedics"
       ]
     },
     {
@@ -14898,6 +14929,15 @@
       ]
     },
     {
+      "name": "Hendr\u00e9e Jones",
+      "profile_url": "https://www.med.unc.edu/obgyn/people/hendree-jones-phd/",
+      "department": "Obstetrics & Gynecology",
+      "role": "Department-Of-Obstetrics-And-Gynecology",
+      "departments": [
+        "Obstetrics & Gynecology"
+      ]
+    },
+    {
       "name": "Kari Hacker",
       "profile_url": "https://www.med.unc.edu/obgyn/people/kari-hacker-md-phd/",
       "department": "Obstetrics & Gynecology",
@@ -14922,7 +14962,8 @@
       "department": "Obstetrics & Gynecology",
       "role": "",
       "departments": [
-        "Obstetrics & Gynecology"
+        "Obstetrics & Gynecology",
+        "Radiology"
       ]
     },
     {
@@ -15221,6 +15262,15 @@
       "profile_url": "https://www.med.unc.edu/obgyn/people/catherine-j-vladutiu/",
       "department": "Obstetrics & Gynecology",
       "role": "Department-Of-Obstetrics-And-Gynecology",
+      "departments": [
+        "Obstetrics & Gynecology"
+      ]
+    },
+    {
+      "name": "Ginger Hocutt",
+      "profile_url": "https://www.med.unc.edu/obgyn/people/ginger-hocutt/",
+      "department": "Obstetrics & Gynecology",
+      "role": "Department-Clinical-Providers",
       "departments": [
         "Obstetrics & Gynecology"
       ]
@@ -16364,6 +16414,15 @@
       ]
     },
     {
+      "name": "Janiece Glover",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/janiece-glover-phd-ms/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ]
+    },
+    {
       "name": "Virginia L. Godfrey",
       "profile_url": "https://www.med.unc.edu/pathology/directory/vgodfrey/",
       "department": "Pathology & Laboratory Medicine",
@@ -16760,8 +16819,7 @@
       "role": "",
       "departments": [
         "Pathology & Laboratory Medicine"
-      ],
-      "pubmed_hint": "Distinguished Professor"
+      ]
     },
     {
       "name": "Andre Phelan",
@@ -16920,6 +16978,15 @@
     {
       "name": "James A. Swenberg",
       "profile_url": "https://www.med.unc.edu/pathology/directory/james-a-swenberg/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ]
+    },
+    {
+      "name": "Desiree Talabong",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/desiree-talabong-md/",
       "department": "Pathology & Laboratory Medicine",
       "role": "",
       "departments": [
@@ -17179,6 +17246,530 @@
       ]
     },
     {
+      "name": "Lauren M.B. Burke",
+      "profile_url": "https://www.med.unc.edu/radiology/people/lauren-m-b-burke/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Elijah Burton",
+      "profile_url": "https://www.med.unc.edu/radiology/people/elijah-burton-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Mariana DeFreitas",
+      "profile_url": "https://www.med.unc.edu/radiology/people/mariana-defreitas/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Lane Donnelly",
+      "profile_url": "https://www.med.unc.edu/radiology/people/lane-donnelly/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Girish Gandikota",
+      "profile_url": "https://www.med.unc.edu/radiology/people/girish-gandikota/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Fenner Griffin",
+      "profile_url": "https://www.med.unc.edu/radiology/people/fenner-griffin/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_hint": "Charleston SC"
+    },
+    {
+      "name": "Carolina Guimaraes",
+      "profile_url": "https://www.med.unc.edu/radiology/people/carolina-guimaraes/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Todd R. Hazelton",
+      "profile_url": "https://www.med.unc.edu/radiology/people/todd-r-hazelton/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Louise Henderson",
+      "profile_url": "https://www.med.unc.edu/radiology/people/louise-henderson/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Benjamin Huang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/benjamin-huang/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Sheng-Che Hung",
+      "profile_url": "https://www.med.unc.edu/radiology/people/sheng-che-alex-hung/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1DGxebrP9GtQD/bibliography/public"
+    },
+    {
+      "name": "Naiim Ali",
+      "profile_url": "https://www.med.unc.edu/radiology/people/naiim-ali-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Ersan Altun",
+      "profile_url": "https://www.med.unc.edu/radiology/people/ersan-altun/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology",
+        "Urology"
+      ]
+    },
+    {
+      "name": "Josephine Finazzo",
+      "profile_url": "https://www.med.unc.edu/radiology/people/josephine-finazzo/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "W. Brian Hyslop",
+      "profile_url": "https://www.med.unc.edu/radiology/people/w-brian-hyslop/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Ellen Jones",
+      "profile_url": "https://www.med.unc.edu/radiology/people/ellen-jones/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology",
+        "Radiation Oncology",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Jeremy Jose",
+      "profile_url": "https://www.med.unc.edu/radiology/people/jeremy-jose-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Ellie R. Lee",
+      "profile_url": "https://www.med.unc.edu/radiology/people/ellie-r-lee/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Matthew A. Mauro",
+      "profile_url": "https://www.med.unc.edu/radiology/people/matthew-a-mauro/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Kristen Olinger",
+      "profile_url": "https://www.med.unc.edu/radiology/people/kristen-olinger/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Samuel Ostrum",
+      "profile_url": "https://www.med.unc.edu/radiology/people/samuel-ostrum-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Dustin Rea",
+      "profile_url": "https://www.med.unc.edu/radiology/people/dustin-rea/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Romuald Ferre",
+      "profile_url": "https://www.med.unc.edu/radiology/people/romuald-ferre-md-frcpc-fsbi/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Cherie M. Kuzmiak",
+      "profile_url": "https://www.med.unc.edu/radiology/people/cherie-m-kuzmiak/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ],
+      "pubmed_hint": "Kuzmiak CM"
+    },
+    {
+      "name": "Carrie Anne Orlikowski",
+      "profile_url": "https://www.med.unc.edu/radiology/people/carrie-anne-orlikowski-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Mark Rynties",
+      "profile_url": "https://www.med.unc.edu/radiology/people/mark-rynties/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Andrea Senter",
+      "profile_url": "https://www.med.unc.edu/radiology/people/andrea-andi-senter-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Genevieve A. Woodard",
+      "profile_url": "https://www.med.unc.edu/radiology/people/genevieve-a-woodard/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Behrooz Masuodi",
+      "profile_url": "https://www.med.unc.edu/radiology/people/behrooz-masuodi-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Joe Vimal Raj",
+      "profile_url": "https://www.med.unc.edu/radiology/people/joe-vimal-raj-mbbs-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Muthu Sakthivel",
+      "profile_url": "https://www.med.unc.edu/radiology/people/muthu-sakthivel/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Yildiz Sengul",
+      "profile_url": "https://www.med.unc.edu/radiology/people/yildiz-sengul/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Alexandra K. Banathy",
+      "profile_url": "https://www.med.unc.edu/radiology/people/alexandra-alex-k-banathy/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Charles T. Burke",
+      "profile_url": "https://www.med.unc.edu/radiology/people/charles-t-burke/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Meghan R. Clark",
+      "profile_url": "https://www.med.unc.edu/radiology/people/meghan-r-clark-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Sarah DeRycke",
+      "profile_url": "https://www.med.unc.edu/radiology/people/sarah-derycke-2/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Lourens du Pisanie",
+      "profile_url": "https://www.med.unc.edu/radiology/people/lourens-du-pisanie-jr/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Courtney Evron",
+      "profile_url": "https://www.med.unc.edu/radiology/people/courtney-evron/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Bryan Harris",
+      "profile_url": "https://www.med.unc.edu/radiology/people/bryan-harris/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Veronica Hudson",
+      "profile_url": "https://www.med.unc.edu/radiology/people/veronica-hudson-pa-c/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Nicole Keefe",
+      "profile_url": "https://www.med.unc.edu/radiology/people/nicole-keefe/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Maureen P. Kohi",
+      "profile_url": "https://www.med.unc.edu/radiology/people/maureen-p-kohi/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Nima Kokabi",
+      "profile_url": "https://www.med.unc.edu/radiology/people/nima-kokabi/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "David M. Mauro",
+      "profile_url": "https://www.med.unc.edu/radiology/people/david-m-mauro/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Bilal Battal",
+      "profile_url": "https://www.med.unc.edu/radiology/people/bilal-battal/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Andrew Campbell",
+      "profile_url": "https://www.med.unc.edu/radiology/people/andrew-campbell/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Valerie Jewells",
+      "profile_url": "https://www.med.unc.edu/radiology/people/valerie-jewells/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Yueh Z. Lee",
+      "profile_url": "https://www.med.unc.edu/radiology/people/yueh-z-lee/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Kassie McCullagh",
+      "profile_url": "https://www.med.unc.edu/radiology/people/kassie-mccullagh/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "J. Keith Smith",
+      "profile_url": "https://www.med.unc.edu/radiology/people/j-keith-smith/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology",
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Carlos Zamora",
+      "profile_url": "https://www.med.unc.edu/radiology/people/carlos-zamora/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Melania Bula",
+      "profile_url": "https://www.med.unc.edu/radiology/people/melania-bula/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Lynn A. Fordham",
+      "profile_url": "https://www.med.unc.edu/radiology/people/lynn-a-fordham/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Rebecca Hansen",
+      "profile_url": "https://www.med.unc.edu/radiology/people/rebecca-hansen-md/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Kistner Yvonne Javorski",
+      "profile_url": "https://www.med.unc.edu/radiology/people/kistner-yvonne-javorski-mrs-r-r-a-rtr/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "William W. Pryor",
+      "profile_url": "https://www.med.unc.edu/radiology/people/william-will-w-pryor/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Marcelo Takahashi",
+      "profile_url": "https://www.med.unc.edu/radiology/people/marcelo-takahashi/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
       "name": "Jean L. Wright",
       "profile_url": "https://www.med.unc.edu/radonc/directory/jean-wright/",
       "department": "Radiation Oncology",
@@ -17200,16 +17791,6 @@
     {
       "name": "Gaorav Gupta",
       "profile_url": "https://www.med.unc.edu/radonc/directory/gaorav-gupta/",
-      "department": "Radiation Oncology",
-      "role": "",
-      "departments": [
-        "Radiation Oncology",
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Ellen Jones",
-      "profile_url": "https://www.med.unc.edu/radonc/directory/ellen-jones/",
       "department": "Radiation Oncology",
       "role": "",
       "departments": [
@@ -18619,15 +19200,6 @@
       "pubmed_hint": "MYNCBI:http://www.ncbi.nlm.nih.gov/myncbi/1rQtmwy9kc45X/bibliography/52024401/public/?sort=date&amp;direction=ascending/public"
     },
     {
-      "name": "Maria Melendez-Gonzalez",
-      "profile_url": "https://www.med.unc.edu/derm/directory/maria-melendez-gonzalez-md/",
-      "department": "Dermatology",
-      "role": "",
-      "departments": [
-        "Dermatology"
-      ]
-    },
-    {
       "name": "David Rubenstein",
       "profile_url": "https://www.med.unc.edu/derm/directory/david-rubenstein-md-phd/",
       "department": "Dermatology",
@@ -18723,6 +19295,15 @@
     {
       "name": "Allison Weis",
       "profile_url": "https://www.med.unc.edu/derm/directory/allison-weis-pa/",
+      "department": "Dermatology",
+      "role": "",
+      "departments": [
+        "Dermatology"
+      ]
+    },
+    {
+      "name": "Stefan Hansen",
+      "profile_url": "https://www.med.unc.edu/derm/directory/stefan-hansen-md/",
       "department": "Dermatology",
       "role": "",
       "departments": [
@@ -19938,6 +20519,15 @@
       ]
     },
     {
+      "name": "Rachel Sircar",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/rachel-sircar-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "departments": [
+        "Family Medicine"
+      ]
+    },
+    {
       "name": "Kelly Lacy Smith",
       "profile_url": "https://www.med.unc.edu/fammed/directory/kelly-lacy-smith-md/",
       "department": "Family Medicine",
@@ -20139,6 +20729,394 @@
     {
       "name": "Andrew T. Chen",
       "profile_url": "https://www.med.unc.edu/ortho/directory/chen/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "R. Alexander Creighton",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/creighton/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Amanda Dombrowski",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/dombrowski/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Reid W. Draeger",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/draeger/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Robert J. Esther",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/esther/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Anthony Garzone",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/anthony-garzone-do/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Samuel Grant",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/samuel-grant-mbchb/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "John C. Hagedorn",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/john-c-hagedorn-ii-md-faoa-faaos-facs/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Geoffrey Handsfield",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/geoffrey-handsfield-phd/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Joe M. Hart",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/hart/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ],
+      "pubmed_hint": "Hart JM"
+    },
+    {
+      "name": "Ming-Feng Hsueh",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/ming-feng-hsueh-phd/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Caroline Iskander",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/caroline-iskander-md/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Moh'd G. Jaradat",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/mohd-g-jaradat-phd/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Ganesh M.V. Kamath",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/kamath/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Ben Kelley",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/ben-kelley-md/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Devin Kelly",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/devin-kelly/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Trapper Lalli",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/lalli/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Nicole Lane",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/lane/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Moe R. Lim",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/lim/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Joshua Lopes",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/joshua-lopes-pa-c/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Paul Marini",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/marini/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Jason Maslow",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/maslow/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Stuart Mitchell",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/mitchell/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Jacqueline Myers",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/myers/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Arvind S. Narayanan",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/narayanan/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Vinay K. Narotam",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/narotam/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Christopher W. Olcott",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/olcott/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "J. Megan Patterson",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/patterson/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Brian Phelps",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/brian-phelps-md-ms/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Timothy Pierson",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/timothy-luke-pierson-msn-rn-acpnp/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Stephen M. Scott",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/scott/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Michael K. Seifert",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/seifert/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Nicole Sherman",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/nicole-sherman-msn-fnp-c/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Kyle Spinrad",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/spinrad/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Gregory Summerville",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/summerville/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Jill Sylvester",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/sylvester/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Timothy N. Taft",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/taft/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Samantha Tayne",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/tayne/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Joshua N. Tennant",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/tennant/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Anna D. Vergun",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/vergun/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Kelly Waicus",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/kelly-waicus-md-caqsm/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Douglas S. Weinberg",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/weinberg/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "April Wikstrom",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/wikstrom/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Jennifer Woody",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/woody/",
       "department": "Orthopaedics",
       "role": "",
       "departments": [
@@ -20587,6 +21565,15 @@
     {
       "name": "Beatrice Y. Brewington",
       "profile_url": "https://www.med.unc.edu/ophth/directory/beatrice-y-brewington-md/",
+      "department": "Ophthalmology",
+      "role": "",
+      "departments": [
+        "Ophthalmology"
+      ]
+    },
+    {
+      "name": "Catherine Cuite",
+      "profile_url": "https://www.med.unc.edu/ophth/directory/catherine-cuite-md/",
       "department": "Ophthalmology",
       "role": "",
       "departments": [
@@ -21086,15 +22073,6 @@
     {
       "name": "Brandon Wilson",
       "profile_url": "https://www.med.unc.edu/urology/directory/brandon-wilson/",
-      "department": "Urology",
-      "role": "",
-      "departments": [
-        "Urology"
-      ]
-    },
-    {
-      "name": "Ersan Altun",
-      "profile_url": "https://www.med.unc.edu/urology/directory/ersan-altun/",
       "department": "Urology",
       "role": "",
       "departments": [
@@ -22236,7 +23214,8 @@
       "role": "",
       "departments": [
         "Lineberger Comprehensive Cancer Center"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/allison.deal.1/bibliography/public"
     },
     {
       "name": "Elizabeth Claire Dees",
@@ -22475,15 +23454,6 @@
     {
       "name": "Owen S. Fenton",
       "profile_url": "https://unclineberger.org/directory/owen-s-fenton/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Josephine Finazzo",
-      "profile_url": "https://www.med.unc.edu/radiology/people/josephine-finazzo/",
       "department": "Lineberger Comprehensive Cancer Center",
       "role": "",
       "departments": [
@@ -23205,16 +24175,6 @@
       "pubmed_hint": "King Jasmine L"
     },
     {
-      "name": "Nima Kokabi",
-      "profile_url": "https://unclineberger.org/directory/nima-kokabi/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Junior Faculty"
-    },
-    {
       "name": "Beverly H. Koller",
       "profile_url": "https://unclineberger.org/directory/beverly-h-koller/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -23375,15 +24335,6 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/carrie.lee.1/bibliography/public"
-    },
-    {
-      "name": "Yueh Z. Lee",
-      "profile_url": "https://unclineberger.org/directory/yueh-lee/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
     },
     {
       "name": "Jennifer Leeman",
@@ -24712,15 +25663,6 @@
       ]
     },
     {
-      "name": "J. Keith Smith",
-      "profile_url": "https://unclineberger.org/directory/j-keith-smith/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
       "name": "Jennifer S. Smith",
       "profile_url": "https://unclineberger.org/directory/jennifer-s-smith/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -25345,15 +26287,6 @@
     {
       "name": "William A. Wood",
       "profile_url": "https://unclineberger.org/directory/william-a-wood/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Genevieve A. Woodard",
-      "profile_url": "https://unclineberger.org/directory/genevieve-woodard/",
       "department": "Lineberger Comprehensive Cancer Center",
       "role": "",
       "departments": [
