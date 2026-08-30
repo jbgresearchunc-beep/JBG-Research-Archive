@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T13:43:56.869321Z",
+  "generated_at": "2026-08-30T04:16:45.606912Z",
   "total_faculty": 2912,
   "departments": [
     "Medicine \u2014 Cardiology",
@@ -6401,10 +6401,19 @@
       ]
     },
     {
+      "name": "James Mayo",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/james-mayo-md-mph/",
+      "department": "Pediatrics",
+      "role": "Wilm",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
       "name": "Rachel Fazenbaker",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/rachel-fazenbaker-md/",
       "department": "Pediatrics",
-      "role": "Wilm Npm Clin Pro",
+      "role": "Wilm",
       "departments": [
         "Pediatrics"
       ]
@@ -6413,7 +6422,7 @@
       "name": "M. Camille Haywood",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/m-camille-haywood-md/",
       "department": "Pediatrics",
-      "role": "Wilm Hosp Clin Pro",
+      "role": "Wilm",
       "departments": [
         "Pediatrics"
       ]
@@ -14414,16 +14423,6 @@
       "departments": [
         "Neurology"
       ]
-    },
-    {
-      "name": "Weiting Zhang",
-      "profile_url": "https://www.med.unc.edu/neurology/people/weiting-zhang-md-phd/",
-      "department": "Neurology",
-      "role": "Faculty-Researcher",
-      "departments": [
-        "Neurology"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/weiting.zhang.1/bibliography/public"
     },
     {
       "name": "Susan Wilson",
