@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-30T04:16:45.606912Z",
-  "total_faculty": 2912,
+  "generated_at": "2026-09-06T04:36:24.427469Z",
+  "total_faculty": 2898,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -2447,6 +2447,15 @@
       "pubmed_hint": "Paul Thananopavarn"
     },
     {
+      "name": "Emmy Yang",
+      "profile_url": "https://www.med.unc.edu/medicine/geriatrics/people/emmy-yang-md/",
+      "department": "Medicine \u2014 Geriatric Medicine",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Geriatric Medicine"
+      ]
+    },
+    {
       "name": "Beth Ann Brubaker",
       "profile_url": "https://www.med.unc.edu/medicine/geriatrics/people/beth-ann-brubaker-md/",
       "department": "Medicine \u2014 Geriatric Medicine",
@@ -3284,6 +3293,15 @@
       ]
     },
     {
+      "name": "David Cookmeyer",
+      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/david-cookmeyer-md/",
+      "department": "Medicine \u2014 Hospital Medicine",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hospital Medicine"
+      ]
+    },
+    {
       "name": "Hannah Dee",
       "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/hannah-dee-md/",
       "department": "Medicine \u2014 Hospital Medicine",
@@ -3349,6 +3367,15 @@
     {
       "name": "Grant Gosden",
       "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/grant-gosden-md/",
+      "department": "Medicine \u2014 Hospital Medicine",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hospital Medicine"
+      ]
+    },
+    {
+      "name": "Calvin R. Gross",
+      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/calvin-r-gross-md-mts/",
       "department": "Medicine \u2014 Hospital Medicine",
       "role": "",
       "departments": [
@@ -5324,15 +5351,6 @@
       ]
     },
     {
-      "name": "Blaine Brower",
-      "profile_url": "https://www.med.unc.edu/medicine/oncology/people/blaine-brower-fnp/",
-      "department": "Medicine \u2014 Oncology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Oncology"
-      ]
-    },
-    {
       "name": "Jeffrey S. Damrauer",
       "profile_url": "https://www.med.unc.edu/medicine/oncology/people/jeffrey-s-damrauer-ph-d/",
       "department": "Medicine \u2014 Oncology",
@@ -6069,6 +6087,15 @@
       ]
     },
     {
+      "name": "Sheila Stringfield",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/sheila-stringfield-fnp-agacnp-bc/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
+      ]
+    },
+    {
       "name": "Melissa Lawrence",
       "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/melissa-lawrence-bba/",
       "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
@@ -6398,6 +6425,15 @@
       "role": "",
       "departments": [
         "Medicine \u2014 Rheumatology, Allergy & Immunology"
+      ]
+    },
+    {
+      "name": "Patricia Williams",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/patricia-williams-md-mba/",
+      "department": "Pediatrics",
+      "role": "Npm",
+      "departments": [
+        "Pediatrics"
       ]
     },
     {
@@ -7170,7 +7206,7 @@
       "name": "Nadia Hoekstra",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/nadia-hoekstra-md/",
       "department": "Pediatrics",
-      "role": "Pulm",
+      "role": "Global",
       "departments": [
         "Pediatrics"
       ]
@@ -7273,15 +7309,6 @@
     {
       "name": "Xavier Williams",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/xavier-williams-md-mph/",
-      "department": "Pediatrics",
-      "role": "Gpam",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Sandeep Dhadvai",
-      "profile_url": "https://www.med.unc.edu/pediatrics/people/sandeep-dhadvai-md/",
       "department": "Pediatrics",
       "role": "Gpam",
       "departments": [
@@ -7633,15 +7660,6 @@
     {
       "name": "Kathy Kilroy Bradford",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/kathy-kilroy-bradford-md/",
-      "department": "Pediatrics",
-      "role": "Hosp",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Arshiya Ahuja",
-      "profile_url": "https://www.med.unc.edu/pediatrics/people/arshiya-ahuja/",
       "department": "Pediatrics",
       "role": "Hosp",
       "departments": [
@@ -8053,15 +8071,6 @@
       "profile_url": "https://www.med.unc.edu/pediatrics/people/nicole-stephenson-md/",
       "department": "Pediatrics",
       "role": "Pulm",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Marianne Muhlebach",
-      "profile_url": "https://www.med.unc.edu/pediatrics/people/marianne-muhlebach-md/",
-      "department": "Pediatrics",
-      "role": "Airway",
       "departments": [
         "Pediatrics"
       ]
@@ -8492,7 +8501,7 @@
       "name": "Jacquelyn Patterson",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/jacquelyn-patterson-md-mph/",
       "department": "Pediatrics",
-      "role": "Global Fac",
+      "role": "Global",
       "departments": [
         "Pediatrics"
       ],
@@ -13922,15 +13931,6 @@
       ]
     },
     {
-      "name": "Michael Zarzar",
-      "profile_url": "https://www.med.unc.edu/psych/people/michael-zarzar-md/",
-      "department": "Psychiatry",
-      "role": "Administration",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
       "name": "Donald Rosenstein",
       "profile_url": "https://www.med.unc.edu/psych/people/donald-rosenstein-md/",
       "department": "Psychiatry",
@@ -14987,15 +14987,6 @@
     {
       "name": "Hannah Sweeney",
       "profile_url": "https://www.med.unc.edu/obgyn/people/hannah-sweeney-md/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Department-Of-Obstetrics-And-Gynecology",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
-      "name": "Stephanie Glass Clark",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/stephanie-glass-clark-md-msc/",
       "department": "Obstetrics & Gynecology",
       "role": "Department-Of-Obstetrics-And-Gynecology",
       "departments": [
@@ -17032,15 +17023,6 @@
       ]
     },
     {
-      "name": "Susan Venuti",
-      "profile_url": "https://www.med.unc.edu/pathology/directory/susan-venuti-md/",
-      "department": "Pathology & Laboratory Medicine",
-      "role": "",
-      "departments": [
-        "Pathology & Laboratory Medicine"
-      ]
-    },
-    {
       "name": "Haofei Wang",
       "profile_url": "https://www.med.unc.edu/pathology/directory/haofei-wang-phd/",
       "department": "Pathology & Laboratory Medicine",
@@ -17356,6 +17338,15 @@
       ]
     },
     {
+      "name": "Yoon Seong Choi",
+      "profile_url": "https://www.med.unc.edu/radiology/people/yoon-seong-choi/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
       "name": "Meghan R. Clark",
       "profile_url": "https://www.med.unc.edu/radiology/people/meghan-r-clark-md/",
       "department": "Radiology",
@@ -17550,15 +17541,6 @@
     {
       "name": "Benjamin Huang",
       "profile_url": "https://www.med.unc.edu/radiology/people/benjamin-huang/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Veronica Hudson",
-      "profile_url": "https://www.med.unc.edu/radiology/people/veronica-hudson-pa-c/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -18212,6 +18194,15 @@
       ]
     },
     {
+      "name": "James Bates",
+      "profile_url": "https://www.med.unc.edu/radonc/directory/james-bates/",
+      "department": "Radiation Oncology",
+      "role": "",
+      "departments": [
+        "Radiation Oncology"
+      ]
+    },
+    {
       "name": "Dana Casey",
       "profile_url": "https://www.med.unc.edu/radonc/directory/dana-casey/",
       "department": "Radiation Oncology",
@@ -18309,6 +18300,15 @@
     {
       "name": "Courtney Bui",
       "profile_url": "https://www.med.unc.edu/radonc/directory/courtney-bui/",
+      "department": "Radiation Oncology",
+      "role": "",
+      "departments": [
+        "Radiation Oncology"
+      ]
+    },
+    {
+      "name": "Brian Cook",
+      "profile_url": "https://www.med.unc.edu/radonc/directory/brian-cook/",
       "department": "Radiation Oncology",
       "role": "",
       "departments": [
@@ -20182,15 +20182,6 @@
       ]
     },
     {
-      "name": "Natalie Allen",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/natalie-allen-md-2/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
       "name": "James Allison",
       "profile_url": "https://www.med.unc.edu/fammed/directory/james-allison-md/",
       "department": "Family Medicine",
@@ -20562,6 +20553,15 @@
       ]
     },
     {
+      "name": "Malina Howard",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/malina-howard-md-2/",
+      "department": "Family Medicine",
+      "role": "",
+      "departments": [
+        "Family Medicine"
+      ]
+    },
+    {
       "name": "Rachel Hughes",
       "profile_url": "https://www.med.unc.edu/fammed/directory/rachel-hughes-md/",
       "department": "Family Medicine",
@@ -20799,6 +20799,15 @@
       ]
     },
     {
+      "name": "Daniella Ortiz",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/daniella-ortiz-md-2/",
+      "department": "Family Medicine",
+      "role": "",
+      "departments": [
+        "Family Medicine"
+      ]
+    },
+    {
       "name": "Cristen Page",
       "profile_url": "https://www.med.unc.edu/fammed/directory/cristen-page-md-mph/",
       "department": "Family Medicine",
@@ -20837,15 +20846,6 @@
     {
       "name": "Erica Pettigrew",
       "profile_url": "https://www.med.unc.edu/fammed/directory/erica-pettigrew-md-jd-mph/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Debbie Phipps",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/debbie-phipps-md/",
       "department": "Family Medicine",
       "role": "",
       "departments": [
@@ -21115,15 +21115,6 @@
       ]
     },
     {
-      "name": "April Berndt",
-      "profile_url": "https://www.med.unc.edu/ortho/directory/berndt/",
-      "department": "Orthopaedics",
-      "role": "",
-      "departments": [
-        "Orthopaedics"
-      ]
-    },
-    {
       "name": "Thomas Brickner",
       "profile_url": "https://www.med.unc.edu/ortho/directory/thomas-brickner-md/",
       "department": "Orthopaedics",
@@ -21151,15 +21142,6 @@
       ]
     },
     {
-      "name": "Heather Carroll",
-      "profile_url": "https://www.med.unc.edu/ortho/directory/carroll/",
-      "department": "Orthopaedics",
-      "role": "",
-      "departments": [
-        "Orthopaedics"
-      ]
-    },
-    {
       "name": "Andrew T. Chen",
       "profile_url": "https://www.med.unc.edu/ortho/directory/chen/",
       "department": "Orthopaedics",
@@ -21171,15 +21153,6 @@
     {
       "name": "R. Alexander Creighton",
       "profile_url": "https://www.med.unc.edu/ortho/directory/creighton/",
-      "department": "Orthopaedics",
-      "role": "",
-      "departments": [
-        "Orthopaedics"
-      ]
-    },
-    {
-      "name": "Amanda Dombrowski",
-      "profile_url": "https://www.med.unc.edu/ortho/directory/dombrowski/",
       "department": "Orthopaedics",
       "role": "",
       "departments": [
@@ -21287,15 +21260,6 @@
       ]
     },
     {
-      "name": "Ben Kelley",
-      "profile_url": "https://www.med.unc.edu/ortho/directory/ben-kelley-md/",
-      "department": "Orthopaedics",
-      "role": "",
-      "departments": [
-        "Orthopaedics"
-      ]
-    },
-    {
       "name": "Devin Kelly",
       "profile_url": "https://www.med.unc.edu/ortho/directory/devin-kelly/",
       "department": "Orthopaedics",
@@ -21314,15 +21278,6 @@
       ]
     },
     {
-      "name": "Nicole Lane",
-      "profile_url": "https://www.med.unc.edu/ortho/directory/lane/",
-      "department": "Orthopaedics",
-      "role": "",
-      "departments": [
-        "Orthopaedics"
-      ]
-    },
-    {
       "name": "Moe R. Lim",
       "profile_url": "https://www.med.unc.edu/ortho/directory/lim/",
       "department": "Orthopaedics",
@@ -21332,44 +21287,8 @@
       ]
     },
     {
-      "name": "Joshua Lopes",
-      "profile_url": "https://www.med.unc.edu/ortho/directory/joshua-lopes-pa-c/",
-      "department": "Orthopaedics",
-      "role": "",
-      "departments": [
-        "Orthopaedics"
-      ]
-    },
-    {
-      "name": "Paul Marini",
-      "profile_url": "https://www.med.unc.edu/ortho/directory/marini/",
-      "department": "Orthopaedics",
-      "role": "",
-      "departments": [
-        "Orthopaedics"
-      ]
-    },
-    {
-      "name": "Jason Maslow",
-      "profile_url": "https://www.med.unc.edu/ortho/directory/maslow/",
-      "department": "Orthopaedics",
-      "role": "",
-      "departments": [
-        "Orthopaedics"
-      ]
-    },
-    {
       "name": "Stuart Mitchell",
       "profile_url": "https://www.med.unc.edu/ortho/directory/mitchell/",
-      "department": "Orthopaedics",
-      "role": "",
-      "departments": [
-        "Orthopaedics"
-      ]
-    },
-    {
-      "name": "Jacqueline Myers",
-      "profile_url": "https://www.med.unc.edu/ortho/directory/myers/",
       "department": "Orthopaedics",
       "role": "",
       "departments": [
@@ -21422,44 +21341,8 @@
       ]
     },
     {
-      "name": "Timothy Pierson",
-      "profile_url": "https://www.med.unc.edu/ortho/directory/timothy-luke-pierson-msn-rn-acpnp/",
-      "department": "Orthopaedics",
-      "role": "",
-      "departments": [
-        "Orthopaedics"
-      ]
-    },
-    {
-      "name": "Stephen M. Scott",
-      "profile_url": "https://www.med.unc.edu/ortho/directory/scott/",
-      "department": "Orthopaedics",
-      "role": "",
-      "departments": [
-        "Orthopaedics"
-      ]
-    },
-    {
       "name": "Michael K. Seifert",
       "profile_url": "https://www.med.unc.edu/ortho/directory/seifert/",
-      "department": "Orthopaedics",
-      "role": "",
-      "departments": [
-        "Orthopaedics"
-      ]
-    },
-    {
-      "name": "Nicole Sherman",
-      "profile_url": "https://www.med.unc.edu/ortho/directory/nicole-sherman-msn-fnp-c/",
-      "department": "Orthopaedics",
-      "role": "",
-      "departments": [
-        "Orthopaedics"
-      ]
-    },
-    {
-      "name": "Kyle Spinrad",
-      "profile_url": "https://www.med.unc.edu/ortho/directory/spinrad/",
       "department": "Orthopaedics",
       "role": "",
       "departments": [
@@ -21532,24 +21415,6 @@
     {
       "name": "Douglas S. Weinberg",
       "profile_url": "https://www.med.unc.edu/ortho/directory/weinberg/",
-      "department": "Orthopaedics",
-      "role": "",
-      "departments": [
-        "Orthopaedics"
-      ]
-    },
-    {
-      "name": "April Wikstrom",
-      "profile_url": "https://www.med.unc.edu/ortho/directory/wikstrom/",
-      "department": "Orthopaedics",
-      "role": "",
-      "departments": [
-        "Orthopaedics"
-      ]
-    },
-    {
-      "name": "Jennifer Woody",
-      "profile_url": "https://www.med.unc.edu/ortho/directory/woody/",
       "department": "Orthopaedics",
       "role": "",
       "departments": [
@@ -21952,6 +21817,15 @@
     {
       "name": "Erin Thompson",
       "profile_url": "https://www.med.unc.edu/ent/people/erin-thompson-ms-ccc-slp-lsls-cert-avt-2/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "Ricardo D. Vallejo",
+      "profile_url": "https://www.med.unc.edu/ent/people/ricardo-d-vallejo-aud-ccc-a/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
