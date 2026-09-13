@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-06T04:36:24.427469Z",
-  "total_faculty": 2898,
+  "generated_at": "2026-09-13T04:21:47.762425Z",
+  "total_faculty": 2899,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -5088,7 +5088,8 @@
       "department": "Medicine \u2014 Nephrology & Hypertension",
       "role": "All-Faculty-Profiles",
       "departments": [
-        "Medicine \u2014 Nephrology & Hypertension"
+        "Medicine \u2014 Nephrology & Hypertension",
+        "Medicine \u2014 Rheumatology, Allergy & Immunology"
       ]
     },
     {
@@ -6168,8 +6169,8 @@
       ]
     },
     {
-      "name": "Matthew Kretzschmar",
-      "profile_url": "https://www.med.unc.edu/medicine/rheumatology-allergy-immunology/people/matthew-kretzschmar-mba/",
+      "name": "Rachel Siebert",
+      "profile_url": "https://www.med.unc.edu/medicine/rheumatology-allergy-immunology/people/rachel-siebert-mph/",
       "department": "Medicine \u2014 Rheumatology, Allergy & Immunology",
       "role": "",
       "departments": [
@@ -6281,6 +6282,15 @@
     {
       "name": "Abigail Gilbert",
       "profile_url": "https://www.med.unc.edu/medicine/rheumatology-allergy-immunology/people/abigail-gilbert-md/",
+      "department": "Medicine \u2014 Rheumatology, Allergy & Immunology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Rheumatology, Allergy & Immunology"
+      ]
+    },
+    {
+      "name": "Shannon Herndon",
+      "profile_url": "https://www.med.unc.edu/medicine/rheumatology-allergy-immunology/people/shannon-herndon-md/",
       "department": "Medicine \u2014 Rheumatology, Allergy & Immunology",
       "role": "",
       "departments": [
@@ -9070,15 +9080,6 @@
       ]
     },
     {
-      "name": "Goro Ueda",
-      "profile_url": "https://www.med.unc.edu/surgery/directory/goro-ueda-md/",
-      "department": "Surgery \u2014 General Surgery",
-      "role": "",
-      "departments": [
-        "Surgery \u2014 General Surgery"
-      ]
-    },
-    {
       "name": "Esteban Calderon",
       "profile_url": "https://www.med.unc.edu/surgery/directory/esteban-calderon-md/",
       "department": "Surgery \u2014 General Surgery",
@@ -9276,6 +9277,15 @@
         "Surgery \u2014 General Surgery"
       ],
       "pubmed_hint": "Hodges M*"
+    },
+    {
+      "name": "Stephanie Joseph",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/stephanie-joseph-md/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
     },
     {
       "name": "Muneera R. Kapadia",
@@ -9560,16 +9570,6 @@
         "Surgery \u2014 General Surgery",
         "Surgery \u2014 Plastic & Reconstructive Surgery"
       ]
-    },
-    {
-      "name": "Jennifer C. Carr",
-      "profile_url": "https://www.med.unc.edu/surgery/directory/jennifer-c-carr/",
-      "department": "Surgery \u2014 General Surgery",
-      "role": "",
-      "departments": [
-        "Surgery \u2014 General Surgery"
-      ],
-      "pubmed_hint": "Carr JC"
     },
     {
       "name": "Lynn Damitz",
@@ -16664,7 +16664,8 @@
       "role": "",
       "departments": [
         "Pathology & Laboratory Medicine"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/feng.li.6/bibliography/public"
     },
     {
       "name": "Jiandong Liu",
@@ -17569,15 +17570,6 @@
     {
       "name": "Marija Ivanovic",
       "profile_url": "https://www.med.unc.edu/radiology/people/marija-ivanovic/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Kistner Yvonne Javorski",
-      "profile_url": "https://www.med.unc.edu/radiology/people/kistner-yvonne-javorski-mrs-r-r-a-rtr/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -18931,6 +18923,15 @@
       ]
     },
     {
+      "name": "Youlei Li",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/youlei-li/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ]
+    },
+    {
       "name": "Sarah Linnstaedt",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/sarah-linnstaedt/",
       "department": "Anesthesiology",
@@ -19527,6 +19528,15 @@
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/donna.culton.1/bibliography/public"
     },
     {
+      "name": "Karishma Desai",
+      "profile_url": "https://www.med.unc.edu/derm/directory/karishma-desai/",
+      "department": "Dermatology",
+      "role": "",
+      "departments": [
+        "Dermatology"
+      ]
+    },
+    {
       "name": "Kimberly Cheek",
       "profile_url": "https://www.med.unc.edu/derm/directory/kimberly-cheek/",
       "department": "Dermatology",
@@ -19728,15 +19738,6 @@
     {
       "name": "Allison Weis",
       "profile_url": "https://www.med.unc.edu/derm/directory/allison-weis-pa/",
-      "department": "Dermatology",
-      "role": "",
-      "departments": [
-        "Dermatology"
-      ]
-    },
-    {
-      "name": "Stefan Hansen",
-      "profile_url": "https://www.med.unc.edu/derm/directory/stefan-hansen-md/",
       "department": "Dermatology",
       "role": "",
       "departments": [
@@ -21517,6 +21518,15 @@
     {
       "name": "Caitlin Heredia",
       "profile_url": "https://www.med.unc.edu/ent/people/caitlin-heredia-pa-c/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ]
+    },
+    {
+      "name": "David Strum",
+      "profile_url": "https://www.med.unc.edu/ent/people/david-strum-md/",
       "department": "Otolaryngology / Head & Neck Surgery",
       "role": "",
       "departments": [
