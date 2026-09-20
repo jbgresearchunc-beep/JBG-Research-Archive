@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-13T04:21:47.762425Z",
-  "total_faculty": 2899,
+  "generated_at": "2026-09-20T04:37:16.619344Z",
+  "total_faculty": 2835,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -2391,8 +2391,7 @@
       "department": "Medicine \u2014 Geriatric Medicine",
       "role": "",
       "departments": [
-        "Medicine \u2014 Geriatric Medicine",
-        "Family Medicine"
+        "Medicine \u2014 Geriatric Medicine"
       ]
     },
     {
@@ -2401,8 +2400,7 @@
       "department": "Medicine \u2014 Geriatric Medicine",
       "role": "",
       "departments": [
-        "Medicine \u2014 Geriatric Medicine",
-        "Family Medicine"
+        "Medicine \u2014 Geriatric Medicine"
       ]
     },
     {
@@ -2411,8 +2409,7 @@
       "department": "Medicine \u2014 Geriatric Medicine",
       "role": "",
       "departments": [
-        "Medicine \u2014 Geriatric Medicine",
-        "Family Medicine"
+        "Medicine \u2014 Geriatric Medicine"
       ]
     },
     {
@@ -2431,8 +2428,7 @@
       "department": "Medicine \u2014 Geriatric Medicine",
       "role": "",
       "departments": [
-        "Medicine \u2014 Geriatric Medicine",
-        "Family Medicine"
+        "Medicine \u2014 Geriatric Medicine"
       ]
     },
     {
@@ -2538,6 +2534,15 @@
         "Medicine \u2014 Hematology"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/callie.berkowitz.1/bibliography/public"
+    },
+    {
+      "name": "Jessica Curcio",
+      "profile_url": "https://www.med.unc.edu/medicine/hematology/people/jessica-curcio-nd-pa-c-mpas-fsvm/",
+      "department": "Medicine \u2014 Hematology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hematology"
+      ]
     },
     {
       "name": "Patrick Ellsworth",
@@ -3130,8 +3135,8 @@
       ]
     },
     {
-      "name": "David Hemsey",
-      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/david-hemsey-md/",
+      "name": "Andrew Donohoe",
+      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/andrew-donohoe-md/",
       "department": "Medicine \u2014 Hospital Medicine",
       "role": "",
       "departments": [
@@ -3139,8 +3144,8 @@
       ]
     },
     {
-      "name": "Andrew Donohoe",
-      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/andrew-donohoe-md/",
+      "name": "Ashmita Chatterjee",
+      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/ashmita-chatterjee-md/",
       "department": "Medicine \u2014 Hospital Medicine",
       "role": "",
       "departments": [
@@ -3175,15 +3180,6 @@
       ]
     },
     {
-      "name": "Ashmita Chatterjee",
-      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/ashmita-chatterjee-md/",
-      "department": "Medicine \u2014 Hospital Medicine",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Hospital Medicine"
-      ]
-    },
-    {
       "name": "Ria Dancel",
       "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/ria-dancel-md/",
       "department": "Medicine \u2014 Hospital Medicine",
@@ -3194,8 +3190,54 @@
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1-iHzkqNfgz5e/bibliography/public"
     },
     {
+      "name": "Aaron J. Fried",
+      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/aaron-j-fried-md-mba/",
+      "department": "Medicine \u2014 Hospital Medicine",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hospital Medicine"
+      ]
+    },
+    {
+      "name": "Jessica Leigh Guidici",
+      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/jessica-leigh-guidici-md/",
+      "department": "Medicine \u2014 Hospital Medicine",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hospital Medicine"
+      ]
+    },
+    {
+      "name": "Christina R. Kahl",
+      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/christina-r-kahl-md-phd/",
+      "department": "Medicine \u2014 Hospital Medicine",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hospital Medicine"
+      ],
+      "pubmed_hint": "Kahl CR"
+    },
+    {
+      "name": "Rimma Osipov",
+      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/rimma-osipov-md-phd/",
+      "department": "Medicine \u2014 Hospital Medicine",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hospital Medicine"
+      ]
+    },
+    {
       "name": "Evan Raff",
       "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/evan-raff-md/",
+      "department": "Medicine \u2014 Hospital Medicine",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hospital Medicine"
+      ]
+    },
+    {
+      "name": "David Hemsey",
+      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/david-hemsey-md/",
       "department": "Medicine \u2014 Hospital Medicine",
       "role": "",
       "departments": [
@@ -3338,15 +3380,6 @@
       ]
     },
     {
-      "name": "Aaron J. Fried",
-      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/aaron-j-fried-md-mba/",
-      "department": "Medicine \u2014 Hospital Medicine",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Hospital Medicine"
-      ]
-    },
-    {
       "name": "Jessica Fuller",
       "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/jessica-fuller-md/",
       "department": "Medicine \u2014 Hospital Medicine",
@@ -3383,15 +3416,6 @@
       ]
     },
     {
-      "name": "Jessica Leigh Guidici",
-      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/jessica-leigh-guidici-md/",
-      "department": "Medicine \u2014 Hospital Medicine",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Hospital Medicine"
-      ]
-    },
-    {
       "name": "Jonathon Heath",
       "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/jonathan-heath/",
       "department": "Medicine \u2014 Hospital Medicine",
@@ -3410,8 +3434,8 @@
       ]
     },
     {
-      "name": "Ejaz Janjua",
-      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/ejaz-janjua-md/",
+      "name": "Feerozeh Jahanshahi",
+      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/feerozeh-jahanshahi-md/",
       "department": "Medicine \u2014 Hospital Medicine",
       "role": "",
       "departments": [
@@ -3419,14 +3443,13 @@
       ]
     },
     {
-      "name": "Christina R. Kahl",
-      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/christina-r-kahl-md-phd/",
+      "name": "Ejaz Janjua",
+      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/ejaz-janjua-md/",
       "department": "Medicine \u2014 Hospital Medicine",
       "role": "",
       "departments": [
         "Medicine \u2014 Hospital Medicine"
-      ],
-      "pubmed_hint": "Kahl CR"
+      ]
     },
     {
       "name": "Ann Marie Kumfer",
@@ -3494,15 +3517,6 @@
     {
       "name": "Patrick O\u2019Shea",
       "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/patrick-oshea-md/",
-      "department": "Medicine \u2014 Hospital Medicine",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Hospital Medicine"
-      ]
-    },
-    {
-      "name": "Rimma Osipov",
-      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/rimma-osipov-md-phd/",
       "department": "Medicine \u2014 Hospital Medicine",
       "role": "",
       "departments": [
@@ -3602,6 +3616,15 @@
     {
       "name": "Mohamed Seisa",
       "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/mohamed-seisa-md/",
+      "department": "Medicine \u2014 Hospital Medicine",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hospital Medicine"
+      ]
+    },
+    {
+      "name": "Haley Stone",
+      "profile_url": "https://www.med.unc.edu/medicine/hospitalmedicine/people/haley-stone-md/",
       "department": "Medicine \u2014 Hospital Medicine",
       "role": "",
       "departments": [
@@ -6438,6 +6461,24 @@
       ]
     },
     {
+      "name": "Alexa Corker",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/alexa-corker-phd/",
+      "department": "Pediatrics",
+      "role": "Ai",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Jeffrey Anderson",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/jeffrey-anderson-md-mph-mba/",
+      "department": "Pediatrics",
+      "role": "Card",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
       "name": "Patricia Williams",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/patricia-williams-md-mba/",
       "department": "Pediatrics",
@@ -9174,15 +9215,6 @@
       ]
     },
     {
-      "name": "Abelardo DeAnda",
-      "profile_url": "https://www.med.unc.edu/surgery/directory/abelardo-deanda-md/",
-      "department": "Surgery \u2014 General Surgery",
-      "role": "",
-      "departments": [
-        "Surgery \u2014 General Surgery"
-      ]
-    },
-    {
       "name": "Thomas M. Egan",
       "profile_url": "https://www.med.unc.edu/surgery/directory/thomas-m-egan-md-msc/",
       "department": "Surgery \u2014 General Surgery",
@@ -9625,6 +9657,16 @@
       "pubmed_hint": "Ogunleye AA*"
     },
     {
+      "name": "Nicole Reid",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/nicole-reid/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery",
+        "Surgery \u2014 Plastic & Reconstructive Surgery"
+      ]
+    },
+    {
       "name": "Katherine Rodby",
       "profile_url": "https://www.med.unc.edu/surgery/directory/katherine-rodby-md-facs/",
       "department": "Surgery \u2014 General Surgery",
@@ -10047,6 +10089,15 @@
       "role": "",
       "departments": [
         "Surgery \u2014 Plastic & Reconstructive Surgery"
+      ]
+    },
+    {
+      "name": "Abigail Norton",
+      "profile_url": "https://www.med.unc.edu/psych/people/abigail-norton-phd/",
+      "department": "Psychiatry",
+      "role": "Clinician",
+      "departments": [
+        "Psychiatry"
       ]
     },
     {
@@ -14848,6 +14899,15 @@
       ]
     },
     {
+      "name": "Kimberly M. Hamilton",
+      "profile_url": "https://www.med.unc.edu/neurosurgery/directory/kimberly-hamilton-md/",
+      "department": "Neurosurgery",
+      "role": "",
+      "departments": [
+        "Neurosurgery"
+      ]
+    },
+    {
       "name": "Vibhor Krishna",
       "profile_url": "https://www.med.unc.edu/neurosurgery/directory/vibhor-krishna-md/",
       "department": "Neurosurgery",
@@ -14866,8 +14926,8 @@
       ]
     },
     {
-      "name": "Kimberly M. Hamilton",
-      "profile_url": "https://www.med.unc.edu/neurosurgery/directory/kimberly-hamilton-md/",
+      "name": "Jihad Abdelgadir",
+      "profile_url": "https://www.med.unc.edu/neurosurgery/directory/jihad-abdelgadir-md/",
       "department": "Neurosurgery",
       "role": "",
       "departments": [
@@ -17163,7 +17223,8 @@
       "departments": [
         "Pathology & Laboratory Medicine",
         "Lineberger Comprehensive Cancer Center"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/melinda.yates.1/bibliography/public"
     },
     {
       "name": "Paul Yell",
@@ -17561,6 +17622,15 @@
     {
       "name": "W. Brian Hyslop",
       "profile_url": "https://www.med.unc.edu/radiology/people/w-brian-hyslop/",
+      "department": "Radiology",
+      "role": "",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Jarunee Intrapiromkul",
+      "profile_url": "https://www.med.unc.edu/radiology/people/jarunee-intrapiromkul-md/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -19238,6 +19308,15 @@
       ]
     },
     {
+      "name": "Khadija Razzaq",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/khadija-razzaq/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ]
+    },
+    {
       "name": "Karene Ricketts",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/karene-ricketts/",
       "department": "Anesthesiology",
@@ -19738,6 +19817,15 @@
     {
       "name": "Allison Weis",
       "profile_url": "https://www.med.unc.edu/derm/directory/allison-weis-pa/",
+      "department": "Dermatology",
+      "role": "",
+      "departments": [
+        "Dermatology"
+      ]
+    },
+    {
+      "name": "Stefan Hansen",
+      "profile_url": "https://www.med.unc.edu/derm/directory/stefan-hansen-md/",
       "department": "Dermatology",
       "role": "",
       "departments": [
@@ -20424,659 +20512,6 @@
       "departments": [
         "Family Medicine",
         "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Shanti Eranti",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/shanti-eranti-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Narges Farahi",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/narges-farahi-md-2/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Erin Fraher",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/erin-fraher-ph-d/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Adam Goldstein",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/adam-goldstein-md-mph-2/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Ami Goldstein",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/ami-goldstein-cnm-fnp/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Margaret Gourlay",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/margaret-gourlay-md-mph-2/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Mark Gwynne",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/mark-gwynne-do/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Jacqueline Halladay",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/jacqueline-halladay/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Andrew Hannapel",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/andrew-hannapel-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Emily M. Hawes",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/emily-m-hawes-pharmd-bcps-cpp/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1DycvsqknIDQv/bibliography/public"
-    },
-    {
-      "name": "Laura Hester",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/laura-hester-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Stephanie Hodges",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/stephanie-hodges-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Allison Hollowell",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/allison-hollowell-md-2/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Laura House",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/laura-house-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Malina Howard",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/malina-howard-md-2/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Rachel Hughes",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/rachel-hughes-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Dana Iglesias",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/dana-iglesias-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Landon Irvin",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/landon-irvin-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "LeRon Jackson",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/leron-jackson-md-mph/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Daniel Jobe",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/daniel-jobe-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Shawn Kane",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/shawn-kane-md-faafp-facsm/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Ben Kaplan",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/ben-kaplan-md-mph-2/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Amber Komorian",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/amber-komorian-md-mph/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Tommy Koonce",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/thomas-koonce-md-mph/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Sarah Kowitt",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/sarah-kowitt-phd-mph-2/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/sarah.kowitt.1/bibliography/public"
-    },
-    {
-      "name": "Rita Lahlou",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/rita-lahlou-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Yee Lam",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/lam-yee/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Justin Lee",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/justin-lee-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Brianna Lombardi",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/brianna-lombardi-phd-msw/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/brianna.lombardi.1/bibliography/public"
-    },
-    {
-      "name": "Jennifer Martini",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/jennifer-martini-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Morgan McEachern",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/morgan-mceachern-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Gregory Metzger",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/gregory-metzger-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Jonathan Mitchell",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/jonathan-jon-mitchell-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Modjulie Moore",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/modjulie-moore-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Richard Moore",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/richard-rick-moore-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Anne Mounsey",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/anne-mounsey-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Linda Myerholtz",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/linda-myerholtz-phd/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ],
-      "pubmed_hint": "Myerholtz L"
-    },
-    {
-      "name": "Palee Myrex",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/palee-myrex-md-2/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Noa Nessim",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/noa-nessim-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Dana Neutze",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/dana-neutze-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Helen Newton",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/helen-newton-phd-mph/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Daniella Ortiz",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/daniella-ortiz-md-2/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Cristen Page",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/cristen-page-md-mph/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Donald Pathman",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/donald-pathman/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Ryan Paulus",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/ryan-paulus-do/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Jake Perrin",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/jake-perrin-md-ma-2/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Erica Pettigrew",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/erica-pettigrew-md-jd-mph/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Taylor Pierce",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/taylor-pierce-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Leah Ranney",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/leah-ranney/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Brian Rayala",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/brian-rayala-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Vinay Reddy",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/vinay-reddy-md-mph/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Ashley Rietz",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/ashley-rietz-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Olivia Ritchie",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/olivia-ritchie-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Caroline Roberts",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/caroline-roberts-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Michael Ropero",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/michael-ropero-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Wes Roten",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/wes-roten-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Jesus Ruiz",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/jesus-ruiz-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Eric Sasine",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/eric-sasine-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Rachel Sircar",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/rachel-sircar-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Kelly Lacy Smith",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/kelly-lacy-smith-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Patrick Carlsen Smith",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/patrick-carlsen-smith-md-mph/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Amy Stanfield",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/amy-stanfield-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Liza Straub",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/liza-straub-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Kyle Tamminga",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/kyle-tamminga-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Maria Thekkekandam",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/maria-thekkekandam-md-mph/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Leah Topper",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/leah-topper-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Sapna Varkey",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/sapna-varkey-phd-mpa/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Nadja Vielot",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/nadja-vielot/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine",
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Catherine Walsh",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/catherine-walsh-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Rupal Yu",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/rupal-yu-md-mph/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Matt Zeitler",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/matt-zeitler-md/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
-      ]
-    },
-    {
-      "name": "Adam Zolotor",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/adam-zolotor/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine"
       ]
     },
     {
@@ -22737,15 +22172,6 @@
       ]
     },
     {
-      "name": "Laurianne Van Landeghem",
-      "profile_url": "https://unclineberger.org/directory/laurianne-van-landeghem/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
       "name": "Shawn Ahmed",
       "profile_url": "https://unclineberger.org/directory/shawn-ahmed/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -23874,15 +23300,6 @@
       ]
     },
     {
-      "name": "Mindy Gellin",
-      "profile_url": "https://unclineberger.org/directory/mindy-gellin/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
       "name": "Karen M. Gil",
       "profile_url": "https://unclineberger.org/directory/karen-m-gil/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -24161,16 +23578,6 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ]
-    },
-    {
-      "name": "Dominique Higgins",
-      "profile_url": "https://unclineberger.org/directory/dominique-higgins/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1zio6X9J2Cv15B/bibliography/public"
     },
     {
       "name": "Chris Hilliard",
@@ -26331,6 +25738,15 @@
     {
       "name": "Erin Videgar-Laird",
       "profile_url": "https://unclineberger.org/directory/erin-videgar-laird/",
+      "department": "Lineberger Comprehensive Cancer Center",
+      "role": "",
+      "departments": [
+        "Lineberger Comprehensive Cancer Center"
+      ]
+    },
+    {
+      "name": "Nadja Vielot",
+      "profile_url": "https://unclineberger.org/directory/nadja-vielot/",
       "department": "Lineberger Comprehensive Cancer Center",
       "role": "",
       "departments": [
