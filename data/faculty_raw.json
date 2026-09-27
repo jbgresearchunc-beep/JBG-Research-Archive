@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-20T04:37:16.619344Z",
-  "total_faculty": 2835,
+  "generated_at": "2026-09-27T04:29:39.254484Z",
+  "total_faculty": 2844,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -2971,6 +2971,15 @@
     {
       "name": "Bejal Kikani",
       "profile_url": "https://www.med.unc.edu/medicine/hematology/people/bejal-kikani/",
+      "department": "Medicine \u2014 Hematology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hematology"
+      ]
+    },
+    {
+      "name": "Jessica T. Maingi",
+      "profile_url": "https://www.med.unc.edu/medicine/hematology/people/jessica-t-maingi-agnp-c/",
       "department": "Medicine \u2014 Hematology",
       "role": "",
       "departments": [
@@ -6461,6 +6470,33 @@
       ]
     },
     {
+      "name": "Chandler Knott",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/chandler-knott-phd/",
+      "department": "Pediatrics",
+      "role": "Dbl Clin Fac",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Katherine Peppers",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/katherine-peppers-dnp-pnp-pc-cpmhs/",
+      "department": "Pediatrics",
+      "role": "Dbl Clin Fac",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Zachary Arnold",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/zachary-arnold-phd/",
+      "department": "Pediatrics",
+      "role": "Dbl Clin Fac",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
       "name": "Alexa Corker",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/alexa-corker-phd/",
       "department": "Pediatrics",
@@ -8485,6 +8521,15 @@
       ]
     },
     {
+      "name": "Sarah Croop",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/sarah-croop-dnp-nnp/",
+      "department": "Pediatrics",
+      "role": "Npm",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
       "name": "Susan Meier",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/susan-meier-nd-nnp-mba-mph/",
       "department": "Pediatrics",
@@ -8825,16 +8870,6 @@
       "departments": [
         "Pediatrics"
       ]
-    },
-    {
-      "name": "Kieran Leong",
-      "profile_url": "https://www.med.unc.edu/pediatrics/people/kieran-leong-do/",
-      "department": "Pediatrics",
-      "role": "Pccm",
-      "departments": [
-        "Pediatrics"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/kieran.leong.1/bibliography/public"
     },
     {
       "name": "Katherine Clement",
@@ -9655,16 +9690,6 @@
         "Urology"
       ],
       "pubmed_hint": "Ogunleye AA*"
-    },
-    {
-      "name": "Nicole Reid",
-      "profile_url": "https://www.med.unc.edu/surgery/directory/nicole-reid/",
-      "department": "Surgery \u2014 General Surgery",
-      "role": "",
-      "departments": [
-        "Surgery \u2014 General Surgery",
-        "Surgery \u2014 Plastic & Reconstructive Surgery"
-      ]
     },
     {
       "name": "Katherine Rodby",
@@ -10582,7 +10607,7 @@
       "name": "Shanika Paylor",
       "profile_url": "https://www.med.unc.edu/psych/people/shanika-paylor-lcmhc/",
       "department": "Psychiatry",
-      "role": "Cecmh",
+      "role": "Clinician",
       "departments": [
         "Psychiatry"
       ]
@@ -11929,7 +11954,7 @@
       "name": "Matthew Diehl",
       "profile_url": "https://www.med.unc.edu/psych/people/matthew-diehl-msw/",
       "department": "Psychiatry",
-      "role": "Cecmh",
+      "role": "Faculty",
       "departments": [
         "Psychiatry"
       ]
@@ -12399,7 +12424,7 @@
       "name": "Justin Gettings",
       "profile_url": "https://www.med.unc.edu/psych/people/justin-gettings-md/",
       "department": "Psychiatry",
-      "role": "Cecmh",
+      "role": "Clinician",
       "departments": [
         "Psychiatry"
       ]
@@ -12697,7 +12722,7 @@
       "name": "Gwen Sims",
       "profile_url": "https://www.med.unc.edu/psych/people/gwen-sims-msn-np/",
       "department": "Psychiatry",
-      "role": "Cecmh",
+      "role": "Clinician",
       "departments": [
         "Psychiatry"
       ]
@@ -13246,7 +13271,7 @@
       "name": "Edith Allen",
       "profile_url": "https://www.med.unc.edu/psych/people/edith-allen-lcmhc-ncc/",
       "department": "Psychiatry",
-      "role": "Cecmh",
+      "role": "Clinician",
       "departments": [
         "Psychiatry"
       ]
@@ -13751,7 +13776,7 @@
       "name": "Brenna Stanczyk",
       "profile_url": "https://www.med.unc.edu/psych/people/brenna-stanczyk/",
       "department": "Psychiatry",
-      "role": "Cecmh",
+      "role": "Clinician",
       "departments": [
         "Psychiatry"
       ]
@@ -13760,7 +13785,7 @@
       "name": "Jiwoo Kim",
       "profile_url": "https://www.med.unc.edu/psych/people/jiwoo-kim-msw/",
       "department": "Psychiatry",
-      "role": "Cecmh",
+      "role": "Clinician",
       "departments": [
         "Psychiatry"
       ]
@@ -13886,7 +13911,7 @@
       "name": "Arlene Miller",
       "profile_url": "https://www.med.unc.edu/psych/people/arlene-miller-md/",
       "department": "Psychiatry",
-      "role": "Cecmh",
+      "role": "Clinician",
       "departments": [
         "Psychiatry"
       ]
@@ -14156,6 +14181,42 @@
       ]
     },
     {
+      "name": "Colleen Stack",
+      "profile_url": "https://www.med.unc.edu/neurology/people/colleen-stack-md-mba/",
+      "department": "Neurology",
+      "role": "Comprehensive-Neurology",
+      "departments": [
+        "Neurology"
+      ]
+    },
+    {
+      "name": "Tanziyah Muqeem",
+      "profile_url": "https://www.med.unc.edu/neurology/people/tanziyah-muqeem-md-phd/",
+      "department": "Neurology",
+      "role": "Movement-Disorders",
+      "departments": [
+        "Neurology"
+      ]
+    },
+    {
+      "name": "Molly Mizenko",
+      "profile_url": "https://www.med.unc.edu/neurology/people/molly-mizenko-ms/",
+      "department": "Neurology",
+      "role": "Precision-Medicine-And-Neurogenetics",
+      "departments": [
+        "Neurology"
+      ]
+    },
+    {
+      "name": "Abena Kwegyir-Aggrey",
+      "profile_url": "https://www.med.unc.edu/neurology/people/abena-kwegyir-aggrey-md/",
+      "department": "Neurology",
+      "role": "Ms-And-Neuroimmunology",
+      "departments": [
+        "Neurology"
+      ]
+    },
+    {
       "name": "Baggio A. Evangelista",
       "profile_url": "https://www.med.unc.edu/neurology/people/baggio-a-evangelista-phd/",
       "department": "Neurology",
@@ -14301,10 +14362,28 @@
       ]
     },
     {
+      "name": "Miriam Camacho-Stokes",
+      "profile_url": "https://www.med.unc.edu/neurology/people/miriam-camacho-stokes-acnp/",
+      "department": "Neurology",
+      "role": "Neurocritical-Care",
+      "departments": [
+        "Neurology"
+      ]
+    },
+    {
       "name": "Kostika Mulo",
       "profile_url": "https://www.med.unc.edu/neurology/people/kostika-mulo-do/",
       "department": "Neurology",
       "role": "Stroke",
+      "departments": [
+        "Neurology"
+      ]
+    },
+    {
+      "name": "Chelsea Simmons",
+      "profile_url": "https://www.med.unc.edu/neurology/people/chelsea-simmons-dnp-fnp-bc/",
+      "department": "Neurology",
+      "role": "Als-Clinic",
       "departments": [
         "Neurology"
       ]
@@ -14946,6 +15025,15 @@
     {
       "name": "Amol Yadav",
       "profile_url": "https://www.med.unc.edu/neurosurgery/directory/amol-yadav-phd-ms/",
+      "department": "Neurosurgery",
+      "role": "",
+      "departments": [
+        "Neurosurgery"
+      ]
+    },
+    {
+      "name": "Kerry C. Roby Jr",
+      "profile_url": "https://www.med.unc.edu/neurosurgery/directory/kerry-c-roby-jr-phd/",
       "department": "Neurosurgery",
       "role": "",
       "departments": [
@@ -16344,6 +16432,15 @@
     {
       "name": "Leslie G. Dodd",
       "profile_url": "https://www.med.unc.edu/pathology/directory/ldodd/",
+      "department": "Pathology & Laboratory Medicine",
+      "role": "",
+      "departments": [
+        "Pathology & Laboratory Medicine"
+      ]
+    },
+    {
+      "name": "Hillary Epstein",
+      "profile_url": "https://www.med.unc.edu/pathology/directory/hillary-epstein-md/",
       "department": "Pathology & Laboratory Medicine",
       "role": "",
       "departments": [
@@ -18740,15 +18837,6 @@
       ]
     },
     {
-      "name": "Ellen Flanagan",
-      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/ellen-flanagan/",
-      "department": "Anesthesiology",
-      "role": "",
-      "departments": [
-        "Anesthesiology"
-      ]
-    },
-    {
       "name": "Amy Goetzinger",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/amy-goetzinger/",
       "department": "Anesthesiology",
@@ -19083,15 +19171,6 @@
       ]
     },
     {
-      "name": "James Mason",
-      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/james-mason/",
-      "department": "Anesthesiology",
-      "role": "",
-      "departments": [
-        "Anesthesiology"
-      ]
-    },
-    {
       "name": "Matt Mauck",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/matthew-mauck/",
       "department": "Anesthesiology",
@@ -19211,15 +19290,6 @@
     {
       "name": "Kimberley Nichols",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/kimberley-nichols/",
-      "department": "Anesthesiology",
-      "role": "",
-      "departments": [
-        "Anesthesiology"
-      ]
-    },
-    {
-      "name": "Millicent Olawale",
-      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/millicent-olawale/",
       "department": "Anesthesiology",
       "role": "",
       "departments": [
@@ -20469,6 +20539,15 @@
       ]
     },
     {
+      "name": "Stephanie Deccy",
+      "profile_url": "https://www.med.unc.edu/fammed/directory/stephanie-deccy-md/",
+      "department": "Family Medicine",
+      "role": "",
+      "departments": [
+        "Family Medicine"
+      ]
+    },
+    {
       "name": "Kristen Dodenhoff",
       "profile_url": "https://www.med.unc.edu/fammed/directory/kristen-dodenhoff-md/",
       "department": "Family Medicine",
@@ -20505,16 +20584,6 @@
       ]
     },
     {
-      "name": "Chineme Enyioha",
-      "profile_url": "https://www.med.unc.edu/fammed/directory/chineme-enyioha-md-mph/",
-      "department": "Family Medicine",
-      "role": "",
-      "departments": [
-        "Family Medicine",
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
       "name": "James O. Sanders",
       "profile_url": "https://www.med.unc.edu/ortho/directory/james-o-sanders-md/",
       "department": "Orthopaedics",
@@ -20544,6 +20613,15 @@
     {
       "name": "Joshua N. Berkowitz",
       "profile_url": "https://www.med.unc.edu/ortho/directory/berkowitz/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Collin Blackburn",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/collin-blackburn-md-mba/",
       "department": "Orthopaedics",
       "role": "",
       "departments": [
@@ -21104,6 +21182,16 @@
       ]
     },
     {
+      "name": "Heidi Martini-Stoica",
+      "profile_url": "https://www.med.unc.edu/ent/people/heidi-martini-stoica-md-phd/",
+      "department": "Otolaryngology / Head & Neck Surgery",
+      "role": "",
+      "departments": [
+        "Otolaryngology / Head & Neck Surgery"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/heidi.martini-stoica.1/bibliography/public"
+    },
+    {
       "name": "Meghan Norris",
       "profile_url": "https://www.med.unc.edu/ent/people/meghan-norris-ms-mspas-pa-c/",
       "department": "Otolaryngology / Head & Neck Surgery",
@@ -21344,6 +21432,15 @@
     {
       "name": "David Fleischman",
       "profile_url": "https://www.med.unc.edu/ophth/directory/david-fleischman-md/",
+      "department": "Ophthalmology",
+      "role": "",
+      "departments": [
+        "Ophthalmology"
+      ]
+    },
+    {
+      "name": "Michelle Huynh",
+      "profile_url": "https://www.med.unc.edu/ophth/directory/michelle-huynh-md/",
       "department": "Ophthalmology",
       "role": "",
       "departments": [
@@ -21905,15 +22002,6 @@
       ]
     },
     {
-      "name": "Cody Andrews",
-      "profile_url": "https://www.med.unc.edu/phyrehab/directory/cody-andrews-md/",
-      "department": "Physical Medicine & Rehabilitation",
-      "role": "",
-      "departments": [
-        "Physical Medicine & Rehabilitation"
-      ]
-    },
-    {
       "name": "John Michael Baratta",
       "profile_url": "https://www.med.unc.edu/phyrehab/directory/johnmichael-baratta/",
       "department": "Physical Medicine & Rehabilitation",
@@ -21961,6 +22049,16 @@
         "Physical Medicine & Rehabilitation"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1TaU90f3RRHsT8/bibliography/public"
+    },
+    {
+      "name": "Jesse Champi",
+      "profile_url": "https://www.med.unc.edu/phyrehab/directory/jesse-champi-md/",
+      "department": "Physical Medicine & Rehabilitation",
+      "role": "",
+      "departments": [
+        "Physical Medicine & Rehabilitation"
+      ],
+      "pubmed_hint": "jesse champi"
     },
     {
       "name": "Christine Cleveland",
@@ -22509,15 +22607,6 @@
       ]
     },
     {
-      "name": "Dante S. Bortone",
-      "profile_url": "https://unclineberger.org/directory/dante-s-bortone/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
       "name": "Jacquelyn Bower",
       "profile_url": "https://unclineberger.org/directory/jacquelyn-bower/",
       "department": "Lineberger Comprehensive Cancer Center",
@@ -22648,15 +22737,6 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/kirsten.bryant.1/bibliography/public"
-    },
-    {
-      "name": "Muhsin Bustillo-Pollard",
-      "profile_url": "https://unclineberger.org/directory/muhsin-bustillo-pollard/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
     },
     {
       "name": "M. Justin Byron",
@@ -23156,6 +23236,16 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/lawrence.engel.1/bibliography/public"
+    },
+    {
+      "name": "Chineme Enyioha",
+      "profile_url": "https://unclineberger.org/directory/chineme-enyioha/",
+      "department": "Lineberger Comprehensive Cancer Center",
+      "role": "",
+      "departments": [
+        "Lineberger Comprehensive Cancer Center"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1XiQulcGk8I1X-/bibliography/public"
     },
     {
       "name": "Dorothy Erie",
@@ -25314,15 +25404,6 @@
     {
       "name": "Ashley Smith",
       "profile_url": "https://unclineberger.org/directory/ashley-smith/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Christof Chiu Smith",
-      "profile_url": "https://unclineberger.org/directory/christof-chiu-smith/",
       "department": "Lineberger Comprehensive Cancer Center",
       "role": "",
       "departments": [
