@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-27T04:29:39.254484Z",
-  "total_faculty": 2844,
+  "generated_at": "2026-10-04T10:29:15.364186Z",
+  "total_faculty": 2835,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -5805,6 +5805,15 @@
       ]
     },
     {
+      "name": "Andrew Blake",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/andrew-blake-md-mba/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
+      ]
+    },
+    {
       "name": "Richard Boucher",
       "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/boucher/",
       "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
@@ -9835,8 +9844,7 @@
       "department": "Surgery \u2014 General Surgery",
       "role": "",
       "departments": [
-        "Surgery \u2014 General Surgery",
-        "Lineberger Comprehensive Cancer Center"
+        "Surgery \u2014 General Surgery"
       ]
     },
     {
@@ -9890,6 +9898,15 @@
     {
       "name": "Stephen Heisler",
       "profile_url": "https://www.med.unc.edu/surgery/directory/stephen-heisler-dpm-mhsa/",
+      "department": "Surgery \u2014 General Surgery",
+      "role": "",
+      "departments": [
+        "Surgery \u2014 General Surgery"
+      ]
+    },
+    {
+      "name": "April Hou",
+      "profile_url": "https://www.med.unc.edu/surgery/directory/april-hou-md/",
       "department": "Surgery \u2014 General Surgery",
       "role": "",
       "departments": [
@@ -9960,16 +9977,6 @@
       "departments": [
         "Surgery \u2014 General Surgery"
       ]
-    },
-    {
-      "name": "Jacob Wood",
-      "profile_url": "https://www.med.unc.edu/surgery/directory/jacob-wood-md/",
-      "department": "Surgery \u2014 General Surgery",
-      "role": "",
-      "departments": [
-        "Surgery \u2014 General Surgery"
-      ],
-      "pubmed_hint": "Wood JC*"
     },
     {
       "name": "Gregory M. Knoll",
@@ -10874,15 +10881,6 @@
       ]
     },
     {
-      "name": "Katie Gaffney",
-      "profile_url": "https://www.med.unc.edu/psych/people/katie-gaffney-md/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
       "name": "Alison Roland",
       "profile_url": "https://www.med.unc.edu/psych/people/alison-roland-phd/",
       "department": "Psychiatry",
@@ -10939,15 +10937,6 @@
     {
       "name": "Jason Nieuwsma",
       "profile_url": "https://www.med.unc.edu/psych/people/jason-nieuwsma-ph-d/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
-      "name": "Raven Armstrong",
-      "profile_url": "https://www.med.unc.edu/psych/people/raven-armstrong-msw/",
       "department": "Psychiatry",
       "role": "Clinician",
       "departments": [
@@ -11056,15 +11045,6 @@
     {
       "name": "Cameron Burleson",
       "profile_url": "https://www.med.unc.edu/psych/people/cameron-burleson-lcsw/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
-      "name": "Winston Junior Ho-sue",
-      "profile_url": "https://www.med.unc.edu/psych/people/winston-junior-ho-sue-lmhc/",
       "department": "Psychiatry",
       "role": "Clinician",
       "departments": [
@@ -11588,15 +11568,6 @@
       ]
     },
     {
-      "name": "Roy Stein",
-      "profile_url": "https://www.med.unc.edu/psych/people/roy-stein-md/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
       "name": "Rose Wilson",
       "profile_url": "https://www.med.unc.edu/psych/people/rose-wilson-msw/",
       "department": "Psychiatry",
@@ -11604,15 +11575,6 @@
       "departments": [
         "Psychiatry",
         "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Roger Spencer",
-      "profile_url": "https://www.med.unc.edu/psych/people/roger-spencer-md/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
       ]
     },
     {
@@ -13592,15 +13554,6 @@
       ]
     },
     {
-      "name": "Charity Wijetunga",
-      "profile_url": "https://www.med.unc.edu/psych/people/charity-wijetunga-jd-phd/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
       "name": "Charissa Gray",
       "profile_url": "https://www.med.unc.edu/psych/people/charissa-gray-mph-msw/",
       "department": "Psychiatry",
@@ -13660,15 +13613,6 @@
       "profile_url": "https://www.med.unc.edu/psych/people/caroline-ginley-msw/",
       "department": "Psychiatry",
       "role": "Cecmh",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
-      "name": "Carolina Alford",
-      "profile_url": "https://www.med.unc.edu/psych/people/carolina-alford-msw-lcsw-lcas-a/",
-      "department": "Psychiatry",
-      "role": "Clinician",
       "departments": [
         "Psychiatry"
       ]
@@ -15010,7 +14954,8 @@
       "department": "Neurosurgery",
       "role": "",
       "departments": [
-        "Neurosurgery"
+        "Neurosurgery",
+        "Radiology"
       ]
     },
     {
@@ -16517,15 +16462,6 @@
       ]
     },
     {
-      "name": "Jonathan Galeotti",
-      "profile_url": "https://www.med.unc.edu/pathology/directory/jpg23/",
-      "department": "Pathology & Laboratory Medicine",
-      "role": "",
-      "departments": [
-        "Pathology & Laboratory Medicine"
-      ]
-    },
-    {
       "name": "Ilana A. Galex",
       "profile_url": "https://www.med.unc.edu/pathology/directory/ilana-a-galex-dvm-mlas/",
       "department": "Pathology & Laboratory Medicine",
@@ -17802,15 +17738,6 @@
     {
       "name": "Bahram Kiani",
       "profile_url": "https://www.med.unc.edu/radiology/people/bahram-bobby-kiani-mha-md/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Maureen P. Kohi",
-      "profile_url": "https://www.med.unc.edu/radiology/people/maureen-p-kohi/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -19189,6 +19116,15 @@
       ]
     },
     {
+      "name": "Madeline McGeagh",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/maddy-mcgeagh/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ]
+    },
+    {
       "name": "Christine McKenzie",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/christine-piascik/",
       "department": "Anesthesiology",
@@ -19641,6 +19577,15 @@
     {
       "name": "James Williams",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/james-williams/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ]
+    },
+    {
+      "name": "Michelle Yanik",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/michelle-yanik/",
       "department": "Anesthesiology",
       "role": "",
       "departments": [
@@ -21475,15 +21420,6 @@
       ]
     },
     {
-      "name": "Aaron Lindeke-Myers",
-      "profile_url": "https://www.med.unc.edu/ophth/directory/aaron-lindeke-myers-md/",
-      "department": "Ophthalmology",
-      "role": "",
-      "departments": [
-        "Ophthalmology"
-      ]
-    },
-    {
       "name": "Arpita S. Maniar",
       "profile_url": "https://www.med.unc.edu/ophth/directory/arpita-s-maniar/",
       "department": "Ophthalmology",
@@ -21520,6 +21456,15 @@
       ]
     },
     {
+      "name": "Fabricio Sales",
+      "profile_url": "https://www.med.unc.edu/ophth/directory/fabricio-sales/",
+      "department": "Ophthalmology",
+      "role": "",
+      "departments": [
+        "Ophthalmology"
+      ]
+    },
+    {
       "name": "Ozge Sarac",
       "profile_url": "https://www.med.unc.edu/ophth/directory/ozge-sarac/",
       "department": "Ophthalmology",
@@ -21531,15 +21476,6 @@
     {
       "name": "Marlee Silverstein",
       "profile_url": "https://www.med.unc.edu/ophth/directory/marlee-silverstein-md/",
-      "department": "Ophthalmology",
-      "role": "",
-      "departments": [
-        "Ophthalmology"
-      ]
-    },
-    {
-      "name": "Mohammad Soleimani",
-      "profile_url": "https://www.med.unc.edu/ophth/directory/mohammad-soleimani-md/",
       "department": "Ophthalmology",
       "role": "",
       "departments": [
@@ -21576,15 +21512,6 @@
     {
       "name": "J. Niklas Ulrich",
       "profile_url": "https://www.med.unc.edu/ophth/directory/j-niklas-ulrich-m-d/",
-      "department": "Ophthalmology",
-      "role": "",
-      "departments": [
-        "Ophthalmology"
-      ]
-    },
-    {
-      "name": "Kathy Whitfield",
-      "profile_url": "https://www.med.unc.edu/ophth/directory/kathy-whitfield-md/",
       "department": "Ophthalmology",
       "role": "",
       "departments": [
@@ -25904,15 +25831,6 @@
     {
       "name": "Kevin M. Weeks",
       "profile_url": "https://unclineberger.org/directory/kevin-m-weeks/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Robert Wehbie",
-      "profile_url": "https://unclineberger.org/directory/robert-wehbie/",
       "department": "Lineberger Comprehensive Cancer Center",
       "role": "",
       "departments": [
