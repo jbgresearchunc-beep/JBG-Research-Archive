@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-04T10:29:15.364186Z",
-  "total_faculty": 2835,
+  "generated_at": "2026-10-11T10:43:22.128599Z",
+  "total_faculty": 2834,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -15964,15 +15964,6 @@
       ]
     },
     {
-      "name": "Amy Davenport",
-      "profile_url": "https://www.med.unc.edu/obgyn/people/amy-davenport/",
-      "department": "Obstetrics & Gynecology",
-      "role": "Department-Clinical-Providers",
-      "departments": [
-        "Obstetrics & Gynecology"
-      ]
-    },
-    {
       "name": "Margaret Berreth",
       "profile_url": "https://www.med.unc.edu/obgyn/people/margaret-berreth/",
       "department": "Obstetrics & Gynecology",
@@ -18764,6 +18755,15 @@
       ]
     },
     {
+      "name": "Samantha Feuer",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/samantha-gottlieb/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ]
+    },
+    {
       "name": "Amy Goetzinger",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/amy-goetzinger/",
       "department": "Anesthesiology",
@@ -18775,15 +18775,6 @@
     {
       "name": "Michael Gonzalez",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/michael-gonzalez/",
-      "department": "Anesthesiology",
-      "role": "",
-      "departments": [
-        "Anesthesiology"
-      ]
-    },
-    {
-      "name": "Samantha Gottlieb",
-      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/samantha-gottlieb/",
       "department": "Anesthesiology",
       "role": "",
       "departments": [
@@ -18983,6 +18974,15 @@
     {
       "name": "Russell-John Krom",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/russell-john-rj-krom/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ]
+    },
+    {
+      "name": "Briel Lee",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/briel-lee/",
       "department": "Anesthesiology",
       "role": "",
       "departments": [
@@ -21997,6 +21997,16 @@
       ]
     },
     {
+      "name": "Mary Dieckhaus",
+      "profile_url": "https://www.med.unc.edu/phyrehab/directory/mary-dieckhaus-phd/",
+      "department": "Physical Medicine & Rehabilitation",
+      "role": "",
+      "departments": [
+        "Physical Medicine & Rehabilitation"
+      ],
+      "pubmed_hint": "Mary Dieckhaus"
+    },
+    {
       "name": "Keturah Faurot",
       "profile_url": "https://www.med.unc.edu/phyrehab/directory/keturah-faurot/",
       "department": "Physical Medicine & Rehabilitation",
@@ -24006,15 +24016,6 @@
     {
       "name": "Olivia D. Lara",
       "profile_url": "https://unclineberger.org/directory/olivia-lara/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "David S. Lawrence",
-      "profile_url": "https://unclineberger.org/directory/david-lawrence/",
       "department": "Lineberger Comprehensive Cancer Center",
       "role": "",
       "departments": [
@@ -26034,15 +26035,6 @@
         "Lineberger Comprehensive Cancer Center"
       ],
       "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1zug1rl0RlzQ-/bibliography/public"
-    },
-    {
-      "name": "William C. Zamboni",
-      "profile_url": "https://unclineberger.org/directory/william-c-zamboni/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
     },
     {
       "name": "Joshua F. Zeidner",
