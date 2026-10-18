@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-11T10:43:22.128599Z",
-  "total_faculty": 2834,
+  "generated_at": "2026-10-18T08:52:57.369523Z",
+  "total_faculty": 2836,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -2671,6 +2671,15 @@
     {
       "name": "Rafal Pawlinski",
       "profile_url": "https://www.med.unc.edu/medicine/hematology/people/rafal-pawlinski-phd/",
+      "department": "Medicine \u2014 Hematology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hematology"
+      ]
+    },
+    {
+      "name": "Elissa Herman Poor",
+      "profile_url": "https://www.med.unc.edu/medicine/hematology/people/elissa-herman-poor-agnp-c/",
       "department": "Medicine \u2014 Hematology",
       "role": "",
       "departments": [
@@ -6788,7 +6797,7 @@
       "name": "Katherine D. Westreich",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/katherine-d-westreich-md/",
       "department": "Pediatrics",
-      "role": "Neph",
+      "role": "Neph-Fellow-Dir",
       "departments": [
         "Pediatrics"
       ]
@@ -6833,7 +6842,7 @@
       "name": "Ashley Carver",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/ashley-carver-md/",
       "department": "Pediatrics",
-      "role": "Neph",
+      "role": "Neph-Fellow-Assoc-Dir",
       "departments": [
         "Pediatrics"
       ]
@@ -6969,7 +6978,7 @@
       "name": "Jenna Bognaski Kaplan",
       "profile_url": "https://www.uncmedicalcenter.org/uncmc/professional-education-and-services/pharmacy-residency-programs/our-preceptors/pediatrics/jenna-bognaski-kaplan-pharmd/",
       "department": "Pediatrics",
-      "role": "Hemonc Brain Tumor Pharm",
+      "role": "Hemonc Brain Tumor",
       "departments": [
         "Pediatrics"
       ]
@@ -6978,7 +6987,7 @@
       "name": "Lauren Garner",
       "profile_url": "https://www.uncmedicalcenter.org/uncmc/professional-education-and-services/pharmacy-residency-programs/our-programs/pediatrics/our-team/lauren-garner-pharmd-bcpps-cpp/",
       "department": "Pediatrics",
-      "role": "Hemonc Brain Tumor Pharm",
+      "role": "Hemonc Brain Tumor",
       "departments": [
         "Pediatrics"
       ]
@@ -7293,7 +7302,7 @@
       "name": "Catherine Habashy",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/catherine-habashy-md-mph/",
       "department": "Pediatrics",
-      "role": "Hemonc Brain Tumor Palliative",
+      "role": "Hemonc Brain Tumor",
       "departments": [
         "Pediatrics"
       ]
@@ -7311,7 +7320,7 @@
       "name": "Alison Manikowski",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/alison-manikowski-psyd/",
       "department": "Pediatrics",
-      "role": "Hemonc Brain Tumor Psych",
+      "role": "Hemonc Brain Tumor",
       "departments": [
         "Pediatrics"
       ]
@@ -7329,7 +7338,7 @@
       "name": "Barbara Savoldo",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/barbara-savoldo-md-phd/",
       "department": "Pediatrics",
-      "role": "Hemonc Brain Tumor Neuro Onc",
+      "role": "Hemonc Brain Tumor",
       "departments": [
         "Pediatrics",
         "Lineberger Comprehensive Cancer Center"
@@ -7339,7 +7348,7 @@
       "name": "David Kram",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/david-kram-md-mcr/",
       "department": "Pediatrics",
-      "role": "Hemonc Brain Tumor Neuro Onc",
+      "role": "Hemonc Brain Tumor",
       "departments": [
         "Pediatrics",
         "Neurosurgery",
@@ -7730,7 +7739,7 @@
       "name": "Wade Harrison",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/wade-harrison-md-mph/",
       "department": "Pediatrics",
-      "role": "Hosp",
+      "role": "Hosp-Fellow-Assoc-Dir",
       "departments": [
         "Pediatrics"
       ]
@@ -7739,7 +7748,7 @@
       "name": "Jennifer Fuchs",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/jennifer-fuchs-md/",
       "department": "Pediatrics",
-      "role": "Hosp",
+      "role": "Hosp-Fellow-Dir",
       "departments": [
         "Pediatrics"
       ]
@@ -9068,7 +9077,7 @@
       "name": "Allison Burbank",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/allison-burbank-md/",
       "department": "Pediatrics",
-      "role": "Ai",
+      "role": "Ai-Fellow-Assoc-Dir",
       "departments": [
         "Pediatrics"
       ],
@@ -10124,6 +10133,15 @@
       ]
     },
     {
+      "name": "Samuel Brotkin",
+      "profile_url": "https://www.med.unc.edu/psych/people/samuel-brotkin-phd/",
+      "department": "Psychiatry",
+      "role": "Clinician",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
       "name": "Abigail Norton",
       "profile_url": "https://www.med.unc.edu/psych/people/abigail-norton-phd/",
       "department": "Psychiatry",
@@ -10154,7 +10172,7 @@
       "name": "Rachel Harrison",
       "profile_url": "https://www.med.unc.edu/psych/people/rachel-harrison-md/",
       "department": "Psychiatry",
-      "role": "Clinician",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ]
@@ -10172,7 +10190,7 @@
       "name": "Alex Gertner",
       "profile_url": "https://www.med.unc.edu/psych/people/alex-gertner-md-phd/",
       "department": "Psychiatry",
-      "role": "Clinician",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ]
@@ -10632,7 +10650,7 @@
       "name": "Nick DeVito",
       "profile_url": "https://www.med.unc.edu/psych/people/nick-devito-md/",
       "department": "Psychiatry",
-      "role": "Clinician",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ]
@@ -11345,7 +11363,7 @@
       "name": "Robert Mealer",
       "profile_url": "https://www.med.unc.edu/psych/people/robert-mealer-md-phd/",
       "department": "Psychiatry",
-      "role": "Clinician",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ]
@@ -11843,7 +11861,7 @@
       "name": "Michael Bridges",
       "profile_url": "https://www.med.unc.edu/psych/people/michael-bridges-ma-lcas/",
       "department": "Psychiatry",
-      "role": "Faculty",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ]
@@ -13161,7 +13179,7 @@
       "name": "Emma Howle",
       "profile_url": "https://www.med.unc.edu/psych/people/emma-howle-lcswa-lcasa/",
       "department": "Psychiatry",
-      "role": "Clinician",
+      "role": "Cecmh",
       "departments": [
         "Psychiatry"
       ]
@@ -14360,15 +14378,6 @@
       ]
     },
     {
-      "name": "Hailey Segall",
-      "profile_url": "https://www.med.unc.edu/neurology/people/hailey-segall-ms-cgc/",
-      "department": "Neurology",
-      "role": "Als-Clinic",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
       "name": "Deborah F. Gelinas",
       "profile_url": "https://www.med.unc.edu/neurology/people/deborah-f-gelinas-md/",
       "department": "Neurology",
@@ -14466,15 +14475,6 @@
       "profile_url": "https://www.med.unc.edu/neurology/people/hokuto-morita-md-ma/",
       "department": "Neurology",
       "role": "Movement-Disorders",
-      "departments": [
-        "Neurology"
-      ]
-    },
-    {
-      "name": "Jenna Lea",
-      "profile_url": "https://www.med.unc.edu/neurology/people/jeanna-lea-ms-cgc/",
-      "department": "Neurology",
-      "role": "Child-Neurology",
       "departments": [
         "Neurology"
       ]
@@ -15283,6 +15283,15 @@
       "profile_url": "https://www.med.unc.edu/obgyn/people/gina-silverstein/",
       "department": "Obstetrics & Gynecology",
       "role": "Associate-Vice-Chair",
+      "departments": [
+        "Obstetrics & Gynecology"
+      ]
+    },
+    {
+      "name": "Glenn Boyles",
+      "profile_url": "https://www.med.unc.edu/obgyn/people/glenn-boyles/",
+      "department": "Obstetrics & Gynecology",
+      "role": "Department-Clinical-Providers",
       "departments": [
         "Obstetrics & Gynecology"
       ]
@@ -18050,15 +18059,6 @@
       ]
     },
     {
-      "name": "Yildiz Sengul",
-      "profile_url": "https://www.med.unc.edu/radiology/people/yildiz-sengul/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
       "name": "Andrea Senter",
       "profile_url": "https://www.med.unc.edu/radiology/people/andrea-andi-senter-md/",
       "department": "Radiology",
@@ -18755,15 +18755,6 @@
       ]
     },
     {
-      "name": "Samantha Feuer",
-      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/samantha-gottlieb/",
-      "department": "Anesthesiology",
-      "role": "",
-      "departments": [
-        "Anesthesiology"
-      ]
-    },
-    {
       "name": "Amy Goetzinger",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/amy-goetzinger/",
       "department": "Anesthesiology",
@@ -18775,6 +18766,15 @@
     {
       "name": "Michael Gonzalez",
       "profile_url": "https://www.med.unc.edu/anesthesiology/directory/michael-gonzalez/",
+      "department": "Anesthesiology",
+      "role": "",
+      "departments": [
+        "Anesthesiology"
+      ]
+    },
+    {
+      "name": "Samantha Gottlieb Feuer",
+      "profile_url": "https://www.med.unc.edu/anesthesiology/directory/samantha-gottlieb/",
       "department": "Anesthesiology",
       "role": "",
       "departments": [
@@ -19737,6 +19737,15 @@
       "pubmed_hint": "MYNCBI:http://www.ncbi.nlm.nih.gov/myncbi/1rQtmwy9kc45X/bibliography/52024401/public/?sort=date&amp;direction=ascending/public"
     },
     {
+      "name": "Sabah Osmani",
+      "profile_url": "https://www.med.unc.edu/derm/directory/sabah-osmani-md/",
+      "department": "Dermatology",
+      "role": "",
+      "departments": [
+        "Dermatology"
+      ]
+    },
+    {
       "name": "David Rubenstein",
       "profile_url": "https://www.med.unc.edu/derm/directory/david-rubenstein-md-phd/",
       "department": "Dermatology",
@@ -20603,6 +20612,15 @@
     {
       "name": "Andrew T. Chen",
       "profile_url": "https://www.med.unc.edu/ortho/directory/chen/",
+      "department": "Orthopaedics",
+      "role": "",
+      "departments": [
+        "Orthopaedics"
+      ]
+    },
+    {
+      "name": "Mario Ciocca",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/mario-ciocca-md-caqsm/",
       "department": "Orthopaedics",
       "role": "",
       "departments": [
