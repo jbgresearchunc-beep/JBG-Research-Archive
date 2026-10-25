@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T08:52:57.369523Z",
+  "generated_at": "2026-10-25T09:06:19.850254Z",
   "total_faculty": 2836,
   "departments": [
     "Medicine \u2014 Cardiology",
@@ -222,6 +222,24 @@
       ]
     },
     {
+      "name": "Arash Nargesi",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/arash-nargesi-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Steven Scarfone",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/steven-scarfone/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
       "name": "S. Peter Sheng",
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/s-peter-sheng-md-mph/",
       "department": "Medicine \u2014 Cardiology",
@@ -276,16 +294,6 @@
         "Medicine \u2014 Cardiology"
       ],
       "pubmed_hint": "including biventricular"
-    },
-    {
-      "name": "Lindsey A. Rosman",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/lindsey-a-rosman-phd/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1v_wlxkYMf_EnH/bibliography/public"
     },
     {
       "name": "Faisal F. Syed",
@@ -1989,15 +1997,6 @@
       ]
     },
     {
-      "name": "Carol Carden",
-      "profile_url": "https://www.med.unc.edu/medicine/im/people/carol-carden/",
-      "department": "Medicine \u2014 General Medicine & Clinical Epidemiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 General Medicine & Clinical Epidemiology"
-      ]
-    },
-    {
       "name": "Anthony Golka",
       "profile_url": "https://www.med.unc.edu/medicine/im/people/anthony-golka-ms-gc/",
       "department": "Medicine \u2014 General Medicine & Clinical Epidemiology",
@@ -3110,6 +3109,15 @@
     {
       "name": "Rachel Hurst",
       "profile_url": "https://www.med.unc.edu/medicine/hematology/people/rachel-hurst-pa-c/",
+      "department": "Medicine \u2014 Hematology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Hematology"
+      ]
+    },
+    {
+      "name": "Allison Koziol",
+      "profile_url": "https://www.med.unc.edu/medicine/hematology/people/allison-koziol-dnp-agnp-c-ccrn/",
       "department": "Medicine \u2014 Hematology",
       "role": "",
       "departments": [
@@ -8774,7 +8782,7 @@
       "name": "Amy Levenson",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/amy-levenson-md/",
       "department": "Pediatrics",
-      "role": "Endo",
+      "role": "Endo-Fellow-Dir",
       "departments": [
         "Pediatrics"
       ]
@@ -10133,6 +10141,25 @@
       ]
     },
     {
+      "name": "Lauren A. McKibben",
+      "profile_url": "https://www.med.unc.edu/psych/people/lauren-a-mckibben-phd/",
+      "department": "Psychiatry",
+      "role": "Faculty",
+      "departments": [
+        "Psychiatry"
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1pcXDs-dZor1qd/bibliography/public"
+    },
+    {
+      "name": "Lea Mucciacciaro LCSW",
+      "profile_url": "https://www.med.unc.edu/psych/people/lea-mucciacciaro-lcsw-lcasa/",
+      "department": "Psychiatry",
+      "role": "Clinician",
+      "departments": [
+        "Psychiatry"
+      ]
+    },
+    {
       "name": "Samuel Brotkin",
       "profile_url": "https://www.med.unc.edu/psych/people/samuel-brotkin-phd/",
       "department": "Psychiatry",
@@ -10622,15 +10649,6 @@
     {
       "name": "Shonali Saha",
       "profile_url": "https://www.med.unc.edu/psych/people/shonali-saha-md/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
-      "name": "Shanika Paylor",
-      "profile_url": "https://www.med.unc.edu/psych/people/shanika-paylor-lcmhc/",
       "department": "Psychiatry",
       "role": "Clinician",
       "departments": [
@@ -13735,15 +13753,6 @@
       ]
     },
     {
-      "name": "Brenna Stanczyk",
-      "profile_url": "https://www.med.unc.edu/psych/people/brenna-stanczyk/",
-      "department": "Psychiatry",
-      "role": "Clinician",
-      "departments": [
-        "Psychiatry"
-      ]
-    },
-    {
       "name": "Jiwoo Kim",
       "profile_url": "https://www.med.unc.edu/psych/people/jiwoo-kim-msw/",
       "department": "Psychiatry",
@@ -14970,15 +14979,6 @@
     {
       "name": "Amol Yadav",
       "profile_url": "https://www.med.unc.edu/neurosurgery/directory/amol-yadav-phd-ms/",
-      "department": "Neurosurgery",
-      "role": "",
-      "departments": [
-        "Neurosurgery"
-      ]
-    },
-    {
-      "name": "Kerry C. Roby Jr",
-      "profile_url": "https://www.med.unc.edu/neurosurgery/directory/kerry-c-roby-jr-phd/",
       "department": "Neurosurgery",
       "role": "",
       "departments": [
