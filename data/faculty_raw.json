@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-01T11:09:19.789044Z",
-  "total_faculty": 603,
+  "generated_at": "2026-11-08T10:53:41.317829Z",
+  "total_faculty": 604,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -469,6 +469,15 @@
       ]
     },
     {
+      "name": "Kia Alston",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kia-alston/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
       "name": "Barbara Reid-Mills",
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/barbara-reid-mills/",
       "department": "Medicine \u2014 Cardiology",
@@ -502,6 +511,15 @@
       "role": "",
       "departments": [
         "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Drew Barber",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/drew-barber-md/",
+      "department": "Pediatrics",
+      "role": "Pulm",
+      "departments": [
+        "Pediatrics"
       ]
     },
     {
@@ -748,15 +766,6 @@
       ]
     },
     {
-      "name": "Keisha L. Gibson",
-      "profile_url": "https://www.med.unc.edu/pediatrics/people/keisha-l-gibson-md-mph/",
-      "department": "Pediatrics",
-      "role": "",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
       "name": "Ian Davis",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/ian-davis-md-phd/",
       "department": "Pediatrics",
@@ -867,6 +876,15 @@
     {
       "name": "Elizabeth Kotzen",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/elizabeth-kotzen-md/",
+      "department": "Pediatrics",
+      "role": "Neph",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
+      "name": "Keisha L. Gibson",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/keisha-l-gibson-md-mph/",
       "department": "Pediatrics",
       "role": "Neph",
       "departments": [
@@ -2745,8 +2763,7 @@
       "role": "",
       "departments": [
         "Pediatrics"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/nancie.maciver.1/bibliography/public"
+      ]
     },
     {
       "name": "Wesley Burks",
@@ -2967,15 +2984,6 @@
     {
       "name": "Johanna Smeekens",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/johanna-smeekens-phd/",
-      "department": "Pediatrics",
-      "role": "Ai",
-      "departments": [
-        "Pediatrics"
-      ]
-    },
-    {
-      "name": "Meghan Rebuli",
-      "profile_url": "https://www.med.unc.edu/pediatrics/people/meghan-rebuli-phd/",
       "department": "Pediatrics",
       "role": "Ai",
       "departments": [
@@ -3559,7 +3567,8 @@
       "role": "",
       "departments": [
         "Otolaryngology / Head & Neck Surgery"
-      ]
+      ],
+      "pubmed_hint": "CUHL trial"
     },
     {
       "name": "A. Morgan Selleck",
