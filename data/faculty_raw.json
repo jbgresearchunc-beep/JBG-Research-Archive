@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-08T10:53:41.317829Z",
-  "total_faculty": 604,
+  "generated_at": "2026-11-15T11:26:09.405714Z",
+  "total_faculty": 380,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -312,7 +312,8 @@
       "department": "Medicine \u2014 Cardiology",
       "role": "",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Cardiology",
+        "Radiology"
       ]
     },
     {
@@ -1351,6 +1352,15 @@
       ]
     },
     {
+      "name": "Paige Noreen",
+      "profile_url": "https://www.med.unc.edu/pediatrics/people/paige-noreen-md/",
+      "department": "Pediatrics",
+      "role": "Pulm",
+      "departments": [
+        "Pediatrics"
+      ]
+    },
+    {
       "name": "Catherine Habashy",
       "profile_url": "https://www.med.unc.edu/pediatrics/people/catherine-habashy-md-mph/",
       "department": "Pediatrics",
@@ -1392,8 +1402,7 @@
       "department": "Pediatrics",
       "role": "Hemonc Brain Tumor",
       "departments": [
-        "Pediatrics",
-        "Lineberger Comprehensive Cancer Center"
+        "Pediatrics"
       ]
     },
     {
@@ -1402,8 +1411,7 @@
       "department": "Pediatrics",
       "role": "Hemonc Brain Tumor",
       "departments": [
-        "Pediatrics",
-        "Lineberger Comprehensive Cancer Center"
+        "Pediatrics"
       ]
     },
     {
@@ -1980,7 +1988,8 @@
       "role": "Id",
       "departments": [
         "Pediatrics"
-      ]
+      ],
+      "pubmed_hint": "Trinity College"
     },
     {
       "name": "You Li",
@@ -2448,7 +2457,8 @@
       "role": "Hemonc",
       "departments": [
         "Pediatrics"
-      ]
+      ],
+      "pubmed_hint": "Baskin Miller J"
     },
     {
       "name": "Thomas Alexander",
@@ -3198,8 +3208,8 @@
       ]
     },
     {
-      "name": "Guoshi Li",
-      "profile_url": "https://www.med.unc.edu/radiology/people/guoshi-li/",
+      "name": "Valerie Jewells",
+      "profile_url": "https://www.med.unc.edu/radiology/people/valerie-jewells/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -3207,8 +3217,8 @@
       ]
     },
     {
-      "name": "Tengfei Li",
-      "profile_url": "https://www.med.unc.edu/radiology/people/tengfei-li/",
+      "name": "Yuli Jiang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/yuli-david-jiang-md/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -3216,28 +3226,8 @@
       ]
     },
     {
-      "name": "Zibo Li",
-      "profile_url": "https://www.med.unc.edu/radiology/people/zibo-li/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology",
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Weili Lin",
-      "profile_url": "https://www.med.unc.edu/radiology/people/weili-lin/",
-      "department": "Radiology",
-      "role": "",
-      "departments": [
-        "Radiology",
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Mingxia Liu",
-      "profile_url": "https://www.med.unc.edu/radiology/people/mingxia-liu/",
+      "name": "Ellen Jones",
+      "profile_url": "https://www.med.unc.edu/radiology/people/ellen-jones/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -3245,8 +3235,8 @@
       ]
     },
     {
-      "name": "Behrooz Masuodi",
-      "profile_url": "https://www.med.unc.edu/radiology/people/behrooz-masuodi-md/",
+      "name": "Jeremy Jose",
+      "profile_url": "https://www.med.unc.edu/radiology/people/jeremy-jose-md/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -3254,8 +3244,8 @@
       ]
     },
     {
-      "name": "David M. Mauro",
-      "profile_url": "https://www.med.unc.edu/radiology/people/david-m-mauro/",
+      "name": "Nicole Keefe",
+      "profile_url": "https://www.med.unc.edu/radiology/people/nicole-keefe/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -3263,8 +3253,8 @@
       ]
     },
     {
-      "name": "Matthew A. Mauro",
-      "profile_url": "https://www.med.unc.edu/radiology/people/matthew-a-mauro/",
+      "name": "Bahram Kiani",
+      "profile_url": "https://www.med.unc.edu/radiology/people/bahram-bobby-kiani-mha-md/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -3272,8 +3262,8 @@
       ]
     },
     {
-      "name": "Kassie McCullagh",
-      "profile_url": "https://www.med.unc.edu/radiology/people/kassie-mccullagh/",
+      "name": "Nima Kokabi",
+      "profile_url": "https://www.med.unc.edu/radiology/people/nima-kokabi/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -3281,8 +3271,8 @@
       ]
     },
     {
-      "name": "Blaine T. Mischen",
-      "profile_url": "https://www.med.unc.edu/radiology/people/blaine-t-mischen-md/",
+      "name": "Cherie M. Kuzmiak",
+      "profile_url": "https://www.med.unc.edu/radiology/people/cherie-m-kuzmiak/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -3290,8 +3280,8 @@
       ]
     },
     {
-      "name": "Priya Mody",
-      "profile_url": "https://www.med.unc.edu/radiology/people/priya-mody/",
+      "name": "Ellie R. Lee",
+      "profile_url": "https://www.med.unc.edu/radiology/people/ellie-r-lee/",
       "department": "Radiology",
       "role": "",
       "departments": [
@@ -3299,437 +3289,84 @@
       ]
     },
     {
-      "name": "Wendell G. Yarbrough",
-      "profile_url": "https://www.med.unc.edu/ent/people/wendell-g-yarbrough-md-mmhc-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Yueh Z. Lee",
+      "profile_url": "https://www.med.unc.edu/radiology/people/yueh-z-lee/",
+      "department": "Radiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery",
-        "Lineberger Comprehensive Cancer Center"
+        "Radiology"
       ]
     },
     {
-      "name": "Mihir R. Patel",
-      "profile_url": "https://www.med.unc.edu/ent/people/mihir-r-patel-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Gang Li",
+      "profile_url": "https://www.med.unc.edu/radiology/people/gang-li/",
+      "department": "Radiology",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Radiology"
       ]
     },
     {
-      "name": "Robert L. Ferris",
-      "profile_url": "https://www.med.unc.edu/ent/people/robert-l-ferris-md-phd/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Samantha Tayne",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/tayne/",
+      "department": "Orthopaedics",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Orthopaedics"
       ]
     },
     {
-      "name": "Jeffrey M. Blumberg",
-      "profile_url": "https://www.med.unc.edu/ent/people/jeffrey-m-blumberg-md-facs-2/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Joshua N. Tennant",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/tennant/",
+      "department": "Orthopaedics",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Orthopaedics"
       ]
     },
     {
-      "name": "Trevor G. Hackman",
-      "profile_url": "https://www.med.unc.edu/ent/people/trevor-g-hackman-md-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Anna D. Vergun",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/vergun/",
+      "department": "Orthopaedics",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Orthopaedics"
       ]
     },
     {
-      "name": "Catherine J. Lumley",
-      "profile_url": "https://www.med.unc.edu/ent/people/catherine-j-lumley-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Kelly Waicus",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/kelly-waicus-md-caqsm/",
+      "department": "Orthopaedics",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Orthopaedics"
       ]
     },
     {
-      "name": "Travis P. Schrank",
-      "profile_url": "https://www.med.unc.edu/ent/people/travis-p-schrank-md-phd/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Douglas S. Weinberg",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/weinberg/",
+      "department": "Orthopaedics",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Orthopaedics"
       ]
     },
     {
-      "name": "C. Alessandra Colaianni",
-      "profile_url": "https://www.med.unc.edu/ent/people/c-alessandra-colaianni-md-mphil/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "April Wikstrom",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/wikstrom/",
+      "department": "Orthopaedics",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Orthopaedics"
       ]
     },
     {
-      "name": "Hannah Eadie Reid",
-      "profile_url": "https://www.med.unc.edu/ent/people/hannah-eadie-reid-np/",
-      "department": "Otolaryngology / Head & Neck Surgery",
+      "name": "Jennifer Woody",
+      "profile_url": "https://www.med.unc.edu/ortho/directory/woody/",
+      "department": "Orthopaedics",
       "role": "",
       "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Rachelle Gish-Johnson",
-      "profile_url": "https://www.med.unc.edu/ent/people/rachelle-gish-johnson-fnp-c/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Caitlin Heredia",
-      "profile_url": "https://www.med.unc.edu/ent/people/caitlin-heredia-pa-c/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "David Strum",
-      "profile_url": "https://www.med.unc.edu/ent/people/david-strum-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Carlton J. Zdanski",
-      "profile_url": "https://www.med.unc.edu/ent/people/carlton-j-zdanski-md-faap-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Amelia F. Drake",
-      "profile_url": "https://www.med.unc.edu/ent/people/amelia-f-drake-md-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Lauren A. Leeper",
-      "profile_url": "https://www.med.unc.edu/ent/people/lauren-a-leeper-md-facs-2/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Victoria James",
-      "profile_url": "https://www.med.unc.edu/ent/people/victoria-claire-james-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Wade McClain",
-      "profile_url": "https://www.med.unc.edu/ent/people/wade-mcclain-do/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Courtney McDonough",
-      "profile_url": "https://www.med.unc.edu/ent/people/courtney-mcdonough-pa-c/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "J. Madison Clark",
-      "profile_url": "https://www.med.unc.edu/ent/people/j-madison-clark-md-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Virginia Drake",
-      "profile_url": "https://www.med.unc.edu/ent/people/virginia-drake-md-2/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Brian S. Jewett",
-      "profile_url": "https://www.med.unc.edu/ent/people/brian-s-jewett-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Matthew Q. Miller",
-      "profile_url": "https://www.med.unc.edu/ent/people/matthew-q-miller-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Brent A. Senior",
-      "profile_url": "https://www.med.unc.edu/ent/people/brent-a-senior-md-facs-fars/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Brian D. Thorp",
-      "profile_url": "https://www.med.unc.edu/ent/people/brian-d-thorp-md-facs-fars/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Charles S. Ebert",
-      "profile_url": "https://www.med.unc.edu/ent/people/charles-s-ebert-jr-md-mph-fars-faaoa-facs/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Adam J. Kimple",
-      "profile_url": "https://www.med.unc.edu/ent/people/adam-j-kimple-md-phd-facs-fars/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Cristine Klatt-Cromwell",
-      "profile_url": "https://www.med.unc.edu/ent/people/cristine-klatt-cromwell-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Heidi Martini-Stoica",
-      "profile_url": "https://www.med.unc.edu/ent/people/heidi-martini-stoica-md-phd/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Meghan Norris",
-      "profile_url": "https://www.med.unc.edu/ent/people/meghan-norris-ms-mspas-pa-c/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Kevin D. Brown",
-      "profile_url": "https://www.med.unc.edu/ent/people/kevin-d-brown-md-phd/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ],
-      "pubmed_hint": "CUHL trial"
-    },
-    {
-      "name": "A. Morgan Selleck",
-      "profile_url": "https://www.med.unc.edu/ent/people/a-morgan-selleck-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Matthew M. Dedmon",
-      "profile_url": "https://www.med.unc.edu/ent/people/matthew-m-dedmon-md-phd/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Nicholas J. Thompson",
-      "profile_url": "https://www.med.unc.edu/ent/people/nicholas-j-thompson-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Tram Tran",
-      "profile_url": "https://www.med.unc.edu/ent/people/tram-tran-fnp/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Christine E. DeMason",
-      "profile_url": "https://www.med.unc.edu/ent/people/christine-e-demason-md-2/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Ann Q. Bogard",
-      "profile_url": "https://www.med.unc.edu/ent/people/ann-q-bogard-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Doris Lin",
-      "profile_url": "https://www.med.unc.edu/ent/people/doris-lin-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Robert A. Buckmire",
-      "profile_url": "https://www.med.unc.edu/ent/people/robert-a-buckmire-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Rupali N. Shah",
-      "profile_url": "https://www.med.unc.edu/ent/people/rupali-pali-n-shah-md/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Lisa Park",
-      "profile_url": "https://www.med.unc.edu/ent/people/lisa-park-aud/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Melissa Anderson",
-      "profile_url": "https://www.med.unc.edu/ent/people/melissa-anderson-aud-ccc-a/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Erika Gagnon",
-      "profile_url": "https://www.med.unc.edu/ent/people/erika-gagnon-aud-ccc-a/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Natalie Giduz",
-      "profile_url": "https://www.med.unc.edu/ent/people/natalie-giduz-msw-lcswa/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Sandra Hancock",
-      "profile_url": "https://www.med.unc.edu/ent/people/sandra-hancock-ms-ccc-slp-lsls-cert-avt-2/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Lillian Henderson",
-      "profile_url": "https://www.med.unc.edu/ent/people/lillian-henderson-msp-ccc-slp-lsls-cert-avt/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Erin Thompson",
-      "profile_url": "https://www.med.unc.edu/ent/people/erin-thompson-ms-ccc-slp-lsls-cert-avt-2/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Ricardo D. Vallejo",
-      "profile_url": "https://www.med.unc.edu/ent/people/ricardo-d-vallejo-aud-ccc-a/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
-      ]
-    },
-    {
-      "name": "Jennifer Woodard",
-      "profile_url": "https://www.med.unc.edu/ent/people/jennifer-woodard-aud-ccc-a/",
-      "department": "Otolaryngology / Head & Neck Surgery",
-      "role": "",
-      "departments": [
-        "Otolaryngology / Head & Neck Surgery"
+        "Orthopaedics"
       ]
     },
     {
@@ -3785,8 +3422,7 @@
       "role": "",
       "departments": [
         "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1zug1rl0RlzQ-/bibliography/public"
+      ]
     },
     {
       "name": "Melinda S. Yates",
@@ -3795,8 +3431,16 @@
       "role": "",
       "departments": [
         "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/melinda.yates.1/bibliography/public"
+      ]
+    },
+    {
+      "name": "Wendell G. Yarbrough",
+      "profile_url": "https://unclineberger.org/people/wendell-yarbrough/",
+      "department": "Lineberger Comprehensive Cancer Center",
+      "role": "",
+      "departments": [
+        "Lineberger Comprehensive Cancer Center"
+      ]
     },
     {
       "name": "Jie Xu",
@@ -3815,1772 +3459,6 @@
       "departments": [
         "Lineberger Comprehensive Cancer Center"
       ]
-    },
-    {
-      "name": "William A. Wood",
-      "profile_url": "https://unclineberger.org/people/william-wood/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Erik A. Willis",
-      "profile_url": "https://unclineberger.org/people/erik-willis/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Lacey S. Williams",
-      "profile_url": "https://unclineberger.org/people/lacey-williams/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "David C. Williams Jr",
-      "profile_url": "https://unclineberger.org/people/david-williams/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/david.williams.3/bibliography/public"
-    },
-    {
-      "name": "Jared M. Weiss",
-      "profile_url": "https://unclineberger.org/people/jared-weiss/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Ashley A. Weiner",
-      "profile_url": "https://unclineberger.org/people/ashley-weiner/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Weiner Ashley"
-    },
-    {
-      "name": "Kevin M. Weeks",
-      "profile_url": "https://unclineberger.org/people/kevin-weeks/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Weeks KM"
-    },
-    {
-      "name": "Xiaodong Wang",
-      "profile_url": "https://unclineberger.org/people/xiaodong-wang/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/xiaodong.wang.3/bibliography/public"
-    },
-    {
-      "name": "Jeremy R. Wang",
-      "profile_url": "https://unclineberger.org/people/jeremy-wang/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Yisong Y. Wan",
-      "profile_url": "https://unclineberger.org/people/yisong-wan/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Wan YY"
-    },
-    {
-      "name": "Lynne I. Wagner",
-      "profile_url": "https://unclineberger.org/people/lynne-wagner/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Benjamin G. Vincent",
-      "profile_url": "https://unclineberger.org/people/benjamin-vincent/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1-UeabBpi5JAA/bibliography/public/?sortby=pubDate&amp;sdirection=descending/public"
-    },
-    {
-      "name": "Nadja A. Vielot",
-      "profile_url": "https://unclineberger.org/people/nadja-vielot/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Cyrus Vaziri",
-      "profile_url": "https://unclineberger.org/people/cyrus-vaziri/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Vaziri C"
-    },
-    {
-      "name": "Linda Van Le",
-      "profile_url": "https://unclineberger.org/people/linda-van-le/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Carmina G. Valle",
-      "profile_url": "https://unclineberger.org/people/carmina-valle/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1zWbjmypZCo/bibliography/public"
-    },
-    {
-      "name": "Kea Turner",
-      "profile_url": "https://unclineberger.org/people/kea-turner/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Turner Kea"
-    },
-    {
-      "name": "Sascha A. Tuchman",
-      "profile_url": "https://unclineberger.org/people/sascha-tuchman/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Tuchman SA"
-    },
-    {
-      "name": "Ageliki Tsagaratou",
-      "profile_url": "https://unclineberger.org/people/ageliki-tsagaratou/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Justin G. Trogdon",
-      "profile_url": "https://unclineberger.org/people/justin-trogdon/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "trogdon j"
-    },
-    {
-      "name": "Sumita R. Trivedi",
-      "profile_url": "https://unclineberger.org/people/sumita-trivedi/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/10Wfsml1N6pQ8/bibliography/public"
-    },
-    {
-      "name": "Robert J. Torphy",
-      "profile_url": "https://unclineberger.org/people/robert-torphy/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "robert torphy"
-    },
-    {
-      "name": "Peyton J. Thompson",
-      "profile_url": "https://unclineberger.org/people/peyton-thompson/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Jenny P. Ting",
-      "profile_url": "https://unclineberger.org/people/jenny-ting/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Tess Thompson",
-      "profile_url": "https://unclineberger.org/people/tess-thompson/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Nancy E. Thomas",
-      "profile_url": "https://unclineberger.org/people/nancy-thomas/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Thomas NE"
-    },
-    {
-      "name": "Bridgette Thom",
-      "profile_url": "https://unclineberger.org/people/bridgette-thom/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Jessica E. Thaxton",
-      "profile_url": "https://unclineberger.org/people/jessica-thaxton/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Deborah F. Tate",
-      "profile_url": "https://unclineberger.org/people/deborah-tate/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Tate DF"
-    },
-    {
-      "name": "Xianming M. Tan",
-      "profile_url": "https://unclineberger.org/people/xianming-tan/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Hung-Jui Tan",
-      "profile_url": "https://unclineberger.org/people/hung-jui-ray-tan/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/hung-jui.tan.1/bibliography/public"
-    },
-    {
-      "name": "Tigist Y. Tamir",
-      "profile_url": "https://unclineberger.org/people/tigist-tamir/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Ronald I. Swanstrom",
-      "profile_url": "https://unclineberger.org/people/ronald-swanstrom/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Susan J. Sumner",
-      "profile_url": "https://unclineberger.org/people/susan-sumner/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Shivani Sud",
-      "profile_url": "https://unclineberger.org/people/shivani-sud/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Brian D. Strahl",
-      "profile_url": "https://unclineberger.org/people/brian-strahl/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Strahl BD"
-    },
-    {
-      "name": "Jacob N. Stein",
-      "profile_url": "https://unclineberger.org/people/jacob-stein/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/jacob%20newton.stein.1/bibliography/public"
-    },
-    {
-      "name": "Chrystal A. Starbird",
-      "profile_url": "https://unclineberger.org/people/chrystal-starbird/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/chrystal.starbird.2/bibliography/public"
-    },
-    {
-      "name": "Natalie Stanley",
-      "profile_url": "https://unclineberger.org/people/natalie-stanley/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Clint A. Stalnecker",
-      "profile_url": "https://unclineberger.org/people/clint-stalnecker/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/clint.stalnecker.1/bibliography/public"
-    },
-    {
-      "name": "Lisa P. Spees",
-      "profile_url": "https://unclineberger.org/people/lisa-spees/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Philip M. Spanheimer",
-      "profile_url": "https://unclineberger.org/people/philip-spanheimer/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "John E. Sondek",
-      "profile_url": "https://unclineberger.org/people/john-sondek/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "sondek j"
-    },
-    {
-      "name": "Ashwin Somasundaram",
-      "profile_url": "https://unclineberger.org/people/ashwin-somasundaram/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Marina Sokolsky-Papkov",
-      "profile_url": "https://unclineberger.org/people/marina-sokolsky-papkov/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Anson E. Snow",
-      "profile_url": "https://unclineberger.org/people/anson-snow/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Andrew B. Smitherman",
-      "profile_url": "https://unclineberger.org/people/andrew-smitherman/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Jennifer S. Smith",
-      "profile_url": "https://unclineberger.org/people/jennifer-smith/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/jennifer.smith.2/bibliography/public"
-    },
-    {
-      "name": "Brent J. Small",
-      "profile_url": "https://unclineberger.org/people/brent-small/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/brent.small.1/bibliography/public"
-    },
-    {
-      "name": "Haley M. Simpson",
-      "profile_url": "https://unclineberger.org/people/haley-simpson/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Siddharth H. Sheth",
-      "profile_url": "https://unclineberger.org/people/siddharth-sheth/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Colette J. Shen",
-      "profile_url": "https://unclineberger.org/people/colette-shen/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1hwiAdh9wQ-/bibliography/40716813/public/?sortby=pubDate&amp;sdirection=descending/public"
-    },
-    {
-      "name": "Norman E. Sharpless",
-      "profile_url": "https://unclineberger.org/people/ned-sharpless/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Sharpless N"
-    },
-    {
-      "name": "Deepika Sharma",
-      "profile_url": "https://unclineberger.org/people/deepika-sharma/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Sharma Deepika"
-    },
-    {
-      "name": "Nicholas J. Shaheen",
-      "profile_url": "https://unclineberger.org/people/nicholas-shaheen/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Jonathan S. Serody",
-      "profile_url": "https://unclineberger.org/people/jonathan-serody/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/jonathan.serody.1/bibliography/43436408/public/?sortby=pubDate&amp;sdirection=descending/public"
-    },
-    {
-      "name": "Andrew B. Satterlee",
-      "profile_url": "https://unclineberger.org/people/andrew-satterlee/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Hanna K. Sanoff",
-      "profile_url": "https://unclineberger.org/people/hanna-sanoff/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/hanna.sanoff.2/bibliography/public"
-    },
-    {
-      "name": "Aziz Sancar",
-      "profile_url": "https://unclineberger.org/people/aziz-sancar/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Blake R. Rushing",
-      "profile_url": "https://unclineberger.org/people/blake-rushing/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Alexander Rubinsteyn",
-      "profile_url": "https://unclineberger.org/people/alexander-rubinsteyn/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Samuel M. Rubinstein",
-      "profile_url": "https://unclineberger.org/people/samuel-rubinstein/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/samuel.rubinstein.1/bibliography/public"
-    },
-    {
-      "name": "Bryan L. Roth",
-      "profile_url": "https://unclineberger.org/people/bryan-roth/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/bryan.roth.1/bibliography/public"
-    },
-    {
-      "name": "Donald L. Rosenstein",
-      "profile_url": "https://unclineberger.org/people/donald-rosenstein/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/donald.rosenstein.1/bibliography/public"
-    },
-    {
-      "name": "Tracy L. Rose",
-      "profile_url": "https://unclineberger.org/people/tracy-rose/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Megan C. Roberts",
-      "profile_url": "https://unclineberger.org/people/megan-roberts/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1b7ktBT9ntx5-/bibliography/public"
-    },
-    {
-      "name": "Mya L. Roberson",
-      "profile_url": "https://unclineberger.org/people/mya-roberson/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/mya-lee.roberson.1/bibliography/public"
-    },
-    {
-      "name": "Imran Rizvi",
-      "profile_url": "https://unclineberger.org/people/imran-rizvi/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/14WCnny2GumUya/bibliography/56102886/public/?sort=date&amp;direction=descending/public"
-    },
-    {
-      "name": "Daniel R. Richardson",
-      "profile_url": "https://unclineberger.org/people/daniel-richardson/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Daniel S. Reuland",
-      "profile_url": "https://unclineberger.org/people/daniel-reuland/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/daniel.reuland.1/bibliography/40300322/public/?sort=date&amp;direction=descending/public"
-    },
-    {
-      "name": "Brandi N. Reeves",
-      "profile_url": "https://unclineberger.org/people/brandi-reeves/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Katherine E. Reeder-Hayes",
-      "profile_url": "https://unclineberger.org/people/katherine-reeder-hayes/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Emily M. Ray",
-      "profile_url": "https://unclineberger.org/people/emily-ray/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Naim U. Rashid",
-      "profile_url": "https://unclineberger.org/people/naim-rashid/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Dale A. Ramsden",
-      "profile_url": "https://unclineberger.org/people/dale-ramsden/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Ramsden DA"
-    },
-    {
-      "name": "Lisa Rahangdale",
-      "profile_url": "https://unclineberger.org/people/lisa-rahangdale/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Rahangdale L"
-    },
-    {
-      "name": "Nancy Raab-Traub",
-      "profile_url": "https://unclineberger.org/people/nancy-raab-traub/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Raab -Traub N"
-    },
-    {
-      "name": "Jesse R. Raab",
-      "profile_url": "https://unclineberger.org/people/jesse-raab/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/jesse.raab.2/bibliography/public"
-    },
-    {
-      "name": "Yuliya Pylayeva-Gupta",
-      "profile_url": "https://unclineberger.org/people/yuliya-pylayeva-gupta/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1xwY4zoemihkt/bibliography/public"
-    },
-    {
-      "name": "Jeremy E. Purvis",
-      "profile_url": "https://unclineberger.org/people/jeremy-purvis/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Barry M. Popkin",
-      "profile_url": "https://unclineberger.org/people/barry-popkin/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Popkin BM"
-    },
-    {
-      "name": "Douglas H. Phanstiel",
-      "profile_url": "https://unclineberger.org/people/douglas-phanstiel/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Adam D. Pfefferle",
-      "profile_url": "https://unclineberger.org/people/adam-pfefferle/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Emily R. Pfaff",
-      "profile_url": "https://unclineberger.org/people/emily-pfaff/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Aimin Peng",
-      "profile_url": "https://unclineberger.org/people/aimin-peng/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Mark A. Peifer",
-      "profile_url": "https://unclineberger.org/people/mark-peifer/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/mark.peifer.1/bibliography/40869625/public/?sort=date&amp;direction=descending/public"
-    },
-    {
-      "name": "Chad V. Pecot",
-      "profile_url": "https://unclineberger.org/people/chad-pecot/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Kenneth H. Pearce",
-      "profile_url": "https://unclineberger.org/people/kenneth-pearce/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Samantha G. Pattenden",
-      "profile_url": "https://unclineberger.org/people/samantha-pattenden/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/samantha.pattenden.1/bibliography/public"
-    },
-    {
-      "name": "Shetal A. Patel",
-      "profile_url": "https://unclineberger.org/people/shetal-patel/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/shetal.patel.1/bibliography/public"
-    },
-    {
-      "name": "Adam C. Palmer",
-      "profile_url": "https://unclineberger.org/people/adam-palmer/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/14kf_yCaehwQy/bibliography/public"
-    },
-    {
-      "name": "Sachiko Ozawa",
-      "profile_url": "https://unclineberger.org/people/sachiko-ozawa/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Ozawa Sachiko"
-    },
-    {
-      "name": "Andrew F. Olshan",
-      "profile_url": "https://unclineberger.org/people/andrew-olshan/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/andrew.olshan.1/bibliography/40835920/public"
-    },
-    {
-      "name": "David W. Ollila",
-      "profile_url": "https://unclineberger.org/people/david-ollila/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Meghan C. O\u2019Leary",
-      "profile_url": "https://unclineberger.org/people/meghan-oleary/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Leary"
-    },
-    {
-      "name": "Sarah J. Nyante",
-      "profile_url": "https://unclineberger.org/people/sarah-nyante/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1RmmZUxi0qt/bibliography/public/?sortby=pubDate&amp;sdirection=descending/public"
-    },
-    {
-      "name": "Andrew B. Nobel",
-      "profile_url": "https://unclineberger.org/people/andrew-nobel/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Seth M. Noar",
-      "profile_url": "https://unclineberger.org/people/seth-noar/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Noar SM"
-    },
-    {
-      "name": "Matthew E. Nielsen",
-      "profile_url": "https://unclineberger.org/people/matthew-nielsen/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Hazel B. Nichols",
-      "profile_url": "https://unclineberger.org/people/hazel-nichols/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/hazel.nichols.2/bibliography/public"
-    },
-    {
-      "name": "Juliane Nguyen",
-      "profile_url": "https://unclineberger.org/people/juliane-nguyen/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/juliane.nguyen.1/bibliography/public"
-    },
-    {
-      "name": "Zev M. Nakamura",
-      "profile_url": "https://unclineberger.org/people/zev-nakamura/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1jYSm7GLLajAf/bibliography/public"
-    },
-    {
-      "name": "Hyman B. Muss",
-      "profile_url": "https://unclineberger.org/people/hyman-muss/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Chemtai C. Mungo",
-      "profile_url": "https://unclineberger.org/people/chemtai-mungo/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Benyam Muluneh",
-      "profile_url": "https://unclineberger.org/people/benyam-muluneh/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Stergios J. Moschos",
-      "profile_url": "https://unclineberger.org/people/stergios-moschos/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "J. Kaitlin Morrison",
-      "profile_url": "https://unclineberger.org/people/kaitlin-morrison/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/kaitlin.morrison.1/bibliography/public"
-    },
-    {
-      "name": "John P. Morris",
-      "profile_url": "https://unclineberger.org/people/john-morris/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1-W9f2Yy9X6Uzb/bibliography/public"
-    },
-    {
-      "name": "Nathaniel J. Moorman",
-      "profile_url": "https://unclineberger.org/people/nathaniel-moorman/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Moorman Nathaniel J"
-    },
-    {
-      "name": "Andrew M. Moon",
-      "profile_url": "https://unclineberger.org/people/andrew-moon/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1twbAauspdnQT/bibliography/public"
-    },
-    {
-      "name": "Cary A. Moody",
-      "profile_url": "https://unclineberger.org/people/cary-moody/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Gita N. Mody",
-      "profile_url": "https://unclineberger.org/people/gita-mody/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Matthew I. Milowsky",
-      "profile_url": "https://unclineberger.org/people/matthew-milowsky/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "J. Justin Milner",
-      "profile_url": "https://unclineberger.org/people/justin-milner/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/john.milner.2/bibliography/public"
-    },
-    {
-      "name": "Sarah D. Mills",
-      "profile_url": "https://unclineberger.org/people/sarah-mills/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Brian C. Miller",
-      "profile_url": "https://unclineberger.org/people/brian-miller/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/brian.miller.4/bibliography/public"
-    },
-    {
-      "name": "Jason D. Merker",
-      "profile_url": "https://unclineberger.org/people/jason-merker/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/145_Qe0ml9UAW/bibliography/public"
-    },
-    {
-      "name": "Jeremy A. Meier",
-      "profile_url": "https://unclineberger.org/people/jeremy-meier/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/jeremy.meier.1/bibliography/public"
-    },
-    {
-      "name": "Daniel J. McKay",
-      "profile_url": "https://unclineberger.org/people/daniel-mckay/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/18a4txO0oyuAy/bibliography/public"
-    },
-    {
-      "name": "Robert K. McGinty",
-      "profile_url": "https://unclineberger.org/people/robert-mcginty/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/robert.mcginty.1/bibliography/public"
-    },
-    {
-      "name": "Elizabeth M. McClure",
-      "profile_url": "https://unclineberger.org/people/elizabeth-mcclure/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "A. Gregory Matera",
-      "profile_url": "https://unclineberger.org/people/gregory-matera/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "William F. Marzluff",
-      "profile_url": "https://unclineberger.org/people/william-marzluff/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Jose C. Martinez",
-      "profile_url": "https://unclineberger.org/people/jose-martinez/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/jose.martinez.1/bibliography/public"
-    },
-    {
-      "name": "James S. Marron",
-      "profile_url": "https://unclineberger.org/people/james-marron/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1zs-cpM4Rlbc7i/bibliography/public"
-    },
-    {
-      "name": "David M. Margolis",
-      "profile_url": "https://unclineberger.org/people/david-margolis/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/david.margolis.1/bibliography/public"
-    },
-    {
-      "name": "Lisa N. Mansfield",
-      "profile_url": "https://unclineberger.org/people/lisa-mansfield/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1VEsicdXseaEJo/bibliography/public"
-    },
-    {
-      "name": "Ankit Malik",
-      "profile_url": "https://unclineberger.org/people/ankit-malik/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Malik Ankit"
-    },
-    {
-      "name": "Amy S. Maddox",
-      "profile_url": "https://unclineberger.org/people/amy-maddox/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Nigel Mackman",
-      "profile_url": "https://unclineberger.org/people/nigel-mackman/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Jennifer L. Lund",
-      "profile_url": "https://unclineberger.org/people/jennifer-lund/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1zIfcqiKRRckm/bibliography/public"
-    },
-    {
-      "name": "Michael I. Love",
-      "profile_url": "https://unclineberger.org/people/michael-love/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/michael.love.2/bibliography/public"
-    },
-    {
-      "name": "Jason M. Long",
-      "profile_url": "https://unclineberger.org/people/jason-long/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Jason M. Long"
-    },
-    {
-      "name": "Yusha Liu",
-      "profile_url": "https://unclineberger.org/people/yusha-liu/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Rihe H. Liu",
-      "profile_url": "https://unclineberger.org/people/rihe-liu/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Pengda Liu",
-      "profile_url": "https://unclineberger.org/people/pengda-liu/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "liu pengda"
-    },
-    {
-      "name": "Eben I. Lichtman",
-      "profile_url": "https://unclineberger.org/people/eben-lichtman/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1hs_jvaS77nkf/bibliography/42334428/public/?sort=date&amp;direction=descending/public"
-    },
-    {
-      "name": "Didong Li",
-      "profile_url": "https://unclineberger.org/people/didong-li/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Didong Li"
-    },
-    {
-      "name": "Jun Li",
-      "profile_url": "https://unclineberger.org/people/jun-li/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/jun.li.13/bibliography/public"
-    },
-    {
-      "name": "Wesley R. Legant",
-      "profile_url": "https://unclineberger.org/people/wesley-legant/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1B_plcl_WnV5q/bibliography/public/?sortby=pubDate&amp;sdirection=descending/public"
-    },
-    {
-      "name": "Clara N. Lee",
-      "profile_url": "https://unclineberger.org/people/clara-lee/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Carrie B. Lee",
-      "profile_url": "https://unclineberger.org/people/carrie-lee/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/carrie.lee.1/bibliography/public"
-    },
-    {
-      "name": "Allison J. Lazard",
-      "profile_url": "https://unclineberger.org/people/allison-lazard/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1fk37baVpumks/bibliography/49881618/public"
-    },
-    {
-      "name": "Olivia D. Lara",
-      "profile_url": "https://unclineberger.org/people/olivia-lara/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Samuel K. Lai",
-      "profile_url": "https://unclineberger.org/people/samuel-lai/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1beau9tUDaoQt/bibliography/public"
-    },
-    {
-      "name": "Cherie M. Kuzmiak",
-      "profile_url": "https://unclineberger.org/people/cherie-kuzmiak/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Kuzmiak CM"
-    },
-    {
-      "name": "James E. Bates",
-      "profile_url": "https://unclineberger.org/people/james-bates/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Abigail N. Pepin",
-      "profile_url": "https://unclineberger.org/people/abigail-pepin/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Brian A. Kuhlman",
-      "profile_url": "https://unclineberger.org/people/brian-kuhlman/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Ashok K. Krishnamurthy",
-      "profile_url": "https://unclineberger.org/people/ashok-krishnamurthy/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Ashok Krishnamurthy"
-    },
-    {
-      "name": "Sarah D. Kowitt",
-      "profile_url": "https://unclineberger.org/people/sarah-kowitt/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/sarah.kowitt.1/bibliography/public"
-    },
-    {
-      "name": "Joanna R. Kovalski",
-      "profile_url": "https://unclineberger.org/people/joanna-kovalski/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/14a2ctPVqDHQv/bibliography/public"
-    },
-    {
-      "name": "Michael R. Kosorok",
-      "profile_url": "https://unclineberger.org/people/michael-kosorok/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "William Y. Kim",
-      "profile_url": "https://unclineberger.org/people/william-kim/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Gary L. Johnson",
-      "profile_url": "https://unclineberger.org/people/gary-johnson/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/gary.johnson.1/bibliography/40433719/public/?sort=date&amp;direction=ascending./public"
-    },
-    {
-      "name": "Nima Kokabi",
-      "profile_url": "https://unclineberger.org/people/nima-kokabi/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Saif Khairat",
-      "profile_url": "https://unclineberger.org/people/saif-khairat/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Erin E. Kent",
-      "profile_url": "https://unclineberger.org/people/erin-kent/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/14I_pskrIYbUep/bibliography/public"
-    },
-    {
-      "name": "Temitope O. Keku",
-      "profile_url": "https://unclineberger.org/people/temitope-keku/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/temitope.keku.1/bibliography/public"
-    },
-    {
-      "name": "Alexander V. Kabanov",
-      "profile_url": "https://unclineberger.org/people/alexander-kabanov/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Sarah B. Joseph",
-      "profile_url": "https://unclineberger.org/people/sarah-joseph/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Corbin D. Jones",
-      "profile_url": "https://unclineberger.org/people/corbin-jones/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/corbin.jones.1/bibliography/public"
-    },
-    {
-      "name": "Christopher E. Jensen",
-      "profile_url": "https://unclineberger.org/people/christopher-jensen/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/christopher.jensen.1/bibliography/public"
-    },
-    {
-      "name": "Lindsey I. James",
-      "profile_url": "https://unclineberger.org/people/lindsey-james/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Anastasia V. Ivanova",
-      "profile_url": "https://unclineberger.org/people/anastasia-ivanova/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "ivanova anastasia"
-    },
-    {
-      "name": "Natalia Isaeva",
-      "profile_url": "https://unclineberger.org/people/natalia-isaeva/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Michael D. Iglesia",
-      "profile_url": "https://unclineberger.org/people/michael-iglesia/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/michael.iglesia.1/bibliography/public"
-    },
-    {
-      "name": "Joseph G. Ibrahim",
-      "profile_url": "https://unclineberger.org/people/joseph-ibrahim/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "ibrahim jg"
-    },
-    {
-      "name": "Stephen D. Hursting",
-      "profile_url": "https://unclineberger.org/people/stephen-hursting/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "George E. Hucks",
-      "profile_url": "https://unclineberger.org/people/george-hucks/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Cathrine Hoyo",
-      "profile_url": "https://unclineberger.org/people/cathrine-hoyo/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Mina C. Hosseinipour",
-      "profile_url": "https://unclineberger.org/people/mina-hosseinipour/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Katherine A. Hoadley",
-      "profile_url": "https://unclineberger.org/people/katherine-hoadley/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Rachel Hirschey",
-      "profile_url": "https://unclineberger.org/people/rachel-hirschey/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Shawn D. Hingtgen",
-      "profile_url": "https://unclineberger.org/people/shawn-hingtgen/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/14uAQxVdCbLQ3/bibliography/public"
-    },
-    {
-      "name": "Austin J. Hepperla",
-      "profile_url": "https://unclineberger.org/people/austin-hepperla/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Hepperla AJ"
-    },
-    {
-      "name": "Louise M. Henderson",
-      "profile_url": "https://unclineberger.org/people/louise-henderson/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "henderson louise"
-    },
-    {
-      "name": "Nathaniel A. Hathaway",
-      "profile_url": "https://unclineberger.org/people/nathaniel-hathaway/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/nathaniel.hathaway.1/bibliography/public"
-    },
-    {
-      "name": "Erik D. Hanson",
-      "profile_url": "https://unclineberger.org/people/erik-hanson/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ]
-    },
-    {
-      "name": "Laura C. Hanson",
-      "profile_url": "https://unclineberger.org/people/laura-hanson/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "hanson lc"
-    },
-    {
-      "name": "Brent A. Hanks",
-      "profile_url": "https://unclineberger.org/people/brent-hanks/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "Hanks BA"
-    },
-    {
-      "name": "Marissa G. Hall",
-      "profile_url": "https://unclineberger.org/people/marissa-hall/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/141AjEAlIjDkT/bibliography/48043372/public"
-    },
-    {
-      "name": "Klaus M. Hahn",
-      "profile_url": "https://unclineberger.org/people/klaus-hahn/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "hahn klaus"
-    },
-    {
-      "name": "Stephanie L. Gupton",
-      "profile_url": "https://unclineberger.org/people/stephanie-gupton/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/stephanie.gupton.1/bibliography/public"
-    },
-    {
-      "name": "Gaorav P. Gupta",
-      "profile_url": "https://unclineberger.org/people/gaorav-gupta/",
-      "department": "Lineberger Comprehensive Cancer Center",
-      "role": "",
-      "departments": [
-        "Lineberger Comprehensive Cancer Center"
-      ],
-      "pubmed_hint": "gupta gaorav"
     }
   ]
 }
