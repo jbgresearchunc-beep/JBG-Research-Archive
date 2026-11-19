@@ -5,6 +5,7 @@ Scrapes faculty names from department pages, enriches with PubMed data,
 and writes output to data/faculty.json
 """
 
+import html as html_lib
 import json
 import time
 import re
@@ -93,58 +94,63 @@ class MetaTextParser(HTMLParser):
                 self.texts.append(stripped)
 
 
-def fetch_url(url, retries=3, delay=1.5):
+# ---------------------------------------------------------------------------
+# HTTP fetching
+#
+# Nov 2026: med.unc.edu HTML pages now sit behind a bot-check interstitial
+# ("checking your connection"), which answers our requests with HTTP 403.
+# Retrying a bot-check 403 almost never helps and cost ~45 min per run in
+# Step 2, so 403s are NOT retried unless the caller asks (retry_403=True).
+# The last HTTP status of each call is kept in LAST_STATUS so callers can
+# tell "blocked" (403) apart from "missing" (404) and network errors.
+# ---------------------------------------------------------------------------
+
+USER_AGENT = "UNC-Research-Explorer/1.0 (student research tool; contact: jgbresearch@unc.edu)"
+LAST_STATUS = {"code": None}
+
+
+def _http_get(url, accept, retries=3, delay=1.5, retry_403=False):
     import ssl
-    headers = {
-        "User-Agent": "UNC-Research-Explorer/1.0 (student research tool; contact: jgbresearch@unc.edu)",
-        "Accept": "text/html,application/xhtml+xml",
-    }
+    headers = {"User-Agent": USER_AGENT, "Accept": accept}
     req = urllib.request.Request(url, headers=headers)
     # Some UNC subdomains have certificate chain issues — use unverified context for .unc.edu
     ctx = ssl.create_default_context()
     if "unc.edu" in url or "unclineberger.org" in url:
         ctx.check_hostname = False
         ctx.verify_mode = ssl.CERT_NONE
+    LAST_STATUS["code"] = None
     for attempt in range(retries):
         try:
             with urllib.request.urlopen(req, timeout=30, context=ctx) as resp:
+                LAST_STATUS["code"] = resp.status
                 return resp.read().decode("utf-8", errors="replace")
         except urllib.error.HTTPError as e:
+            LAST_STATUS["code"] = e.code
             if e.code == 404:
                 return None
+            # WP REST answers 400 (rest_post_invalid_page_number) when asked
+            # for a page past the end — that is the normal end of pagination.
+            if e.code == 400 and "/wp-json/" in url:
+                return None
             print(f"  HTTP {e.code} fetching {url} (attempt {attempt+1})")
+            if e.code == 403 and not retry_403:
+                return None
         except Exception as e:
+            LAST_STATUS["code"] = None
             print(f"  Error fetching {url}: {e} (attempt {attempt+1})")
         if attempt < retries - 1:
             time.sleep(delay * (attempt + 1))
     return None
+
+
+def fetch_url(url, retries=3, delay=1.5, retry_403=False):
+    return _http_get(url, "text/html,application/xhtml+xml",
+                     retries=retries, delay=delay, retry_403=retry_403)
 
 
 def fetch_json(url, retries=3, delay=1.5):
     """Like fetch_url but sends Accept: application/json — used for REST API calls."""
-    import ssl
-    headers = {
-        "User-Agent": "UNC-Research-Explorer/1.0 (student research tool; contact: jgbresearch@unc.edu)",
-        "Accept": "application/json",
-    }
-    req = urllib.request.Request(url, headers=headers)
-    ctx = ssl.create_default_context()
-    if "unc.edu" in url or "unclineberger.org" in url:
-        ctx.check_hostname = False
-        ctx.verify_mode = ssl.CERT_NONE
-    for attempt in range(retries):
-        try:
-            with urllib.request.urlopen(req, timeout=30, context=ctx) as resp:
-                return resp.read().decode("utf-8", errors="replace")
-        except urllib.error.HTTPError as e:
-            if e.code == 404:
-                return None
-            print(f"  HTTP {e.code} fetching {url} (attempt {attempt+1})")
-        except Exception as e:
-            print(f"  Error fetching {url}: {e} (attempt {attempt+1})")
-        if attempt < retries - 1:
-            time.sleep(delay * (attempt + 1))
-    return None
+    return _http_get(url, "application/json", retries=retries, delay=delay)
 
 
 # ---------------------------------------------------------------------------
@@ -274,29 +280,110 @@ def extract_name(raw_text):
     return text
 
 
-def scrape_faculty_via_wp_rest(base_url, dept_name):
+def _wp_base_from_url(url):
+    """Old heuristic: WP site = first path segment (e.g. https://www.med.unc.edu/pediatrics).
+    Only correct for top-level department sites — Medicine divisions and
+    Plastic Surgery are their own sites one level deeper, so departments.json
+    now gives an explicit api.base instead."""
+    parsed = urllib.parse.urlparse(url)
+    path_parts = parsed.path.strip("/").split("/")
+    return f"{parsed.scheme}://{parsed.netloc}/{path_parts[0]}"
+
+
+def _flatten_strings(obj, out, depth=0):
+    """Collect all string leaves of a nested dict/list (used to read position
+    titles out of custom-field blobs whose exact shape varies by post type)."""
+    if depth > 6:
+        return
+    if isinstance(obj, str):
+        out.append(obj)
+    elif isinstance(obj, dict):
+        for v in obj.values():
+            _flatten_strings(v, out, depth + 1)
+    elif isinstance(obj, list):
+        for v in obj:
+            _flatten_strings(v, out, depth + 1)
+
+
+# Keys on a WP REST entry that may hold position/title custom fields.
+# ud_entry uses ud_entry_custom_fields.ud_positions; the 'directory' post
+# type's field names were not confirmed when this was written, so for any
+# other key that looks like a custom-field container we flatten its strings.
+_WP_SKIP_KEYS = {"content", "excerpt", "yoast_head", "yoast_head_json", "_links",
+                 "guid", "title", "link", "slug", "class_list", "id", "date",
+                 "date_gmt", "modified", "modified_gmt", "status", "type",
+                 "template", "featured_media", "author"}
+
+
+def _upd_field(entry, key):
+    """'directory' entries store fields as top-level lists, e.g.
+    "_upd_degree1": ["MD"], "_upd_gallery_summary": ["Assistant Professor"].
+    Returns plain text with tags stripped and entities decoded."""
+    v = entry.get(key)
+    if isinstance(v, list):
+        v = " ".join(str(x) for x in v if x)
+    text = re.sub(r"<[^>]+>", " ", str(v or ""))
+    return re.sub(r"\s+", " ", html_lib.unescape(text)).strip()
+
+
+def _wp_degree_text(entry):
+    """'directory' entries keep credentials in _upd_degree1/_upd_degree2
+    (Rad Onc / Anesthesiology titles are bare names)."""
+    return " ".join(_upd_field(entry, k) for k in entry
+                    if isinstance(k, str) and k.startswith("_upd_degree"))
+
+
+def _wp_position_text(entry):
+    parts = []
+    custom = entry.get("ud_entry_custom_fields", {})
+    if isinstance(custom, dict):
+        positions = custom.get("ud_positions", [])
+        if isinstance(positions, list):
+            parts.extend(p.get("ud_title", "") for p in positions if isinstance(p, dict))
+    # 'directory' post type: the position/title line lives in
+    # _upd_gallery_summary (e.g. "Assistant Professor", "Resident Physician",
+    # "CA-1", "Medical School: ..." for residents).
+    summary = _upd_field(entry, "_upd_gallery_summary")
+    if summary:
+        parts.append(summary)
+    for k, v in entry.items():
+        if k in _WP_SKIP_KEYS or k == "ud_entry_custom_fields" or k.startswith("_upd_"):
+            continue
+        if isinstance(v, (dict, list)) and (
+                "field" in k or k in ("acf", "meta", "toolset", "wpcf") or "position" in k or "title" in k):
+            _flatten_strings(v, parts)
+    return " ".join(p for p in parts if isinstance(p, str))
+
+
+def scrape_faculty_via_wp_rest(base_url, dept_name, post_type="ud_entry",
+                               api_base=None, exclude_paths=None, division_role=True):
     """
-    Scrape faculty from a WordPress/Toolset site using the ud_entry custom post type.
-    Used for UNC Pediatrics whose faculty pages are JavaScript-rendered.
+    Scrape people from a UNC SOM WordPress site's public REST API.
 
-    The site stores all people as ud_entry posts at:
-      /wp-json/wp/v2/ud_entry?per_page=100&page=N
+    Nov 2026: this is now the PRIMARY source for every med.unc.edu department
+    (see the 'api' blocks in departments.json), because the HTML pages sit
+    behind a bot-check that returns 403. Two post types are in use:
+      - ud_entry   — most departments + all Medicine divisions
+      - directory  — Anesthesiology, Derm, Family Med, Neurosurgery, Ophth,
+                     Ortho, Pathology, PM&R, Rad Onc, Urology
 
-    Each entry has:
+    Endpoint: <api_base>/wp-json/wp/v2/<post_type>?per_page=100&page=N
+
+    Fields used:
       - title.rendered: full name with credentials
-      - ud_entry_custom_fields: {ud_first_name, ud_last_name, ud_positions}
-      - class_list: includes ud_division-{code} for division membership
+      - ud_entry_custom_fields.ud_positions (ud_entry) / other custom-field
+        blobs (directory): position titles for credential + trainee checks
+      - class_list: ud_division-{code} for division membership
       - link: profile URL
+      - the entry's own text is scanned for a PubMed / MyNCBI / ORCID link so
+        Step 2 doesn't need the (blocked) profile page for those people.
 
     We filter to faculty (MD, PhD, DO, etc.) and exclude admin/nursing/support staff.
-    Only called once per department (first URL), subsequent division URLs are skipped.
     """
-    # Only run this once for the whole Pediatrics department
-    # (all divisions share the same wp-json endpoint)
-    parsed = urllib.parse.urlparse(base_url)
-    path_parts = parsed.path.strip("/").split("/")
-    wp_base = f"{parsed.scheme}://{parsed.netloc}/{path_parts[0]}"
-    api_url = f"{wp_base}/wp-json/wp/v2/ud_entry"
+    wp_base = (api_base or _wp_base_from_url(base_url)).rstrip("/")
+    api_url = f"{wp_base}/wp-json/wp/v2/{post_type}"
+    wp_path = urllib.parse.urlparse(wp_base).path.rstrip("/")  # e.g. '/medicine/cardiology'
+    exclude_paths = exclude_paths or []
 
     # Faculty credential patterns — only include people with these in their title
     FACULTY_CREDENTIALS = re.compile(
@@ -307,66 +394,102 @@ def scrape_faculty_via_wp_rest(base_url, dept_name):
     # Titles that identify trainees — exclude anyone whose position matches these
     TRAINEE_TITLES = re.compile(
         r"\b(resident|residency|intern|interns|fellow(?!ship\s+director|ship\s+program\s+director)"
-        r"|student|clerkship|trainee|house\s+officer|pgy[-\s]?\d|class\s+of\s+\d{4})\b",
+        r"|student|clerkship|trainee|house\s+officer|pgy[-\s]?\d|class\s+of\s+\d{4}"
+        # 'directory' resident markers (Anesthesiology "CA-1", PM&R
+        # "Medical School: ...", "Alumni | Class of 2025")
+        r"|ca-[123]|medical\s+school:?|alumni"
+        # General Surgery residents' summary is just their med school
+        r"|school\s+of\s+medicine|college\s+of\s+medicine|medical\s+college)\b",
         re.IGNORECASE
     )
+
+    # A real faculty rank anywhere in the positions overrides a trainee keyword.
+    FACULTY_RANK = re.compile(
+        r"\b(professor|instructor|lecturer|chief(?!\s+resident)|chair|attending|faculty"
+        r"|director)\b",
+        re.IGNORECASE
+    )
+
+    PER_PAGE = 100
+    # ud_entry: request only the fields we need (+ content, for PubMed links).
+    # Other post types: fields aren't confirmed yet, so fetch whole entries.
+    fields_param = ("&_fields=id,title,link,content,ud_entry_custom_fields,class_list,ud_division"
+                    if post_type == "ud_entry" else "")
 
     faculty = []
     seen = set()
     page = 1
     total_entries_seen = 0
     rejected_no_credential = 0
+    rejected_trainee = 0
+    rejected_no_position = 0
     rejected_wrong_dept = 0
+    hints_found = 0
+    first_entry_keys = None
 
     while True:
-        url = (
-            f"{api_url}?per_page=100&page={page}"
-            f"&_fields=id,title,link,ud_entry_custom_fields,class_list,ud_division"
-        )
-        html = fetch_json(url)
-        if not html:
-            print(f"    WP REST: no response for page {page} (url: {api_url})")
+        url = f"{api_url}?per_page={PER_PAGE}&page={page}{fields_param}"
+        body = fetch_json(url)
+        if not body:
+            if page == 1:
+                print(f"    WP REST: no response (HTTP {LAST_STATUS['code']}) from {api_url}")
             break
         try:
-            entries = json.loads(html)
+            entries = json.loads(body)
         except Exception as e:
             print(f"    WP REST: JSON parse error on page {page}: {e}")
-            print(f"    Raw response (first 300 chars): {html[:300]}")
+            print(f"    Raw response (first 300 chars): {body[:300]}")
             break
         if not isinstance(entries, list) or len(entries) == 0:
             break
+        if first_entry_keys is None and isinstance(entries[0], dict):
+            first_entry_keys = sorted(entries[0].keys())
 
         total_entries_seen += len(entries)
         for entry in entries:
-            # Get name from title
+            if not isinstance(entry, dict):
+                continue
+            # Get name from title. Strip tags, THEN decode entities —
+            # titles arrive as e.g. "Mar&iacute;a L&oacute;pez, MD" or "&#8217;".
             raw_title = entry.get("title", {})
             if isinstance(raw_title, dict):
                 raw_title = raw_title.get("rendered", "")
-            raw_title = re.sub(r"<[^>]+>", "", raw_title).strip()  # strip HTML entities
+            raw_title = re.sub(r"<[^>]+>", "", raw_title or "")
+            raw_title = html_lib.unescape(raw_title).replace("\u00a0", " ").strip()
 
-            # Pull position text once — used for both credential and trainee checks
-            custom = entry.get("ud_entry_custom_fields", {})
-            if not isinstance(custom, dict):
-                custom = {}
-            positions = custom.get("ud_positions", [])
-            if not isinstance(positions, list):
-                positions = []
-            position_text = " ".join(
-                p.get("ud_title", "") for p in positions if isinstance(p, dict)
-            )
+            position_text = _wp_position_text(entry)
+            degree_text = _wp_degree_text(entry)
 
-            # Exclude trainees — check both title and position
-            if TRAINEE_TITLES.search(raw_title) or TRAINEE_TITLES.search(position_text):
-                rejected_no_credential += 1
+            # 'directory' entries with NO position line are excluded (decided
+            # 2026-11-19). In Surgery/Family Med these are mostly residents
+            # added at July/September start dates; ~4 real faculty are lost
+            # with them until their department fills in a title.
+            # (Only when the site uses the field at all — key present, value empty.)
+            if (post_type == "directory" and "_upd_gallery_summary" in entry
+                    and not _upd_field(entry, "_upd_gallery_summary")):
+                rejected_no_position += 1
+                continue
+
+            # Exclude trainees — but only when nothing marks them as faculty.
+            # Positions like "Associate Professor; Residency Program Director"
+            # or "Director of Student Research" mention trainees without being
+            # one; the Nov 2026 full test lost ~60 General Surgery faculty and
+            # many division faculty to this before the rank check was added.
+            if (TRAINEE_TITLES.search(raw_title) or TRAINEE_TITLES.search(position_text)) \
+                    and not FACULTY_RANK.search(position_text):
+                rejected_trainee += 1
                 continue
 
             # Only include people with faculty credentials
-            if not FACULTY_CREDENTIALS.search(raw_title):
-                # Also check ud_positions for faculty title
+            if not FACULTY_CREDENTIALS.search(raw_title) and not FACULTY_CREDENTIALS.search(degree_text):
+                # Also check positions for faculty title
                 if not FACULTY_CREDENTIALS.search(position_text):
                     # Check for professor/instructor titles
+                    # No MD/PhD anywhere: keep only with an academic rank.
+                    # ("director" was dropped from this list Nov 2026 — it let
+                    # admin staff like "Director of Clinical Operations, MHA" in.)
                     if not re.search(
-                        r"\b(professor|instructor|director|chief|lecturer)\b",
+                        r"\b(professor|instructor|lecturer|chief(?!\s+resident))\b",
                         position_text, re.IGNORECASE
                     ):
                         rejected_no_credential += 1
@@ -378,46 +501,95 @@ def scrape_faculty_via_wp_rest(base_url, dept_name):
             name_key = name.lower()
             if name_key in seen:
                 continue
-            seen.add(name_key)
 
-            link = entry.get("link", "")
+            link = entry.get("link", "") or ""
+            # WordPress leaves deleted posts reachable with a "__trashed" slug
+            # (seen Nov 2026: .../people/mason-sanders-md__trashed/). Skip them.
+            if "__trashed" in link:
+                continue
 
-            # Skip people whose profile URL belongs to a different department.
+            # Skip people whose profile URL belongs to a different site.
             # e.g. Brent Kinder appears in Neurology's ud_entry feed because he
             # treats TSC patients, but his profile is under /medicine/pulmonary/
-            # The wp_base path (e.g. '/neurology') should appear in their profile URL.
-            if link and wp_base:
-                wp_path = urllib.parse.urlparse(wp_base).path  # e.g. '/neurology'
+            # Only applies to links on the same host. Some 'directory' entries
+            # link straight to an external page (Rad Onc's REX/UNC Health
+            # physician pages, or their Lineberger profile) — those people
+            # are still this department's faculty, so keep them.
+            same_host = urllib.parse.urlparse(link).netloc.lower() == \
+                urllib.parse.urlparse(wp_base).netloc.lower()
+            if link and wp_path and same_host:
                 profile_path = urllib.parse.urlparse(link).path
-                if wp_path and wp_path not in profile_path:
+                if not (profile_path == wp_path or profile_path.startswith(wp_path + "/")):
                     rejected_wrong_dept += 1
-                    continue  # belongs to a different department
+                    continue
+                if any(profile_path.startswith(x) for x in exclude_paths):
+                    rejected_wrong_dept += 1
+                    continue
+            seen.add(name_key)
 
             # Get division from class_list
             class_list = entry.get("class_list", [])
+            if isinstance(class_list, dict):
+                class_list = list(class_list.values())
             if not isinstance(class_list, list):
                 class_list = []
             division = ""
-            for cls in class_list:
-                if isinstance(cls, str) and cls.startswith("ud_division-") and cls != "ud_division-all_peds":
-                    division = cls.replace("ud_division-", "").replace("_", " ").title()
-                    break
+            # Division tags are meaningful on Pediatrics (its subspecialties)
+            # but are generic noise on most other sites ("Faculty",
+            # "Clinician", "All", "Cecmh"), so other departments set
+            # division_role: false in departments.json and get role "".
+            for cls in (class_list if division_role else []):
+                if not (isinstance(cls, str) and cls.startswith("ud_division-")):
+                    continue
+                slug = cls[len("ud_division-"):]
+                # Skip catch-all / meaningless terms that Medicine sites use
+                # (e.g. "all-faculty-profiles", "division-of-cardiology", "118")
+                # — they'd show up as a bogus "role". Real subdivisions
+                # (Pediatrics, Cardiology "hypertension") are kept.
+                if (slug.isdigit() or slug.startswith(("all-", "all_")) or slug == "all_peds"
+                        or slug.startswith(("division-of", "division_of"))):
+                    continue
+                division = slug.replace("_", " ").replace("-", " ").title()
+                break
 
-            faculty.append({
+            rec = {
                 "name": name,
                 "profile_url": link,
                 "department": dept_name,
                 "role": division,
-            })
+                "source": f"wp_rest:{post_type}",
+            }
+            # Look for a curated PubMed / MyNCBI / ORCID link in the entry
+            # itself (bio content + custom fields) so Step 2 can skip the
+            # blocked profile page for these people.
+            try:
+                hint = scrape_profile_for_pubmed_string(link or "wp_rest", html=json.dumps(entry))
+            except Exception:
+                hint = None
+            if hint:
+                rec["pubmed_hint"] = hint
+                hints_found += 1
+            faculty.append(rec)
 
-        print(f"    WP REST API page {page}: {len(entries)} entries, {len(faculty)} faculty so far")
+        print(f"    WP REST page {page}: {len(entries)} entries, {len(faculty)} faculty so far")
+        if len(entries) < PER_PAGE:
+            break  # last page — no need to request one past the end
         page += 1
+        if page > 50:
+            print("    WP REST: stopping at 50 pages (safety cap)")
+            break
         time.sleep(0.3)
 
-    print(f"    WP REST summary: {total_entries_seen} total entries, "
-          f"{rejected_no_credential} rejected (no credential), "
-          f"{rejected_wrong_dept} rejected (wrong dept), "
-          f"{len(faculty)} kept")
+    no_pos = f"{rejected_no_position} no position, " if post_type == "directory" else ""
+    print(f"    WP REST summary [{post_type}]: {total_entries_seen} entries, "
+          f"{rejected_trainee} trainees, {rejected_no_credential} no credential, {no_pos}"
+          f"{rejected_wrong_dept} other site, {len(faculty)} kept, "
+          f"{hints_found} with PubMed/ORCID link")
+    if total_entries_seen > 0 and len(faculty) == 0:
+        # Loud: this is the failure mode if a post type stores credentials
+        # somewhere we don't look. Print the field names so the fix is obvious.
+        print(f"    ⚠ WP REST: {total_entries_seen} entries but 0 kept from {api_url} — "
+              f"check credential fields. Entry keys: {first_entry_keys}")
 
     return faculty
 
@@ -429,7 +601,9 @@ def scrape_faculty_from_page(url, dept_name):
     and whose href points to a profile page on the same domain.
     """
     print(f"  Scraping: {url}")
-    html = fetch_url(url)
+    # Listing pages: keep retrying 403s — under the bot-check a retry
+    # occasionally gets through, and there are only a few listing URLs.
+    html = fetch_url(url, retry_403=True)
     if not html:
         print(f"  Could not fetch {url}")
         return []
@@ -642,7 +816,7 @@ def scrape_profile_for_pubmed_string(profile_url, html=None):
     # e.g. https://orcid.org/0000-0002-2803-3272
     # e.g. https://orcid.org/my-orcid?orcid=0000-0002-2803-3272
     orcid_match = re.search(
-        r"orcid[=:/]+(\d{4}-\d{4}-\d{4}-\d{3}[\dX])",
+        r"orcid(?:\.org)?[=:/]+(\d{4}-\d{4}-\d{4}-\d{3}[\dX])",
         html, re.IGNORECASE
     )
     if orcid_match:
@@ -1895,6 +2069,44 @@ def fetch_nih_grants(name):
 # Main pipeline
 # ---------------------------------------------------------------------------
 
+# ---- Safety-guard helpers ----
+# A full production run must have at least DROP_THRESHOLD of the previous
+# committed count AND at least MIN_FULL_RUN_FACULTY in absolute terms.
+# The absolute floor exists because the ratio check alone can be walked
+# down: Nov 2026 runs went 2,751 → 604 → 378, each one compared only to the
+# already-shrunken file before it. ~2,750 was the healthy pre-block total;
+# lower the floor deliberately if the real faculty count ever falls that far.
+DROP_THRESHOLD = 0.6
+MIN_FULL_RUN_FACULTY = 1500
+
+
+def _read_total(path):
+    try:
+        with open(path) as fh:
+            d = json.load(fh)
+        return int(d.get("total_faculty") or len(d.get("faculty", [])))
+    except Exception:
+        return 0
+
+
+def _write_json(path, obj):
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+    with open(path, "w") as fh:
+        json.dump(obj, fh, indent=2)
+
+
+def _check_run_size(new_count, baseline, label):
+    if new_count < MIN_FULL_RUN_FACULTY:
+        return False, (f"{label}: this run has only {new_count} faculty, below the "
+                       f"absolute floor of {MIN_FULL_RUN_FACULTY} (MIN_FULL_RUN_FACULTY). "
+                       f"Previous committed file had {baseline}.")
+    if baseline > 50 and new_count < baseline * DROP_THRESHOLD:
+        return False, (f"{label}: previous file had {baseline} faculty; this run only has "
+                       f"{new_count} ({new_count/baseline:.0%}). Looks like a pipeline "
+                       f"failure, not real attrition.")
+    return True, ""
+
+
 def dept_matches(filter_str, dept_name, dept_short=""):
     """
     Match a department filter string against a department name or short name.
@@ -1935,15 +2147,47 @@ def scrape_only(config_path="scraper/departments.json",
     if dept_filter:
         departments = [d for d in departments if dept_matches(dept_filter, d["name"], d.get("short", ""))]
 
+    # Baseline for the safety guard — read ONCE, before this run writes anything.
+    raw_baseline = _read_total(raw_output_path)
+
     all_faculty = []
 
     # ---- Step 1: Scrape faculty pages ----
     print("\n=== Step 1: Scraping faculty pages ===")
+    api_counts = {}
     for dept in departments:
         print(f"\n[{dept['name']}]")
         urls = dept.get("urls") or [dept.get("url")]
         urls = [u for u in urls if u]
         dept_faculty = []
+
+        # PRIMARY: WordPress REST API (not behind the med.unc.edu bot-check).
+        # If it returns people, the HTML listing pages are skipped entirely —
+        # they're blocked anyway, and merging them would re-add nav junk.
+        api = dept.get("api")
+        if api and api.get("base"):
+            print(f"  API: {api['base']}/wp-json/wp/v2/{api.get('type', 'ud_entry')}")
+            dept_faculty = scrape_faculty_via_wp_rest(
+                api["base"], dept["name"],
+                post_type=api.get("type", "ud_entry"),
+                api_base=api["base"],
+                exclude_paths=api.get("exclude_paths"),
+                division_role=api.get("division_role", False),
+            )
+            api_counts[dept["name"]] = len(dept_faculty)
+            if dept_faculty:
+                all_faculty.extend(dept_faculty)
+                time.sleep(0.5)
+                continue
+            print(f"  ⚠ API returned no faculty for {dept['name']} — falling back to HTML pages")
+            # Mark this site as already tried so the HTML fallback below
+            # doesn't call the same API a second time.
+            if not hasattr(scrape_faculty_from_page, "_wp_rest_cache"):
+                scrape_faculty_from_page._wp_rest_cache = {}
+            p_ = urllib.parse.urlparse(api["base"])
+            scrape_faculty_from_page._wp_rest_cache[
+                f"{p_.netloc}/{p_.path.strip('/').split('/')[0]}"] = True
+
         for url in urls:
             faculty_list = scrape_faculty_from_page(url, dept["name"])
             dept_faculty.extend(faculty_list)
@@ -1961,7 +2205,10 @@ def scrape_only(config_path="scraper/departments.json",
                     dept_faculty.extend(paged_faculty)
                     page += 1
                     time.sleep(0.5)
-                    if page > 20:
+                    # Was 20 — Lineberger's directory now runs past 20 pages,
+                    # and the cap silently dropped ~200 members (A–F) in the
+                    # Nov 2026 test. Loop still stops at the first empty page.
+                    if page > 80:
                         break
 
         all_faculty.extend(dept_faculty)
@@ -1970,6 +2217,11 @@ def scrape_only(config_path="scraper/departments.json",
         time.sleep(0.5)
 
     print(f"\nTotal faculty scraped: {len(all_faculty)}")
+    if api_counts:
+        empty = [n for n, c in api_counts.items() if c == 0]
+        print(f"  API-sourced departments: {len(api_counts) - len(empty)}/{len(api_counts)} returned faculty")
+        if empty:
+            print(f"  ⚠ API returned 0 for: {', '.join(empty)}")
 
     # ---- Deduplication ----
     print("\n=== Deduplicating faculty ===")
@@ -1992,11 +2244,90 @@ def scrape_only(config_path="scraper/departments.json",
             f["departments"] = [f["department"]]
             deduplicated.append(f)
     all_faculty = deduplicated
+
+    # Second pass: same person, name written with/without a middle name or
+    # initial ("Nigel Key" vs "Nigel S. Key", "Janice Hwang" vs "Janice Jin
+    # Hwang"). The API names often differ from Lineberger's, and the Nov 2026
+    # full test left ~90 such pairs as separate entries. Merge when first
+    # name + last name match, middle parts don't conflict, and the Jr/Sr/III
+    # suffix is the same (keeps e.g. "Will Roper" and "Will Roper Jr" apart).
+    def _loose_key(name):
+        toks = re.sub(r"[^a-z ]", " ", html_lib.unescape(name).lower()).split()
+        suffix = tuple(t for t in toks if t in ("jr", "sr", "ii", "iii", "iv"))
+        toks = [t for t in toks if t not in ("jr", "sr", "ii", "iii", "iv")]
+        if len(toks) < 2:
+            return None, None
+        firsts = [t for t in toks[:-1] if len(t) > 1]
+        if not firsts:
+            return None, None
+        i = toks.index(firsts[0])
+        middle = [t[0] for t in toks[i + 1:-1]]
+        return (firsts[0], toks[-1], suffix), middle
+
+    loose_seen = {}
+    merged_loose = []
+    loose_merges = 0
+    for f in all_faculty:
+        key, middle = _loose_key(f["name"])
+        target = loose_seen.get(key) if key else None
+        if target is not None:
+            t_mid = _loose_key(target["name"])[1]
+            # conflicting middle initials → different people, don't merge
+            if middle and t_mid and middle[0] != t_mid[0]:
+                target = None
+        if target is None:
+            if key and key not in loose_seen:
+                loose_seen[key] = f
+            merged_loose.append(f)
+            continue
+        for d in f.get("departments", [f["department"]]):
+            if d not in target["departments"]:
+                target["departments"].append(d)
+        if f.get("pubmed_hint") and not target.get("pubmed_hint"):
+            target["pubmed_hint"] = f["pubmed_hint"]
+        # keep the fuller name (more middle detail) for display/search
+        if len(f["name"]) > len(target["name"]):
+            target["name"] = f["name"]
+        loose_merges += 1
+    if loose_merges:
+        print(f"  Merged {loose_merges} name-variant duplicates (middle name/initial differences)")
+    all_faculty = merged_loose
+    print(f"  {len(all_faculty)} unique faculty after name-variant merge")
     print(f"  {len(all_faculty)} unique faculty after deduplication")
 
     # ---- Step 2: Profile page visits ----
     print("\n=== Step 2: Checking profiles for PubMed search strings ===")
     trainees_removed = []
+    # Circuit breaker: once a host has returned this many 403s in a row, stop
+    # requesting its profile pages for the rest of the run. Under the Nov 2026
+    # bot-check every med.unc.edu profile 403s, and retrying them all cost
+    # ~45 min per run for nothing. Blocked people are KEPT (see below).
+    BLOCK_TRIP = 8
+    consecutive_403 = {}
+    blocked_hosts = set()
+    profiles_skipped_blocked = 0
+    profiles_skipped_have_hint = 0
+    profiles_skipped_offsite = 0
+    PROFILE_HOSTS = {"www.med.unc.edu", "med.unc.edu", "unclineberger.org", "www.unclineberger.org"}
+
+    def _host(u):
+        return urllib.parse.urlparse(u).netloc.lower()
+
+    def _fetch_profile(u, **kw):
+        h = _host(u)
+        if h in blocked_hosts:
+            return None, True
+        body = fetch_url(u, **kw)
+        if LAST_STATUS["code"] == 403:
+            consecutive_403[h] = consecutive_403.get(h, 0) + 1
+            if consecutive_403[h] >= BLOCK_TRIP:
+                blocked_hosts.add(h)
+                print(f"  ⛔ {h}: {BLOCK_TRIP} profile 403s in a row — skipping its "
+                      f"remaining profile pages this run (bot-check)")
+            return None, True
+        consecutive_403[h] = 0
+        return body, False
+
     for f in all_faculty:
         name_key = f["name"].lower().strip()
         if name_key in pubmed_overrides:
@@ -2012,15 +2343,41 @@ def scrape_only(config_path="scraper/departments.json",
             if dept_conf and dept_conf.get("profile_base"):
                 slug = re.sub(r"[^a-z0-9]+", "-", f["name"].lower()).strip("-")
                 candidate = f"{dept_conf['profile_base'].rstrip('/')}/{slug}/"
-                probe = fetch_url(candidate, retries=1, delay=0.5)
+                probe, _blocked = _fetch_profile(candidate, retries=1, delay=0.5)
                 if probe:
                     profile_url = candidate
                     f["profile_url"] = profile_url
                     print(f"  {f['name']}: constructed profile URL → {candidate}")
                 time.sleep(0.2)
 
+        from_api = str(f.get("source", "")).startswith("wp_rest")
+
+        # API entries were already credential/trainee-filtered from their
+        # structured fields. If the API entry also carried a PubMed/ORCID link,
+        # the profile page adds nothing — skip it.
+        # (Not for Lineberger: its profile page is still needed for the
+        # clinical-department filter below, and it isn't behind the bot-check.)
+        if profile_url and from_api and f.get("pubmed_hint") and "unclineberger.org" not in profile_url:
+            profiles_skipped_have_hint += 1
+            continue
+
+        # API entries sometimes link off-site (REX / UNC Health physician
+        # pages, LinkedIn, uncmedicalcenter.org). Those pages aren't UNC SOM
+        # profiles: no PubMed hint to find, and is_trainee_profile() wrongly
+        # rejected 8 Rad Onc faculty on them in the Nov 2026 test. Skip them.
+        if profile_url and from_api and _host(profile_url) not in PROFILE_HOSTS:
+            profiles_skipped_offsite += 1
+            continue
+
         if profile_url:
-            profile_html = fetch_url(profile_url, retries=2, delay=1.0)
+            profile_html, was_blocked = _fetch_profile(profile_url, retries=2, delay=1.0)
+            if was_blocked:
+                # Can't see the profile. Keep the person: API entries passed the
+                # API credential filter, and is_trainee_profile(None) has always
+                # meant "keep" for HTML entries too. They just get no curated
+                # PubMed hint and fall back to name search in Step 3.
+                profiles_skipped_blocked += 1
+                continue
             time.sleep(0.3)
 
             if "unclineberger.org" in profile_url:
@@ -2030,7 +2387,9 @@ def scrape_only(config_path="scraper/departments.json",
                     trainees_removed.append(f["name"])
                     continue
 
-            if is_trainee_profile(profile_html):
+            # API entries were already credential/trainee-filtered from
+            # structured fields, which is more reliable than scanning page text.
+            if not from_api and is_trainee_profile(profile_html):
                 print(f"  {f['name']} ({f['department']}): excluded (no faculty credentials)")
                 f["_exclude"] = True
                 trainees_removed.append(f["name"])
@@ -2057,6 +2416,31 @@ def scrape_only(config_path="scraper/departments.json",
     if trainees_removed:
         all_faculty = [f for f in all_faculty if not f.get("_exclude")]
         print(f"  Removed {len(trainees_removed)} excluded: {', '.join(trainees_removed)}")
+    if profiles_skipped_have_hint:
+        print(f"  Skipped {profiles_skipped_have_hint} profile pages (PubMed/ORCID link already in API data)")
+    if profiles_skipped_offsite:
+        print(f"  Skipped {profiles_skipped_offsite} off-site profile links (not UNC SOM / Lineberger pages)")
+    if profiles_skipped_blocked:
+        print(f"  Kept {profiles_skipped_blocked} faculty whose profile page was blocked (403) — no PubMed hint")
+
+    # ---- Safety guard (raw file). The Nov 1 2026 run committed a raw file
+    # with 603 of ~2,750 faculty because only the enrichment step had a guard.
+    # Full runs only — a --dept test run is expected to be small.
+    if not dept_filter:
+        ok, msg = _check_run_size(len(all_faculty), raw_baseline, "faculty_raw")
+        if not ok:
+            fail_path = raw_output_path.replace(".json", "_FAILED_RUN.json")
+            _write_json(fail_path, {
+                "generated_at": datetime.utcnow().isoformat() + "Z",
+                "total_faculty": len(all_faculty),
+                "departments": [d["name"] for d in departments],
+                "faculty": all_faculty,
+            })
+            print(f"\n⚠️  REFUSING TO WRITE {raw_output_path}")
+            print(f"  {msg}")
+            print(f"  Suspect output written to {fail_path} for inspection instead.")
+            print(f"  {raw_output_path} was left untouched.")
+            sys.exit(1)
 
     # Write raw output
     raw_output = {
@@ -2083,6 +2467,14 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
     Reads faculty_raw.json, writes faculty.json.
     Can be re-run independently without re-scraping.
     """
+    # Baseline for the safety guard — read ONCE, before anything in this run
+    # writes to output_path. (Bug fixed Nov 2026: the guard used to re-read
+    # output_path at the END, after the every-100 checkpoint had already
+    # overwritten it with this run's own data — so the Nov 8 run compared
+    # 604 against 600 and passed, replacing 2,751 faculty with 604.)
+    output_baseline = _read_total(output_path)
+    checkpoint_path = output_path.replace(".json", "_checkpoint.json")
+
     with open(raw_input_path) as f:
         raw = json.load(f)
 
@@ -2118,25 +2510,29 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
     # (same version) correctly skips completed work.
     already_done = {}
     stale_skipped = 0
-    if os.path.exists(output_path):
+    # Read the last committed output, then any checkpoint left by a run that
+    # timed out (checkpoint entries win — they're newer).
+    for resume_path in (output_path, checkpoint_path):
+        if not os.path.exists(resume_path):
+            continue
         try:
-            with open(output_path) as f:
+            with open(resume_path) as f:
                 prev = json.load(f)
             for pf in prev.get("faculty", []):
                 if "pubmed_verified" not in pf and "publications" not in pf:
                     continue
                 if pf.get("pipeline_version") == PIPELINE_VERSION:
                     already_done[pf["name"].lower().strip()] = pf
-                else:
+                elif resume_path == output_path:
                     stale_skipped += 1
-            if already_done:
-                print(f"Resume: {len(already_done)} faculty already enriched "
-                      f"by current pipeline v{PIPELINE_VERSION} — will skip those")
-            if stale_skipped:
-                print(f"Resume: {stale_skipped} faculty have OLD pipeline version "
-                      f"— will RE-ENRICH with current logic")
         except Exception as e:
-            print(f"Resume: could not read prior output ({e}) — starting fresh")
+            print(f"Resume: could not read {resume_path} ({e}) — ignoring it")
+    if already_done:
+        print(f"Resume: {len(already_done)} faculty already enriched "
+              f"by current pipeline v{PIPELINE_VERSION} — will skip those")
+    if stale_skipped:
+        print(f"Resume: {stale_skipped} faculty have OLD pipeline version "
+              f"— will RE-ENRICH with current logic")
 
     # ---- Step 3: PubMed enrichment ----
     print("\n=== Step 3: Enriching with PubMed ===")
@@ -2167,7 +2563,8 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
         time.sleep(PUBMED_SLEEP)
 
         # Periodic checkpoint: save progress every 100 faculty so a late
-        # crash or timeout doesn't lose everything.
+        # crash or timeout doesn't lose everything. Written to a SEPARATE
+        # file — never to output_path, which the safety guard protects.
         if (i + 1) % 100 == 0:
             checkpoint = {
                 "generated_at": datetime.utcnow().isoformat() + "Z",
@@ -2176,10 +2573,8 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
                 "faculty": all_faculty,
                 "_checkpoint": f"{i+1}/{len(all_faculty)}",
             }
-            os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
-            with open(output_path, "w") as cf:
-                json.dump(checkpoint, cf, indent=2)
-            print(f"    💾 checkpoint saved at {i+1}/{len(all_faculty)}")
+            _write_json(checkpoint_path, checkpoint)
+            print(f"    💾 checkpoint saved at {i+1}/{len(all_faculty)} → {checkpoint_path}")
 
     # ---- Step 4: NIH RePORTER ----
     if not skip_nih:
@@ -2205,29 +2600,18 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
     # guard, that bad output gets committed and the prior good data is gone.
     # Only applies to full (no dept_filter) runs, since a filtered run is
     # expected to have far fewer faculty than the full committed dataset.
-    if not dept_filter and os.path.exists(output_path):
-        try:
-            with open(output_path) as pf:
-                prev_output = json.load(pf)
-            prev_total = prev_output.get("total_faculty", 0)
-        except Exception:
-            prev_total = 0
-        DROP_THRESHOLD = 0.6  # refuse if new count is under 60% of previous
-        if prev_total > 50 and len(all_faculty) < prev_total * DROP_THRESHOLD:
+    if not dept_filter:
+        ok, msg = _check_run_size(len(all_faculty), output_baseline, "faculty")
+        if not ok:
             fail_path = output_path.replace(".json", "_FAILED_RUN.json")
-            output = {
+            _write_json(fail_path, {
                 "generated_at": datetime.utcnow().isoformat() + "Z",
                 "total_faculty": len(all_faculty),
                 "departments": departments_in_raw,
                 "faculty": all_faculty,
-            }
-            os.makedirs(os.path.dirname(fail_path) or ".", exist_ok=True)
-            with open(fail_path, "w") as f:
-                json.dump(output, f, indent=2)
+            })
             print(f"\n⚠️  REFUSING TO WRITE {output_path}")
-            print(f"  Previous run had {prev_total} faculty; this run only has "
-                  f"{len(all_faculty)} ({len(all_faculty)/prev_total:.0%}).")
-            print(f"  This looks like a pipeline failure, not real attrition.")
+            print(f"  {msg}")
             print(f"  Suspect output written to {fail_path} for inspection instead.")
             print(f"  {output_path} was left untouched.")
             sys.exit(1)
@@ -2244,6 +2628,8 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
         json.dump(output, f, indent=2)
     print(f"\n✓ Written to {output_path}")
     print(f"  {len(all_faculty)} faculty across {len(departments_in_raw)} departments")
+    if os.path.exists(checkpoint_path):
+        os.remove(checkpoint_path)  # run finished — checkpoint no longer needed
 
 
 def run(config_path="scraper/departments.json", output_path="data/faculty.json",
