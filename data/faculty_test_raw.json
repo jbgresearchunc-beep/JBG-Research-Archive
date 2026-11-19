@@ -1,372 +1,26 @@
 {
-  "generated_at": "2026-07-08T01:04:48.204817Z",
-  "total_faculty": 48,
+  "generated_at": "2026-11-19T17:11:48.724523Z",
+  "total_faculty": 51,
   "departments": [
     "Medicine \u2014 Cardiology"
   ],
   "faculty": [
     {
-      "name": "George Stouffer",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/rick-stouffer/",
+      "name": "Arash Nargesi",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/arash-nargesi-md/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
+      "source": "wp_rest:ud_entry",
       "departments": [
         "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Essraa Bayoumi",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/essraa-bayoumi-md/",
+      "name": "Oludamilola A. Aladesanmi",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/oludamilola-dami-a-aladesanmi-md-mph/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Matthew A. Cavender",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/matthew-cavender/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Patricia Pat-Yue Chang",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/patricia-chang/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Anil K. Gehi",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/anil-k-gehi-md/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Susan C. Gilchrist",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/susan-c-gilchrist-md-ms/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Charles Hicks",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/charles-hicks/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Alan Lee Hinderliter",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/alan-lee-hinderliter-md/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ],
-      "pubmed_hint": "Hinderliter A"
-    },
-    {
-      "name": "Adam Moskowitz",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/adam-moskowitz/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Tim Nichols",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/tim-nichols/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Joseph S. Rossi",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/joe-rossi/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "John P. Vavalle",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/john-p-vavalle-md-mhs/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Thelsa Thomas Weickert",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/thelsa-thomas-weickert-md/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Kevin A. Friede",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kevin-a-friede-md/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Anthony J. Mazzella",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/anthony-mazzella/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1ZI-nziyYG5Q5/bibliography/public"
-    },
-    {
-      "name": "Joseph A. Sivak",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/joseph-a-sivak-md-facc/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Cody Deen",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/cody-deen/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Casey Gazda",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/casey-adams/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Stephanie Falk Martin",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/stephanie-falk-martin/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "S. Peter Sheng",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/s-peter-sheng-md-mph/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Ross Joseph Simpson",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/ross-simpson/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Nora Tolbert",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/nora-tolbert-md/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Robert C. Wirka",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/robert-c-wirka-md/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Matthew Baker",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/matthew-baker-md/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ],
-      "pubmed_hint": "including biventricular"
-    },
-    {
-      "name": "Prabhat Kumar",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/prabhat-kumar-md/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ],
-      "pubmed_hint": "including biventricular"
-    },
-    {
-      "name": "Lindsey A. Rosman",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/lindsey-a-rosman-phd/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1v_wlxkYMf_EnH/bibliography/public"
-    },
-    {
-      "name": "Faisal F. Syed",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/faisal-f-syed-m-b-ch-b/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Carlos A. Espinoza",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/carlos-a-espinoza-md/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Jeffrey Lawrence Klein",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/jeffrey-lawrence-klein/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Peter Mason",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/peter-mason-md-mph/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/peter.mason.3/bibliography/public"
-    },
-    {
-      "name": "Sheetal Patel",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sheetal-patel-do/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Sameer Prasada",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sameer-prasada-md/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Sudhir Prasada",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sudhir-prasada-md-facc/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Sidney C. Smith",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sidney-smith/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Michael Yeung",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/michael-yeung-md/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Ruihai Zhou",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/ruihai-zhou-md-msc-facc-rpvi/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Kirkwood Adams",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kirkwood-adams/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "David C. Ishizawar",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/david-c-ishizawar-md/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Brian Colwell Jensen",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/brian-jensen/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "William Mostertz",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/william-tripp-mostertz-md/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
+      "source": "wp_rest:ud_entry",
       "departments": [
         "Medicine \u2014 Cardiology"
       ]
@@ -376,16 +30,7 @@
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/gordon-r-reeves-md-mpt/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ],
-      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1rmG4DkkTlb/bibliography/public"
-    },
-    {
-      "name": "Mason Sanders",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/mason-sanders-md__trashed/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
+      "source": "wp_rest:ud_entry",
       "departments": [
         "Medicine \u2014 Cardiology"
       ]
@@ -395,6 +40,157 @@
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/jenna-n-skowronski-md/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "S. Peter Sheng",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/s-peter-sheng-md-mph/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Peter Mason",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/peter-mason-md-mph/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Leslie L Davis",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/leslie-l-davis-phd-rn-anp-bc-fpcna-faanp-faha/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Zack Deyo",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/zack-deyo-pharmd-bcps-cpp/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Susan C. Gilchrist",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/susan-c-gilchrist-md-ms/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Sameer Prasada",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sameer-prasada-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "David C. Ishizawar",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/david-c-ishizawar-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Steven Scarfone",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/steven-scarfone/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Sheetal Patel",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sheetal-patel-do/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "William Mostertz",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/william-tripp-mostertz-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Zachary S. Tugaoen",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/zachary-s-tugaoen-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Kevin A. Friede",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kevin-a-friede-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Essraa Bayoumi",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/essraa-bayoumi-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Nora Tolbert",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/nora-tolbert-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Robert C. Wirka",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/robert-c-wirka-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
       "departments": [
         "Medicine \u2014 Cardiology"
       ]
@@ -404,42 +200,317 @@
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/elizabeth-volz-md-facc/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
+      "source": "wp_rest:ud_entry",
       "departments": [
         "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Barbara Reid-Mills",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/barbara-reid-mills/",
+      "name": "Tammy I. Long",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/tammy-i-long-agnp-msn-rn-ccrn/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
+      "source": "wp_rest:ud_entry",
       "departments": [
         "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Kimberly Stinnett",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kimberly-stinnett/",
+      "name": "Adam Moskowitz",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/adam-moskowitz/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
+      "source": "wp_rest:ud_entry",
       "departments": [
         "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Elias Wen",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/elias-wen/",
+      "name": "Sudhir Prasada",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sudhir-prasada-md-facc/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
+      "source": "wp_rest:ud_entry",
       "departments": [
         "Medicine \u2014 Cardiology"
       ]
     },
     {
-      "name": "Sherry Wimberley",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sherry-wimberley/",
+      "name": "Justin Vandermolen",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/justin-vandermolen/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Anthony J. Mazzella",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/anthony-mazzella/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Casey Gazda",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/casey-adams/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Randall Borror",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/randall-borror-mba-pmp/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Joseph A. Sivak",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/joseph-a-sivak-md-facc/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Carlos A. Espinoza",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/carlos-a-espinoza-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Faisal F. Syed",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/faisal-f-syed-m-b-ch-b/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Prabhat Kumar",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/prabhat-kumar-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Matthew Baker",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/matthew-baker-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Ruihai Zhou",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/ruihai-zhou-md-msc-facc-rpvi/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Thelsa Thomas Weickert",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/thelsa-thomas-weickert-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Stephanie Falk Martin",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/stephanie-falk-martin/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Joseph S. Rossi",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/joe-rossi/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Cody Deen",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/cody-deen/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Michael Yeung",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/michael-yeung-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "John P. Vavalle",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/john-p-vavalle-md-mhs/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "George Stouffer",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/rick-stouffer/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Anil K. Gehi",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/anil-k-gehi-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Alan Lee Hinderliter",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/alan-lee-hinderliter-md/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Tim Nichols",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/tim-nichols/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Sidney C. Smith",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sidney-smith/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Ross Joseph Simpson",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/ross-simpson/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Patricia Pat-Yue Chang",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/patricia-chang/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Matthew A. Cavender",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/matthew-cavender/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Kirkwood Adams",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kirkwood-adams/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Jeffrey Lawrence Klein",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/jeffrey-lawrence-klein/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Charles Hicks",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/charles-hicks/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Medicine \u2014 Cardiology"
+      ]
+    },
+    {
+      "name": "Brian Colwell Jensen",
+      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/brian-jensen/",
+      "department": "Medicine \u2014 Cardiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
       "departments": [
         "Medicine \u2014 Cardiology"
       ]
