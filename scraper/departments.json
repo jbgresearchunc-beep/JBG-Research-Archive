@@ -1,80 +1,134 @@
 {
+  "_note_api": "Nov 2026: med.unc.edu HTML pages sit behind a bot-check ('checking your connection') and return 403 to the scraper. Each department's 'api' block is now the PRIMARY source: the public WordPress REST API at <base>/wp-json/wp/v2/<type>, which is not behind the check. HTML 'url'/'urls' are only used if the API returns nothing. Counts verified 2026-11-19 via X-WP-Total (includes staff/trainees before filtering).",
   "departments": [
     {
       "name": "Medicine \u2014 Cardiology",
       "short": "Medicine",
+      "api": {
+        "base": "https://www.med.unc.edu/medicine/cardiology",
+        "type": "ud_entry"
+      },
       "url": "https://www.med.unc.edu/medicine/cardiology/our-team/",
       "profile_base": "https://www.med.unc.edu/medicine/cardiology/people"
     },
     {
       "name": "Medicine \u2014 Endocrinology & Metabolism",
       "short": "Medicine",
+      "api": {
+        "base": "https://www.med.unc.edu/medicine/endocrinology-metabolism",
+        "type": "ud_entry"
+      },
       "url": "https://med.unc.edu/medicine/endocrinology-metabolism/faculty",
       "profile_base": "https://www.med.unc.edu/medicine/endocrinology-metabolism/people"
     },
     {
       "name": "Medicine \u2014 Gastroenterology & Hepatology",
       "short": "Medicine",
+      "api": {
+        "base": "https://www.med.unc.edu/medicine/gi",
+        "type": "ud_entry"
+      },
       "url": "https://www.med.unc.edu/medicine/gi/our-team/",
       "profile_base": "https://www.med.unc.edu/medicine/gi/people"
     },
     {
       "name": "Medicine \u2014 General Medicine & Clinical Epidemiology",
       "short": "Medicine",
+      "api": {
+        "base": "https://www.med.unc.edu/medicine/im",
+        "type": "ud_entry"
+      },
       "url": "https://www.med.unc.edu/medicine/im/our-team/",
       "profile_base": "https://www.med.unc.edu/medicine/im/people"
     },
     {
       "name": "Medicine \u2014 Geriatric Medicine",
       "short": "Medicine",
+      "api": {
+        "base": "https://www.med.unc.edu/medicine/geriatrics",
+        "type": "ud_entry"
+      },
       "url": "https://www.med.unc.edu/medicine/geriatrics/our-team/",
       "profile_base": "https://www.med.unc.edu/medicine/geriatrics/people"
     },
     {
       "name": "Medicine \u2014 Hematology",
       "short": "Medicine",
+      "api": {
+        "base": "https://www.med.unc.edu/medicine/hematology",
+        "type": "ud_entry"
+      },
       "url": "https://www.med.unc.edu/medicine/hematology/our-team/",
       "profile_base": "https://www.med.unc.edu/medicine/hematology/people"
     },
     {
       "name": "Medicine \u2014 Hospital Medicine",
       "short": "Medicine",
+      "api": {
+        "base": "https://www.med.unc.edu/medicine/hospitalmedicine",
+        "type": "ud_entry"
+      },
       "url": "https://www.med.unc.edu/medicine/hospitalmedicine/our-team/",
       "profile_base": "https://www.med.unc.edu/medicine/hospitalmedicine/people"
     },
     {
       "name": "Medicine \u2014 Infectious Diseases",
       "short": "Medicine",
+      "api": {
+        "base": "https://www.med.unc.edu/medicine/infdis",
+        "type": "ud_entry"
+      },
       "url": "https://www.med.unc.edu/medicine/infdis/our-team/",
       "profile_base": "https://www.med.unc.edu/medicine/infdis/people"
     },
     {
       "name": "Medicine \u2014 Nephrology & Hypertension",
       "short": "Medicine",
-      "url": "https://med.unc.edu/medicine/people/nephrology",
+      "api": {
+        "base": "https://www.med.unc.edu/medicine/nephrology-hypertension",
+        "type": "ud_entry"
+      },
+      "url": "https://www.med.unc.edu/medicine/nephrology-hypertension/our-team/",
       "profile_base": "https://www.med.unc.edu/medicine/nephrology-hypertension/people"
     },
     {
       "name": "Medicine \u2014 Oncology",
       "short": "Medicine",
+      "api": {
+        "base": "https://www.med.unc.edu/medicine/oncology",
+        "type": "ud_entry"
+      },
       "url": "https://www.med.unc.edu/medicine/oncology/our-team/",
       "profile_base": "https://www.med.unc.edu/medicine/oncology/people"
     },
     {
       "name": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "short": "Medicine",
+      "api": {
+        "base": "https://www.med.unc.edu/medicine/pulmonary",
+        "type": "ud_entry"
+      },
       "url": "https://www.med.unc.edu/medicine/pulmonary/our-team/",
       "profile_base": "https://www.med.unc.edu/medicine/pulmonary/people"
     },
     {
       "name": "Medicine \u2014 Rheumatology, Allergy & Immunology",
       "short": "Medicine",
+      "api": {
+        "base": "https://www.med.unc.edu/medicine/rheumatology-allergy-immunology",
+        "type": "ud_entry"
+      },
       "url": "https://www.med.unc.edu/medicine/rheumatology-allergy-immunology/our-team/",
       "profile_base": "https://www.med.unc.edu/medicine/rheumatology-allergy-immunology/people"
     },
     {
       "name": "Pediatrics",
       "short": "Pediatrics",
+      "api": {
+        "base": "https://www.med.unc.edu/pediatrics",
+        "type": "ud_entry",
+        "division_role": true
+      },
       "urls": [
         "https://www.med.unc.edu/pediatrics/ai/team/faculty/",
         "https://www.med.unc.edu/pediatrics/cardiology/team/faculty/",
@@ -99,33 +153,58 @@
     {
       "name": "Surgery \u2014 General Surgery",
       "short": "Surgery",
+      "api": {
+        "base": "https://www.med.unc.edu/surgery",
+        "type": "directory",
+        "_note": "Faculty live in the 'directory' post type here; 'ud_entry' is mostly residents (checked 2026-11-19)."
+      },
       "url": "https://www.med.unc.edu/surgery/our-team/faculty/"
     },
     {
       "name": "Surgery \u2014 Plastic & Reconstructive Surgery",
       "short": "Surgery",
+      "api": {
+        "base": "https://www.med.unc.edu/surgery/plastic",
+        "type": "ud_entry"
+      },
       "url": "https://www.med.unc.edu/surgery/plastic/ourteam/",
       "profile_base": "https://www.med.unc.edu/surgery/plastic/ourteam"
     },
     {
       "name": "Psychiatry",
       "short": "Psychiatry",
+      "api": {
+        "base": "https://www.med.unc.edu/psych",
+        "type": "ud_entry"
+      },
       "url": "https://www.med.unc.edu/psych/about-us/faculty/"
     },
     {
       "name": "Neurology",
       "short": "Neurology",
+      "api": {
+        "base": "https://www.med.unc.edu/neurology",
+        "type": "ud_entry"
+      },
       "url": "https://www.med.unc.edu/neurology/about-us/faculty-by-division/",
       "profile_base": "https://www.med.unc.edu/neurology/people"
     },
     {
       "name": "Neurosurgery",
       "short": "Neurosurgery",
+      "api": {
+        "base": "https://www.med.unc.edu/neurosurgery",
+        "type": "directory"
+      },
       "url": "https://www.med.unc.edu/neurosurgery/physicians/"
     },
     {
       "name": "Obstetrics & Gynecology",
       "short": "OB/GYN",
+      "api": {
+        "base": "https://www.med.unc.edu/obgyn",
+        "type": "ud_entry"
+      },
       "urls": [
         "https://www.med.unc.edu/obgyn/department-directory/clinical-faculty-and-providers/",
         "https://www.med.unc.edu/obgyn/department-directory/research-faculty/"
@@ -135,12 +214,20 @@
     {
       "name": "Pathology & Laboratory Medicine",
       "short": "Pathology",
+      "api": {
+        "base": "https://www.med.unc.edu/pathology",
+        "type": "directory"
+      },
       "url": "https://www.med.unc.edu/pathology/faculty",
       "profile_base": "https://www.med.unc.edu/pathology/directory"
     },
     {
       "name": "Radiology",
       "short": "Radiology",
+      "api": {
+        "base": "https://www.med.unc.edu/radiology",
+        "type": "ud_entry"
+      },
       "_note": "FIXED Aug 2026 (v2). /about/our-people/faculty/ is JS-rendered and returns ZERO people to requests+BS4 \u2014 the 7 it once 'found' were nav links. The server-rendered source is the ud_division taxonomy archive at /division/<slug>/. Per-subspecialty slugs truncate at 12 per page (e.g. 'leadership' has 37 members but the archive shows 12), so we use the catch-all term 'all-faculty' (111 members as of Aug 2026 = clinical subspecialties + radiological sciences) and enumerate its pages. 10 pages expected; 12 listed for headroom \u2014 surplus pages 404 loudly, which is fine. NOTE: auto-pagination in scrape.py only fires on URLs ending in /directory/, so it will NOT walk this archive by itself. To re-check counts: https://www.med.unc.edu/radiology/wp-json/wp/v2/ud_division?per_page=100&_fields=slug,name,count",
       "urls": [
         "https://www.med.unc.edu/radiology/division/all-faculty/",
@@ -161,18 +248,30 @@
     {
       "name": "Radiation Oncology",
       "short": "Rad Oncology",
+      "api": {
+        "base": "https://www.med.unc.edu/radonc",
+        "type": "directory"
+      },
       "url": "https://www.med.unc.edu/radonc/about/for-professionals-2/",
       "profile_base": "https://www.med.unc.edu/radonc/directory"
     },
     {
       "name": "Anesthesiology",
       "short": "Anesthesiology",
+      "api": {
+        "base": "https://www.med.unc.edu/anesthesiology",
+        "type": "directory"
+      },
       "url": "https://www.med.unc.edu/anesthesiology/our-department/faculty-directory-2/",
       "profile_base": "https://www.med.unc.edu/anesthesiology/directory"
     },
     {
       "name": "Dermatology",
       "short": "Dermatology",
+      "api": {
+        "base": "https://www.med.unc.edu/derm",
+        "type": "directory"
+      },
       "urls": [
         "https://www.med.unc.edu/derm/lab-services/dermatopathology/",
         "https://www.med.unc.edu/derm/patient-care/clinical-services/adult-dermatology/",
@@ -183,16 +282,29 @@
     {
       "name": "Emergency Medicine",
       "short": "Emergency Med",
+      "api": {
+        "base": "https://www.med.unc.edu/emergmed",
+        "type": "directory",
+        "_note": "Faculty live in the 'directory' post type here; 'ud_entry' is mostly residents (checked 2026-11-19)."
+      },
       "url": "https://www.med.unc.edu/emergmed/about-us/faculty/"
     },
     {
       "name": "Family Medicine",
       "short": "Family Med",
+      "api": {
+        "base": "https://www.med.unc.edu/fammed",
+        "type": "directory"
+      },
       "url": "https://www.med.unc.edu/fammed/about-us/find-a-doctor/faculty/"
     },
     {
       "name": "Orthopaedics",
       "short": "Orthopaedics",
+      "api": {
+        "base": "https://www.med.unc.edu/ortho",
+        "type": "directory"
+      },
       "_note": "FIXED Aug 2026. The listing paginates with a ?cpage=N QUERY PARAM, not /page/N/ path segments \u2014 auto-pagination in scrape.py only fires on URLs ending in /directory/ so it cannot walk it, so the 6 pages are enumerated manually here. ~55 people as of Aug 2026 (10 per page, 5 on the last). RE-CHECK THE PAGE COUNT periodically: if Ortho grows to a 7th page it will be missed silently. Do NOT re-add /ortho/directory/ \u2014 it is the parent path for individual profiles, not a paginated archive, and the 5 'faculty' it returned were nav-menu links.",
       "urls": [
         "https://www.med.unc.edu/ortho/about-us/faculty/",
@@ -207,27 +319,48 @@
     {
       "name": "Otolaryngology / Head & Neck Surgery",
       "short": "ENT",
+      "api": {
+        "base": "https://www.med.unc.edu/ent",
+        "type": "ud_entry"
+      },
       "url": "https://www.med.unc.edu/ent/about-us/clinical-faculty/",
       "profile_base": "https://www.med.unc.edu/ent/directory"
     },
     {
       "name": "Ophthalmology",
       "short": "Ophthalmology",
+      "api": {
+        "base": "https://www.med.unc.edu/ophth",
+        "type": "directory"
+      },
       "url": "https://www.med.unc.edu/ophth/meet-our-faculty-2/clinician-bios/"
     },
     {
       "name": "Urology",
       "short": "Urology",
+      "api": {
+        "base": "https://www.med.unc.edu/urology",
+        "type": "directory"
+      },
       "url": "https://www.med.unc.edu/urology/about-us/faculty/"
     },
     {
       "name": "Physical Medicine & Rehabilitation",
       "short": "PM&R",
+      "api": {
+        "base": "https://www.med.unc.edu/phyrehab",
+        "type": "directory"
+      },
       "url": "https://www.med.unc.edu/phyrehab/about-us-2/faculty-staff/faculty/"
     },
     {
       "name": "Lineberger Comprehensive Cancer Center",
       "short": "Lineberger",
+      "api": {
+        "base": "https://unclineberger.org",
+        "type": "directory",
+        "_note": "Added 2026-11-19: the HTML /directory/ listing now shows ~320 of 568 members; the REST API has all of them. Step 2 still visits Lineberger profiles (not behind the bot-check) for the clinical-department filter."
+      },
       "url": "https://unclineberger.org/directory/",
       "profile_base": "https://unclineberger.org/directory"
     }
