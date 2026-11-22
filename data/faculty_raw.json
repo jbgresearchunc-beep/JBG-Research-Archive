@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-19T17:23:37.140985Z",
-  "total_faculty": 2746,
+  "generated_at": "2026-11-22T11:01:43.390619Z",
+  "total_faculty": 2747,
   "departments": [
     "Medicine \u2014 Cardiology",
     "Medicine \u2014 Endocrinology & Metabolism",
@@ -261,16 +261,6 @@
     {
       "name": "Sudhir Prasada",
       "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sudhir-prasada-md-facc/",
-      "department": "Medicine \u2014 Cardiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Medicine \u2014 Cardiology"
-      ]
-    },
-    {
-      "name": "Justin Vandermolen",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/justin-vandermolen/",
       "department": "Medicine \u2014 Cardiology",
       "role": "",
       "source": "wp_rest:ud_entry",
@@ -18947,6 +18937,16 @@
       ]
     },
     {
+      "name": "Brian Anderson",
+      "profile_url": "https://www.med.unc.edu/radonc/directory/brian-anderson/",
+      "department": "Radiation Oncology",
+      "role": "",
+      "source": "wp_rest:directory",
+      "departments": [
+        "Radiation Oncology"
+      ]
+    },
+    {
       "name": "Abby Pepin",
       "profile_url": "https://www.med.unc.edu/radonc/directory/abby-pepin/",
       "department": "Radiation Oncology",
@@ -24530,6 +24530,16 @@
       "source": "wp_rest:directory",
       "departments": [
         "Urology"
+      ]
+    },
+    {
+      "name": "Amanda Zwilling",
+      "profile_url": "https://www.med.unc.edu/phyrehab/directory/amanda-zwilling-phd/",
+      "department": "Physical Medicine & Rehabilitation",
+      "role": "",
+      "source": "wp_rest:directory",
+      "departments": [
+        "Physical Medicine & Rehabilitation"
       ]
     },
     {
