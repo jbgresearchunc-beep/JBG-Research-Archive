@@ -1,518 +1,518 @@
 {
-  "generated_at": "2026-11-19T17:11:48.724523Z",
+  "generated_at": "2026-11-26T13:53:05.170570Z",
   "total_faculty": 51,
   "departments": [
-    "Medicine \u2014 Cardiology"
+    "Medicine \u2014 Pulmonary Diseases & Critical Care"
   ],
   "faculty": [
     {
-      "name": "Arash Nargesi",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/arash-nargesi-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Paul W. Noble",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/paul-w-noble-md/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Oludamilola A. Aladesanmi",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/oludamilola-dami-a-aladesanmi-md-mph/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Andrew Blake",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/andrew-blake-md-mba/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Gordon R. Reeves",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/gordon-r-reeves-md-mpt/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "William Tyler Smith",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/william-tyler-smith-md-2/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Jenna N. Skowronski",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/jenna-n-skowronski-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "W. Cameron McGuire",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/w-cameron-mcguire-md-mph/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "S. Peter Sheng",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/s-peter-sheng-md-mph/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Hilda M. Metjian",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/hilda-m-metjian-md-fccp/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Peter Mason",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/peter-mason-md-mph/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Sean J. Callahan",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/sean-j-callahan-md/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Leslie L Davis",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/leslie-l-davis-phd-rn-anp-bc-fpcna-faanp-faha/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Benjamin DeMarco",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/benjamin-demarco-md/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Zack Deyo",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/zack-deyo-pharmd-bcps-cpp/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Benjamin J. Sines",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/benjamin-j-sines-md-mscr/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Susan C. Gilchrist",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/susan-c-gilchrist-md-ms/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Matthew Kretzschmar",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/matthew-kretzschmar-mba/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Sameer Prasada",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sameer-prasada-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Lisa J. Rose-Jones",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/lisa-j-rose-jones-md-facc/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "David C. Ishizawar",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/david-c-ishizawar-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Adam Kimple",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/adam-kimple-md/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Steven Scarfone",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/steven-scarfone/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Morgan Jones",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/morgan-jones-pharmd-bcacp-cpp/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Sheetal Patel",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sheetal-patel-do/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Kenneth N. Olivier",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/kenneth-n-olivier-md-mph/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "William Mostertz",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/william-tripp-mostertz-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Katie McCrory",
+      "profile_url": "https://www.uncmedicalcenter.org/uncmc/professional-education-and-services/pharmacy-residency-programs/our-preceptors/katie-mccrory-pharmd/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Zachary S. Tugaoen",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/zachary-s-tugaoen-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Kunal Jakharia",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/kunal-jakharia-md/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Kevin A. Friede",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kevin-a-friede-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Brent W. Kinder",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/brent-kinder-md-ms/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Essraa Bayoumi",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/essraa-bayoumi-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Kenichi Okuda",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/kenichi-okuda-md-phd/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Nora Tolbert",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/nora-tolbert-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Kenton Dover",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/kenton-dover/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Robert C. Wirka",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/robert-c-wirka-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Blair Wendlandt",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/blair-wendlandt-md-mscr/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Elizabeth Volz",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/elizabeth-volz-md-facc/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Honey Jones",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/honey-jones/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Tammy I. Long",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/tammy-i-long-agnp-msn-rn-ccrn/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Subhashini Sellers",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/subhashini-sellers/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Adam Moskowitz",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/adam-moskowitz/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "C. Adrian Austin",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/c-adrian-austin-md-mscr/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Sudhir Prasada",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sudhir-prasada-md-facc/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Kunal Patel",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/kunal-patel-md-phd/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Justin Vandermolen",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/justin-vandermolen/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Laura Beth Gifford",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/laura-beth-rupcich/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Anthony J. Mazzella",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/anthony-mazzella/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Barbara LeVarge",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/barbara-levarge-md/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Casey Gazda",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/casey-adams/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Christine Vigeland",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/chrstine-vigeland-md/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Randall Borror",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/randall-borror-mba-pmp/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Scott Randell",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/scott-randell-phd/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Joseph A. Sivak",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/joseph-a-sivak-md-facc/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "M. Bradley Drummond",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/m-bradley-drummond-md-mhs/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Carlos A. Espinoza",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/carlos-a-espinoza-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Stephen Tilley",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/tilley/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Faisal F. Syed",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/faisal-f-syed-m-b-ch-b/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Carla Maria Pedrosa Ribeiro",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/ribeiro/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Prabhat Kumar",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/prabhat-kumar-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Jason Mock",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/mock/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Matthew Baker",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/matthew-baker-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Jennifer Maguire",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/maguire/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Ruihai Zhou",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/ruihai-zhou-md-msc-facc-rpvi/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Jason Lobo",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/lobo/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Thelsa Thomas Weickert",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/thelsa-thomas-weickert-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Silvia Marina Kreda",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/kreda/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Stephanie Falk Martin",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/stephanie-falk-martin/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Michael Knowles",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/knowles/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Joseph S. Rossi",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/joe-rossi/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Ashley Henderson",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/henderson/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Cody Deen",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/cody-deen/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Robert Hagan",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/hagan/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Michael Yeung",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/michael-yeung-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Barbara Grubb",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/grubb/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "John P. Vavalle",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/john-p-vavalle-md-mhs/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Jennifer Goralski",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/goralski/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "George Stouffer",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/rick-stouffer/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "H. James Ford",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/ford/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Anil K. Gehi",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/anil-k-gehi-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "William A. Fischer",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/fischer/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Alan Lee Hinderliter",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/alan-lee-hinderliter-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Scott H. Donaldson",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/donaldson/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Tim Nichols",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/tim-nichols/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Claire Doerschuk",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/doerschuk/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Sidney C. Smith",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sidney-smith/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Raymond Coakley",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/coakley/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Ross Joseph Simpson",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/ross-simpson/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Shannon Carson",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/shannon-carson-md/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Patricia Pat-Yue Chang",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/patricia-chang/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Philip Bromberg",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/bromberg/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Matthew A. Cavender",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/matthew-cavender/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Richard Boucher",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/boucher/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Kirkwood Adams",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kirkwood-adams/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Wayne Anderson",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/anderson/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Jeffrey Lawrence Klein",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/jeffrey-lawrence-klein/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Alessandra Livraghi-Butrico",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/alessandra-livraghi-butrico/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Charles Hicks",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/charles-hicks/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Jason Akulian",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/akulian/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Brian Colwell Jensen",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/brian-jensen/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "M. Leigh Anne Daniels",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/daniels/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     }
   ]

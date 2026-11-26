@@ -865,7 +865,8 @@ function renderCard(f) {
   const allDepts = f.departments || [f.department];
   const deptShort = allDepts.map(d => d.split("—").pop().trim()).join(" · ");
 
-  const verifiedCount = f.pubmed_verified || f.pubmed_count || 0;
+  // Only count papers that passed verification — never the raw search hit count.
+  const verifiedCount = f.pubmed_verified ?? allPubs.length;
   const pubBadge = verifiedCount > 0
     ? `<span class="badge badge-pubmed">📄 ${verifiedCount} UNC-verified publications</span>`
     : (f.pubmed_ambiguous
@@ -897,7 +898,9 @@ function renderCard(f) {
         ${hidden > 0 ? `<button class="pubs-toggle" data-pubs-toggle="${escapeHtml(f.name)}" data-expanded="false">Show all ${allPubs.length} publications</button>` : ""}
       </div>`;
   } else {
-    pubsHtml = `<div class="no-pubs">No indexed publications found via PubMed</div>`;
+    pubsHtml = f.pubmed_ambiguous
+      ? `<div class="no-pubs">Publications not shown — we couldn't confirm which PubMed papers belong to this faculty member.</div>`
+      : `<div class="no-pubs">No indexed publications found via PubMed</div>`;
   }
 
   let collabsHtml = "";
@@ -982,7 +985,7 @@ function applyFilters() {
     : matched;
 
   if (sort === "pubs") {
-    filtered.sort((a, b) => (b.pubmed_verified || b.pubmed_count || 0) - (a.pubmed_verified || a.pubmed_count || 0));
+    filtered.sort((a, b) => (b.pubmed_verified || 0) - (a.pubmed_verified || 0));
   } else if (sort === "students") {
     filtered.sort((a, b) => (b.student_coauthor_count || 0) - (a.student_coauthor_count || 0));
   } else {

@@ -22,12 +22,19 @@ from html.parser import HTMLParser
 # scheduled full runs re-enrich everyone instead of resuming stale results.
 # The resume logic only skips faculty whose stored version matches this.
 # ---------------------------------------------------------------------------
-PIPELINE_VERSION = "2026.07.14-author-lists-v1"
+PIPELINE_VERSION = "2026.11.26-strict-author-match-v4"
 
 # How many years back to search for publications. Rolling, not a fixed year —
 # recalculated from the actual run date each time so it stays current
 # (e.g. run in 2027 searches 2022-2027, not a stale 2018 cutoff).
 PUBLICATION_WINDOW_YEARS = 5
+
+# Stop trying more Computed Authors seeds once the pooled clusters cover this
+# fraction of the papers already verified by name search.
+CA_MIN_OVERLAP = 0.5
+# How many verified papers to try as Computed Authors seeds (NCBI often splits
+# one person into several clusters; each extra seed is one API call).
+CA_MAX_SEEDS = 3
 
 
 def pubmed_start_year():
@@ -1224,6 +1231,9 @@ def clean_name_for_pubmed(name):
     name = re.sub(r'["\u201c\u201d][^"]*["\u201c\u201d]', '', name)
     # Strip degree/credential suffixes (comma-separated at end)
     name = DEGREE_SUFFIXES.sub("", name)
+    # Generational suffixes ('James F. Howard Jr', 'Kenneth Brown Jr.', 'John Smith III')
+    # — otherwise 'Jr' is taken as the surname.
+    name = re.sub(r"[,\s]+(?:jr|sr|ii|iii|iv)\.?\s*$", "", name, flags=re.IGNORECASE)
     # Remove stray punctuation
     name = re.sub(r',.*$', '', name)
     name = re.sub(r'[;"]', '', name)
@@ -1250,6 +1260,11 @@ def build_pubmed_search_string(name):
         return clean
     last = parts[-1]
     first_parts = parts[:-1]  # everything before the last name
+    # Surname particles belong to the surname ('Linda Van Le' → 'Van Le L')
+    if len(first_parts) >= 2 and first_parts[-1].lower() in {
+            "de", "van", "von", "del", "der", "di", "da", "la", "le", "den", "ter", "dos", "du"}:
+        last = f"{first_parts[-1]} {last}"
+        first_parts = first_parts[:-1]
 
     # If any part is a single letter (initial), use initials format for all first parts
     # e.g. ['William', 'Y'] → 'WY', ['E', 'Claire'] → 'EC'
@@ -1262,7 +1277,30 @@ def build_pubmed_search_string(name):
     return f"{last} {first_parts[0]}"
 
 
-def pubmed_search(search_term, affiliation="University of North Carolina", max_results=300):
+ESEARCH_PAGE = 300
+SEARCH_MAX_RESULTS = 900
+
+_PLAIN_AUTHOR_TERM = re.compile(r"^[A-Za-z][A-Za-z' \-]*$")
+
+
+def _author_clause(search_term):
+    """
+    PubMed author clause. A plain name is left UNQUOTED so PubMed's author
+    search applies its normal truncation: 'Patel K'[Author] then matches
+    'Patel KP' and 'Flower Kori'[Author] matches 'Flower, Kori B'. Quoting the
+    name ("Patel K"[Author]) turns that off and silently drops every paper where
+    the faculty member used a middle initial (Kunal P Patel, Kori B Flower).
+    Strict author verification downstream removes the extra same-surname hits.
+    Anything that isn't a plain name (manual overrides with odd characters)
+    keeps the old quoted form.
+    """
+    term = search_term.strip()
+    if _PLAIN_AUTHOR_TERM.match(term):
+        return f"{term}[Author]"
+    return f'"{term}"[Author]'
+
+
+def pubmed_search(search_term, affiliation="University of North Carolina", max_results=SEARCH_MAX_RESULTS):
     """
     Query PubMed and return list of PMIDs from the last PUBLICATION_WINDOW_YEARS.
     search_term: either a name-based string like 'Doe JA' or an ORCID.
@@ -1275,102 +1313,586 @@ def pubmed_search(search_term, affiliation="University of North Carolina", max_r
     if search_term.startswith("ORCID:"):
         orcid = search_term.replace("ORCID:", "")
         query = f'{orcid}[auid] AND "{affiliation}"[Affiliation] AND ("{start_year}"[PDAT] : "{current_year}"[PDAT])'
-    elif affiliation:
-        query = f'"{search_term}"[Author] AND "{affiliation}"[Affiliation] AND ("{start_year}"[PDAT] : "{current_year}"[PDAT])'
     else:
-        # No affiliation filter — used as last resort for recently recruited faculty
-        query = f'"{search_term}"[Author] AND ("{start_year}"[PDAT] : "{current_year}"[PDAT])'
+        author = _author_clause(search_term)
+        if affiliation:
+            query = f'{author} AND "{affiliation}"[Affiliation] AND ("{start_year}"[PDAT] : "{current_year}"[PDAT])'
+        else:
+            # No affiliation filter — used as last resort for recently recruited faculty
+            query = f'{author} AND ("{start_year}"[PDAT] : "{current_year}"[PDAT])'
 
-    params = urllib.parse.urlencode({
-        "db": "pubmed",
-        "term": query,
-        "retmax": max_results,
-        "retmode": "json",
-        "sort": "date",
-        "tool": "unc-research-explorer",
-        "email": PUBMED_EMAIL,
-        **({"api_key": NCBI_API_KEY} if NCBI_API_KEY else {}),
-    })
-    url = PUBMED_BASE + "esearch.fcgi?" + params
-
-    try:
+    def _page(retstart, retmax):
+        params = urllib.parse.urlencode({
+            "db": "pubmed",
+            "term": query,
+            "retstart": retstart,
+            "retmax": retmax,
+            "retmode": "json",
+            "sort": "pub_date",   # newest first ("date" is not a valid value and was ignored)
+            "tool": "unc-research-explorer",
+            "email": PUBMED_EMAIL,
+            **({"api_key": NCBI_API_KEY} if NCBI_API_KEY else {}),
+        })
+        url = PUBMED_BASE + "esearch.fcgi?" + params
         for attempt in range(3):
             try:
-                with urllib.request.urlopen(url, timeout=10) as resp:
+                with urllib.request.urlopen(url, timeout=15) as resp:
                     data = json.loads(resp.read())
                 result = data.get("esearchresult", {})
-                return {
-                    "count": int(result.get("count", 0)),
-                    "ids": result.get("idlist", []),
-                }
+                return int(result.get("count", 0)), result.get("idlist", [])
             except urllib.error.HTTPError as e:
                 if e.code == 429:
-                    wait = 2 ** attempt
-                    time.sleep(wait)
+                    time.sleep(2 ** attempt)
                     continue
                 raise
-        return {"count": 0, "ids": []}
+        return 0, []
+
+    try:
+        count, ids = _page(0, min(max_results, ESEARCH_PAGE))
+        # Common names (e.g. 'Wang L') can exceed one page — keep paging to max_results.
+        while len(ids) < min(count, max_results):
+            time.sleep(PUBMED_SLEEP)
+            _, more = _page(len(ids), min(ESEARCH_PAGE, max_results - len(ids)))
+            if not more:
+                break
+            ids.extend(more)
+        return {"count": count, "ids": ids}
     except Exception as e:
         print(f"    PubMed search error for '{search_term}': {e}")
         return {"count": 0, "ids": []}
 
 
-UNC_AFFILIATION_TERMS = [
-    "north carolina", "unc", "chapel hill", "lineberger"
+# ---------------------------------------------------------------------------
+# Author verification — deciding whether a PubMed paper belongs to THIS faculty
+# member. Every paper shown on the site must pass one of two checks:
+#
+#   strict:  an author on the paper matches the faculty member's surname AND
+#            first initial (and middle initial when both sides have one), and
+#            THAT author's own affiliation is UNC-Chapel Hill.
+#   orcid:   that author block carries the faculty member's ORCID iD, where the
+#            iD was itself established from strictly verified UNC papers (or
+#            supplied by the faculty member's own profile page).
+#
+# Matching on surname alone, or on "north carolina" anywhere in the address,
+# let same-surname UNC colleagues and Duke / Wake Forest / RTI authors through.
+# ---------------------------------------------------------------------------
+
+_OTHER_UNC_CAMPUSES = r"(?:charlotte|greensboro|wilmington|asheville|pembroke)"
+
+UNC_AFFILIATION_PATTERNS = [
+    re.compile(r"\bchapel\s+hill\b"),
+    re.compile(r"\blineberger\b"),
+    re.compile(r"\bgillings\s+school\b"),
+    re.compile(r"\beshelman\s+school\b"),
+    # "University of North Carolina", "Univ. of North Carolina", "University of NC"
+    # — but not the other UNC-system campuses.
+    re.compile(r"\buniv(?:ersity|\.)?\s+of\s+(?:north\s+carolina|n\.?\s?c\.?)(?![a-z])"
+               r"(?![,\s\-]*(?:at\s+)?" + _OTHER_UNC_CAMPUSES + r")"),
+    # "UNC", "UNC-CH", "UNC Health", "UNC School of Medicine" — not "UNC Charlotte"
+    re.compile(r"\bunc\b(?![\s\-]*" + _OTHER_UNC_CAMPUSES + r")"),
 ]
+# "UNC" is also Universidad Nacional de Córdoba (Argentina).
+_UNC_ABBREV_FALSE_CONTEXT = re.compile(r"\b(?:argentina|cordoba)\b")
+
+
+def _ascii_lower(s):
+    import html
+    import unicodedata
+    # PubMed XML carries entities like 'Hendr&#xe9;e' — decode before folding.
+    s = unicodedata.normalize("NFKD", html.unescape(s or ""))
+    return "".join(c for c in s if not unicodedata.combining(c)).lower()
 
 
 def affiliation_is_unc(aff_string):
-    """Return True if the affiliation string mentions UNC."""
-    aff_lower = aff_string.lower()
-    return any(t in aff_lower for t in UNC_AFFILIATION_TERMS)
+    """
+    True if ONE affiliation string names UNC-Chapel Hill. Callers with several
+    affiliations should test each one (any_affiliation_is_unc), so that the
+    Córdoba exclusion and campus exclusions apply per institution.
+    """
+    aff = _ascii_lower(aff_string)
+    if not aff:
+        return False
+    for pat in UNC_AFFILIATION_PATTERNS:
+        m = pat.search(aff)
+        if not m:
+            continue
+        if m.group(0).startswith("unc") and _UNC_ABBREV_FALSE_CONTEXT.search(aff):
+            continue
+        return True
+    return False
+
+
+def any_affiliation_is_unc(affs):
+    return any(affiliation_is_unc(a) for a in affs)
+
+
+def _letters(s):
+    """Lowercase ASCII letters only — 'O’Leary' → 'oleary', 'Baskin-Miller' → 'baskinmiller'."""
+    return re.sub(r"[^a-z]", "", _ascii_lower(s))
 
 
 def _surname_tokens(name_or_term):
     """
-    Extract candidate surname forms from a name or search term.
-    Handles multi-word surnames with particles (de Silva, van Duin, von Hippel).
-    Returns a set of lowercase candidates to match against a PubMed <LastName>.
+    Candidate surname forms (as _letters() keys) for matching a PubMed <LastName>.
 
-    'Hanks BA'              -> {'hanks'}
-    'de Silva AM'           -> {'silva', 'de silva'}
-    'van Duin D'            -> {'duin', 'van duin'}
-    'Brent A. Hanks' (name) -> {'hanks'}   (last token, initials ignored)
+    'Hanks BA'                 -> {'hanks'}
+    'de Silva AM'              -> {'silva', 'desilva'}
+    'Luis E. Borges Espinosa'  -> {'espinosa', 'borgesespinosa'}
+    'Jacquelyn Baskin-Miller'  -> {'baskinmiller'}
     """
     if not name_or_term:
         return set()
-    PARTICLES = {"de", "van", "von", "del", "der", "di", "da", "la", "le", "den", "ter"}
-    tokens = [t.strip(".,").lower() for t in name_or_term.split() if t.strip(".,")]
-    # Drop trailing initials blocks (1-2 char all-alpha tokens at the end)
-    while len(tokens) > 1 and len(tokens[-1]) <= 2 and tokens[-1].isalpha():
+    PARTICLES = {"de", "van", "von", "del", "der", "di", "da", "la", "le", "den", "ter", "dos", "du"}
+    tokens = [t.strip(".,") for t in name_or_term.split() if t.strip(".,")]
+    # Drop a trailing initials block ('Hanks BA'). Only ALL-CAPS tokens count:
+    # a two-letter surname at the end of a full name ('Danny T.Y. Wu', 'Yun Li')
+    # is the surname, not initials.
+    while (len(tokens) > 1 and len(tokens[-1]) <= 3 and tokens[-1].isalpha()
+           and tokens[-1].isupper()):
         tokens.pop()
     if not tokens:
         return set()
-    candidates = {tokens[-1]}
-    # If the token before the last is a particle, include the compound surname
-    if len(tokens) >= 2 and tokens[-2] in PARTICLES:
-        candidates.add(f"{tokens[-2]} {tokens[-1]}")
-        # Also accept the particle stripped (PubMed sometimes drops particles)
-        candidates.add(tokens[-1])
+    last = tokens[-1]
+    # Hyphenated surnames are indexed whole ('Baskin-Miller' → 'baskinmiller');
+    # matching either half alone would let in every 'Miller J'.
+    candidates = {_letters(last)}
+    if len(tokens) >= 2:
+        prev = tokens[-2]
+        if prev.lower() in PARTICLES and len(tokens) >= 3:
+            candidates.add(_letters(prev + last))
+        elif (len(tokens) >= 3 and len(_letters(prev)) > 1
+              and "." not in prev and not prev.isupper()):
+            # Two-part surnames ('Borges Espinosa') are indexed as one LastName.
+            candidates.add(_letters(prev + last))
+    candidates.discard("")
     return candidates
 
 
-def _pubmed_fetch_summaries_batch(pmids, verify_affiliation=True, search_term="", target_lastname=None):
-    """
-    Fetch article details for a list of PMIDs.
-    Uses efetch (XML) to get affiliation data, then filters to only
-    papers where the TARGET author is affiliated with UNC.
+# Common English nicknames → initial of the formal name PubMed would index.
+NICKNAME_INITIALS = {
+    "bill": "w", "billy": "w", "will": "w", "liam": "w",
+    "bob": "r", "bobby": "r", "rob": "r", "robby": "r", "rick": "r", "ricky": "r",
+    "dick": "r", "jim": "j", "jimmy": "j", "jack": "j", "jon": "j",
+    "chuck": "c", "chip": "c", "ted": "e", "ned": "e", "ed": "e", "eddie": "e",
+    "peggy": "m", "polly": "m", "molly": "m", "patsy": "m",
+    "betty": "e", "beth": "e", "liz": "e", "libby": "e", "betsy": "e",
+    "kate": "c", "katie": "k", "cathy": "c", "sally": "s", "sue": "s",
+    "tony": "a", "andy": "a", "drew": "a", "alex": "a",     "hank": "h", "harry": "h", "larry": "l", "terry": "t", "jerry": "g",
+    "tom": "t", "tommy": "t", "mike": "m", "mickey": "m", "nick": "n",
+    "dan": "d", "danny": "d", "dave": "d", "joe": "j", "joey": "j",
+    "sam": "s", "steve": "s", "chris": "c", "matt": "m", "pat": "p",
+    "greg": "g", "jeff": "j", "ben": "b", "fred": "f", "ken": "k",
+    "ann": "a", "annie": "a", "jen": "j", "jenny": "j",
+    "meg": "m", "maggie": "m", "becky": "r", "abby": "a", "gabe": "g",
+}
 
-    target_lastname: the faculty member's actual surname, used for per-author
-    affiliation matching. If not given, it's derived from search_term — but
-    callers should pass it explicitly, because search_term is "Lastname Initials"
-    for name searches but the full name for MyNCBI/ORCID paths, which would
-    otherwise yield the wrong token (e.g. first name).
+
+def build_author_identity(faculty_name, search_term=""):
+    """
+    What a PubMed author block must look like to count as this faculty member.
+    Returns dict: surnames (set of _letters keys), first_initials (allowed set),
+    first (first given-name initial), middle (middle initial or None).
+    """
+    clean = clean_name_for_pubmed(faculty_name)
+    tokens = [t.strip(".,") for t in clean.split() if t.strip(".,")]
+    surnames = _surname_tokens(clean)
+    # Given names = everything before the surname (and before a surname
+    # particle like 'de'/'van'). For two-part surnames we can't know where the
+    # split is, so only the last token is treated as surname here.
+    PARTICLES = {"de", "van", "von", "del", "der", "di", "da", "la", "le", "den", "ter", "dos", "du"}
+    given = tokens[:-1] if len(tokens) >= 2 else []
+    if len(given) >= 2 and given[-1].lower() in PARTICLES:
+        given = given[:-1]
+    given_letters = [_letters(g) for g in given if _letters(g)]
+    first_initials = set()
+    if given_letters:
+        first_initials.add(given_letters[0][0])
+        # Goes by middle name ('E. Claire Dees', 'J. Niklas Ulrich'): PubMed
+        # may index the middle name as the first.
+        if len(given_letters[0]) == 1 and len(given_letters) >= 2:
+            first_initials.add(given_letters[1][0])
+        if given_letters[0] in NICKNAME_INITIALS:
+            first_initials.add(NICKNAME_INITIALS[given_letters[0]])
+    # A curated "Lastname INITIALS" search term carries PubMed's own initials.
+    st_parts = (search_term or "").replace("*", "").split()
+    if (len(st_parts) >= 2 and 1 <= len(st_parts[-1]) <= 3 and st_parts[-1].isalpha()
+            and st_parts[-1].isupper()
+            and _letters(" ".join(st_parts[:-1])) in surnames):
+        first_initials.add(st_parts[-1][0].lower())
+    return {
+        "surnames": surnames,
+        "first_initials": first_initials,
+        "given": given_letters,
+        "hyphenated_first": bool(given) and "-" in given[0],
+        "first": given_letters[0][0] if given_letters else None,
+        # Full given names the faculty member could publish under: the first
+        # given name, or the second if the first is just an initial
+        # ('J. Keith Smith' → keith), plus a goes-by middle name.
+        "full_firsts": {g for g in given_letters[:2] if len(g) >= 2}
+                       if (given_letters and len(given_letters[0]) == 1)
+                       else ({given_letters[0]} if given_letters else set()),
+        "middle": given_letters[1][0] if len(given_letters) >= 2 else None,
+    }
+
+
+def _normalize_orcid(raw):
+    digits = re.sub(r"[^0-9Xx]", "", raw or "").upper()
+    if len(digits) != 16:
+        return None
+    return "-".join(digits[i:i + 4] for i in range(0, 16, 4))
+
+
+def _block_initials(fore, initials):
+    """PubMed initials for an author block, lowercase ('William Y' → 'wy')."""
+    if initials:
+        return _letters(initials)
+    if fore:
+        return "".join(_letters(p)[:1] for p in re.split(r"[\s\-]+", fore) if _letters(p))
+    return ""
+
+
+# Nickname ↔ formal given names. Prefixes ('Dan'/'Daniel', 'Alex'/'Alexandra')
+# are matched separately, so only non-prefix pairs need listing.
+NICKNAME_FORMAL = {
+    "bill": {"william"}, "billy": {"william"}, "liam": {"william"},
+    "bob": {"robert"}, "bobby": {"robert"}, "rick": {"richard", "eric"}, "ricky": {"richard"},
+    "dick": {"richard"}, "jim": {"james"}, "jimmy": {"james"}, "jack": {"john"},
+    "chuck": {"charles"}, "chip": {"charles"}, "ted": {"theodore", "edward"},
+    "teddy": {"theodore", "edward"}, "ned": {"edward"}, "eddie": {"edward"},
+    "peggy": {"margaret"}, "meg": {"margaret"}, "maggie": {"margaret"},
+    "molly": {"mary"}, "polly": {"mary"}, "patsy": {"patricia"}, "trish": {"patricia"},
+    "betty": {"elizabeth"}, "beth": {"elizabeth"}, "liz": {"elizabeth"},
+    "libby": {"elizabeth"}, "betsy": {"elizabeth"}, "lisa": {"elizabeth"},
+    "kate": {"katherine", "catherine", "kathryn"}, "katie": {"katherine", "catherine", "kathryn"},
+    "kathy": {"katherine", "kathryn"}, "cathy": {"catherine"}, "sally": {"sarah"},
+    "sue": {"susan", "suzanne"}, "tony": {"anthony", "antonio"}, "drew": {"andrew"},
+    "sandy": {"sandra", "alexander"}, "hank": {"henry"}, "harry": {"henry", "harold"},
+    "larry": {"lawrence", "laurence"}, "terry": {"terrence", "teresa", "theresa"},
+    "jerry": {"gerald", "jerome"}, "mike": {"michael"}, "mickey": {"michael"},
+    "dave": {"david"}, "joe": {"joseph"}, "joey": {"joseph"}, "steve": {"steven", "stephen"},
+    "jen": {"jennifer"}, "jenny": {"jennifer"}, "becky": {"rebecca"}, "abby": {"abigail"},
+    "gabe": {"gabriel"}, "sammy": {"samuel", "samantha"}, "kim": {"kimberly"},
+    "tim": {"timothy"}, "nate": {"nathan", "nathaniel"}, "zach": {"zachary"},
+    "jake": {"jacob"}, "rob": {"robert"}, "robbie": {"robert"}, "will": {"william"},
+    "bert": {"albert", "robert", "herbert"}, "al": {"albert", "alan", "allen"},
+    "manny": {"manuel", "emmanuel"}, "pepe": {"jose"}, "nacho": {"ignacio"},
+    "paco": {"francisco"}, "pancho": {"francisco"}, "lupe": {"guadalupe"},
+    "jackie": {"jacqueline", "jacquelyn"}, "jacky": {"jacqueline", "jacquelyn"},
+    "kathie": {"katherine", "kathryn"}, "ellie": {"eleanor", "elizabeth", "ellen"},
+}
+
+
+def _given_names_compatible(a, b):
+    """Two full given names (letters only) that could be the same person."""
+    if a == b:
+        return True
+    short, long_ = sorted((a, b), key=len)
+    if len(short) >= 3 and long_.startswith(short):
+        return True
+    return b in NICKNAME_FORMAL.get(a, ()) or a in NICKNAME_FORMAL.get(b, ())
+
+
+def _forename_tokens(fore):
+    """
+    Full given names in a PubMed <ForeName>, letters only, skipping initials
+    ('J Keith' → ['keith'], 'JK' → [], 'Pew-Thian' → ['pewthian'],
+    'Mohammad Anwar' → ['mohammad', 'anwar']).
+    """
+    out = []
+    for t in (fore or "").split():
+        letters = _letters(t)
+        if len(letters) <= 1 or (t.replace(".", "").isupper() and len(letters) <= 3):
+            continue
+        out.append(letters)
+    return out
+
+
+def name_matches_identity(block_initials, identity, fore=""):
+    """
+    True / False / None (None = block has no given-name data to check).
+
+    Full names: when PubMed has a full first name and so does the faculty
+    record, the first given name on one side must be compatible with some
+    given name on the other — same name, a prefix or nickname of it — so
+    'Yukang' ≠ 'Yuli' and 'Jessica' ≠ 'Joshua', while 'Ted' = 'Theodore',
+    'Mohammad Anwar' = 'Anwar', 'Soumya Rahima' = 'S. Rahima'. If the faculty
+    record starts with an initial ('A. Sidney Barritt'), a PubMed first name
+    starting with that letter also counts ('Alfred S').
+
+    Initials: the first initial must be one the faculty member could publish
+    under; if both sides carry a middle initial and the first initials agree
+    directly, the middle initials must agree too ('Kim WY' ≠ 'Kim WK').
+    """
+    block_names = _forename_tokens(fore)
+    given = identity.get("given", [])
+    if block_names and identity.get("full_firsts"):
+        fac_names = set(identity["full_firsts"]) | set(given[:2])
+        fac_names = {g for g in fac_names if len(g) >= 2}
+        compatible = any(_given_names_compatible(b, f) for b in block_names for f in fac_names)
+        if not compatible and given and len(given[0]) == 1:
+            compatible = block_names[0][0] == given[0]
+        if not compatible:
+            return False
+        # Middle-name check from the full names, only when both sides have one
+        # and the first names line up directly.
+        fore_toks = [t for t in (fore or "").split() if _letters(t)]
+        if (len(given) >= 2 and len(given[0]) >= 2 and len(fore_toks) >= 2
+                and _given_names_compatible(block_names[0], given[0])
+                and _letters(fore_toks[1])[0] != given[1][0]):
+            return False
+        return True
+    if not block_initials:
+        return None
+    if not identity["first_initials"]:
+        return None
+    if block_initials[0] not in identity["first_initials"]:
+        return False
+    if (identity["middle"] and len(block_initials) >= 2
+            and block_initials[0] == identity["first"]
+            and block_initials[1] != identity["middle"]
+            and not identity.get("hyphenated_first")):
+        return False
+    return True
+
+
+def _evaluate_article(article_xml, identity):
+    """
+    Parse one <PubmedArticle> into (pub dict, match record). The match record
+    lists every author block whose surname matches the faculty member, with
+    whether its initials match, whether its own affiliation is UNC, and its
+    ORCID iD if PubMed has one.
+    """
+    pmid_match = re.search(r"<PMID[^>]*>(\d+)</PMID>", article_xml)
+    if not pmid_match:
+        return None, None
+    pmid = pmid_match.group(1)
+
+    title_match = re.search(r"<ArticleTitle[^>]*>(.*?)</ArticleTitle>", article_xml, re.DOTALL)
+    title = re.sub(r"<[^>]+>", "", title_match.group(1)).strip() if title_match else ""
+
+    journal_match = re.search(r"<ISOAbbreviation>(.*?)</ISOAbbreviation>", article_xml)
+    if not journal_match:
+        journal_match = re.search(r"<Title>(.*?)</Title>", article_xml)
+    journal = journal_match.group(1).strip() if journal_match else ""
+
+    year_match = re.search(r"<PubDate>.*?<Year>(\d{4})</Year>.*?</PubDate>", article_xml, re.DOTALL)
+    if not year_match:
+        year_match = re.search(r"<Year>(\d{4})</Year>", article_xml)
+    year = year_match.group(1) if year_match else ""
+
+    # Full author list (order preserved) — used for student co-author matching
+    # and collaborator networks downstream. Note: <Author\b> so <AuthorList>
+    # isn't swallowed as an author block.
+    authors = []
+    candidates = []
+    any_block_has_affs = False
+    for auth_block in re.findall(r"<Author\b[^>]*>(.*?)</Author>", article_xml, re.DOTALL):
+        last_m = re.search(r"<LastName>(.*?)</LastName>", auth_block)
+        fore_m = re.search(r"<ForeName>(.*?)</ForeName>", auth_block)
+        init_m = re.search(r"<Initials>(.*?)</Initials>", auth_block)
+        collective_m = re.search(r"<CollectiveName>(.*?)</CollectiveName>", auth_block, re.DOTALL)
+        block_affs = [re.sub(r"<[^>]+>", "", a) for a in
+                      re.findall(r"<Affiliation>(.*?)</Affiliation>", auth_block, re.DOTALL)]
+        if block_affs:
+            any_block_has_affs = True
+        if last_m:
+            last = re.sub(r"<[^>]+>", "", last_m.group(1)).strip()
+            fore = re.sub(r"<[^>]+>", "", fore_m.group(1)).strip() if fore_m else ""
+            inits = re.sub(r"<[^>]+>", "", init_m.group(1)).strip() if init_m else ""
+            first = fore or inits
+            full = f"{first} {last}".strip() if first else last
+            if full:
+                authors.append(full)
+            if _letters(last) in identity["surnames"]:
+                orcid_m = re.search(r'<Identifier[^>]*Source="ORCID"[^>]*>(.*?)</Identifier>', auth_block)
+                candidates.append({
+                    "name_ok": name_matches_identity(_block_initials(fore, inits), identity, fore),
+                    "has_affs": bool(block_affs),
+                    "unc": any_affiliation_is_unc(block_affs),
+                    "affs": _ascii_lower(" | ".join(block_affs)),
+                    "orcid": _normalize_orcid(orcid_m.group(1)) if orcid_m else None,
+                })
+        elif collective_m:
+            coll = re.sub(r"<[^>]+>", "", collective_m.group(1)).strip()
+            if coll:
+                authors.append(coll)
+
+    # Article-level affiliations (older records keep them outside author blocks)
+    all_affs = [re.sub(r"<[^>]+>", "", a) for a in
+                re.findall(r"<Affiliation>(.*?)</Affiliation>", article_xml, re.DOTALL)]
+    pub = {"pmid": pmid, "title": title, "journal": journal, "year": year, "authors": authors}
+    record = {
+        "pmid": pmid,
+        "candidates": candidates,
+        "per_author_affs": any_block_has_affs,
+        "article_unc": any_affiliation_is_unc(all_affs),
+    }
+    return (pub if title else None), record
+
+
+def _strict_pass(record, identity):
+    """
+    Does some surname-matched author block pass the strict check?
+    Returns (passed, passing_block_or_None, reason_if_failed).
+    """
+    cands = record["candidates"]
+    if not cands:
+        return False, None, "surname-not-on-paper"
+    named = [c for c in cands if c["name_ok"] is not False]
+    if not named:
+        return False, None, "initials-mismatch"
+    if record["per_author_affs"]:
+        unc = [c for c in named if c["unc"]]
+        if unc:
+            # Prefer a block with a definite initials match over an unknown one
+            best = sorted(unc, key=lambda c: c["name_ok"] is not True)[0]
+            return True, best, None
+        return False, None, "target-not-UNC"
+    # No per-author affiliations at all (older records): article-level UNC is
+    # only trusted when the surname is uncommon and initials matched.
+    if not record["article_unc"]:
+        return False, None, "no-UNC-on-paper"
+    primary = min(identity["surnames"], key=len) if identity["surnames"] else ""
+    if primary in AMBIGUOUS_LASTNAMES:
+        return False, None, "common-surname-no-author-affs"
+    sure = [c for c in named if c["name_ok"] is True]
+    if sure:
+        return True, sure[0], None
+    return False, None, "initials-unknown-no-author-affs"
+
+
+# Words too generic to identify a department inside an affiliation string.
+_DEPT_STOPWORDS = {"medicine", "school", "department", "center", "centre", "health",
+                   "general", "clinical", "sciences", "science", "university", "hospital",
+                   "diseases", "disease", "laboratory", "care", "and", "of", "the",
+                   "head", "neck", "comprehensive", "cancer"}
+# Extra affiliation phrases that identify a department (beyond its own name).
+_DEPT_ALIASES = {
+    "radiology": [r"biomedical research imaging", r"\bbric\b"],
+    "orthopaedics": [r"\borthoped"],
+    "pediatrics": [r"\bchildren"],
+    "lineberger": [r"\blineberger"],
+}
+
+
+def department_patterns(departments):
+    """
+    Regexes that match a faculty member's department inside an affiliation
+    string, from names like 'Medicine — Cardiology' or 'Obstetrics & Gynecology'.
+    Uses 7-letter word prefixes so 'Pediatrics' also matches 'Pediatric'.
+    """
+    pats = []
+    for dept in departments or []:
+        if not dept:
+            continue
+        part = dept.split("—")[-1]
+        for word in re.findall(r"[a-z]+", _ascii_lower(part)):
+            if word in _DEPT_STOPWORDS or len(word) < 5:
+                continue
+            pats.append(r"\b" + word[:7])
+            pats.extend(_DEPT_ALIASES.get(word, []))
+    return [re.compile(p) for p in dict.fromkeys(pats)]
+
+
+def _mentions_department(aff_text, dept_patterns):
+    return bool(dept_patterns) and any(p.search(aff_text or "") for p in dept_patterns)
+
+
+def select_verified_publications(records_and_pubs, identity, known_orcid=None,
+                                 require_strict_anchor=False, dept_patterns=None,
+                                 dept_strict=False):
+    """
+    Apply the strict / ORCID rules across ALL of one faculty member's candidate
+    papers at once (the ORCID anchor is learned from the strict passes).
+
+    known_orcid: an iD we already trust (faculty's own profile, or one learned
+        earlier from strictly verified papers). Strict passes whose matched
+        block carries a DIFFERENT iD are rejected — that's another person.
+    require_strict_anchor: for ORCID records found by name search, at least one
+        paper must pass the strict UNC check or nothing is accepted.
+    dept_patterns: from department_patterns(). When two different ORCID iDs
+        each pass strict on 2+ papers (two UNC people with the same name), the
+        one whose affiliations name the faculty member's department wins —
+        if it does so decisively. Otherwise the result is a conflict.
+
+    dept_strict: a same-name conflict was already settled by department (e.g.
+        on the name-search pass); apply the same rule to papers with no iD.
+
+    Returns (pubs, info) where info has keys: orcid, orcid_conflict,
+    resolved_by_department, kept, strict, via_orcid, rejected (reason → count).
+    """
+    from collections import Counter
+    strict = {}
+    for pub, rec in records_and_pubs:
+        if pub is None or rec is None:
+            continue
+        strict[rec["pmid"]] = _strict_pass(rec, identity)
+
+    # Learn the ORCID anchor from strict passes.
+    tally = Counter(b["orcid"] for ok, b, _ in strict.values() if ok and b and b["orcid"])
+    anchor, conflict, by_dept = known_orcid, False, False
+    if not anchor and tally:
+        contenders = [o for o, c in tally.most_common() if c >= 2]
+        if len(contenders) == 1:
+            anchor = contenders[0]
+        elif len(contenders) > 1:
+            hits = {o: sum(1 for ok, b, _ in strict.values()
+                           if ok and b and b["orcid"] == o
+                           and _mentions_department(b["affs"], dept_patterns))
+                    for o in contenders}
+            ranked = sorted(contenders, key=lambda o: -hits[o])
+            h1, h2 = hits[ranked[0]], hits[ranked[1]]
+            if h1 >= 2 and h1 >= 3 * h2:
+                anchor, by_dept = ranked[0], True
+            else:
+                conflict = True
+
+    pubs, rejected = [], Counter()
+    n_strict = n_orcid = 0
+    for pub, rec in records_and_pubs:
+        if pub is None or rec is None:
+            continue
+        ok, block, reason = strict[rec["pmid"]]
+        orcid = block["orcid"] if block else None
+        if ok and anchor and orcid and orcid != anchor:
+            ok, reason = False, "different-ORCID"
+        if (ok and (by_dept or dept_strict) and not orcid
+                and not _mentions_department(block["affs"], dept_patterns)):
+            # Two same-name UNC people: without an iD, only papers listing the
+            # faculty member's department can be attributed to them.
+            ok, reason = False, "same-name-UNC-other-department"
+        if ok:
+            pubs.append(pub)
+            n_strict += 1
+            continue
+        if anchor and any(c["orcid"] == anchor and c["name_ok"] is not False
+                          for c in rec["candidates"]):
+            pubs.append(pub)
+            n_orcid += 1
+            continue
+        rejected[reason] += 1
+
+    if require_strict_anchor and n_strict == 0:
+        if pubs:
+            rejected["no-UNC-anchor"] += len(pubs)
+        pubs = []
+        n_orcid = 0
+
+    info = {
+        "orcid": anchor, "orcid_conflict": conflict, "resolved_by_department": by_dept,
+        "kept": len(pubs), "strict": n_strict, "via_orcid": n_orcid,
+        "rejected": dict(rejected),
+    }
+    return pubs, info
+
+
+def _pubmed_fetch_records_batch(pmids, identity):
+    """
+    efetch one batch of PMIDs and return [(pub, record), ...] — no filtering.
+    Falls back to esummary (coarser data) if efetch fails.
     """
     if not pmids:
         return []
-
-    # Use efetch XML to get affiliation info — retry up to 3x on 429
     params = urllib.parse.urlencode({
         "db": "pubmed",
         "id": ",".join(pmids),
@@ -1395,215 +1917,132 @@ def _pubmed_fetch_summaries_batch(pmids, verify_affiliation=True, search_term=""
                 time.sleep(wait)
             else:
                 print(f"    PubMed efetch error: {e}, falling back to esummary")
-                return pubmed_fetch_summaries_fallback(pmids)
+                return pubmed_fetch_records_fallback(pmids, identity)
         except Exception as e:
             print(f"    PubMed efetch error: {e}, falling back to esummary")
-            return pubmed_fetch_summaries_fallback(pmids)
+            return pubmed_fetch_records_fallback(pmids, identity)
 
     if xml_data is None:
         print(f"    PubMed efetch failed after 3 retries, falling back to esummary")
-        return pubmed_fetch_summaries_fallback(pmids)
+        return pubmed_fetch_records_fallback(pmids, identity)
 
-    # Parse XML manually (avoid external deps)
-    pubs = []
-    # Split into individual articles
-    articles = re.split(r"<PubmedArticle>", xml_data)[1:]
-    for article_xml in articles:
-        # Extract PMID
-        pmid_match = re.search(r"<PMID[^>]*>(\d+)</PMID>", article_xml)
-        if not pmid_match:
-            continue
-        pmid = pmid_match.group(1)
-
-        # Extract title
-        title_match = re.search(r"<ArticleTitle[^>]*>(.*?)</ArticleTitle>",
-                                article_xml, re.DOTALL)
-        title = ""
-        if title_match:
-            title = re.sub(r"<[^>]+>", "", title_match.group(1)).strip()
-
-        # Extract journal
-        journal_match = re.search(r"<ISOAbbreviation>(.*?)</ISOAbbreviation>",
-                                  article_xml)
-        if not journal_match:
-            journal_match = re.search(r"<Title>(.*?)</Title>", article_xml)
-        journal = journal_match.group(1).strip() if journal_match else ""
-
-        # Extract year
-        year_match = re.search(r"<PubDate>.*?<Year>(\d{4})</Year>.*?</PubDate>",
-                               article_xml, re.DOTALL)
-        if not year_match:
-            year_match = re.search(r"<Year>(\d{4})</Year>", article_xml)
-        year = year_match.group(1) if year_match else ""
-
-        # In PubMed XML, affiliations are stored in two places:
-        # 1. <AffiliationInfo> inside <Author> blocks (per-author, newer articles)
-        # 2. <Affiliation> directly in <AuthorList> (older articles, article-level)
-        # We check both and require the TARGET author's last name to appear
-        # in a UNC-affiliated author block where possible.
-
-        # Extract full author list for this article — needed to cross-reference
-        # against non-faculty co-authors (e.g. medical student researchers) who
-        # will never appear as their own faculty record. Order preserved as
-        # PubMed lists them (author order matters for byline position later).
-        authors = []
-        for auth_block in re.findall(r"<Author[^>]*>(.*?)</Author>", article_xml, re.DOTALL):
-            last_m = re.search(r"<LastName>(.*?)</LastName>", auth_block)
-            fore_m = re.search(r"<ForeName>(.*?)</ForeName>", auth_block)
-            init_m = re.search(r"<Initials>(.*?)</Initials>", auth_block)
-            collective_m = re.search(r"<CollectiveName>(.*?)</CollectiveName>", auth_block, re.DOTALL)
-            if last_m:
-                last = re.sub(r"<[^>]+>", "", last_m.group(1)).strip()
-                first = ""
-                if fore_m:
-                    first = re.sub(r"<[^>]+>", "", fore_m.group(1)).strip()
-                elif init_m:
-                    first = re.sub(r"<[^>]+>", "", init_m.group(1)).strip()
-                full = f"{first} {last}".strip() if first else last
-                if full:
-                    authors.append(full)
-            elif collective_m:
-                # Group/consortium authorship line — not a person, keep for
-                # completeness but matching logic should skip these.
-                coll = re.sub(r"<[^>]+>", "", collective_m.group(1)).strip()
-                if coll:
-                    authors.append(coll)
-
-        if verify_affiliation:
-            # Collect all author blocks with their affiliations
-            author_blocks = re.findall(r"<Author[^>]*>(.*?)</Author>", article_xml, re.DOTALL)
-            # Also collect all affiliations at article level as fallback
-            all_affiliations = re.findall(r"<Affiliation>(.*?)</Affiliation>", article_xml)
-            all_aff_text = " ".join(all_affiliations)
-
-            # Determine the surname(s) to match. Prefer an explicit target_lastname;
-            # otherwise derive from the search term (handles multi-word surnames).
-            surname_candidates = _surname_tokens(target_lastname or search_term)
-            # The "primary" surname for ambiguity checks is the bare last token
-            # (the single-word surname). For 'de silva' candidates {'silva','de silva'}
-            # the ambiguity check should use 'silva' — the form PubMed most often
-            # stores in <LastName> and the form that appears in AMBIGUOUS_LASTNAMES.
-            primary_last = (min(surname_candidates, key=len)
-                            if surname_candidates else "")
-            target_has_unc = False
-            any_has_unc = affiliation_is_unc(all_aff_text)
-
-            # Track whether ANY author block has per-author affiliations stored
-            any_block_has_affs = False
-            for block in author_blocks:
-                last_match = re.search(r"<LastName>(.*?)</LastName>", block)
-                block_affs = re.findall(r"<Affiliation>(.*?)</Affiliation>", block)
-                block_aff_text = " ".join(block_affs)
-
-                if block_affs:
-                    any_block_has_affs = True
-
-                if last_match:
-                    last = last_match.group(1).strip().lower()
-                    if last in surname_candidates:
-                        # This is our target author — check their affiliation
-                        if block_affs and affiliation_is_unc(block_aff_text):
-                            target_has_unc = True
-
-            # If the paper has NO per-author affiliations at all (older papers),
-            # fall back to article-level — but only if the target last name is
-            # rare enough to be unambiguous (not smith, lee, kim, wang, etc.)
-            if not any_block_has_affs and any_has_unc:
-                if primary_last not in AMBIGUOUS_LASTNAMES:
-                    target_has_unc = True
-                else:
-                    print(f"      PMID {pmid} — UNC affiliation found but last name '{primary_last}' too common to verify per-author")
-
-            if not any_has_unc:
-                print(f"      Skipping PMID {pmid} — no UNC affiliation in article")
-                continue
-            # If we have per-author data and target isn't at UNC, skip
-            if not target_has_unc and any_has_unc:
-                print(f"      PMID {pmid} — UNC affiliation found but not for target author ({primary_last})")
-                continue
-
-        if title:
-            pubs.append({
-                "pmid": pmid,
-                "title": title,
-                "journal": journal,
-                "year": year,
-                "authors": authors,
-            })
-
-    return pubs
+    out = []
+    for article_xml in re.split(r"<PubmedArticle>", xml_data)[1:]:
+        pub, rec = _evaluate_article(article_xml, identity)
+        if rec is not None:
+            out.append((pub, rec))
+    return out
 
 
-def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term="", target_lastname=None):
+def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term="", target_lastname=None,
+                           faculty_name=None, known_orcid=None, require_strict_anchor=False,
+                           departments=None, dept_strict=False, return_info=False):
     """
-    Public entry point — fetches full publication details for a list of PMIDs,
-    chunking into batches of 200 (NCBI's recommended per-request limit) for
-    very prolific authors. Most faculty need only one batch/request; only the
-    handful of people with 200+ recent papers trigger extra requests.
+    Fetch publication details for PMIDs and (if verify_affiliation) keep only
+    papers that verifiably belong to this faculty member — see the block
+    comment above select_verified_publications for the rules.
+
+    faculty_name: the person's full name (preferred source of identity).
+        target_lastname is accepted for backward compatibility and is treated
+        as a full name, which is what callers already passed.
+    Chunked into batches of 200 (NCBI's recommended per-request limit).
     Results are sorted by year, most recent first.
     """
     if not pmids:
-        return []
+        return ([], {"orcid": None, "orcid_conflict": False, "resolved_by_department": False,
+                     "kept": 0, "strict": 0, "via_orcid": 0, "rejected": {}}) if return_info else []
+
+    identity = build_author_identity(faculty_name or target_lastname or search_term, search_term)
 
     CHUNK_SIZE = 200
-    all_pubs = []
+    records = []
     for i in range(0, len(pmids), CHUNK_SIZE):
-        chunk = pmids[i:i + CHUNK_SIZE]
-        chunk_pubs = _pubmed_fetch_summaries_batch(
-            chunk, verify_affiliation=verify_affiliation,
-            search_term=search_term, target_lastname=target_lastname
-        )
-        all_pubs.extend(chunk_pubs)
+        records.extend(_pubmed_fetch_records_batch(pmids[i:i + CHUNK_SIZE], identity))
         if i + CHUNK_SIZE < len(pmids):
             time.sleep(PUBMED_SLEEP)  # be polite between chunked requests
 
-    # Sort most-recent-first; treat missing/unparseable years as oldest
+    if verify_affiliation:
+        pubs, info = select_verified_publications(
+            records, identity, known_orcid=known_orcid,
+            require_strict_anchor=require_strict_anchor,
+            dept_patterns=department_patterns(departments), dept_strict=dept_strict)
+        if info["rejected"] or info["via_orcid"]:
+            dropped = ", ".join(f"{k} {v}" for k, v in sorted(info["rejected"].items()))
+            print(f"      Verify: kept {info['kept']}/{len(records)} "
+                  f"(strict {info['strict']}, via ORCID {info['via_orcid']})"
+                  + (f"; dropped: {dropped}" if dropped else ""))
+        if info["orcid_conflict"]:
+            print(f"      Verify: two different ORCID iDs each pass on 2+ papers — mixed identities")
+        elif info.get("resolved_by_department"):
+            print(f"      Verify: two same-name UNC people — kept the one in this department "
+                  f"(ORCID {info['orcid']})")
+    else:
+        pubs = [p for p, r in records if p is not None]
+        # Still learn an ORCID iD from name-matched blocks (useful for MyNCBI etc.)
+        from collections import Counter
+        tally = Counter(c["orcid"] for p, r in records if r for c in r["candidates"]
+                        if c["orcid"] and c["name_ok"] is not False)
+        top = tally.most_common(1)
+        info = {"orcid": top[0][0] if top and top[0][1] >= 2 else None,
+                "orcid_conflict": False, "resolved_by_department": False,
+                "kept": len(pubs), "strict": 0, "via_orcid": 0, "rejected": {}}
+
     def _year_key(p):
         try:
             return int(p.get("year") or 0)
         except (TypeError, ValueError):
             return 0
-    all_pubs.sort(key=_year_key, reverse=True)
-    return all_pubs
+    pubs.sort(key=_year_key, reverse=True)
+    return (pubs, info) if return_info else pubs
 
 
-def pubmed_fetch_summaries_fallback(pmids):
-    """Fallback using esummary — basic affiliation check via affiliationlist field."""
+def pubmed_fetch_records_fallback(pmids, identity):
+    """
+    esummary fallback (only when efetch fails). esummary has article-level
+    affiliations and 'Last IN' author names only, so records built here can
+    pass the strict check only via the article-level rule (uncommon surname,
+    initials matched).
+    """
     params = urllib.parse.urlencode({
         "db": "pubmed",
         "id": ",".join(pmids),
         "retmode": "json",
         "tool": "unc-research-explorer",
         "email": PUBMED_EMAIL,
+        **({"api_key": NCBI_API_KEY} if NCBI_API_KEY else {}),
     })
     url = PUBMED_BASE + "esummary.fcgi?" + params
     try:
         with urllib.request.urlopen(url, timeout=10) as resp:
             data = json.loads(resp.read())
         results = data.get("result", {})
-        pubs = []
+        out = []
         for pmid in pmids:
             art = results.get(pmid, {})
             if not art or art.get("error"):
                 continue
-            # esummary includes affiliationlist in some records — check it
-            aff_list = art.get("affiliationlist", [])
-            aff_text = " ".join(a.get("affiliation", "") for a in aff_list)
-            if aff_list and not affiliation_is_unc(aff_text):
-                continue
-            title = re.sub(r"<[^>]+>", "", art.get("title", "")).strip()
-            # esummary's "authors" field is a list of {"name": "Last IN"} dicts
-            # (initials only, no full first name — coarser than efetch's XML,
-            # but this path only runs when efetch itself failed).
+            aff_list = [a.get("affiliation", "") for a in art.get("affiliationlist", []) or []]
             authors = [a.get("name", "").strip() for a in art.get("authors", []) if a.get("name")]
-            pubs.append({
+            candidates = []
+            for a in authors:
+                parts = a.split()
+                if len(parts) >= 2 and _letters(" ".join(parts[:-1])) in identity["surnames"]:
+                    candidates.append({
+                        "name_ok": name_matches_identity(_letters(parts[-1]), identity),
+                        "has_affs": False, "unc": False, "orcid": None, "affs": "",
+                    })
+            title = re.sub(r"<[^>]+>", "", art.get("title", "")).strip()
+            pub = {
                 "pmid": pmid,
                 "title": title,
                 "journal": art.get("source", ""),
                 "year": (art.get("pubdate", "") or "")[:4],
                 "authors": authors,
-            })
-        return pubs
+            } if title else None
+            out.append((pub, {"pmid": pmid, "candidates": candidates,
+                              "per_author_affs": False,
+                              "article_unc": any_affiliation_is_unc(aff_list)}))
+        return out
     except Exception as e:
         print(f"    PubMed esummary fallback error: {e}")
         return []
@@ -1622,6 +2061,20 @@ def sanitize_hint(hint, faculty_name):
         return hint
 
     hint_clean = hint.replace("*", "").strip()
+
+    # A free-text hint must contain the faculty member's surname. Profile and
+    # bio regexes sometimes capture unrelated phrases ('pregnant women',
+    # 'Munich Germany', 'nez JC'); searching PubMed with those either finds
+    # nothing or finds someone else. Rejecting falls back to the name.
+    if not hint_clean.startswith("MYNCBI:"):
+        surnames = _surname_tokens(clean_name_for_pubmed(faculty_name))
+        hint_letters = _letters(hint_clean)
+        hint_tokens = {_letters(t) for t in re.split(r"[\s,.\-]+", hint_clean)}
+        if surnames and not any(
+                (sn in hint_letters) if len(sn) >= 4 else (sn in hint_tokens)
+                for sn in surnames):
+            print(f"    Rejecting hint '{hint}' — doesn't contain surname of {faculty_name}")
+            return None
 
     # Reject if contains non-name words (scraped from clinical description)
     if HINT_GARBAGE_WORDS.search(hint_clean):
@@ -1698,7 +2151,7 @@ def _pubmed_name_search_with_fallbacks(name, initial_term):
       3. Single-initial fallback (e.g. 'Hanks Brent' → 'Hanks B')
       4. No-affiliation search (catches recent recruits at prior institutions)
     """
-    result = pubmed_search(initial_term, max_results=300)
+    result = pubmed_search(initial_term, max_results=SEARCH_MAX_RESULTS)
     if result["count"] > 0:
         return initial_term, result, False
 
@@ -1710,7 +2163,7 @@ def _pubmed_name_search_with_fallbacks(name, initial_term):
         initials = "".join(p[0] for p in parts[:-1] if p and p[0].isalpha())
         fallback = f"{last} {initials}"
         if fallback != initial_term:
-            r = pubmed_search(fallback, max_results=300)
+            r = pubmed_search(fallback, max_results=SEARCH_MAX_RESULTS)
             if r["count"] > 0:
                 print(f"    Fallback: '{initial_term}' → '{fallback}' ({r['count']} results)")
                 return fallback, r, False
@@ -1720,7 +2173,7 @@ def _pubmed_name_search_with_fallbacks(name, initial_term):
     if len(hint_parts) == 2 and len(hint_parts[1]) > 1:
         alt = f"{hint_parts[0]} {hint_parts[1][0]}"
         if alt != initial_term:
-            r = pubmed_search(alt, max_results=300)
+            r = pubmed_search(alt, max_results=SEARCH_MAX_RESULTS)
             if r["count"] > 0:
                 print(f"    Fallback (hint initial): '{initial_term}' → '{alt}' ({r['count']} results)")
                 return alt, r, False
@@ -1735,7 +2188,7 @@ def _pubmed_name_search_with_fallbacks(name, initial_term):
             if len(two_initials) >= 2:
                 two_init = f"{term_parts[0]} {two_initials}"
                 if two_init != initial_term:
-                    r = pubmed_search(two_init, max_results=300)
+                    r = pubmed_search(two_init, max_results=SEARCH_MAX_RESULTS)
                     if r["count"] > 0:
                         print(f"    Fallback (two initials): '{initial_term}' → '{two_init}' ({r['count']} results)")
                         return two_init, r, False
@@ -1744,7 +2197,7 @@ def _pubmed_name_search_with_fallbacks(name, initial_term):
     term_parts = initial_term.split()
     has_initials = len(term_parts) >= 2 and len(term_parts[-1]) <= 2 and term_parts[-1].isalpha()
     if has_initials:
-        r = pubmed_search(initial_term, affiliation="", max_results=300)
+        r = pubmed_search(initial_term, affiliation="", max_results=SEARCH_MAX_RESULTS)
         if r["count"] > 0:
             print(f"    No-affiliation fallback: '{initial_term}' found {r['count']} results (recent recruit?)")
             return initial_term, r, True
@@ -1773,22 +2226,46 @@ def _filter_recent_pubs(pubs):
     return kept
 
 
-def _upgrade_with_computed_authors(faculty_member, pubs, search_term, target_lastname=None):
+def _faculty_departments(faculty_member):
+    return faculty_member.get("departments") or [faculty_member.get("department", "")]
+
+
+def _pick_ca_seeds(pubs, max_seeds=3):
     """
-    Given a verified seed publication, use NCBI's Computed Authors API
-    to get the full disambiguated publication list for this author.
-    Updates faculty_member in place and returns updated pubs list.
+    Seed papers for Computed Authors, best first. NCBI rebuilds its author
+    clusters weekly, so the newest papers often aren't clustered yet — prefer
+    verified papers from before the current year, newest of those first, then
+    fall back to this year's papers.
+    """
+    this_year = datetime.utcnow().year
+
+    def year(p):
+        try:
+            return int(p.get("year") or 0)
+        except (TypeError, ValueError):
+            return 0
+    older = sorted([p for p in pubs if 0 < year(p) < this_year], key=year, reverse=True)
+    recent = [p for p in pubs if p not in older]
+    return [p["pmid"] for p in (older + recent)][:max_seeds]
+
+
+def _upgrade_with_computed_authors(faculty_member, pubs, search_term, target_lastname=None,
+                                  known_orcid=None, dept_strict=False):
+    """
+    Add papers from NCBI's Computed Authors clusters to the strictly verified
+    list. NCBI often splits one person into several clusters, so up to
+    CA_MAX_SEEDS seeds are tried (skipping seeds already covered) and the
+    clusters are pooled. Every cluster paper must pass the same strict / ORCID
+    verification as the name search; the result is the UNION of the verified
+    name-search papers and the verified cluster papers.
+    Updates faculty_member in place and returns the pubs list to use.
     """
     if not pubs or search_term.startswith("ORCID:"):
         return pubs
 
-    # Require at least 2 verified papers before trusting Computed Authors.
-    # A single matching paper is too weak a seed — for common names like
-    # "Miller B" one coincidental UNC match can seed an entirely wrong
-    # author cluster. Two independent verified papers is much safer.
+    # Require at least 2 verified papers before trusting Computed Authors,
+    # unless the search term is specific (2+ initials or full given name).
     if len(pubs) < 2:
-        # Exception: if the search term is specific (2+ initials or full surname
-        # with given name), one paper is acceptable since ambiguity is lower.
         term_parts = search_term.split()
         is_specific = (len(term_parts) >= 2 and
                        (len(term_parts[-1]) >= 2 or len(term_parts) >= 3))
@@ -1797,32 +2274,72 @@ def _upgrade_with_computed_authors(faculty_member, pubs, search_term, target_las
                   f"with ambiguous term '{search_term}' — skipping to avoid wrong cluster")
             return pubs
 
-    seed_pmid = pubs[0]["pmid"]
-    print(f"    Computed Authors: seeding with PMID {seed_pmid}")
-    ca_pmids, ca_count = fetch_pmids_via_computed_authors(faculty_member["name"], seed_pmid=seed_pmid)
+    pooled, covered, n_clusters = [], set(), 0
+    for seed in _pick_ca_seeds(pubs, CA_MAX_SEEDS):
+        if seed in covered:
+            continue
+        ca_pmids, ca_count = fetch_pmids_via_computed_authors(faculty_member["name"], seed_pmid=seed)
+        if ca_count == 0:
+            print(f"    Computed Authors: no cluster for seed {seed}")
+            continue
+        if ca_count > 500:
+            print(f"    Computed Authors: cluster for seed {seed} too large ({ca_count}), skipping")
+            continue
+        n_clusters += 1
+        covered.update(ca_pmids)
+        pooled.extend(p for p in ca_pmids if p not in pooled)
+        # One cluster that already covers most verified papers is enough.
+        verified_ids = {p["pmid"] for p in pubs}
+        if len(verified_ids & covered) >= CA_MIN_OVERLAP * len(verified_ids):
+            break
 
-    if ca_count == 0:
-        return pubs
-    if ca_count > 500:
-        print(f"    Computed Authors: cluster too large ({ca_count}), skipping")
+    if not pooled:
         return pubs
 
-    print(f"    Computed Authors: found {ca_count} total PMIDs for this author")
-    # Verify CA results still have UNC affiliation for the target author.
-    # CA disambiguates by authorship but doesn't guarantee UNC — without this
-    # check, a correct-but-non-UNC cluster (someone who left UNC) gets attached.
-    # Fetch details for ALL PMIDs in the cluster (chunked internally for large
-    # clusters), then keep only those within the rolling publication window.
-    ca_pubs = pubmed_fetch_summaries(ca_pmids, search_term=search_term,
-                                     verify_affiliation=True, target_lastname=target_lastname)
+    verified_ids = {p["pmid"] for p in pubs}
+    print(f"    Computed Authors: {n_clusters} cluster(s), {len(pooled)} PMIDs "
+          f"(cover {len(verified_ids & covered)}/{len(verified_ids)} verified)")
+    new_ids = [p for p in pooled if p not in verified_ids]
+    if not new_ids:
+        return pubs
+    ca_pubs, info = pubmed_fetch_summaries(
+        new_ids, search_term=search_term, verify_affiliation=True,
+        faculty_name=faculty_member["name"], known_orcid=known_orcid,
+        departments=_faculty_departments(faculty_member), dept_strict=dept_strict,
+        return_info=True)
     ca_pubs = _filter_recent_pubs(ca_pubs)
-    if len(ca_pubs) >= 2:
-        faculty_member["pubmed_count"] = ca_count
-        faculty_member["pubmed_search"] = f"ComputedAuthors:{search_term}"
-        return ca_pubs
-    # CA cluster didn't verify against UNC — keep the original verified pubs
-    print(f"    Computed Authors: cluster failed UNC re-verification ({len(ca_pubs)} confirmed) — keeping original")
-    return pubs
+    if info["orcid_conflict"]:
+        print(f"    Computed Authors: cluster mixes two ORCID identities — not adding")
+        return pubs
+    if not ca_pubs:
+        return pubs
+    print(f"    Computed Authors: +{len(ca_pubs)} verified papers")
+    faculty_member["pubmed_search"] = f"ComputedAuthors:{search_term}"
+    if info["orcid"] and not faculty_member.get("pubmed_orcid"):
+        faculty_member["pubmed_orcid"] = info["orcid"]
+    merged = pubs + ca_pubs
+
+    def _year_key(p):
+        try:
+            return int(p.get("year") or 0)
+        except (TypeError, ValueError):
+            return 0
+    merged.sort(key=_year_key, reverse=True)
+    faculty_member["pubmed_count"] = len(set(pooled) | verified_ids)
+    return merged
+
+
+def _hide_unverified(faculty_member, pubs, reason):
+    """
+    Low-confidence result: don't show papers we can't stand behind. Keep the
+    candidate PMIDs (not shown on the site) so a maintainer can review them
+    and add a pubmed_overrides.json entry.
+    """
+    print(f"    ⚠ Hiding {len(pubs)} unverified publication(s) for "
+          f"{faculty_member['name']}: {reason}")
+    faculty_member["pubmed_unverified_pmids"] = [p["pmid"] for p in pubs]
+    faculty_member["pubmed_flag_reason"] = reason
+    return []
 
 
 def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
@@ -1831,19 +2348,25 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
 
     Lookup priority:
       1. Manual override (OVERRIDE: prefix) — skip all logic
-      2. MyNCBI bibliography page — most accurate, faculty-curated
-      3. ORCID lookup — identity-verified, then DOI→PMID conversion
-      4. Profile hint (name string from profile page)
-      5. Name-based PubMed search with affiliation verification + fallbacks
-      6. Computed Authors upgrade — once we have a verified seed PMID,
-         use NCBI's ML disambiguation to get the full publication list
+      2. MyNCBI bibliography page — faculty-curated, trusted
+      3. Name-based PubMed search, strict verification (surname + initials +
+         the author's own UNC affiliation), ORCID iD learned from those papers
+      4. Computed Authors upgrade — NCBI's disambiguated cluster, accepted
+         only if it overlaps the verified papers and re-verifies
+      5. ORCID name-search fallback — only when 3 found nothing; papers must
+         still include at least one strictly verified UNC paper
+    When the evidence is weak (mixed identities, common surname + single
+    initial, only found outside UNC), publications are hidden and the profile
+    is flagged "needs verification" rather than showing a list that may be wrong.
     """
     name = faculty_member["name"]
     raw_hint = pubmed_string or ""
 
-    # Stamp the pipeline version so version-aware resume knows this record
-    # was enriched by the current code, not a stale prior run.
     faculty_member["pipeline_version"] = PIPELINE_VERSION
+    # Clear flags from any previous enrichment of this record
+    for k in ("pubmed_orcid", "pubmed_unverified_pmids", "pubmed_flag_reason",
+              "pubmed_recent_recruit"):
+        faculty_member.pop(k, None)
 
     # ── 1. Manual override ────────────────────────────────────────────────────
     if raw_hint.startswith("OVERRIDE:"):
@@ -1860,10 +2383,13 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
         print(f"    PubMed: {name} → '{search_term}' ({result['count']} results)")
         pubs = []
         if result["ids"]:
-            pubs = pubmed_fetch_summaries(result["ids"], search_term=search_term,
-                                          verify_affiliation=False)
+            pubs, info = pubmed_fetch_summaries(result["ids"], search_term=search_term,
+                                                verify_affiliation=False, faculty_name=name,
+                                                return_info=True)
+            if info["orcid"]:
+                faculty_member["pubmed_orcid"] = info["orcid"]
             pubs = _upgrade_with_computed_authors(faculty_member, pubs, search_term,
-                                                   target_lastname=clean_name_for_pubmed(name))
+                                                  known_orcid=info["orcid"])
         faculty_member.update({
             "pubmed_search": faculty_member.get("pubmed_search") or search_term,
             "pubmed_count": faculty_member.get("pubmed_count") or result["count"],
@@ -1879,23 +2405,22 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
         bib_url = clean_hint.replace("MYNCBI:", "")
         author_id = bib_url.rstrip("/").split("/myncbi/")[-1].split("/")[0]
         print(f"    MyNCBI: fetching bibliography for '{author_id}'")
-        pmids, count = fetch_pmids_by_author_id(author_id, max_results=300)
+        pmids, count = fetch_pmids_by_author_id(author_id, max_results=SEARCH_MAX_RESULTS)
         print(f"    MyNCBI: found {count} PMIDs on bibliography page")
         if pmids:
-            # The MyNCBI bibliography is the faculty member's own curated list,
-            # so we trust it and skip UNC affiliation re-verification (which would
-            # otherwise drop papers whose per-author affiliation lists a prior or
-            # collaborating institution). We do still restrict to the rolling
-            # publication window so the list stays current.
-            pubs = pubmed_fetch_summaries(pmids, search_term=name, verify_affiliation=False)
+            # The faculty member's own curated list — trusted, so no UNC
+            # re-verification (it would drop papers from prior institutions).
+            pubs, info = pubmed_fetch_summaries(pmids, search_term=name, verify_affiliation=False,
+                                                faculty_name=name, return_info=True)
             pubs = _filter_recent_pubs(pubs)
+            if info["orcid"]:
+                faculty_member["pubmed_orcid"] = info["orcid"]
             faculty_member.update({
                 "pubmed_search": f"MyNCBI:{author_id}", "pubmed_count": count,
                 "pubmed_verified": len(pubs), "pubmed_ambiguous": False, "publications": pubs
             })
             time.sleep(0.4)
             return faculty_member
-        # Bibliography empty — derive search hint from slug if possible
         print(f"    MyNCBI bibliography empty — falling back to name search")
         slug_parts = [p for p in author_id.split(".") if p and not p.isdigit()]
         if len(slug_parts) >= 2:
@@ -1905,12 +2430,11 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
             clean_hint = None
 
     # ── 3. Name-based PubMed search (primary path for most faculty) ──────────
-    # Note: ORCID lookup was moved to a fallback (step 5) because calling it for
-    # every faculty member added ~2 API calls + 0.6s sleep each, making full
-    # runs time out. Now we try the cheaper name search first and only reach for
-    # ORCID when the name search yields nothing or looks ambiguous.
+    profile_orcid = None
     if clean_hint and clean_hint.startswith("ORCID:"):
         initial_term = clean_hint
+        # An ORCID iD on the faculty member's own profile page is trusted identity.
+        profile_orcid = _normalize_orcid(clean_hint.replace("ORCID:", ""))
     elif clean_hint:
         canonical = build_pubmed_search_string(name)
         if clean_hint != canonical:
@@ -1921,27 +2445,35 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
 
     print(f"    PubMed: {name} → '{initial_term}'")
     search_term, result, recent_recruit = _pubmed_name_search_with_fallbacks(name, initial_term)
-    if recent_recruit:
-        faculty_member["pubmed_recent_recruit"] = True
 
     target_lastname = clean_name_for_pubmed(name)
-
+    flag_reason = None
     pubs = []
-    if result["ids"]:
-        pubs = pubmed_fetch_summaries(
-            result["ids"],
-            search_term=search_term,
-            verify_affiliation=not recent_recruit,
-            target_lastname=target_lastname,
-        )
-        if not recent_recruit:
-            pubs = _upgrade_with_computed_authors(faculty_member, pubs, search_term, target_lastname)
+    anchor_orcid = profile_orcid
+    if recent_recruit:
+        # Found only by dropping the UNC filter — could be a recent recruit, or
+        # someone else with the same name. Don't publish unverified papers.
+        faculty_member["pubmed_recent_recruit"] = True
+        faculty_member["pubmed_unverified_pmids"] = result["ids"][:50]
+        flag_reason = "papers found only outside UNC (recent recruit?)"
+    elif result["ids"]:
+        pubs, info = pubmed_fetch_summaries(
+            result["ids"], search_term=search_term, verify_affiliation=True,
+            faculty_name=name, known_orcid=profile_orcid,
+            departments=_faculty_departments(faculty_member), return_info=True)
+        anchor_orcid = profile_orcid or info["orcid"]
+        if info["orcid_conflict"]:
+            pubs = _hide_unverified(faculty_member, pubs,
+                                    "papers from two different people (ORCID) match this name")
+            flag_reason = faculty_member["pubmed_flag_reason"]
+        else:
+            if anchor_orcid:
+                faculty_member["pubmed_orcid"] = anchor_orcid
+            pubs = _upgrade_with_computed_authors(
+                faculty_member, pubs, search_term, target_lastname, known_orcid=anchor_orcid,
+                dept_strict=info.get("resolved_by_department", False))
 
     # ── 4. ORCID fallback — only when name search was weak ────────────────────
-    # Trigger ORCID only if: (a) name search found nothing verified, or
-    # (b) we got very few results on a common surname (likely incomplete).
-    # This keeps ORCID off the critical path for the ~70% of faculty whose
-    # name search already works, while still rescuing the hard cases.
     name_search_weak = (
         len(pubs) == 0 or
         (len(pubs) < 2 and target_lastname.split()[-1].lower() in AMBIGUOUS_LASTNAMES)
@@ -1949,7 +2481,9 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
     already_have_id_source = faculty_member.get("pubmed_search", "").startswith(
         ("MyNCBI", "ORCID", "OVERRIDE", "ComputedAuthors"))
 
-    if name_search_weak and not already_have_id_source:
+    try_orcid = (name_search_weak and not already_have_id_source
+                 and (flag_reason is None or recent_recruit))
+    if try_orcid:
         orcid_id, orcid_given, orcid_family = search_orcid_by_name(name)
         time.sleep(0.2)
         if orcid_id:
@@ -1960,27 +2494,23 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
                 print(f"    ORCID: resolving {min(len(orcid_dois), 3)} DOIs...")
                 orcid_pmids = resolve_dois_to_pmids(orcid_dois, max_dois=3)
             if orcid_pmids:
-                # Always re-verify UNC affiliation for brand-new ORCID accounts
-                # (0009- prefix = registered ~2023+), regardless of paper count.
-                # New accounts are inherently less trustworthy — a common name
-                # can still match the wrong "new" account, and a thin/new record
-                # gives verification less to catch a bad match against. Older
-                # accounts (0000-/0001-/0002-/0003-) with 3+ papers are still
-                # trusted without re-verification, since a real name+paper-count
-                # match against an established record is very unlikely to be wrong.
-                is_new_orcid_account = orcid_id.startswith("0009-")
-                verify = len(orcid_pmids) <= 2 or is_new_orcid_account
-                if is_new_orcid_account and len(orcid_pmids) > 2:
-                    print(f"    ORCID: new account ({orcid_id[:9]}...) — verifying "
-                          f"affiliation despite {len(orcid_pmids)} papers found")
+                # An ORCID record found by NAME search may be someone else with
+                # the same name. Accept its papers only if at least one passes
+                # the strict UNC check; then papers carrying that iD also count.
                 orcid_pubs = pubmed_fetch_summaries(orcid_pmids, search_term=name,
-                                                    verify_affiliation=verify,
-                                                    target_lastname=target_lastname)
-                # Only replace name-search results if ORCID found MORE papers
+                                                    verify_affiliation=True,
+                                                    faculty_name=name,
+                                                    known_orcid=orcid_id,
+                                                    require_strict_anchor=True,
+                                                    departments=_faculty_departments(faculty_member))
                 if len(orcid_pubs) > len(pubs):
                     print(f"    ORCID: {len(orcid_pubs)} papers (better than name search's {len(pubs)})")
+                    for k in ("pubmed_unverified_pmids", "pubmed_flag_reason",
+                              "pubmed_recent_recruit"):
+                        faculty_member.pop(k, None)
                     faculty_member.update({
                         "pubmed_search": f"ORCID:{orcid_id}",
+                        "pubmed_orcid": orcid_id,
                         "pubmed_count": len(orcid_pmids),
                         "pubmed_verified": len(orcid_pubs),
                         "pubmed_ambiguous": False,
@@ -1988,30 +2518,29 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
                     })
                     time.sleep(PUBMED_SLEEP)
                     return faculty_member
-                elif is_new_orcid_account and len(orcid_pubs) == 0 and len(orcid_pmids) > 0:
-                    # New account claimed papers but NONE verified against UNC —
-                    # likely a wrong-person match. Don't silently fall through
-                    # with an unrelated ORCID search string; flag as ambiguous
-                    # so the frontend shows the "needs verification" badge.
-                    print(f"    ORCID: new account's papers failed UNC verification — likely wrong match")
-                    faculty_member["pubmed_ambiguous"] = True
+                elif not orcid_pubs:
+                    print(f"    ORCID: none of {len(orcid_pmids)} papers verified at UNC — not used")
 
-    # Flag low-confidence matches: single-initial search on a common surname
+    # Low-confidence: single-initial search on a common surname with few papers.
     term_parts = search_term.replace("ComputedAuthors:", "").split()
     primary_last = target_lastname.split()[-1].lower() if target_lastname else ""
     single_initial = len(term_parts) >= 2 and len(term_parts[-1]) == 1
     low_confidence = (single_initial and primary_last in AMBIGUOUS_LASTNAMES
-                      and len(pubs) < 3 and not already_have_id_source)
+                      and 0 < len(pubs) < 3 and not already_have_id_source
+                      and not anchor_orcid)
+    if low_confidence:
+        pubs = _hide_unverified(faculty_member, pubs, "common surname + single initial, few papers")
+        flag_reason = faculty_member["pubmed_flag_reason"]
+    elif flag_reason and "pubmed_flag_reason" not in faculty_member:
+        faculty_member["pubmed_flag_reason"] = flag_reason
 
     faculty_member.update({
         "pubmed_search": faculty_member.get("pubmed_search") or search_term,
         "pubmed_count": faculty_member.get("pubmed_count") or result["count"],
         "pubmed_verified": len(pubs),
-        "pubmed_ambiguous": (result["count"] > 0 and len(pubs) == 0) or low_confidence,
+        "pubmed_ambiguous": (result["count"] > 0 and len(pubs) == 0) or bool(flag_reason),
         "publications": pubs,
     })
-    if low_confidence:
-        print(f"    ⚠ Low-confidence match for {name} (common surname + single initial)")
     time.sleep(PUBMED_SLEEP)
     return faculty_member
 
@@ -2543,7 +3072,8 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
             prev = already_done[name_key]
             for k in ("pubmed_search", "pubmed_count", "pubmed_verified",
                       "pubmed_ambiguous", "publications", "nih_grants",
-                      "pubmed_recent_recruit", "pipeline_version"):
+                      "pubmed_recent_recruit", "pipeline_version",
+                      "pubmed_orcid", "pubmed_unverified_pmids", "pubmed_flag_reason"):
                 if k in prev:
                     f[k] = prev[k]
             continue
