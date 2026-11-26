@@ -1,0 +1,352 @@
+[
+  {
+    "name": "Li Wang",
+    "department": "Radiology",
+    "why": "hard: Radiology test case"
+  },
+  {
+    "name": "Gang Li",
+    "department": "Radiology",
+    "why": "hard: Radiology test case"
+  },
+  {
+    "name": "Yuli Jiang",
+    "department": "Radiology",
+    "why": "hard: Radiology test case"
+  },
+  {
+    "name": "Cherie M. Kuzmiak",
+    "department": "Radiology",
+    "why": "hard: Radiology test case"
+  },
+  {
+    "name": "Carolina Guimaraes",
+    "department": "Radiology",
+    "why": "hard: Radiology test case"
+  },
+  {
+    "name": "Yoon Seong Choi",
+    "department": "Radiology",
+    "why": "hard: Radiology test case"
+  },
+  {
+    "name": "Mingxia Liu",
+    "department": "Radiology",
+    "why": "hard: Radiology test case"
+  },
+  {
+    "name": "Emily J. Werder",
+    "department": "Radiology",
+    "why": "hard: Radiology test case"
+  },
+  {
+    "name": "Hong Yuan",
+    "department": "Radiology",
+    "why": "hard: Radiology test case"
+  },
+  {
+    "name": "Zhengwang Wu",
+    "department": "Radiology",
+    "why": "hard: Radiology test case"
+  },
+  {
+    "name": "Dan Hu",
+    "department": "Radiology",
+    "why": "hard: Radiology test case"
+  },
+  {
+    "name": "Joshua D. Garcia",
+    "department": "Medicine — Hospital Medicine",
+    "why": "hard: common or two-letter surname"
+  },
+  {
+    "name": "Kelly Lacy Smith",
+    "department": "Family Medicine",
+    "why": "hard: common or two-letter surname"
+  },
+  {
+    "name": "Chris Evans",
+    "department": "Medicine — Infectious Diseases",
+    "why": "hard: common or two-letter surname"
+  },
+  {
+    "name": "Zhanhong Wu",
+    "department": "Radiology",
+    "why": "hard: common or two-letter surname"
+  },
+  {
+    "name": "Austin Hall",
+    "department": "Psychiatry",
+    "why": "hard: common or two-letter surname"
+  },
+  {
+    "name": "Samip N. Patel",
+    "department": "Lineberger Comprehensive Cancer Center",
+    "why": "hard: common or two-letter surname"
+  },
+  {
+    "name": "Jennifer Wu",
+    "department": "Obstetrics & Gynecology",
+    "why": "hard: common or two-letter surname"
+  },
+  {
+    "name": "Didong Li",
+    "department": "Lineberger Comprehensive Cancer Center",
+    "why": "hard: common or two-letter surname"
+  },
+  {
+    "name": "Jiwoo Kim",
+    "department": "Psychiatry",
+    "why": "hard: common or two-letter surname"
+  },
+  {
+    "name": "Frank W. Putnam",
+    "department": "Psychiatry",
+    "why": "random"
+  },
+  {
+    "name": "Alice S. Ammerman",
+    "department": "Lineberger Comprehensive Cancer Center",
+    "why": "random"
+  },
+  {
+    "name": "Tal Kafri",
+    "department": "Lineberger Comprehensive Cancer Center",
+    "why": "random"
+  },
+  {
+    "name": "Kevin Pruitt",
+    "department": "Lineberger Comprehensive Cancer Center",
+    "why": "random"
+  },
+  {
+    "name": "Michelle Huynh",
+    "department": "Ophthalmology",
+    "why": "random"
+  },
+  {
+    "name": "Jonathan J. Dutton",
+    "department": "Ophthalmology",
+    "why": "random"
+  },
+  {
+    "name": "Carrie B. Lee",
+    "department": "Medicine — Oncology",
+    "why": "random"
+  },
+  {
+    "name": "Georgette A. Dent",
+    "department": "Pathology & Laboratory Medicine",
+    "why": "random"
+  },
+  {
+    "name": "Benjamin Buck",
+    "department": "Psychiatry",
+    "why": "random"
+  },
+  {
+    "name": "Paul Chelminski",
+    "department": "Medicine — General Medicine & Clinical Epidemiology",
+    "why": "random"
+  },
+  {
+    "name": "Adam Akerman",
+    "department": "Surgery — General Surgery",
+    "why": "random"
+  },
+  {
+    "name": "Garrett A. Berk",
+    "department": "Otolaryngology / Head & Neck Surgery",
+    "why": "random"
+  },
+  {
+    "name": "Nathan Thomas",
+    "department": "Psychiatry",
+    "why": "random"
+  },
+  {
+    "name": "Ganesh M.V. Kamath",
+    "department": "Family Medicine",
+    "why": "random"
+  },
+  {
+    "name": "Baggio A. Evangelista",
+    "department": "Neurology",
+    "why": "random"
+  },
+  {
+    "name": "Katie Davenport",
+    "department": "Emergency Medicine",
+    "why": "random"
+  },
+  {
+    "name": "David C. Williams",
+    "department": "Pathology & Laboratory Medicine",
+    "why": "random"
+  },
+  {
+    "name": "Ashmita Chatterjee",
+    "department": "Medicine — Hospital Medicine",
+    "why": "random"
+  },
+  {
+    "name": "Emily Ciccone",
+    "department": "Medicine — Infectious Diseases",
+    "why": "random"
+  },
+  {
+    "name": "Emily Hardisty",
+    "department": "Obstetrics & Gynecology",
+    "why": "random"
+  },
+  {
+    "name": "Jeremy Nel",
+    "department": "Medicine — Infectious Diseases",
+    "why": "random"
+  },
+  {
+    "name": "Yamini Virkud",
+    "department": "Pediatrics",
+    "why": "random"
+  },
+  {
+    "name": "Culley C. Carson",
+    "department": "Urology",
+    "why": "random"
+  },
+  {
+    "name": "Maganizo Chagomerana",
+    "department": "Medicine — Infectious Diseases",
+    "why": "random"
+  },
+  {
+    "name": "Tracy L. Rose",
+    "department": "Medicine — Oncology",
+    "why": "random"
+  },
+  {
+    "name": "Sandeep Dhanjal",
+    "department": "Anesthesiology",
+    "why": "random"
+  },
+  {
+    "name": "Ellie R. Lee",
+    "department": "Radiology",
+    "why": "random"
+  },
+  {
+    "name": "Duncan McLean",
+    "department": "Anesthesiology",
+    "why": "random"
+  },
+  {
+    "name": "Tamryn Fowler Gray",
+    "department": "Lineberger Comprehensive Cancer Center",
+    "why": "random"
+  },
+  {
+    "name": "Virginia L. Godfrey",
+    "department": "Pathology & Laboratory Medicine",
+    "why": "random"
+  },
+  {
+    "name": "Theodore Yanagihara",
+    "department": "Radiation Oncology",
+    "why": "random"
+  },
+  {
+    "name": "Ronald J. Falk",
+    "department": "Medicine — Nephrology & Hypertension",
+    "why": "random"
+  },
+  {
+    "name": "Timothy Moran",
+    "department": "Pediatrics",
+    "why": "random"
+  },
+  {
+    "name": "Carlos David",
+    "department": "Neurosurgery",
+    "why": "random"
+  },
+  {
+    "name": "Michelle Floris-Moore",
+    "department": "Medicine — Infectious Diseases",
+    "why": "random"
+  },
+  {
+    "name": "Heidi Roth",
+    "department": "Neurology",
+    "why": "random"
+  },
+  {
+    "name": "Alexandra Young",
+    "department": "Psychiatry",
+    "why": "random"
+  },
+  {
+    "name": "Nobuyo Maeda",
+    "department": "Pathology & Laboratory Medicine",
+    "why": "random"
+  },
+  {
+    "name": "Faisal F. Syed",
+    "department": "Medicine — Cardiology",
+    "why": "random"
+  },
+  {
+    "name": "Janiece Glover",
+    "department": "Pathology & Laboratory Medicine",
+    "why": "random"
+  },
+  {
+    "name": "Marija Ivanovic",
+    "department": "Radiology",
+    "why": "random"
+  },
+  {
+    "name": "Bradford C. Powell",
+    "department": "Lineberger Comprehensive Cancer Center",
+    "why": "random"
+  },
+  {
+    "name": "Christine E. DeMason",
+    "department": "Otolaryngology / Head & Neck Surgery",
+    "why": "random"
+  },
+  {
+    "name": "Sam Wu",
+    "department": "Dermatology",
+    "why": "random"
+  },
+  {
+    "name": "Lauriane Guichard",
+    "department": "Anesthesiology",
+    "why": "random"
+  },
+  {
+    "name": "Andrea D. Coviello",
+    "department": "Medicine — Endocrinology & Metabolism",
+    "why": "random"
+  },
+  {
+    "name": "Laura Loehr",
+    "department": "Medicine — General Medicine & Clinical Epidemiology",
+    "why": "random"
+  },
+  {
+    "name": "Brent A. Senior",
+    "department": "Otolaryngology / Head & Neck Surgery",
+    "why": "random"
+  },
+  {
+    "name": "Nadia Hoekstra",
+    "department": "Pediatrics",
+    "why": "random"
+  },
+  {
+    "name": "Amy Weil",
+    "department": "Medicine — General Medicine & Clinical Epidemiology",
+    "why": "random"
+  }
+]
