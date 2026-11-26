@@ -342,6 +342,33 @@ def attach_collaborators(faculty_list, top_n=5, name_aliases=None):
     return stats, index_to_key, key_to_best_index
 
 
+def _merged_verification_fields(faculty_list, indices, pubs_merged):
+    """
+    Carry author-verification metadata from scrape.py through a duplicate
+    merge: the ORCID iD (first one found), and — only when the merged record
+    still shows no publications — why papers were hidden and which PMIDs were
+    candidates, so maintainers can review them.
+    """
+    out = {}
+    orcid = next((faculty_list[i].get("pubmed_orcid") for i in indices
+                  if faculty_list[i].get("pubmed_orcid")), None)
+    if orcid:
+        out["pubmed_orcid"] = orcid
+    if not pubs_merged:
+        reason = next((faculty_list[i].get("pubmed_flag_reason") for i in indices
+                       if faculty_list[i].get("pubmed_flag_reason")), None)
+        if reason:
+            out["pubmed_flag_reason"] = reason
+        cand = []
+        for i in indices:
+            for pmid in faculty_list[i].get("pubmed_unverified_pmids") or []:
+                if pmid not in cand:
+                    cand.append(pmid)
+        if cand:
+            out["pubmed_unverified_pmids"] = cand
+    return out
+
+
 def merge_duplicate_faculty(faculty_list, index_to_key, key_to_best_index):
     """
     Collapse duplicate raw faculty entries (same real person, scraped from
@@ -434,6 +461,7 @@ def merge_duplicate_faculty(faculty_list, index_to_key, key_to_best_index):
             "pubmed_verified": len(pubs_merged),
             "pubmed_ambiguous": any_ambiguous and len(pubs_merged) == 0,
             "publications": pubs_merged,
+            **_merged_verification_fields(faculty_list, indices, pubs_merged),
             "collaborators": best.get("collaborators", []),
             "has_student_coauthor": best.get("has_student_coauthor", False),
             "student_coauthor_count": best.get("student_coauthor_count", 0),
