@@ -125,11 +125,29 @@ check("two-letter surname papers verified", pmids, ["46"])
 check("given name that looks like a particle ('Di Wu')", s.build_author_identity("Di Wu")["first_initials"], {"d"})
 check("search-term initials still stripped", s._surname_tokens("Hanks BA"), {"hanks"})
 
+# ── Full first names must be compatible, not just initials ────────────────
+pmids, _ = run("Yuli Jiang", [
+    article("80", author("Jiang", "Yuli", "Y", [UNC])),
+    article("81", author("Jiang", "Yukang", "Y", [UNC])),
+    article("82", author("Jiang", "Yue", "Y", [UNC])),
+])
+check("Yukang/Yue rejected for Yuli (same initial, different name)", pmids, ["80"])
+for name, fore, inits, want in [
+    ("Theodore Yanagihara", "Ted K", "TK", True), ("Dan Hu", "Daniel", "D", True),
+    ("Anwar Hossain", "Mohammad Anwar", "MA", True), ("S. Rahima Benhabbour", "Soumya Rahima", "SR", True),
+    ("A. Sidney Barritt", "Alfred S", "AS", True), ("Yen-Yu Ian Shih", "Yen-Yu Ian", "YYI", True),
+    ("Jacquelyn Patterson", "Jackie K", "JK", True), ("Joshua D. Garcia", "Jessica", "J", False),
+    ("Kelly Brown", "Kevin D", "KD", False), ("Li Wang", "Limei", "L", False),
+]:
+    got = s.name_matches_identity(s._block_initials(fore, inits), s.build_author_identity(name), fore)
+    check(f"first-name check: {name} vs {fore!r}", got is not False, want)
+check("HTML entities decoded in names", s._letters("Hendr&#xe9;e"), "hendree")
+
 # ── ORCID anchor ───────────────────────────────────────────────────────────
 arts = [
     article("50", author("Chen", "Li", "L", [UNC], orcid=ORCID_A)),
     article("51", author("Chen", "Li", "L", [UNC], orcid=ORCID_A)),
-    article("52", author("Chen", "Lin", "L", [UNC], orcid=ORCID_B)),   # other UNC "Chen L"
+    article("52", author("Chen", "Li", "L", [UNC], orcid=ORCID_B)),    # other UNC Li Chen
     article("53", author("Chen", "Li", "L", [OTHER], orcid=ORCID_A)),  # prior institution
     article("54", author("Chen", "Li", "L", [UNC])),                   # no ORCID on paper
 ]
@@ -137,7 +155,7 @@ pmids, info = run("Li Chen", arts)
 check("ORCID anchor learned from 2+ strict papers", info["orcid"], "0000-0002-1825-0097")
 check("different ORCID rejected; anchor ORCID recovers prior-institution paper", pmids, ["50", "51", "53", "54"])
 
-pmids, info = run("Li Chen", arts + [article("55", author("Chen", "Lin", "L", [UNC], orcid=ORCID_B))])
+pmids, info = run("Li Chen", arts + [article("55", author("Chen", "Li", "L", [UNC], orcid=ORCID_B))])
 check("two ORCIDs each on 2+ strict papers → conflict flagged", info["orcid_conflict"], True)
 
 pmids, _ = run("Li Chen", [article("56", author("Chen", "Li", "L", [OTHER], orcid=ORCID_A))],
@@ -293,8 +311,8 @@ check("E2E C: recent recruit hidden + flagged",
 # D: two different ORCID identities pass strict → hide
 add("130", author("Lee", "Jin", "J", [UNC], orcid=ORCID_A))
 add("131", author("Lee", "Jin", "J", [UNC], orcid=ORCID_A))
-add("132", author("Lee", "Jun", "J", [UNC], orcid=ORCID_B))
-add("133", author("Lee", "Jun", "J", [UNC], orcid=ORCID_B))
+add("132", author("Lee", "Jin", "J", [UNC], orcid=ORCID_B))
+add("133", author("Lee", "Jin", "J", [UNC], orcid=ORCID_B))
 f = enrich("Jin Lee", ["130", "131", "132", "133"])
 check("E2E D: mixed identities hidden + flagged",
       (f["publications"], f["pubmed_ambiguous"], len(f.get("pubmed_unverified_pmids", []))),

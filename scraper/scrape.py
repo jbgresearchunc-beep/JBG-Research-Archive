@@ -22,7 +22,7 @@ from html.parser import HTMLParser
 # scheduled full runs re-enrich everyone instead of resuming stale results.
 # The resume logic only skips faculty whose stored version matches this.
 # ---------------------------------------------------------------------------
-PIPELINE_VERSION = "2026.11.26-strict-author-match-v2"
+PIPELINE_VERSION = "2026.11.26-strict-author-match-v3"
 
 # How many years back to search for publications. Rolling, not a fixed year —
 # recalculated from the actual run date each time so it stays current
@@ -1364,8 +1364,10 @@ _UNC_ABBREV_FALSE_CONTEXT = re.compile(r"\b(?:argentina|cordoba)\b")
 
 
 def _ascii_lower(s):
+    import html
     import unicodedata
-    s = unicodedata.normalize("NFKD", s or "")
+    # PubMed XML carries entities like 'Hendr&#xe9;e' — decode before folding.
+    s = unicodedata.normalize("NFKD", html.unescape(s or ""))
     return "".join(c for c in s if not unicodedata.combining(c)).lower()
 
 
@@ -1488,7 +1490,15 @@ def build_author_identity(faculty_name, search_term=""):
     return {
         "surnames": surnames,
         "first_initials": first_initials,
+        "given": given_letters,
+        "hyphenated_first": bool(given) and "-" in given[0],
         "first": given_letters[0][0] if given_letters else None,
+        # Full given names the faculty member could publish under: the first
+        # given name, or the second if the first is just an initial
+        # ('J. Keith Smith' → keith), plus a goes-by middle name.
+        "full_firsts": {g for g in given_letters[:2] if len(g) >= 2}
+                       if (given_letters and len(given_letters[0]) == 1)
+                       else ({given_letters[0]} if given_letters else set()),
         "middle": given_letters[1][0] if len(given_letters) >= 2 else None,
     }
 
@@ -1509,13 +1519,96 @@ def _block_initials(fore, initials):
     return ""
 
 
-def name_matches_identity(block_initials, identity):
+# Nickname ↔ formal given names. Prefixes ('Dan'/'Daniel', 'Alex'/'Alexandra')
+# are matched separately, so only non-prefix pairs need listing.
+NICKNAME_FORMAL = {
+    "bill": {"william"}, "billy": {"william"}, "liam": {"william"},
+    "bob": {"robert"}, "bobby": {"robert"}, "rick": {"richard", "eric"}, "ricky": {"richard"},
+    "dick": {"richard"}, "jim": {"james"}, "jimmy": {"james"}, "jack": {"john"},
+    "chuck": {"charles"}, "chip": {"charles"}, "ted": {"theodore", "edward"},
+    "teddy": {"theodore", "edward"}, "ned": {"edward"}, "eddie": {"edward"},
+    "peggy": {"margaret"}, "meg": {"margaret"}, "maggie": {"margaret"},
+    "molly": {"mary"}, "polly": {"mary"}, "patsy": {"patricia"}, "trish": {"patricia"},
+    "betty": {"elizabeth"}, "beth": {"elizabeth"}, "liz": {"elizabeth"},
+    "libby": {"elizabeth"}, "betsy": {"elizabeth"}, "lisa": {"elizabeth"},
+    "kate": {"katherine", "catherine", "kathryn"}, "katie": {"katherine", "catherine", "kathryn"},
+    "kathy": {"katherine", "kathryn"}, "cathy": {"catherine"}, "sally": {"sarah"},
+    "sue": {"susan", "suzanne"}, "tony": {"anthony", "antonio"}, "drew": {"andrew"},
+    "sandy": {"sandra", "alexander"}, "hank": {"henry"}, "harry": {"henry", "harold"},
+    "larry": {"lawrence", "laurence"}, "terry": {"terrence", "teresa", "theresa"},
+    "jerry": {"gerald", "jerome"}, "mike": {"michael"}, "mickey": {"michael"},
+    "dave": {"david"}, "joe": {"joseph"}, "joey": {"joseph"}, "steve": {"steven", "stephen"},
+    "jen": {"jennifer"}, "jenny": {"jennifer"}, "becky": {"rebecca"}, "abby": {"abigail"},
+    "gabe": {"gabriel"}, "sammy": {"samuel", "samantha"}, "kim": {"kimberly"},
+    "tim": {"timothy"}, "nate": {"nathan", "nathaniel"}, "zach": {"zachary"},
+    "jake": {"jacob"}, "rob": {"robert"}, "robbie": {"robert"}, "will": {"william"},
+    "bert": {"albert", "robert", "herbert"}, "al": {"albert", "alan", "allen"},
+    "manny": {"manuel", "emmanuel"}, "pepe": {"jose"}, "nacho": {"ignacio"},
+    "paco": {"francisco"}, "pancho": {"francisco"}, "lupe": {"guadalupe"},
+    "jackie": {"jacqueline", "jacquelyn"}, "jacky": {"jacqueline", "jacquelyn"},
+    "kathie": {"katherine", "kathryn"}, "ellie": {"eleanor", "elizabeth", "ellen"},
+}
+
+
+def _given_names_compatible(a, b):
+    """Two full given names (letters only) that could be the same person."""
+    if a == b:
+        return True
+    short, long_ = sorted((a, b), key=len)
+    if len(short) >= 3 and long_.startswith(short):
+        return True
+    return b in NICKNAME_FORMAL.get(a, ()) or a in NICKNAME_FORMAL.get(b, ())
+
+
+def _forename_tokens(fore):
+    """
+    Full given names in a PubMed <ForeName>, letters only, skipping initials
+    ('J Keith' → ['keith'], 'JK' → [], 'Pew-Thian' → ['pewthian'],
+    'Mohammad Anwar' → ['mohammad', 'anwar']).
+    """
+    out = []
+    for t in (fore or "").split():
+        letters = _letters(t)
+        if len(letters) <= 1 or (t.replace(".", "").isupper() and len(letters) <= 3):
+            continue
+        out.append(letters)
+    return out
+
+
+def name_matches_identity(block_initials, identity, fore=""):
     """
     True / False / None (None = block has no given-name data to check).
-    Requires the first initial to be one the faculty member could publish
+
+    Full names: when PubMed has a full first name and so does the faculty
+    record, the first given name on one side must be compatible with some
+    given name on the other — same name, a prefix or nickname of it — so
+    'Yukang' ≠ 'Yuli' and 'Jessica' ≠ 'Joshua', while 'Ted' = 'Theodore',
+    'Mohammad Anwar' = 'Anwar', 'Soumya Rahima' = 'S. Rahima'. If the faculty
+    record starts with an initial ('A. Sidney Barritt'), a PubMed first name
+    starting with that letter also counts ('Alfred S').
+
+    Initials: the first initial must be one the faculty member could publish
     under; if both sides carry a middle initial and the first initials agree
     directly, the middle initials must agree too ('Kim WY' ≠ 'Kim WK').
     """
+    block_names = _forename_tokens(fore)
+    given = identity.get("given", [])
+    if block_names and identity.get("full_firsts"):
+        fac_names = set(identity["full_firsts"]) | set(given[:2])
+        fac_names = {g for g in fac_names if len(g) >= 2}
+        compatible = any(_given_names_compatible(b, f) for b in block_names for f in fac_names)
+        if not compatible and given and len(given[0]) == 1:
+            compatible = block_names[0][0] == given[0]
+        if not compatible:
+            return False
+        # Middle-name check from the full names, only when both sides have one
+        # and the first names line up directly.
+        fore_toks = [t for t in (fore or "").split() if _letters(t)]
+        if (len(given) >= 2 and len(given[0]) >= 2 and len(fore_toks) >= 2
+                and _given_names_compatible(block_names[0], given[0])
+                and _letters(fore_toks[1])[0] != given[1][0]):
+            return False
+        return True
     if not block_initials:
         return None
     if not identity["first_initials"]:
@@ -1524,7 +1617,8 @@ def name_matches_identity(block_initials, identity):
         return False
     if (identity["middle"] and len(block_initials) >= 2
             and block_initials[0] == identity["first"]
-            and block_initials[1] != identity["middle"]):
+            and block_initials[1] != identity["middle"]
+            and not identity.get("hyphenated_first")):
         return False
     return True
 
@@ -1580,7 +1674,7 @@ def _evaluate_article(article_xml, identity):
             if _letters(last) in identity["surnames"]:
                 orcid_m = re.search(r'<Identifier[^>]*Source="ORCID"[^>]*>(.*?)</Identifier>', auth_block)
                 candidates.append({
-                    "name_ok": name_matches_identity(_block_initials(fore, inits), identity),
+                    "name_ok": name_matches_identity(_block_initials(fore, inits), identity, fore),
                     "has_affs": bool(block_affs),
                     "unc": any_affiliation_is_unc(block_affs),
                     "affs": _ascii_lower(" | ".join(block_affs)),
