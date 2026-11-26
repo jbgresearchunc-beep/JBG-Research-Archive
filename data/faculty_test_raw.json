@@ -1,1138 +1,518 @@
 {
-  "generated_at": "2026-11-26T04:22:45.840801Z",
-  "total_faculty": 113,
+  "generated_at": "2026-11-26T13:53:05.170570Z",
+  "total_faculty": 51,
   "departments": [
-    "Radiology"
+    "Medicine \u2014 Pulmonary Diseases & Critical Care"
   ],
   "faculty": [
     {
-      "name": "Connor Lutz",
-      "profile_url": "https://www.med.unc.edu/radiology/people/connor-lutz/",
-      "department": "Radiology",
+      "name": "Paul W. Noble",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/paul-w-noble-md/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Jarunee Intrapiromkul",
-      "profile_url": "https://www.med.unc.edu/radiology/people/jarunee-intrapiromkul-md/",
-      "department": "Radiology",
+      "name": "Andrew Blake",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/andrew-blake-md-mba/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Yoon Seong Choi",
-      "profile_url": "https://www.med.unc.edu/radiology/people/yoon-seong-choi/",
-      "department": "Radiology",
+      "name": "William Tyler Smith",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/william-tyler-smith-md-2/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Naiim Ali",
-      "profile_url": "https://www.med.unc.edu/radiology/people/naiim-ali-md/",
-      "department": "Radiology",
+      "name": "W. Cameron McGuire",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/w-cameron-mcguire-md-mph/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Ellen Jones",
-      "profile_url": "https://www.med.unc.edu/radiology/people/ellen-jones/",
-      "department": "Radiology",
+      "name": "Hilda M. Metjian",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/hilda-m-metjian-md-fccp/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Andrew Campbell",
-      "profile_url": "https://www.med.unc.edu/radiology/people/andrew-campbell/",
-      "department": "Radiology",
+      "name": "Sean J. Callahan",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/sean-j-callahan-md/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Dan Hu",
-      "profile_url": "https://www.med.unc.edu/radiology/people/dan-hu-phd/",
-      "department": "Radiology",
+      "name": "Benjamin DeMarco",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/benjamin-demarco-md/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Emily Ware",
-      "profile_url": "https://www.med.unc.edu/radiology/people/emily-ware/",
-      "department": "Radiology",
+      "name": "Benjamin J. Sines",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/benjamin-j-sines-md-mscr/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Junaid Raja",
-      "profile_url": "https://www.med.unc.edu/radiology/people/junaid-raja-md-msph-ms-facp/",
-      "department": "Radiology",
+      "name": "Matthew Kretzschmar",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/matthew-kretzschmar-mba/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Jnana Aditya Challa",
-      "profile_url": "https://www.med.unc.edu/radiology/people/aditya-jnana-challa-md/",
-      "department": "Radiology",
+      "name": "Lisa J. Rose-Jones",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/lisa-j-rose-jones-md-facc/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Cagdas Topel",
-      "profile_url": "https://www.med.unc.edu/radiology/people/cagdas-topel-md/",
-      "department": "Radiology",
+      "name": "Adam Kimple",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/adam-kimple-md/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Hui Wang",
-      "profile_url": "https://www.med.unc.edu/radiology/people/hui-wang-phd/",
-      "department": "Radiology",
+      "name": "Morgan Jones",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/morgan-jones-pharmd-bcacp-cpp/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Leina Zerey",
-      "profile_url": "https://www.med.unc.edu/radiology/people/leina-zerey-md/",
-      "department": "Radiology",
+      "name": "Kenneth N. Olivier",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/kenneth-n-olivier-md-mph/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Yuli Jiang",
-      "profile_url": "https://www.med.unc.edu/radiology/people/yuli-david-jiang-md/",
-      "department": "Radiology",
+      "name": "Katie McCrory",
+      "profile_url": "https://www.uncmedicalcenter.org/uncmc/professional-education-and-services/pharmacy-residency-programs/our-preceptors/katie-mccrory-pharmd/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Joe Vimal Raj",
-      "profile_url": "https://www.med.unc.edu/radiology/people/joe-vimal-raj-mbbs-md/",
-      "department": "Radiology",
+      "name": "Kunal Jakharia",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/kunal-jakharia-md/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Minh-Tri Dang",
-      "profile_url": "https://www.med.unc.edu/radiology/people/minh-tri-tri-dang/",
-      "department": "Radiology",
+      "name": "Brent W. Kinder",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/brent-kinder-md-ms/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Carrie Anne Orlikowski",
-      "profile_url": "https://www.med.unc.edu/radiology/people/carrie-anne-orlikowski-md/",
-      "department": "Radiology",
+      "name": "Kenichi Okuda",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/kenichi-okuda-md-phd/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Kingsley Asiedu",
-      "profile_url": "https://www.med.unc.edu/radiology/people/kingsley-asiedu-md/",
-      "department": "Radiology",
+      "name": "Kenton Dover",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/kenton-dover/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Joshua Wallace",
-      "profile_url": "https://www.med.unc.edu/radiology/people/joshua-wallace-md-mph/",
-      "department": "Radiology",
+      "name": "Blair Wendlandt",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/blair-wendlandt-md-mscr/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Danielle Stevens",
-      "profile_url": "https://www.med.unc.edu/radiology/people/danielle-stevens-phd/",
-      "department": "Radiology",
+      "name": "Honey Jones",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/honey-jones/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Blaine T. Mischen",
-      "profile_url": "https://www.med.unc.edu/radiology/people/blaine-t-mischen-md/",
-      "department": "Radiology",
+      "name": "Subhashini Sellers",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/subhashini-sellers/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Avni Patel",
-      "profile_url": "https://www.med.unc.edu/radiology/people/avni-patel-md/",
-      "department": "Radiology",
+      "name": "C. Adrian Austin",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/c-adrian-austin-md-mscr/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Elijah Burton",
-      "profile_url": "https://www.med.unc.edu/radiology/people/elijah-burton-md/",
-      "department": "Radiology",
+      "name": "Kunal Patel",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/kunal-patel-md-phd/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Bradley Spieler",
-      "profile_url": "https://www.med.unc.edu/radiology/people/bradley-spieler-md/",
-      "department": "Radiology",
+      "name": "Laura Beth Gifford",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/laura-beth-rupcich/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Jeremy Jose",
-      "profile_url": "https://www.med.unc.edu/radiology/people/jeremy-jose-md/",
-      "department": "Radiology",
+      "name": "Barbara LeVarge",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/barbara-levarge-md/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Emily J. Werder",
-      "profile_url": "https://www.med.unc.edu/radiology/people/emily-j-werder-phd/",
-      "department": "Radiology",
+      "name": "Christine Vigeland",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/chrstine-vigeland-md/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Fernando Augusto de Albuquerque Mendes Filho",
-      "profile_url": "https://www.med.unc.edu/radiology/people/fernando-augusto-de-albuquerque-mendes-filho-md/",
-      "department": "Radiology",
+      "name": "Scott Randell",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/scott-randell-phd/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Romuald Ferre",
-      "profile_url": "https://www.med.unc.edu/radiology/people/romuald-ferre-md-frcpc-fsbi/",
-      "department": "Radiology",
+      "name": "M. Bradley Drummond",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/m-bradley-drummond-md-mhs/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Bahareh Gholami",
-      "profile_url": "https://www.med.unc.edu/radiology/people/bahareh-gholami-md/",
-      "department": "Radiology",
+      "name": "Stephen Tilley",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/tilley/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Samuel Ostrum",
-      "profile_url": "https://www.med.unc.edu/radiology/people/samuel-ostrum-md/",
-      "department": "Radiology",
+      "name": "Carla Maria Pedrosa Ribeiro",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/ribeiro/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Bahram Kiani",
-      "profile_url": "https://www.med.unc.edu/radiology/people/bahram-bobby-kiani-mha-md/",
-      "department": "Radiology",
+      "name": "Jason Mock",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/mock/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Rebecca Hansen",
-      "profile_url": "https://www.med.unc.edu/radiology/people/rebecca-hansen-md/",
-      "department": "Radiology",
+      "name": "Jennifer Maguire",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/maguire/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Andrea Senter",
-      "profile_url": "https://www.med.unc.edu/radiology/people/andrea-andi-senter-md/",
-      "department": "Radiology",
+      "name": "Jason Lobo",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/lobo/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Meghan R. Clark",
-      "profile_url": "https://www.med.unc.edu/radiology/people/meghan-r-clark-md/",
-      "department": "Radiology",
+      "name": "Silvia Marina Kreda",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/kreda/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Alexandra K. Banathy",
-      "profile_url": "https://www.med.unc.edu/radiology/people/alexandra-alex-k-banathy/",
-      "department": "Radiology",
+      "name": "Michael Knowles",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/knowles/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Uzay Emir",
-      "profile_url": "https://www.med.unc.edu/radiology/people/uzay-emir-phd/",
-      "department": "Radiology",
+      "name": "Ashley Henderson",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/henderson/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Behrooz Masuodi",
-      "profile_url": "https://www.med.unc.edu/radiology/people/behrooz-masuodi-md/",
-      "department": "Radiology",
+      "name": "Robert Hagan",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/hagan/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Tony Jeanmenne",
-      "profile_url": "https://www.med.unc.edu/radiology/people/tony-jeanmenne-md/",
-      "department": "Radiology",
+      "name": "Barbara Grubb",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/grubb/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Virginie Papadopoulou",
-      "profile_url": "https://www.med.unc.edu/radiology/people/virginie-papadopoulou-phd/",
-      "department": "Radiology",
+      "name": "Jennifer Goralski",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/goralski/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Sarah DeRycke",
-      "profile_url": "https://www.med.unc.edu/radiology/people/sarah-derycke-2/",
-      "department": "Radiology",
+      "name": "H. James Ford",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/ford/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Joseph K.T. Lee",
-      "profile_url": "https://www.med.unc.edu/radiology/people/joseph-k-t-lee/",
-      "department": "Radiology",
+      "name": "William A. Fischer",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/fischer/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Paul L. Molina",
-      "profile_url": "https://www.med.unc.edu/radiology/people/paul-l-molina/",
-      "department": "Radiology",
+      "name": "Scott H. Donaldson",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/donaldson/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Danielle Durham",
-      "profile_url": "https://www.med.unc.edu/radiology/people/danielle-durham/",
-      "department": "Radiology",
+      "name": "Claire Doerschuk",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/doerschuk/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Marcelo Takahashi",
-      "profile_url": "https://www.med.unc.edu/radiology/people/marcelo-takahashi/",
-      "department": "Radiology",
+      "name": "Raymond Coakley",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/coakley/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Bryan Harris",
-      "profile_url": "https://www.med.unc.edu/radiology/people/bryan-harris/",
-      "department": "Radiology",
+      "name": "Shannon Carson",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/shannon-carson-md/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Lourens du Pisanie",
-      "profile_url": "https://www.med.unc.edu/radiology/people/lourens-du-pisanie-jr/",
-      "department": "Radiology",
+      "name": "Philip Bromberg",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/bromberg/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Diane Armao",
-      "profile_url": "https://www.med.unc.edu/radiology/people/diane-armao/",
-      "department": "Radiology",
+      "name": "Richard Boucher",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/boucher/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Sarah J. Nyante",
-      "profile_url": "https://www.med.unc.edu/radiology/people/sarah-j-nyante/",
-      "department": "Radiology",
+      "name": "Wayne Anderson",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/anderson/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Louise Henderson",
-      "profile_url": "https://www.med.unc.edu/radiology/people/louise-henderson/",
-      "department": "Radiology",
+      "name": "Alessandra Livraghi-Butrico",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/alessandra-livraghi-butrico/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Hong Yuan",
-      "profile_url": "https://www.med.unc.edu/radiology/people/hong-yuan/",
-      "department": "Radiology",
+      "name": "Jason Akulian",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/akulian/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     },
     {
-      "name": "Pew-Thian Yap",
-      "profile_url": "https://www.med.unc.edu/radiology/people/pew-thian-yap/",
-      "department": "Radiology",
+      "name": "M. Leigh Anne Daniels",
+      "profile_url": "https://www.med.unc.edu/medicine/pulmonary/people/daniels/",
+      "department": "Medicine \u2014 Pulmonary Diseases & Critical Care",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Zhengwang Wu",
-      "profile_url": "https://www.med.unc.edu/radiology/people/zhangweng-wu/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Zhanhong Wu",
-      "profile_url": "https://www.med.unc.edu/radiology/people/zhanhong-wu/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Li Wang",
-      "profile_url": "https://www.med.unc.edu/radiology/people/li-wang/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Eric Muir",
-      "profile_url": "https://www.med.unc.edu/radiology/people/eric-muir/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Mingxia Liu",
-      "profile_url": "https://www.med.unc.edu/radiology/people/mingxia-liu/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Tengfei Li",
-      "profile_url": "https://www.med.unc.edu/radiology/people/tengfei-li/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Guoshi Li",
-      "profile_url": "https://www.med.unc.edu/radiology/people/guoshi-li/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Gang Li",
-      "profile_url": "https://www.med.unc.edu/radiology/people/gang-li/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Li-Ming Hsu",
-      "profile_url": "https://www.med.unc.edu/radiology/people/li-ming-hsu/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Zibo Li",
-      "profile_url": "https://www.med.unc.edu/radiology/people/zibo-li/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Eran Dayan",
-      "profile_url": "https://www.med.unc.edu/radiology/people/eran-dayan/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Wei-Tang Chang",
-      "profile_url": "https://www.med.unc.edu/radiology/people/wei-tang-chang/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Sahar Ahmad",
-      "profile_url": "https://www.med.unc.edu/radiology/people/sahar-ahmad/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Courtney Evron",
-      "profile_url": "https://www.med.unc.edu/radiology/people/courtney-evron/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Alex Villalobos",
-      "profile_url": "https://www.med.unc.edu/radiology/people/alex-villalobos/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Priya Mody",
-      "profile_url": "https://www.med.unc.edu/radiology/people/priya-mody/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Nima Kokabi",
-      "profile_url": "https://www.med.unc.edu/radiology/people/nima-kokabi/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Nicole Keefe",
-      "profile_url": "https://www.med.unc.edu/radiology/people/nicole-keefe/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Hyeon Yu",
-      "profile_url": "https://www.med.unc.edu/radiology/people/hyeon-yu/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Gloria Salazar",
-      "profile_url": "https://www.med.unc.edu/radiology/people/gloria-salazar/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Charles T. Burke",
-      "profile_url": "https://www.med.unc.edu/radiology/people/charles-t-burke/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "David M. Mauro",
-      "profile_url": "https://www.med.unc.edu/radiology/people/david-m-mauro/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "William W. Pryor",
-      "profile_url": "https://www.med.unc.edu/radiology/people/william-will-w-pryor/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Lane Donnelly",
-      "profile_url": "https://www.med.unc.edu/radiology/people/lane-donnelly/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Melania Bula",
-      "profile_url": "https://www.med.unc.edu/radiology/people/melania-bula/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Carolina Guimaraes",
-      "profile_url": "https://www.med.unc.edu/radiology/people/carolina-guimaraes/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Kassie McCullagh",
-      "profile_url": "https://www.med.unc.edu/radiology/people/kassie-mccullagh/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Yueh Z. Lee",
-      "profile_url": "https://www.med.unc.edu/radiology/people/yueh-z-lee/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Sheng-Che Hung",
-      "profile_url": "https://www.med.unc.edu/radiology/people/sheng-che-alex-hung/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Benjamin Huang",
-      "profile_url": "https://www.med.unc.edu/radiology/people/benjamin-huang/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Mauricio Castillo",
-      "profile_url": "https://www.med.unc.edu/radiology/people/mauricio-castillo/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Bilal Battal",
-      "profile_url": "https://www.med.unc.edu/radiology/people/bilal-battal/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Carlos Zamora",
-      "profile_url": "https://www.med.unc.edu/radiology/people/carlos-zamora/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Sten Solander",
-      "profile_url": "https://www.med.unc.edu/radiology/people/sten-solander/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Cody Schwartz",
-      "profile_url": "https://www.med.unc.edu/radiology/people/cody-schwartz/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Girish Gandikota",
-      "profile_url": "https://www.med.unc.edu/radiology/people/girish-gandikota/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Jorge Oldan",
-      "profile_url": "https://www.med.unc.edu/radiology/people/jorgeoldan/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Marija Ivanovic",
-      "profile_url": "https://www.med.unc.edu/radiology/people/marija-ivanovic/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Jennifer Schroeder",
-      "profile_url": "https://www.med.unc.edu/radiology/people/jennifer-schroeder/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "John Nazarian",
-      "profile_url": "https://www.med.unc.edu/radiology/people/john-nazarian/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Mariana DeFreitas",
-      "profile_url": "https://www.med.unc.edu/radiology/people/mariana-defreitas/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Mark Rynties",
-      "profile_url": "https://www.med.unc.edu/radiology/people/mark-rynties/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Jeffrey Gage",
-      "profile_url": "https://www.med.unc.edu/radiology/people/jeff-gage/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Muthu Sakthivel",
-      "profile_url": "https://www.med.unc.edu/radiology/people/muthu-sakthivel/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Fenner Griffin",
-      "profile_url": "https://www.med.unc.edu/radiology/people/fenner-griffin/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Hollins Clark",
-      "profile_url": "https://www.med.unc.edu/radiology/people/hollins-clark/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Todd R. Hazelton",
-      "profile_url": "https://www.med.unc.edu/radiology/people/todd-r-hazelton/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Valerie Jewells",
-      "profile_url": "https://www.med.unc.edu/radiology/people/valerie-jewells/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Lynn A. Fordham",
-      "profile_url": "https://www.med.unc.edu/radiology/people/lynn-a-fordham/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Weili Lin",
-      "profile_url": "https://www.med.unc.edu/radiology/people/weili-lin/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "J. Keith Smith",
-      "profile_url": "https://www.med.unc.edu/radiology/people/j-keith-smith/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Matthew A. Mauro",
-      "profile_url": "https://www.med.unc.edu/radiology/people/matthew-a-mauro/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Cherie M. Kuzmiak",
-      "profile_url": "https://www.med.unc.edu/radiology/people/cherie-m-kuzmiak/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Genevieve A. Woodard",
-      "profile_url": "https://www.med.unc.edu/radiology/people/genevieve-a-woodard/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Chris Young",
-      "profile_url": "https://www.med.unc.edu/radiology/people/chris-young/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Lauren M.B. Burke",
-      "profile_url": "https://www.med.unc.edu/radiology/people/lauren-m-b-burke/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Dustin Rea",
-      "profile_url": "https://www.med.unc.edu/radiology/people/dustin-rea/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Ellie R. Lee",
-      "profile_url": "https://www.med.unc.edu/radiology/people/ellie-r-lee/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "W. Brian Hyslop",
-      "profile_url": "https://www.med.unc.edu/radiology/people/w-brian-hyslop/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Josephine Finazzo",
-      "profile_url": "https://www.med.unc.edu/radiology/people/josephine-finazzo/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Kristen Olinger",
-      "profile_url": "https://www.med.unc.edu/radiology/people/kristen-olinger/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
-      ]
-    },
-    {
-      "name": "Ersan Altun",
-      "profile_url": "https://www.med.unc.edu/radiology/people/ersan-altun/",
-      "department": "Radiology",
-      "role": "",
-      "source": "wp_rest:ud_entry",
-      "departments": [
-        "Radiology"
+        "Medicine \u2014 Pulmonary Diseases & Critical Care"
       ]
     }
   ]
