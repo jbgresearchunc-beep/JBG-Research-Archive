@@ -22,7 +22,7 @@ from html.parser import HTMLParser
 # scheduled full runs re-enrich everyone instead of resuming stale results.
 # The resume logic only skips faculty whose stored version matches this.
 # ---------------------------------------------------------------------------
-PIPELINE_VERSION = "2026.11.26-strict-author-match-v8"
+PIPELINE_VERSION = "2026.11.26-strict-author-match-v9"
 
 # How many years back to search for publications. Rolling, not a fixed year —
 # recalculated from the actual run date each time so it stays current
@@ -2806,6 +2806,10 @@ def _read_total_pubs(path):
 # Set ALLOW_PUB_DROP=1 for a deliberate big cleanup.
 PUB_DROP_THRESHOLD = 0.7
 
+# A committed faculty.json newer than this is treated as a partial run to
+# resume; anything older (e.g. last week's) is fully re-enriched.
+RESUME_MAX_AGE_HOURS = 20
+
 
 def _write_json(path, obj):
     os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
@@ -2823,6 +2827,47 @@ def _check_run_size(new_count, baseline, label):
                        f"{new_count} ({new_count/baseline:.0%}). Looks like a pipeline "
                        f"failure, not real attrition.")
     return True, ""
+
+
+def apply_paper_corrections(all_faculty, path=None):
+    """
+    Hand corrections from scraper/paper_corrections.json, applied after
+    enrichment:  {"faculty name (lowercase)": {"exclude": [PMIDs], "include": [PMIDs]}}
+    exclude — never show these papers for this person (wrong attribution);
+    include — always show these (real papers the checks can't confirm).
+    """
+    path = path or os.path.join(os.path.dirname(os.path.abspath(__file__)), "paper_corrections.json")
+    try:
+        with open(path) as fh:
+            corr = {k.lower().strip(): v for k, v in json.load(fh).items() if not k.startswith("_")}
+    except (OSError, ValueError):
+        return
+    if not corr:
+        return
+    n_ex = n_in = 0
+    for f in all_faculty:
+        c = corr.get(f["name"].lower().strip())
+        if not c:
+            continue
+        ex = {str(x) for x in c.get("exclude", [])}
+        pubs = [p for p in (f.get("publications") or []) if str(p.get("pmid")) not in ex]
+        n_ex += len(f.get("publications") or []) - len(pubs)
+        have = {str(p.get("pmid")) for p in pubs}
+        want = [str(x) for x in c.get("include", []) if str(x) not in have and str(x) not in ex]
+        if want:
+            try:
+                extra = pubmed_fetch_summaries(want, verify_affiliation=False, faculty_name=f["name"])
+                pubs += extra
+                n_in += len(extra)
+            except Exception as e:
+                print(f"  Corrections: could not fetch {want} for {f['name']}: {e}")
+        pubs.sort(key=lambda p: p.get("year") or "", reverse=True)
+        f["publications"] = pubs
+        f["pubmed_verified"] = len(pubs)
+        if pubs:
+            f["pubmed_ambiguous"] = False
+            f.pop("pubmed_flag_reason", None)
+    print(f"  Hand corrections: {len(corr)} faculty, {n_ex} paper(s) removed, {n_in} added")
 
 
 def dept_matches(filter_str, dept_name, dept_short=""):
@@ -3259,12 +3304,26 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
         try:
             with open(resume_path) as f:
                 prev = json.load(f)
+            # The committed output only counts as "already done" if it was
+            # written in the last RESUME_MAX_AGE_HOURS (a re-run after a
+            # timeout). Otherwise the weekly run would skip everyone whose
+            # version already matches and never pick up new papers.
+            fresh = True
+            if resume_path == output_path:
+                try:
+                    gen = datetime.fromisoformat(prev.get("generated_at", "").rstrip("Z"))
+                    fresh = (datetime.utcnow() - gen).total_seconds() < RESUME_MAX_AGE_HOURS * 3600
+                except ValueError:
+                    fresh = False
+                if not fresh:
+                    print(f"Resume: {resume_path} is older than {RESUME_MAX_AGE_HOURS}h — "
+                          f"re-enriching everyone for fresh papers")
             for pf in prev.get("faculty", []):
                 if "pubmed_verified" not in pf and "publications" not in pf:
                     continue
                 if pf.get("publications"):
                     prev_any.setdefault(pf["name"].lower().strip(), pf)
-                if pf.get("pipeline_version") == PIPELINE_VERSION:
+                if fresh and pf.get("pipeline_version") == PIPELINE_VERSION:
                     already_done[pf["name"].lower().strip()] = pf
                 elif resume_path == output_path:
                     stale_skipped += 1
@@ -3338,6 +3397,8 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
             }
             _write_json(checkpoint_path, checkpoint)
             print(f"    💾 checkpoint saved at {i+1}/{len(all_faculty)} → {checkpoint_path}")
+
+    apply_paper_corrections(all_faculty)
 
     if kept_after_errors:
         print(f"\n⚠ PubMed errors for {len(kept_after_errors)} faculty — kept their previous papers "
