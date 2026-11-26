@@ -8,6 +8,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import scrape as s  # noqa: E402
+_REAL_BATCH = s._pubmed_fetch_records_batch
 
 
 def author(last, fore, initials, affs=(), orcid=None):
@@ -463,6 +464,36 @@ key_map = {0: "dellon"}
 bc.attach_student_coauthors(fl, idx, key_map, {"dellon": 0})
 check("Student matched only where the author was at UNC",
       [x["student"] for x in fl[0]["student_coauthors"]], ["Shivani Desai"])
+
+# P: efetch failures are retried, then counted so the run keeps old papers
+_orig_open, _orig_sleep, _orig_fb = s.urllib.request.urlopen, s.time.sleep, s.pubmed_fetch_records_fallback
+calls = []
+def _boom(*a, **k):
+    calls.append(1); raise TimeoutError("read timed out")
+s.urllib.request.urlopen = _boom
+s.time.sleep = lambda *_: None
+s.pubmed_fetch_records_fallback = lambda pmids, identity: []
+s.FETCH_FAILURES[0] = 0
+_REAL_BATCH(["1", "2"], s.build_author_identity("Todd Baron", "Baron Todd"))
+check("efetch timeout retried 5x then counted as a failure", (len(calls), s.FETCH_FAILURES[0]), (5, 1))
+s.urllib.request.urlopen, s.time.sleep, s.pubmed_fetch_records_fallback = _orig_open, _orig_sleep, _orig_fb
+s.FETCH_FAILURES[0] = 0
+
+# Q: MyNCBI list (grant-reporting style) is author-checked AND topped up with
+# strictly verified name-search / Computed Authors papers (Shelton Earp).
+add("800", author("Earp", "H Shelton", "HS", [UNC]))
+add("801", author("Earp", "H Shelton", "HS", [UNC]))
+add("802", author("Perou", "Charles M", "CM", [UNC]))          # center paper, not his
+add("803", author("Earp", "H Shelton", "HS", [UNC]))          # only via name search
+add("804", author("Earp", "H Shelton", "HS", [UNC]))          # only via CA cluster
+_orig_bib = s.fetch_pmids_by_author_id
+s.fetch_pmids_by_author_id = lambda aid, max_results=300: (["800", "801", "802"], 3)
+f = enrich("Shelton Earp", ["803"], ca=["800", "801", "804"],
+           hint="MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/henry.earp.1/bibliography/public")
+check("MyNCBI: non-author dropped, name-search + CA papers added",
+      (sorted(p["pmid"] for p in f["publications"]), f["pubmed_search"]),
+      (["800", "801", "803", "804"], "MyNCBI:henry.earp.1"))
+s.fetch_pmids_by_author_id = _orig_bib
 
 print()
 print(f"{len(FAILS)} failure(s)" if FAILS else "All tests passed.")
