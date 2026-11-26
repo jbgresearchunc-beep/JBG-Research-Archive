@@ -128,7 +128,11 @@ jobs:
 
       - name: Compare publication linking vs production (test runs only)
         if: ${{ github.event.inputs.scrape_only != 'true' && steps.paths.outputs.is_test == 'true' }}
-        run: python scraper/compare_pub_links.py data/faculty.json ${{ steps.paths.outputs.out }} --top 25
+        run: |
+          python scraper/compare_pub_links.py data/faculty.json ${{ steps.paths.outputs.out }} --top 25
+          echo
+          echo "=== Hand-checked accuracy (scraper/eval/labels.csv) ==="
+          python scraper/eval_links.py score data/faculty.json ${{ steps.paths.outputs.out }} || echo "(no labels yet)"
 
       - name: Commit and push updated data
         run: |
