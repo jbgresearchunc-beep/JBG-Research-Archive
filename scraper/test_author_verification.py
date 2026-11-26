@@ -404,6 +404,66 @@ pub, _ = s._evaluate_article(article("400", author("Ch&#xe9;ry", "Samantha L", "
 check("Entities decoded in title", pub["title"], "(3\u03b1,5\u03b1)-THP and CX3CL1")
 check("Entities decoded in author name", pub["authors"][0], "Samantha L Ch\u00e9ry")
 
+# L: MyNCBI bibliographies are trusted, but a paper that doesn't list the
+# faculty member at all (Shawn Hingtgen's list held two Duke papers by others)
+# is dropped.
+_orig_fetch = s._pubmed_fetch_records_batch
+s._pubmed_fetch_records_batch = lambda pmids, identity: [s._evaluate_article(a, identity) for a in [
+    article("500", author("Hingtgen", "Shawn D", "SD", [OTHER])),
+    article("501", author("Floyd", "Scott R", "SR", [DUKE]), author("Oldham", "Mark", "M", [DUKE]))]]
+pubs = s.pubmed_fetch_summaries(["500", "501"], verify_affiliation=False, search_term="Hingtgen SD",
+                                faculty_name="Shawn D. Hingtgen", require_name_on_paper=True)
+check("MyNCBI: paper without the faculty member dropped, own paper kept (any affiliation)",
+      [p["pmid"] for p in pubs], ["500"])
+s._pubmed_fetch_records_batch = _orig_fetch
+
+# M: MyNCBI bibliography pages are read past page 1 (50 per page)
+_orig_url = s.fetch_url
+pages = {"": [str(10000000 + i) for i in range(50)], "?page=2": ["20000001", "20000002"]}
+s.fetch_url = lambda url, *a, **k: "".join(f'<a href="/pubmed/{p}/">x</a>'
+                                           for p in pages.get(url.split("/public/")[-1], []))
+ids, n = s.fetch_pmids_by_author_id("some.one.1", max_results=300)
+check("MyNCBI: page 2 read, stops when a page is short", (n, ids[-1]), (52, "20000002"))
+s.fetch_url = _orig_url
+
+# N: initials-only author blocks ('K D Allen') are ambiguous when two UNC
+# faculty share the surname + first initial (Katherine Allen / Kelli Allen).
+s.set_unc_roster(["Katherine Allen", "Kelli Allen", "Evan S. Dellon", "Elisabeth Dellon",
+                  "Dan Reuland", "Daniel S. Reuland", "Patrick J. Smith", "Patrick Carlsen Smith",
+                  "Di Wu", "Danny T.Y. Wu", "E. Claire Dees", "Elizabeth Claire Dees",
+                  "Jacquelyn Patterson", "J. Megan Patterson"])
+def _one(name, fore, ini, st=""):
+    ident = s.build_author_identity(name, st)
+    rec = s._evaluate_article(article("600", author(name.split()[-1], fore, ini, [UNC])), ident)[1]
+    return s._strict_pass(rec, ident)[0]
+check("Initials-only 'K D Allen' rejected for Katherine Allen", _one("Katherine Allen", "K D", "KD"), False)
+check("Initials-only 'K D Allen' rejected for Kelli Allen too (no middle known)", _one("Kelli Allen", "K D", "KD"), False)
+check("Spelled-out 'Kelli D Allen' still accepted", _one("Kelli Allen", "Kelli D", "KD"), True)
+check("'E S Dellon' accepted for Evan S. Dellon (middle initial matches)", _one("Evan S. Dellon", "E S", "ES"), True)
+check("Duplicate record Dan / Daniel Reuland is not a rival", _one("Dan Reuland", "D S", "DS"), True)
+check("'Patrick Smith' (no middle) rejected: fits two UNC Patrick Smiths", _one("Patrick J. Smith", "Patrick", "P"), False)
+check("'Patrick J Smith' accepted for Patrick J. Smith", _one("Patrick J. Smith", "Patrick J", "PJ"), True)
+check("'D Wu' rejected for Di Wu (Danny T.Y. Wu also fits)", _one("Di Wu", "D", "D"), False)
+check("'Di Wu' spelled out accepted", _one("Di Wu", "Di", "D"), True)
+check("E. Claire / Elizabeth Claire Dees = one person, 'E Claire Dees' kept", _one("E. Claire Dees", "E Claire", "EC"), True)
+check("'Jacquelyn K Patterson' kept (J. Megan Patterson doesn't fit)", _one("Jacquelyn Patterson", "Jacquelyn K", "JK"), True)
+s.set_unc_roster([])
+
+# O: per-author UNC positions are recorded so student matching can require
+# the student's own block to be at UNC
+pub, _ = s._evaluate_article(article("700", author("Wood", "Brian", "B", [OTHER]),
+                                     author("Desai", "Shivani", "S", [UNC]),
+                                     author("Dellon", "Evan S", "ES", [UNC])),
+                             s.build_author_identity("Evan S. Dellon", ""))
+check("UNC author positions recorded", pub["unc_author_idx"], [1, 2])
+import build_collaborators as bc
+fl = [{"name": "Evan S. Dellon", "publications": [pub]}]
+idx = {bc._student_match_key("Brian Wood"): "Brian Wood", bc._student_match_key("Shivani Desai"): "Shivani Desai"}
+key_map = {0: "dellon"}
+bc.attach_student_coauthors(fl, idx, key_map, {"dellon": 0})
+check("Student matched only where the author was at UNC",
+      [x["student"] for x in fl[0]["student_coauthors"]], ["Shivani Desai"])
+
 print()
 print(f"{len(FAILS)} failure(s)" if FAILS else "All tests passed.")
 sys.exit(1 if FAILS else 0)
