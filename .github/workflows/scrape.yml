@@ -81,6 +81,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Author-verification tests (offline, blocks enrichment if logic is broken)
+        if: ${{ github.event.inputs.scrape_only != 'true' }}
+        run: python scraper/test_author_verification.py > /tmp/verify_tests.log || (cat /tmp/verify_tests.log; exit 1)
+
       - name: Step 3 — PubMed enrichment
         if: ${{ github.event.inputs.scrape_only != 'true' }}
         env:
@@ -121,6 +125,10 @@ jobs:
           flagged = sum(1 for f in d['faculty'] if f.get('has_student_coauthor'))
           print(f'Faculty flagged with student co-authors: {flagged}')
           "
+
+      - name: Compare publication linking vs production (test runs only)
+        if: ${{ github.event.inputs.scrape_only != 'true' && steps.paths.outputs.is_test == 'true' }}
+        run: python scraper/compare_pub_links.py data/faculty.json ${{ steps.paths.outputs.out }} --top 25
 
       - name: Commit and push updated data
         run: |
