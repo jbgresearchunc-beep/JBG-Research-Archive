@@ -6,5 +6,6 @@
     "ORCID:0000-0001-2345-6789": "ORCID if not found on faculty page",
     "ComputedAuthors:12345678 Hanks B": "Force a specific Computed Authors seed PMID"
   },
-  "brent hanks": "Hanks BA"
+  "brent hanks": "Hanks BA",
+  "maria e. diaz-gonzalez de ferris": "Diaz-Gonzalez de Ferris M"
 }
