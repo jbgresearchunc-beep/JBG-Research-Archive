@@ -171,6 +171,30 @@ for hint, name, want in [
     check(f"hint {hint!r} for {name} → {want!r}", s.sanitize_hint(hint, name), want)
 
 
+# ── Department tiebreak for two same-name UNC people ──────────────────────
+RAD = "Department of Radiology, University of North Carolina at Chapel Hill, Chapel Hill, NC."
+BRIC = "Biomedical Research Imaging Center, University of North Carolina, Chapel Hill, NC."
+PHARM = "Eshelman School of Pharmacy, University of North Carolina at Chapel Hill."
+dept_arts = [
+    article("90", author("Wang", "Li", "L", [RAD], orcid=ORCID_A)),
+    article("91", author("Wang", "Li", "L", [BRIC], orcid=ORCID_A)),
+    article("92", author("Wang", "Li", "L", [RAD], orcid=ORCID_A)),
+    article("93", author("Wang", "Li", "L", [PHARM], orcid=ORCID_B)),
+    article("94", author("Wang", "Li", "L", [PHARM], orcid=ORCID_B)),
+    article("95", author("Wang", "Li", "L", [RAD])),     # no ORCID, right department
+    article("96", author("Wang", "Li", "L", [PHARM])),   # no ORCID, other department
+]
+pmids, info = run("Li Wang", dept_arts, dept_patterns=s.department_patterns(["Radiology"]))
+check("dept tiebreak: Radiology ORCID group kept, pharmacy Li Wang dropped",
+      (pmids, info["resolved_by_department"], info["orcid_conflict"]),
+      (["90", "91", "92", "95"], True, False))
+pmids, info = run("Li Wang", dept_arts, dept_patterns=s.department_patterns(["Medicine — Cardiology"]))
+check("dept tiebreak: neither group in department → still a conflict",
+      info["orcid_conflict"], True)
+check("department patterns", [p.pattern for p in s.department_patterns(
+      ["Medicine — Gastroenterology & Hepatology", "Lineberger Comprehensive Cancer Center"])],
+      [r"\bgastroe", r"\bhepatol", r"\blineber", r"\blineberger"])
+
 # ── End-to-end enrichment with mocked network ──────────────────────────────
 import time as _time  # noqa: E402
 s.PUBMED_SLEEP = 0
@@ -190,7 +214,8 @@ s._pubmed_fetch_records_batch = mock_records
 s.search_orcid_by_name = lambda name: (None, None, None)
 
 
-def enrich(name, search_ids, *, unc_ids=None, ca=None, hint=None, only_term=None):
+def enrich(name, search_ids, *, unc_ids=None, ca=None, hint=None, only_term=None,
+           dept="Radiology"):
     """search_ids: what the UNC-filtered search returns; unc_ids=[] simulates
     nothing at UNC so the no-affiliation fallback returns search_ids."""
     def fake_search(term, affiliation="University of North Carolina", max_results=300):
@@ -202,9 +227,12 @@ def enrich(name, search_ids, *, unc_ids=None, ca=None, hint=None, only_term=None
             ids = search_ids
         return {"count": len(ids), "ids": list(ids)}
     s.pubmed_search = fake_search
-    s.fetch_pmids_via_computed_authors = (lambda n, seed_pmid=None:
-                                          (list(ca), len(ca)) if ca else ([], 0))
-    f = {"name": name}
+    # ca: a list (one cluster for any seed) or a dict seed → cluster
+    def fake_ca(n, seed_pmid=None):
+        cl = ca.get(seed_pmid) if isinstance(ca, dict) else ca
+        return (list(cl), len(cl)) if cl else ([], 0)
+    s.fetch_pmids_via_computed_authors = fake_ca
+    f = {"name": name, "department": dept, "departments": [dept]}
     s.enrich_faculty_with_pubmed(f, pubmed_string=hint)
     return f
 
@@ -222,14 +250,39 @@ check("E2E A: CA expansion keeps strict + ORCID papers",
 check("E2E A: ORCID recorded", f.get("pubmed_orcid"), "0000-0002-1825-0097")
 check("E2E A: not flagged", f["pubmed_ambiguous"], False)
 
-# B: CA cluster belongs to someone else (doesn't contain our verified papers)
+# B: CA returns a fragment of the person's papers → union, not replace;
+#    cluster papers by a different UNC person (other initials) are still rejected
 add("110", author("Chen", "Li", "L", [UNC]))
 add("111", author("Chen", "Li", "L", [UNC]))
 add("112", author("Chen", "Li", "L", [UNC]))
 add("113", author("Chen", "Li", "L", [UNC]))
-f = enrich("Li Chen", ["110", "111", "112"], ca=["110", "113"])
-check("E2E B: low-overlap CA cluster rejected, verified list kept",
-      sorted(p["pmid"] for p in f["publications"]), ["110", "111", "112"])
+add("114", author("Chen", "Xu", "X", [UNC]))
+f = enrich("Li Chen", ["110", "111", "112"], ca=["110", "113", "114"])
+check("E2E B: CA fragment unioned with verified list; wrong-initials paper rejected",
+      sorted(p["pmid"] for p in f["publications"]), ["110", "111", "112", "113"])
+
+# B2: newest paper isn't clustered yet → older seed used; second fragment pooled
+def art_year(pmid, year, *authors):
+    ARTS[pmid] = article(pmid, *authors).replace("<Year>2024</Year>", f"<Year>{year}</Year>")
+
+
+THIS_YEAR = s.datetime.utcnow().year
+art_year("180", THIS_YEAR, author("Kuzmiak", "Cherie M", "CM", [UNC]))
+art_year("181", THIS_YEAR - 1, author("Kuzmiak", "Cherie M", "CM", [UNC]))
+art_year("182", THIS_YEAR - 2, author("Kuzmiak", "Cherie M", "CM", [UNC]))
+art_year("183", THIS_YEAR - 2, author("Kuzmiak", "Cherie M", "CM", [UNC]))
+art_year("184", THIS_YEAR - 3, author("Kuzmiak", "Cherie M", "CM", [UNC]))
+art_year("185", THIS_YEAR - 3, author("Kuzmiak", "Cherie M", "CM", [UNC]))
+art_year("186", THIS_YEAR - 3, author("Kuzmiak", "Cherie M", "CM", [UNC]))
+check("seeds: last year's paper first, this year's last",
+      s._pick_ca_seeds([{"pmid": "180", "year": str(THIS_YEAR)},
+                        {"pmid": "181", "year": str(THIS_YEAR - 1)},
+                        {"pmid": "182", "year": str(THIS_YEAR - 2)}]), ["181", "182", "180"])
+f = enrich("Cherie M. Kuzmiak", ["180", "181", "182", "183"],
+           ca={"181": ["181", "184"], "182": ["182", "183", "185", "186"]})
+check("E2E B2: two CA fragments pooled from two seeds",
+      sorted(p["pmid"] for p in f["publications"]),
+      ["180", "181", "182", "183", "184", "185", "186"])
 
 # C: found only outside UNC → flagged, nothing shown
 add("120", author("Newman", "Ada B", "AB", [OTHER]))
@@ -246,6 +299,16 @@ f = enrich("Jin Lee", ["130", "131", "132", "133"])
 check("E2E D: mixed identities hidden + flagged",
       (f["publications"], f["pubmed_ambiguous"], len(f.get("pubmed_unverified_pmids", []))),
       ([], True, 4))
+
+# D2: same, but the department settles it
+for pm, aff, oc in [("190", RAD, ORCID_A), ("191", BRIC, ORCID_A), ("192", RAD, ORCID_A),
+                    ("193", PHARM, ORCID_B), ("194", PHARM, ORCID_B)]:
+    add(pm, author("Wang", "Gang", "G", [aff], orcid=oc))
+add("195", author("Wang", "Gang", "G", [PHARM]))   # other Gang Wang, no ORCID, in CA output
+f = enrich("Gang Wang", ["190", "191", "192", "193", "194"], ca=["190", "195"])
+check("E2E D2: department resolves same-name UNC people",
+      (sorted(p["pmid"] for p in f["publications"]), f["pubmed_ambiguous"]),
+      (["190", "191", "192"], False))
 
 # E: common surname + single-initial search + 1 paper → hide
 add("140", author("Smith", "Patrick", "P", [UNC]))

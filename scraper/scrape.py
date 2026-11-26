@@ -29,9 +29,12 @@ PIPELINE_VERSION = "2026.11.25-strict-author-match-v1"
 # (e.g. run in 2027 searches 2022-2027, not a stale 2018 cutoff).
 PUBLICATION_WINDOW_YEARS = 5
 
-# Computed Authors cluster must contain at least this fraction of the papers
-# already verified by name search, or it's treated as a different person.
+# Stop trying more Computed Authors seeds once the pooled clusters cover this
+# fraction of the papers already verified by name search.
 CA_MIN_OVERLAP = 0.5
+# How many verified papers to try as Computed Authors seeds (NCBI often splits
+# one person into several clusters; each extra seed is one API call).
+CA_MAX_SEEDS = 3
 
 
 def pubmed_start_year():
@@ -1580,6 +1583,7 @@ def _evaluate_article(article_xml, identity):
                     "name_ok": name_matches_identity(_block_initials(fore, inits), identity),
                     "has_affs": bool(block_affs),
                     "unc": any_affiliation_is_unc(block_affs),
+                    "affs": _ascii_lower(" | ".join(block_affs)),
                     "orcid": _normalize_orcid(orcid_m.group(1)) if orcid_m else None,
                 })
         elif collective_m:
@@ -1603,7 +1607,7 @@ def _evaluate_article(article_xml, identity):
 def _strict_pass(record, identity):
     """
     Does some surname-matched author block pass the strict check?
-    Returns (passed, orcid_of_passing_block, reason_if_failed).
+    Returns (passed, passing_block_or_None, reason_if_failed).
     """
     cands = record["candidates"]
     if not cands:
@@ -1616,7 +1620,7 @@ def _strict_pass(record, identity):
         if unc:
             # Prefer a block with a definite initials match over an unknown one
             best = sorted(unc, key=lambda c: c["name_ok"] is not True)[0]
-            return True, best["orcid"], None
+            return True, best, None
         return False, None, "target-not-UNC"
     # No per-author affiliations at all (older records): article-level UNC is
     # only trusted when the surname is uncommon and initials matched.
@@ -1625,13 +1629,52 @@ def _strict_pass(record, identity):
     primary = min(identity["surnames"], key=len) if identity["surnames"] else ""
     if primary in AMBIGUOUS_LASTNAMES:
         return False, None, "common-surname-no-author-affs"
-    if any(c["name_ok"] is True for c in named):
-        return True, None, None
+    sure = [c for c in named if c["name_ok"] is True]
+    if sure:
+        return True, sure[0], None
     return False, None, "initials-unknown-no-author-affs"
 
 
+# Words too generic to identify a department inside an affiliation string.
+_DEPT_STOPWORDS = {"medicine", "school", "department", "center", "centre", "health",
+                   "general", "clinical", "sciences", "science", "university", "hospital",
+                   "diseases", "disease", "laboratory", "care", "and", "of", "the",
+                   "head", "neck", "comprehensive", "cancer"}
+# Extra affiliation phrases that identify a department (beyond its own name).
+_DEPT_ALIASES = {
+    "radiology": [r"biomedical research imaging", r"\bbric\b"],
+    "orthopaedics": [r"\borthoped"],
+    "pediatrics": [r"\bchildren"],
+    "lineberger": [r"\blineberger"],
+}
+
+
+def department_patterns(departments):
+    """
+    Regexes that match a faculty member's department inside an affiliation
+    string, from names like 'Medicine — Cardiology' or 'Obstetrics & Gynecology'.
+    Uses 7-letter word prefixes so 'Pediatrics' also matches 'Pediatric'.
+    """
+    pats = []
+    for dept in departments or []:
+        if not dept:
+            continue
+        part = dept.split("—")[-1]
+        for word in re.findall(r"[a-z]+", _ascii_lower(part)):
+            if word in _DEPT_STOPWORDS or len(word) < 5:
+                continue
+            pats.append(r"\b" + word[:7])
+            pats.extend(_DEPT_ALIASES.get(word, []))
+    return [re.compile(p) for p in dict.fromkeys(pats)]
+
+
+def _mentions_department(aff_text, dept_patterns):
+    return bool(dept_patterns) and any(p.search(aff_text or "") for p in dept_patterns)
+
+
 def select_verified_publications(records_and_pubs, identity, known_orcid=None,
-                                 require_strict_anchor=False):
+                                 require_strict_anchor=False, dept_patterns=None,
+                                 dept_strict=False):
     """
     Apply the strict / ORCID rules across ALL of one faculty member's candidate
     papers at once (the ORCID anchor is learned from the strict passes).
@@ -1641,9 +1684,16 @@ def select_verified_publications(records_and_pubs, identity, known_orcid=None,
         block carries a DIFFERENT iD are rejected — that's another person.
     require_strict_anchor: for ORCID records found by name search, at least one
         paper must pass the strict UNC check or nothing is accepted.
+    dept_patterns: from department_patterns(). When two different ORCID iDs
+        each pass strict on 2+ papers (two UNC people with the same name), the
+        one whose affiliations name the faculty member's department wins —
+        if it does so decisively. Otherwise the result is a conflict.
 
-    Returns (pubs, info) where info has keys: orcid, orcid_conflict, kept,
-    strict, via_orcid, rejected (dict reason → count).
+    dept_strict: a same-name conflict was already settled by department (e.g.
+        on the name-search pass); apply the same rule to papers with no iD.
+
+    Returns (pubs, info) where info has keys: orcid, orcid_conflict,
+    resolved_by_department, kept, strict, via_orcid, rejected (reason → count).
     """
     from collections import Counter
     strict = {}
@@ -1653,25 +1703,38 @@ def select_verified_publications(records_and_pubs, identity, known_orcid=None,
         strict[rec["pmid"]] = _strict_pass(rec, identity)
 
     # Learn the ORCID anchor from strict passes.
-    tally = Counter(o for ok, o, _ in strict.values() if ok and o)
-    anchor, conflict = known_orcid, False
+    tally = Counter(b["orcid"] for ok, b, _ in strict.values() if ok and b and b["orcid"])
+    anchor, conflict, by_dept = known_orcid, False, False
     if not anchor and tally:
-        top = tally.most_common(2)
-        if top[0][1] >= 2:
-            anchor = top[0][0]
-            if len(top) > 1 and top[1][1] >= 2:
-                # Two different people both pass strict on 2+ papers each.
+        contenders = [o for o, c in tally.most_common() if c >= 2]
+        if len(contenders) == 1:
+            anchor = contenders[0]
+        elif len(contenders) > 1:
+            hits = {o: sum(1 for ok, b, _ in strict.values()
+                           if ok and b and b["orcid"] == o
+                           and _mentions_department(b["affs"], dept_patterns))
+                    for o in contenders}
+            ranked = sorted(contenders, key=lambda o: -hits[o])
+            h1, h2 = hits[ranked[0]], hits[ranked[1]]
+            if h1 >= 2 and h1 >= 3 * h2:
+                anchor, by_dept = ranked[0], True
+            else:
                 conflict = True
-                anchor = None
 
     pubs, rejected = [], Counter()
     n_strict = n_orcid = 0
     for pub, rec in records_and_pubs:
         if pub is None or rec is None:
             continue
-        ok, orcid, reason = strict[rec["pmid"]]
+        ok, block, reason = strict[rec["pmid"]]
+        orcid = block["orcid"] if block else None
         if ok and anchor and orcid and orcid != anchor:
             ok, reason = False, "different-ORCID"
+        if (ok and (by_dept or dept_strict) and not orcid
+                and not _mentions_department(block["affs"], dept_patterns)):
+            # Two same-name UNC people: without an iD, only papers listing the
+            # faculty member's department can be attributed to them.
+            ok, reason = False, "same-name-UNC-other-department"
         if ok:
             pubs.append(pub)
             n_strict += 1
@@ -1690,7 +1753,7 @@ def select_verified_publications(records_and_pubs, identity, known_orcid=None,
         n_orcid = 0
 
     info = {
-        "orcid": anchor, "orcid_conflict": conflict,
+        "orcid": anchor, "orcid_conflict": conflict, "resolved_by_department": by_dept,
         "kept": len(pubs), "strict": n_strict, "via_orcid": n_orcid,
         "rejected": dict(rejected),
     }
@@ -1747,7 +1810,7 @@ def _pubmed_fetch_records_batch(pmids, identity):
 
 def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term="", target_lastname=None,
                            faculty_name=None, known_orcid=None, require_strict_anchor=False,
-                           return_info=False):
+                           departments=None, dept_strict=False, return_info=False):
     """
     Fetch publication details for PMIDs and (if verify_affiliation) keep only
     papers that verifiably belong to this faculty member — see the block
@@ -1760,8 +1823,8 @@ def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term="", targe
     Results are sorted by year, most recent first.
     """
     if not pmids:
-        return ([], {"orcid": None, "orcid_conflict": False, "kept": 0, "strict": 0,
-                     "via_orcid": 0, "rejected": {}}) if return_info else []
+        return ([], {"orcid": None, "orcid_conflict": False, "resolved_by_department": False,
+                     "kept": 0, "strict": 0, "via_orcid": 0, "rejected": {}}) if return_info else []
 
     identity = build_author_identity(faculty_name or target_lastname or search_term, search_term)
 
@@ -1775,7 +1838,8 @@ def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term="", targe
     if verify_affiliation:
         pubs, info = select_verified_publications(
             records, identity, known_orcid=known_orcid,
-            require_strict_anchor=require_strict_anchor)
+            require_strict_anchor=require_strict_anchor,
+            dept_patterns=department_patterns(departments), dept_strict=dept_strict)
         if info["rejected"] or info["via_orcid"]:
             dropped = ", ".join(f"{k} {v}" for k, v in sorted(info["rejected"].items()))
             print(f"      Verify: kept {info['kept']}/{len(records)} "
@@ -1783,6 +1847,9 @@ def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term="", targe
                   + (f"; dropped: {dropped}" if dropped else ""))
         if info["orcid_conflict"]:
             print(f"      Verify: two different ORCID iDs each pass on 2+ papers — mixed identities")
+        elif info.get("resolved_by_department"):
+            print(f"      Verify: two same-name UNC people — kept the one in this department "
+                  f"(ORCID {info['orcid']})")
     else:
         pubs = [p for p, r in records if p is not None]
         # Still learn an ORCID iD from name-matched blocks (useful for MyNCBI etc.)
@@ -1791,8 +1858,8 @@ def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term="", targe
                         if c["orcid"] and c["name_ok"] is not False)
         top = tally.most_common(1)
         info = {"orcid": top[0][0] if top and top[0][1] >= 2 else None,
-                "orcid_conflict": False, "kept": len(pubs), "strict": 0,
-                "via_orcid": 0, "rejected": {}}
+                "orcid_conflict": False, "resolved_by_department": False,
+                "kept": len(pubs), "strict": 0, "via_orcid": 0, "rejected": {}}
 
     def _year_key(p):
         try:
@@ -1836,7 +1903,7 @@ def pubmed_fetch_records_fallback(pmids, identity):
                 if len(parts) >= 2 and _letters(" ".join(parts[:-1])) in identity["surnames"]:
                     candidates.append({
                         "name_ok": name_matches_identity(_letters(parts[-1]), identity),
-                        "has_affs": False, "unc": False, "orcid": None,
+                        "has_affs": False, "unc": False, "orcid": None, "affs": "",
                     })
             title = re.sub(r"<[^>]+>", "", art.get("title", "")).strip()
             pub = {
@@ -2033,18 +2100,38 @@ def _filter_recent_pubs(pubs):
     return kept
 
 
-def _upgrade_with_computed_authors(faculty_member, pubs, search_term, target_lastname=None,
-                                  known_orcid=None):
-    """
-    Given strictly verified publications, use NCBI's Computed Authors API to
-    get the full disambiguated publication list for this author.
+def _faculty_departments(faculty_member):
+    return faculty_member.get("departments") or [faculty_member.get("department", "")]
 
-    Two guards keep a wrong cluster out:
-      • overlap — the cluster must contain at least half of the papers we
-        already verified. If the seed paper belonged to a different person,
-        the cluster won't contain the rest of our verified papers.
-      • re-verification — every cluster paper must pass the same strict /
-        ORCID checks as the name search.
+
+def _pick_ca_seeds(pubs, max_seeds=3):
+    """
+    Seed papers for Computed Authors, best first. NCBI rebuilds its author
+    clusters weekly, so the newest papers often aren't clustered yet — prefer
+    verified papers from before the current year, newest of those first, then
+    fall back to this year's papers.
+    """
+    this_year = datetime.utcnow().year
+
+    def year(p):
+        try:
+            return int(p.get("year") or 0)
+        except (TypeError, ValueError):
+            return 0
+    older = sorted([p for p in pubs if 0 < year(p) < this_year], key=year, reverse=True)
+    recent = [p for p in pubs if p not in older]
+    return [p["pmid"] for p in (older + recent)][:max_seeds]
+
+
+def _upgrade_with_computed_authors(faculty_member, pubs, search_term, target_lastname=None,
+                                  known_orcid=None, dept_strict=False):
+    """
+    Add papers from NCBI's Computed Authors clusters to the strictly verified
+    list. NCBI often splits one person into several clusters, so up to
+    CA_MAX_SEEDS seeds are tried (skipping seeds already covered) and the
+    clusters are pooled. Every cluster paper must pass the same strict / ORCID
+    verification as the name search; the result is the UNION of the verified
+    name-search papers and the verified cluster papers.
     Updates faculty_member in place and returns the pubs list to use.
     """
     if not pubs or search_term.startswith("ORCID:"):
@@ -2061,40 +2148,59 @@ def _upgrade_with_computed_authors(faculty_member, pubs, search_term, target_las
                   f"with ambiguous term '{search_term}' — skipping to avoid wrong cluster")
             return pubs
 
-    seed_pmid = pubs[0]["pmid"]
-    print(f"    Computed Authors: seeding with PMID {seed_pmid}")
-    ca_pmids, ca_count = fetch_pmids_via_computed_authors(faculty_member["name"], seed_pmid=seed_pmid)
+    pooled, covered, n_clusters = [], set(), 0
+    for seed in _pick_ca_seeds(pubs, CA_MAX_SEEDS):
+        if seed in covered:
+            continue
+        ca_pmids, ca_count = fetch_pmids_via_computed_authors(faculty_member["name"], seed_pmid=seed)
+        if ca_count == 0:
+            print(f"    Computed Authors: no cluster for seed {seed}")
+            continue
+        if ca_count > 500:
+            print(f"    Computed Authors: cluster for seed {seed} too large ({ca_count}), skipping")
+            continue
+        n_clusters += 1
+        covered.update(ca_pmids)
+        pooled.extend(p for p in ca_pmids if p not in pooled)
+        # One cluster that already covers most verified papers is enough.
+        verified_ids = {p["pmid"] for p in pubs}
+        if len(verified_ids & covered) >= CA_MIN_OVERLAP * len(verified_ids):
+            break
 
-    if ca_count == 0:
-        return pubs
-    if ca_count > 500:
-        print(f"    Computed Authors: cluster too large ({ca_count}), skipping")
+    if not pooled:
         return pubs
 
     verified_ids = {p["pmid"] for p in pubs}
-    overlap = len(verified_ids & set(ca_pmids))
-    if len(verified_ids) >= 2 and overlap / len(verified_ids) < CA_MIN_OVERLAP:
-        print(f"    Computed Authors: cluster contains only {overlap}/{len(verified_ids)} "
-              f"verified papers — likely a different person, keeping verified list")
+    print(f"    Computed Authors: {n_clusters} cluster(s), {len(pooled)} PMIDs "
+          f"(cover {len(verified_ids & covered)}/{len(verified_ids)} verified)")
+    new_ids = [p for p in pooled if p not in verified_ids]
+    if not new_ids:
         return pubs
-
-    print(f"    Computed Authors: found {ca_count} total PMIDs "
-          f"(contains {overlap}/{len(verified_ids)} verified)")
     ca_pubs, info = pubmed_fetch_summaries(
-        ca_pmids, search_term=search_term, verify_affiliation=True,
-        faculty_name=faculty_member["name"], known_orcid=known_orcid, return_info=True)
+        new_ids, search_term=search_term, verify_affiliation=True,
+        faculty_name=faculty_member["name"], known_orcid=known_orcid,
+        departments=_faculty_departments(faculty_member), dept_strict=dept_strict,
+        return_info=True)
     ca_pubs = _filter_recent_pubs(ca_pubs)
     if info["orcid_conflict"]:
-        print(f"    Computed Authors: cluster mixes two ORCID identities — keeping verified list")
+        print(f"    Computed Authors: cluster mixes two ORCID identities — not adding")
         return pubs
-    if len(ca_pubs) >= 2:
-        faculty_member["pubmed_count"] = ca_count
-        faculty_member["pubmed_search"] = f"ComputedAuthors:{search_term}"
-        if info["orcid"] and not faculty_member.get("pubmed_orcid"):
-            faculty_member["pubmed_orcid"] = info["orcid"]
-        return ca_pubs
-    print(f"    Computed Authors: cluster failed re-verification ({len(ca_pubs)} confirmed) — keeping original")
-    return pubs
+    if not ca_pubs:
+        return pubs
+    print(f"    Computed Authors: +{len(ca_pubs)} verified papers")
+    faculty_member["pubmed_search"] = f"ComputedAuthors:{search_term}"
+    if info["orcid"] and not faculty_member.get("pubmed_orcid"):
+        faculty_member["pubmed_orcid"] = info["orcid"]
+    merged = pubs + ca_pubs
+
+    def _year_key(p):
+        try:
+            return int(p.get("year") or 0)
+        except (TypeError, ValueError):
+            return 0
+    merged.sort(key=_year_key, reverse=True)
+    faculty_member["pubmed_count"] = len(set(pooled) | verified_ids)
+    return merged
 
 
 def _hide_unverified(faculty_member, pubs, reason):
@@ -2227,7 +2333,8 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
     elif result["ids"]:
         pubs, info = pubmed_fetch_summaries(
             result["ids"], search_term=search_term, verify_affiliation=True,
-            faculty_name=name, known_orcid=profile_orcid, return_info=True)
+            faculty_name=name, known_orcid=profile_orcid,
+            departments=_faculty_departments(faculty_member), return_info=True)
         anchor_orcid = profile_orcid or info["orcid"]
         if info["orcid_conflict"]:
             pubs = _hide_unverified(faculty_member, pubs,
@@ -2236,8 +2343,9 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
         else:
             if anchor_orcid:
                 faculty_member["pubmed_orcid"] = anchor_orcid
-            pubs = _upgrade_with_computed_authors(faculty_member, pubs, search_term,
-                                                  target_lastname, known_orcid=anchor_orcid)
+            pubs = _upgrade_with_computed_authors(
+                faculty_member, pubs, search_term, target_lastname, known_orcid=anchor_orcid,
+                dept_strict=info.get("resolved_by_department", False))
 
     # ── 4. ORCID fallback — only when name search was weak ────────────────────
     name_search_weak = (
@@ -2267,7 +2375,8 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
                                                     verify_affiliation=True,
                                                     faculty_name=name,
                                                     known_orcid=orcid_id,
-                                                    require_strict_anchor=True)
+                                                    require_strict_anchor=True,
+                                                    departments=_faculty_departments(faculty_member))
                 if len(orcid_pubs) > len(pubs):
                     print(f"    ORCID: {len(orcid_pubs)} papers (better than name search's {len(pubs)})")
                     for k in ("pubmed_unverified_pmids", "pubmed_flag_reason",
