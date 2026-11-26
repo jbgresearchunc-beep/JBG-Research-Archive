@@ -495,6 +495,16 @@ check("MyNCBI: non-author dropped, name-search + CA papers added",
       (["800", "801", "803", "804"], "MyNCBI:henry.earp.1"))
 s.fetch_pmids_by_author_id = _orig_bib
 
+# R: hand corrections file — exclude / include specific PMIDs
+import json as _json, tempfile as _tf, os as _os
+_cp = _os.path.join(_tf.mkdtemp(), "paper_corrections.json")
+_json.dump({"shawn d. hingtgen": {"exclude": ["41077309"], "include": ["800"]}}, open(_cp, "w"))
+fl = [{"name": "Shawn D. Hingtgen", "publications": [{"pmid": "41077309", "year": "2026"},
+                                                     {"pmid": "999", "year": "2025"}]}]
+s.apply_paper_corrections(fl, path=_cp)
+check("Corrections: excluded PMID removed, included PMID fetched and added",
+      sorted(p["pmid"] for p in fl[0]["publications"]), ["800", "999"])
+
 print()
 print(f"{len(FAILS)} failure(s)" if FAILS else "All tests passed.")
 sys.exit(1 if FAILS else 0)
