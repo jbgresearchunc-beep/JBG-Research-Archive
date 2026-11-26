@@ -359,6 +359,25 @@ f = enrich("Nneka Okafor", [])
 check("E2E H: same-name ORCID record with no UNC paper rejected", f["publications"], [])
 s.search_orcid_by_name = lambda name: (None, None, None)
 
+# I: plain author names must NOT be quoted — quoting disables PubMed's
+# truncation, so "Patel K"[Author] missed 'Patel KP' (PMID 36508317, Kunal P
+# Patel, UNC PCCM) and "Flower Kori"[Author] missed 'Flower, Kori B'.
+check("Search: 'Patel K' unquoted", s._author_clause("Patel K"), "Patel K[Author]")
+check("Search: 'Flower Kori' unquoted", s._author_clause("Flower Kori"), "Flower Kori[Author]")
+check("Search: apostrophe surname unquoted", s._author_clause("O'Shea TM"), "O'Shea TM[Author]")
+check("Search: particle surname unquoted", s._author_clause("Van Le L"), "Van Le L[Author]")
+check("Search: non-plain term stays quoted", s._author_clause("Stürmer T"), '"Stürmer T"[Author]')
+ident = s.build_author_identity("Kunal Patel", "Patel K")
+rec = s._evaluate_article(article("36508317",
+        author("Mainardi", "Anne S", "AS", [OTHER]),
+        author("Patel", "Kunal P", "KP", ["Division of Pulmonary and Critical Care Medicine, "
+               "University of North Carolina at Chapel Hill, Chapel Hill, North Carolina."])), ident)[1]
+check("Kunal P Patel (middle initial) passes strict check", s._strict_pass(rec, ident)[0], True)
+for wrong_fore, ini in [("Kinjal", "K"), ("Kripa", "K"), ("Kamal", "K")]:
+    rec = s._evaluate_article(article("1", author("Patel", wrong_fore, ini, [UNC])), ident)[1]
+    check(f"{wrong_fore} Patel rejected for Kunal Patel", s._strict_pass(rec, ident)[0], False)
+
 print()
 print(f"{len(FAILS)} failure(s)" if FAILS else "All tests passed.")
 sys.exit(1 if FAILS else 0)
+

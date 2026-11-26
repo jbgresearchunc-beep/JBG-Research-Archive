@@ -22,7 +22,7 @@ from html.parser import HTMLParser
 # scheduled full runs re-enrich everyone instead of resuming stale results.
 # The resume logic only skips faculty whose stored version matches this.
 # ---------------------------------------------------------------------------
-PIPELINE_VERSION = "2026.11.26-strict-author-match-v3"
+PIPELINE_VERSION = "2026.11.26-strict-author-match-v4"
 
 # How many years back to search for publications. Rolling, not a fixed year —
 # recalculated from the actual run date each time so it stays current
@@ -1277,7 +1277,30 @@ def build_pubmed_search_string(name):
     return f"{last} {first_parts[0]}"
 
 
-def pubmed_search(search_term, affiliation="University of North Carolina", max_results=300):
+ESEARCH_PAGE = 300
+SEARCH_MAX_RESULTS = 900
+
+_PLAIN_AUTHOR_TERM = re.compile(r"^[A-Za-z][A-Za-z' \-]*$")
+
+
+def _author_clause(search_term):
+    """
+    PubMed author clause. A plain name is left UNQUOTED so PubMed's author
+    search applies its normal truncation: 'Patel K'[Author] then matches
+    'Patel KP' and 'Flower Kori'[Author] matches 'Flower, Kori B'. Quoting the
+    name ("Patel K"[Author]) turns that off and silently drops every paper where
+    the faculty member used a middle initial (Kunal P Patel, Kori B Flower).
+    Strict author verification downstream removes the extra same-surname hits.
+    Anything that isn't a plain name (manual overrides with odd characters)
+    keeps the old quoted form.
+    """
+    term = search_term.strip()
+    if _PLAIN_AUTHOR_TERM.match(term):
+        return f"{term}[Author]"
+    return f'"{term}"[Author]'
+
+
+def pubmed_search(search_term, affiliation="University of North Carolina", max_results=SEARCH_MAX_RESULTS):
     """
     Query PubMed and return list of PMIDs from the last PUBLICATION_WINDOW_YEARS.
     search_term: either a name-based string like 'Doe JA' or an ORCID.
@@ -1290,41 +1313,50 @@ def pubmed_search(search_term, affiliation="University of North Carolina", max_r
     if search_term.startswith("ORCID:"):
         orcid = search_term.replace("ORCID:", "")
         query = f'{orcid}[auid] AND "{affiliation}"[Affiliation] AND ("{start_year}"[PDAT] : "{current_year}"[PDAT])'
-    elif affiliation:
-        query = f'"{search_term}"[Author] AND "{affiliation}"[Affiliation] AND ("{start_year}"[PDAT] : "{current_year}"[PDAT])'
     else:
-        # No affiliation filter — used as last resort for recently recruited faculty
-        query = f'"{search_term}"[Author] AND ("{start_year}"[PDAT] : "{current_year}"[PDAT])'
+        author = _author_clause(search_term)
+        if affiliation:
+            query = f'{author} AND "{affiliation}"[Affiliation] AND ("{start_year}"[PDAT] : "{current_year}"[PDAT])'
+        else:
+            # No affiliation filter — used as last resort for recently recruited faculty
+            query = f'{author} AND ("{start_year}"[PDAT] : "{current_year}"[PDAT])'
 
-    params = urllib.parse.urlencode({
-        "db": "pubmed",
-        "term": query,
-        "retmax": max_results,
-        "retmode": "json",
-        "sort": "date",
-        "tool": "unc-research-explorer",
-        "email": PUBMED_EMAIL,
-        **({"api_key": NCBI_API_KEY} if NCBI_API_KEY else {}),
-    })
-    url = PUBMED_BASE + "esearch.fcgi?" + params
-
-    try:
+    def _page(retstart, retmax):
+        params = urllib.parse.urlencode({
+            "db": "pubmed",
+            "term": query,
+            "retstart": retstart,
+            "retmax": retmax,
+            "retmode": "json",
+            "sort": "pub_date",   # newest first ("date" is not a valid value and was ignored)
+            "tool": "unc-research-explorer",
+            "email": PUBMED_EMAIL,
+            **({"api_key": NCBI_API_KEY} if NCBI_API_KEY else {}),
+        })
+        url = PUBMED_BASE + "esearch.fcgi?" + params
         for attempt in range(3):
             try:
-                with urllib.request.urlopen(url, timeout=10) as resp:
+                with urllib.request.urlopen(url, timeout=15) as resp:
                     data = json.loads(resp.read())
                 result = data.get("esearchresult", {})
-                return {
-                    "count": int(result.get("count", 0)),
-                    "ids": result.get("idlist", []),
-                }
+                return int(result.get("count", 0)), result.get("idlist", [])
             except urllib.error.HTTPError as e:
                 if e.code == 429:
-                    wait = 2 ** attempt
-                    time.sleep(wait)
+                    time.sleep(2 ** attempt)
                     continue
                 raise
-        return {"count": 0, "ids": []}
+        return 0, []
+
+    try:
+        count, ids = _page(0, min(max_results, ESEARCH_PAGE))
+        # Common names (e.g. 'Wang L') can exceed one page — keep paging to max_results.
+        while len(ids) < min(count, max_results):
+            time.sleep(PUBMED_SLEEP)
+            _, more = _page(len(ids), min(ESEARCH_PAGE, max_results - len(ids)))
+            if not more:
+                break
+            ids.extend(more)
+        return {"count": count, "ids": ids}
     except Exception as e:
         print(f"    PubMed search error for '{search_term}': {e}")
         return {"count": 0, "ids": []}
@@ -2119,7 +2151,7 @@ def _pubmed_name_search_with_fallbacks(name, initial_term):
       3. Single-initial fallback (e.g. 'Hanks Brent' → 'Hanks B')
       4. No-affiliation search (catches recent recruits at prior institutions)
     """
-    result = pubmed_search(initial_term, max_results=300)
+    result = pubmed_search(initial_term, max_results=SEARCH_MAX_RESULTS)
     if result["count"] > 0:
         return initial_term, result, False
 
@@ -2131,7 +2163,7 @@ def _pubmed_name_search_with_fallbacks(name, initial_term):
         initials = "".join(p[0] for p in parts[:-1] if p and p[0].isalpha())
         fallback = f"{last} {initials}"
         if fallback != initial_term:
-            r = pubmed_search(fallback, max_results=300)
+            r = pubmed_search(fallback, max_results=SEARCH_MAX_RESULTS)
             if r["count"] > 0:
                 print(f"    Fallback: '{initial_term}' → '{fallback}' ({r['count']} results)")
                 return fallback, r, False
@@ -2141,7 +2173,7 @@ def _pubmed_name_search_with_fallbacks(name, initial_term):
     if len(hint_parts) == 2 and len(hint_parts[1]) > 1:
         alt = f"{hint_parts[0]} {hint_parts[1][0]}"
         if alt != initial_term:
-            r = pubmed_search(alt, max_results=300)
+            r = pubmed_search(alt, max_results=SEARCH_MAX_RESULTS)
             if r["count"] > 0:
                 print(f"    Fallback (hint initial): '{initial_term}' → '{alt}' ({r['count']} results)")
                 return alt, r, False
@@ -2156,7 +2188,7 @@ def _pubmed_name_search_with_fallbacks(name, initial_term):
             if len(two_initials) >= 2:
                 two_init = f"{term_parts[0]} {two_initials}"
                 if two_init != initial_term:
-                    r = pubmed_search(two_init, max_results=300)
+                    r = pubmed_search(two_init, max_results=SEARCH_MAX_RESULTS)
                     if r["count"] > 0:
                         print(f"    Fallback (two initials): '{initial_term}' → '{two_init}' ({r['count']} results)")
                         return two_init, r, False
@@ -2165,7 +2197,7 @@ def _pubmed_name_search_with_fallbacks(name, initial_term):
     term_parts = initial_term.split()
     has_initials = len(term_parts) >= 2 and len(term_parts[-1]) <= 2 and term_parts[-1].isalpha()
     if has_initials:
-        r = pubmed_search(initial_term, affiliation="", max_results=300)
+        r = pubmed_search(initial_term, affiliation="", max_results=SEARCH_MAX_RESULTS)
         if r["count"] > 0:
             print(f"    No-affiliation fallback: '{initial_term}' found {r['count']} results (recent recruit?)")
             return initial_term, r, True
@@ -2373,7 +2405,7 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
         bib_url = clean_hint.replace("MYNCBI:", "")
         author_id = bib_url.rstrip("/").split("/myncbi/")[-1].split("/")[0]
         print(f"    MyNCBI: fetching bibliography for '{author_id}'")
-        pmids, count = fetch_pmids_by_author_id(author_id, max_results=300)
+        pmids, count = fetch_pmids_by_author_id(author_id, max_results=SEARCH_MAX_RESULTS)
         print(f"    MyNCBI: found {count} PMIDs on bibliography page")
         if pmids:
             # The faculty member's own curated list — trusted, so no UNC
