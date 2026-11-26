@@ -22,7 +22,7 @@ from html.parser import HTMLParser
 # scheduled full runs re-enrich everyone instead of resuming stale results.
 # The resume logic only skips faculty whose stored version matches this.
 # ---------------------------------------------------------------------------
-PIPELINE_VERSION = "2026.11.26-strict-author-match-v4"
+PIPELINE_VERSION = "2026.11.26-strict-author-match-v5"
 
 # How many years back to search for publications. Rolling, not a fixed year —
 # recalculated from the actual run date each time so it stays current
@@ -1706,6 +1706,7 @@ def _evaluate_article(article_xml, identity):
             if _letters(last) in identity["surnames"]:
                 orcid_m = re.search(r'<Identifier[^>]*Source="ORCID"[^>]*>(.*?)</Identifier>', auth_block)
                 candidates.append({
+                    "initials": _block_initials(fore, inits),
                     "name_ok": name_matches_identity(_block_initials(fore, inits), identity, fore),
                     "has_affs": bool(block_affs),
                     "unc": any_affiliation_is_unc(block_affs),
@@ -1720,7 +1721,11 @@ def _evaluate_article(article_xml, identity):
     # Article-level affiliations (older records keep them outside author blocks)
     all_affs = [re.sub(r"<[^>]+>", "", a) for a in
                 re.findall(r"<Affiliation>(.*?)</Affiliation>", article_xml, re.DOTALL)]
-    pub = {"pmid": pmid, "title": title, "journal": journal, "year": year, "authors": authors}
+    # PubMed XML keeps characters as entities ('Ch&#xe9;ry', '&#x3b1;'); the
+    # site shows text literally, so decode them here.
+    _dec = lambda t: html_lib.unescape(html_lib.unescape(t or "")).replace("\u00a0", " ")
+    pub = {"pmid": pmid, "title": _dec(title), "journal": _dec(journal), "year": year,
+           "authors": [_dec(a) for a in authors]}
     record = {
         "pmid": pmid,
         "candidates": candidates,
@@ -1798,6 +1803,30 @@ def _mentions_department(aff_text, dept_patterns):
     return bool(dept_patterns) and any(p.search(aff_text or "") for p in dept_patterns)
 
 
+def _same_full_initials(strict, contenders, identity):
+    """
+    Two ORCID iDs both pass strict at UNC. When the faculty name carries a
+    middle initial and EVERY strictly passing paper under EVERY contending iD
+    lists the author with those exact full initials (first + middle, e.g. 'JPY'),
+    it is one person who has two ORCID records, not two UNC people who share a
+    name. A bare first initial (e.g. 'Richter M') is never enough.
+    """
+    given = identity.get("given") or []
+    if len(given) < 2:
+        return False
+    want = "".join(g[0] for g in given).upper()
+    for o in contenders:
+        blocks = [b for ok, b, _ in strict.values() if ok and b and b["orcid"] == o]
+        for b in blocks:
+            got = (b.get("initials") or "").upper()
+            # 'JP' or 'JPY' both fit Jenny P. Y.; 'J' alone or 'JM' do not.
+            if len(got) < 2 or not (want.startswith(got) or got.startswith(want)):
+                return False
+        if not blocks:
+            return False
+    return True
+
+
 def select_verified_publications(records_and_pubs, identity, known_orcid=None,
                                  require_strict_anchor=False, dept_patterns=None,
                                  dept_strict=False):
@@ -1831,6 +1860,7 @@ def select_verified_publications(records_and_pubs, identity, known_orcid=None,
     # Learn the ORCID anchor from strict passes.
     tally = Counter(b["orcid"] for ok, b, _ in strict.values() if ok and b and b["orcid"])
     anchor, conflict, by_dept = known_orcid, False, False
+    extra_orcids = set()
     if not anchor and tally:
         contenders = [o for o, c in tally.most_common() if c >= 2]
         if len(contenders) == 1:
@@ -1844,6 +1874,10 @@ def select_verified_publications(records_and_pubs, identity, known_orcid=None,
             h1, h2 = hits[ranked[0]], hits[ranked[1]]
             if h1 >= 2 and h1 >= 3 * h2:
                 anchor, by_dept = ranked[0], True
+            elif _same_full_initials(strict, contenders, identity):
+                # One person with two ORCID records (e.g. Jenny P. Y. Ting as
+                # 'Ting JPY' under both iDs) — not two people. Accept both iDs.
+                anchor, extra_orcids = contenders[0], set(contenders[1:])
             else:
                 conflict = True
 
@@ -1854,7 +1888,7 @@ def select_verified_publications(records_and_pubs, identity, known_orcid=None,
             continue
         ok, block, reason = strict[rec["pmid"]]
         orcid = block["orcid"] if block else None
-        if ok and anchor and orcid and orcid != anchor:
+        if ok and anchor and orcid and orcid != anchor and orcid not in extra_orcids:
             ok, reason = False, "different-ORCID"
         if (ok and (by_dept or dept_strict) and not orcid
                 and not _mentions_department(block["affs"], dept_patterns)):
@@ -1865,7 +1899,7 @@ def select_verified_publications(records_and_pubs, identity, known_orcid=None,
             pubs.append(pub)
             n_strict += 1
             continue
-        if anchor and any(c["orcid"] == anchor and c["name_ok"] is not False
+        if anchor and any(c["orcid"] in ({anchor} | extra_orcids) and c["name_ok"] is not False
                           for c in rec["candidates"]):
             pubs.append(pub)
             n_orcid += 1
@@ -2951,6 +2985,26 @@ def scrape_only(config_path="scraper/departments.json",
         print(f"  Skipped {profiles_skipped_offsite} off-site profile links (not UNC SOM / Lineberger pages)")
     if profiles_skipped_blocked:
         print(f"  Kept {profiles_skipped_blocked} faculty whose profile page was blocked (403) — no PubMed hint")
+
+    # Profile pages now 403 (bot check), so MyNCBI bibliography links that used
+    # to come from them are lost. Fall back to the links saved from earlier runs
+    # (scraper/saved_myncbi_hints.json) — a faculty-curated bibliography beats
+    # any name search.
+    saved_path = config_path.replace("departments.json", "saved_myncbi_hints.json")
+    try:
+        with open(saved_path) as sf:
+            saved_hints = {k.lower(): v for k, v in json.load(sf).items() if not k.startswith("_")}
+    except (OSError, ValueError):
+        saved_hints = {}
+    restored = 0
+    for f in all_faculty:
+        if not f.get("pubmed_hint"):
+            h = saved_hints.get(f["name"].lower().strip())
+            if h:
+                f["pubmed_hint"] = h
+                restored += 1
+    if restored:
+        print(f"  Restored {restored} saved MyNCBI bibliography link(s) (profile pages blocked)")
 
     # ---- Safety guard (raw file). The Nov 1 2026 run committed a raw file
     # with 603 of ~2,750 faculty because only the enrichment step had a guard.
