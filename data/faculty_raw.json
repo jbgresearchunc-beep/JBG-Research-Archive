@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T14:14:01.014406Z",
+  "generated_at": "2026-11-26T17:38:32.862485Z",
   "total_faculty": 2747,
   "departments": [
     "Medicine \u2014 Cardiology",
@@ -64,7 +64,8 @@
       "source": "wp_rest:ud_entry",
       "departments": [
         "Medicine \u2014 Cardiology"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1rmG4DkkTlb/bibliography/public"
     },
     {
       "name": "Jenna N. Skowronski",
@@ -95,7 +96,8 @@
       "source": "wp_rest:ud_entry",
       "departments": [
         "Medicine \u2014 Cardiology"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/peter.mason.3/bibliography/public"
     },
     {
       "name": "Leslie L Davis",
@@ -276,7 +278,8 @@
       "source": "wp_rest:ud_entry",
       "departments": [
         "Medicine \u2014 Cardiology"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1ZI-nziyYG5Q5/bibliography/public"
     },
     {
       "name": "Casey Gazda",
@@ -7539,7 +7542,8 @@
       "source": "wp_rest:ud_entry",
       "departments": [
         "Pediatrics"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/zachary.willis.2/bibliography/public"
     },
     {
       "name": "Matthew Vogt",
@@ -7720,7 +7724,8 @@
       "source": "wp_rest:ud_entry",
       "departments": [
         "Pediatrics"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/1NO-gAEzLz0kH/bibliography/public"
     },
     {
       "name": "Cameron McKinzie",
@@ -8216,7 +8221,8 @@
       "source": "wp_rest:ud_entry",
       "departments": [
         "Pediatrics"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/wayne.price.1/bibliography/public"
     },
     {
       "name": "Jacquelyn Patterson",
@@ -8226,7 +8232,8 @@
       "source": "wp_rest:ud_entry",
       "departments": [
         "Pediatrics"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/jacquelyn.patterson.2/bibliography/public"
     },
     {
       "name": "T. Michael O\u2019Shea",
@@ -8276,7 +8283,8 @@
       "source": "wp_rest:ud_entry",
       "departments": [
         "Pediatrics"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/wesley.jackson.2/bibliography/public"
     },
     {
       "name": "Lauren Frazer",
@@ -8306,7 +8314,8 @@
       "source": "wp_rest:ud_entry",
       "departments": [
         "Pediatrics"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/misty.good.1/bibliography/public"
     },
     {
       "name": "Edwin Kim",
@@ -8336,7 +8345,8 @@
       "source": "wp_rest:ud_entry",
       "departments": [
         "Pediatrics"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/nancie.maciver.1/bibliography/public"
     },
     {
       "name": "Sofia Aliaga",
@@ -8456,7 +8466,8 @@
       "source": "wp_rest:ud_entry",
       "departments": [
         "Pediatrics"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/paul.shea.2/bibliography/public"
     },
     {
       "name": "Stephanie Schwartz",
@@ -8486,7 +8497,8 @@
       "source": "wp_rest:ud_entry",
       "departments": [
         "Pediatrics"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/matthew.pizzuto.1/bibliography/public"
     },
     {
       "name": "Afsaneh Pirzadeh",
@@ -8697,7 +8709,8 @@
       "source": "wp_rest:ud_entry",
       "departments": [
         "Pediatrics"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/corinne.keet.1/bibliography/public"
     },
     {
       "name": "Michelle Hernandez",
@@ -8717,7 +8730,8 @@
       "source": "wp_rest:ud_entry",
       "departments": [
         "Pediatrics"
-      ]
+      ],
+      "pubmed_hint": "MYNCBI:https://www.ncbi.nlm.nih.gov/myncbi/allison.burbank.1/bibliography/public"
     },
     {
       "name": "Stephanie D. Davis",
