@@ -22,7 +22,7 @@ from html.parser import HTMLParser
 # scheduled full runs re-enrich everyone instead of resuming stale results.
 # The resume logic only skips faculty whose stored version matches this.
 # ---------------------------------------------------------------------------
-PIPELINE_VERSION = "2026.11.25-strict-author-match-v1"
+PIPELINE_VERSION = "2026.11.26-strict-author-match-v2"
 
 # How many years back to search for publications. Rolling, not a fixed year —
 # recalculated from the actual run date each time so it stays current
