@@ -22,7 +22,7 @@ from html.parser import HTMLParser
 # scheduled full runs re-enrich everyone instead of resuming stale results.
 # The resume logic only skips faculty whose stored version matches this.
 # ---------------------------------------------------------------------------
-PIPELINE_VERSION = "2026.11.26-strict-author-match-v7"
+PIPELINE_VERSION = "2026.11.26-strict-author-match-v8"
 
 # How many years back to search for publications. Rolling, not a fixed year —
 # recalculated from the actual run date each time so it stays current
@@ -1354,6 +1354,7 @@ def pubmed_search(search_term, affiliation="University of North Carolina", max_r
             ids.extend(more)
         return {"count": count, "ids": ids}
     except Exception as e:
+        FETCH_FAILURES[0] += 1
         print(f"    PubMed search error for '{search_term}': {e}")
         return {"count": 0, "ids": []}
 
@@ -2003,6 +2004,11 @@ def select_verified_publications(records_and_pubs, identity, known_orcid=None,
     return pubs, info
 
 
+# Count of PubMed fetches that failed outright during the current faculty
+# member's enrichment (reset per faculty in the Step 3 loop).
+FETCH_FAILURES = [0]
+
+
 def _pubmed_fetch_records_batch(pmids, identity):
     """
     efetch one batch of PMIDs and return [(pub, record), ...] — no filtering.
@@ -2022,25 +2028,33 @@ def _pubmed_fetch_records_batch(pmids, identity):
     url = PUBMED_BASE + "efetch.fcgi?" + params
 
     xml_data = None
-    for attempt in range(3):
+    for attempt in range(5):
         try:
-            with urllib.request.urlopen(url, timeout=30) as resp:
+            with urllib.request.urlopen(url, timeout=60) as resp:
                 xml_data = resp.read().decode("utf-8", errors="replace")
+            if "<PubmedArticleSet" not in xml_data:
+                raise ValueError("efetch returned no article set")
             break
         except urllib.error.HTTPError as e:
-            if e.code == 429:
-                wait = 2 ** attempt  # 1s, 2s, 4s
-                print(f"    PubMed efetch 429 — waiting {wait}s before retry {attempt+1}/3")
+            if e.code == 429 or e.code >= 500:
+                wait = 2 ** attempt  # 1, 2, 4, 8, 16 s
+                print(f"    PubMed efetch {e.code} — waiting {wait}s before retry {attempt+1}/5")
                 time.sleep(wait)
+                xml_data = None
             else:
-                print(f"    PubMed efetch error: {e}, falling back to esummary")
-                return pubmed_fetch_records_fallback(pmids, identity)
-        except Exception as e:
-            print(f"    PubMed efetch error: {e}, falling back to esummary")
-            return pubmed_fetch_records_fallback(pmids, identity)
+                print(f"    PubMed efetch error: {e}")
+                break
+        except Exception as e:  # timeouts, dropped connections, truncated reads
+            wait = 2 ** attempt
+            print(f"    PubMed efetch error ({type(e).__name__}: {e}) — retry {attempt+1}/5 in {wait}s")
+            time.sleep(wait)
+            xml_data = None
 
     if xml_data is None:
-        print(f"    PubMed efetch failed after 3 retries, falling back to esummary")
+        # Couldn't get author-level detail. Record the failure so the caller
+        # keeps this faculty member's previous papers instead of hiding them.
+        FETCH_FAILURES[0] += 1
+        print(f"    PubMed efetch failed for {len(pmids)} PMIDs — falling back to esummary")
         return pubmed_fetch_records_fallback(pmids, identity)
 
     out = []
@@ -2543,8 +2557,38 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
                                                 faculty_name=name, return_info=True,
                                                 require_name_on_paper=True)
             pubs = _filter_recent_pubs(pubs)
-            if info["orcid"]:
-                faculty_member["pubmed_orcid"] = info["orcid"]
+            # Many My Bibliography lists are grant-reporting lists (center
+            # papers the faculty member isn't on) and miss their own recent
+            # work — Shelton Earp's had 5 of his own papers among 48. Add the
+            # strictly verified name-search results on top.
+            probe = {k: v for k, v in faculty_member.items()
+                     if k not in ("publications", "pubmed_hint")}
+            try:
+                enrich_faculty_with_pubmed(probe, pubmed_string=None)
+            except Exception as e:
+                print(f"    (name search alongside MyNCBI failed: {e})")
+                probe = {}
+            have = {p["pmid"] for p in pubs}
+            extra = [p for p in (probe.get("publications") or []) if p["pmid"] not in have]
+            if probe.get("pubmed_ambiguous"):
+                extra = []
+            # The bibliography's own (author-checked) papers can also seed
+            # NCBI's Computed Authors cluster; cluster papers are strictly verified.
+            try:
+                ca_probe = {"name": name, "department": faculty_member.get("department"),
+                            "departments": faculty_member.get("departments")}
+                ca = _upgrade_with_computed_authors(ca_probe, pubs, build_pubmed_search_string(name),
+                                                    known_orcid=info["orcid"])
+                seen = have | {p["pmid"] for p in extra}
+                extra += [p for p in ca if p["pmid"] not in seen]
+            except Exception as e:
+                print(f"    (Computed Authors alongside MyNCBI failed: {e})")
+            if extra:
+                print(f"    MyNCBI + verified name search: +{len(extra)} papers")
+                pubs = sorted(pubs + extra, key=lambda p: p.get("year") or "", reverse=True)
+            orcid = info["orcid"] or probe.get("pubmed_orcid")
+            if orcid:
+                faculty_member["pubmed_orcid"] = orcid
             faculty_member.update({
                 "pubmed_search": f"MyNCBI:{author_id}", "pubmed_count": count,
                 "pubmed_verified": len(pubs), "pubmed_ambiguous": False, "publications": pubs
@@ -2746,6 +2790,21 @@ def _read_total(path):
         return int(d.get("total_faculty") or len(d.get("faculty", [])))
     except Exception:
         return 0
+
+
+def _read_total_pubs(path):
+    try:
+        with open(path) as fh:
+            d = json.load(fh)
+        return sum(len(f.get("publications") or []) for f in d.get("faculty", []))
+    except Exception:
+        return 0
+
+
+# Refuse a full run whose total publication count falls below this share of
+# the last committed file — a PubMed outage looks like everyone losing papers.
+# Set ALLOW_PUB_DROP=1 for a deliberate big cleanup.
+PUB_DROP_THRESHOLD = 0.7
 
 
 def _write_json(path, obj):
@@ -3152,6 +3211,7 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
     # overwritten it with this run's own data — so the Nov 8 run compared
     # 604 against 600 and passed, replacing 2,751 faculty with 604.)
     output_baseline = _read_total(output_path)
+    pubs_baseline = _read_total_pubs(output_path)
     checkpoint_path = output_path.replace(".json", "_checkpoint.json")
 
     with open(raw_input_path) as f:
@@ -3189,6 +3249,7 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
     # must re-enrich everyone, while a timed-out run resuming minutes later
     # (same version) correctly skips completed work.
     already_done = {}
+    prev_any = {}          # last published record, any version — fallback on PubMed errors
     stale_skipped = 0
     # Read the last committed output, then any checkpoint left by a run that
     # timed out (checkpoint entries win — they're newer).
@@ -3201,6 +3262,8 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
             for pf in prev.get("faculty", []):
                 if "pubmed_verified" not in pf and "publications" not in pf:
                     continue
+                if pf.get("publications"):
+                    prev_any.setdefault(pf["name"].lower().strip(), pf)
                 if pf.get("pipeline_version") == PIPELINE_VERSION:
                     already_done[pf["name"].lower().strip()] = pf
                 elif resume_path == output_path:
@@ -3216,6 +3279,7 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
 
     # ---- Step 3: PubMed enrichment ----
     print("\n=== Step 3: Enriching with PubMed ===")
+    kept_after_errors = []
     for i, f in enumerate(all_faculty):
         name_key = f["name"].lower().strip()
         # Skip only if enriched by the CURRENT pipeline version
@@ -3230,10 +3294,13 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
             continue
 
         print(f"  [{i+1}/{len(all_faculty)}] {f['name']}")
+        FETCH_FAILURES[0] = 0
+        crashed = False
         try:
             enrich_faculty_with_pubmed(f, pubmed_string=f.get("pubmed_hint"))
         except Exception as e:
             # One bad record must never kill the whole run — log and continue.
+            crashed = True
             print(f"    ⚠ ERROR enriching {f['name']}: {type(e).__name__}: {e}")
             f.setdefault("pubmed_search", "ERROR")
             f.setdefault("pubmed_count", 0)
@@ -3241,6 +3308,21 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
             f.setdefault("pubmed_ambiguous", False)
             f.setdefault("publications", [])
             f["pipeline_version"] = PIPELINE_VERSION
+        old_rec = prev_any.get(name_key)
+        if ((crashed or FETCH_FAILURES[0]) and old_rec
+                and len(f.get("publications") or []) < len(old_rec.get("publications") or [])):
+            # A PubMed outage/timeout must not wipe a real list (Todd Baron,
+            # 81 → 0 on Nov 26). Keep the last published papers, and leave the
+            # OLD pipeline version on them so the next run retries this person.
+            for k in ("pubmed_search", "pubmed_count", "pubmed_verified", "pubmed_ambiguous",
+                      "publications", "pubmed_recent_recruit", "pipeline_version",
+                      "pubmed_orcid", "pubmed_unverified_pmids", "pubmed_flag_reason"):
+                if k in old_rec:
+                    f[k] = old_rec[k]
+                else:
+                    f.pop(k, None)
+            kept_after_errors.append(f["name"])
+            print(f"    ⚠ PubMed errors — kept previous {len(f['publications'])} papers; will retry next run")
         time.sleep(PUBMED_SLEEP)
 
         # Periodic checkpoint: save progress every 100 faculty so a late
@@ -3256,6 +3338,11 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
             }
             _write_json(checkpoint_path, checkpoint)
             print(f"    💾 checkpoint saved at {i+1}/{len(all_faculty)} → {checkpoint_path}")
+
+    if kept_after_errors:
+        print(f"\n⚠ PubMed errors for {len(kept_after_errors)} faculty — kept their previous papers "
+              f"(will retry next run): {', '.join(kept_after_errors[:15])}"
+              f"{' …' if len(kept_after_errors) > 15 else ''}")
 
     # ---- Step 4: NIH RePORTER ----
     if not skip_nih:
@@ -3283,6 +3370,12 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
     # expected to have far fewer faculty than the full committed dataset.
     if not dept_filter:
         ok, msg = _check_run_size(len(all_faculty), output_baseline, "faculty")
+        new_pubs = sum(len(f.get("publications") or []) for f in all_faculty)
+        if ok and pubs_baseline > 1000 and new_pubs < pubs_baseline * PUB_DROP_THRESHOLD \
+                and os.environ.get("ALLOW_PUB_DROP") != "1":
+            ok, msg = False, (f"publications: previous file showed {pubs_baseline} papers; this run "
+                              f"only {new_pubs} ({new_pubs/pubs_baseline:.0%}). Looks like a PubMed "
+                              f"outage, not real change. (Set ALLOW_PUB_DROP=1 if intended.)")
         if not ok:
             fail_path = output_path.replace(".json", "_FAILED_RUN.json")
             _write_json(fail_path, {
