@@ -1,518 +1,1138 @@
 {
-  "generated_at": "2026-11-19T17:11:48.724523Z",
-  "total_faculty": 51,
+  "generated_at": "2026-11-26T03:34:22.806064Z",
+  "total_faculty": 113,
   "departments": [
-    "Medicine \u2014 Cardiology"
+    "Radiology"
   ],
   "faculty": [
     {
-      "name": "Arash Nargesi",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/arash-nargesi-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Connor Lutz",
+      "profile_url": "https://www.med.unc.edu/radiology/people/connor-lutz/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Oludamilola A. Aladesanmi",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/oludamilola-dami-a-aladesanmi-md-mph/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Jarunee Intrapiromkul",
+      "profile_url": "https://www.med.unc.edu/radiology/people/jarunee-intrapiromkul-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Gordon R. Reeves",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/gordon-r-reeves-md-mpt/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Yoon Seong Choi",
+      "profile_url": "https://www.med.unc.edu/radiology/people/yoon-seong-choi/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Jenna N. Skowronski",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/jenna-n-skowronski-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Naiim Ali",
+      "profile_url": "https://www.med.unc.edu/radiology/people/naiim-ali-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "S. Peter Sheng",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/s-peter-sheng-md-mph/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Ellen Jones",
+      "profile_url": "https://www.med.unc.edu/radiology/people/ellen-jones/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Peter Mason",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/peter-mason-md-mph/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Andrew Campbell",
+      "profile_url": "https://www.med.unc.edu/radiology/people/andrew-campbell/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Leslie L Davis",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/leslie-l-davis-phd-rn-anp-bc-fpcna-faanp-faha/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Dan Hu",
+      "profile_url": "https://www.med.unc.edu/radiology/people/dan-hu-phd/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Zack Deyo",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/zack-deyo-pharmd-bcps-cpp/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Emily Ware",
+      "profile_url": "https://www.med.unc.edu/radiology/people/emily-ware/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Susan C. Gilchrist",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/susan-c-gilchrist-md-ms/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Junaid Raja",
+      "profile_url": "https://www.med.unc.edu/radiology/people/junaid-raja-md-msph-ms-facp/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Sameer Prasada",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sameer-prasada-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Jnana Aditya Challa",
+      "profile_url": "https://www.med.unc.edu/radiology/people/aditya-jnana-challa-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "David C. Ishizawar",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/david-c-ishizawar-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Cagdas Topel",
+      "profile_url": "https://www.med.unc.edu/radiology/people/cagdas-topel-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Steven Scarfone",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/steven-scarfone/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Hui Wang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/hui-wang-phd/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Sheetal Patel",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sheetal-patel-do/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Leina Zerey",
+      "profile_url": "https://www.med.unc.edu/radiology/people/leina-zerey-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "William Mostertz",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/william-tripp-mostertz-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Yuli Jiang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/yuli-david-jiang-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Zachary S. Tugaoen",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/zachary-s-tugaoen-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Joe Vimal Raj",
+      "profile_url": "https://www.med.unc.edu/radiology/people/joe-vimal-raj-mbbs-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Kevin A. Friede",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kevin-a-friede-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Minh-Tri Dang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/minh-tri-tri-dang/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Essraa Bayoumi",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/essraa-bayoumi-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Carrie Anne Orlikowski",
+      "profile_url": "https://www.med.unc.edu/radiology/people/carrie-anne-orlikowski-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Nora Tolbert",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/nora-tolbert-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Kingsley Asiedu",
+      "profile_url": "https://www.med.unc.edu/radiology/people/kingsley-asiedu-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Robert C. Wirka",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/robert-c-wirka-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Joshua Wallace",
+      "profile_url": "https://www.med.unc.edu/radiology/people/joshua-wallace-md-mph/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Elizabeth Volz",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/elizabeth-volz-md-facc/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Danielle Stevens",
+      "profile_url": "https://www.med.unc.edu/radiology/people/danielle-stevens-phd/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Tammy I. Long",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/tammy-i-long-agnp-msn-rn-ccrn/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Blaine T. Mischen",
+      "profile_url": "https://www.med.unc.edu/radiology/people/blaine-t-mischen-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Adam Moskowitz",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/adam-moskowitz/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Avni Patel",
+      "profile_url": "https://www.med.unc.edu/radiology/people/avni-patel-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Sudhir Prasada",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sudhir-prasada-md-facc/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Elijah Burton",
+      "profile_url": "https://www.med.unc.edu/radiology/people/elijah-burton-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Justin Vandermolen",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/justin-vandermolen/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Bradley Spieler",
+      "profile_url": "https://www.med.unc.edu/radiology/people/bradley-spieler-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Anthony J. Mazzella",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/anthony-mazzella/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Jeremy Jose",
+      "profile_url": "https://www.med.unc.edu/radiology/people/jeremy-jose-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Casey Gazda",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/casey-adams/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Emily J. Werder",
+      "profile_url": "https://www.med.unc.edu/radiology/people/emily-j-werder-phd/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Randall Borror",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/randall-borror-mba-pmp/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Fernando Augusto de Albuquerque Mendes Filho",
+      "profile_url": "https://www.med.unc.edu/radiology/people/fernando-augusto-de-albuquerque-mendes-filho-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Joseph A. Sivak",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/joseph-a-sivak-md-facc/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Romuald Ferre",
+      "profile_url": "https://www.med.unc.edu/radiology/people/romuald-ferre-md-frcpc-fsbi/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Carlos A. Espinoza",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/carlos-a-espinoza-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Bahareh Gholami",
+      "profile_url": "https://www.med.unc.edu/radiology/people/bahareh-gholami-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Faisal F. Syed",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/faisal-f-syed-m-b-ch-b/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Samuel Ostrum",
+      "profile_url": "https://www.med.unc.edu/radiology/people/samuel-ostrum-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Prabhat Kumar",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/prabhat-kumar-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Bahram Kiani",
+      "profile_url": "https://www.med.unc.edu/radiology/people/bahram-bobby-kiani-mha-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Matthew Baker",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/matthew-baker-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Rebecca Hansen",
+      "profile_url": "https://www.med.unc.edu/radiology/people/rebecca-hansen-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Ruihai Zhou",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/ruihai-zhou-md-msc-facc-rpvi/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Andrea Senter",
+      "profile_url": "https://www.med.unc.edu/radiology/people/andrea-andi-senter-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Thelsa Thomas Weickert",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/thelsa-thomas-weickert-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Meghan R. Clark",
+      "profile_url": "https://www.med.unc.edu/radiology/people/meghan-r-clark-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Stephanie Falk Martin",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/stephanie-falk-martin/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Alexandra K. Banathy",
+      "profile_url": "https://www.med.unc.edu/radiology/people/alexandra-alex-k-banathy/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Joseph S. Rossi",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/joe-rossi/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Uzay Emir",
+      "profile_url": "https://www.med.unc.edu/radiology/people/uzay-emir-phd/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Cody Deen",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/cody-deen/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Behrooz Masuodi",
+      "profile_url": "https://www.med.unc.edu/radiology/people/behrooz-masuodi-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Michael Yeung",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/michael-yeung-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Tony Jeanmenne",
+      "profile_url": "https://www.med.unc.edu/radiology/people/tony-jeanmenne-md/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "John P. Vavalle",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/john-p-vavalle-md-mhs/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Virginie Papadopoulou",
+      "profile_url": "https://www.med.unc.edu/radiology/people/virginie-papadopoulou-phd/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "George Stouffer",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/rick-stouffer/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Sarah DeRycke",
+      "profile_url": "https://www.med.unc.edu/radiology/people/sarah-derycke-2/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Anil K. Gehi",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/anil-k-gehi-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Joseph K.T. Lee",
+      "profile_url": "https://www.med.unc.edu/radiology/people/joseph-k-t-lee/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Alan Lee Hinderliter",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/alan-lee-hinderliter-md/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Paul L. Molina",
+      "profile_url": "https://www.med.unc.edu/radiology/people/paul-l-molina/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Tim Nichols",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/tim-nichols/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Danielle Durham",
+      "profile_url": "https://www.med.unc.edu/radiology/people/danielle-durham/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Sidney C. Smith",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/sidney-smith/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Marcelo Takahashi",
+      "profile_url": "https://www.med.unc.edu/radiology/people/marcelo-takahashi/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Ross Joseph Simpson",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/ross-simpson/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Bryan Harris",
+      "profile_url": "https://www.med.unc.edu/radiology/people/bryan-harris/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Patricia Pat-Yue Chang",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/patricia-chang/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Lourens du Pisanie",
+      "profile_url": "https://www.med.unc.edu/radiology/people/lourens-du-pisanie-jr/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Matthew A. Cavender",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/matthew-cavender/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Diane Armao",
+      "profile_url": "https://www.med.unc.edu/radiology/people/diane-armao/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Kirkwood Adams",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/kirkwood-adams/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Sarah J. Nyante",
+      "profile_url": "https://www.med.unc.edu/radiology/people/sarah-j-nyante/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Jeffrey Lawrence Klein",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/jeffrey-lawrence-klein/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Louise Henderson",
+      "profile_url": "https://www.med.unc.edu/radiology/people/louise-henderson/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Charles Hicks",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/charles-hicks/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Hong Yuan",
+      "profile_url": "https://www.med.unc.edu/radiology/people/hong-yuan/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
       ]
     },
     {
-      "name": "Brian Colwell Jensen",
-      "profile_url": "https://www.med.unc.edu/medicine/cardiology/people/brian-jensen/",
-      "department": "Medicine \u2014 Cardiology",
+      "name": "Pew-Thian Yap",
+      "profile_url": "https://www.med.unc.edu/radiology/people/pew-thian-yap/",
+      "department": "Radiology",
       "role": "",
       "source": "wp_rest:ud_entry",
       "departments": [
-        "Medicine \u2014 Cardiology"
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Zhengwang Wu",
+      "profile_url": "https://www.med.unc.edu/radiology/people/zhangweng-wu/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Zhanhong Wu",
+      "profile_url": "https://www.med.unc.edu/radiology/people/zhanhong-wu/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Li Wang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/li-wang/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Eric Muir",
+      "profile_url": "https://www.med.unc.edu/radiology/people/eric-muir/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Mingxia Liu",
+      "profile_url": "https://www.med.unc.edu/radiology/people/mingxia-liu/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Tengfei Li",
+      "profile_url": "https://www.med.unc.edu/radiology/people/tengfei-li/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Guoshi Li",
+      "profile_url": "https://www.med.unc.edu/radiology/people/guoshi-li/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Gang Li",
+      "profile_url": "https://www.med.unc.edu/radiology/people/gang-li/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Li-Ming Hsu",
+      "profile_url": "https://www.med.unc.edu/radiology/people/li-ming-hsu/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Zibo Li",
+      "profile_url": "https://www.med.unc.edu/radiology/people/zibo-li/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Eran Dayan",
+      "profile_url": "https://www.med.unc.edu/radiology/people/eran-dayan/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Wei-Tang Chang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/wei-tang-chang/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Sahar Ahmad",
+      "profile_url": "https://www.med.unc.edu/radiology/people/sahar-ahmad/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Courtney Evron",
+      "profile_url": "https://www.med.unc.edu/radiology/people/courtney-evron/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Alex Villalobos",
+      "profile_url": "https://www.med.unc.edu/radiology/people/alex-villalobos/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Priya Mody",
+      "profile_url": "https://www.med.unc.edu/radiology/people/priya-mody/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Nima Kokabi",
+      "profile_url": "https://www.med.unc.edu/radiology/people/nima-kokabi/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Nicole Keefe",
+      "profile_url": "https://www.med.unc.edu/radiology/people/nicole-keefe/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Hyeon Yu",
+      "profile_url": "https://www.med.unc.edu/radiology/people/hyeon-yu/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Gloria Salazar",
+      "profile_url": "https://www.med.unc.edu/radiology/people/gloria-salazar/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Charles T. Burke",
+      "profile_url": "https://www.med.unc.edu/radiology/people/charles-t-burke/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "David M. Mauro",
+      "profile_url": "https://www.med.unc.edu/radiology/people/david-m-mauro/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "William W. Pryor",
+      "profile_url": "https://www.med.unc.edu/radiology/people/william-will-w-pryor/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Lane Donnelly",
+      "profile_url": "https://www.med.unc.edu/radiology/people/lane-donnelly/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Melania Bula",
+      "profile_url": "https://www.med.unc.edu/radiology/people/melania-bula/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Carolina Guimaraes",
+      "profile_url": "https://www.med.unc.edu/radiology/people/carolina-guimaraes/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Kassie McCullagh",
+      "profile_url": "https://www.med.unc.edu/radiology/people/kassie-mccullagh/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Yueh Z. Lee",
+      "profile_url": "https://www.med.unc.edu/radiology/people/yueh-z-lee/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Sheng-Che Hung",
+      "profile_url": "https://www.med.unc.edu/radiology/people/sheng-che-alex-hung/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Benjamin Huang",
+      "profile_url": "https://www.med.unc.edu/radiology/people/benjamin-huang/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Mauricio Castillo",
+      "profile_url": "https://www.med.unc.edu/radiology/people/mauricio-castillo/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Bilal Battal",
+      "profile_url": "https://www.med.unc.edu/radiology/people/bilal-battal/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Carlos Zamora",
+      "profile_url": "https://www.med.unc.edu/radiology/people/carlos-zamora/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Sten Solander",
+      "profile_url": "https://www.med.unc.edu/radiology/people/sten-solander/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Cody Schwartz",
+      "profile_url": "https://www.med.unc.edu/radiology/people/cody-schwartz/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Girish Gandikota",
+      "profile_url": "https://www.med.unc.edu/radiology/people/girish-gandikota/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Jorge Oldan",
+      "profile_url": "https://www.med.unc.edu/radiology/people/jorgeoldan/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Marija Ivanovic",
+      "profile_url": "https://www.med.unc.edu/radiology/people/marija-ivanovic/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Jennifer Schroeder",
+      "profile_url": "https://www.med.unc.edu/radiology/people/jennifer-schroeder/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "John Nazarian",
+      "profile_url": "https://www.med.unc.edu/radiology/people/john-nazarian/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Mariana DeFreitas",
+      "profile_url": "https://www.med.unc.edu/radiology/people/mariana-defreitas/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Mark Rynties",
+      "profile_url": "https://www.med.unc.edu/radiology/people/mark-rynties/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Jeffrey Gage",
+      "profile_url": "https://www.med.unc.edu/radiology/people/jeff-gage/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Muthu Sakthivel",
+      "profile_url": "https://www.med.unc.edu/radiology/people/muthu-sakthivel/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Fenner Griffin",
+      "profile_url": "https://www.med.unc.edu/radiology/people/fenner-griffin/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Hollins Clark",
+      "profile_url": "https://www.med.unc.edu/radiology/people/hollins-clark/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Todd R. Hazelton",
+      "profile_url": "https://www.med.unc.edu/radiology/people/todd-r-hazelton/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Valerie Jewells",
+      "profile_url": "https://www.med.unc.edu/radiology/people/valerie-jewells/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Lynn A. Fordham",
+      "profile_url": "https://www.med.unc.edu/radiology/people/lynn-a-fordham/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Weili Lin",
+      "profile_url": "https://www.med.unc.edu/radiology/people/weili-lin/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "J. Keith Smith",
+      "profile_url": "https://www.med.unc.edu/radiology/people/j-keith-smith/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Matthew A. Mauro",
+      "profile_url": "https://www.med.unc.edu/radiology/people/matthew-a-mauro/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Cherie M. Kuzmiak",
+      "profile_url": "https://www.med.unc.edu/radiology/people/cherie-m-kuzmiak/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Genevieve A. Woodard",
+      "profile_url": "https://www.med.unc.edu/radiology/people/genevieve-a-woodard/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Chris Young",
+      "profile_url": "https://www.med.unc.edu/radiology/people/chris-young/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Lauren M.B. Burke",
+      "profile_url": "https://www.med.unc.edu/radiology/people/lauren-m-b-burke/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Dustin Rea",
+      "profile_url": "https://www.med.unc.edu/radiology/people/dustin-rea/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Ellie R. Lee",
+      "profile_url": "https://www.med.unc.edu/radiology/people/ellie-r-lee/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "W. Brian Hyslop",
+      "profile_url": "https://www.med.unc.edu/radiology/people/w-brian-hyslop/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Josephine Finazzo",
+      "profile_url": "https://www.med.unc.edu/radiology/people/josephine-finazzo/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Kristen Olinger",
+      "profile_url": "https://www.med.unc.edu/radiology/people/kristen-olinger/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
+      ]
+    },
+    {
+      "name": "Ersan Altun",
+      "profile_url": "https://www.med.unc.edu/radiology/people/ersan-altun/",
+      "department": "Radiology",
+      "role": "",
+      "source": "wp_rest:ud_entry",
+      "departments": [
+        "Radiology"
       ]
     }
   ]
