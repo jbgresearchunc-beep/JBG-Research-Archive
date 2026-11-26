@@ -377,7 +377,33 @@ for wrong_fore, ini in [("Kinjal", "K"), ("Kripa", "K"), ("Kamal", "K")]:
     rec = s._evaluate_article(article("1", author("Patel", wrong_fore, ini, [UNC])), ident)[1]
     check(f"{wrong_fore} Patel rejected for Kunal Patel", s._strict_pass(rec, ident)[0], False)
 
+# J: one person with two ORCID records is not a same-name conflict when every
+# paper under both iDs carries the faculty member's first + middle initials.
+ORCID_C = "0000-0003-1415-9265"
+arts = [article(str(300 + i), author("Ting", "Jenny P Y", "JPY", [UNC], orcid=o))
+        for i, o in enumerate([ORCID_A, ORCID_A, ORCID_C, ORCID_C])]
+arts.append(article("305", author("Ting", "Jenny P", "JP", [UNC], orcid=ORCID_C)))
+pubs, info = run("Jenny P. Y. Ting", arts, search_term="Ting JPY")
+check("Two ORCIDs, same full initials (JPY/JP) → one person, all kept",
+      (len(pubs), info["orcid_conflict"]), (5, False))
+arts = [article(str(310 + i), author("Richter", "Margaret", "M", [UNC], orcid=o))
+        for i, o in enumerate([ORCID_A, ORCID_A, ORCID_C, ORCID_C])]
+pubs, info = run("Margaret Richter", arts, search_term="Richter Margaret")
+check("Two ORCIDs, no middle initial → still a conflict", info["orcid_conflict"], True)
+arts = [article(str(320 + i), author("Ting", fore, ini, [UNC], orcid=o))
+        for i, (fore, ini, o) in enumerate([("Jenny P Y", "JPY", ORCID_A), ("Jenny P Y", "JPY", ORCID_A),
+                                            ("Jenny M", "JM", ORCID_C), ("Jenny M", "JM", ORCID_C)])]
+pubs, info = run("Jenny P. Y. Ting", arts, search_term="Ting J")
+check("Two ORCIDs, other iD has different middle initial → not merged",
+      ORCID_C.replace("-", "") in str(info) and info["orcid_conflict"] is False and len(pubs) == 4, False)
+
+# K: HTML entities in titles / author names are decoded for display
+pub, _ = s._evaluate_article(article("400", author("Ch&#xe9;ry", "Samantha L", "SL", [UNC]),
+                                     title="(3&#x3b1;,5&#x3b1;)-THP and CX3CL1"),
+                             s.build_author_identity("Samantha Chery", ""))
+check("Entities decoded in title", pub["title"], "(3\u03b1,5\u03b1)-THP and CX3CL1")
+check("Entities decoded in author name", pub["authors"][0], "Samantha L Ch\u00e9ry")
+
 print()
 print(f"{len(FAILS)} failure(s)" if FAILS else "All tests passed.")
 sys.exit(1 if FAILS else 0)
-
