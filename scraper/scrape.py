@@ -22,7 +22,7 @@ from html.parser import HTMLParser
 # scheduled full runs re-enrich everyone instead of resuming stale results.
 # The resume logic only skips faculty whose stored version matches this.
 # ---------------------------------------------------------------------------
-PIPELINE_VERSION = "2026.11.26-strict-author-match-v5"
+PIPELINE_VERSION = "2026.11.26-strict-author-match-v7"
 
 # How many years back to search for publications. Rolling, not a fixed year —
 # recalculated from the actual run date each time so it stays current
@@ -1028,39 +1028,35 @@ def fetch_pmids_by_author_id(author_id, max_results=100):
     The bibliography page embeds a JSON payload in the page HTML that we can
     parse directly for PMIDs.
     """
-    bib_url = f"https://www.ncbi.nlm.nih.gov/myncbi/{author_id}/bibliography/public/"
-    html = fetch_url(bib_url)
-    if not html:
-        return [], 0
+    base_url = f"https://www.ncbi.nlm.nih.gov/myncbi/{author_id}/bibliography/public/"
+    pmids, seen = [], set()
 
-    # The bibliography page embeds citation data as a JSON blob in the HTML.
-    # Look for PMIDs in the page — they appear as data-pmid attributes or
-    # in a JSON structure like "pmid":"12345678"
-    pmids = []
-    seen = set()
+    def _page_pmids(html):
+        # Method 1: data-pmid attributes; 2: JSON-embedded pmid fields;
+        # 3: citation links like /pubmed/12345678/
+        for pat in (r'data-pmid=["\'](\d+)["\']', r'"pmid"\s*:\s*"?(\d+)"?', r'/pubmed/(\d{7,8})/'):
+            found = [m.group(1) for m in re.finditer(pat, html)]
+            if found:
+                return found
+        return []
 
-    # Method 1: data-pmid attributes (most reliable)
-    for m in re.finditer(r'data-pmid=["\'](\d+)["\']', html):
-        pid = m.group(1)
-        if pid not in seen:
+    # The bibliography shows 50 citations per page, newest first. Earlier code
+    # read only page 1, so prolific faculty lost everything past their latest
+    # 50 papers. Read further pages until one adds nothing new.
+    max_pages = max(1, -(-max_results // 50))
+    for page in range(1, max_pages + 1):
+        html = fetch_url(base_url if page == 1 else f"{base_url}?page={page}")
+        if not html:
+            break
+        new = [pid for pid in _page_pmids(html) if pid not in seen]
+        if not new:
+            break
+        for pid in new:
             seen.add(pid)
             pmids.append(pid)
-
-    # Method 2: JSON-embedded pmid fields
-    if not pmids:
-        for m in re.finditer(r'"pmid"\s*:\s*"?(\d+)"?', html):
-            pid = m.group(1)
-            if pid not in seen:
-                seen.add(pid)
-                pmids.append(pid)
-
-    # Method 3: citation links like /pubmed/12345678/
-    if not pmids:
-        for m in re.finditer(r'/pubmed/(\d{7,8})/', html):
-            pid = m.group(1)
-            if pid not in seen:
-                seen.add(pid)
-                pmids.append(pid)
+        if len(new) < 50 or len(pmids) >= max_results:
+            break
+        time.sleep(PUBMED_SLEEP)
 
     count = len(pmids)
     return pmids[:max_results], count
@@ -1532,7 +1528,46 @@ def build_author_identity(faculty_name, search_term=""):
                        if (given_letters and len(given_letters[0]) == 1)
                        else ({given_letters[0]} if given_letters else set()),
         "middle": given_letters[1][0] if len(given_letters) >= 2 else None,
+        "_name": faculty_name,
     }
+
+
+# UNC faculty roster, set once per run by set_unc_roster(): (surname, first
+# initial) → [(normalized full name, given-name list)]. Used to spot colleagues
+# who share a surname and first initial ('Katherine Allen' / 'Kelli Allen').
+UNC_ROSTER = {}
+
+
+def set_unc_roster(names):
+    UNC_ROSTER.clear()
+    for nm in names:
+        ident = build_author_identity(nm)
+        for sn in ident["surnames"]:
+            UNC_ROSTER.setdefault((sn, ident["first"]), []).append(
+                (_letters(_ascii_lower(nm)), ident))
+
+
+def _same_person(a, b):
+    """Two roster identities that are one person listed twice ('Dan Reuland' /
+    'Daniel S. Reuland'): compatible first names, no conflicting middle initial."""
+    # Any spelled-out given name in common counts ('E. Claire' / 'Elizabeth Claire')
+    fa = {g for g in a["given"] if len(g) >= 2}
+    fb = {g for g in b["given"] if len(g) >= 2}
+    if fa and fb and not any(_given_names_compatible(x, y) for x in fa for y in fb):
+        return False
+    return not (a["middle"] and b["middle"] and a["middle"] != b["middle"])
+
+
+def _roster_rivals(faculty_name, identity):
+    """Other UNC faculty sharing this surname + first initial who are
+    different people (Katherine / Kelli Allen, Patrick J. / Patrick C. Smith)."""
+    me = _letters(_ascii_lower(faculty_name or ""))
+    rivals = []
+    for sn in identity["surnames"]:
+        for other, ident in UNC_ROSTER.get((sn, identity["first"]), []):
+            if other != me and not _same_person(identity, ident):
+                rivals.append(ident)
+    return rivals
 
 
 def _normalize_orcid(raw):
@@ -1684,6 +1719,7 @@ def _evaluate_article(article_xml, identity):
     # and collaborator networks downstream. Note: <Author\b> so <AuthorList>
     # isn't swallowed as an author block.
     authors = []
+    unc_idx = []      # positions in `authors` whose own affiliation is UNC
     candidates = []
     any_block_has_affs = False
     for auth_block in re.findall(r"<Author\b[^>]*>(.*?)</Author>", article_xml, re.DOTALL):
@@ -1702,11 +1738,15 @@ def _evaluate_article(article_xml, identity):
             first = fore or inits
             full = f"{first} {last}".strip() if first else last
             if full:
+                if block_affs and any_affiliation_is_unc(block_affs):
+                    unc_idx.append(len(authors))
                 authors.append(full)
             if _letters(last) in identity["surnames"]:
                 orcid_m = re.search(r'<Identifier[^>]*Source="ORCID"[^>]*>(.*?)</Identifier>', auth_block)
                 candidates.append({
                     "initials": _block_initials(fore, inits),
+                    # 'K D' / 'KD' style ForeName: no spelled-out given name to check
+                    "fore": fore or "",
                     "name_ok": name_matches_identity(_block_initials(fore, inits), identity, fore),
                     "has_affs": bool(block_affs),
                     "unc": any_affiliation_is_unc(block_affs),
@@ -1726,6 +1766,10 @@ def _evaluate_article(article_xml, identity):
     _dec = lambda t: html_lib.unescape(html_lib.unescape(t or "")).replace("\u00a0", " ")
     pub = {"pmid": pmid, "title": _dec(title), "journal": _dec(journal), "year": year,
            "authors": [_dec(a) for a in authors]}
+    if any_block_has_affs:
+        # Lets build_collaborators.py credit a medical-student co-author only
+        # when THAT author was at UNC on the paper (not a namesake elsewhere).
+        pub["unc_author_idx"] = unc_idx
     record = {
         "pmid": pmid,
         "candidates": candidates,
@@ -1735,7 +1779,46 @@ def _evaluate_article(article_xml, identity):
     return (pub if title else None), record
 
 
+def _colleague_clash(block, identity):
+    """
+    Would this author block fit a DIFFERENT UNC faculty member just as well?
+    'K D Allen' fits Katherine and Kelli Allen; 'Patrick Smith' fits Patrick J.
+    and Patrick C. Smith. Such a paper can't be attributed by name alone (an
+    ORCID iD can still claim it). Exception: the block's middle initial matches
+    this faculty member's and no such colleague shares it ('E S Dellon').
+    """
+    rivals = identity.get("rivals")
+    if rivals is None:
+        rivals = identity["rivals"] = _roster_rivals(identity.get("_name"), identity)
+    if not rivals:
+        return False
+    ini, fore = block.get("initials") or "", block.get("fore") or ""
+    spelled = [_letters(t) for t in re.split(r"[\s\-]+", fore) if len(_letters(t)) >= 2]
+
+    def fits(r):
+        if name_matches_identity(ini, r, fore) is False:
+            return False
+        if spelled:  # 'Jacquelyn K' can't be J. Megan Patterson
+            theirs = [g for g in r["given"] if len(g) >= 2]
+            return any(_given_names_compatible(x, y) for x in spelled for y in theirs)
+        return True
+    fitting = [r for r in rivals if fits(r)]
+    if not fitting:
+        return False
+    mid = identity.get("middle")
+    if mid and len(ini) >= 2 and ini[1] == mid:
+        return any(r.get("middle") == mid for r in fitting)
+    return True
+
+
 def _strict_pass(record, identity):
+    ok, block, reason = _strict_pass_inner(record, identity)
+    if ok and _colleague_clash(block, identity):
+        return False, None, "name-fits-another-UNC-colleague"
+    return ok, block, reason
+
+
+def _strict_pass_inner(record, identity):
     """
     Does some surname-matched author block pass the strict check?
     Returns (passed, passing_block_or_None, reason_if_failed).
@@ -1970,8 +2053,13 @@ def _pubmed_fetch_records_batch(pmids, identity):
 
 def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term="", target_lastname=None,
                            faculty_name=None, known_orcid=None, require_strict_anchor=False,
-                           departments=None, dept_strict=False, return_info=False):
+                           departments=None, dept_strict=False, return_info=False,
+                           require_name_on_paper=False):
     """
+    require_name_on_paper: with verify_affiliation=False (MyNCBI lists), still
+    drop papers that don't list this faculty member as an author at all —
+    curated bibliographies sometimes contain colleagues' papers.
+
     Fetch publication details for PMIDs and (if verify_affiliation) keep only
     papers that verifiably belong to this faculty member — see the block
     comment above select_verified_publications for the rules.
@@ -2011,7 +2099,14 @@ def pubmed_fetch_summaries(pmids, verify_affiliation=True, search_term="", targe
             print(f"      Verify: two same-name UNC people — kept the one in this department "
                   f"(ORCID {info['orcid']})")
     else:
-        pubs = [p for p, r in records if p is not None]
+        pubs = [p for p, r in records if p is not None and (
+            not require_name_on_paper
+            or r is None  # esummary fallback: no author detail to check
+            or any(c["name_ok"] is not False for c in r["candidates"]))]
+        if require_name_on_paper:
+            n_off = sum(1 for p, r in records if p is not None) - len(pubs)
+            if n_off:
+                print(f"      Dropped {n_off} bibliography paper(s) that don't list this author")
         # Still learn an ORCID iD from name-matched blocks (useful for MyNCBI etc.)
         from collections import Counter
         tally = Counter(c["orcid"] for p, r in records if r for c in r["candidates"]
@@ -2439,13 +2534,14 @@ def enrich_faculty_with_pubmed(faculty_member, pubmed_string=None):
         bib_url = clean_hint.replace("MYNCBI:", "")
         author_id = bib_url.rstrip("/").split("/myncbi/")[-1].split("/")[0]
         print(f"    MyNCBI: fetching bibliography for '{author_id}'")
-        pmids, count = fetch_pmids_by_author_id(author_id, max_results=SEARCH_MAX_RESULTS)
+        pmids, count = fetch_pmids_by_author_id(author_id, max_results=300)
         print(f"    MyNCBI: found {count} PMIDs on bibliography page")
         if pmids:
             # The faculty member's own curated list — trusted, so no UNC
             # re-verification (it would drop papers from prior institutions).
             pubs, info = pubmed_fetch_summaries(pmids, search_term=name, verify_affiliation=False,
-                                                faculty_name=name, return_info=True)
+                                                faculty_name=name, return_info=True,
+                                                require_name_on_paper=True)
             pubs = _filter_recent_pubs(pubs)
             if info["orcid"]:
                 faculty_member["pubmed_orcid"] = info["orcid"]
@@ -3062,6 +3158,7 @@ def enrich_only(raw_input_path="data/faculty_raw.json",
         raw = json.load(f)
 
     all_faculty = raw["faculty"]
+    set_unc_roster(f["name"] for f in all_faculty)
     departments_in_raw = raw.get("departments", [])
 
     # Optionally filter to a single department. Load the config so we can match
