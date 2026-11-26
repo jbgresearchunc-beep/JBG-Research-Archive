@@ -550,6 +550,7 @@ def attach_student_coauthors(faculty_list, student_idx, index_to_key, key_to_bes
     # entry it happens to appear on.
     counted_pmids = defaultdict(set)
     skipped_ambiguous = 0
+    skipped_not_unc = 0
     faculty_missing_author_data = 0
 
     for i, f in enumerate(faculty_list):
@@ -560,12 +561,21 @@ def attach_student_coauthors(faculty_list, student_idx, index_to_key, key_to_bes
         for pub in pubs:
             pmid = pub.get("pmid")
             has_student_match_in_this_pub = False
-            for a in pub.get("authors", []) or []:
+            # Per-author UNC affiliations (scrape.py, Nov 2026+). When present,
+            # a student is matched only if that author block was at UNC — a
+            # 'Brian Wood' at another institution is someone else. Papers
+            # without per-author affiliation data fall back to name-only.
+            unc_idx = pub.get("unc_author_idx")
+            unc_idx = set(unc_idx) if unc_idx is not None else None
+            for pos, a in enumerate(pub.get("authors", []) or []):
                 first_tok = a.split()[0] if a.split() else ""
                 if _is_initials_only(first_tok):
                     skipped_ambiguous += 1
                     continue
                 mkey = _student_match_key(a)
+                if mkey and mkey in student_idx and unc_idx is not None and pos not in unc_idx:
+                    skipped_not_unc += 1
+                    continue
                 if mkey and mkey in student_idx:
                     if pmid and pmid in counted_pmids[key]:
                         # Already counted this exact paper for this person
@@ -597,6 +607,7 @@ def attach_student_coauthors(faculty_list, student_idx, index_to_key, key_to_bes
     return {
         "faculty_flagged": flagged,
         "skipped_ambiguous_authors": skipped_ambiguous,
+        "skipped_student_namesakes_not_at_unc": skipped_not_unc,
         "faculty_missing_author_data": faculty_missing_author_data,
     }
 
@@ -722,6 +733,9 @@ def main():
         if student_stats["skipped_ambiguous_authors"]:
             print(f"Skipped {student_stats['skipped_ambiguous_authors']} initials-only author "
                   f"tokens (too ambiguous to match, e.g. 'Hardy J')")
+        if student_stats.get("skipped_student_namesakes_not_at_unc"):
+            print(f"Skipped {student_stats['skipped_student_namesakes_not_at_unc']} student-name "
+                  f"matches whose author wasn't at UNC on that paper (namesakes)")
         if student_stats["faculty_missing_author_data"]:
             print(f"WARNING: {student_stats['faculty_missing_author_data']} faculty had publications "
                   f"with no 'authors' field — re-run scrape.py's enrich step with the "
